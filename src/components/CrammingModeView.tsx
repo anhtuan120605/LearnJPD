@@ -1,0 +1,317 @@
+import React, { useState, useEffect, useRef } from 'react';
+import { WordItem } from '../types';
+import * as wanakana from 'wanakana';
+import { Settings, Lightbulb, Keyboard, CheckCircle, XCircle, RotateCcw, Volume2, Sparkles } from 'lucide-react';
+import { speakJapanese } from '../lib/audio';
+import confetti from 'canvas-confetti';
+
+interface CrammingModeViewProps {
+  words: WordItem[];
+  onFinish?: (score: number, total: number) => void;
+}
+
+export const CrammingModeView: React.FC<CrammingModeViewProps> = ({
+  words,
+  onFinish,
+}) => {
+  // Chế độ kiểm tra: 'reading' (Cách đọc Hiragana) hoặc 'han' (Âm Hán Việt)
+  const [testType, setTestType] = useState<'reading' | 'han'>('reading');
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [inputValue, setInputValue] = useState('');
+  const [hintCount, setHintCount] = useState(0); // tối đa 3 lần gợi ý
+  const [revealedChars, setRevealedChars] = useState<string[]>([]);
+  const [status, setStatus] = useState<'idle' | 'correct' | 'wrong'>('idle');
+  const [score, setScore] = useState(0);
+  const [isCompleted, setIsCompleted] = useState(false);
+
+  const inputRef = useRef<HTMLInputElement>(null);
+
+  const currentWord = words[currentIndex] || words[0];
+  const targetAnswer = testType === 'reading' 
+    ? (currentWord?.kana || '') 
+    : (currentWord?.hanviet || currentWord?.kana || '');
+
+  // Reset mỗi khi đổi từ hoặc đổi chế độ testType
+  useEffect(() => {
+    if (!currentWord) return;
+    setInputValue('');
+    setHintCount(0);
+    setStatus('idle');
+
+    // Khởi tạo các vạch gạch chân
+    const chars = targetAnswer.split('');
+    setRevealedChars(new Array(chars.length).fill(''));
+
+    // Tự động focus vào ô nhập liệu
+    setTimeout(() => {
+      inputRef.current?.focus();
+    }, 100);
+  }, [currentIndex, testType, currentWord, targetAnswer]);
+
+  if (!words || words.length === 0) {
+    return (
+      <div className="text-center py-20 bg-white dark:bg-zinc-900 rounded-3xl p-8">
+        <p className="text-slate-500">Danh sách từ vựng hiện đang trống.</p>
+      </div>
+    );
+  }
+
+  // Tự động chuyển Romaji sang Hiragana theo thời gian thực (như gõ Unikey / Japanese IME)
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const raw = e.target.value;
+    if (testType === 'reading') {
+      // Chuyển romaji -> hiragana tự động bằng wanakana
+      const converted = wanakana.toHiragana(raw, { IMEMode: true });
+      setInputValue(converted);
+    } else {
+      setInputValue(raw.toUpperCase());
+    }
+  };
+
+  // Bấm gợi ý (0/3): Lần lượt hé lộ từng chữ cái
+  const handleHint = () => {
+    if (hintCount >= 3) return;
+    const answerChars = targetAnswer.split('');
+    const newRevealed = [...revealedChars];
+    
+    // Tìm vị trí chưa mở đầu tiên
+    const nextIdx = newRevealed.findIndex(c => c === '');
+    if (nextIdx !== -1 && nextIdx < answerChars.length) {
+      newRevealed[nextIdx] = answerChars[nextIdx];
+      setRevealedChars(newRevealed);
+      setHintCount(prev => prev + 1);
+    }
+  };
+
+  // Kiểm tra đáp án
+  const handleCheck = (e?: React.FormEvent) => {
+    if (e) e.preventDefault();
+    if (status !== 'idle') {
+      // Nếu đã kiểm tra rồi, bấm tiếp sẽ sang câu sau
+      handleNext();
+      return;
+    }
+
+    const trimmedInput = inputValue.trim().toLowerCase();
+    const cleanTarget = targetAnswer.trim().toLowerCase();
+
+    // Chuẩn hóa so sánh
+    const isCorrect = trimmedInput === cleanTarget || 
+      (testType === 'reading' && wanakana.toHiragana(trimmedInput) === wanakana.toHiragana(cleanTarget));
+
+    if (isCorrect) {
+      setStatus('correct');
+      setScore(s => s + 1);
+      speakJapanese(currentWord.kana || currentWord.kanji);
+      setTimeout(() => {
+        handleNext();
+      }, 700);
+    } else {
+      setStatus('wrong');
+      // Phát âm từ để người học nhớ
+      speakJapanese(currentWord.kana || currentWord.kanji);
+    }
+  };
+
+  // Chuyển sang câu tiếp theo
+  const handleNext = () => {
+    if (currentIndex + 1 < words.length) {
+      setCurrentIndex(prev => prev + 1);
+    } else {
+      setIsCompleted(true);
+      confetti({ particleCount: 150, spread: 80, origin: { y: 0.6 } });
+      if (onFinish) onFinish(score, words.length);
+    }
+  };
+
+  // Chơi lại
+  const handleRestart = () => {
+    setCurrentIndex(0);
+    setScore(0);
+    setIsCompleted(false);
+  };
+
+  return (
+    <div className="max-w-4xl mx-auto">
+      {isCompleted ? (
+        /* Màn hình kết thúc */
+        <div className="bg-[#232F46] text-white rounded-3xl p-10 text-center shadow-2xl space-y-6">
+          <div className="w-20 h-20 mx-auto rounded-3xl bg-amber-500/20 text-amber-400 flex items-center justify-center">
+            <Sparkles className="w-10 h-10 animate-bounce" />
+          </div>
+          <h2 className="text-3xl font-black">Tuyệt Vời! Đã Hoàn Thành Nhồi Nhét!</h2>
+          <p className="text-slate-300">
+            Bạn đã vượt qua bài luyện gõ với kết quả: <strong className="text-orange-400 text-2xl font-black">{score}</strong> / {words.length} câu.
+          </p>
+          <button
+            onClick={handleRestart}
+            className="inline-flex items-center space-x-2 px-8 py-3.5 bg-orange-500 hover:bg-orange-600 font-bold rounded-2xl shadow-lg shadow-orange-500/30 transition active:scale-95"
+          >
+            <RotateCcw className="w-5 h-5" />
+            <span>Luyện gõ lại từ đầu</span>
+          </button>
+        </div>
+      ) : (
+        /* Giao diện Nhồi nhét Dark Navy chuẩn NhaiKanji */
+        <div className="relative rounded-3xl bg-[#232F46] text-white shadow-2xl overflow-hidden border border-slate-700/60 p-6 sm:p-10 flex flex-col justify-between min-h-[460px]">
+          
+          {/* Header trên: Mascot bên trái, Chế độ Cách đọc/Âm Hán bên phải */}
+          <div className="flex items-center justify-between">
+            {/* Mascot gõ phím カタカタカタ... */}
+            <div className="flex items-center space-x-2 opacity-80 hover:opacity-100 transition select-none">
+              <div className="text-2xl">🎧</div>
+              <span className="text-xs font-mono font-bold tracking-widest text-slate-400">
+                カタカタカタ...
+              </span>
+            </div>
+
+            {/* Toggle Cách đọc / Âm Hán + Cài đặt */}
+            <div className="flex items-center space-x-2">
+              <div className="flex items-center bg-[#1B2436] p-1 rounded-xl">
+                <button
+                  onClick={() => setTestType('reading')}
+                  className={`px-3.5 py-1.5 rounded-lg text-xs font-bold transition ${
+                    testType === 'reading'
+                      ? 'bg-orange-500 text-white shadow-md'
+                      : 'text-slate-400 hover:text-white'
+                  }`}
+                >
+                  Cách đọc
+                </button>
+                <button
+                  onClick={() => setTestType('han')}
+                  className={`px-3.5 py-1.5 rounded-lg text-xs font-bold transition ${
+                    testType === 'han'
+                      ? 'bg-orange-500 text-white shadow-md'
+                      : 'text-slate-400 hover:text-white'
+                  }`}
+                >
+                  Âm Hán
+                </button>
+              </div>
+
+              <button 
+                title="Cài đặt"
+                className="p-2 rounded-xl text-slate-400 hover:text-white hover:bg-[#1B2436] transition"
+              >
+                <Settings className="w-4 h-4" />
+              </button>
+            </div>
+          </div>
+
+          {/* Vùng trung tâm: Nghĩa tiếng Việt & Vạch gạch chân */}
+          <div className="my-auto text-center py-6 space-y-6">
+            <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-white px-4 leading-tight">
+              {currentWord.meaning}
+            </h2>
+
+            {/* Vạch gạch chân ký tự _ _ _ */}
+            <div className="flex items-center justify-center space-x-3 select-none">
+              {targetAnswer.split('').map((char, idx) => {
+                const revealed = revealedChars[idx];
+                return (
+                  <div key={idx} className="flex flex-col items-center">
+                    <span className="h-8 text-xl font-bold font-jp text-orange-400">
+                      {revealed || ''}
+                    </span>
+                    <div className="w-6 sm:w-8 h-1 bg-slate-500 rounded-full"></div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+
+          {/* Form Ô nhập Romaji & Nút hành động */}
+          <form onSubmit={handleCheck} className="space-y-4 max-w-xl mx-auto w-full">
+            {/* Input gõ romaji (vd: toshokan -> としょかん) */}
+            <div className="relative">
+              <input
+                ref={inputRef}
+                type="text"
+                value={inputValue}
+                onChange={handleInputChange}
+                disabled={status === 'correct'}
+                placeholder={
+                  testType === 'reading'
+                    ? "Gõ romaji (vd: toshokan → としょかん)"
+                    : "Gõ âm Hán Việt (vd: THỰC, SINH VIÊN)"
+                }
+                className={`w-full py-3.5 px-5 rounded-2xl bg-[#1B2436] text-white placeholder-slate-500 text-base font-semibold focus:outline-none transition border-2 ${
+                  status === 'correct' 
+                    ? 'border-emerald-500 bg-emerald-950/20 text-emerald-400' 
+                    : status === 'wrong'
+                      ? 'border-rose-500 bg-rose-950/20 text-rose-400 animate-shake'
+                      : 'border-slate-700/80 focus:border-orange-500'
+                }`}
+              />
+
+              {/* Nút nghe loa nhỏ bên phải */}
+              <button
+                type="button"
+                onClick={() => speakJapanese(currentWord.kana || currentWord.kanji)}
+                className="absolute right-3.5 top-1/2 -translate-y-1/2 p-2 text-slate-400 hover:text-white transition"
+              >
+                <Volume2 className="w-4 h-4" />
+              </button>
+            </div>
+
+            {/* Thông báo nếu sai */}
+            {status === 'wrong' && (
+              <div className="p-3 bg-rose-500/10 border border-rose-500/30 rounded-xl text-xs text-rose-300 flex items-center justify-between">
+                <span>Đáp án đúng: <strong className="font-bold text-white font-jp text-sm">{targetAnswer}</strong> ({currentWord.kanji})</span>
+                <button
+                  type="button"
+                  onClick={handleNext}
+                  className="font-bold text-orange-400 hover:underline"
+                >
+                  Bỏ qua ➔
+                </button>
+              </div>
+            )}
+
+            {/* 2 Nút: Gợi ý (0/3) & Kiểm tra */}
+            <div className="grid grid-cols-2 gap-3">
+              <button
+                type="button"
+                onClick={handleHint}
+                disabled={hintCount >= 3 || status !== 'idle'}
+                className="py-3 px-4 rounded-xl bg-white text-slate-800 font-bold text-xs sm:text-sm hover:bg-slate-100 disabled:opacity-50 transition flex items-center justify-center space-x-1.5 shadow-sm"
+              >
+                <Lightbulb className="w-4 h-4 text-amber-500" />
+                <span>Gợi ý ({hintCount}/3)</span>
+              </button>
+
+              <button
+                type="submit"
+                className="py-3 px-4 rounded-xl bg-orange-500 hover:bg-orange-600 text-white font-bold text-xs sm:text-sm shadow-lg shadow-orange-500/25 transition flex items-center justify-center space-x-1.5 active:scale-95"
+              >
+                <Keyboard className="w-4 h-4" />
+                <span>{status === 'idle' ? 'Kiểm tra' : 'Câu tiếp theo ➔'}</span>
+              </button>
+            </div>
+
+            {/* Phím tắt Hint */}
+            <p className="text-center text-[11px] text-slate-400 pt-1">
+              Nhấn <kbd className="px-1.5 py-0.5 rounded bg-slate-700 font-mono text-[10px] text-slate-200">Enter</kbd> để kiểm tra
+            </p>
+          </form>
+
+          {/* Footer dưới cùng: Tiến độ câu & Thanh xanh lá */}
+          <div className="mt-6 pt-4 border-t border-slate-700/50 flex flex-col space-y-2">
+            <span className="text-xs font-bold text-slate-400">
+              {currentIndex + 1} / {words.length}
+            </span>
+            <div className="w-full h-1.5 bg-slate-700 rounded-full overflow-hidden">
+              <div 
+                className="h-full bg-emerald-500 transition-all duration-300"
+                style={{ width: `${((currentIndex + 1) / words.length) * 100}%` }}
+              ></div>
+            </div>
+          </div>
+
+        </div>
+      )}
+    </div>
+  );
+};

@@ -1,0 +1,4157 @@
+[
+  {
+    "id": "kanji-力",
+    "kanji": "力",
+    "hanviet": "LỰC",
+    "strokes": 2,
+    "jlpt": "N4",
+    "onyomi": [
+      "りょく",
+      "りき",
+      "りい"
+    ],
+    "kunyomi": [
+      "ちから"
+    ],
+    "meanings_vi": [
+      "lực:  sức lực"
+    ],
+    "meanings_en": [
+      "Power",
+      "Strength",
+      "Strong",
+      "Strain",
+      "Bear Up",
+      "Exert"
+    ],
+    "radical": "lực 力 (+0 nét)"
+  },
+  {
+    "id": "kanji-口",
+    "kanji": "口",
+    "hanviet": "KHẨU",
+    "strokes": 3,
+    "jlpt": "N4",
+    "onyomi": [
+      "こう",
+      "く"
+    ],
+    "kunyomi": [
+      "くち"
+    ],
+    "meanings_vi": [
+      "khẩu:  mồm, miệng",
+      "khẩu:  cửa"
+    ],
+    "meanings_en": [
+      "Mouth"
+    ],
+    "radical": "khẩu 口 (+0 nét)"
+  },
+  {
+    "id": "kanji-工",
+    "kanji": "工",
+    "hanviet": "CÔNG",
+    "strokes": 3,
+    "jlpt": "N4",
+    "onyomi": [
+      "こう",
+      "く",
+      "ぐ"
+    ],
+    "kunyomi": [],
+    "meanings_vi": [
+      "công:  công việc",
+      "công:  người thợ"
+    ],
+    "meanings_en": [
+      "Craft",
+      "Construction",
+      "Katakana E Radical (no. 48)"
+    ],
+    "radical": "công 工 (+0 nét)"
+  },
+  {
+    "id": "kanji-夕",
+    "kanji": "夕",
+    "hanviet": "TỊCH",
+    "strokes": 3,
+    "jlpt": "N4",
+    "onyomi": [
+      "せき"
+    ],
+    "kunyomi": [
+      "ゆう"
+    ],
+    "meanings_vi": [
+      "tịch:  buổi chiều, buổi tối",
+      "tịch:  bóng tối"
+    ],
+    "meanings_en": [
+      "Evening"
+    ],
+    "radical": "tịch 夕 (+0 nét)"
+  },
+  {
+    "id": "kanji-手",
+    "kanji": "手",
+    "hanviet": "THỦ",
+    "strokes": 4,
+    "jlpt": "N4",
+    "onyomi": [
+      "しゅ",
+      "ず"
+    ],
+    "kunyomi": [
+      "て",
+      "て-",
+      "-て",
+      "た-"
+    ],
+    "meanings_vi": [
+      "thủ:  cái tay"
+    ],
+    "meanings_en": [
+      "Hand"
+    ],
+    "radical": "thủ 手 (+0 nét)"
+  },
+  {
+    "id": "kanji-文",
+    "kanji": "文",
+    "hanviet": "VĂN VẤN",
+    "strokes": 4,
+    "jlpt": "N4",
+    "onyomi": [
+      "ぶん",
+      "もん"
+    ],
+    "kunyomi": [
+      "ふみ",
+      "あや"
+    ],
+    "meanings_vi": [
+      "văn:  văn",
+      "văn:  vẻ"
+    ],
+    "meanings_en": [
+      "Sentence",
+      "Literature",
+      "Style",
+      "Art",
+      "Decoration",
+      "Figures",
+      "Plan",
+      "Literary Radical (no. 67)"
+    ],
+    "radical": "văn 文 (+0 nét)"
+  },
+  {
+    "id": "kanji-犬",
+    "kanji": "犬",
+    "hanviet": "KHUYỂN",
+    "strokes": 4,
+    "jlpt": "N4",
+    "onyomi": [
+      "けん"
+    ],
+    "kunyomi": [
+      "いぬ",
+      "いぬ-"
+    ],
+    "meanings_vi": [
+      "khuyển:  con chó"
+    ],
+    "meanings_en": [
+      "Dog"
+    ],
+    "radical": "khuyển 犬 (+0 nét)"
+  },
+  {
+    "id": "kanji-正",
+    "kanji": "正",
+    "hanviet": "CHINH CHÁNH CHÍNH",
+    "strokes": 5,
+    "jlpt": "N4",
+    "onyomi": [
+      "せい",
+      "しょう"
+    ],
+    "kunyomi": [
+      "ただ.しい",
+      "ただ.す",
+      "まさ",
+      "まさ.に"
+    ],
+    "meanings_vi": [
+      "chánh:  giữa",
+      "chánh:  chính, ngay thẳng",
+      "chính:  giữa"
+    ],
+    "meanings_en": [
+      "Correct",
+      "Justice",
+      "Righteous",
+      "10**40"
+    ],
+    "radical": "chỉ 止 (+1 nét)"
+  },
+  {
+    "id": "kanji-田",
+    "kanji": "田",
+    "hanviet": "ĐIỀN",
+    "strokes": 5,
+    "jlpt": "N4",
+    "onyomi": [
+      "でん"
+    ],
+    "kunyomi": [
+      "た"
+    ],
+    "meanings_vi": [
+      "điền:  ruộng, đồng"
+    ],
+    "meanings_en": [
+      "Rice Field",
+      "Rice Paddy"
+    ],
+    "radical": "điền 田 (+0 nét)"
+  },
+  {
+    "id": "kanji-目",
+    "kanji": "目",
+    "hanviet": "MỤC",
+    "strokes": 5,
+    "jlpt": "N4",
+    "onyomi": [
+      "もく",
+      "ぼく"
+    ],
+    "kunyomi": [
+      "め",
+      "-め",
+      "ま-"
+    ],
+    "meanings_vi": [
+      "mục:  mắt",
+      "mục:  khoản mục"
+    ],
+    "meanings_en": [
+      "Eye",
+      "Class",
+      "Look",
+      "Insight",
+      "Experience",
+      "Care",
+      "Favor"
+    ],
+    "radical": "mục 目 (+0 nét)"
+  },
+  {
+    "id": "kanji-立",
+    "kanji": "立",
+    "hanviet": "LẬP",
+    "strokes": 5,
+    "jlpt": "N4",
+    "onyomi": [
+      "りつ",
+      "りゅう",
+      "りっとる"
+    ],
+    "kunyomi": [
+      "た.つ",
+      "-た.つ",
+      "た.ち-",
+      "た.てる",
+      "-た.てる",
+      "た.て-",
+      "たて-",
+      "-た.て",
+      "-だ.て",
+      "-だ.てる"
+    ],
+    "meanings_vi": [
+      "lập:  đứng thẳng",
+      "lập:  lập tức, tức thì"
+    ],
+    "meanings_en": [
+      "Stand Up",
+      "Rise",
+      "Set Up",
+      "Erect"
+    ],
+    "radical": "lập 立 (+0 nét)"
+  },
+  {
+    "id": "kanji-元",
+    "kanji": "元",
+    "hanviet": "NGUYÊN",
+    "strokes": 4,
+    "jlpt": "N4",
+    "onyomi": [
+      "げん",
+      "がん"
+    ],
+    "kunyomi": [
+      "もと"
+    ],
+    "meanings_vi": [
+      "nguyên:  bắt đầu, thứ nhất",
+      "nguyên:  chủ yếu, căn bản, nguyên tố",
+      "nguyên:  đơn vị tiền tệ"
+    ],
+    "meanings_en": [
+      "Beginning",
+      "Former Time",
+      "Origin"
+    ],
+    "radical": "nhân 儿 (+2 nét)"
+  },
+  {
+    "id": "kanji-公",
+    "kanji": "公",
+    "hanviet": "CÔNG",
+    "strokes": 4,
+    "jlpt": "N4",
+    "onyomi": [
+      "こう",
+      "く"
+    ],
+    "kunyomi": [
+      "おおやけ"
+    ],
+    "meanings_vi": [
+      "công:  cân bằng",
+      "công:  chung",
+      "công:  cụ, ông"
+    ],
+    "meanings_en": [
+      "Public",
+      "Prince",
+      "Official",
+      "Governmental"
+    ],
+    "radical": "bát 八 (+2 nét)"
+  },
+  {
+    "id": "kanji-切",
+    "kanji": "切",
+    "hanviet": "THIẾT THẾ",
+    "strokes": 4,
+    "jlpt": "N4",
+    "onyomi": [
+      "せつ",
+      "さい"
+    ],
+    "kunyomi": [
+      "き.る",
+      "-き.る",
+      "き.り",
+      "-き.り",
+      "-ぎ.り",
+      "き.れる",
+      "-き.れる",
+      "き.れ",
+      "-き.れ",
+      "-ぎ.れ"
+    ],
+    "meanings_vi": [
+      "thiết:  cắt, chạm khắc",
+      "thiết:  cần kíp"
+    ],
+    "meanings_en": [
+      "Cut",
+      "Cutoff",
+      "Be Sharp"
+    ],
+    "radical": "đao 刀 (+2 nét)"
+  },
+  {
+    "id": "kanji-少",
+    "kanji": "少",
+    "hanviet": "THIẾU THIỂU",
+    "strokes": 4,
+    "jlpt": "N4",
+    "onyomi": [
+      "しょう"
+    ],
+    "kunyomi": [
+      "すく.ない",
+      "すこ.し"
+    ],
+    "meanings_vi": [
+      "thiếu:  kém, không đủ",
+      "thiếu:  trẻ tuổi",
+      "thiểu:  ít ỏi"
+    ],
+    "meanings_en": [
+      "Few",
+      "Little"
+    ],
+    "radical": "tiểu 小 (+1 nét)"
+  },
+  {
+    "id": "kanji-心",
+    "kanji": "心",
+    "hanviet": "TÂM",
+    "strokes": 4,
+    "jlpt": "N4",
+    "onyomi": [
+      "しん"
+    ],
+    "kunyomi": [
+      "こころ",
+      "-ごころ"
+    ],
+    "meanings_vi": [
+      "tâm:  lòng",
+      "tâm:  tim"
+    ],
+    "meanings_en": [
+      "Heart",
+      "Mind",
+      "Spirit",
+      "Heart Radical (no. 61)"
+    ],
+    "radical": "tâm 心 (+0 nét)"
+  },
+  {
+    "id": "kanji-方",
+    "kanji": "方",
+    "hanviet": "BÀNG PHƯƠNG",
+    "strokes": 4,
+    "jlpt": "N4",
+    "onyomi": [
+      "ほう"
+    ],
+    "kunyomi": [
+      "かた",
+      "-かた",
+      "-がた"
+    ],
+    "meanings_vi": [
+      "phương:  phía",
+      "phương:  vuông, hình vuông",
+      "phương:  trái lời, không tuân theo"
+    ],
+    "meanings_en": [
+      "Direction",
+      "Person",
+      "Alternative"
+    ],
+    "radical": "phương 方 (+0 nét)"
+  },
+  {
+    "id": "kanji-牛",
+    "kanji": "牛",
+    "hanviet": "NGƯU",
+    "strokes": 4,
+    "jlpt": "N4",
+    "onyomi": [
+      "ぎゅう"
+    ],
+    "kunyomi": [
+      "うし"
+    ],
+    "meanings_vi": [
+      "ngưu:  con trâu",
+      "ngưu:  sao Ngưu"
+    ],
+    "meanings_en": [
+      "Cow"
+    ],
+    "radical": "ngưu 牛 (+0 nét)"
+  },
+  {
+    "id": "kanji-止",
+    "kanji": "止",
+    "hanviet": "CHI CHỈ",
+    "strokes": 4,
+    "jlpt": "N4",
+    "onyomi": [
+      "し"
+    ],
+    "kunyomi": [
+      "と.まる",
+      "-ど.まり",
+      "と.める",
+      "-と.める",
+      "-ど.め",
+      "とど.める",
+      "とど.め",
+      "とど.まる",
+      "や.める",
+      "や.む",
+      "-や.む",
+      "よ.す",
+      "-さ.す",
+      "-さ.し"
+    ],
+    "meanings_vi": [
+      "chi:  dừng lại, thôi",
+      "chỉ:  dừng lại, thôi"
+    ],
+    "meanings_en": [
+      "Stop",
+      "Halt"
+    ],
+    "radical": "chỉ 止 (+0 nét)"
+  },
+  {
+    "id": "kanji-兄",
+    "kanji": "兄",
+    "hanviet": "HUYNH HUỐNG",
+    "strokes": 5,
+    "jlpt": "N4",
+    "onyomi": [
+      "けい",
+      "きょう"
+    ],
+    "kunyomi": [
+      "あに"
+    ],
+    "meanings_vi": [
+      "huynh:  anh trai"
+    ],
+    "meanings_en": [
+      "Elder Brother",
+      "Big Brother"
+    ],
+    "radical": "nhân 儿 (+3 nét)"
+  },
+  {
+    "id": "kanji-冬",
+    "kanji": "冬",
+    "hanviet": "ĐÔNG",
+    "strokes": 5,
+    "jlpt": "N4",
+    "onyomi": [
+      "とう"
+    ],
+    "kunyomi": [
+      "ふゆ"
+    ],
+    "meanings_vi": [
+      "đông:  mùa đông",
+      "đông:  tiếng trống đánh tùng tùng"
+    ],
+    "meanings_en": [
+      "Winter"
+    ],
+    "radical": "băng 冫 (+3 nét)"
+  },
+  {
+    "id": "kanji-古",
+    "kanji": "古",
+    "hanviet": "CỔ",
+    "strokes": 5,
+    "jlpt": "N4",
+    "onyomi": [
+      "こ"
+    ],
+    "kunyomi": [
+      "ふる.い",
+      "ふる-",
+      "-ふる.す"
+    ],
+    "meanings_vi": [
+      "cổ:  cũ, xưa"
+    ],
+    "meanings_en": [
+      "Old"
+    ],
+    "radical": "khẩu 口 (+2 nét)"
+  },
+  {
+    "id": "kanji-台",
+    "kanji": "台",
+    "hanviet": "DI THAI ĐÀI",
+    "strokes": 5,
+    "jlpt": "N4",
+    "onyomi": [
+      "だい",
+      "たい"
+    ],
+    "kunyomi": [
+      "うてな",
+      "われ",
+      "つかさ"
+    ],
+    "meanings_vi": [
+      "thai:  sao Thai",
+      "thai:  cái đài, lầu",
+      "đài:  cái đài, lầu"
+    ],
+    "meanings_en": [
+      "Pedestal",
+      "A Stand",
+      "Counter For Machines And Vehicles"
+    ],
+    "radical": "khẩu 口 (+2 nét)"
+  },
+  {
+    "id": "kanji-広",
+    "kanji": "広",
+    "hanviet": "KHOÁT QUẢNG",
+    "strokes": 5,
+    "jlpt": "N4",
+    "onyomi": [
+      "こう"
+    ],
+    "kunyomi": [
+      "ひろ.い",
+      "ひろ.まる",
+      "ひろ.める",
+      "ひろ.がる",
+      "ひろ.げる"
+    ],
+    "meanings_vi": [
+      "Wide",
+      "Broad",
+      "Spacious"
+    ],
+    "meanings_en": [
+      "Wide",
+      "Broad",
+      "Spacious"
+    ],
+    "radical": "nghiễm 广 (+2 nét)"
+  },
+  {
+    "id": "kanji-用",
+    "kanji": "用",
+    "hanviet": "DỤNG",
+    "strokes": 5,
+    "jlpt": "N4",
+    "onyomi": [
+      "よう"
+    ],
+    "kunyomi": [
+      "もち.いる"
+    ],
+    "meanings_vi": [
+      "dụng:  dùng, sử dụng"
+    ],
+    "meanings_en": [
+      "Utilize",
+      "Business",
+      "Service",
+      "Use",
+      "Employ"
+    ],
+    "radical": "dụng 用 (+0 nét)"
+  },
+  {
+    "id": "kanji-世",
+    "kanji": "世",
+    "hanviet": "THẾ",
+    "strokes": 5,
+    "jlpt": "N4",
+    "onyomi": [
+      "せい",
+      "せ",
+      "そう"
+    ],
+    "kunyomi": [
+      "よ"
+    ],
+    "meanings_vi": [
+      "thế:  đời, trên đời",
+      "thế:  nối đời nhau",
+      "thế:  chỗ quen biết cũ"
+    ],
+    "meanings_en": [
+      "Generation",
+      "World",
+      "Society",
+      "Public"
+    ],
+    "radical": "nhất 一 (+4 nét)"
+  },
+  {
+    "id": "kanji-主",
+    "kanji": "主",
+    "hanviet": "CHÚA CHỦ",
+    "strokes": 5,
+    "jlpt": "N4",
+    "onyomi": [
+      "しゅ",
+      "す",
+      "しゅう"
+    ],
+    "kunyomi": [
+      "ぬし",
+      "おも",
+      "あるじ"
+    ],
+    "meanings_vi": [
+      "chúa:  người đứng đầu",
+      "chủ:  người đứng đầu"
+    ],
+    "meanings_en": [
+      "Lord",
+      "Chief",
+      "Master",
+      "Main Thing",
+      "Principal"
+    ],
+    "radical": "chủ 丶 (+4 nét)"
+  },
+  {
+    "id": "kanji-代",
+    "kanji": "代",
+    "hanviet": "ĐẠI",
+    "strokes": 5,
+    "jlpt": "N4",
+    "onyomi": [
+      "だい",
+      "たい"
+    ],
+    "kunyomi": [
+      "か.わる",
+      "かわ.る",
+      "かわ.り",
+      "か.わり",
+      "-がわ.り",
+      "-が.わり",
+      "か.える",
+      "よ",
+      "しろ"
+    ],
+    "meanings_vi": [
+      "đại:  triều đại",
+      "đại:  thay thế cho",
+      "đại:  đại diện"
+    ],
+    "meanings_en": [
+      "Substitute",
+      "Change",
+      "Convert",
+      "Replace",
+      "Period",
+      "Age",
+      "Counter For Decades Of Ages, Eras, Etc.",
+      "Generation",
+      "Charge",
+      "Rate",
+      "Fee"
+    ],
+    "radical": "nhân 人 (+3 nét)"
+  },
+  {
+    "id": "kanji-写",
+    "kanji": "写",
+    "hanviet": "TẢ",
+    "strokes": 5,
+    "jlpt": "N4",
+    "onyomi": [
+      "しゃ",
+      "じゃ"
+    ],
+    "kunyomi": [
+      "うつ.す",
+      "うつ.る",
+      "うつ-",
+      "うつ.し"
+    ],
+    "meanings_vi": [
+      "tả:  viết, chép",
+      "tả:  dốc hết ra, tháo ra",
+      "tả:  đúc tượng"
+    ],
+    "meanings_en": [
+      "Copy",
+      "Be Photographed",
+      "Describe"
+    ],
+    "radical": "mịch 冖 (+3 nét)"
+  },
+  {
+    "id": "kanji-去",
+    "kanji": "去",
+    "hanviet": "KHU KHỨ KHỬ",
+    "strokes": 5,
+    "jlpt": "N4",
+    "onyomi": [
+      "きょ",
+      "こ"
+    ],
+    "kunyomi": [
+      "さ.る",
+      "-さ.る"
+    ],
+    "meanings_vi": [
+      "khứ:  đi",
+      "khứ:  bỏ",
+      "khứ:  đã qua"
+    ],
+    "meanings_en": [
+      "Gone",
+      "Past",
+      "Quit",
+      "Leave",
+      "Elapse",
+      "Eliminate",
+      "Divorce"
+    ],
+    "radical": "khư 厶 (+3 nét)"
+  },
+  {
+    "id": "kanji-字",
+    "kanji": "字",
+    "hanviet": "TỰ",
+    "strokes": 6,
+    "jlpt": "N4",
+    "onyomi": [
+      "じ"
+    ],
+    "kunyomi": [
+      "あざ",
+      "あざな",
+      "-な"
+    ],
+    "meanings_vi": [
+      "tự:  chữ",
+      "tự:  giấy tờ",
+      "tự:  hiệu, tên chữ"
+    ],
+    "meanings_en": [
+      "Character",
+      "Letter",
+      "Word",
+      "Section Of Village"
+    ],
+    "radical": "tử 子 (+3 nét)"
+  },
+  {
+    "id": "kanji-早",
+    "kanji": "早",
+    "hanviet": "TẢO",
+    "strokes": 6,
+    "jlpt": "N4",
+    "onyomi": [
+      "そう",
+      "さっ"
+    ],
+    "kunyomi": [
+      "はや.い",
+      "はや",
+      "はや-",
+      "はや.まる",
+      "はや.める",
+      "さ-"
+    ],
+    "meanings_vi": [
+      "tảo:  buổi sáng",
+      "tảo:  sớm"
+    ],
+    "meanings_en": [
+      "Early",
+      "Fast"
+    ],
+    "radical": "nhật 日 (+2 nét)"
+  },
+  {
+    "id": "kanji-町",
+    "kanji": "町",
+    "hanviet": "ĐINH ĐỈNH",
+    "strokes": 7,
+    "jlpt": "N4",
+    "onyomi": [
+      "ちょう"
+    ],
+    "kunyomi": [
+      "まち"
+    ],
+    "meanings_vi": [
+      "đinh:  bờ ruộng",
+      "đinh:  đinh (đơn vị đo, bằng 100 mẫu)"
+    ],
+    "meanings_en": [
+      "Town",
+      "Village",
+      "Block",
+      "Street"
+    ],
+    "radical": "điền 田 (+2 nét)"
+  },
+  {
+    "id": "kanji-花",
+    "kanji": "花",
+    "hanviet": "HOA",
+    "strokes": 7,
+    "jlpt": "N4",
+    "onyomi": [
+      "か",
+      "け"
+    ],
+    "kunyomi": [
+      "はな"
+    ],
+    "meanings_vi": [
+      "hoa:  bông hoa"
+    ],
+    "meanings_en": [
+      "Flower"
+    ],
+    "radical": "thảo 艸 (+4 nét)"
+  },
+  {
+    "id": "kanji-赤",
+    "kanji": "赤",
+    "hanviet": "THÍCH XÍCH",
+    "strokes": 7,
+    "jlpt": "N4",
+    "onyomi": [
+      "せき",
+      "しゃく"
+    ],
+    "kunyomi": [
+      "あか",
+      "あか-",
+      "あか.い",
+      "あか.らむ",
+      "あか.らめる"
+    ],
+    "meanings_vi": [
+      "xích:  đỏ, màu đỏ",
+      "xích:  trần truồng"
+    ],
+    "meanings_en": [
+      "Red"
+    ],
+    "radical": "xích 赤 (+0 nét)"
+  },
+  {
+    "id": "kanji-足",
+    "kanji": "足",
+    "hanviet": "TÚ TÚC",
+    "strokes": 7,
+    "jlpt": "N4",
+    "onyomi": [
+      "そく"
+    ],
+    "kunyomi": [
+      "あし",
+      "た.りる",
+      "た.る",
+      "た.す"
+    ],
+    "meanings_vi": [
+      "túc:  chân thú",
+      "túc:  đầy đủ"
+    ],
+    "meanings_en": [
+      "Leg",
+      "Foot",
+      "Be Sufficient",
+      "Counter For Pairs Of Footwear"
+    ],
+    "radical": "túc 足 (+0 nét)"
+  },
+  {
+    "id": "kanji-不",
+    "kanji": "不",
+    "hanviet": "BƯU BẤT BỈ PHI PHU PHẦU PHỦ",
+    "strokes": 4,
+    "jlpt": "N4",
+    "onyomi": [
+      "ふ",
+      "ぶ"
+    ],
+    "kunyomi": [],
+    "meanings_vi": [
+      "bất:  không, chẳng"
+    ],
+    "meanings_en": [
+      "Negative",
+      "Non-",
+      "Bad",
+      "Ugly",
+      "Clumsy"
+    ],
+    "radical": "nhất 一 (+3 nét)"
+  },
+  {
+    "id": "kanji-仕",
+    "kanji": "仕",
+    "hanviet": "SĨ",
+    "strokes": 5,
+    "jlpt": "N4",
+    "onyomi": [
+      "し",
+      "じ"
+    ],
+    "kunyomi": [
+      "つか.える"
+    ],
+    "meanings_vi": [
+      "sĩ:  học trò",
+      "sĩ:  quan"
+    ],
+    "meanings_en": [
+      "Attend",
+      "Doing",
+      "Official",
+      "Serve"
+    ],
+    "radical": "nhân 人 (+3 nét)"
+  },
+  {
+    "id": "kanji-会",
+    "kanji": "会",
+    "hanviet": "CỐI HỘI",
+    "strokes": 6,
+    "jlpt": "N4",
+    "onyomi": [
+      "かい",
+      "え"
+    ],
+    "kunyomi": [
+      "あ.う",
+      "あ.わせる",
+      "あつ.まる"
+    ],
+    "meanings_vi": [
+      "cối:  tính gộp, tính cộng lại sổ sách trong một năm",
+      "hội:  hội hè",
+      "hội:  tụ hội"
+    ],
+    "meanings_en": [
+      "Meeting",
+      "Meet",
+      "Party",
+      "Association",
+      "Interview",
+      "Join"
+    ],
+    "radical": "nhân 人 (+4 nét)"
+  },
+  {
+    "id": "kanji-同",
+    "kanji": "同",
+    "hanviet": "ĐỒNG",
+    "strokes": 6,
+    "jlpt": "N4",
+    "onyomi": [
+      "どう"
+    ],
+    "kunyomi": [
+      "おな.じ"
+    ],
+    "meanings_vi": [
+      "đồng:  cùng nhau"
+    ],
+    "meanings_en": [
+      "Same",
+      "Agree",
+      "Equal"
+    ],
+    "radical": "khẩu 口 (+3 nét)"
+  },
+  {
+    "id": "kanji-多",
+    "kanji": "多",
+    "hanviet": "ĐA",
+    "strokes": 6,
+    "jlpt": "N4",
+    "onyomi": [
+      "た"
+    ],
+    "kunyomi": [
+      "おお.い",
+      "まさ.に",
+      "まさ.る"
+    ],
+    "meanings_vi": [
+      "đa:  nhiều"
+    ],
+    "meanings_en": [
+      "Many",
+      "Frequent",
+      "Much"
+    ],
+    "radical": "tịch 夕 (+3 nét)"
+  },
+  {
+    "id": "kanji-考",
+    "kanji": "考",
+    "hanviet": "KHẢO",
+    "strokes": 6,
+    "jlpt": "N4",
+    "onyomi": [
+      "こう"
+    ],
+    "kunyomi": [
+      "かんが.える",
+      "かんが.え"
+    ],
+    "meanings_vi": [
+      "khảo:  thọ, già",
+      "khảo:  thi cử",
+      "khảo:  nghiên cứu"
+    ],
+    "meanings_en": [
+      "Consider",
+      "Think Over"
+    ],
+    "radical": "lão 老 (+2 nét)"
+  },
+  {
+    "id": "kanji-肉",
+    "kanji": "肉",
+    "hanviet": "NHỤ NHỤC NẬU",
+    "strokes": 6,
+    "jlpt": "N4",
+    "onyomi": [
+      "にく"
+    ],
+    "kunyomi": [
+      "しし"
+    ],
+    "meanings_vi": [
+      "nhục:  thịt",
+      "nhục:  cùi quả"
+    ],
+    "meanings_en": [
+      "Meat"
+    ],
+    "radical": "nhục 肉 (+0 nét)"
+  },
+  {
+    "id": "kanji-自",
+    "kanji": "自",
+    "hanviet": "TỰ",
+    "strokes": 6,
+    "jlpt": "N4",
+    "onyomi": [
+      "じ",
+      "し"
+    ],
+    "kunyomi": [
+      "みずか.ら",
+      "おの.ずから",
+      "おの.ずと"
+    ],
+    "meanings_vi": [
+      "tự:  tự mình, riêng tư",
+      "tự:  tự nhiên, tất nhiên",
+      "tự:  từ, do (liên từ)"
+    ],
+    "meanings_en": [
+      "Oneself"
+    ],
+    "radical": "tự 自 (+0 nét)"
+  },
+  {
+    "id": "kanji-色",
+    "kanji": "色",
+    "hanviet": "SẮC",
+    "strokes": 6,
+    "jlpt": "N4",
+    "onyomi": [
+      "しょく",
+      "しき"
+    ],
+    "kunyomi": [
+      "いろ"
+    ],
+    "meanings_vi": [
+      "sắc:  màu sắc",
+      "sắc:  vẻ"
+    ],
+    "meanings_en": [
+      "Color"
+    ],
+    "radical": "sắc 色 (+0 nét)"
+  },
+  {
+    "id": "kanji-体",
+    "kanji": "体",
+    "hanviet": "BỔN THỂ",
+    "strokes": 7,
+    "jlpt": "N4",
+    "onyomi": [
+      "たい",
+      "てい"
+    ],
+    "kunyomi": [
+      "からだ",
+      "かたち"
+    ],
+    "meanings_vi": [
+      "thể:  thân, mình",
+      "thể:  hình thể",
+      "thể:  dạng"
+    ],
+    "meanings_en": [
+      "Body",
+      "Substance",
+      "Object",
+      "Reality",
+      "Counter For Images"
+    ],
+    "radical": "nhân 人 (+5 nét)"
+  },
+  {
+    "id": "kanji-作",
+    "kanji": "作",
+    "hanviet": "TÁ TÁC",
+    "strokes": 7,
+    "jlpt": "N4",
+    "onyomi": [
+      "さく",
+      "さ"
+    ],
+    "kunyomi": [
+      "つく.る",
+      "つく.り",
+      "-づく.り"
+    ],
+    "meanings_vi": [
+      "tác:  làm, tạo nên"
+    ],
+    "meanings_en": [
+      "Make",
+      "Production",
+      "Prepare",
+      "Build"
+    ],
+    "radical": "nhân 人 (+5 nét)"
+  },
+  {
+    "id": "kanji-図",
+    "kanji": "図",
+    "hanviet": "ĐỒ",
+    "strokes": 7,
+    "jlpt": "N4",
+    "onyomi": [
+      "ず",
+      "と"
+    ],
+    "kunyomi": [
+      "え",
+      "はか.る"
+    ],
+    "meanings_vi": [
+      "Map",
+      "Drawing",
+      "Plan",
+      "Extraordinary",
+      "Audacious"
+    ],
+    "meanings_en": [
+      "Map",
+      "Drawing",
+      "Plan",
+      "Extraordinary",
+      "Audacious"
+    ],
+    "radical": "vi 囗 (+4 nét)"
+  },
+  {
+    "id": "kanji-売",
+    "kanji": "売",
+    "hanviet": "MẠI",
+    "strokes": 7,
+    "jlpt": "N4",
+    "onyomi": [
+      "ばい"
+    ],
+    "kunyomi": [
+      "う.る",
+      "う.れる"
+    ],
+    "meanings_vi": [
+      "Sell"
+    ],
+    "meanings_en": [
+      "Sell"
+    ],
+    "radical": "sĩ 士 (+4 nét)"
+  },
+  {
+    "id": "kanji-弟",
+    "kanji": "弟",
+    "hanviet": "ĐỄ ĐỆ",
+    "strokes": 7,
+    "jlpt": "N4",
+    "onyomi": [
+      "てい",
+      "だい",
+      "で"
+    ],
+    "kunyomi": [
+      "おとうと"
+    ],
+    "meanings_vi": [
+      "đệ:  em trai",
+      "đệ:  dễ dãi"
+    ],
+    "meanings_en": [
+      "Younger Brother",
+      "Faithful Service To Elders"
+    ],
+    "radical": "cung 弓 (+4 nét)"
+  },
+  {
+    "id": "kanji-社",
+    "kanji": "社",
+    "hanviet": "XÃ",
+    "strokes": 7,
+    "jlpt": "N4",
+    "onyomi": [
+      "しゃ"
+    ],
+    "kunyomi": [
+      "やしろ"
+    ],
+    "meanings_vi": [
+      "xã:  thần đất",
+      "xã:  đền thờ thần đất"
+    ],
+    "meanings_en": [
+      "Company",
+      "Firm",
+      "Office",
+      "Association",
+      "Shrine"
+    ],
+    "radical": "kỳ 示 (+3 nét)"
+  },
+  {
+    "id": "kanji-言",
+    "kanji": "言",
+    "hanviet": "NGÂN NGÔN",
+    "strokes": 7,
+    "jlpt": "N4",
+    "onyomi": [
+      "げん",
+      "ごん"
+    ],
+    "kunyomi": [
+      "い.う",
+      "こと"
+    ],
+    "meanings_vi": [
+      "ngôn:  nói",
+      "ngôn:  lời nói"
+    ],
+    "meanings_en": [
+      "Say",
+      "Word"
+    ],
+    "radical": "ngôn 言 (+0 nét)"
+  },
+  {
+    "id": "kanji-走",
+    "kanji": "走",
+    "hanviet": "TẨU",
+    "strokes": 7,
+    "jlpt": "N4",
+    "onyomi": [
+      "そう"
+    ],
+    "kunyomi": [
+      "はし.る"
+    ],
+    "meanings_vi": [
+      "tẩu:  chạy",
+      "tẩu:  tẩu (tiếng xưng hô)"
+    ],
+    "meanings_en": [
+      "Run"
+    ],
+    "radical": "tẩu 走 (+0 nét)"
+  },
+  {
+    "id": "kanji-近",
+    "kanji": "近",
+    "hanviet": "CẤN CẬN KÝ",
+    "strokes": 7,
+    "jlpt": "N4",
+    "onyomi": [
+      "きん",
+      "こん"
+    ],
+    "kunyomi": [
+      "ちか.い"
+    ],
+    "meanings_vi": [
+      "cận:  gần, bên cạnh"
+    ],
+    "meanings_en": [
+      "Near",
+      "Early",
+      "Akin",
+      "Tantamount"
+    ],
+    "radical": "sước 辵 (+4 nét)"
+  },
+  {
+    "id": "kanji-空",
+    "kanji": "空",
+    "hanviet": "KHÔNG KHỐNG KHỔNG",
+    "strokes": 8,
+    "jlpt": "N4",
+    "onyomi": [
+      "くう"
+    ],
+    "kunyomi": [
+      "そら",
+      "あ.く",
+      "あ.き",
+      "あ.ける",
+      "から",
+      "す.く",
+      "す.かす",
+      "むな.しい"
+    ],
+    "meanings_vi": [
+      "không:  trống rỗng",
+      "không:  không gian",
+      "khống:  bỏ trống"
+    ],
+    "meanings_en": [
+      "Empty",
+      "Sky",
+      "Void",
+      "Vacant",
+      "Vacuum"
+    ],
+    "radical": "huyệt 穴 (+3 nét)"
+  },
+  {
+    "id": "kanji-青",
+    "kanji": "青",
+    "hanviet": "THANH",
+    "strokes": 8,
+    "jlpt": "N4",
+    "onyomi": [
+      "せい",
+      "しょう"
+    ],
+    "kunyomi": [
+      "あお",
+      "あお-",
+      "あお.い"
+    ],
+    "meanings_vi": [
+      "thanh:  xanh, màu xanh"
+    ],
+    "meanings_en": [
+      "Blue",
+      "Green"
+    ],
+    "radical": "thanh 青 (+0 nét)"
+  },
+  {
+    "id": "kanji-音",
+    "kanji": "音",
+    "hanviet": "ÂM ẤM",
+    "strokes": 9,
+    "jlpt": "N4",
+    "onyomi": [
+      "おん",
+      "いん",
+      "-のん"
+    ],
+    "kunyomi": [
+      "おと",
+      "ね"
+    ],
+    "meanings_vi": [
+      "âm:  âm, tiếng"
+    ],
+    "meanings_en": [
+      "Sound",
+      "Noise"
+    ],
+    "radical": "âm 音 (+0 nét)"
+  },
+  {
+    "id": "kanji-地",
+    "kanji": "地",
+    "hanviet": "ĐỊA",
+    "strokes": 6,
+    "jlpt": "N4",
+    "onyomi": [
+      "ち",
+      "じ"
+    ],
+    "kunyomi": [],
+    "meanings_vi": [
+      "địa:  đất",
+      "địa:  địa vị"
+    ],
+    "meanings_en": [
+      "Ground",
+      "Earth"
+    ],
+    "radical": "thổ 土 (+3 nét)"
+  },
+  {
+    "id": "kanji-安",
+    "kanji": "安",
+    "hanviet": "AN YÊN",
+    "strokes": 6,
+    "jlpt": "N4",
+    "onyomi": [
+      "あん"
+    ],
+    "kunyomi": [
+      "やす.い",
+      "やす.まる",
+      "やす",
+      "やす.らか"
+    ],
+    "meanings_vi": [
+      "an:  yên tĩnh, yên lành",
+      "an:  làm yên lòng",
+      "an:  an toàn"
+    ],
+    "meanings_en": [
+      "Relax",
+      "Cheap",
+      "Low",
+      "Quiet",
+      "Rested",
+      "Contented",
+      "Peaceful"
+    ],
+    "radical": "miên 宀 (+3 nét)"
+  },
+  {
+    "id": "kanji-有",
+    "kanji": "有",
+    "hanviet": "DỰU HỮU HỰU",
+    "strokes": 6,
+    "jlpt": "N4",
+    "onyomi": [
+      "ゆう",
+      "う"
+    ],
+    "kunyomi": [
+      "あ.る"
+    ],
+    "meanings_vi": [
+      "hữu:  có, sỡ hữu"
+    ],
+    "meanings_en": [
+      "Possess",
+      "Have",
+      "Exist",
+      "Happen",
+      "Occur",
+      "Approx"
+    ],
+    "radical": "nguyệt 月 (+2 nét)"
+  },
+  {
+    "id": "kanji-死",
+    "kanji": "死",
+    "hanviet": "TỬ",
+    "strokes": 6,
+    "jlpt": "N4",
+    "onyomi": [
+      "し"
+    ],
+    "kunyomi": [
+      "し.ぬ",
+      "し.に-"
+    ],
+    "meanings_vi": [
+      "tử:  chết"
+    ],
+    "meanings_en": [
+      "Death",
+      "Die"
+    ],
+    "radical": "ngạt 歹 (+2 nét)"
+  },
+  {
+    "id": "kanji-京",
+    "kanji": "京",
+    "hanviet": "KINH NGUYÊN",
+    "strokes": 8,
+    "jlpt": "N4",
+    "onyomi": [
+      "きょう",
+      "けい",
+      "きん"
+    ],
+    "kunyomi": [
+      "みやこ"
+    ],
+    "meanings_vi": [
+      "kinh:  kinh đô, thủ đô"
+    ],
+    "meanings_en": [
+      "Capital",
+      "10**16"
+    ],
+    "radical": "đầu 亠 (+6 nét)"
+  },
+  {
+    "id": "kanji-夜",
+    "kanji": "夜",
+    "hanviet": "DẠ DỊCH",
+    "strokes": 8,
+    "jlpt": "N4",
+    "onyomi": [
+      "や"
+    ],
+    "kunyomi": [
+      "よ",
+      "よる"
+    ],
+    "meanings_vi": [
+      "dạ:  ban đêm"
+    ],
+    "meanings_en": [
+      "Night",
+      "Evening"
+    ],
+    "radical": "tịch 夕 (+5 nét)"
+  },
+  {
+    "id": "kanji-妹",
+    "kanji": "妹",
+    "hanviet": "MUỘI",
+    "strokes": 8,
+    "jlpt": "N4",
+    "onyomi": [
+      "まい"
+    ],
+    "kunyomi": [
+      "いもうと"
+    ],
+    "meanings_vi": [
+      "muội:  em gái"
+    ],
+    "meanings_en": [
+      "Younger Sister"
+    ],
+    "radical": "nữ 女 (+5 nét)"
+  },
+  {
+    "id": "kanji-姉",
+    "kanji": "姉",
+    "hanviet": "TỶ",
+    "strokes": 8,
+    "jlpt": "N4",
+    "onyomi": [
+      "し"
+    ],
+    "kunyomi": [
+      "あね",
+      "はは"
+    ],
+    "meanings_vi": [
+      "tỷ:  chị gái"
+    ],
+    "meanings_en": [
+      "Elder Sister"
+    ],
+    "radical": "nữ 女 (+4 nét)"
+  },
+  {
+    "id": "kanji-店",
+    "kanji": "店",
+    "hanviet": "ĐIẾM",
+    "strokes": 8,
+    "jlpt": "N4",
+    "onyomi": [
+      "てん"
+    ],
+    "kunyomi": [
+      "みせ",
+      "たな"
+    ],
+    "meanings_vi": [
+      "điếm:  quán trọ, tiệm hàng"
+    ],
+    "meanings_en": [
+      "Store",
+      "Shop"
+    ],
+    "radical": "nghiễm 广 (+5 nét)"
+  },
+  {
+    "id": "kanji-明",
+    "kanji": "明",
+    "hanviet": "MINH",
+    "strokes": 8,
+    "jlpt": "N4",
+    "onyomi": [
+      "めい",
+      "みょう",
+      "みん"
+    ],
+    "kunyomi": [
+      "あ.かり",
+      "あか.るい",
+      "あか.るむ",
+      "あか.らむ",
+      "あき.らか",
+      "あ.ける",
+      "-あ.け",
+      "あ.く",
+      "あ.くる",
+      "あ.かす"
+    ],
+    "meanings_vi": [
+      "minh:  sáng",
+      "minh:  đời nhà Minh (Trung Quốc)"
+    ],
+    "meanings_en": [
+      "Bright",
+      "Light"
+    ],
+    "radical": "nhật 日 (+4 nét)"
+  },
+  {
+    "id": "kanji-歩",
+    "kanji": "歩",
+    "hanviet": "BỘ",
+    "strokes": 8,
+    "jlpt": "N4",
+    "onyomi": [
+      "ほ",
+      "ぶ",
+      "ふ"
+    ],
+    "kunyomi": [
+      "ある.く",
+      "あゆ.む"
+    ],
+    "meanings_vi": [
+      "bộ:  đi chân",
+      "bộ:  bước"
+    ],
+    "meanings_en": [
+      "Walk",
+      "Counter For Steps"
+    ],
+    "radical": "chỉ 止 (+4 nét)"
+  },
+  {
+    "id": "kanji-画",
+    "kanji": "画",
+    "hanviet": "HOẠ HOẠCH",
+    "strokes": 8,
+    "jlpt": "N4",
+    "onyomi": [
+      "が",
+      "かく",
+      "え",
+      "かい"
+    ],
+    "kunyomi": [
+      "えが.く",
+      "かく.する",
+      "かぎ.る",
+      "はかりごと",
+      "はか.る"
+    ],
+    "meanings_vi": [
+      "hoạ:  vẽ",
+      "hoạ:  bức tranh"
+    ],
+    "meanings_en": [
+      "Brush-stroke",
+      "Picture"
+    ],
+    "radical": "điền 田 (+3 nét)"
+  },
+  {
+    "id": "kanji-知",
+    "kanji": "知",
+    "hanviet": "TRI TRÍ",
+    "strokes": 8,
+    "jlpt": "N4",
+    "onyomi": [
+      "ち"
+    ],
+    "kunyomi": [
+      "し.る",
+      "し.らせる"
+    ],
+    "meanings_vi": [
+      "tri:  biết",
+      "tri:  quen nhau"
+    ],
+    "meanings_en": [
+      "Know",
+      "Wisdom"
+    ],
+    "radical": "thỉ 矢 (+3 nét)"
+  },
+  {
+    "id": "kanji-室",
+    "kanji": "室",
+    "hanviet": "THẤT",
+    "strokes": 9,
+    "jlpt": "N4",
+    "onyomi": [
+      "しつ"
+    ],
+    "kunyomi": [
+      "むろ"
+    ],
+    "meanings_vi": [
+      "thất:  nhà",
+      "thất:  huyệt chôn"
+    ],
+    "meanings_en": [
+      "Room",
+      "Apartment",
+      "Chamber",
+      "Greenhouse",
+      "Cellar"
+    ],
+    "radical": "miên 宀 (+6 nét)"
+  },
+  {
+    "id": "kanji-思",
+    "kanji": "思",
+    "hanviet": "TAI TƯ TỨ",
+    "strokes": 9,
+    "jlpt": "N4",
+    "onyomi": [
+      "し"
+    ],
+    "kunyomi": [
+      "おも.う",
+      "おもえら.く",
+      "おぼ.す"
+    ],
+    "meanings_vi": [
+      "tư:  nhớ, mong",
+      "tứ:  nhớ, mong"
+    ],
+    "meanings_en": [
+      "Think"
+    ],
+    "radical": "tâm 心 (+5 nét)"
+  },
+  {
+    "id": "kanji-海",
+    "kanji": "海",
+    "hanviet": "HẢI",
+    "strokes": 9,
+    "jlpt": "N4",
+    "onyomi": [
+      "かい"
+    ],
+    "kunyomi": [
+      "うみ"
+    ],
+    "meanings_vi": [
+      "hải:  biển"
+    ],
+    "meanings_en": [
+      "Sea",
+      "Ocean"
+    ],
+    "radical": "thuỷ 水 (+7 nét)"
+  },
+  {
+    "id": "kanji-茶",
+    "kanji": "茶",
+    "hanviet": "TRÀ",
+    "strokes": 9,
+    "jlpt": "N4",
+    "onyomi": [
+      "ちゃ",
+      "さ"
+    ],
+    "kunyomi": [],
+    "meanings_vi": [
+      "trà:  chè"
+    ],
+    "meanings_en": [
+      "Tea"
+    ],
+    "radical": "thảo 艸 (+6 nét)"
+  },
+  {
+    "id": "kanji-以",
+    "kanji": "以",
+    "hanviet": "DĨ",
+    "strokes": 5,
+    "jlpt": "N4",
+    "onyomi": [
+      "い"
+    ],
+    "kunyomi": [
+      "もっ.て"
+    ],
+    "meanings_vi": [
+      "dĩ:  dùng, sử dụng",
+      "dĩ:  bởi vì",
+      "dĩ:  lý do"
+    ],
+    "meanings_en": [
+      "By Means Of",
+      "Because",
+      "In View Of",
+      "Compared With"
+    ],
+    "radical": "nhân 人 (+2 nét)"
+  },
+  {
+    "id": "kanji-夏",
+    "kanji": "夏",
+    "hanviet": "GIÁ GIẠ HẠ",
+    "strokes": 10,
+    "jlpt": "N4",
+    "onyomi": [
+      "か",
+      "が",
+      "げ"
+    ],
+    "kunyomi": [
+      "なつ"
+    ],
+    "meanings_vi": [
+      "hạ:  mùa hè",
+      "hạ:  đời nhà Hạ (Trung Quốc)"
+    ],
+    "meanings_en": [
+      "Summer"
+    ],
+    "radical": "tuy 夊 (+7 nét)"
+  },
+  {
+    "id": "kanji-家",
+    "kanji": "家",
+    "hanviet": "CÔ GIA",
+    "strokes": 10,
+    "jlpt": "N4",
+    "onyomi": [
+      "か",
+      "け"
+    ],
+    "kunyomi": [
+      "いえ",
+      "や",
+      "うち"
+    ],
+    "meanings_vi": [
+      "gia:  nhà",
+      "gia:  tiếng vợ gọi chồng"
+    ],
+    "meanings_en": [
+      "House",
+      "Home",
+      "Family",
+      "Professional",
+      "Expert",
+      "Performer"
+    ],
+    "radical": "miên 宀 (+7 nét)"
+  },
+  {
+    "id": "kanji-紙",
+    "kanji": "紙",
+    "hanviet": "CHỈ",
+    "strokes": 10,
+    "jlpt": "N4",
+    "onyomi": [
+      "し"
+    ],
+    "kunyomi": [
+      "かみ"
+    ],
+    "meanings_vi": [
+      "chỉ:  giấy viết"
+    ],
+    "meanings_en": [
+      "Paper"
+    ],
+    "radical": "mịch 糸 (+4 nét)"
+  },
+  {
+    "id": "kanji-通",
+    "kanji": "通",
+    "hanviet": "THÔNG",
+    "strokes": 10,
+    "jlpt": "N4",
+    "onyomi": [
+      "つう",
+      "つ"
+    ],
+    "kunyomi": [
+      "とお.る",
+      "とお.り",
+      "-とお.り",
+      "-どお.り",
+      "とお.す",
+      "とお.し",
+      "-どお.し",
+      "かよ.う"
+    ],
+    "meanings_vi": [
+      "thông:  xuyên qua"
+    ],
+    "meanings_en": [
+      "Traffic",
+      "Pass Through",
+      "Avenue",
+      "Commute",
+      "Counter For Letters, Notes, Documents, Etc."
+    ],
+    "radical": "sước 辵 (+7 nét)"
+  },
+  {
+    "id": "kanji-強",
+    "kanji": "強",
+    "hanviet": "CƯỜNG CƯỠNG",
+    "strokes": 11,
+    "jlpt": "N4",
+    "onyomi": [
+      "きょう",
+      "ごう"
+    ],
+    "kunyomi": [
+      "つよ.い",
+      "つよ.まる",
+      "つよ.める",
+      "し.いる",
+      "こわ.い"
+    ],
+    "meanings_vi": [
+      "cường:  mạnh",
+      "cưỡng:  gượng, miễn cưỡng"
+    ],
+    "meanings_en": [
+      "Strong"
+    ],
+    "radical": "cung 弓 (+8 nét)"
+  },
+  {
+    "id": "kanji-教",
+    "kanji": "教",
+    "hanviet": "GIAO GIÁO",
+    "strokes": 11,
+    "jlpt": "N4",
+    "onyomi": [
+      "きょう"
+    ],
+    "kunyomi": [
+      "おし.える",
+      "おそ.わる"
+    ],
+    "meanings_vi": [
+      "giao:  dạy dỗ, truyền thụ",
+      "giao:  tôn giáo, đạo",
+      "giao:  sai bảo, khiến"
+    ],
+    "meanings_en": [
+      "Teach",
+      "Faith",
+      "Doctrine"
+    ],
+    "radical": "phác 攴 (+7 nét)"
+  },
+  {
+    "id": "kanji-理",
+    "kanji": "理",
+    "hanviet": "LÍ LÝ",
+    "strokes": 11,
+    "jlpt": "N4",
+    "onyomi": [
+      "り"
+    ],
+    "kunyomi": [
+      "ことわり"
+    ],
+    "meanings_vi": [
+      "lý:  vân, đường vân",
+      "lý:  lý lẽ",
+      "lý:  sửa sang"
+    ],
+    "meanings_en": [
+      "Logic",
+      "Arrangement",
+      "Reason",
+      "Justice",
+      "Truth"
+    ],
+    "radical": "ngọc 玉 (+7 nét)"
+  },
+  {
+    "id": "kanji-週",
+    "kanji": "週",
+    "hanviet": "CHU",
+    "strokes": 11,
+    "jlpt": "N4",
+    "onyomi": [
+      "しゅう"
+    ],
+    "kunyomi": [],
+    "meanings_vi": [
+      "chu:  đi khắp nơi"
+    ],
+    "meanings_en": [
+      "Week"
+    ],
+    "radical": "sước 辵 (+8 nét)"
+  },
+  {
+    "id": "kanji-魚",
+    "kanji": "魚",
+    "hanviet": "NGƯ",
+    "strokes": 11,
+    "jlpt": "N4",
+    "onyomi": [
+      "ぎょ"
+    ],
+    "kunyomi": [
+      "うお",
+      "さかな",
+      "-ざかな"
+    ],
+    "meanings_vi": [
+      "ngư:  con cá"
+    ],
+    "meanings_en": [
+      "Fish"
+    ],
+    "radical": "ngư 魚 (+0 nét)"
+  },
+  {
+    "id": "kanji-鳥",
+    "kanji": "鳥",
+    "hanviet": "ĐIỂU",
+    "strokes": 11,
+    "jlpt": "N4",
+    "onyomi": [
+      "ちょう"
+    ],
+    "kunyomi": [
+      "とり"
+    ],
+    "meanings_vi": [
+      "điểu:  con chim"
+    ],
+    "meanings_en": [
+      "Bird",
+      "Chicken"
+    ],
+    "radical": "điểu 鳥 (+0 nét)"
+  },
+  {
+    "id": "kanji-黒",
+    "kanji": "黒",
+    "hanviet": "HẮC",
+    "strokes": 11,
+    "jlpt": "N4",
+    "onyomi": [
+      "こく"
+    ],
+    "kunyomi": [
+      "くろ",
+      "くろ.ずむ",
+      "くろ.い"
+    ],
+    "meanings_vi": [
+      "Black"
+    ],
+    "meanings_en": [
+      "Black"
+    ],
+    "radical": "hắc 黑 (+4 nét)"
+  },
+  {
+    "id": "kanji-住",
+    "kanji": "住",
+    "hanviet": "TRÚ TRỤ",
+    "strokes": 7,
+    "jlpt": "N4",
+    "onyomi": [
+      "じゅう",
+      "ぢゅう",
+      "ちゅう"
+    ],
+    "kunyomi": [
+      "す.む",
+      "す.まう",
+      "-ず.まい"
+    ],
+    "meanings_vi": [
+      "trú:  ở",
+      "trú:  thôi, dừng",
+      "trú:  còn đấy"
+    ],
+    "meanings_en": [
+      "Dwell",
+      "Reside",
+      "Live",
+      "Inhabit"
+    ],
+    "radical": "nhân 人 (+5 nét)"
+  },
+  {
+    "id": "kanji-医",
+    "kanji": "医",
+    "hanviet": "Y Ế",
+    "strokes": 7,
+    "jlpt": "N4",
+    "onyomi": [
+      "い"
+    ],
+    "kunyomi": [
+      "い.やす",
+      "い.する",
+      "くすし"
+    ],
+    "meanings_vi": [
+      "y:  chữa bệnh",
+      "y:  thầy thuốc"
+    ],
+    "meanings_en": [
+      "Doctor",
+      "Medicine"
+    ],
+    "radical": "hễ 匸 (+5 nét)"
+  },
+  {
+    "id": "kanji-究",
+    "kanji": "究",
+    "hanviet": "CỨU",
+    "strokes": 7,
+    "jlpt": "N4",
+    "onyomi": [
+      "きゅう",
+      "く"
+    ],
+    "kunyomi": [
+      "きわ.める"
+    ],
+    "meanings_vi": [
+      "cứu:  kết cục",
+      "cứu:  suy xét tỉ mỉ"
+    ],
+    "meanings_en": [
+      "Research",
+      "Study"
+    ],
+    "radical": "huyệt 穴 (+2 nét)"
+  },
+  {
+    "id": "kanji-者",
+    "kanji": "者",
+    "hanviet": "GIẢ",
+    "strokes": 8,
+    "jlpt": "N4",
+    "onyomi": [
+      "しゃ"
+    ],
+    "kunyomi": [
+      "もの"
+    ],
+    "meanings_vi": [
+      "giả:  người",
+      "giả:  một đại từ thay thế"
+    ],
+    "meanings_en": [
+      "Someone",
+      "Person"
+    ],
+    "radical": "lão 老 (+4 nét)"
+  },
+  {
+    "id": "kanji-研",
+    "kanji": "研",
+    "hanviet": "NGHIÊN NGHIỄN",
+    "strokes": 9,
+    "jlpt": "N4",
+    "onyomi": [
+      "けん"
+    ],
+    "kunyomi": [
+      "と.ぐ"
+    ],
+    "meanings_vi": [
+      "nghiên:  nghiền, mài",
+      "nghiên:  tìm tòi"
+    ],
+    "meanings_en": [
+      "Polish",
+      "Study Of",
+      "Sharpen"
+    ],
+    "radical": "thạch 石 (+4 nét)"
+  },
+  {
+    "id": "kanji-場",
+    "kanji": "場",
+    "hanviet": "TRÀNG TRƯỜNG",
+    "strokes": 12,
+    "jlpt": "N4",
+    "onyomi": [
+      "じょう",
+      "ちょう"
+    ],
+    "kunyomi": [
+      "ば"
+    ],
+    "meanings_vi": [
+      "trường:  vùng",
+      "trường:  cái sân"
+    ],
+    "meanings_en": [
+      "Location",
+      "Place"
+    ],
+    "radical": "thổ 土 (+9 nét)"
+  },
+  {
+    "id": "kanji-朝",
+    "kanji": "朝",
+    "hanviet": "TRIÊU TRIỀU TRÀO",
+    "strokes": 12,
+    "jlpt": "N4",
+    "onyomi": [
+      "ちょう"
+    ],
+    "kunyomi": [
+      "あさ"
+    ],
+    "meanings_vi": [
+      "triêu:  buổi sáng",
+      "triều:  chầu vua",
+      "triều:  triều vua, triều đại"
+    ],
+    "meanings_en": [
+      "Morning",
+      "Dynasty",
+      "Regime",
+      "Epoch",
+      "Period",
+      "(north) Korea"
+    ],
+    "radical": "nguyệt 月 (+8 nét)"
+  },
+  {
+    "id": "kanji-答",
+    "kanji": "答",
+    "hanviet": "ĐÁP",
+    "strokes": 12,
+    "jlpt": "N4",
+    "onyomi": [
+      "とう"
+    ],
+    "kunyomi": [
+      "こた.える",
+      "こた.え"
+    ],
+    "meanings_vi": [
+      "đáp:  trả lời",
+      "đáp:  báo đáp"
+    ],
+    "meanings_en": [
+      "Solution",
+      "Answer"
+    ],
+    "radical": "trúc 竹 (+6 nét)"
+  },
+  {
+    "id": "kanji-買",
+    "kanji": "買",
+    "hanviet": "MÃI",
+    "strokes": 12,
+    "jlpt": "N4",
+    "onyomi": [
+      "ばい"
+    ],
+    "kunyomi": [
+      "か.う"
+    ],
+    "meanings_vi": [
+      "mãi:  mua, sắm, tậu"
+    ],
+    "meanings_en": [
+      "Buy"
+    ],
+    "radical": "bối 貝 (+5 nét)"
+  },
+  {
+    "id": "kanji-道",
+    "kanji": "道",
+    "hanviet": "ĐÁO ĐẠO",
+    "strokes": 12,
+    "jlpt": "N4",
+    "onyomi": [
+      "どう",
+      "とう"
+    ],
+    "kunyomi": [
+      "みち",
+      "いう"
+    ],
+    "meanings_vi": [
+      "đạo:  đường, tia",
+      "đạo:  đạo",
+      "đạo:  nói"
+    ],
+    "meanings_en": [
+      "Road-way",
+      "Street",
+      "District",
+      "Journey",
+      "Course",
+      "Moral",
+      "Teachings"
+    ],
+    "radical": "sước 辵 (+9 nét)"
+  },
+  {
+    "id": "kanji-楽",
+    "kanji": "楽",
+    "hanviet": "LẠC",
+    "strokes": 13,
+    "jlpt": "N4",
+    "onyomi": [
+      "がく",
+      "らく",
+      "ごう"
+    ],
+    "kunyomi": [
+      "たの.しい",
+      "たの.しむ",
+      "この.む"
+    ],
+    "meanings_vi": [
+      "lạc:  sung sướng"
+    ],
+    "meanings_en": [
+      "Music",
+      "Comfort",
+      "Ease"
+    ],
+    "radical": "mộc 木 (+9 nét)"
+  },
+  {
+    "id": "kanji-事",
+    "kanji": "事",
+    "hanviet": "SỰ",
+    "strokes": 8,
+    "jlpt": "N4",
+    "onyomi": [
+      "じ",
+      "ず"
+    ],
+    "kunyomi": [
+      "こと",
+      "つか.う",
+      "つか.える"
+    ],
+    "meanings_vi": [
+      "sự:  việc",
+      "sự:  làm việc",
+      "sự:  thờ"
+    ],
+    "meanings_en": [
+      "Matter",
+      "Thing",
+      "Fact",
+      "Business",
+      "Reason",
+      "Possibly"
+    ],
+    "radical": "quyết 亅 (+7 nét)"
+  },
+  {
+    "id": "kanji-使",
+    "kanji": "使",
+    "hanviet": "SỨ SỬ",
+    "strokes": 8,
+    "jlpt": "N4",
+    "onyomi": [
+      "し"
+    ],
+    "kunyomi": [
+      "つか.う",
+      "つか.い",
+      "-つか.い",
+      "-づか.い"
+    ],
+    "meanings_vi": [
+      "sứ:  sứ giả, đi sứ",
+      "sử:  khiến cho",
+      "sử:  sai khiến"
+    ],
+    "meanings_en": [
+      "Use",
+      "Send On A Mission",
+      "Order",
+      "Messenger",
+      "Envoy",
+      "Ambassador",
+      "Cause"
+    ],
+    "radical": "nhân 人 (+6 nét)"
+  },
+  {
+    "id": "kanji-始",
+    "kanji": "始",
+    "hanviet": "THUỶ THÍ THỈ",
+    "strokes": 8,
+    "jlpt": "N4",
+    "onyomi": [
+      "し"
+    ],
+    "kunyomi": [
+      "はじ.める",
+      "-はじ.める",
+      "はじ.まる"
+    ],
+    "meanings_vi": [
+      "thuỷ:  bắt đầu, mới, trước"
+    ],
+    "meanings_en": [
+      "Commence",
+      "Begin"
+    ],
+    "radical": "nữ 女 (+5 nét)"
+  },
+  {
+    "id": "kanji-服",
+    "kanji": "服",
+    "hanviet": "PHỤC",
+    "strokes": 8,
+    "jlpt": "N4",
+    "onyomi": [
+      "ふく"
+    ],
+    "kunyomi": [],
+    "meanings_vi": [
+      "phục:  quần áo",
+      "phục:  phục tùng, phục dịch",
+      "phục:  làm việc"
+    ],
+    "meanings_en": [
+      "Clothing",
+      "Admit",
+      "Obey",
+      "Discharge"
+    ],
+    "radical": "nguyệt 月 (+4 nét)"
+  },
+  {
+    "id": "kanji-物",
+    "kanji": "物",
+    "hanviet": "VẬT",
+    "strokes": 8,
+    "jlpt": "N4",
+    "onyomi": [
+      "ぶつ",
+      "もつ"
+    ],
+    "kunyomi": [
+      "もの",
+      "もの-"
+    ],
+    "meanings_vi": [
+      "vật:  con vật",
+      "vật:  đồ vật"
+    ],
+    "meanings_en": [
+      "Thing",
+      "Object",
+      "Matter"
+    ],
+    "radical": "ngưu 牛 (+4 nét)"
+  },
+  {
+    "id": "kanji-屋",
+    "kanji": "屋",
+    "hanviet": "ỐC",
+    "strokes": 9,
+    "jlpt": "N4",
+    "onyomi": [
+      "おく"
+    ],
+    "kunyomi": [
+      "や"
+    ],
+    "meanings_vi": [
+      "ốc:  nhà",
+      "ốc:  mui xe"
+    ],
+    "meanings_en": [
+      "Roof",
+      "House",
+      "Shop",
+      "Dealer",
+      "Seller"
+    ],
+    "radical": "thi 尸 (+6 nét)"
+  },
+  {
+    "id": "kanji-度",
+    "kanji": "度",
+    "hanviet": "ĐẠC ĐỘ",
+    "strokes": 9,
+    "jlpt": "N4",
+    "onyomi": [
+      "ど",
+      "と",
+      "たく"
+    ],
+    "kunyomi": [
+      "たび",
+      "-た.い"
+    ],
+    "meanings_vi": [
+      "đạc:  đo lường",
+      "đạc:  mức độ",
+      "đạc:  lần"
+    ],
+    "meanings_en": [
+      "Degrees",
+      "Occurrence",
+      "Time",
+      "Counter For Occurrences",
+      "Consider",
+      "Attitude"
+    ],
+    "radical": "nghiễm 广 (+6 nét)"
+  },
+  {
+    "id": "kanji-待",
+    "kanji": "待",
+    "hanviet": "ĐÃI",
+    "strokes": 9,
+    "jlpt": "N4",
+    "onyomi": [
+      "たい"
+    ],
+    "kunyomi": [
+      "ま.つ",
+      "-ま.ち"
+    ],
+    "meanings_vi": [
+      "đãi:  đối xử, tiếp đãi",
+      "đãi:  đợi, chờ"
+    ],
+    "meanings_en": [
+      "Wait",
+      "Depend On"
+    ],
+    "radical": "xích 彳 (+6 nét)"
+  },
+  {
+    "id": "kanji-持",
+    "kanji": "持",
+    "hanviet": "TRÌ",
+    "strokes": 9,
+    "jlpt": "N4",
+    "onyomi": [
+      "じ"
+    ],
+    "kunyomi": [
+      "も.つ",
+      "-も.ち",
+      "も.てる"
+    ],
+    "meanings_vi": [
+      "trì:  cầm, giữ, nắm"
+    ],
+    "meanings_en": [
+      "Hold",
+      "Have"
+    ],
+    "radical": "thủ 手 (+6 nét)"
+  },
+  {
+    "id": "kanji-界",
+    "kanji": "界",
+    "hanviet": "GIỚI",
+    "strokes": 9,
+    "jlpt": "N4",
+    "onyomi": [
+      "かい"
+    ],
+    "kunyomi": [],
+    "meanings_vi": [
+      "giới:  ranh giới, giới hạn"
+    ],
+    "meanings_en": [
+      "World",
+      "Boundary"
+    ],
+    "radical": "điền 田 (+4 nét)"
+  },
+  {
+    "id": "kanji-発",
+    "kanji": "発",
+    "hanviet": "PHÁT",
+    "strokes": 9,
+    "jlpt": "N4",
+    "onyomi": [
+      "はつ",
+      "ほつ"
+    ],
+    "kunyomi": [
+      "た.つ",
+      "あば.く",
+      "おこ.る",
+      "つか.わす",
+      "はな.つ"
+    ],
+    "meanings_vi": [
+      "phát:  Hán văn Nhật Bản dùng như chữ 發"
+    ],
+    "meanings_en": [
+      "Departure",
+      "Discharge",
+      "Publish",
+      "Emit",
+      "Start From",
+      "Disclose",
+      "Counter For Gunshots"
+    ],
+    "radical": "bát 癶 (+4 nét)"
+  },
+  {
+    "id": "kanji-送",
+    "kanji": "送",
+    "hanviet": "TỐNG",
+    "strokes": 9,
+    "jlpt": "N4",
+    "onyomi": [
+      "そう"
+    ],
+    "kunyomi": [
+      "おく.る"
+    ],
+    "meanings_vi": [
+      "tống:  đưa, cho, biếu",
+      "tống:  đưa tiễn"
+    ],
+    "meanings_en": [
+      "Escort",
+      "Send"
+    ],
+    "radical": "sước 辵 (+6 nét)"
+  },
+  {
+    "id": "kanji-重",
+    "kanji": "重",
+    "hanviet": "TRÙNG TRỌNG",
+    "strokes": 9,
+    "jlpt": "N4",
+    "onyomi": [
+      "じゅう",
+      "ちょう"
+    ],
+    "kunyomi": [
+      "え",
+      "おも.い",
+      "おも.り",
+      "おも.なう",
+      "かさ.ねる",
+      "かさ.なる",
+      "おも"
+    ],
+    "meanings_vi": [
+      "trùng:  trùng, lặp lại",
+      "trùng:  lần",
+      "trọng:  nặng"
+    ],
+    "meanings_en": [
+      "Heavy",
+      "Important",
+      "Esteem",
+      "Respect",
+      "Heap Up",
+      "Pile Up",
+      "Nest Of Boxes",
+      "-fold"
+    ],
+    "radical": "lý 里 (+2 nét)"
+  },
+  {
+    "id": "kanji-起",
+    "kanji": "起",
+    "hanviet": "KHỈ KHỞI",
+    "strokes": 10,
+    "jlpt": "N4",
+    "onyomi": [
+      "き"
+    ],
+    "kunyomi": [
+      "お.きる",
+      "お.こる",
+      "お.こす",
+      "おこ.す",
+      "た.つ"
+    ],
+    "meanings_vi": [
+      "khỉ:  bắt đầu",
+      "khỉ:  đứng dậy",
+      "khởi:  bắt đầu"
+    ],
+    "meanings_en": [
+      "Rouse",
+      "Wake Up",
+      "Get Up"
+    ],
+    "radical": "tẩu 走 (+3 nét)"
+  },
+  {
+    "id": "kanji-院",
+    "kanji": "院",
+    "hanviet": "VIỆN",
+    "strokes": 10,
+    "jlpt": "N4",
+    "onyomi": [
+      "いん"
+    ],
+    "kunyomi": [],
+    "meanings_vi": [
+      "viện:  tường bao chung quanh",
+      "viện:  nơi, chỗ",
+      "viện:  toà quan"
+    ],
+    "meanings_en": [
+      "Inst.",
+      "Institution",
+      "Temple",
+      "Mansion",
+      "School"
+    ],
+    "radical": "phụ 阜 (+7 nét)"
+  },
+  {
+    "id": "kanji-終",
+    "kanji": "終",
+    "hanviet": "CHUNG",
+    "strokes": 11,
+    "jlpt": "N4",
+    "onyomi": [
+      "しゅう"
+    ],
+    "kunyomi": [
+      "お.わる",
+      "-お.わる",
+      "おわ.る",
+      "お.える",
+      "つい",
+      "つい.に"
+    ],
+    "meanings_vi": [
+      "chung:  hết",
+      "chung:  cuối, kết thúc"
+    ],
+    "meanings_en": [
+      "End",
+      "Finish"
+    ],
+    "radical": "mịch 糸 (+5 nét)"
+  },
+  {
+    "id": "kanji-習",
+    "kanji": "習",
+    "hanviet": "TẬP",
+    "strokes": 11,
+    "jlpt": "N4",
+    "onyomi": [
+      "しゅう",
+      "じゅ"
+    ],
+    "kunyomi": [
+      "なら.う",
+      "なら.い"
+    ],
+    "meanings_vi": [
+      "tập:  học đi học lại, luyện tập",
+      "tập:  quen"
+    ],
+    "meanings_en": [
+      "Learn"
+    ],
+    "radical": "vũ 羽 (+5 nét)"
+  },
+  {
+    "id": "kanji-転",
+    "kanji": "転",
+    "hanviet": "CHUYỂN",
+    "strokes": 11,
+    "jlpt": "N4",
+    "onyomi": [
+      "てん"
+    ],
+    "kunyomi": [
+      "ころ.がる",
+      "ころ.げる",
+      "ころ.がす",
+      "ころ.ぶ",
+      "まろ.ぶ",
+      "うたた",
+      "うつ.る",
+      "くる.めく"
+    ],
+    "meanings_vi": [
+      "chuyển:  quay vòng, chuyển, đổi"
+    ],
+    "meanings_en": [
+      "Revolve",
+      "Turn Around",
+      "Change"
+    ],
+    "radical": "xa 車 (+4 nét)"
+  },
+  {
+    "id": "kanji-運",
+    "kanji": "運",
+    "hanviet": "VẬN",
+    "strokes": 12,
+    "jlpt": "N4",
+    "onyomi": [
+      "うん"
+    ],
+    "kunyomi": [
+      "はこ.ぶ"
+    ],
+    "meanings_vi": [
+      "vận:  sự may mắn, vận may",
+      "vận:  sự chuyên trở"
+    ],
+    "meanings_en": [
+      "Carry",
+      "Luck",
+      "Destiny",
+      "Fate",
+      "Lot",
+      "Transport",
+      "Progress",
+      "Advance"
+    ],
+    "radical": "sước 辵 (+9 nét)"
+  },
+  {
+    "id": "kanji-開",
+    "kanji": "開",
+    "hanviet": "KHAI",
+    "strokes": 12,
+    "jlpt": "N4",
+    "onyomi": [
+      "かい"
+    ],
+    "kunyomi": [
+      "ひら.く",
+      "ひら.き",
+      "-びら.き",
+      "ひら.ける",
+      "あ.く",
+      "あ.ける"
+    ],
+    "meanings_vi": [
+      "khai:  mở ra",
+      "khai:  nở (hoa)",
+      "khai:  một phần chia"
+    ],
+    "meanings_en": [
+      "Open",
+      "Unfold",
+      "Unseal"
+    ],
+    "radical": "môn 門 (+4 nét)"
+  },
+  {
+    "id": "kanji-集",
+    "kanji": "集",
+    "hanviet": "TẬP",
+    "strokes": 12,
+    "jlpt": "N4",
+    "onyomi": [
+      "しゅう"
+    ],
+    "kunyomi": [
+      "あつ.まる",
+      "あつ.める",
+      "つど.う"
+    ],
+    "meanings_vi": [
+      "tập:  tập (sách)",
+      "tập:  tụ hợp lại"
+    ],
+    "meanings_en": [
+      "Gather",
+      "Meet",
+      "Congregate",
+      "Swarm",
+      "Flock"
+    ],
+    "radical": "chuy 隹 (+4 nét)"
+  },
+  {
+    "id": "kanji-飲",
+    "kanji": "飲",
+    "hanviet": "ẤM ẨM",
+    "strokes": 12,
+    "jlpt": "N4",
+    "onyomi": [
+      "いん",
+      "おん"
+    ],
+    "kunyomi": [
+      "の.む",
+      "-の.み"
+    ],
+    "meanings_vi": [
+      "ẩm:  uống",
+      "ẩm:  nước uống",
+      "ẩm:  thuốc nước"
+    ],
+    "meanings_en": [
+      "Drink",
+      "Smoke",
+      "Take"
+    ],
+    "radical": "thực 食 (+4 nét)"
+  },
+  {
+    "id": "kanji-業",
+    "kanji": "業",
+    "hanviet": "NGHIỆP",
+    "strokes": 13,
+    "jlpt": "N4",
+    "onyomi": [
+      "ぎょう",
+      "ごう"
+    ],
+    "kunyomi": [
+      "わざ"
+    ],
+    "meanings_vi": [
+      "nghiệp:  nghề nghiệp, sự nghiệp"
+    ],
+    "meanings_en": [
+      "Business",
+      "Vocation",
+      "Arts",
+      "Performance"
+    ],
+    "radical": "mộc 木 (+9 nét)"
+  },
+  {
+    "id": "kanji-漢",
+    "kanji": "漢",
+    "hanviet": "HÁN",
+    "strokes": 13,
+    "jlpt": "N4",
+    "onyomi": [
+      "かん"
+    ],
+    "kunyomi": [],
+    "meanings_vi": [
+      "hán:  đời nhà Hán",
+      "hán:  sông Hán",
+      "hán:  sông Ngân Hà"
+    ],
+    "meanings_en": [
+      "Sino-",
+      "China"
+    ],
+    "radical": "thuỷ 水 (+11 nét)"
+  },
+  {
+    "id": "kanji-歌",
+    "kanji": "歌",
+    "hanviet": "CA",
+    "strokes": 14,
+    "jlpt": "N4",
+    "onyomi": [
+      "か"
+    ],
+    "kunyomi": [
+      "うた",
+      "うた.う"
+    ],
+    "meanings_vi": [
+      "ca:  hát",
+      "ca:  bài hát, khúc ca"
+    ],
+    "meanings_en": [
+      "Song",
+      "Sing"
+    ],
+    "radical": "khiếm 欠 (+10 nét)"
+  },
+  {
+    "id": "kanji-親",
+    "kanji": "親",
+    "hanviet": "THÂN THẤN",
+    "strokes": 16,
+    "jlpt": "N4",
+    "onyomi": [
+      "しん"
+    ],
+    "kunyomi": [
+      "おや",
+      "おや-",
+      "した.しい",
+      "した.しむ"
+    ],
+    "meanings_vi": [
+      "thân:  cha mẹ",
+      "thân:  ruột thịt",
+      "thân:  thân cận, gần gũi"
+    ],
+    "meanings_en": [
+      "Parent",
+      "Intimacy",
+      "Relative",
+      "Familiarity",
+      "Dealer (cards)"
+    ],
+    "radical": "kiến 見 (+9 nét)"
+  },
+  {
+    "id": "kanji-病",
+    "kanji": "病",
+    "hanviet": "BỆNH",
+    "strokes": 10,
+    "jlpt": "N4",
+    "onyomi": [
+      "びょう",
+      "へい"
+    ],
+    "kunyomi": [
+      "や.む",
+      "-や.み",
+      "やまい"
+    ],
+    "meanings_vi": [
+      "bệnh:  bệnh tật"
+    ],
+    "meanings_en": [
+      "Ill",
+      "Sick"
+    ],
+    "radical": "nạch 疒 (+5 nét)"
+  },
+  {
+    "id": "kanji-別",
+    "kanji": "別",
+    "hanviet": "BIỆT",
+    "strokes": 7,
+    "jlpt": "N4",
+    "onyomi": [
+      "べつ"
+    ],
+    "kunyomi": [
+      "わか.れる",
+      "わ.ける"
+    ],
+    "meanings_vi": [
+      "biệt:  chia tay, xa cách",
+      "biệt:  khác biệt",
+      "biệt:  quay, ngoảnh, chuyển"
+    ],
+    "meanings_en": [
+      "Separate",
+      "Branch Off",
+      "Diverge",
+      "Fork",
+      "Another",
+      "Extra",
+      "Specially"
+    ],
+    "radical": "đao 刀 (+5 nét)"
+  },
+  {
+    "id": "kanji-注",
+    "kanji": "注",
+    "hanviet": "CHÚ",
+    "strokes": 8,
+    "jlpt": "N4",
+    "onyomi": [
+      "ちゅう"
+    ],
+    "kunyomi": [
+      "そそ.ぐ",
+      "さ.す",
+      "つ.ぐ"
+    ],
+    "meanings_vi": [
+      "chú:  rót nước",
+      "chú:  chú thích, giải nghĩa",
+      "chú:  chú ý"
+    ],
+    "meanings_en": [
+      "Pour",
+      "Irrigate",
+      "Shed (tears)",
+      "Flow Into",
+      "Concentrate On",
+      "Notes",
+      "Comment",
+      "Annotate"
+    ],
+    "radical": "thuỷ 水 (+5 nét)"
+  },
+  {
+    "id": "kanji-洋",
+    "kanji": "洋",
+    "hanviet": "DƯƠNG",
+    "strokes": 9,
+    "jlpt": "N4",
+    "onyomi": [
+      "よう"
+    ],
+    "kunyomi": [],
+    "meanings_vi": [
+      "dương:  tràn trề, phong phú",
+      "dương:  biển"
+    ],
+    "meanings_en": [
+      "Ocean",
+      "Sea",
+      "Foreign",
+      "Western Style"
+    ],
+    "radical": "thuỷ 水 (+6 nét)"
+  },
+  {
+    "id": "kanji-特",
+    "kanji": "特",
+    "hanviet": "ĐẶC",
+    "strokes": 10,
+    "jlpt": "N4",
+    "onyomi": [
+      "とく"
+    ],
+    "kunyomi": [],
+    "meanings_vi": [
+      "đặc:  con trâu đực",
+      "đặc:  riêng biệt, đặc biệt, khác hẳn mọi thứ"
+    ],
+    "meanings_en": [
+      "Special"
+    ],
+    "radical": "ngưu 牛 (+6 nét)"
+  },
+  {
+    "id": "kanji-意",
+    "kanji": "意",
+    "hanviet": "Y Ý",
+    "strokes": 13,
+    "jlpt": "N4",
+    "onyomi": [
+      "い"
+    ],
+    "kunyomi": [],
+    "meanings_vi": [
+      "ý:  ý, ý nghĩ",
+      "ý:  dự tính, ý định",
+      "ý:  lòng dạ"
+    ],
+    "meanings_en": [
+      "Idea",
+      "Mind",
+      "Heart",
+      "Taste",
+      "Thought",
+      "Desire",
+      "Care",
+      "Liking"
+    ],
+    "radical": "tâm 心 (+9 nét)"
+  },
+  {
+    "id": "kanji-味",
+    "kanji": "味",
+    "hanviet": "VỊ",
+    "strokes": 8,
+    "jlpt": "N4",
+    "onyomi": [
+      "み"
+    ],
+    "kunyomi": [
+      "あじ",
+      "あじ.わう"
+    ],
+    "meanings_vi": [
+      "vị:  mùi, hương vị"
+    ],
+    "meanings_en": [
+      "Flavor",
+      "Taste"
+    ],
+    "radical": "khẩu 口 (+5 nét)"
+  },
+  {
+    "id": "kanji-勉",
+    "kanji": "勉",
+    "hanviet": "MIỄN MẪN",
+    "strokes": 10,
+    "jlpt": "N4",
+    "onyomi": [
+      "べん"
+    ],
+    "kunyomi": [
+      "つと.める"
+    ],
+    "meanings_vi": [
+      "miễn:  cố sức, cố gắng",
+      "mẫn:  cố sức, cố gắng"
+    ],
+    "meanings_en": [
+      "Exertion",
+      "Endeavour",
+      "Encourage",
+      "Strive",
+      "Make Effort",
+      "Diligent"
+    ],
+    "radical": "lực 力 (+7 nét)"
+  },
+  {
+    "id": "kanji-旅",
+    "kanji": "旅",
+    "hanviet": "LỮ",
+    "strokes": 10,
+    "jlpt": "N4",
+    "onyomi": [
+      "りょ"
+    ],
+    "kunyomi": [
+      "たび"
+    ],
+    "meanings_vi": [
+      "lữ:  quán trọ",
+      "lữ:  lang thang, du lịch",
+      "lữ:  lữ (gồm 500 lính)"
+    ],
+    "meanings_en": [
+      "Trip",
+      "Travel"
+    ],
+    "radical": "phương 方 (+6 nét)"
+  },
+  {
+    "id": "kanji-員",
+    "kanji": "員",
+    "hanviet": "VIÊN VÂN",
+    "strokes": 10,
+    "jlpt": "N4",
+    "onyomi": [
+      "いん"
+    ],
+    "kunyomi": [],
+    "meanings_vi": [
+      "viên:  người, kẻ, gã"
+    ],
+    "meanings_en": [
+      "Employee",
+      "Member",
+      "Number",
+      "The One In Charge"
+    ],
+    "radical": "khẩu 口 (+7 nét)"
+  },
+  {
+    "id": "kanji-動",
+    "kanji": "動",
+    "hanviet": "ĐỘNG",
+    "strokes": 11,
+    "jlpt": "N4",
+    "onyomi": [
+      "どう"
+    ],
+    "kunyomi": [
+      "うご.く",
+      "うご.かす"
+    ],
+    "meanings_vi": [
+      "động:  động đậy, cử động, hoạt động"
+    ],
+    "meanings_en": [
+      "Move",
+      "Motion",
+      "Change",
+      "Confusion",
+      "Shift",
+      "Shake"
+    ],
+    "radical": "lực 力 (+9 nét)"
+  },
+  {
+    "id": "kanji-悪",
+    "kanji": "悪",
+    "hanviet": "ÁC",
+    "strokes": 11,
+    "jlpt": "N4",
+    "onyomi": [
+      "あく",
+      "お"
+    ],
+    "kunyomi": [
+      "わる.い",
+      "わる-",
+      "あ.し",
+      "にく.い",
+      "-にく.い",
+      "ああ",
+      "いずくに",
+      "いずくんぞ",
+      "にく.む"
+    ],
+    "meanings_vi": [
+      "ác:  ác độc",
+      "ác:  xấu xí"
+    ],
+    "meanings_en": [
+      "Bad",
+      "Vice",
+      "Rascal",
+      "False",
+      "Evil",
+      "Wrong"
+    ],
+    "radical": "tâm 心 (+7 nét)"
+  },
+  {
+    "id": "kanji-族",
+    "kanji": "族",
+    "hanviet": "THẤU TẤU TỘC",
+    "strokes": 11,
+    "jlpt": "N4",
+    "onyomi": [
+      "ぞく"
+    ],
+    "kunyomi": [],
+    "meanings_vi": [
+      "tộc:  loài, dòng dõi, họ"
+    ],
+    "meanings_en": [
+      "Tribe",
+      "Family"
+    ],
+    "radical": "phương 方 (+7 nét)"
+  },
+  {
+    "id": "kanji-着",
+    "kanji": "着",
+    "hanviet": "HỒ TRƯỚC TRỨ TRỮ",
+    "strokes": 12,
+    "jlpt": "N4",
+    "onyomi": [
+      "ちゃく",
+      "じゃく"
+    ],
+    "kunyomi": [
+      "き.る",
+      "-ぎ",
+      "き.せる",
+      "-き.せ",
+      "つ.く",
+      "つ.ける"
+    ],
+    "meanings_vi": [
+      "trước:  mặc áo",
+      "trước:  biên soạn sách",
+      "trước:  nước cờ"
+    ],
+    "meanings_en": [
+      "Don",
+      "Arrive",
+      "Wear",
+      "Counter For Suits Of Clothing"
+    ],
+    "radical": "mục 目 (+6 nét)"
+  },
+  {
+    "id": "kanji-野",
+    "kanji": "野",
+    "hanviet": "DÃ",
+    "strokes": 11,
+    "jlpt": "N4",
+    "onyomi": [
+      "や",
+      "しょ"
+    ],
+    "kunyomi": [
+      "の",
+      "の-"
+    ],
+    "meanings_vi": [
+      "dã:  đồng nội",
+      "dã:  không thuần",
+      "dã:  rất, vô cùng"
+    ],
+    "meanings_en": [
+      "Plains",
+      "Field",
+      "Rustic",
+      "Civilian Life"
+    ],
+    "radical": "lý 里 (+4 nét)"
+  },
+  {
+    "id": "kanji-風",
+    "kanji": "風",
+    "hanviet": "PHONG PHÓNG PHÚNG",
+    "strokes": 9,
+    "jlpt": "N4",
+    "onyomi": [
+      "ふう",
+      "ふ"
+    ],
+    "kunyomi": [
+      "かぜ",
+      "かざ-",
+      "-かぜ"
+    ],
+    "meanings_vi": [
+      "phong:  gió",
+      "phong:  tục, thói quen",
+      "phong:  bệnh phong"
+    ],
+    "meanings_en": [
+      "Wind",
+      "Air",
+      "Style",
+      "Manner"
+    ],
+    "radical": "phong 風 (+0 nét)"
+  },
+  {
+    "id": "kanji-新",
+    "kanji": "新",
+    "hanviet": "TÂN",
+    "strokes": 13,
+    "jlpt": "N4",
+    "onyomi": [
+      "しん"
+    ],
+    "kunyomi": [
+      "あたら.しい",
+      "あら.た",
+      "あら-",
+      "にい-"
+    ],
+    "meanings_vi": [
+      "tân:  mới mẻ"
+    ],
+    "meanings_en": [
+      "New"
+    ],
+    "radical": "cân 斤 (+9 nét)"
+  },
+  {
+    "id": "kanji-問",
+    "kanji": "問",
+    "hanviet": "VẤN",
+    "strokes": 11,
+    "jlpt": "N4",
+    "onyomi": [
+      "もん"
+    ],
+    "kunyomi": [
+      "と.う",
+      "と.い",
+      "とん"
+    ],
+    "meanings_vi": [
+      "vấn:  hỏi",
+      "vấn:  tra xét",
+      "vấn:  hỏi thăm"
+    ],
+    "meanings_en": [
+      "Question",
+      "Ask",
+      "Problem"
+    ],
+    "radical": "khẩu 口 (+8 nét)"
+  },
+  {
+    "id": "kanji-銀",
+    "kanji": "銀",
+    "hanviet": "NGÂN",
+    "strokes": 14,
+    "jlpt": "N4",
+    "onyomi": [
+      "ぎん"
+    ],
+    "kunyomi": [
+      "しろがね"
+    ],
+    "meanings_vi": [
+      "ngân:  bạc, Ag"
+    ],
+    "meanings_en": [
+      "Silver"
+    ],
+    "radical": "kim 金 (+6 nét)"
+  },
+  {
+    "id": "kanji-題",
+    "kanji": "題",
+    "hanviet": "ĐỀ ĐỆ",
+    "strokes": 18,
+    "jlpt": "N4",
+    "onyomi": [
+      "だい"
+    ],
+    "kunyomi": [],
+    "meanings_vi": [
+      "đề:  trán (trên đầu)",
+      "đề:  đề bài, tiêu đề"
+    ],
+    "meanings_en": [
+      "Topic",
+      "Subject"
+    ],
+    "radical": "hiệt 頁 (+9 nét)"
+  },
+  {
+    "id": "kanji-館",
+    "kanji": "館",
+    "hanviet": "QUÁN",
+    "strokes": 16,
+    "jlpt": "N4",
+    "onyomi": [
+      "かん"
+    ],
+    "kunyomi": [
+      "やかた",
+      "たて"
+    ],
+    "meanings_vi": [
+      "quán:  nhà, nơi ở, quán trọ"
+    ],
+    "meanings_en": [
+      "Building",
+      "Mansion",
+      "Large Building",
+      "Palace"
+    ],
+    "radical": "thực 食 (+8 nét)"
+  },
+  {
+    "id": "kanji-駅",
+    "kanji": "駅",
+    "hanviet": "DỊCH",
+    "strokes": 14,
+    "jlpt": "N4",
+    "onyomi": [
+      "えき"
+    ],
+    "kunyomi": [],
+    "meanings_vi": [
+      "Station"
+    ],
+    "meanings_en": [
+      "Station"
+    ],
+    "radical": "mã 馬 (+4 nét)"
+  },
+  {
+    "id": "kanji-料",
+    "kanji": "料",
+    "hanviet": "LIÊU LIỆU",
+    "strokes": 10,
+    "jlpt": "N4",
+    "onyomi": [
+      "りょう"
+    ],
+    "kunyomi": [],
+    "meanings_vi": [
+      "liệu:  đo, lường tính",
+      "liệu:  liệu đoán",
+      "liệu:  vuốt ve"
+    ],
+    "meanings_en": [
+      "Fee",
+      "Materials"
+    ],
+    "radical": "đẩu 斗 (+6 nét)"
+  },
+  {
+    "id": "kanji-映",
+    "kanji": "映",
+    "hanviet": "ÁNH",
+    "strokes": 9,
+    "jlpt": "N4",
+    "onyomi": [
+      "えい"
+    ],
+    "kunyomi": [
+      "うつ.る",
+      "うつ.す",
+      "は.える",
+      "-ば.え"
+    ],
+    "meanings_vi": [
+      "ánh:  ánh sáng"
+    ],
+    "meanings_en": [
+      "Reflect",
+      "Reflection",
+      "Projection"
+    ],
+    "radical": "nhật 日 (+5 nét)"
+  },
+  {
+    "id": "kanji-私",
+    "kanji": "私",
+    "hanviet": "TƯ",
+    "strokes": 7,
+    "jlpt": "N4",
+    "onyomi": [
+      "し"
+    ],
+    "kunyomi": [
+      "わたくし",
+      "わたし"
+    ],
+    "meanings_vi": [
+      "tư:  riêng, việc riêng, của riêng"
+    ],
+    "meanings_en": [
+      "Private",
+      "I",
+      "Me"
+    ],
+    "radical": "hoà 禾 (+2 nét)"
+  },
+  {
+    "id": "kanji-帰",
+    "kanji": "帰",
+    "hanviet": "QUY",
+    "strokes": 10,
+    "jlpt": "N4",
+    "onyomi": [
+      "き"
+    ],
+    "kunyomi": [
+      "かえ.る",
+      "かえ.す",
+      "おく.る",
+      "とつ.ぐ"
+    ],
+    "meanings_vi": [
+      "quy:  trở về"
+    ],
+    "meanings_en": [
+      "Homecoming",
+      "Arrive At",
+      "Lead To",
+      "Result In"
+    ],
+    "radical": "cân 巾 (+7 nét)"
+  },
+  {
+    "id": "kanji-春",
+    "kanji": "春",
+    "hanviet": "XUÂN",
+    "strokes": 9,
+    "jlpt": "N4",
+    "onyomi": [
+      "しゅん"
+    ],
+    "kunyomi": [
+      "はる"
+    ],
+    "meanings_vi": [
+      "xuân:  mùa xuân"
+    ],
+    "meanings_en": [
+      "Springtime",
+      "Spring (season)"
+    ],
+    "radical": "nhật 日 (+5 nét)"
+  },
+  {
+    "id": "kanji-昼",
+    "kanji": "昼",
+    "hanviet": "TRÚ",
+    "strokes": 9,
+    "jlpt": "N4",
+    "onyomi": [
+      "ちゅう"
+    ],
+    "kunyomi": [
+      "ひる"
+    ],
+    "meanings_vi": [
+      "trú:  ban ngày"
+    ],
+    "meanings_en": [
+      "Daytime",
+      "Noon"
+    ],
+    "radical": "thi 尸 (+6 nét), nhật 日 (+5 nét)"
+  },
+  {
+    "id": "kanji-秋",
+    "kanji": "秋",
+    "hanviet": "THU THÂU",
+    "strokes": 9,
+    "jlpt": "N4",
+    "onyomi": [
+      "しゅう"
+    ],
+    "kunyomi": [
+      "あき",
+      "とき"
+    ],
+    "meanings_vi": [
+      "thu:  mùa thu",
+      "thu:  dây thắng đái",
+      "thâu:  mùa thu"
+    ],
+    "meanings_en": [
+      "Autumn"
+    ],
+    "radical": "hoà 禾 (+4 nét)"
+  },
+  {
+    "id": "kanji-計",
+    "kanji": "計",
+    "hanviet": "KÊ KẾ",
+    "strokes": 9,
+    "jlpt": "N4",
+    "onyomi": [
+      "けい"
+    ],
+    "kunyomi": [
+      "はか.る",
+      "はか.らう"
+    ],
+    "meanings_vi": [
+      "kế:  mưu kế, kế sách"
+    ],
+    "meanings_en": [
+      "Plot",
+      "Plan",
+      "Scheme",
+      "Measure"
+    ],
+    "radical": "ngôn 言 (+2 nét)"
+  },
+  {
+    "id": "kanji-建",
+    "kanji": "建",
+    "hanviet": "KIẾN KIỂN",
+    "strokes": 9,
+    "jlpt": "N4",
+    "onyomi": [
+      "けん",
+      "こん"
+    ],
+    "kunyomi": [
+      "た.てる",
+      "た.て",
+      "-だ.て",
+      "た.つ"
+    ],
+    "meanings_vi": [
+      "kiến:  xây dựng"
+    ],
+    "meanings_en": [
+      "Build"
+    ],
+    "radical": "dẫn 廴 (+6 nét)"
+  },
+  {
+    "id": "kanji-英",
+    "kanji": "英",
+    "hanviet": "ANH",
+    "strokes": 8,
+    "jlpt": "N4",
+    "onyomi": [
+      "えい"
+    ],
+    "kunyomi": [
+      "はなぶさ"
+    ],
+    "meanings_vi": [
+      "anh:  hoa",
+      "anh:  người tài giỏi",
+      "anh:  nước Anh"
+    ],
+    "meanings_en": [
+      "England",
+      "English",
+      "Hero",
+      "Outstanding",
+      "Calyx"
+    ],
+    "radical": "thảo 艸 (+5 nét)"
+  },
+  {
+    "id": "kanji-飯",
+    "kanji": "飯",
+    "hanviet": "PHÃN PHẠN",
+    "strokes": 12,
+    "jlpt": "N4",
+    "onyomi": [
+      "はん"
+    ],
+    "kunyomi": [
+      "めし"
+    ],
+    "meanings_vi": [
+      "phãn:  cơm",
+      "phãn:  ăn cơm",
+      "phạn:  cơm"
+    ],
+    "meanings_en": [
+      "Meal",
+      "Boiled Rice"
+    ],
+    "radical": "thực 食 (+4 nét)"
+  },
+  {
+    "id": "kanji-曜",
+    "kanji": "曜",
+    "hanviet": "DIỆU",
+    "strokes": 18,
+    "jlpt": "N4",
+    "onyomi": [
+      "よう"
+    ],
+    "kunyomi": [],
+    "meanings_vi": [
+      "diệu:  bóng sáng mặt trời",
+      "diệu:  chói mắt"
+    ],
+    "meanings_en": [
+      "Weekday"
+    ],
+    "radical": "nhật 日 (+14 nét)"
+  },
+  {
+    "id": "kanji-品",
+    "kanji": "品",
+    "hanviet": "PHẨM",
+    "strokes": 9,
+    "jlpt": "N4",
+    "onyomi": [
+      "ひん",
+      "ほん"
+    ],
+    "kunyomi": [
+      "しな"
+    ],
+    "meanings_vi": [
+      "phẩm:  đồ vật",
+      "phẩm:  chủng loại",
+      "phẩm:  phẩm hàm, hạng quan, hạng, cấp"
+    ],
+    "meanings_en": [
+      "Goods",
+      "Refinement",
+      "Dignity",
+      "Article",
+      "Counter For Meal Courses"
+    ],
+    "radical": "khẩu 口 (+6 nét)"
+  },
+  {
+    "id": "kanji-急",
+    "kanji": "急",
+    "hanviet": "CẤP",
+    "strokes": 9,
+    "jlpt": "N4",
+    "onyomi": [
+      "きゅう"
+    ],
+    "kunyomi": [
+      "いそ.ぐ",
+      "いそ.ぎ",
+      "せ.く"
+    ],
+    "meanings_vi": [
+      "cấp:  vội vàng, kíp, nóng nảy"
+    ],
+    "meanings_en": [
+      "Hurry",
+      "Emergency",
+      "Sudden",
+      "Steep"
+    ],
+    "radical": "tâm 心 (+5 nét)"
+  },
+  {
+    "id": "kanji-真",
+    "kanji": "真",
+    "hanviet": "CHÂN",
+    "strokes": 10,
+    "jlpt": "N4",
+    "onyomi": [
+      "しん"
+    ],
+    "kunyomi": [
+      "ま",
+      "ま-",
+      "まこと"
+    ],
+    "meanings_vi": [
+      "chân:  thật, thực",
+      "chân:  người tu hành"
+    ],
+    "meanings_en": [
+      "True",
+      "Reality",
+      "Buddhist Sect"
+    ],
+    "radical": "mục 目 (+5 nét)"
+  },
+  {
+    "id": "kanji-堂",
+    "kanji": "堂",
+    "hanviet": "ĐÀNG ĐƯỜNG",
+    "strokes": 11,
+    "jlpt": "N4",
+    "onyomi": [
+      "どう"
+    ],
+    "kunyomi": [],
+    "meanings_vi": [
+      "đàng:  nhà chính, gian nhà giữa",
+      "đường:  nhà chính, gian nhà giữa"
+    ],
+    "meanings_en": [
+      "Public Chamber",
+      "Hall"
+    ],
+    "radical": "thổ 土 (+8 nét)"
+  },
+  {
+    "id": "kanji-試",
+    "kanji": "試",
+    "hanviet": "THÍ",
+    "strokes": 13,
+    "jlpt": "N4",
+    "onyomi": [
+      "し"
+    ],
+    "kunyomi": [
+      "こころ.みる",
+      "ため.す"
+    ],
+    "meanings_vi": [
+      "thí:  thử, thử nghiệm",
+      "thí:  thi tài"
+    ],
+    "meanings_en": [
+      "Test",
+      "Try",
+      "Attempt",
+      "Experiment",
+      "Ordeal"
+    ],
+    "radical": "ngôn 言 (+6 nét)"
+  },
+  {
+    "id": "kanji-借",
+    "kanji": "借",
+    "hanviet": "TÁ",
+    "strokes": 10,
+    "jlpt": "N4",
+    "onyomi": [
+      "しゃく"
+    ],
+    "kunyomi": [
+      "か.りる"
+    ],
+    "meanings_vi": [
+      "tá:  vay mượn"
+    ],
+    "meanings_en": [
+      "Borrow",
+      "Rent"
+    ],
+    "radical": "nhân 人 (+8 nét)"
+  },
+  {
+    "id": "kanji-験",
+    "kanji": "験",
+    "hanviet": "NGHIỆM",
+    "strokes": 18,
+    "jlpt": "N4",
+    "onyomi": [
+      "けん",
+      "げん"
+    ],
+    "kunyomi": [
+      "あかし",
+      "しるし",
+      "ため.す",
+      "ためし"
+    ],
+    "meanings_vi": [
+      "nghiệm:  chứng nghiệm, kiểm nghiệm",
+      "nghiệm:  hiệu nghiệm"
+    ],
+    "meanings_en": [
+      "Verification",
+      "Effect",
+      "Testing"
+    ],
+    "radical": "mã 馬 (+8 nét)"
+  },
+  {
+    "id": "kanji-質",
+    "kanji": "質",
+    "hanviet": "CHÍ CHẤT",
+    "strokes": 15,
+    "jlpt": "N4",
+    "onyomi": [
+      "しつ",
+      "しち",
+      "ち"
+    ],
+    "kunyomi": [
+      "たち",
+      "ただ.す",
+      "もと",
+      "わりふ"
+    ],
+    "meanings_vi": [
+      "chất:  thể chất (rắn, lỏng, khí)",
+      "chất:  tư chất",
+      "chất:  chất phác, mộc mạc"
+    ],
+    "meanings_en": [
+      "Substance",
+      "Quality",
+      "Matter",
+      "Temperament"
+    ],
+    "radical": "bối 貝 (+8 nét)"
+  },
+  {
+    "id": "kanji-貸",
+    "kanji": "貸",
+    "hanviet": "THẢI THẮC",
+    "strokes": 12,
+    "jlpt": "N4",
+    "onyomi": [
+      "たい"
+    ],
+    "kunyomi": [
+      "か.す",
+      "か.し-",
+      "かし-"
+    ],
+    "meanings_vi": [
+      "thải:  vay mượn",
+      "thải:  cho vay"
+    ],
+    "meanings_en": [
+      "Lend"
+    ],
+    "radical": "bối 貝 (+5 nét)"
+  }
+]
