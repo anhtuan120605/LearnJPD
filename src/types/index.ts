@@ -74,6 +74,12 @@ export interface GrammarPoint {
   structure: string;
   meaning: string;
   explanation: string;
+  notes?: string[];
+  subPoints?: Array<{
+    title: string;
+    explanation: string;
+    examples?: Array<{ ja: string; kana: string; vi: string }>;
+  }>;
   examples: Array<{
     ja: string;
     kana: string;
@@ -81,11 +87,36 @@ export interface GrammarPoint {
   }>;
 }
 
+export interface GrammarSentenceItem {
+  id: string;
+  ja: string;
+  kana: string;
+  vi: string;
+}
+
+export interface GrammarConversationItem {
+  speaker: string;
+  ja: string;
+  kana?: string;
+  vi: string;
+}
+
 export interface GrammarLesson {
   lesson: number;
   title: string;
   level: string;
-  points: GrammarPoint[];
+  bunkei?: GrammarSentenceItem[]; // II. Phần dịch Mẫu câu (文型)
+  reibun?: GrammarSentenceItem[]; // II. Phần dịch Ví dụ (例文)
+  kaiwa?: {
+    title: string;
+    lines: GrammarConversationItem[];
+  }; // II. Phần dịch Hội thoại (会話)
+  referenceInfo?: {
+    title: string;
+    description?: string;
+    items: Array<{ ja: string; kana?: string; vi: string; extra?: string }>;
+  }; // III. Từ và thông tin tham khảo (参考語彙)
+  points: GrammarPoint[]; // IV. Giải thích ngữ pháp chi tiết (文法解説)
 }
 
 export interface ReadingQuestion {

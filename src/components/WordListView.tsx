@@ -295,78 +295,81 @@ export const WordListView: React.FC<WordListViewProps> = ({
                     isMastered ? 'bg-emerald-500/[0.02]' : ''
                   } ${isHidden ? 'opacity-60 bg-slate-100/50 dark:bg-zinc-800/20' : ''}`}
                 >
-                  <div className="flex items-center justify-between w-full">
-                    {/* Cột trái: Số thứ tự, Loa, Từ vựng */}
-                    <div className="flex items-center space-x-4">
-                      <span className="text-xs font-mono text-slate-400 w-6 text-center">
+                  <div className="flex items-start justify-between gap-3 sm:gap-4 w-full">
+                    {/* Cột chính: Số thứ tự, Loa, Tiếng Nhật & Nghĩa tiếng Việt */}
+                    <div className="flex items-start space-x-3 sm:space-x-4 flex-1 min-w-0">
+                      <span className="text-xs font-mono text-slate-400 w-6 pt-1 text-center shrink-0">
                         {idx + 1}
                       </span>
 
                       {/* Nút phát âm từ vựng */}
                       <button
                         onClick={() => speakJapanese(word.kana || word.kanji)}
-                        className="p-2 rounded-xl text-rose-500 bg-rose-50 dark:bg-rose-950/30 hover:scale-110 active:scale-95 transition"
+                        className="p-2 rounded-xl text-rose-500 bg-rose-50 dark:bg-rose-950/30 hover:scale-110 active:scale-95 transition shrink-0 mt-0.5"
                         title="Nghe phát âm từ"
                       >
                         <Volume2 className="w-4 h-4" />
                       </button>
 
-                      {/* Kanji & Furigana */}
-                      <div>
-                        {showFurigana && (
-                          <p className="text-xs font-medium text-slate-400 dark:text-zinc-500">
-                            {word.kana}
-                          </p>
-                        )}
-                        <div className="flex items-center space-x-2">
-                          <h4 className="text-xl sm:text-2xl font-jp font-bold text-slate-900 dark:text-white leading-tight">
-                            {word.kanji || word.kana}
-                          </h4>
-                          {word.kanji && (
-                            <button
-                              onClick={() => setStrokeKanji({ kanji: word.kanji, hanviet: word.hanviet, meaning: word.meaning })}
-                              title={`Xem nét viết chữ ${word.kanji}`}
-                              className="p-1 rounded-lg text-slate-400 hover:text-blue-600 hover:bg-blue-50 dark:hover:bg-slate-800 transition"
-                            >
-                              <PenTool className="w-3.5 h-3.5" />
-                            </button>
+                      {/* Khối Nội dung Từ vựng: Chia 2 cột linh hoạt hoặc xếp chồng khi câu dài / màn hình hẹp */}
+                      <div className="flex-1 min-w-0 grid grid-cols-1 lg:grid-cols-12 gap-2 lg:gap-6 items-baseline">
+                        {/* Cột Tiếng Nhật (Kanji & Furigana) */}
+                        <div className="lg:col-span-6 min-w-0">
+                          {showFurigana && (
+                            <p className="text-xs font-medium text-slate-400 dark:text-zinc-500 font-jp break-words">
+                              {word.kana}
+                            </p>
                           )}
-                          {isHidden && (
-                            <span className="text-[10px] font-bold px-1.5 py-0.5 rounded bg-red-100 dark:bg-red-950/60 text-red-600 dark:text-red-400">
-                              Đã ẩn
+                          <div className="flex flex-wrap items-baseline gap-2">
+                            <h4 className="text-lg sm:text-xl font-jp font-bold text-slate-900 dark:text-white leading-snug break-words">
+                              {word.kanji || word.kana}
+                            </h4>
+                            {word.kanji && (
+                              <button
+                                onClick={() => setStrokeKanji({ kanji: word.kanji, hanviet: word.hanviet, meaning: word.meaning })}
+                                title={`Xem nét viết chữ ${word.kanji}`}
+                                className="p-1 rounded-lg text-slate-400 hover:text-blue-600 hover:bg-blue-50 dark:hover:bg-slate-800 transition"
+                              >
+                                <PenTool className="w-3.5 h-3.5" />
+                              </button>
+                            )}
+                            {word.hanviet && (
+                              <span className="inline-block text-[10px] font-extrabold uppercase tracking-wide text-rose-600 dark:text-rose-400 bg-rose-50 dark:bg-rose-950/40 px-1.5 py-0.5 rounded">
+                                {word.hanviet}
+                              </span>
+                            )}
+                            {isHidden && (
+                              <span className="text-[10px] font-bold px-1.5 py-0.5 rounded bg-red-100 dark:bg-red-950/60 text-red-600 dark:text-red-400">
+                                Đã ẩn
+                              </span>
+                            )}
+                          </div>
+                        </div>
+
+                        {/* Cột Nghĩa tiếng Việt */}
+                        <div className="lg:col-span-6 min-w-0">
+                          {showMeaning ? (
+                            <div>
+                              <p className="text-sm sm:text-base font-semibold text-slate-800 dark:text-zinc-200 leading-relaxed break-words">
+                                {word.meaning}
+                              </p>
+                              {word.meaning_en && (
+                                <p className="text-xs text-slate-400 dark:text-zinc-500 italic mt-0.5 break-words">
+                                  {word.meaning_en}
+                                </p>
+                              )}
+                            </div>
+                          ) : (
+                            <span className="text-xs italic text-slate-400 font-mono select-none">
+                              [Đã ẩn nghĩa - nhấp để hiện]
                             </span>
                           )}
                         </div>
-                        {word.hanviet && (
-                          <span className="inline-block mt-0.5 text-[11px] font-extrabold uppercase tracking-wide text-rose-600 dark:text-rose-400 bg-rose-50 dark:bg-rose-950/40 px-1.5 py-0.2 rounded">
-                            {word.hanviet}
-                          </span>
-                        )}
                       </div>
                     </div>
 
-                    {/* Cột giữa: Nghĩa tiếng Việt */}
-                    <div className="flex-1 px-6 text-right sm:text-left">
-                      {showMeaning ? (
-                        <div>
-                          <p className="text-sm sm:text-base font-semibold text-slate-800 dark:text-zinc-200">
-                            {word.meaning}
-                          </p>
-                          {word.meaning_en && (
-                            <p className="text-xs text-slate-400 dark:text-zinc-500 hidden sm:block italic">
-                              {word.meaning_en}
-                            </p>
-                          )}
-                        </div>
-                      ) : (
-                        <span className="text-xs italic text-slate-400 font-mono select-none">
-                          [Đã ẩn nghĩa - nhấp để hiện]
-                        </span>
-                      )}
-                    </div>
-
                     {/* Cột phải: Toggle ví dụ riêng, Sao, Thuộc & Xóa/Ẩn từ */}
-                    <div className="flex items-center space-x-1.5">
+                    <div className="flex items-center space-x-1 sm:space-x-1.5 shrink-0 pt-0.5">
                       {hasExamples && !showExamples && (
                         <button
                           onClick={() => toggleWordExpand(word.id)}
