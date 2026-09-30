@@ -33,3 +33,4 @@ dist-ssr
 # Temporary / scratch
 scratch/
 vnedict.zip
+scripts/data_cache/
