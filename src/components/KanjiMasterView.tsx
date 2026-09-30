@@ -1,27 +1,33 @@
 import React, { useState } from 'react';
-import { KanjiItem } from '../types';
-import { Search, Volume2, Star, CheckCircle, Info, Sparkles, X } from 'lucide-react';
+import { KanjiItem, WordItem } from '../types';
+import { Search, Volume2, Star, Sparkles, X, Map, LayoutGrid } from 'lucide-react';
 import { speakJapanese } from '../lib/audio';
+import { KanjiRoadmapView } from './KanjiRoadmapView';
 
 interface KanjiMasterViewProps {
   kanjiList: KanjiItem[];
+  allVocabWords?: WordItem[];
   currentLevel: string;
   onSelectLevel: (lvl: string) => void;
   masteredKanji: string[];
   favoriteKanji: string[];
   onToggleMaster: (id: string) => void;
   onToggleFavorite: (id: string) => void;
+  streak?: number;
 }
 
 export const KanjiMasterView: React.FC<KanjiMasterViewProps> = ({
   kanjiList,
+  allVocabWords = [],
   currentLevel,
   onSelectLevel,
   masteredKanji,
   favoriteKanji,
   onToggleMaster,
-  onToggleFavorite
+  onToggleFavorite,
+  streak = 0,
 }) => {
+  const [activeSubTab, setActiveSubTab] = useState<'roadmap' | 'explorer'>('roadmap');
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedKanji, setSelectedKanji] = useState<KanjiItem | null>(null);
   const [filterType, setFilterType] = useState<'all' | 'unlearned' | 'mastered'>('all');
@@ -43,14 +49,57 @@ export const KanjiMasterView: React.FC<KanjiMasterViewProps> = ({
 
   return (
     <div className="space-y-6">
-      {/* Level Selector N5 -> N1 & Stats */}
-      <div className="bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 rounded-3xl p-6 shadow-sm">
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-          <div>
-            <h2 className="text-xl font-extrabold text-slate-900 dark:text-white flex items-center space-x-2">
-              <Sparkles className="w-5 h-5 text-rose-500" />
-              <span>Chinh Phục Kanji Chuyên Sâu ({currentLevel})</span>
-            </h2>
+      {/* Chuyển đổi chế độ: Lộ trình 10 chữ / Tra cứu từ điển */}
+      <div className="flex items-center justify-between bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 p-2 rounded-2xl shadow-sm">
+        <div className="flex items-center space-x-1.5">
+          <button
+            onClick={() => setActiveSubTab('roadmap')}
+            className={`px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition flex items-center space-x-2 ${
+              activeSubTab === 'roadmap'
+                ? 'bg-blue-600 text-white shadow-md shadow-blue-500/20'
+                : 'text-slate-600 dark:text-zinc-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-zinc-800'
+            }`}
+          >
+            <Map className="w-4 h-4" />
+            <span>Lộ trình học Kanji (10 chữ/ngày)</span>
+          </button>
+
+          <button
+            onClick={() => setActiveSubTab('explorer')}
+            className={`px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition flex items-center space-x-2 ${
+              activeSubTab === 'explorer'
+                ? 'bg-rose-500 text-white shadow-md shadow-rose-500/20'
+                : 'text-slate-600 dark:text-zinc-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-zinc-800'
+            }`}
+          >
+            <LayoutGrid className="w-4 h-4" />
+            <span>Tra cứu từ điển Kanji ({kanjiList.length})</span>
+          </button>
+        </div>
+      </div>
+
+      {activeSubTab === 'roadmap' ? (
+        <KanjiRoadmapView
+          kanjiList={kanjiList}
+          allVocabWords={allVocabWords}
+          currentLevel={currentLevel}
+          onSelectLevel={onSelectLevel}
+          masteredKanji={masteredKanji}
+          favoriteKanji={favoriteKanji}
+          onToggleMaster={onToggleMaster}
+          onToggleFavorite={onToggleFavorite}
+          streak={streak}
+        />
+      ) : (
+        <div className="space-y-6">
+          {/* Level Selector N5 -> N1 & Stats */}
+          <div className="bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 rounded-3xl p-6 shadow-sm">
+            <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+              <div>
+                <h2 className="text-xl font-extrabold text-slate-900 dark:text-white flex items-center space-x-2">
+                  <Sparkles className="w-5 h-5 text-rose-500" />
+                  <span>Chinh Phục Kanji Chuyên Sâu ({currentLevel})</span>
+                </h2>
             <p className="text-xs text-slate-500 dark:text-zinc-400 mt-1">
               Đầy đủ Âm Hán Việt, Onyomi, Kunyomi, Số nét và Nghĩa chi tiết
             </p>
@@ -58,21 +107,44 @@ export const KanjiMasterView: React.FC<KanjiMasterViewProps> = ({
 
           {/* Level Tabs */}
           <div className="flex items-center space-x-1 bg-slate-100 dark:bg-zinc-800 p-1.5 rounded-2xl">
-            {['N5', 'N4', 'N3', 'N2', 'N1'].map((lvl) => (
-              <button
-                key={lvl}
-                onClick={() => onSelectLevel(lvl)}
-                className={`px-4 py-2 rounded-xl text-xs font-bold transition ${
-                  currentLevel === lvl
-                    ? 'bg-rose-500 text-white shadow-md shadow-rose-500/20'
-                    : 'text-slate-600 dark:text-zinc-300 hover:text-slate-900 dark:hover:text-white'
-                }`}
-              >
-                {lvl}
-              </button>
-            ))}
+            {['N5', 'N4', 'N3', 'N2', 'N1'].map((lvl) => {
+              const isDemo = ['N3', 'N2', 'N1'].includes(lvl);
+              const isSelected = currentLevel === lvl;
+              return (
+                <button
+                  key={lvl}
+                  onClick={() => onSelectLevel(lvl)}
+                  className={`px-3 sm:px-4 py-2 rounded-xl text-xs font-bold transition flex items-center space-x-1.5 ${
+                    isSelected
+                      ? 'bg-rose-500 text-white shadow-md shadow-rose-500/20'
+                      : 'text-slate-600 dark:text-zinc-300 hover:text-slate-900 dark:hover:text-white'
+                  }`}
+                >
+                  <span>{lvl}</span>
+                  {isDemo && (
+                    <span className={`text-[9px] font-black uppercase px-1 py-0.2 rounded-sm ${
+                      isSelected ? 'bg-amber-400 text-slate-900' : 'bg-amber-500 text-white'
+                    }`}>
+                      Demo
+                    </span>
+                  )}
+                </button>
+              );
+            })}
           </div>
         </div>
+
+        {/* Thông báo Demo nếu đang chọn N3, N2, N1 */}
+        {['N3', 'N2', 'N1'].includes(currentLevel) && (
+          <div className="mt-4 bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-900/40 rounded-xl px-3.5 py-2 text-xs text-amber-800 dark:text-amber-300 flex items-center space-x-2">
+            <span className="px-1.5 py-0.5 rounded bg-amber-500 text-white font-black text-[9px] uppercase tracking-wider shrink-0">
+              DEMO
+            </span>
+            <span>
+              Cấp độ Kanji <strong>{currentLevel}</strong> hiện đang ở phiên bản <strong>Demo (Thử nghiệm)</strong>. Dữ liệu chữ Hán, số nét, âm đọc và ví dụ đang tiếp tục được cập nhật.
+            </span>
+          </div>
+        )}
 
         {/* Search & Filter */}
         <div className="mt-6 flex flex-col sm:flex-row items-center justify-between gap-4 pt-4 border-t border-slate-100 dark:border-zinc-800">
@@ -261,6 +333,9 @@ export const KanjiMasterView: React.FC<KanjiMasterViewProps> = ({
           </div>
         </div>
       )}
+        </div>
+      )}
     </div>
   );
 };
+

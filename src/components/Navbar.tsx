@@ -7,12 +7,13 @@ import {
   Moon, 
   Sun, 
   User,
-  Share2
+  Share2,
+  Bookmark
 } from 'lucide-react';
 
 interface NavbarProps {
-  activeTab: 'tango' | 'kanji' | 'practice';
-  setActiveTab: (tab: 'tango' | 'kanji' | 'practice') => void;
+  activeTab: 'tango' | 'kanji' | 'practice' | 'notebook';
+  setActiveTab: (tab: 'tango' | 'kanji' | 'practice' | 'notebook') => void;
   streak: number;
   isDarkMode: boolean;
   setIsDarkMode: (val: boolean) => void;
@@ -78,6 +79,18 @@ export const Navbar: React.FC<NavbarProps> = ({
           >
             <Sparkles className="w-4 h-4" />
             <span>Chữ Hán (Kanji)</span>
+          </button>
+
+          <button
+            onClick={() => setActiveTab('notebook')}
+            className={`flex items-center space-x-2 px-3 sm:px-4 py-1.5 rounded-lg text-sm font-semibold transition-all ${
+              activeTab === 'notebook'
+                ? 'bg-white dark:bg-zinc-700 text-rose-600 dark:text-rose-400 shadow-sm'
+                : 'text-slate-600 dark:text-zinc-300 hover:text-slate-900 dark:hover:text-white'
+            }`}
+          >
+            <Bookmark className="w-4 h-4" />
+            <span>Sổ tay từ vựng</span>
           </button>
 
           <button

@@ -10,6 +10,36 @@ interface CrammingModeViewProps {
   onFinish?: (score: number, total: number) => void;
 }
 
+// Bảng giải mã Telex tiếng Việt nhầm khi gõ romaji (vd: gõ "amerika" bị thành "amẻika")
+const telexMap: Record<string, string> = {
+  'á': 'as', 'à': 'af', 'ả': 'ar', 'ã': 'ax', 'ạ': 'aj',
+  'ắ': 'aws', 'ằ': 'awf', 'ẳ': 'awr', 'ẵ': 'awx', 'ặ': 'awj', 'ă': 'aw',
+  'ấ': 'aas', 'ầ': 'aaf', 'ẩ': 'aar', 'ẫ': 'aax', 'ậ': 'aaj', 'â': 'aa',
+  'é': 'es', 'è': 'ef', 'ẻ': 'er', 'ẽ': 'ex', 'ẹ': 'ej',
+  'ế': 'ees', 'ề': 'eef', 'ể': 'eer', 'ễ': 'eex', 'ệ': 'eej', 'ê': 'ee',
+  'í': 'is', 'ì': 'if', 'ỉ': 'ir', 'ĩ': 'ix', 'ị': 'ij',
+  'ó': 'os', 'ò': 'of', 'ỏ': 'or', 'õ': 'ox', 'ọ': 'oj',
+  'ố': 'oos', 'ồ': 'oof', 'ổ': 'oor', 'ỗ': 'oox', 'ộ': 'ooj', 'ô': 'oo',
+  'ớ': 'ows', 'ờ': 'owf', 'ở': 'owr', 'ỡ': 'owx', 'ợ': 'owj', 'ơ': 'ow',
+  'ú': 'us', 'ù': 'uf', 'ủ': 'ur', 'ũ': 'ux', 'ụ': 'uj',
+  'ứ': 'uws', 'ừ': 'uwf', 'ử': 'uwr', 'ữ': 'uwx', 'ự': 'uwj', 'ư': 'uw',
+  'ý': 'ys', 'ỳ': 'yf', 'ỷ': 'yr', 'ỹ': 'yx', 'ỵ': 'yj',
+  'đ': 'dd',
+};
+
+function cleanVietnameseTelex(text: string): string {
+  let res = '';
+  for (const char of text) {
+    const lower = char.toLowerCase();
+    if (telexMap[lower]) {
+      res += telexMap[lower];
+    } else {
+      res += char;
+    }
+  }
+  return res;
+}
+
 export const CrammingModeView: React.FC<CrammingModeViewProps> = ({
   words,
   onFinish,
@@ -35,6 +65,12 @@ export const CrammingModeView: React.FC<CrammingModeViewProps> = ({
   const targetAnswer = testType === 'reading' 
     ? (currentWord?.kana || '') 
     : (currentWord?.hanviet || currentWord?.kana || '');
+
+  // Kiểm tra từ mục tiêu có phải là Katakana không (vd: アメリカ, イギリス,...)
+  const isTargetKatakana = React.useMemo(() => {
+    const text = targetAnswer || currentWord?.kana || currentWord?.kanji || '';
+    return /[\u30A0-\u30FF]/.test(text);
+  }, [targetAnswer, currentWord]);
 
   const totalChars = targetAnswer.length;
   const targetRomaji = wanakana.toRomaji(currentWord?.kana || '');
@@ -65,11 +101,14 @@ export const CrammingModeView: React.FC<CrammingModeViewProps> = ({
     );
   }
 
-  // Tự động chuyển Romaji sang Hiragana theo thời gian thực (như gõ Unikey / Japanese IME)
+  // Tự động chuyển Romaji sang đúng loại chữ (Katakana nếu từ là Katakana, Hiragana nếu là Hiragana)
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const raw = e.target.value;
     if (testType === 'reading') {
-      const converted = wanakana.toHiragana(raw, { IMEMode: true });
+      const deTelexted = cleanVietnameseTelex(raw);
+      const converted = isTargetKatakana
+        ? wanakana.toKatakana(deTelexted, { IMEMode: true })
+        : wanakana.toHiragana(deTelexted, { IMEMode: true });
       setInputValue(converted);
     } else {
       setInputValue(raw.toUpperCase());
@@ -137,8 +176,16 @@ export const CrammingModeView: React.FC<CrammingModeViewProps> = ({
     if (testType === 'reading') {
       const userHira = wanakana.toHiragana(trimmedInput);
       const targetHira = wanakana.toHiragana(cleanTarget);
-      isCorrect = normalizeText(userHira) === normalizeText(targetHira) || 
-                  normalizeText(wanakana.toRomaji(trimmedInput)) === normalizeText(targetRomaji);
+      const userKata = wanakana.toKatakana(trimmedInput);
+      const targetKata = wanakana.toKatakana(cleanTarget);
+      const userRomaji = wanakana.toRomaji(trimmedInput);
+      const targetRomajiClean = wanakana.toRomaji(cleanTarget);
+
+      isCorrect = 
+        normalizeText(userHira) === normalizeText(targetHira) || 
+        normalizeText(userKata) === normalizeText(targetKata) || 
+        normalizeText(userRomaji) === normalizeText(targetRomajiClean) ||
+        normalizeText(trimmedInput) === normalizeText(cleanTarget);
     } else {
       isCorrect = trimmedInput.toLowerCase() === cleanTarget.toLowerCase();
     }
@@ -242,9 +289,16 @@ export const CrammingModeView: React.FC<CrammingModeViewProps> = ({
 
           {/* Vùng trung tâm: Nghĩa tiếng Việt & Vạch gạch chân */}
           <div className="my-auto text-center py-6 space-y-6">
-            <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-white px-4 leading-tight">
-              {currentWord.meaning}
-            </h2>
+            <div>
+              <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-white px-4 leading-tight">
+                {currentWord.meaning}
+              </h2>
+              {testType === 'reading' && isTargetKatakana && (
+                <span className="inline-block mt-2 px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider bg-amber-500/20 text-amber-400 border border-amber-500/30">
+                  Từ mượn Katakana
+                </span>
+              )}
+            </div>
 
             {/* Vạch gạch chân ký tự _ _ _ (hiện dần từng ký tự khi bấm gợi ý) */}
             <div className="flex flex-wrap items-center justify-center gap-2 select-none px-4">
@@ -280,7 +334,9 @@ export const CrammingModeView: React.FC<CrammingModeViewProps> = ({
                 disabled={status === 'correct'}
                 placeholder={
                   testType === 'reading'
-                    ? "Gõ romaji (vd: toshokan → としょかん)"
+                    ? (isTargetKatakana 
+                        ? "Gõ romaji (tự động chuyển Katakana: vd amerika → アメリカ)" 
+                        : "Gõ romaji (tự động chuyển Hiragana: vd toshokan → としょかん)")
                     : "Gõ âm Hán Việt (vd: THỰC, SINH VIÊN)"
                 }
                 className={`w-full py-3.5 px-5 rounded-2xl bg-[#1B2436] text-white placeholder-slate-500 text-base font-semibold focus:outline-hidden transition border-2 ${

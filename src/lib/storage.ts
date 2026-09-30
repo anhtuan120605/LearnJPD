@@ -12,7 +12,15 @@ const defaultProgress: UserProgress = {
   favoriteKanji: [],
   streak: 1,
   lastActiveDate: new Date().toISOString().split('T')[0],
-  quizScores: []
+  quizScores: [],
+  customNotebooks: [
+    {
+      id: 'custom-lesson-1',
+      title: 'Bài 1',
+      createdAt: new Date().toISOString(),
+      words: []
+    }
+  ]
 };
 
 // 1. Tải tiến độ từ LocalStorage
@@ -38,7 +46,11 @@ export function loadLocalProgress(): UserProgress {
       saveLocalProgress(parsed);
     }
     
-    return { ...defaultProgress, ...parsed };
+    const progress: UserProgress = { ...defaultProgress, ...parsed };
+    if (!progress.customNotebooks || progress.customNotebooks.length === 0) {
+      progress.customNotebooks = defaultProgress.customNotebooks;
+    }
+    return progress;
   } catch (e) {
     console.error('Lỗi khi đọc LocalStorage:', e);
     return defaultProgress;

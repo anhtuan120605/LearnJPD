@@ -38,7 +38,16 @@ export interface KanjiItem {
     word: string;
     reading: string;
     meaning: string;
+    hanviet?: string;
+    level?: string;
   }>;
+}
+
+export interface CustomNotebookLesson {
+  id: string;
+  title: string;
+  createdAt: string;
+  words: WordItem[];
 }
 
 export interface UserProgress {
@@ -57,6 +66,7 @@ export interface UserProgress {
     score: number;
     total: number;
   }>;
+  customNotebooks?: CustomNotebookLesson[];
 }
 
 export interface GrammarPoint {
