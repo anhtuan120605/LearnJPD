@@ -9,7 +9,10 @@ import kanjiN3 from './kanji/n3.json';
 import kanjiN2 from './kanji/n2.json';
 import kanjiN1 from './kanji/n1.json';
 
-import { LessonGroup, KanjiItem } from '../types';
+import minnaGrammar from './grammar/minna_grammar.json';
+import minnaReading from './reading/minna_reading.json';
+
+import { LessonGroup, KanjiItem, GrammarLesson, ReadingLesson } from '../types';
 
 const allMinna = minnaLessons as LessonGroup[];
 
@@ -97,3 +100,25 @@ export const kanjiDatasets: Record<string, KanjiItem[]> = {
   N2: kanjiN2 as KanjiItem[],
   N1: kanjiN1 as KanjiItem[],
 };
+
+// Ngữ pháp & Bài đọc Minna no Nihongo (Bài 1 - 50: N5 & N4)
+export const minnaGrammarDatasets = minnaGrammar as GrammarLesson[];
+export const minnaReadingDatasets = minnaReading as ReadingLesson[];
+
+// Ngữ pháp & Bài đọc N3 (Trung cấp 1: 24 bài)
+import n3Grammar from './grammar/n3_grammar.json';
+import n3Reading from './reading/n3_reading.json';
+export const n3GrammarDatasets = n3Grammar as GrammarLesson[];
+export const n3ReadingDatasets = n3Reading as ReadingLesson[];
+
+// Ngữ pháp & Bài đọc N2 (Trung cấp 2: 24 bài)
+import n2Grammar from './grammar/n2_grammar.json';
+import n2Reading from './reading/n2_reading.json';
+export const n2GrammarDatasets = n2Grammar as GrammarLesson[];
+export const n2ReadingDatasets = n2Reading as ReadingLesson[];
+
+// Ngữ pháp & Bài đọc N1 (Cao cấp: 108 bài)
+import n1Grammar from './grammar/n1_grammar.json';
+import n1Reading from './reading/n1_reading.json';
+export const n1GrammarDatasets = n1Grammar as GrammarLesson[];
+export const n1ReadingDatasets = n1Reading as ReadingLesson[];

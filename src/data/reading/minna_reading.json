@@ -1,0 +1,1052 @@
+[
+  {
+    "lesson": 1,
+    "title_ja": "マイク・ミラーさん",
+    "title_vi": "Anh Mike Miller",
+    "content": "初めまして。マイク・ミラーです。アメリカから来ました。IMCの社員です。毎朝会社へ行きます。どうぞよろしくお願いします。",
+    "content_kana": "はじめまして。まいく・みらーです。あめりかからきました。IMCのしゃいんです。まいあさかいしゃへいきます。どうぞよろしくおねがいします。",
+    "translation": "Rất vui được làm quen với các bạn. Tôi là Mike Miller, đến từ nước Mỹ. Tôi là nhân viên của công ty IMC. Mỗi sáng tôi đều đến công ty làm việc. Xin nhờ mọi người giúp đỡ.",
+    "questions": [
+      {
+        "q": "ミラーさんは どこの 国から 来ましたか。",
+        "options": [
+          "アメリカ",
+          "日本",
+          "イギリス",
+          "ベトナム"
+        ],
+        "answer": 0,
+        "explain": "ミラーさんは アメリカから来ました (Anh Miller đến từ nước Mỹ)."
+      }
+    ]
+  },
+  {
+    "lesson": 2,
+    "title_ja": "これ、何ですか",
+    "title_vi": "Cái này là gì?",
+    "content": "これは 私の 部屋の 鍵です。それは 日本語の 辞書です。あれは 田中さんの 傘です。毎日 勉強します。",
+    "content_kana": "これは わたしの へやの かぎです。それは にほんごの じしょです。あれは たなかさんの かさです。まいにち べんきょうします。",
+    "translation": "Đây là chiếc chìa khóa phòng của tôi. Đó là cuốn từ điển tiếng Nhật. Kia là chiếc ô của anh Tanaka. Mỗi ngày tôi đều học bài.",
+    "questions": [
+      {
+        "q": "あれは 誰の 傘ですか。",
+        "options": [
+          "田中さん",
+          "ミラーさん",
+          "サントスさん",
+          "先生"
+        ],
+        "answer": 0,
+        "explain": "あれは 田中さんの 傘です (Kia là chiếc ô của anh Tanaka)."
+      }
+    ]
+  },
+  {
+    "lesson": 3,
+    "title_ja": "デパートで",
+    "title_vi": "Ở trung tâm thương mại",
+    "content": "ここは デパートです。事務所は 2階に あります。ワイン売り場は 地下に あります。とても 便利です。",
+    "content_kana": "ここは でぱーとです。じむしょは 2かいに あります。わいんうりばは ちかに あります。とても べんりです。",
+    "translation": "Đây là trung tâm thương mại. Văn phòng nằm ở tầng 2. Quầy bán rượu vang nằm ở dưới tầng hầm. Rất là tiện lợi.",
+    "questions": [
+      {
+        "q": "ワイン売り場は どこに ありますか。",
+        "options": [
+          "地下",
+          "1階",
+          "2階",
+          "屋上"
+        ],
+        "answer": 0,
+        "explain": "ワイン売り場は 地下にあります (Quầy bán rượu vang ở tầng hầm)."
+      }
+    ]
+  },
+  {
+    "lesson": 4,
+    "title_ja": "毎日の生活",
+    "title_vi": "Cuộc sống hàng ngày",
+    "content": "毎朝 6時半に 起きます。7時に 朝ご飯を 食べます。8時から 5時まで 会社で 働きます。夜 11時に 寝ます。",
+    "content_kana": "まいあさ 6じはんに おきます。7ときに あさごめしを たべます。8ときから 5ときまで かいしゃで はたらきます。よる 11ときに ねます。",
+    "translation": "Mỗi sáng tôi thức dậy lúc 6 giờ rưỡi. 7 giờ tôi ăn bữa sáng. Tôi làm việc ở công ty từ 8 giờ đến 5 giờ. Đêm 11 giờ tôi đi ngủ.",
+    "questions": [
+      {
+        "q": "何時から 何時まで 働きますか。",
+        "options": [
+          "8時から 5時まで",
+          "9時から 6時まで",
+          "7時から 4時まで",
+          "8時から 4時まで"
+        ],
+        "answer": 0,
+        "explain": "8時から 5時まで 会社で働きます."
+      }
+    ]
+  },
+  {
+    "lesson": 5,
+    "title_ja": "京都へ",
+    "title_vi": "Chuyến đi tới Kyoto",
+    "content": "先週の 日曜日、友達と 新幹線で 京都へ 行きました。京都は とても きれいでした。お寺を たくさん 見ました。",
+    "content_kana": "せんしゅうの にちようび、ともだちと しんかんせんで きょうとへ いきました。きょうとは とても きれいでした。おてらを たくさん みました。",
+    "translation": "Chủ nhật tuần trước, tôi đã đi Kyoto cùng bạn bằng tàu Shinkansen. Kyoto rất đẹp. Chúng tôi đã tham quan nhiều ngôi chùa.",
+    "questions": [
+      {
+        "q": "何で 京都へ 行きましたか。",
+        "options": [
+          "新幹線",
+          "飛行機",
+          "バス",
+          "車"
+        ],
+        "answer": 0,
+        "explain": "新幹線で 京都へ行きました."
+      }
+    ]
+  },
+  {
+    "lesson": 6,
+    "title_ja": "いっしょに行きませんか",
+    "title_vi": "Cùng đi với tôi nhé?",
+    "content": "日本の 生活は とても 楽しいです。毎日 新しい 言葉を 覚えて、友達と 会話を します。これからも 一生懸命 勉強を 続けます。",
+    "content_kana": "にっぽんの せいかつは とても たのしいです。まいにち あたらしい ことばを おぼえて、ともだちと かいわを します。これからも いっしょうけんめい べんきょうを つづけます。",
+    "translation": "Cuộc sống ở Nhật Bản rất thú vị. Mỗi ngày tôi học thêm những từ mới và trò chuyện cùng bạn bè. Từ giờ tôi cũng sẽ tiếp tục nỗ lực học tập.",
+    "questions": [
+      {
+        "q": "この人は 毎日 何を しますか。",
+        "options": [
+          "新しい言葉を覚える",
+          "一日中寝る",
+          "旅行に行く",
+          "何もしない"
+        ],
+        "answer": 0,
+        "explain": "毎日 新しい言葉を覚えます (Mỗi ngày đều học từ mới)."
+      }
+    ]
+  },
+  {
+    "lesson": 7,
+    "title_ja": "すてきなプレゼント",
+    "title_vi": "Món quà tuyệt vời",
+    "content": "日本の 生活は とても 楽しいです。毎日 新しい 言葉を 覚えて、友達と 会話を します。これからも 一生懸命 勉強を 続けます。",
+    "content_kana": "にっぽんの せいかつは とても たのしいです。まいにち あたらしい ことばを おぼえて、ともだちと かいわを します。これからも いっしょうけんめい べんきょうを つづけます。",
+    "translation": "Cuộc sống ở Nhật Bản rất thú vị. Mỗi ngày tôi học thêm những từ mới và trò chuyện cùng bạn bè. Từ giờ tôi cũng sẽ tiếp tục nỗ lực học tập.",
+    "questions": [
+      {
+        "q": "この人は 毎日 何を しますか。",
+        "options": [
+          "新しい言葉を覚える",
+          "一日中寝る",
+          "旅行に行く",
+          "何もしない"
+        ],
+        "answer": 0,
+        "explain": "毎日 新しい言葉を覚えます (Mỗi ngày đều học từ mới)."
+      }
+    ]
+  },
+  {
+    "lesson": 8,
+    "title_ja": "富士山",
+    "title_vi": "Núi Phú Sĩ",
+    "content": "日本の 生活は とても 楽しいです。毎日 新しい 言葉を 覚えて、友達と 会話を します。これからも 一生懸命 勉強を 続けます。",
+    "content_kana": "にっぽんの せいかつは とても たのしいです。まいにち あたらしい ことばを おぼえて、ともだちと かいわを します。これからも いっしょうけんめい べんきょうを つづけます。",
+    "translation": "Cuộc sống ở Nhật Bản rất thú vị. Mỗi ngày tôi học thêm những từ mới và trò chuyện cùng bạn bè. Từ giờ tôi cũng sẽ tiếp tục nỗ lực học tập.",
+    "questions": [
+      {
+        "q": "この人は 毎日 何を しますか。",
+        "options": [
+          "新しい言葉を覚える",
+          "一日中寝る",
+          "旅行に行く",
+          "何もしない"
+        ],
+        "answer": 0,
+        "explain": "毎日 新しい言葉を覚えます (Mỗi ngày đều học từ mới)."
+      }
+    ]
+  },
+  {
+    "lesson": 9,
+    "title_ja": "日本の音楽とスポーツ",
+    "title_vi": "Âm nhạc và thể thao Nhật Bản",
+    "content": "日本の 生活は とても 楽しいです。毎日 新しい 言葉を 覚えて、友達と 会話を します。これからも 一生懸命 勉強を 続けます。",
+    "content_kana": "にっぽんの せいかつは とても たのしいです。まいにち あたらしい ことばを おぼえて、ともだちと かいわを します。これからも いっしょうけんめい べんきょうを つづけます。",
+    "translation": "Cuộc sống ở Nhật Bản rất thú vị. Mỗi ngày tôi học thêm những từ mới và trò chuyện cùng bạn bè. Từ giờ tôi cũng sẽ tiếp tục nỗ lực học tập.",
+    "questions": [
+      {
+        "q": "この人は 毎日 何を しますか。",
+        "options": [
+          "新しい言葉を覚える",
+          "一日中寝る",
+          "旅行に行く",
+          "何もしない"
+        ],
+        "answer": 0,
+        "explain": "毎日 新しい言葉を覚えます (Mỗi ngày đều học từ mới)."
+      }
+    ]
+  },
+  {
+    "lesson": 10,
+    "title_ja": "私の部屋",
+    "title_vi": "Căn phòng của tôi",
+    "content": "日本の 生活は とても 楽しいです。毎日 新しい 言葉を 覚えて、友達と 会話を します。これからも 一生懸命 勉強を 続けます。",
+    "content_kana": "にっぽんの せいかつは とても たのしいです。まいにち あたらしい ことばを おぼえて、ともだちと かいわを します。これからも いっしょうけんめい べんきょうを つづけます。",
+    "translation": "Cuộc sống ở Nhật Bản rất thú vị. Mỗi ngày tôi học thêm những từ mới và trò chuyện cùng bạn bè. Từ giờ tôi cũng sẽ tiếp tục nỗ lực học tập.",
+    "questions": [
+      {
+        "q": "この人は 毎日 何を しますか。",
+        "options": [
+          "新しい言葉を覚える",
+          "一日中寝る",
+          "旅行に行く",
+          "何もしない"
+        ],
+        "answer": 0,
+        "explain": "毎日 新しい言葉を覚えます (Mỗi ngày đều học từ mới)."
+      }
+    ]
+  },
+  {
+    "lesson": 11,
+    "title_ja": "家族の写真",
+    "title_vi": "Bức ảnh gia đình",
+    "content": "日本の 生活は とても 楽しいです。毎日 新しい 言葉を 覚えて、友達と 会話を します。これからも 一生懸命 勉強を 続けます。",
+    "content_kana": "にっぽんの せいかつは とても たのしいです。まいにち あたらしい ことばを おぼえて、ともだちと かいわを します。これからも いっしょうけんめい べんきょうを つづけます。",
+    "translation": "Cuộc sống ở Nhật Bản rất thú vị. Mỗi ngày tôi học thêm những từ mới và trò chuyện cùng bạn bè. Từ giờ tôi cũng sẽ tiếp tục nỗ lực học tập.",
+    "questions": [
+      {
+        "q": "この人は 毎日 何を しますか。",
+        "options": [
+          "新しい言葉を覚える",
+          "一日中寝る",
+          "旅行に行く",
+          "何もしない"
+        ],
+        "answer": 0,
+        "explain": "毎日 新しい言葉を覚えます (Mỗi ngày đều học từ mới)."
+      }
+    ]
+  },
+  {
+    "lesson": 12,
+    "title_ja": "お祭り",
+    "title_vi": "Lễ hội truyền thống",
+    "content": "日本の 生活は とても 楽しいです。毎日 新しい 言葉を 覚えて、友達と 会話を します。これからも 一生懸命 勉強を 続けます。",
+    "content_kana": "にっぽんの せいかつは とても たのしいです。まいにち あたらしい ことばを おぼえて、ともだちと かいわを します。これからも いっしょうけんめい べんきょうを つづけます。",
+    "translation": "Cuộc sống ở Nhật Bản rất thú vị. Mỗi ngày tôi học thêm những từ mới và trò chuyện cùng bạn bè. Từ giờ tôi cũng sẽ tiếp tục nỗ lực học tập.",
+    "questions": [
+      {
+        "q": "この人は 毎日 何を しますか。",
+        "options": [
+          "新しい言葉を覚える",
+          "一日中寝る",
+          "旅行に行く",
+          "何もしない"
+        ],
+        "answer": 0,
+        "explain": "毎日 新しい言葉を覚えます (Mỗi ngày đều học từ mới)."
+      }
+    ]
+  },
+  {
+    "lesson": 13,
+    "title_ja": "お正月",
+    "title_vi": "Dịp Tết năm mới",
+    "content": "日本の 生活は とても 楽しいです。毎日 新しい 言葉を 覚えて、友達と 会話を します。これからも 一生懸命 勉強を 続けます。",
+    "content_kana": "にっぽんの せいかつは とても たのしいです。まいにち あたらしい ことばを おぼえて、ともだちと かいわを します。これからも いっしょうけんめい べんきょうを つづけます。",
+    "translation": "Cuộc sống ở Nhật Bản rất thú vị. Mỗi ngày tôi học thêm những từ mới và trò chuyện cùng bạn bè. Từ giờ tôi cũng sẽ tiếp tục nỗ lực học tập.",
+    "questions": [
+      {
+        "q": "この人は 毎日 何を しますか。",
+        "options": [
+          "新しい言葉を覚える",
+          "一日中寝る",
+          "旅行に行く",
+          "何もしない"
+        ],
+        "answer": 0,
+        "explain": "毎日 新しい言葉を覚えます (Mỗi ngày đều học từ mới)."
+      }
+    ]
+  },
+  {
+    "lesson": 14,
+    "title_ja": "タクシーで",
+    "title_vi": "Đi bằng xe taxi",
+    "content": "日本の 生活は とても 楽しいです。毎日 新しい 言葉を 覚えて、友達と 会話を します。これからも 一生懸命 勉強を 続けます。",
+    "content_kana": "にっぽんの せいかつは とても たのしいです。まいにち あたらしい ことばを おぼえて、ともだちと かいわを します。これからも いっしょうけんめい べんきょうを つづけます。",
+    "translation": "Cuộc sống ở Nhật Bản rất thú vị. Mỗi ngày tôi học thêm những từ mới và trò chuyện cùng bạn bè. Từ giờ tôi cũng sẽ tiếp tục nỗ lực học tập.",
+    "questions": [
+      {
+        "q": "この人は 毎日 何を しますか。",
+        "options": [
+          "新しい言葉を覚える",
+          "一日中寝る",
+          "旅行に行く",
+          "何もしない"
+        ],
+        "answer": 0,
+        "explain": "毎日 新しい言葉を覚えます (Mỗi ngày đều học từ mới)."
+      }
+    ]
+  },
+  {
+    "lesson": 15,
+    "title_ja": "禁煙",
+    "title_vi": "Cấm hút thuốc",
+    "content": "日本の 生活は とても 楽しいです。毎日 新しい 言葉を 覚えて、友達と 会話を します。これからも 一生懸命 勉強を 続けます。",
+    "content_kana": "にっぽんの せいかつは とても たのしいです。まいにち あたらしい ことばを おぼえて、ともだちと かいわを します。これからも いっしょうけんめい べんきょうを つづけます。",
+    "translation": "Cuộc sống ở Nhật Bản rất thú vị. Mỗi ngày tôi học thêm những từ mới và trò chuyện cùng bạn bè. Từ giờ tôi cũng sẽ tiếp tục nỗ lực học tập.",
+    "questions": [
+      {
+        "q": "この人は 毎日 何を しますか。",
+        "options": [
+          "新しい言葉を覚える",
+          "一日中寝る",
+          "旅行に行く",
+          "何もしない"
+        ],
+        "answer": 0,
+        "explain": "毎日 新しい言葉を覚えます (Mỗi ngày đều học từ mới)."
+      }
+    ]
+  },
+  {
+    "lesson": 16,
+    "title_ja": "使いかた",
+    "title_vi": "Cách sử dụng",
+    "content": "日本の 生活は とても 楽しいです。毎日 新しい 言葉を 覚えて、友達と 会話を します。これからも 一生懸命 勉強を 続けます。",
+    "content_kana": "にっぽんの せいかつは とても たのしいです。まいにち あたらしい ことばを おぼえて、ともだちと かいわを します。これからも いっしょうけんめい べんきょうを つづけます。",
+    "translation": "Cuộc sống ở Nhật Bản rất thú vị. Mỗi ngày tôi học thêm những từ mới và trò chuyện cùng bạn bè. Từ giờ tôi cũng sẽ tiếp tục nỗ lực học tập.",
+    "questions": [
+      {
+        "q": "この人は 毎日 何を しますか。",
+        "options": [
+          "新しい言葉を覚える",
+          "一日中寝る",
+          "旅行に行く",
+          "何もしない"
+        ],
+        "answer": 0,
+        "explain": "毎日 新しい言葉を覚えます (Mỗi ngày đều học từ mới)."
+      }
+    ]
+  },
+  {
+    "lesson": 17,
+    "title_ja": "健康診断",
+    "title_vi": "Khám sức khỏe",
+    "content": "日本の 生活は とても 楽しいです。毎日 新しい 言葉を 覚えて、友達と 会話を します。これからも 一生懸命 勉強を 続けます。",
+    "content_kana": "にっぽんの せいかつは とても たのしいです。まいにち あたらしい ことばを おぼえて、ともだちと かいわを します。これからも いっしょうけんめい べんきょうを つづけます。",
+    "translation": "Cuộc sống ở Nhật Bản rất thú vị. Mỗi ngày tôi học thêm những từ mới và trò chuyện cùng bạn bè. Từ giờ tôi cũng sẽ tiếp tục nỗ lực học tập.",
+    "questions": [
+      {
+        "q": "この人は 毎日 何を しますか。",
+        "options": [
+          "新しい言葉を覚える",
+          "一日中寝る",
+          "旅行に行く",
+          "何もしない"
+        ],
+        "answer": 0,
+        "explain": "毎日 新しい言葉を覚えます (Mỗi ngày đều học từ mới)."
+      }
+    ]
+  },
+  {
+    "lesson": 18,
+    "title_ja": "私の趣味",
+    "title_vi": "Sở thích của tôi",
+    "content": "日本の 生活は とても 楽しいです。毎日 新しい 言葉を 覚えて、友達と 会話を します。これからも 一生懸命 勉強を 続けます。",
+    "content_kana": "にっぽんの せいかつは とても たのしいです。まいにち あたらしい ことばを おぼえて、ともだちと かいわを します。これからも いっしょうけんめい べんきょうを つづけます。",
+    "translation": "Cuộc sống ở Nhật Bản rất thú vị. Mỗi ngày tôi học thêm những từ mới và trò chuyện cùng bạn bè. Từ giờ tôi cũng sẽ tiếp tục nỗ lực học tập.",
+    "questions": [
+      {
+        "q": "この人は 毎日 何を しますか。",
+        "options": [
+          "新しい言葉を覚える",
+          "一日中寝る",
+          "旅行に行く",
+          "何もしない"
+        ],
+        "answer": 0,
+        "explain": "毎日 新しい言葉を覚えます (Mỗi ngày đều học từ mới)."
+      }
+    ]
+  },
+  {
+    "lesson": 19,
+    "title_ja": "歌舞伎",
+    "title_vi": "Kịch Kabuki truyền thống",
+    "content": "日本の 生活は とても 楽しいです。毎日 新しい 言葉を 覚えて、友達と 会話を します。これからも 一生懸命 勉強を 続けます。",
+    "content_kana": "にっぽんの せいかつは とても たのしいです。まいにち あたらしい ことばを おぼえて、ともだちと かいわを します。これからも いっしょうけんめい べんきょうを つづけます。",
+    "translation": "Cuộc sống ở Nhật Bản rất thú vị. Mỗi ngày tôi học thêm những từ mới và trò chuyện cùng bạn bè. Từ giờ tôi cũng sẽ tiếp tục nỗ lực học tập.",
+    "questions": [
+      {
+        "q": "この人は 毎日 何を しますか。",
+        "options": [
+          "新しい言葉を覚える",
+          "一日中寝る",
+          "旅行に行く",
+          "何もしない"
+        ],
+        "answer": 0,
+        "explain": "毎日 新しい言葉を覚えます (Mỗi ngày đều học từ mới)."
+      }
+    ]
+  },
+  {
+    "lesson": 20,
+    "title_ja": "友達のうちへ",
+    "title_vi": "Đến nhà bạn bè",
+    "content": "日本の 生活は とても 楽しいです。毎日 新しい 言葉を 覚えて、友達と 会話を します。これからも 一生懸命 勉強を 続けます。",
+    "content_kana": "にっぽんの せいかつは とても たのしいです。まいにち あたらしい ことばを おぼえて、ともだちと かいわを します。これからも いっしょうけんめい べんきょうを つづけます。",
+    "translation": "Cuộc sống ở Nhật Bản rất thú vị. Mỗi ngày tôi học thêm những từ mới và trò chuyện cùng bạn bè. Từ giờ tôi cũng sẽ tiếp tục nỗ lực học tập.",
+    "questions": [
+      {
+        "q": "この人は 毎日 何を しますか。",
+        "options": [
+          "新しい言葉を覚える",
+          "一日中寝る",
+          "旅行に行く",
+          "何もしない"
+        ],
+        "answer": 0,
+        "explain": "毎日 新しい言葉を覚えます (Mỗi ngày đều học từ mới)."
+      }
+    ]
+  },
+  {
+    "lesson": 21,
+    "title_ja": "日本の交通",
+    "title_vi": "Giao thông ở Nhật Bản",
+    "content": "日本の 生活は とても 楽しいです。毎日 新しい 言葉を 覚えて、友達と 会話を します。これからも 一生懸命 勉強を 続けます。",
+    "content_kana": "にっぽんの せいかつは とても たのしいです。まいにち あたらしい ことばを おぼえて、ともだちと かいわを します。これからも いっしょうけんめい べんきょうを つづけます。",
+    "translation": "Cuộc sống ở Nhật Bản rất thú vị. Mỗi ngày tôi học thêm những từ mới và trò chuyện cùng bạn bè. Từ giờ tôi cũng sẽ tiếp tục nỗ lực học tập.",
+    "questions": [
+      {
+        "q": "この人は 毎日 何を しますか。",
+        "options": [
+          "新しい言葉を覚える",
+          "一日中寝る",
+          "旅行に行く",
+          "何もしない"
+        ],
+        "answer": 0,
+        "explain": "毎日 新しい言葉を覚えます (Mỗi ngày đều học từ mới)."
+      }
+    ]
+  },
+  {
+    "lesson": 22,
+    "title_ja": "着物",
+    "title_vi": "Trang phục Kimono",
+    "content": "日本の 生活は とても 楽しいです。毎日 新しい 言葉を 覚えて、友達と 会話を します。これからも 一生懸命 勉強を 続けます。",
+    "content_kana": "にっぽんの せいかつは とても たのしいです。まいにち あたらしい ことばを おぼえて、ともだちと かいわを します。これからも いっしょうけんめい べんきょうを つづけます。",
+    "translation": "Cuộc sống ở Nhật Bản rất thú vị. Mỗi ngày tôi học thêm những từ mới và trò chuyện cùng bạn bè. Từ giờ tôi cũng sẽ tiếp tục nỗ lực học tập.",
+    "questions": [
+      {
+        "q": "この人は 毎日 何を しますか。",
+        "options": [
+          "新しい言葉を覚える",
+          "一日中寝る",
+          "旅行に行く",
+          "何もしない"
+        ],
+        "answer": 0,
+        "explain": "毎日 新しい言葉を覚えます (Mỗi ngày đều học từ mới)."
+      }
+    ]
+  },
+  {
+    "lesson": 23,
+    "title_ja": "道を聞く",
+    "title_vi": "Hỏi đường đi",
+    "content": "日本の 生活は とても 楽しいです。毎日 新しい 言葉を 覚えて、友達と 会話を します。これからも 一生懸命 勉強を 続けます。",
+    "content_kana": "にっぽんの せいかつは とても たのしいです。まいにち あたらしい ことばを おぼえて、ともだちと かいわを します。これからも いっしょうけんめい べんきょうを つづけます。",
+    "translation": "Cuộc sống ở Nhật Bản rất thú vị. Mỗi ngày tôi học thêm những từ mới và trò chuyện cùng bạn bè. Từ giờ tôi cũng sẽ tiếp tục nỗ lực học tập.",
+    "questions": [
+      {
+        "q": "この人は 毎日 何を しますか。",
+        "options": [
+          "新しい言葉を覚える",
+          "一日中寝る",
+          "旅行に行く",
+          "何もしない"
+        ],
+        "answer": 0,
+        "explain": "毎日 新しい言葉を覚えます (Mỗi ngày đều học từ mới)."
+      }
+    ]
+  },
+  {
+    "lesson": 24,
+    "title_ja": "誕生日パーティー",
+    "title_vi": "Tiệc sinh nhật",
+    "content": "日本の 生活は とても 楽しいです。毎日 新しい 言葉を 覚えて、友達と 会話を します。これからも 一生懸命 勉強を 続けます。",
+    "content_kana": "にっぽんの せいかつは とても たのしいです。まいにち あたらしい ことばを おぼえて、ともだちと かいわを します。これからも いっしょうけんめい べんきょうを つづけます。",
+    "translation": "Cuộc sống ở Nhật Bản rất thú vị. Mỗi ngày tôi học thêm những từ mới và trò chuyện cùng bạn bè. Từ giờ tôi cũng sẽ tiếp tục nỗ lực học tập.",
+    "questions": [
+      {
+        "q": "この人は 毎日 何を しますか。",
+        "options": [
+          "新しい言葉を覚える",
+          "一日中寝る",
+          "旅行に行く",
+          "何もしない"
+        ],
+        "answer": 0,
+        "explain": "毎日 新しい言葉を覚えます (Mỗi ngày đều học từ mới)."
+      }
+    ]
+  },
+  {
+    "lesson": 25,
+    "title_ja": "田舎の生活",
+    "title_vi": "Cuộc sống ở làng quê",
+    "content": "日本の 生活は とても 楽しいです。毎日 新しい 言葉を 覚えて、友達と 会話を します。これからも 一生懸命 勉強を 続けます。",
+    "content_kana": "にっぽんの せいかつは とても たのしいです。まいにち あたらしい ことばを おぼえて、ともだちと かいわを します。これからも いっしょうけんめい べんきょうを つづけます。",
+    "translation": "Cuộc sống ở Nhật Bản rất thú vị. Mỗi ngày tôi học thêm những từ mới và trò chuyện cùng bạn bè. Từ giờ tôi cũng sẽ tiếp tục nỗ lực học tập.",
+    "questions": [
+      {
+        "q": "この人は 毎日 何を しますか。",
+        "options": [
+          "新しい言葉を覚える",
+          "一日中寝る",
+          "旅行に行く",
+          "何もしない"
+        ],
+        "answer": 0,
+        "explain": "毎日 新しい言葉を覚えます (Mỗi ngày đều học từ mới)."
+      }
+    ]
+  },
+  {
+    "lesson": 26,
+    "title_ja": "第26課の読み物",
+    "title_vi": "Bài đọc số 26",
+    "content": "日本の 生活は とても 楽しいです。毎日 新しい 言葉を 覚えて、友達と 会話を します。これからも 一生懸命 勉強を 続けます。",
+    "content_kana": "にっぽんの せいかつは とても たのしいです。まいにち あたらしい ことばを おぼえて、ともだちと かいわを します。これからも いっしょうけんめい べんきょうを つづけます。",
+    "translation": "Cuộc sống ở Nhật Bản rất thú vị. Mỗi ngày tôi học thêm những từ mới và trò chuyện cùng bạn bè. Từ giờ tôi cũng sẽ tiếp tục nỗ lực học tập.",
+    "questions": [
+      {
+        "q": "この人は 毎日 何を しますか。",
+        "options": [
+          "新しい言葉を覚える",
+          "一日中寝る",
+          "旅行に行く",
+          "何もしない"
+        ],
+        "answer": 0,
+        "explain": "毎日 新しい言葉を覚えます (Mỗi ngày đều học từ mới)."
+      }
+    ]
+  },
+  {
+    "lesson": 27,
+    "title_ja": "第27課の読み物",
+    "title_vi": "Bài đọc số 27",
+    "content": "日本の 生活は とても 楽しいです。毎日 新しい 言葉を 覚えて、友達と 会話を します。これからも 一生懸命 勉強を 続けます。",
+    "content_kana": "にっぽんの せいかつは とても たのしいです。まいにち あたらしい ことばを おぼえて、ともだちと かいわを します。これからも いっしょうけんめい べんきょうを つづけます。",
+    "translation": "Cuộc sống ở Nhật Bản rất thú vị. Mỗi ngày tôi học thêm những từ mới và trò chuyện cùng bạn bè. Từ giờ tôi cũng sẽ tiếp tục nỗ lực học tập.",
+    "questions": [
+      {
+        "q": "この人は 毎日 何を しますか。",
+        "options": [
+          "新しい言葉を覚える",
+          "一日中寝る",
+          "旅行に行く",
+          "何もしない"
+        ],
+        "answer": 0,
+        "explain": "毎日 新しい言葉を覚えます (Mỗi ngày đều học từ mới)."
+      }
+    ]
+  },
+  {
+    "lesson": 28,
+    "title_ja": "第28課の読み物",
+    "title_vi": "Bài đọc số 28",
+    "content": "日本の 生活は とても 楽しいです。毎日 新しい 言葉を 覚えて、友達と 会話を します。これからも 一生懸命 勉強を 続けます。",
+    "content_kana": "にっぽんの せいかつは とても たのしいです。まいにち あたらしい ことばを おぼえて、ともだちと かいわを します。これからも いっしょうけんめい べんきょうを つづけます。",
+    "translation": "Cuộc sống ở Nhật Bản rất thú vị. Mỗi ngày tôi học thêm những từ mới và trò chuyện cùng bạn bè. Từ giờ tôi cũng sẽ tiếp tục nỗ lực học tập.",
+    "questions": [
+      {
+        "q": "この人は 毎日 何を しますか。",
+        "options": [
+          "新しい言葉を覚える",
+          "一日中寝る",
+          "旅行に行く",
+          "何もしない"
+        ],
+        "answer": 0,
+        "explain": "毎日 新しい言葉を覚えます (Mỗi ngày đều học từ mới)."
+      }
+    ]
+  },
+  {
+    "lesson": 29,
+    "title_ja": "第29課の読み物",
+    "title_vi": "Bài đọc số 29",
+    "content": "日本の 生活は とても 楽しいです。毎日 新しい 言葉を 覚えて、友達と 会話を します。これからも 一生懸命 勉強を 続けます。",
+    "content_kana": "にっぽんの せいかつは とても たのしいです。まいにち あたらしい ことばを おぼえて、ともだちと かいわを します。これからも いっしょうけんめい べんきょうを つづけます。",
+    "translation": "Cuộc sống ở Nhật Bản rất thú vị. Mỗi ngày tôi học thêm những từ mới và trò chuyện cùng bạn bè. Từ giờ tôi cũng sẽ tiếp tục nỗ lực học tập.",
+    "questions": [
+      {
+        "q": "この人は 毎日 何を しますか。",
+        "options": [
+          "新しい言葉を覚える",
+          "一日中寝る",
+          "旅行に行く",
+          "何もしない"
+        ],
+        "answer": 0,
+        "explain": "毎日 新しい言葉を覚えます (Mỗi ngày đều học từ mới)."
+      }
+    ]
+  },
+  {
+    "lesson": 30,
+    "title_ja": "第30課の読み物",
+    "title_vi": "Bài đọc số 30",
+    "content": "日本の 生活は とても 楽しいです。毎日 新しい 言葉を 覚えて、友達と 会話を します。これからも 一生懸命 勉強を 続けます。",
+    "content_kana": "にっぽんの せいかつは とても たのしいです。まいにち あたらしい ことばを おぼえて、ともだちと かいわを します。これからも いっしょうけんめい べんきょうを つづけます。",
+    "translation": "Cuộc sống ở Nhật Bản rất thú vị. Mỗi ngày tôi học thêm những từ mới và trò chuyện cùng bạn bè. Từ giờ tôi cũng sẽ tiếp tục nỗ lực học tập.",
+    "questions": [
+      {
+        "q": "この人は 毎日 何を しますか。",
+        "options": [
+          "新しい言葉を覚える",
+          "一日中寝る",
+          "旅行に行く",
+          "何もしない"
+        ],
+        "answer": 0,
+        "explain": "毎日 新しい言葉を覚えます (Mỗi ngày đều học từ mới)."
+      }
+    ]
+  },
+  {
+    "lesson": 31,
+    "title_ja": "第31課の読み物",
+    "title_vi": "Bài đọc số 31",
+    "content": "日本の 生活は とても 楽しいです。毎日 新しい 言葉を 覚えて、友達と 会話を します。これからも 一生懸命 勉強を 続けます。",
+    "content_kana": "にっぽんの せいかつは とても たのしいです。まいにち あたらしい ことばを おぼえて、ともだちと かいわを します。これからも いっしょうけんめい べんきょうを つづけます。",
+    "translation": "Cuộc sống ở Nhật Bản rất thú vị. Mỗi ngày tôi học thêm những từ mới và trò chuyện cùng bạn bè. Từ giờ tôi cũng sẽ tiếp tục nỗ lực học tập.",
+    "questions": [
+      {
+        "q": "この人は 毎日 何を しますか。",
+        "options": [
+          "新しい言葉を覚える",
+          "一日中寝る",
+          "旅行に行く",
+          "何もしない"
+        ],
+        "answer": 0,
+        "explain": "毎日 新しい言葉を覚えます (Mỗi ngày đều học từ mới)."
+      }
+    ]
+  },
+  {
+    "lesson": 32,
+    "title_ja": "第32課の読み物",
+    "title_vi": "Bài đọc số 32",
+    "content": "日本の 生活は とても 楽しいです。毎日 新しい 言葉を 覚えて、友達と 会話を します。これからも 一生懸命 勉強を 続けます。",
+    "content_kana": "にっぽんの せいかつは とても たのしいです。まいにち あたらしい ことばを おぼえて、ともだちと かいわを します。これからも いっしょうけんめい べんきょうを つづけます。",
+    "translation": "Cuộc sống ở Nhật Bản rất thú vị. Mỗi ngày tôi học thêm những từ mới và trò chuyện cùng bạn bè. Từ giờ tôi cũng sẽ tiếp tục nỗ lực học tập.",
+    "questions": [
+      {
+        "q": "この人は 毎日 何を しますか。",
+        "options": [
+          "新しい言葉を覚える",
+          "一日中寝る",
+          "旅行に行く",
+          "何もしない"
+        ],
+        "answer": 0,
+        "explain": "毎日 新しい言葉を覚えます (Mỗi ngày đều học từ mới)."
+      }
+    ]
+  },
+  {
+    "lesson": 33,
+    "title_ja": "第33課の読み物",
+    "title_vi": "Bài đọc số 33",
+    "content": "日本の 生活は とても 楽しいです。毎日 新しい 言葉を 覚えて、友達と 会話を します。これからも 一生懸命 勉強を 続けます。",
+    "content_kana": "にっぽんの せいかつは とても たのしいです。まいにち あたらしい ことばを おぼえて、ともだちと かいわを します。これからも いっしょうけんめい べんきょうを つづけます。",
+    "translation": "Cuộc sống ở Nhật Bản rất thú vị. Mỗi ngày tôi học thêm những từ mới và trò chuyện cùng bạn bè. Từ giờ tôi cũng sẽ tiếp tục nỗ lực học tập.",
+    "questions": [
+      {
+        "q": "この人は 毎日 何を しますか。",
+        "options": [
+          "新しい言葉を覚える",
+          "一日中寝る",
+          "旅行に行く",
+          "何もしない"
+        ],
+        "answer": 0,
+        "explain": "毎日 新しい言葉を覚えます (Mỗi ngày đều học từ mới)."
+      }
+    ]
+  },
+  {
+    "lesson": 34,
+    "title_ja": "第34課の読み物",
+    "title_vi": "Bài đọc số 34",
+    "content": "日本の 生活は とても 楽しいです。毎日 新しい 言葉を 覚えて、友達と 会話を します。これからも 一生懸命 勉強を 続けます。",
+    "content_kana": "にっぽんの せいかつは とても たのしいです。まいにち あたらしい ことばを おぼえて、ともだちと かいわを します。これからも いっしょうけんめい べんきょうを つづけます。",
+    "translation": "Cuộc sống ở Nhật Bản rất thú vị. Mỗi ngày tôi học thêm những từ mới và trò chuyện cùng bạn bè. Từ giờ tôi cũng sẽ tiếp tục nỗ lực học tập.",
+    "questions": [
+      {
+        "q": "この人は 毎日 何を しますか。",
+        "options": [
+          "新しい言葉を覚える",
+          "一日中寝る",
+          "旅行に行く",
+          "何もしない"
+        ],
+        "answer": 0,
+        "explain": "毎日 新しい言葉を覚えます (Mỗi ngày đều học từ mới)."
+      }
+    ]
+  },
+  {
+    "lesson": 35,
+    "title_ja": "第35課の読み物",
+    "title_vi": "Bài đọc số 35",
+    "content": "日本の 生活は とても 楽しいです。毎日 新しい 言葉を 覚えて、友達と 会話を します。これからも 一生懸命 勉強を 続けます。",
+    "content_kana": "にっぽんの せいかつは とても たのしいです。まいにち あたらしい ことばを おぼえて、ともだちと かいわを します。これからも いっしょうけんめい べんきょうを つづけます。",
+    "translation": "Cuộc sống ở Nhật Bản rất thú vị. Mỗi ngày tôi học thêm những từ mới và trò chuyện cùng bạn bè. Từ giờ tôi cũng sẽ tiếp tục nỗ lực học tập.",
+    "questions": [
+      {
+        "q": "この人は 毎日 何を しますか。",
+        "options": [
+          "新しい言葉を覚える",
+          "一日中寝る",
+          "旅行に行く",
+          "何もしない"
+        ],
+        "answer": 0,
+        "explain": "毎日 新しい言葉を覚えます (Mỗi ngày đều học từ mới)."
+      }
+    ]
+  },
+  {
+    "lesson": 36,
+    "title_ja": "第36課の読み物",
+    "title_vi": "Bài đọc số 36",
+    "content": "日本の 生活は とても 楽しいです。毎日 新しい 言葉を 覚えて、友達と 会話を します。これからも 一生懸命 勉強を 続けます。",
+    "content_kana": "にっぽんの せいかつは とても たのしいです。まいにち あたらしい ことばを おぼえて、ともだちと かいわを します。これからも いっしょうけんめい べんきょうを つづけます。",
+    "translation": "Cuộc sống ở Nhật Bản rất thú vị. Mỗi ngày tôi học thêm những từ mới và trò chuyện cùng bạn bè. Từ giờ tôi cũng sẽ tiếp tục nỗ lực học tập.",
+    "questions": [
+      {
+        "q": "この人は 毎日 何を しますか。",
+        "options": [
+          "新しい言葉を覚える",
+          "一日中寝る",
+          "旅行に行く",
+          "何もしない"
+        ],
+        "answer": 0,
+        "explain": "毎日 新しい言葉を覚えます (Mỗi ngày đều học từ mới)."
+      }
+    ]
+  },
+  {
+    "lesson": 37,
+    "title_ja": "第37課の読み物",
+    "title_vi": "Bài đọc số 37",
+    "content": "日本の 生活は とても 楽しいです。毎日 新しい 言葉を 覚えて、友達と 会話を します。これからも 一生懸命 勉強を 続けます。",
+    "content_kana": "にっぽんの せいかつは とても たのしいです。まいにち あたらしい ことばを おぼえて、ともだちと かいわを します。これからも いっしょうけんめい べんきょうを つづけます。",
+    "translation": "Cuộc sống ở Nhật Bản rất thú vị. Mỗi ngày tôi học thêm những từ mới và trò chuyện cùng bạn bè. Từ giờ tôi cũng sẽ tiếp tục nỗ lực học tập.",
+    "questions": [
+      {
+        "q": "この人は 毎日 何を しますか。",
+        "options": [
+          "新しい言葉を覚える",
+          "一日中寝る",
+          "旅行に行く",
+          "何もしない"
+        ],
+        "answer": 0,
+        "explain": "毎日 新しい言葉を覚えます (Mỗi ngày đều học từ mới)."
+      }
+    ]
+  },
+  {
+    "lesson": 38,
+    "title_ja": "第38課の読み物",
+    "title_vi": "Bài đọc số 38",
+    "content": "日本の 生活は とても 楽しいです。毎日 新しい 言葉を 覚えて、友達と 会話を します。これからも 一生懸命 勉強を 続けます。",
+    "content_kana": "にっぽんの せいかつは とても たのしいです。まいにち あたらしい ことばを おぼえて、ともだちと かいわを します。これからも いっしょうけんめい べんきょうを つづけます。",
+    "translation": "Cuộc sống ở Nhật Bản rất thú vị. Mỗi ngày tôi học thêm những từ mới và trò chuyện cùng bạn bè. Từ giờ tôi cũng sẽ tiếp tục nỗ lực học tập.",
+    "questions": [
+      {
+        "q": "この人は 毎日 何を しますか。",
+        "options": [
+          "新しい言葉を覚える",
+          "一日中寝る",
+          "旅行に行く",
+          "何もしない"
+        ],
+        "answer": 0,
+        "explain": "毎日 新しい言葉を覚えます (Mỗi ngày đều học từ mới)."
+      }
+    ]
+  },
+  {
+    "lesson": 39,
+    "title_ja": "第39課の読み物",
+    "title_vi": "Bài đọc số 39",
+    "content": "日本の 生活は とても 楽しいです。毎日 新しい 言葉を 覚えて、友達と 会話を します。これからも 一生懸命 勉強を 続けます。",
+    "content_kana": "にっぽんの せいかつは とても たのしいです。まいにち あたらしい ことばを おぼえて、ともだちと かいわを します。これからも いっしょうけんめい べんきょうを つづけます。",
+    "translation": "Cuộc sống ở Nhật Bản rất thú vị. Mỗi ngày tôi học thêm những từ mới và trò chuyện cùng bạn bè. Từ giờ tôi cũng sẽ tiếp tục nỗ lực học tập.",
+    "questions": [
+      {
+        "q": "この人は 毎日 何を しますか。",
+        "options": [
+          "新しい言葉を覚える",
+          "一日中寝る",
+          "旅行に行く",
+          "何もしない"
+        ],
+        "answer": 0,
+        "explain": "毎日 新しい言葉を覚えます (Mỗi ngày đều học từ mới)."
+      }
+    ]
+  },
+  {
+    "lesson": 40,
+    "title_ja": "第40課の読み物",
+    "title_vi": "Bài đọc số 40",
+    "content": "日本の 生活は とても 楽しいです。毎日 新しい 言葉を 覚えて、友達と 会話を します。これからも 一生懸命 勉強を 続けます。",
+    "content_kana": "にっぽんの せいかつは とても たのしいです。まいにち あたらしい ことばを おぼえて、ともだちと かいわを します。これからも いっしょうけんめい べんきょうを つづけます。",
+    "translation": "Cuộc sống ở Nhật Bản rất thú vị. Mỗi ngày tôi học thêm những từ mới và trò chuyện cùng bạn bè. Từ giờ tôi cũng sẽ tiếp tục nỗ lực học tập.",
+    "questions": [
+      {
+        "q": "この人は 毎日 何を しますか。",
+        "options": [
+          "新しい言葉を覚える",
+          "一日中寝る",
+          "旅行に行く",
+          "何もしない"
+        ],
+        "answer": 0,
+        "explain": "毎日 新しい言葉を覚えます (Mỗi ngày đều học từ mới)."
+      }
+    ]
+  },
+  {
+    "lesson": 41,
+    "title_ja": "第41課の読み物",
+    "title_vi": "Bài đọc số 41",
+    "content": "日本の 生活は とても 楽しいです。毎日 新しい 言葉を 覚えて、友達と 会話を します。これからも 一生懸命 勉強を 続けます。",
+    "content_kana": "にっぽんの せいかつは とても たのしいです。まいにち あたらしい ことばを おぼえて、ともだちと かいわを します。これからも いっしょうけんめい べんきょうを つづけます。",
+    "translation": "Cuộc sống ở Nhật Bản rất thú vị. Mỗi ngày tôi học thêm những từ mới và trò chuyện cùng bạn bè. Từ giờ tôi cũng sẽ tiếp tục nỗ lực học tập.",
+    "questions": [
+      {
+        "q": "この人は 毎日 何を しますか。",
+        "options": [
+          "新しい言葉を覚える",
+          "一日中寝る",
+          "旅行に行く",
+          "何もしない"
+        ],
+        "answer": 0,
+        "explain": "毎日 新しい言葉を覚えます (Mỗi ngày đều học từ mới)."
+      }
+    ]
+  },
+  {
+    "lesson": 42,
+    "title_ja": "第42課の読み物",
+    "title_vi": "Bài đọc số 42",
+    "content": "日本の 生活は とても 楽しいです。毎日 新しい 言葉を 覚えて、友達と 会話を します。これからも 一生懸命 勉強を 続けます。",
+    "content_kana": "にっぽんの せいかつは とても たのしいです。まいにち あたらしい ことばを おぼえて、ともだちと かいわを します。これからも いっしょうけんめい べんきょうを つづけます。",
+    "translation": "Cuộc sống ở Nhật Bản rất thú vị. Mỗi ngày tôi học thêm những từ mới và trò chuyện cùng bạn bè. Từ giờ tôi cũng sẽ tiếp tục nỗ lực học tập.",
+    "questions": [
+      {
+        "q": "この人は 毎日 何を しますか。",
+        "options": [
+          "新しい言葉を覚える",
+          "一日中寝る",
+          "旅行に行く",
+          "何もしない"
+        ],
+        "answer": 0,
+        "explain": "毎日 新しい言葉を覚えます (Mỗi ngày đều học từ mới)."
+      }
+    ]
+  },
+  {
+    "lesson": 43,
+    "title_ja": "第43課の読み物",
+    "title_vi": "Bài đọc số 43",
+    "content": "日本の 生活は とても 楽しいです。毎日 新しい 言葉を 覚えて、友達と 会話を します。これからも 一生懸命 勉強を 続けます。",
+    "content_kana": "にっぽんの せいかつは とても たのしいです。まいにち あたらしい ことばを おぼえて、ともだちと かいわを します。これからも いっしょうけんめい べんきょうを つづけます。",
+    "translation": "Cuộc sống ở Nhật Bản rất thú vị. Mỗi ngày tôi học thêm những từ mới và trò chuyện cùng bạn bè. Từ giờ tôi cũng sẽ tiếp tục nỗ lực học tập.",
+    "questions": [
+      {
+        "q": "この人は 毎日 何を しますか。",
+        "options": [
+          "新しい言葉を覚える",
+          "一日中寝る",
+          "旅行に行く",
+          "何もしない"
+        ],
+        "answer": 0,
+        "explain": "毎日 新しい言葉を覚えます (Mỗi ngày đều học từ mới)."
+      }
+    ]
+  },
+  {
+    "lesson": 44,
+    "title_ja": "第44課の読み物",
+    "title_vi": "Bài đọc số 44",
+    "content": "日本の 生活は とても 楽しいです。毎日 新しい 言葉を 覚えて、友達と 会話を します。これからも 一生懸命 勉強を 続けます。",
+    "content_kana": "にっぽんの せいかつは とても たのしいです。まいにち あたらしい ことばを おぼえて、ともだちと かいわを します。これからも いっしょうけんめい べんきょうを つづけます。",
+    "translation": "Cuộc sống ở Nhật Bản rất thú vị. Mỗi ngày tôi học thêm những từ mới và trò chuyện cùng bạn bè. Từ giờ tôi cũng sẽ tiếp tục nỗ lực học tập.",
+    "questions": [
+      {
+        "q": "この人は 毎日 何を しますか。",
+        "options": [
+          "新しい言葉を覚える",
+          "一日中寝る",
+          "旅行に行く",
+          "何もしない"
+        ],
+        "answer": 0,
+        "explain": "毎日 新しい言葉を覚えます (Mỗi ngày đều học từ mới)."
+      }
+    ]
+  },
+  {
+    "lesson": 45,
+    "title_ja": "第45課の読み物",
+    "title_vi": "Bài đọc số 45",
+    "content": "日本の 生活は とても 楽しいです。毎日 新しい 言葉を 覚えて、友達と 会話を します。これからも 一生懸命 勉強を 続けます。",
+    "content_kana": "にっぽんの せいかつは とても たのしいです。まいにち あたらしい ことばを おぼえて、ともだちと かいわを します。これからも いっしょうけんめい べんきょうを つづけます。",
+    "translation": "Cuộc sống ở Nhật Bản rất thú vị. Mỗi ngày tôi học thêm những từ mới và trò chuyện cùng bạn bè. Từ giờ tôi cũng sẽ tiếp tục nỗ lực học tập.",
+    "questions": [
+      {
+        "q": "この人は 毎日 何を しますか。",
+        "options": [
+          "新しい言葉を覚える",
+          "一日中寝る",
+          "旅行に行く",
+          "何もしない"
+        ],
+        "answer": 0,
+        "explain": "毎日 新しい言葉を覚えます (Mỗi ngày đều học từ mới)."
+      }
+    ]
+  },
+  {
+    "lesson": 46,
+    "title_ja": "第46課の読み物",
+    "title_vi": "Bài đọc số 46",
+    "content": "日本の 生活は とても 楽しいです。毎日 新しい 言葉を 覚えて、友達と 会話を します。これからも 一生懸命 勉強を 続けます。",
+    "content_kana": "にっぽんの せいかつは とても たのしいです。まいにち あたらしい ことばを おぼえて、ともだちと かいわを します。これからも いっしょうけんめい べんきょうを つづけます。",
+    "translation": "Cuộc sống ở Nhật Bản rất thú vị. Mỗi ngày tôi học thêm những từ mới và trò chuyện cùng bạn bè. Từ giờ tôi cũng sẽ tiếp tục nỗ lực học tập.",
+    "questions": [
+      {
+        "q": "この人は 毎日 何を しますか。",
+        "options": [
+          "新しい言葉を覚える",
+          "一日中寝る",
+          "旅行に行く",
+          "何もしない"
+        ],
+        "answer": 0,
+        "explain": "毎日 新しい言葉を覚えます (Mỗi ngày đều học từ mới)."
+      }
+    ]
+  },
+  {
+    "lesson": 47,
+    "title_ja": "第47課の読み物",
+    "title_vi": "Bài đọc số 47",
+    "content": "日本の 生活は とても 楽しいです。毎日 新しい 言葉を 覚えて、友達と 会話を します。これからも 一生懸命 勉強を 続けます。",
+    "content_kana": "にっぽんの せいかつは とても たのしいです。まいにち あたらしい ことばを おぼえて、ともだちと かいわを します。これからも いっしょうけんめい べんきょうを つづけます。",
+    "translation": "Cuộc sống ở Nhật Bản rất thú vị. Mỗi ngày tôi học thêm những từ mới và trò chuyện cùng bạn bè. Từ giờ tôi cũng sẽ tiếp tục nỗ lực học tập.",
+    "questions": [
+      {
+        "q": "この人は 毎日 何を しますか。",
+        "options": [
+          "新しい言葉を覚える",
+          "一日中寝る",
+          "旅行に行く",
+          "何もしない"
+        ],
+        "answer": 0,
+        "explain": "毎日 新しい言葉を覚えます (Mỗi ngày đều học từ mới)."
+      }
+    ]
+  },
+  {
+    "lesson": 48,
+    "title_ja": "第48課の読み物",
+    "title_vi": "Bài đọc số 48",
+    "content": "日本の 生活は とても 楽しいです。毎日 新しい 言葉を 覚えて、友達と 会話を します。これからも 一生懸命 勉強を 続けます。",
+    "content_kana": "にっぽんの せいかつは とても たのしいです。まいにち あたらしい ことばを おぼえて、ともだちと かいわを します。これからも いっしょうけんめい べんきょうを つづけます。",
+    "translation": "Cuộc sống ở Nhật Bản rất thú vị. Mỗi ngày tôi học thêm những từ mới và trò chuyện cùng bạn bè. Từ giờ tôi cũng sẽ tiếp tục nỗ lực học tập.",
+    "questions": [
+      {
+        "q": "この人は 毎日 何を しますか。",
+        "options": [
+          "新しい言葉を覚える",
+          "一日中寝る",
+          "旅行に行く",
+          "何もしない"
+        ],
+        "answer": 0,
+        "explain": "毎日 新しい言葉を覚えます (Mỗi ngày đều học từ mới)."
+      }
+    ]
+  },
+  {
+    "lesson": 49,
+    "title_ja": "第49課の読み物",
+    "title_vi": "Bài đọc số 49",
+    "content": "日本の 生活は とても 楽しいです。毎日 新しい 言葉を 覚えて、友達と 会話を します。これからも 一生懸命 勉強を 続けます。",
+    "content_kana": "にっぽんの せいかつは とても たのしいです。まいにち あたらしい ことばを おぼえて、ともだちと かいわを します。これからも いっしょうけんめい べんきょうを つづけます。",
+    "translation": "Cuộc sống ở Nhật Bản rất thú vị. Mỗi ngày tôi học thêm những từ mới và trò chuyện cùng bạn bè. Từ giờ tôi cũng sẽ tiếp tục nỗ lực học tập.",
+    "questions": [
+      {
+        "q": "この人は 毎日 何を しますか。",
+        "options": [
+          "新しい言葉を覚える",
+          "一日中寝る",
+          "旅行に行く",
+          "何もしない"
+        ],
+        "answer": 0,
+        "explain": "毎日 新しい言葉を覚えます (Mỗi ngày đều học từ mới)."
+      }
+    ]
+  },
+  {
+    "lesson": 50,
+    "title_ja": "第50課の読み物",
+    "title_vi": "Bài đọc số 50",
+    "content": "日本の 生活は とても 楽しいです。毎日 新しい 言葉を 覚えて、友達と 会話を します。これからも 一生懸命 勉強を 続けます。",
+    "content_kana": "にっぽんの せいかつは とても たのしいです。まいにち あたらしい ことばを おぼえて、ともだちと かいわを します。これからも いっしょうけんめい べんきょうを つづけます。",
+    "translation": "Cuộc sống ở Nhật Bản rất thú vị. Mỗi ngày tôi học thêm những từ mới và trò chuyện cùng bạn bè. Từ giờ tôi cũng sẽ tiếp tục nỗ lực học tập.",
+    "questions": [
+      {
+        "q": "この人は 毎日 何を しますか。",
+        "options": [
+          "新しい言葉を覚える",
+          "一日中寝る",
+          "旅行に行く",
+          "何もしない"
+        ],
+        "answer": 0,
+        "explain": "毎日 新しい言葉を覚えます (Mỗi ngày đều học từ mới)."
+      }
+    ]
+  }
+]

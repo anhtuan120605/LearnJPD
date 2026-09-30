@@ -1,29 +1,35 @@
 import React, { useState } from 'react';
 import { WordItem } from '../types';
-import { Volume2, Star, CheckCircle2, Eye, EyeOff, Search, Sparkles, MessageSquare, ChevronDown, ChevronUp } from 'lucide-react';
+import { Volume2, Star, CheckCircle2, Eye, EyeOff, Search, Sparkles, MessageSquare, ChevronDown, ChevronUp, Trash2, RotateCcw } from 'lucide-react';
 import { speakJapanese } from '../lib/audio';
 
 interface WordListViewProps {
   words: WordItem[];
   masteredWords: string[];
   favoriteWords: string[];
+  hiddenWords?: string[];
   onToggleMaster: (id: string) => void;
   onToggleFavorite: (id: string) => void;
+  onToggleHide?: (id: string) => void;
+  onRestoreAllHidden?: () => void;
 }
 
 export const WordListView: React.FC<WordListViewProps> = ({
   words,
   masteredWords,
   favoriteWords,
+  hiddenWords = [],
   onToggleMaster,
-  onToggleFavorite
+  onToggleFavorite,
+  onToggleHide,
+  onRestoreAllHidden
 }) => {
   const [searchTerm, setSearchTerm] = useState('');
   const [showFurigana, setShowFurigana] = useState(true);
   const [showMeaning, setShowMeaning] = useState(true);
   const [showExamples, setShowExamples] = useState(true);
   const [expandedWordIds, setExpandedWordIds] = useState<string[]>([]);
-  const [filterType, setFilterType] = useState<'all' | 'unlearned' | 'mastered' | 'favorite'>('all');
+  const [filterType, setFilterType] = useState<'all' | 'unlearned' | 'mastered' | 'favorite' | 'hidden'>('all');
 
   const toggleWordExpand = (id: string) => {
     setExpandedWordIds(prev => 
@@ -31,9 +37,23 @@ export const WordListView: React.FC<WordListViewProps> = ({
     );
   };
 
-  // Lọc từ vựng
+  // Danh sách các từ đang hoạt động (chưa bị ẩn) và từ đã ẩn trong bài này
+  const activeWordsInLesson = words.filter(w => !hiddenWords.includes(w.id));
+  const hiddenWordsInLesson = words.filter(w => hiddenWords.includes(w.id));
+
+  // Lọc từ vựng theo tìm kiếm và trạng thái
   const filteredWords = words.filter(w => {
-    // 1. Tìm kiếm theo từ khóa
+    const isHidden = hiddenWords.includes(w.id);
+
+    // 1. Phân loại theo tab ẩn hay đang học
+    if (filterType === 'hidden') {
+      if (!isHidden) return false;
+    } else {
+      // Các tab khác không hiển thị từ đã ẩn/xóa
+      if (isHidden) return false;
+    }
+
+    // 2. Tìm kiếm theo từ khóa
     const term = searchTerm.toLowerCase().trim();
     const matchTerm = !term || 
       w.kanji.toLowerCase().includes(term) ||
@@ -44,7 +64,7 @@ export const WordListView: React.FC<WordListViewProps> = ({
 
     if (!matchTerm) return false;
 
-    // 2. Lọc theo trạng thái
+    // 3. Lọc theo trạng thái con
     if (filterType === 'mastered') return masteredWords.includes(w.id);
     if (filterType === 'unlearned') return !masteredWords.includes(w.id);
     if (filterType === 'favorite') return favoriteWords.includes(w.id);
@@ -63,54 +83,69 @@ export const WordListView: React.FC<WordListViewProps> = ({
             placeholder="Tìm Kanji, Kana, Hán Việt, Nghĩa..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            className="w-full pl-10 pr-4 py-2 bg-slate-50 dark:bg-zinc-800 border border-slate-200 dark:border-zinc-700/60 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-rose-500/20 focus:border-rose-500 transition"
+            className="w-full pl-10 pr-4 py-2 bg-slate-50 dark:bg-zinc-800 border border-slate-200 dark:border-zinc-700/60 rounded-xl text-sm focus:outline-hidden focus:ring-2 focus:ring-rose-500/20 focus:border-rose-500 transition"
           />
         </div>
 
         {/* Nút lọc & Toggle ẩn/hiện */}
         <div className="flex flex-wrap items-center gap-2 w-full md:w-auto">
           {/* Filter Status buttons */}
-          <div className="flex items-center bg-slate-100 dark:bg-zinc-800/80 p-1 rounded-xl text-xs font-semibold">
+          <div className="flex flex-wrap items-center bg-slate-100 dark:bg-zinc-800/80 p-1 rounded-xl text-xs font-semibold">
             <button
               onClick={() => setFilterType('all')}
               className={`px-3 py-1.5 rounded-lg transition ${
                 filterType === 'all'
-                  ? 'bg-white dark:bg-zinc-700 text-slate-900 dark:text-white shadow-sm'
+                  ? 'bg-white dark:bg-zinc-700 text-slate-900 dark:text-white shadow-xs'
                   : 'text-slate-500 hover:text-slate-900 dark:hover:text-white'
               }`}
             >
-              Tất cả ({words.length})
+              Đang học ({activeWordsInLesson.length})
             </button>
             <button
               onClick={() => setFilterType('unlearned')}
               className={`px-3 py-1.5 rounded-lg transition ${
                 filterType === 'unlearned'
-                  ? 'bg-white dark:bg-zinc-700 text-rose-600 dark:text-rose-400 shadow-sm'
+                  ? 'bg-white dark:bg-zinc-700 text-rose-600 dark:text-rose-400 shadow-xs'
                   : 'text-slate-500 hover:text-slate-900 dark:hover:text-white'
               }`}
             >
-              Chưa thuộc ({words.filter(w => !masteredWords.includes(w.id)).length})
+              Chưa thuộc ({activeWordsInLesson.filter(w => !masteredWords.includes(w.id)).length})
             </button>
             <button
               onClick={() => setFilterType('mastered')}
               className={`px-3 py-1.5 rounded-lg transition ${
                 filterType === 'mastered'
-                  ? 'bg-white dark:bg-zinc-700 text-emerald-600 dark:text-emerald-400 shadow-sm'
+                  ? 'bg-white dark:bg-zinc-700 text-emerald-600 dark:text-emerald-400 shadow-xs'
                   : 'text-slate-500 hover:text-slate-900 dark:hover:text-white'
               }`}
             >
-              Đã thuộc ({words.filter(w => masteredWords.includes(w.id)).length})
+              Đã thuộc ({activeWordsInLesson.filter(w => masteredWords.includes(w.id)).length})
             </button>
             <button
               onClick={() => setFilterType('favorite')}
               className={`px-3 py-1.5 rounded-lg transition ${
                 filterType === 'favorite'
-                  ? 'bg-white dark:bg-zinc-700 text-amber-500 shadow-sm'
+                  ? 'bg-white dark:bg-zinc-700 text-amber-500 shadow-xs'
                   : 'text-slate-500 hover:text-slate-900 dark:hover:text-white'
               }`}
             >
-              ⭐ Yêu thích ({words.filter(w => favoriteWords.includes(w.id)).length})
+              ⭐ Yêu thích ({activeWordsInLesson.filter(w => favoriteWords.includes(w.id)).length})
             </button>
+
+            {/* Nút xem từ đã ẩn/xóa (nếu có từ bị ẩn) */}
+            {hiddenWordsInLesson.length > 0 && (
+              <button
+                onClick={() => setFilterType('hidden')}
+                className={`px-3 py-1.5 rounded-lg transition flex items-center space-x-1 ${
+                  filterType === 'hidden'
+                    ? 'bg-red-500 text-white shadow-xs'
+                    : 'text-red-500 hover:bg-red-50 dark:hover:bg-red-950/40'
+                }`}
+              >
+                <Trash2 className="w-3.5 h-3.5" />
+                <span>Đã ẩn ({hiddenWordsInLesson.length})</span>
+              </button>
+            )}
           </div>
 
           {/* Toggle Furigana */}
@@ -157,6 +192,27 @@ export const WordListView: React.FC<WordListViewProps> = ({
         </div>
       </div>
 
+      {/* Thông báo và hành động khi đang ở mục "Đã ẩn" */}
+      {filterType === 'hidden' && (
+        <div className="bg-red-50 dark:bg-red-950/30 border border-red-200 dark:border-red-900/40 rounded-2xl p-4 flex items-center justify-between text-xs text-red-800 dark:text-red-300">
+          <div>
+            <strong>Danh sách từ đã ẩn/xóa khỏi bài ({hiddenWordsInLesson.length} từ):</strong>
+            <p className="text-[11px] text-red-600 dark:text-red-400 pt-0.5">
+              Những từ này sẽ không xuất hiện trong các bài luyện tập (Flashcard, Trắc nghiệm, Dịch câu...).
+            </p>
+          </div>
+          {onRestoreAllHidden && (
+            <button
+              onClick={onRestoreAllHidden}
+              className="px-3 py-1.5 rounded-xl bg-red-600 hover:bg-red-700 text-white font-bold transition flex items-center space-x-1 shadow-xs"
+            >
+              <RotateCcw className="w-3.5 h-3.5" />
+              <span>Khôi phục tất cả</span>
+            </button>
+          )}
+        </div>
+      )}
+
       {/* Bảng danh sách từ vựng */}
       <div className="bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 rounded-3xl overflow-hidden shadow-sm">
         <div className="divide-y divide-slate-100 dark:divide-zinc-800/80">
@@ -168,6 +224,7 @@ export const WordListView: React.FC<WordListViewProps> = ({
             filteredWords.map((word, idx) => {
               const isMastered = masteredWords.includes(word.id);
               const isFavorite = favoriteWords.includes(word.id);
+              const isHidden = hiddenWords.includes(word.id);
               const isRowExpanded = expandedWordIds.includes(word.id);
               const hasExamples = word.examples && word.examples.length > 0;
               const shouldShowExamples = showExamples || isRowExpanded;
@@ -177,7 +234,7 @@ export const WordListView: React.FC<WordListViewProps> = ({
                   key={word.id}
                   className={`p-4 sm:px-6 transition-colors hover:bg-slate-50/80 dark:hover:bg-zinc-800/50 flex flex-col space-y-3 ${
                     isMastered ? 'bg-emerald-500/[0.02]' : ''
-                  }`}
+                  } ${isHidden ? 'opacity-60 bg-slate-100/50 dark:bg-zinc-800/20' : ''}`}
                 >
                   <div className="flex items-center justify-between w-full">
                     {/* Cột trái: Số thứ tự, Loa, Từ vựng */}
@@ -202,9 +259,16 @@ export const WordListView: React.FC<WordListViewProps> = ({
                             {word.kana}
                           </p>
                         )}
-                        <h4 className="text-xl sm:text-2xl font-jp font-bold text-slate-900 dark:text-white leading-tight">
-                          {word.kanji || word.kana}
-                        </h4>
+                        <div className="flex items-center space-x-2">
+                          <h4 className="text-xl sm:text-2xl font-jp font-bold text-slate-900 dark:text-white leading-tight">
+                            {word.kanji || word.kana}
+                          </h4>
+                          {isHidden && (
+                            <span className="text-[10px] font-bold px-1.5 py-0.5 rounded bg-red-100 dark:bg-red-950/60 text-red-600 dark:text-red-400">
+                              Đã ẩn
+                            </span>
+                          )}
+                        </div>
                         {word.hanviet && (
                           <span className="inline-block mt-0.5 text-[11px] font-extrabold uppercase tracking-wide text-rose-600 dark:text-rose-400 bg-rose-50 dark:bg-rose-950/40 px-1.5 py-0.2 rounded">
                             {word.hanviet}
@@ -233,8 +297,8 @@ export const WordListView: React.FC<WordListViewProps> = ({
                       )}
                     </div>
 
-                    {/* Cột phải: Toggle ví dụ riêng, Sao & Thuộc */}
-                    <div className="flex items-center space-x-2">
+                    {/* Cột phải: Toggle ví dụ riêng, Sao, Thuộc & Xóa/Ẩn từ */}
+                    <div className="flex items-center space-x-1.5">
                       {hasExamples && !showExamples && (
                         <button
                           onClick={() => toggleWordExpand(word.id)}
@@ -250,34 +314,57 @@ export const WordListView: React.FC<WordListViewProps> = ({
                         </button>
                       )}
 
-                      <button
-                        onClick={() => onToggleFavorite(word.id)}
-                        className={`p-2 rounded-xl transition ${
-                          isFavorite
-                            ? 'text-amber-500 bg-amber-50 dark:bg-amber-950/30'
-                            : 'text-slate-300 hover:text-amber-500 hover:bg-slate-100 dark:hover:bg-zinc-800'
-                        }`}
-                        title={isFavorite ? 'Bỏ yêu thích' : 'Yêu thích'}
-                      >
-                        <Star className={`w-4 h-4 ${isFavorite ? 'fill-current' : ''}`} />
-                      </button>
+                      {!isHidden && (
+                        <>
+                          <button
+                            onClick={() => onToggleFavorite(word.id)}
+                            className={`p-2 rounded-xl transition ${
+                              isFavorite
+                                ? 'text-amber-500 bg-amber-50 dark:bg-amber-950/30'
+                                : 'text-slate-300 hover:text-amber-500 hover:bg-slate-100 dark:hover:bg-zinc-800'
+                            }`}
+                            title={isFavorite ? 'Bỏ yêu thích' : 'Yêu thích'}
+                          >
+                            <Star className={`w-4 h-4 ${isFavorite ? 'fill-current' : ''}`} />
+                          </button>
 
-                      <button
-                        onClick={() => onToggleMaster(word.id)}
-                        className={`p-2 rounded-xl transition ${
-                          isMastered
-                            ? 'text-emerald-500 bg-emerald-50 dark:bg-emerald-950/30'
-                            : 'text-slate-300 hover:text-emerald-500 hover:bg-slate-100 dark:hover:bg-zinc-800'
-                        }`}
-                        title={isMastered ? 'Đã thuộc từ này' : 'Đánh dấu đã thuộc'}
-                      >
-                        <CheckCircle2 className={`w-4 h-4 ${isMastered ? 'fill-current' : ''}`} />
-                      </button>
+                          <button
+                            onClick={() => onToggleMaster(word.id)}
+                            className={`p-2 rounded-xl transition ${
+                              isMastered
+                                ? 'text-emerald-500 bg-emerald-50 dark:bg-emerald-950/30'
+                                : 'text-slate-300 hover:text-emerald-500 hover:bg-slate-100 dark:hover:bg-zinc-800'
+                            }`}
+                            title={isMastered ? 'Đã thuộc từ này' : 'Đánh dấu đã thuộc'}
+                          >
+                            <CheckCircle2 className={`w-4 h-4 ${isMastered ? 'fill-current' : ''}`} />
+                          </button>
+                        </>
+                      )}
+
+                      {/* NÚT XÓA / ẨN / KHÔI PHỤC TỪ KHỎI BÀI HỌC */}
+                      {onToggleHide && (
+                        <button
+                          onClick={() => onToggleHide(word.id)}
+                          className={`p-2 rounded-xl transition ${
+                            isHidden
+                              ? 'text-emerald-600 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/40 hover:bg-emerald-100'
+                              : 'text-slate-300 hover:text-red-500 hover:bg-red-50 dark:hover:bg-red-950/30'
+                          }`}
+                          title={isHidden ? 'Khôi phục từ này để học lại' : 'Ẩn / Xóa từ này khỏi bài học'}
+                        >
+                          {isHidden ? (
+                            <RotateCcw className="w-4 h-4" />
+                          ) : (
+                            <Trash2 className="w-4 h-4" />
+                          )}
+                        </button>
+                      )}
                     </div>
                   </div>
 
                   {/* KHỐI CÂU VÍ DỤ NGỮ PHÁP / KAIWA THÔNG DỤNG */}
-                  {hasExamples && shouldShowExamples && (
+                  {hasExamples && shouldShowExamples && !isHidden && (
                     <div className="w-full bg-slate-50/90 dark:bg-zinc-800/60 border border-slate-200/80 dark:border-zinc-700/60 rounded-2xl p-3 sm:p-4 space-y-2 text-xs animate-in fade-in duration-200">
                       <div className="flex items-center space-x-1.5 text-purple-600 dark:text-purple-400 font-bold uppercase tracking-wider text-[10px]">
                         <MessageSquare className="w-3 h-3" />
@@ -289,26 +376,23 @@ export const WordListView: React.FC<WordListViewProps> = ({
                           {/* Nút phát âm câu ví dụ */}
                           <button
                             onClick={() => speakJapanese(ex.ja || ex.kana || '')}
-                            className="mt-0.5 p-1.5 rounded-lg text-purple-600 dark:text-purple-400 bg-purple-50 dark:bg-purple-950/40 hover:bg-purple-100 dark:hover:bg-purple-900/60 hover:scale-105 active:scale-95 transition flex-shrink-0"
+                            className="mt-0.5 p-1.5 rounded-lg text-purple-600 dark:text-purple-400 bg-purple-50 dark:bg-purple-950/40 hover:bg-purple-100 dark:hover:bg-purple-900/60 hover:scale-105 active:scale-95 transition shrink-0"
                             title="Nghe câu ví dụ"
                           >
                             <Volume2 className="w-3.5 h-3.5" />
                           </button>
 
                           <div className="flex-1 space-y-1">
-                            {/* Câu tiếng Nhật */}
                             <p className="font-jp text-sm sm:text-base font-bold text-slate-900 dark:text-zinc-100 leading-snug">
                               {ex.ja}
                             </p>
 
-                            {/* Cách đọc Furigana/Kana */}
                             {showFurigana && ex.kana && ex.kana !== ex.ja && (
                               <p className="text-[11px] font-mono text-slate-400 dark:text-zinc-500">
                                 {ex.kana}
                               </p>
                             )}
 
-                            {/* Dịch nghĩa tiếng Việt */}
                             {showMeaning && ex.vi && (
                               <p className="text-xs sm:text-sm font-medium text-slate-600 dark:text-zinc-300">
                                 {ex.vi}

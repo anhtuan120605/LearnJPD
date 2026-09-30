@@ -268,9 +268,9 @@
         "lesson": 1,
         "examples": [
           {
-            "ja": "この町は とても 賛成 ですね。",
-            "kana": "このまちは とても さんせい ですね。",
-            "vi": "Thành phố này rất sự tán thành nhỉ."
+            "ja": "基本的にあなたの意見に賛成です。",
+            "kana": "きほんてきにあなたのいけんにさんせいです。",
+            "vi": "Về cơ bản, tôi đồng ý với quan điểm của bạn."
           }
         ]
       },
@@ -286,9 +286,9 @@
         "lesson": 1,
         "examples": [
           {
-            "ja": "この町は とても 酸性 ですね。",
-            "kana": "このまちは とても さんせい ですね。",
-            "vi": "Thành phố này rất tính a xít nhỉ."
+            "ja": "この 液体は 酸性です。",
+            "kana": "この えきたいは さんせいです。",
+            "vi": "Chất lỏng này có tính tính a xít."
           }
         ]
       },
@@ -833,9 +833,9 @@
         "lesson": 2,
         "examples": [
           {
-            "ja": "この町は とても 次第 ですね。",
-            "kana": "このまちは とても しだい ですね。",
-            "vi": "Thành phố này rất dần dần; từ từ nhỉ."
+            "ja": "「いつ戻りますか」「天候次第です」",
+            "kana": "「いつもどりますか」「てんこうしだいです」",
+            "vi": "\"Bao giờ bạn quay lại?\" \"Còn tùy vào thời tiết.\""
           }
         ]
       },
@@ -887,9 +887,9 @@
         "lesson": 2,
         "examples": [
           {
-            "ja": "この町は とても 親しい ですね。",
-            "kana": "このまちは とても したしい ですね。",
-            "vi": "Thành phố này rất đầm ấm nhỉ."
+            "ja": "この 仕事は 親しいですが、頑張ります。",
+            "kana": "この しごとは したしいですが、がんばります。",
+            "vi": "Công việc này đầm ấm nhưng tôi sẽ cố gắng."
           }
         ]
       },
@@ -1020,9 +1020,9 @@
         "lesson": 3,
         "examples": [
           {
-            "ja": "この町は とても 実際 ですね。",
-            "kana": "このまちは とても じっさい ですね。",
-            "vi": "Thành phố này rất chân chính nhỉ."
+            "ja": "理論と実際を結び付けるべきだ。",
+            "kana": "りろんとじっさいをむすびつけるべきだ。",
+            "vi": "Bạn cần phải gắn kết lý thuyết với thực tế."
           }
         ]
       },
@@ -1272,9 +1272,9 @@
         "lesson": 3,
         "examples": [
           {
-            "ja": "この町は とても 芝居 ですね。",
-            "kana": "このまちは とても しばい ですね。",
-            "vi": "Thành phố này rất kịch nhỉ."
+            "ja": "劇場へ 芝居を 見に 行きました。",
+            "kana": "げきじょうへ しばいを みに いきました。",
+            "vi": "Tôi đã đến nhà hát xem kịch."
           }
         ]
       },
@@ -1326,9 +1326,9 @@
         "lesson": 3,
         "examples": [
           {
-            "ja": "この町は とても 支払 ですね。",
-            "kana": "このまちは とても しはらい ですね。",
-            "vi": "Thành phố này rất sự chi trả nhỉ."
+            "ja": "私は彼に５ドルを支払った。",
+            "kana": "わたしはかれに５どるをしはらった。",
+            "vi": "Tôi đã trả cho anh ấy 5 Đô-la."
           }
         ]
       },
@@ -1405,9 +1405,9 @@
         "lesson": 4,
         "examples": [
           {
-            "ja": "この町は とても 姉妹 ですね。",
-            "kana": "このまちは とても しまい ですね。",
-            "vi": "Thành phố này rất chị em nhỉ."
+            "ja": "両親にこっぴどくしかられてしまいます。",
+            "kana": "りょうしんにこっぴどくしかられてしまいます。",
+            "vi": "Tôi bị bố mẹ mắng té tát."
           }
         ]
       },
@@ -2204,9 +2204,9 @@
         "lesson": 5,
         "examples": [
           {
-            "ja": "この町は とても 種類 ですね。",
-            "kana": "このまちは とても しゅるい ですね。",
-            "vi": "Thành phố này rất chủng loại nhỉ."
+            "ja": "ハリケーンの種類は風速によって決まります。",
+            "kana": "はりけーんのしゅるいはふうそくによってきまります。",
+            "vi": "Bão xoáy được phân loại dựa trên tốc độ gió."
           }
         ]
       },
@@ -2776,9 +2776,9 @@
         "lesson": 7,
         "examples": [
           {
-            "ja": "この町は とても 商売 ですね。",
-            "kana": "このまちは とても しょうばい ですね。",
-            "vi": "Thành phố này rất bán buôn nhỉ."
+            "ja": "彼は商売の経験が豊かだった。",
+            "kana": "かれはしょうばいのけいけんがゆたかだった。",
+            "vi": "Ông ấy có nhiều kinh nghiệm thương mại."
           }
         ]
       },
@@ -2884,9 +2884,9 @@
         "lesson": 7,
         "examples": [
           {
-            "ja": "この町は とても 証明 ですね。",
-            "kana": "このまちは とても しょうめい ですね。",
-            "vi": "Thành phố này rất chứng minh nhỉ."
+            "ja": "これは証明済みの事実だ。",
+            "kana": "これはしょうめいずみのじじつだ。",
+            "vi": "Đây là sự thật đã được kiểm chứng."
           }
         ]
       },
@@ -3100,9 +3100,9 @@
         "lesson": 7,
         "examples": [
           {
-            "ja": "この町は とても 書斎 ですね。",
-            "kana": "このまちは とても しょさい ですね。",
-            "vi": "Thành phố này rất thư phòng nhỉ."
+            "ja": "彼は、よく書斎にこもって、こういうものを書きます。",
+            "kana": "かれは、よくしょさいにこもって、こういうものをかきます。",
+            "vi": "Anh ta thường ở ru rú trong phòng đọc sách và viết những thứ như thế này."
           }
         ]
       },
@@ -3172,9 +3172,9 @@
         "lesson": 7,
         "examples": [
           {
-            "ja": "この町は とても 署名 ですね。",
-            "kana": "このまちは とても しょめい ですね。",
-            "vi": "Thành phố này rất bí danh nhỉ."
+            "ja": "会議で 署名に ついて 議論しました。",
+            "kana": "かいぎで しょめいに ついて ぎろんしました。",
+            "vi": "Chúng tôi đã thảo luận về bí danh trong cuộc họp."
           }
         ]
       },
@@ -3251,9 +3251,9 @@
         "lesson": 8,
         "examples": [
           {
-            "ja": "この町は とても 書類 ですね。",
-            "kana": "このまちは とても しょるい ですね。",
-            "vi": "Thành phố này rất chứng từ nhỉ."
+            "ja": "彼は書類を弁護士に預けた。",
+            "kana": "かれはしょるいをべんごしにあずけた。",
+            "vi": "Anh ta đã giao hồ sơ cho luật sư."
           }
         ]
       },
@@ -3305,9 +3305,9 @@
         "lesson": 8,
         "examples": [
           {
-            "ja": "この町は とても 知合い ですね。",
-            "kana": "このまちは とても しりあい ですね。",
-            "vi": "Thành phố này rất người quen nhỉ."
+            "ja": "この 仕事は 知合いですが、頑張ります。",
+            "kana": "この しごとは しりあいですが、がんばります。",
+            "vi": "Công việc này người quen nhưng tôi sẽ cố gắng."
           }
         ]
       },
@@ -3377,9 +3377,9 @@
         "lesson": 8,
         "examples": [
           {
-            "ja": "この町は とても 神経 ですね。",
-            "kana": "このまちは とても しんけい ですね。",
-            "vi": "Thành phố này rất sự nhạy cảm nhỉ."
+            "ja": "彼女は葬式で笑うほど無神経な女の子ではない。",
+            "kana": "かのじょはそうしきでわらうほどむしんけいなおんなのこではない。",
+            "vi": "Cô ấy thiếu tinh tế đến mức có thể cười trong một đám tang."
           }
         ]
       },
@@ -3539,9 +3539,9 @@
         "lesson": 8,
         "examples": [
           {
-            "ja": "この町は とても 人生 ですね。",
-            "kana": "このまちは とても じんせい ですね。",
-            "vi": "Thành phố này rất bản mạng nhỉ."
+            "ja": "彼は彼の人生の話を私にしてくれた。",
+            "kana": "かれはかのじんせいのはなしをわたしにしてくれた。",
+            "vi": "Anh ấy nói với tôi chuyện đời của anh."
           }
         ]
       },
@@ -3762,9 +3762,9 @@
         "lesson": 9,
         "examples": [
           {
-            "ja": "この町は とても 信頼 ですね。",
-            "kana": "このまちは とても しんらい ですね。",
-            "vi": "Thành phố này rất đức tin nhỉ."
+            "ja": "トムはメアリーを信頼している。",
+            "kana": "とむはめありーをしんらいしている。",
+            "vi": "Tom tin tưởng Mary."
           }
         ]
       },
@@ -3798,9 +3798,9 @@
         "lesson": 9,
         "examples": [
           {
-            "ja": "この町は とても 人類 ですね。",
-            "kana": "このまちは とても じんるい ですね。",
-            "vi": "Thành phố này rất loài người nhỉ."
+            "ja": "言語は人類の最も重要な発明のひとつです。",
+            "kana": "げんごはじんるいのもっともじゅうようなはつめいのひとつです。",
+            "vi": "Ngôn ngữ là một trong những phát minh quan trọng nhất của loài người."
           }
         ]
       },
@@ -4309,9 +4309,9 @@
         "lesson": 10,
         "examples": [
           {
-            "ja": "私はこれで４年間ずっとフランス語を学んでいる。",
-            "kana": "わたしはこれで４ねんかんずっとふらんすごをまなんでいる。",
-            "vi": "Cho đến bây giờ, tôi đã học tiếng Pháp suốt 4 năm."
+            "ja": "午後はずっと友人とおしゃべりをして過ごした。",
+            "kana": "ごごはずっとゆうじんとおしゃべりをしてすごした。",
+            "vi": "Tôi tốn hết buổi chiều tán chuyện với đám bạn."
           }
         ]
       },
@@ -4489,9 +4489,9 @@
         "lesson": 10,
         "examples": [
           {
-            "ja": "すみません、駅はどちらでしょうか。",
-            "kana": "すみません、えきはどちらでしょうか。",
-            "vi": "Xin lỗi cho tôi hỏi, nhà ga ở hướng nào vậy ạ?"
+            "ja": "すみません、駅は どちらですか。",
+            "kana": "すみません、えきは どちらですか。",
+            "vi": "Xin lỗi cho tôi hỏi, nhà ga ở hướng nào ạ?"
           }
         ]
       },
@@ -4586,9 +4586,9 @@
         "lesson": 11,
         "examples": [
           {
-            "ja": "この町は とても 鋭い ですね。",
-            "kana": "このまちは とても するどい ですね。",
-            "vi": "Thành phố này rất sắc bén nhỉ."
+            "ja": "この 仕事は 鋭いですが、頑張ります。",
+            "kana": "この しごとは するどいですが、がんばります。",
+            "vi": "Công việc này sắc bén nhưng tôi sẽ cố gắng."
           }
         ]
       },
@@ -4694,9 +4694,9 @@
         "lesson": 11,
         "examples": [
           {
-            "ja": "この町は とても 姓 ですね。",
-            "kana": "このまちは とても せい ですね。",
-            "vi": "Thành phố này rất họ nhỉ."
+            "ja": "あんたのせいで食欲をなくしたよ。",
+            "kana": "あんたのせいでしょくよくをなくしたよ。",
+            "vi": "Nhờ ơn của bạn tôi hết còn thèm ăn."
           }
         ]
       },
@@ -4730,9 +4730,9 @@
         "lesson": 11,
         "examples": [
           {
-            "ja": "この町は とても 税 ですね。",
-            "kana": "このまちは とても ぜい ですね。",
-            "vi": "Thành phố này rất thuế nhỉ."
+            "ja": "会議で 税に ついて 議論しました。",
+            "kana": "かいぎで ぜいに ついて ぎろんしました。",
+            "vi": "Chúng tôi đã thảo luận về thuế trong cuộc họp."
           }
         ]
       },
@@ -5187,9 +5187,9 @@
         "lesson": 12,
         "examples": [
           {
-            "ja": "この町は とても 生命 ですね。",
-            "kana": "このまちは とても せいめい ですね。",
-            "vi": "Thành phố này rất bản mạng nhỉ."
+            "ja": "水は生命に必要不可欠です。",
+            "kana": "みずはせいめいにひつようふかけつです。",
+            "vi": "Nước không thể thiếu đối với cuộc sống chúng ta."
           }
         ]
       },
@@ -5349,9 +5349,9 @@
         "lesson": 12,
         "examples": [
           {
-            "ja": "この町は とても 設計 ですね。",
-            "kana": "このまちは とても せっけい ですね。",
-            "vi": "Thành phố này rất sự thiết kế nhỉ."
+            "ja": "配管工は配管系の設計・組立を行う。",
+            "kana": "はいかんこうははいかんけいのせっけい・くみたてをおこなう。",
+            "vi": "Thợ sửa ống nước thực hiện việc thiết kế và lắp ráp hệ thống đường ống."
           }
         ]
       },
@@ -6558,9 +6558,9 @@
         "lesson": 15,
         "examples": [
           {
-            "ja": "この町は とても 安定 ですね。",
-            "kana": "このまちは とても あんてい ですね。",
-            "vi": "Thành phố này rất ơn nhỉ."
+            "ja": "会議で 安定に ついて 議論しました。",
+            "kana": "かいぎで あんていに ついて ぎろんしました。",
+            "vi": "Chúng tôi đã thảo luận về ơn trong cuộc họp."
           }
         ]
       },
@@ -6612,9 +6612,9 @@
         "lesson": 15,
         "examples": [
           {
-            "ja": "この町は とても 胃 ですね。",
-            "kana": "このまちは とても い ですね。",
-            "vi": "Thành phố này rất dạ dầy nhỉ."
+            "ja": "会議で 胃に ついて 議論しました。",
+            "kana": "かいぎで いに ついて ぎろんしました。",
+            "vi": "Chúng tôi đã thảo luận về dạ dầy trong cuộc họp."
           }
         ]
       },
@@ -6720,9 +6720,9 @@
         "lesson": 15,
         "examples": [
           {
-            "ja": "この町は とても 勢い ですね。",
-            "kana": "このまちは とても いきおい ですね。",
-            "vi": "Thành phố này rất diễn biến nhỉ."
+            "ja": "アルメニアには外国人が大勢いますか。",
+            "kana": "あるめにあにはがいこくじんがおおぜいいますか。",
+            "vi": "Có nhiều người nước ngoài ở Ác-mê-ni-a không?"
           }
         ]
       },
@@ -6756,9 +6756,9 @@
         "lesson": 15,
         "examples": [
           {
-            "ja": "この町は とても いけない ですね。",
-            "kana": "このまちは とても いけない ですね。",
-            "vi": "Thành phố này rất không được; cấm nhỉ."
+            "ja": "私は６時間ごとに薬を飲まないといけない。",
+            "kana": "わたしは６じかんごとにくすりをのまないといけない。",
+            "vi": "Cứ sáu giờ tôi phải uống thuốc một lần."
           }
         ]
       },
@@ -7033,9 +7033,9 @@
         "lesson": 16,
         "examples": [
           {
-            "ja": "とてもおいしそうですね。いただきます！",
-            "kana": "とてもおいしそうですね。いただきます！",
-            "vi": "Món ăn trông ngon quá. Mời cả nhà cùng ăn cơm ạ!"
+            "ja": "美味しそうな 料理ですね。いただきます！",
+            "kana": "おいしそうな りょうりですね。いただきます！",
+            "vi": "Món ăn trông ngon quá. Mời cả nhà cùng ăn!"
           }
         ]
       },
@@ -7303,9 +7303,9 @@
         "lesson": 16,
         "examples": [
           {
-            "ja": "私はあなたと意見が一致しています。",
-            "kana": "わたしはあなたといけんがいっちしています。",
-            "vi": "Tôi đồng ý với bạn."
+            "ja": "会議で 一致に ついて 議論しました。",
+            "kana": "かいぎで いっちに ついて ぎろんしました。",
+            "vi": "Chúng tôi đã thảo luận về sự nhất trí trong cuộc họp."
           }
         ]
       }
@@ -7562,9 +7562,9 @@
         "lesson": 17,
         "examples": [
           {
-            "ja": "あした 居間へ 行きます。",
-            "kana": "あした いまへ いきます。",
-            "vi": "Ngày mai tôi sẽ đi đến phòng khách; phòng đợi."
+            "ja": "いま 何時ですか。― 3時です。",
+            "kana": "いま なんじですか。― 3ときです。",
+            "vi": "Bây giờ là mấy giờ? ― 3 giờ ạ."
           }
         ]
       },
@@ -7760,9 +7760,9 @@
         "lesson": 17,
         "examples": [
           {
-            "ja": "この町は とても 祝い ですね。",
-            "kana": "このまちは とても いわい ですね。",
-            "vi": "Thành phố này rất chúc tụng nhỉ."
+            "ja": "この 仕事は 祝いですが、頑張ります。",
+            "kana": "この しごとは いわいですが、がんばります。",
+            "vi": "Công việc này chúc tụng nhưng tôi sẽ cố gắng."
           }
         ]
       }
@@ -8001,9 +8001,9 @@
         "lesson": 18,
         "examples": [
           {
-            "ja": "この町は とても うがい ですね。",
-            "kana": "このまちは とても うがい ですね。",
-            "vi": "Thành phố này rất sự súc miệng nhỉ."
+            "ja": "今日は傘を持っていったほうがいいよ。",
+            "kana": "こんにちはかさをもっていったほうがいいよ。",
+            "vi": "Hôm nay bạn nên mang ô theo."
           }
         ]
       },
@@ -8602,9 +8602,9 @@
         "lesson": 19,
         "examples": [
           {
-            "ja": "この町は とても 衛星 ですね。",
-            "kana": "このまちは とても えいせい ですね。",
-            "vi": "Thành phố này rất vệ tinh nhỉ."
+            "ja": "月は地球の唯一の衛星である。",
+            "kana": "がつはちきゅうのゆいいつのえいせいである。",
+            "vi": "Mặt Trăng là vệ tinh duy nhất của Trái Đất."
           }
         ]
       },
@@ -8879,9 +8879,9 @@
         "lesson": 20,
         "examples": [
           {
-            "ja": "この町は とても 老い ですね。",
-            "kana": "このまちは とても おい ですね。",
-            "vi": "Thành phố này rất cháu trai nhỉ."
+            "ja": "１人の年老いた女性が私たちに城の中を案内してくれた。",
+            "kana": "１にんのとしよりいたじょせいがわたしたちにしろのなかをあんないしてくれた。",
+            "vi": "Một người phụ nữ lớn tuổi đã giới thiệu cho chúng tôi bên trong tòa lâu đài."
           }
         ]
       },
@@ -10027,9 +10027,9 @@
         "lesson": 22,
         "examples": [
           {
-            "ja": "この町は とても 貝 ですね。",
-            "kana": "このまちは とても かい ですね。",
-            "vi": "Thành phố này rất ngao; sò; hến nhỉ."
+            "ja": "そこに一日中ただ立っているつもりかい？",
+            "kana": "そこにいちにちじゅうただたっているつもりかい？",
+            "vi": "Cậu định đứng đó cả ngày hay sao?"
           }
         ]
       },
@@ -10045,9 +10045,9 @@
         "lesson": 22,
         "examples": [
           {
-            "ja": "この町は とても 害 ですね。",
-            "kana": "このまちは とても がい ですね。",
-            "vi": "Thành phố này rất hại; cái hại nhỉ."
+            "ja": "私には父親が手品師をしている友人がいます。",
+            "kana": "わたしにはちちおやがてじなしをしているゆうじんがいます。",
+            "vi": "Tôi có một người bạn có bố là ảo thuật gia."
           }
         ]
       }
@@ -10106,9 +10106,9 @@
         "lesson": 23,
         "examples": [
           {
-            "ja": "この町は とても 海外 ですね。",
-            "kana": "このまちは とても かいがい ですね。",
-            "vi": "Thành phố này rất hải ngoại nhỉ."
+            "ja": "毎年、多くの日本人が海外へ旅行する。",
+            "kana": "まいとし、おおくのにほんじんがかいがいへりょこうする。",
+            "vi": "Mỗi năm có nhiều người Nhật đi nước ngoài du lịch."
           }
         ]
       },
@@ -10124,9 +10124,9 @@
         "lesson": 23,
         "examples": [
           {
-            "ja": "この町は とても 会計 ですね。",
-            "kana": "このまちは とても かいけい ですね。",
-            "vi": "Thành phố này rất kế toán nhỉ."
+            "ja": "お会計は1階レジにてお願いいたします。",
+            "kana": "おかいけいは1かいれじにておねがいいたします。",
+            "vi": "Quý khách hãy thanh toán ở quầy thu ngân tại tầng 1."
           }
         ]
       },
@@ -10984,9 +10984,9 @@
         "lesson": 25,
         "examples": [
           {
-            "ja": "この町は とても 火災 ですね。",
-            "kana": "このまちは とても かさい ですね。",
-            "vi": "Thành phố này rất bị cháy nhỉ."
+            "ja": "火災報知器が鳴った。",
+            "kana": "かさいほうちきがなった。",
+            "vi": "Chuông báo cháy đã vang lên."
           }
         ]
       },
@@ -11513,9 +11513,9 @@
         "lesson": 26,
         "examples": [
           {
-            "ja": "この町は とても 仮定 ですね。",
-            "kana": "このまちは とても かてい ですね。",
-            "vi": "Thành phố này rất sự giả định nhỉ."
+            "ja": "会議で 仮定に ついて 議論しました。",
+            "kana": "かいぎで かていに ついて ぎろんしました。",
+            "vi": "Chúng tôi đã thảo luận về sự giả định trong cuộc họp."
           }
         ]
       },
@@ -11819,9 +11819,9 @@
         "lesson": 26,
         "examples": [
           {
-            "ja": "この町は とても かもしれない ですね。",
-            "kana": "このまちは とても かもしれない ですね。",
-            "vi": "Thành phố này rất có thể là nhỉ."
+            "ja": "あなたが来るかもしれないと思いました。",
+            "kana": "あなたがくるかもしれないとおもいました。",
+            "vi": "Tôi đã nghĩ là bạn chắc có lẽ sẽ tới."
           }
         ]
       },
@@ -11837,9 +11837,9 @@
         "lesson": 26,
         "examples": [
           {
-            "ja": "この町は とても かゆい ですね。",
-            "kana": "このまちは とても かゆい ですね。",
-            "vi": "Thành phố này rất ngứa; ngứa rát nhỉ."
+            "ja": "先生、アソコがかゆいんです。",
+            "kana": "せんせい、あそこがかゆいんです。",
+            "vi": "Cô ơi, em bị ngứa \"chỗ ấy\"."
           }
         ]
       },
@@ -12661,9 +12661,9 @@
         "lesson": 28,
         "examples": [
           {
-            "ja": "この町は とても 機械 ですね。",
-            "kana": "このまちは とても きかい ですね。",
-            "vi": "Thành phố này rất bộ máy nhỉ."
+            "ja": "僕は機械を組み立てるのが好きだ。",
+            "kana": "ぼくはきかいをくみたてるのがすきだ。",
+            "vi": "Tôi thích lắp ráp máy móc."
           }
         ]
       },
@@ -13154,9 +13154,9 @@
         "lesson": 29,
         "examples": [
           {
-            "ja": "リストのデータは、自動集計機能を使って簡単に集計することができます。",
-            "kana": "りすとのでーたは、じどうしゅうけいきのうをつかってかんたんにしゅうけいすることができます。",
-            "vi": "Dữ liệu list có thể dễ dàng được tổng hợp bằng cách sử dụng chức năng tổng hợp tự động."
+            "ja": "きのう 友達と 日本語を 勉強しました。",
+            "kana": "きのう ともだちと にほんごを べんきょうしました。",
+            "vi": "Hôm qua tôi đã học tiếng Nhật cùng bạn bè."
           }
         ]
       },
@@ -13307,7 +13307,7 @@
           {
             "ja": "私はあなたに説明する義務がある。",
             "kana": "わたしはあなたにせつめいするぎむがある。",
-            "vi": "Tôi có nghĩa vụ phải giải thích cho bạn."
+            "vi": "Tôi nợ bạn một lời giải thích."
           }
         ]
       },
@@ -13467,9 +13467,9 @@
         "lesson": 30,
         "examples": [
           {
-            "ja": "この町は とても 休憩 ですね。",
-            "kana": "このまちは とても きゅうけい ですね。",
-            "vi": "Thành phố này rất sự nghỉ ngơi nhỉ."
+            "ja": "運動した後は休憩したほうがいいよ。",
+            "kana": "うんどうしたのちはきゅうけいしたほうがいいよ。",
+            "vi": "Bạn nên nghỉ một chút sau khi tập thể dục thì sẽ tốt hơn đấy."
           }
         ]
       },
@@ -14140,9 +14140,9 @@
         "lesson": 31,
         "examples": [
           {
-            "ja": "この町は とても 近代 ですね。",
-            "kana": "このまちは とても きんだい ですね。",
-            "vi": "Thành phố này rất cận nhỉ."
+            "ja": "会議で 近代に ついて 議論しました。",
+            "kana": "かいぎで きんだいに ついて ぎろんしました。",
+            "vi": "Chúng tôi đã thảo luận về cận trong cuộc họp."
           }
         ]
       },
@@ -14273,9 +14273,9 @@
         "lesson": 32,
         "examples": [
           {
-            "ja": "この町は とても 臭い ですね。",
-            "kana": "このまちは とても くさい ですね。",
-            "vi": "Thành phố này rất hôi thối nhỉ."
+            "ja": "トム、酒臭いからあっちに行って。",
+            "kana": "とむ、さけくさいからあっちにいって。",
+            "vi": "Tom à, anh đi ra chỗ khác được không, tại vì người anh nồng nặc mùi rượu rồi đấy."
           }
         ]
       },
@@ -14561,9 +14561,9 @@
         "lesson": 32,
         "examples": [
           {
-            "ja": "この町は とても 悔しい ですね。",
-            "kana": "このまちは とても くやしい ですね。",
-            "vi": "Thành phố này rất đáng ân hận nhỉ."
+            "ja": "この 仕事は 悔しいですが、頑張ります。",
+            "kana": "この しごとは くやしいですが、がんばります。",
+            "vi": "Công việc này đáng ân hận nhưng tôi sẽ cố gắng."
           }
         ]
       },
@@ -14784,9 +14784,9 @@
         "lesson": 33,
         "examples": [
           {
-            "ja": "この町は とても 苦しい ですね。",
-            "kana": "このまちは とても くるしい ですね。",
-            "vi": "Thành phố này rất cực khổ nhỉ."
+            "ja": "何千ものアメリカ人が飢えをしのいでいる苦しい時代だ。",
+            "kana": "なんぜんものあめりかにんがうえをしのいでいるくるしいじだいだ。",
+            "vi": "Đó là một thời đại khó khăn, khi khi hàng nghìn người Mỹ phải chịu đói."
           }
         ]
       },
@@ -15036,9 +15036,9 @@
         "lesson": 33,
         "examples": [
           {
-            "ja": "この町は とても 計 ですね。",
-            "kana": "このまちは とても けい ですね。",
-            "vi": "Thành phố này rất kế nhỉ."
+            "ja": "彼はこっけいな話をした。",
+            "kana": "かれはこっけいなはなしをした。",
+            "vi": "Anh ấy đã kể một câu chuyện rất buồn cười."
           }
         ]
       },
@@ -15054,9 +15054,9 @@
         "lesson": 33,
         "examples": [
           {
-            "ja": "この町は とても 敬意 ですね。",
-            "kana": "このまちは とても けいい ですね。",
-            "vi": "Thành phố này rất khả kính nhỉ."
+            "ja": "会議で 敬意に ついて 議論しました。",
+            "kana": "かいぎで けいいに ついて ぎろんしました。",
+            "vi": "Chúng tôi đã thảo luận về khả kính trong cuộc họp."
           }
         ]
       },
@@ -15626,9 +15626,9 @@
         "lesson": 35,
         "examples": [
           {
-            "ja": "この町は とても 限界 ですね。",
-            "kana": "このまちは とても げんかい ですね。",
-            "vi": "Thành phố này rất giới hạn nhỉ."
+            "ja": "そろそろ我慢の限界だよ。",
+            "kana": "そろそろがまんのげんかいだよ。",
+            "vi": "Tôi sắp chịu đựng không nổi rồi."
           }
         ]
       },
@@ -15716,9 +15716,9 @@
         "lesson": 35,
         "examples": [
           {
-            "ja": "この町は とても 現在 ですね。",
-            "kana": "このまちは とても げんざい ですね。",
-            "vi": "Thành phố này rất bây giờ nhỉ."
+            "ja": "彼は現在病院にいる。",
+            "kana": "かれはげんざいびょういんにいる。",
+            "vi": "Bây giờ anh ấy đang ở trong bệnh viện."
           }
         ]
       },
@@ -15806,9 +15806,9 @@
         "lesson": 35,
         "examples": [
           {
-            "ja": "この町は とても 現代 ですね。",
-            "kana": "このまちは とても げんだい ですね。",
-            "vi": "Thành phố này rất đời này nhỉ."
+            "ja": "私は彼を日本で最高の現代の作曲家の一人だと評価している。",
+            "kana": "わたしはかれをにっぽんでさいこうのげんだいのさっきょくかのひとりだとひょうかしている。",
+            "vi": "Tôi đánh giá ông là một trong số các nhà soạn nhạc hiện đại nhất tại Nhật Bản."
           }
         ]
       },
@@ -15968,9 +15968,9 @@
         "lesson": 35,
         "examples": [
           {
-            "ja": "この町は とても 恋 ですね。",
-            "kana": "このまちは とても こい ですね。",
-            "vi": "Thành phố này rất tình yêu nhỉ."
+            "ja": "こいつは悪いウサギだった。",
+            "kana": "こいつはわるいうさぎだった。",
+            "vi": "Đó là một con thỏ hung ác."
           }
         ]
       },
@@ -16209,9 +16209,9 @@
         "lesson": 36,
         "examples": [
           {
-            "ja": "この町は とても 合計 ですね。",
-            "kana": "このまちは とても ごうけい ですね。",
-            "vi": "Thành phố này rất tổng cộng nhỉ."
+            "ja": "会議で 合計に ついて 議論しました。",
+            "kana": "かいぎで ごうけいに ついて ぎろんしました。",
+            "vi": "Chúng tôi đã thảo luận về tổng cộng trong cuộc họp."
           }
         ]
       },
@@ -16979,9 +16979,9 @@
         "lesson": 38,
         "examples": [
           {
-            "ja": "この町は とても 国会 ですね。",
-            "kana": "このまちは とても こっかい ですね。",
-            "vi": "Thành phố này rất quốc hội nhỉ."
+            "ja": "国会議員は問題の解決に苦慮しています。",
+            "kana": "こっかいぎいんはもんだいのかいけつにくりょしています。",
+            "vi": "Các nghị sĩ Quốc hội đang đau đầu tìm cách giải quyết vấn đề này."
           }
         ]
       },
@@ -17249,9 +17249,9 @@
         "lesson": 38,
         "examples": [
           {
-            "ja": "遅れてしまって、本当にごめんなさい。",
-            "kana": "おくれてしまって、ほんとうにごめんなさい。",
-            "vi": "Tôi đến muộn mất rồi, thực sự xin lỗi bạn."
+            "ja": "遅れてしまって、ごめんなさい。",
+            "kana": "おくれてしまって、ごめんなさい。",
+            "vi": "Tôi đến muộn mất rồi, xin lỗi bạn nhé."
           }
         ]
       },
@@ -17339,9 +17339,9 @@
         "lesson": 38,
         "examples": [
           {
-            "ja": "この町は とても 今回 ですね。",
-            "kana": "このまちは とても こんかい ですね。",
-            "vi": "Thành phố này rất kỳ này nhỉ."
+            "ja": "コストコは今回は行かなくてもいい？",
+            "kana": "こすとこはこんかいはいかなくてもいい？",
+            "vi": "Lần này chúng ta không đi Costco có được không?"
           }
         ]
       },
@@ -17436,9 +17436,9 @@
         "lesson": 39,
         "examples": [
           {
-            "ja": "私は今日夕食を作らねばなりません。",
-            "kana": "わたしはきょうゆうしょくをつくらねばなりません。",
-            "vi": "Tôi hôm nay phải nấu bữa tối."
+            "ja": "今日は 家族と 買い物を します。",
+            "kana": "こんにちは かぞくと かいものを します。",
+            "vi": "Hôm nay tôi đi mua sắm cùng gia đình."
           }
         ]
       },
@@ -17454,9 +17454,9 @@
         "lesson": 39,
         "examples": [
           {
-            "ja": "こんにちは、いいお天気ですね。",
-            "kana": "こんにちは、いいおてんきですね。",
-            "vi": "Xin chào bạn, hôm nay thời tiết đẹp quá nhỉ."
+            "ja": "皆さん、こんにちは！",
+            "kana": "みなさん、こんにちは！",
+            "vi": "Xin chào mọi người!"
           }
         ]
       },
@@ -17544,9 +17544,9 @@
         "lesson": 39,
         "examples": [
           {
-            "ja": "この町は とても 際 ですね。",
-            "kana": "このまちは とても さい ですね。",
-            "vi": "Thành phố này rất rìa; gờ; bờ nhỉ."
+            "ja": "我慢してください。時間がかかります。",
+            "kana": "がまんしてください。じかんがかかります。",
+            "vi": "Làm ơn kiên nhẫn một chút đi, cái này phải tốn thì giờ."
           }
         ]
       },
@@ -17706,9 +17706,9 @@
         "lesson": 39,
         "examples": [
           {
-            "ja": "この町は とても 幸い ですね。",
-            "kana": "このまちは とても さいわい ですね。",
-            "vi": "Thành phố này rất hân hạnh nhỉ."
+            "ja": "来ていただけると幸いです。",
+            "kana": "きていただけるとさいわいです。",
+            "vi": "Tôi vui vì bạn đã đến."
           }
         ]
       },
@@ -18494,9 +18494,9 @@
         "lesson": 41,
         "examples": [
           {
-            "ja": "何がおきようと私はあなたの味方です。",
-            "kana": "なにがおきようとわたしはあなたのみかたです。",
-            "vi": "Tôi ở bên cạnh bạn cho dù có chuyện gì xảy ra."
+            "ja": "会議で 味方に ついて 議論しました。",
+            "kana": "かいぎで みかたに ついて ぎろんしました。",
+            "vi": "Chúng tôi đã thảo luận về bạn trong cuộc họp."
           }
         ]
       },
@@ -18656,9 +18656,9 @@
         "lesson": 41,
         "examples": [
           {
-            "ja": "私はそれが奇妙だとは思いません。",
-            "kana": "わたしはそれがきみょうだとはおもいません。",
-            "vi": "Mình không nghĩ cái đó có gì lạ."
+            "ja": "会議で 妙に ついて 議論しました。",
+            "kana": "かいぎで みょうに ついて ぎろんしました。",
+            "vi": "Chúng tôi đã thảo luận về kỳ lạ trong cuộc họp."
           }
         ]
       },
@@ -18692,9 +18692,9 @@
         "lesson": 41,
         "examples": [
           {
-            "ja": "この町は とても 未来 ですね。",
-            "kana": "このまちは とても みらい ですね。",
-            "vi": "Thành phố này rất đời sau nhỉ."
+            "ja": "会議で 未来に ついて 議論しました。",
+            "kana": "かいぎで みらいに ついて ぎろんしました。",
+            "vi": "Chúng tôi đã thảo luận về đời sau trong cuộc họp."
           }
         ]
       },
@@ -18897,9 +18897,9 @@
         "lesson": 42,
         "examples": [
           {
-            "ja": "この町は とても 蒸し暑い ですね。",
-            "kana": "このまちは とても むしあつい ですね。",
-            "vi": "Thành phố này rất hấp hơi nhỉ."
+            "ja": "この 仕事は 蒸し暑いですが、頑張ります。",
+            "kana": "この しごとは むしあついですが、がんばります。",
+            "vi": "Công việc này hấp hơi nhưng tôi sẽ cố gắng."
           }
         ]
       },
@@ -19167,9 +19167,9 @@
         "lesson": 42,
         "examples": [
           {
-            "ja": "この町は とても 命令 ですね。",
-            "kana": "このまちは とても めいれい ですね。",
-            "vi": "Thành phố này rất lệnh nhỉ."
+            "ja": "会議で 命令に ついて 議論しました。",
+            "kana": "かいぎで めいれいに ついて ぎろんしました。",
+            "vi": "Chúng tôi đã thảo luận về lệnh trong cuộc họp."
           }
         ]
       },
@@ -19606,9 +19606,9 @@
         "lesson": 43,
         "examples": [
           {
-            "ja": "この町は とても もったいない ですね。",
-            "kana": "このまちは とても もったいない ですね。",
-            "vi": "Thành phố này rất lãng phí nhỉ."
+            "ja": "この 仕事は もったいないですが、頑張ります。",
+            "kana": "この しごとは もったいないですが、がんばります。",
+            "vi": "Công việc này lãng phí nhưng tôi sẽ cố gắng."
           }
         ]
       },
@@ -20466,9 +20466,9 @@
         "lesson": 45,
         "examples": [
           {
-            "ja": "私はあなたがそんな事をするのを許すわけにはいきません。",
-            "kana": "わたしはあなたがそんなことをするのをゆるすわけにはいきません。",
-            "vi": "Tôi không thể để bạn làm điều đó."
+            "ja": "そんな事を許すわけにはいきません。",
+            "kana": "そんなことをゆるすわけにはいきません。",
+            "vi": "Tôi không thể cho phép điều đó xảy ra."
           }
         ]
       },
@@ -20484,9 +20484,9 @@
         "lesson": 45,
         "examples": [
           {
-            "ja": "夜はこのホテルに泊まるつもりです。",
-            "kana": "よるはこのほてるにとまるつもりです。",
-            "vi": "Tôi định sẽ ở qua đêm tại khách sạn này."
+            "ja": "夜は 早く 寝るように しています。",
+            "kana": "よるは はやく ねるように しています。",
+            "vi": "Buổi tối tôi luôn cố gắng đi ngủ sớm."
           }
         ]
       },
@@ -21434,9 +21434,9 @@
         "lesson": 47,
         "examples": [
           {
-            "ja": "この町は とても 例 ですね。",
-            "kana": "このまちは とても れい ですね。",
-            "vi": "Thành phố này rất thí dụ nhỉ."
+            "ja": "あなたの唇はきれいです。",
+            "kana": "あなたのくちびるはきれいです。",
+            "vi": "Môi em đẹp quá."
           }
         ]
       },
@@ -21470,9 +21470,9 @@
         "lesson": 47,
         "examples": [
           {
-            "ja": "この町は とても 例外 ですね。",
-            "kana": "このまちは とても れいがい ですね。",
-            "vi": "Thành phố này rất ngoại lệ nhỉ."
+            "ja": "会議で 例外に ついて 議論しました。",
+            "kana": "かいぎで れいがいに ついて ぎろんしました。",
+            "vi": "Chúng tôi đã thảo luận về ngoại lệ trong cuộc họp."
           }
         ]
       }
@@ -21927,9 +21927,9 @@
         "lesson": 48,
         "examples": [
           {
-            "ja": "この町は とても 話題 ですね。",
-            "kana": "このまちは とても わだい ですね。",
-            "vi": "Thành phố này rất chủ đề nhỉ."
+            "ja": "会議で 話題に ついて 議論しました。",
+            "kana": "かいぎで わだいに ついて ぎろんしました。",
+            "vi": "Chúng tôi đã thảo luận về chủ đề trong cuộc họp."
           }
         ]
       }
@@ -22168,9 +22168,9 @@
         "lesson": 49,
         "examples": [
           {
-            "ja": "この町は とても 異 ですね。",
-            "kana": "このまちは とても い ですね。",
-            "vi": "Thành phố này rất dạ dầy nhỉ."
+            "ja": "会議で 異に ついて 議論しました。",
+            "kana": "かいぎで ことに ついて ぎろんしました。",
+            "vi": "Chúng tôi đã thảo luận về dạ dầy trong cuộc họp."
           }
         ]
       },
@@ -22186,9 +22186,9 @@
         "lesson": 49,
         "examples": [
           {
-            "ja": "この町は とても 意 ですね。",
-            "kana": "このまちは とても い ですね。",
-            "vi": "Thành phố này rất dạ dầy nhỉ."
+            "ja": "会議で 意に ついて 議論しました。",
+            "kana": "かいぎで いに ついて ぎろんしました。",
+            "vi": "Chúng tôi đã thảo luận về dạ dầy trong cuộc họp."
           }
         ]
       },
@@ -23010,9 +23010,9 @@
         "lesson": 51,
         "examples": [
           {
-            "ja": "この町は とても 規制 ですね。",
-            "kana": "このまちは とても きせい ですね。",
-            "vi": "Thành phố này rất định mức nhỉ."
+            "ja": "会議で 規制に ついて 議論しました。",
+            "kana": "かいぎで きせいに ついて ぎろんしました。",
+            "vi": "Chúng tôi đã thảo luận về định mức trong cuộc họp."
           }
         ]
       },
@@ -23208,9 +23208,9 @@
         "lesson": 51,
         "examples": [
           {
-            "ja": "この町は とても 経緯 ですね。",
-            "kana": "このまちは とても けいい ですね。",
-            "vi": "Thành phố này rất khả kính nhỉ."
+            "ja": "会議で 経緯に ついて 議論しました。",
+            "kana": "かいぎで けいいに ついて ぎろんしました。",
+            "vi": "Chúng tôi đã thảo luận về khả kính trong cuộc họp."
           }
         ]
       },
@@ -23395,9 +23395,9 @@
         "lesson": 52,
         "examples": [
           {
-            "ja": "この町は とても 後悔 ですね。",
-            "kana": "このまちは とても こうかい ですね。",
-            "vi": "Thành phố này rất cải hối nhỉ."
+            "ja": "そのことを後悔しながら余生を送りたくない。",
+            "kana": "そのことをこうかいしながらよせいをおくりたくない。",
+            "vi": "Tôi không muốn cả đời hối tiếc vì chuyện này."
           }
         ]
       },
@@ -23521,9 +23521,9 @@
         "lesson": 52,
         "examples": [
           {
-            "ja": "あした 個々へ 行きます。",
-            "kana": "あした ここへ いきます。",
-            "vi": "Ngày mai tôi sẽ đi đến chỗ này, đây."
+            "ja": "ここは 私たちの 教室です。",
+            "kana": "ここは わたしたちの きょうしつです。",
+            "vi": "Đây là phòng học của chúng tôi."
           }
         ]
       },
@@ -23852,9 +23852,9 @@
         "lesson": 53,
         "examples": [
           {
-            "ja": "この町は とても 洗剤 ですね。",
-            "kana": "このまちは とても せんざい ですね。",
-            "vi": "Thành phố này rất bột làm bánh nhỉ."
+            "ja": "会議で 洗剤に ついて 議論しました。",
+            "kana": "かいぎで せんざいに ついて ぎろんしました。",
+            "vi": "Chúng tôi đã thảo luận về bột làm bánh trong cuộc họp."
           }
         ]
       },
@@ -24194,9 +24194,9 @@
         "lesson": 53,
         "examples": [
           {
-            "ja": "あした 底へ 行きます。",
-            "kana": "あした そこへ いきます。",
-            "vi": "Ngày mai tôi sẽ đi đến chỗ đó, đấy."
+            "ja": "そこに 鞄を 置いてください。",
+            "kana": "そこに かばんを おいてください。",
+            "vi": "Xin hãy đặt chiếc cặp ở đó."
           }
         ]
       },
@@ -24255,9 +24255,9 @@
         "lesson": 54,
         "examples": [
           {
-            "ja": "そしてわれわれは政府が全ての問題解決できないことを知っている。",
-            "kana": "そしてわれわれはせいふがすべてのもんだいかいけつできないことをしっている。",
-            "vi": "Và chúng tôi biết rằng chính phủ không thể giải quyết tất cả các vấn đề."
+            "ja": "彼は 親切です。そして、頭がいいです。",
+            "kana": "かれは しんせつです。そして、あたまがいいです。",
+            "vi": "Anh ấy rất tốt bụng. Và lại thông minh nữa."
           }
         ]
       },
@@ -24633,9 +24633,9 @@
         "lesson": 54,
         "examples": [
           {
-            "ja": "この町は とても 損害 ですね。",
-            "kana": "このまちは とても そんがい ですね。",
-            "vi": "Thành phố này rất phương hại nhỉ."
+            "ja": "損害は100万ドルにのぼる。",
+            "kana": "そんがいは100まんどるにのぼる。",
+            "vi": "Thiệt hại lên đến 1 triệu Đô-la."
           }
         ]
       },
@@ -24651,9 +24651,9 @@
         "lesson": 54,
         "examples": [
           {
-            "ja": "この町は とても 尊敬 ですね。",
-            "kana": "このまちは とても そんけい ですね。",
-            "vi": "Thành phố này rất sự tôn kính nhỉ."
+            "ja": "子どもが父親を尊敬の眼差しで見上げている。",
+            "kana": "こどもがちちおやをそんけいのまなざしでみあげている。",
+            "vi": "Đứa trẻ đó nhìn bố mình với ánh mắt tôn trọng."
           }
         ]
       },
@@ -24669,9 +24669,9 @@
         "lesson": 54,
         "examples": [
           {
-            "ja": "この町は とても 存在 ですね。",
-            "kana": "このまちは とても そんざい ですね。",
-            "vi": "Thành phố này rất sự tồn tại nhỉ."
+            "ja": "宇宙も地球も永久に存在するとは限らない。",
+            "kana": "うちゅうもちきゅうもえいきゅうにそんざいするとはかぎらない。",
+            "vi": "Vũ trụ cũng như là trái đất chưa chắc sẽ tồn tại mãi mãi."
           }
         ]
       }
@@ -24766,9 +24766,9 @@
         "lesson": 55,
         "examples": [
           {
-            "ja": "この町は とても 大 ですね。",
-            "kana": "このまちは とても だい ですね。",
-            "vi": "Thành phố này rất thứ nhỉ."
+            "ja": "彼女はだいたい私と同じ年頃だ。",
+            "kana": "かのじょはだいたいわたしとおなじねんごろだ。",
+            "vi": "Cô ấy tầm tuổi tôi."
           }
         ]
       },
@@ -24784,9 +24784,9 @@
         "lesson": 55,
         "examples": [
           {
-            "ja": "この町は とても 題 ですね。",
-            "kana": "このまちは とても だい ですね。",
-            "vi": "Thành phố này rất vấn đề; chủ đề nhỉ."
+            "ja": "彼女はだいたい私と同じ年頃だ。",
+            "kana": "かのじょはだいたいわたしとおなじねんごろだ。",
+            "vi": "Cô ấy tầm tuổi tôi."
           }
         ]
       },
@@ -24838,9 +24838,9 @@
         "lesson": 55,
         "examples": [
           {
-            "ja": "この町は とても 大会 ですね。",
-            "kana": "このまちは とても たいかい ですね。",
-            "vi": "Thành phố này rất đại hội nhỉ."
+            "ja": "明日 歓迎会が あります。",
+            "kana": "あした かんげいかいが あります。",
+            "vi": "Ngày mai có buổi đại hội."
           }
         ]
       },
@@ -25205,9 +25205,9 @@
         "lesson": 56,
         "examples": [
           {
-            "ja": "この町は とても 題名 ですね。",
-            "kana": "このまちは とても だいめい ですね。",
-            "vi": "Thành phố này rất nhan đề nhỉ."
+            "ja": "会議で 題名に ついて 議論しました。",
+            "kana": "かいぎで だいめいに ついて ぎろんしました。",
+            "vi": "Chúng tôi đã thảo luận về nhan đề trong cuộc họp."
           }
         ]
       },
@@ -26335,9 +26335,9 @@
         "lesson": 58,
         "examples": [
           {
-            "ja": "この町は とても 単位 ですね。",
-            "kana": "このまちは とても たんい ですね。",
-            "vi": "Thành phố này rất đơn vị nhỉ."
+            "ja": "大会で 3位に 入賞しました。",
+            "kana": "たいかいで 3くらいに にゅうしょうしました。",
+            "vi": "Tôi đã đạt vị trí giải thưởng đơn vị trong đại hội."
           }
         ]
       },
@@ -26540,9 +26540,9 @@
         "lesson": 59,
         "examples": [
           {
-            "ja": "この町は とても 地位 ですね。",
-            "kana": "このまちは とても ちい ですね。",
-            "vi": "Thành phố này rất địa vị nhỉ."
+            "ja": "この地域では医者の地位がかなり高い。",
+            "kana": "このちいきではいしゃのちいがかなりたかい。",
+            "vi": "Ở vùng này, địa vị của những bác sĩ là khá cao."
           }
         ]
       },
@@ -26648,9 +26648,9 @@
         "lesson": 59,
         "examples": [
           {
-            "ja": "この町は とても 違い ですね。",
-            "kana": "このまちは とても ちがい ですね。",
-            "vi": "Thành phố này rất sự khác nhau nhỉ."
+            "ja": "皆が私のうっかりした間違いを責めるのです。",
+            "kana": "みながわたしのうっかりしたまちがいをせめるのです。",
+            "vi": "Mọi người khiển trách sai lầm của tôi."
           }
         ]
       },
@@ -28019,9 +28019,9 @@
         "lesson": 62,
         "examples": [
           {
-            "ja": "この町は とても 辛い ですね。",
-            "kana": "このまちは とても つらい ですね。",
-            "vi": "Thành phố này rất hạt tiêu đỏ cay nhỉ."
+            "ja": "この 仕事は 辛いですが、頑張ります。",
+            "kana": "この しごとは つらいですが、がんばります。",
+            "vi": "Công việc này Hạt tiêu đỏ cay nhưng tôi sẽ cố gắng."
           }
         ]
       },
@@ -28109,9 +28109,9 @@
         "lesson": 62,
         "examples": [
           {
-            "ja": "この町は とても 出合い ですね。",
-            "kana": "このまちは とても であい ですね。",
-            "vi": "Thành phố này rất ột cuộc gặp gỡ nhỉ."
+            "ja": "彼女は加藤先生に笑顔であいさつした。",
+            "kana": "かのじょはかとうせんせいにえがおであいさつした。",
+            "vi": "Cô ấy đã mỉm cười chào cô Kato."
           }
         ]
       },
@@ -28442,7 +28442,7 @@
           {
             "ja": "その本は私のお守りですから、五ヶ月おきに読みます。",
             "kana": "そのほんはわたしのおまもりですから、ごゖがつおきによみます。",
-            "vi": "Cuốn sách đó là bùa may của tôi, nên cứ mỗi năm tháng là tôi lại đem nó ra đọc một lần."
+            "vi": "Quyển sách đó là bùa may mắn của tôi, nên cứ năm tháng là tôi đem nó ra đọc một lần."
           }
         ]
       },
@@ -28494,9 +28494,9 @@
         "lesson": 63,
         "examples": [
           {
-            "ja": "この町は とても 手伝い ですね。",
-            "kana": "このまちは とても てつだい ですね。",
-            "vi": "Thành phố này rất người giúp đỡ nhỉ."
+            "ja": "いいえ、手伝いませんでした。",
+            "kana": "いいえ、てつだいませんでした。",
+            "vi": "Không, tôi chưa hề giúp."
           }
         ]
       },
@@ -28512,9 +28512,9 @@
         "lesson": 63,
         "examples": [
           {
-            "ja": "この町は とても 徹底 ですね。",
-            "kana": "このまちは とても てってい ですね。",
-            "vi": "Thành phố này rất sự triệt để nhỉ."
+            "ja": "会議で 徹底に ついて 議論しました。",
+            "kana": "かいぎで てっていに ついて ぎろんしました。",
+            "vi": "Chúng tôi đã thảo luận về sự triệt để trong cuộc họp."
           }
         ]
       },
@@ -28602,9 +28602,9 @@
         "lesson": 63,
         "examples": [
           {
-            "ja": "この町は とても 典型 ですね。",
-            "kana": "このまちは とても てんけい ですね。",
-            "vi": "Thành phố này rất điển hình nhỉ."
+            "ja": "彼は典型的な仕事人間だね。",
+            "kana": "かれはてんけいてきなしごとにんかんだね。",
+            "vi": "Anh ấy là một người tham công tiếc việc điển hình."
           }
         ]
       },
@@ -28710,9 +28710,9 @@
         "lesson": 63,
         "examples": [
           {
-            "ja": "この町は とても 問い ですね。",
-            "kana": "このまちは とても とい ですね。",
-            "vi": "Thành phố này rất câu hỏi nhỉ."
+            "ja": "彼はジャックという名前の私の友人です。",
+            "kana": "かれはじゃっくというなまえのわたしのゆうじんです。",
+            "vi": "Cậu ấy là một người bạn tên Jack của tôi."
           }
         ]
       },
@@ -29095,9 +29095,9 @@
         "lesson": 64,
         "examples": [
           {
-            "ja": "この町は とても 都会 ですね。",
-            "kana": "このまちは とても とかい ですね。",
-            "vi": "Thành phố này rất đô hội nhỉ."
+            "ja": "私はやっと都会の生活に慣れてきた。",
+            "kana": "わたしはやっととかいのせいかつになれてきた。",
+            "vi": "Cuối cùng tôi cũng đã quen với cuộc sống thành phố."
           }
         ]
       },
@@ -29901,9 +29901,9 @@
         "lesson": 66,
         "examples": [
           {
-            "ja": "はぁ・・・（汗）、それでコンタクトは取れるようになったのかしら・・・？",
-            "kana": "はぁ・・・（あせ）、それでこんたくとはとれるようになったのかしら・・・？",
-            "vi": "Ờ... cái đó sao rồi?"
+            "ja": "会議で 取れるに ついて 議論しました。",
+            "kana": "かいぎで とれるに ついて ぎろんしました。",
+            "vi": "Chúng tôi đã thảo luận về có thể sản sinh ra trong cuộc họp."
           }
         ]
       },
@@ -30815,9 +30815,9 @@
         "lesson": 68,
         "examples": [
           {
-            "ja": "日本文化に造詣深いことはいいことです。",
-            "kana": "にほんぶんかにぞうけいふかいことはいいことです。",
-            "vi": "Việc hiểu biết chuyên sâu về văn hóa Nhật Bản là một điều tốt."
+            "ja": "日本で 働くのが 私の 夢です。",
+            "kana": "にっぽんで はたらくのが わたしの ゆめです。",
+            "vi": "Làm việc tại Nhật Bản là ước mơ của tôi."
           }
         ]
       },
@@ -30833,9 +30833,9 @@
         "lesson": 68,
         "examples": [
           {
-            "ja": "日本文化に造詣深いことはいいことです。",
-            "kana": "にほんぶんかにぞうけいふかいことはいいことです。",
-            "vi": "Việc hiểu biết chuyên sâu về văn hóa Nhật Bản là một điều tốt."
+            "ja": "日本で 働くのが 私の 夢です。",
+            "kana": "にっぽんで はたらくのが わたしの ゆめです。",
+            "vi": "Làm việc tại Nhật Bản là ước mơ của tôi."
           }
         ]
       },
@@ -31182,9 +31182,9 @@
         "lesson": 69,
         "examples": [
           {
-            "ja": "この町は とても 年代 ですね。",
-            "kana": "このまちは とても ねんだい ですね。",
-            "vi": "Thành phố này rất niên đại nhỉ."
+            "ja": "大地震が東京を破壊したのは１９２０年代のことだった。",
+            "kana": "だいじしんがとうきょうをはかいしたのは１９２０ねんだいのことだった。",
+            "vi": "Vào những năm 20 của thế kỷ 20, một trận động đất lớn đã phá hủy thành phố Tokyo."
           }
         ]
       },
@@ -31200,9 +31200,9 @@
         "lesson": 69,
         "examples": [
           {
-            "ja": "この町は とても 年齢 ですね。",
-            "kana": "このまちは とても ねんれい ですね。",
-            "vi": "Thành phố này rất biên niên nhỉ."
+            "ja": "彼女は私と同じくらいの年齢です。",
+            "kana": "かのじょはわたしとおなじくらいのねんれいです。",
+            "vi": "Cô ấy tầm tuổi tôi."
           }
         ]
       },
@@ -31765,9 +31765,9 @@
         "lesson": 70,
         "examples": [
           {
-            "ja": "彼が笑うと、子供達には彼の長い灰色の歯が見えました。",
-            "kana": "かれがわらうと、こどもたちにはかのながいはいいろのはがみえました。",
-            "vi": "Khi ông mỉm cười, bọn trẻ có thể nhìn thấy hàm răng dài màu xám của ông."
+            "ja": "はい、分かりました。",
+            "kana": "はい、わかりました。",
+            "vi": "Vâng, tôi hiểu rồi."
           }
         ]
       },
@@ -32096,9 +32096,9 @@
         "lesson": 71,
         "examples": [
           {
-            "ja": "この町は とても 莫大 ですね。",
-            "kana": "このまちは とても ばくだい ですね。",
-            "vi": "Thành phố này rất sự to lớn nhỉ."
+            "ja": "会議で 莫大に ついて 議論しました。",
+            "kana": "かいぎで ばくだいに ついて ぎろんしました。",
+            "vi": "Chúng tôi đã thảo luận về sự to lớn trong cuộc họp."
           }
         ]
       },
@@ -32150,9 +32150,9 @@
         "lesson": 71,
         "examples": [
           {
-            "ja": "この町は とても 激しい ですね。",
-            "kana": "このまちは とても はげしい ですね。",
-            "vi": "Thành phố này rất gắt nhỉ."
+            "ja": "私達は激しい暑さのため戸外で遊べなかった。",
+            "kana": "わたしたちははげしいあつさのためこがいであそべなかった。",
+            "vi": "Chúng tôi đã không thể chơi ở bên ngoài do trời nóng gay gắt."
           }
         ]
       },
@@ -32589,9 +32589,9 @@
         "lesson": 72,
         "examples": [
           {
-            "ja": "この町は とても 発明 ですね。",
-            "kana": "このまちは とても はつめい ですね。",
-            "vi": "Thành phố này rất sự phát minh nhỉ."
+            "ja": "言語は人類の最も重要な発明のひとつです。",
+            "kana": "げんごはじんるいのもっともじゅうようなはつめいのひとつです。",
+            "vi": "Ngôn ngữ là một trong những phát minh quan trọng nhất của loài người."
           }
         ]
       },
@@ -32920,9 +32920,9 @@
         "lesson": 73,
         "examples": [
           {
-            "ja": "この町は とても 範囲 ですね。",
-            "kana": "このまちは とても はんい ですね。",
-            "vi": "Thành phố này rất phạm vi nhỉ."
+            "ja": "会議で 範囲に ついて 議論しました。",
+            "kana": "かいぎで はんいに ついて ぎろんしました。",
+            "vi": "Chúng tôi đã thảo luận về phạm vi trong cuộc họp."
           }
         ]
       },
@@ -32956,9 +32956,9 @@
         "lesson": 73,
         "examples": [
           {
-            "ja": "この町は とても 犯罪 ですね。",
-            "kana": "このまちは とても はんざい ですね。",
-            "vi": "Thành phố này rất can phạm nhỉ."
+            "ja": "同性愛者ですが何か？それが犯罪だとでも？",
+            "kana": "どうせいあいしゃですがなにか？それがはんざいだとでも？",
+            "vi": "Bị gay thì sao? Cái đó cũng là tội à?"
           }
         ]
       },
@@ -33046,9 +33046,9 @@
         "lesson": 73,
         "examples": [
           {
-            "ja": "この町は とても 販売 ですね。",
-            "kana": "このまちは とても はんばい ですね。",
-            "vi": "Thành phố này rất việc bán nhỉ."
+            "ja": "彼は魚の販売でお金を稼ぐのだと思います。",
+            "kana": "かれはさかなのはんばいでおきんをかせぐのだとおもいます。",
+            "vi": "Tôi nghĩ anh ấy kiếm tiền từ việc buôn bán cá."
           }
         ]
       },
@@ -33100,9 +33100,9 @@
         "lesson": 73,
         "examples": [
           {
-            "ja": "この町は とても 被害 ですね。",
-            "kana": "このまちは とても ひがい ですね。",
-            "vi": "Thành phố này rất thiệt hại nhỉ."
+            "ja": "核戦争が起きれば、全人類が被害を受けるだろう。",
+            "kana": "かくせんそうがおきれば、ぜんじんるいがひがいをうけるだろう。",
+            "vi": "Nếu chiến tranh hạt nhân xảy ra, toàn bộ loài người sẽ phải hứng chịu thiệt hại."
           }
         ]
       },
@@ -33352,9 +33352,9 @@
         "lesson": 73,
         "examples": [
           {
-            "ja": "この町は とても 否定 ですね。",
-            "kana": "このまちは とても ひてい ですね。",
-            "vi": "Thành phố này rất sự phủ định nhỉ."
+            "ja": "彼はその時あそこにいたのは、否定べくもない。",
+            "kana": "かれはそのときあそこにいたのは、ひていべくもない。",
+            "vi": "Anh ta không thể phủ nhận rằng, anh ta đã ở nơi đó vào lúc đó."
           }
         ]
       }
@@ -33978,9 +33978,9 @@
         "lesson": 75,
         "examples": [
           {
-            "ja": "この町は とても 風景 ですね。",
-            "kana": "このまちは とても ふうけい ですね。",
-            "vi": "Thành phố này rất phong cảnh nhỉ."
+            "ja": "会議で 風景に ついて 議論しました。",
+            "kana": "かいぎで ふうけいに ついて ぎろんしました。",
+            "vi": "Chúng tôi đã thảo luận về phong cảnh trong cuộc họp."
           }
         ]
       },
@@ -34309,9 +34309,9 @@
         "lesson": 76,
         "examples": [
           {
-            "ja": "この町は とても 不正 ですね。",
-            "kana": "このまちは とても ふせい ですね。",
-            "vi": "Thành phố này rất bất chánh nhỉ."
+            "ja": "会議で 不正に ついて 議論しました。",
+            "kana": "かいぎで ふせいに ついて ぎろんしました。",
+            "vi": "Chúng tôi đã thảo luận về bất chánh trong cuộc họp."
           }
         ]
       },
@@ -36227,9 +36227,9 @@
         "lesson": 80,
         "examples": [
           {
-            "ja": "この町は とても 貧しい ですね。",
-            "kana": "このまちは とても まずしい ですね。",
-            "vi": "Thành phố này rất điêu đứng nhỉ."
+            "ja": "彼はロンドンの貧しい地区に住んでいる。",
+            "kana": "かれはろんどんのまずしいちくにすんでいる。",
+            "vi": "Anh ấy sống ở một khu nghèo của London."
           }
         ]
       },
@@ -36990,9 +36990,9 @@
         "lesson": 81,
         "examples": [
           {
-            "ja": "この町は とても 照明 ですね。",
-            "kana": "このまちは とても しょうめい ですね。",
-            "vi": "Thành phố này rất ánh sáng; đèn nhỉ."
+            "ja": "会議で 照明に ついて 議論しました。",
+            "kana": "かいぎで しょうめいに ついて ぎろんしました。",
+            "vi": "Chúng tôi đã thảo luận về ánh sáng trong cuộc họp."
           }
         ]
       },
@@ -37303,9 +37303,9 @@
         "lesson": 82,
         "examples": [
           {
-            "ja": "この町は とても 姓名 ですね。",
-            "kana": "このまちは とても せいめい ですね。",
-            "vi": "Thành phố này rất họ và tên nhỉ."
+            "ja": "会議で 姓名に ついて 議論しました。",
+            "kana": "かいぎで せいめいに ついて ぎろんしました。",
+            "vi": "Chúng tôi đã thảo luận về họ và tên trong cuộc họp."
           }
         ]
       },
@@ -37796,9 +37796,9 @@
         "lesson": 83,
         "examples": [
           {
-            "ja": "この町は とても 対 ですね。",
-            "kana": "このまちは とても つい ですね。",
-            "vi": "Thành phố này rất đối nhỉ."
+            "ja": "過去の動作については過去形を用います。",
+            "kana": "かこのどうさについてはかこけいをもちいます。",
+            "vi": "Thì quá khứ được sử dụng khi nói về những hành động xảy ra trong quá khứ."
           }
         ]
       },
@@ -38271,9 +38271,9 @@
         "lesson": 84,
         "examples": [
           {
-            "ja": "敬語というのは日本語の一番難しいところだと思います。",
-            "kana": "けいごというのはにほんごのいちばんむずかしいところだとおもいます。",
-            "vi": "Tôi nghĩ rằng kính ngữ là cái khó nhất trong tiếng Nhật."
+            "ja": "お仕事は 何ですか。",
+            "kana": "おしごとは なんですか。",
+            "vi": "Công việc của bạn là gì?"
           }
         ]
       },
@@ -38361,9 +38361,9 @@
         "lesson": 84,
         "examples": [
           {
-            "ja": "私の叔母は肺がんで亡くなりました。",
-            "kana": "わたしのおばははいがんでなくなりました。",
-            "vi": "Dì tôi qua đời vì bệnh ung thư phổi."
+            "ja": "はい、分かりました。",
+            "kana": "はい、わかりました。",
+            "vi": "Vâng, tôi hiểu rồi."
           }
         ]
       },
@@ -38379,9 +38379,9 @@
         "lesson": 84,
         "examples": [
           {
-            "ja": "彼の失敗は私にとって良い教訓になりました。",
-            "kana": "かのしっぱいはわたしにとってよいきょうくんになりました。",
-            "vi": "Thất bại của anh ta là một bài học hay đối với tôi."
+            "ja": "はい、分かりました。",
+            "kana": "はい、わかりました。",
+            "vi": "Vâng, tôi hiểu rồi."
           }
         ]
       }
@@ -38861,9 +38861,9 @@
         "lesson": 86,
         "examples": [
           {
-            "ja": "私はあなたを時々見掛ける。",
-            "kana": "わたしはあなたをときどきみかける。",
-            "vi": "Thỉnh thoảng tôi gặp bạn."
+            "ja": "会議で 見掛けるに ついて 議論しました。",
+            "kana": "かいぎで みかけるに ついて ぎろんしました。",
+            "vi": "Chúng tôi đã thảo luận về ới  thấy trong cuộc họp."
           }
         ]
       },
@@ -38987,9 +38987,9 @@
         "lesson": 86,
         "examples": [
           {
-            "ja": "この町は とても 良い ですね。",
-            "kana": "このまちは とても よい ですね。",
-            "vi": "Thành phố này rất tốt; đẹp; đúng nhỉ."
+            "ja": "彼の失敗は私にとって良い教訓になりました。",
+            "kana": "かのしっぱいはわたしにとってよいきょうくんになりました。",
+            "vi": "Thất bại của anh ta là một bài học hay đối với tôi."
           }
         ]
       },

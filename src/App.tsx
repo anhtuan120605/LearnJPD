@@ -8,11 +8,24 @@ import { CrammingModeView } from './components/CrammingModeView';
 import { SentenceTranslateView } from './components/SentenceTranslateView';
 import { ShadowingView } from './components/ShadowingView';
 import { StudyModeSelector, StudyMode } from './components/StudyModeSelector';
+import { GrammarView } from './components/GrammarView';
+import { ReadingView } from './components/ReadingView';
 import { AuthModal } from './components/AuthModal';
 import { BackupModal } from './components/BackupModal';
 import { LessonSelector } from './components/LessonSelector';
 
-import { courseDatasets, kanjiDatasets } from './data';
+import { 
+  courseDatasets, 
+  kanjiDatasets, 
+  minnaGrammarDatasets, 
+  minnaReadingDatasets,
+  n3GrammarDatasets,
+  n3ReadingDatasets,
+  n2GrammarDatasets,
+  n2ReadingDatasets,
+  n1GrammarDatasets,
+  n1ReadingDatasets
+} from './data';
 import { loadLocalProgress, saveLocalProgress, syncWithSupabase, fetchFromSupabase } from './lib/storage';
 import { supabase, isSupabaseConfigured } from './lib/supabase';
 import { UserProgress } from './types';
@@ -22,15 +35,18 @@ import {
   ListFilter, 
   Sparkles, 
   CheckCircle, 
-  ChevronDown
+  ChevronDown,
+  FileText
 } from 'lucide-react';
+
+export type LessonSubTab = 'vocab' | 'grammar' | 'reading' | 'practice';
 
 export function App() {
   // Tabs: 'tango' (Từ vựng) | 'kanji' (Chữ Hán) | 'practice' (Luyện tập)
   const [activeTab, setActiveTab] = useState<'tango' | 'kanji' | 'practice'>('tango');
   
-  // Chế độ xem Từ vựng: 'study' (5 chế độ học) | 'list' (Danh sách từ vựng)
-  const [tangoViewMode, setTangoViewMode] = useState<'study' | 'list'>('study');
+  // Chế độ xem trong Bài học: 'vocab' (Danh sách từ vựng - mặc định) | 'grammar' (Ngữ pháp) | 'reading' (Bài đọc) | 'practice' (5 chế độ học)
+  const [lessonSubTab, setLessonSubTab] = useState<LessonSubTab>('vocab');
 
   // 5 Chế độ học theo screenshot: 'flashcard' | 'quiz' | 'cram' | 'translate' | 'shadowing'
   const [studyMode, setStudyMode] = useState<StudyMode>('flashcard');
@@ -204,24 +220,97 @@ export function App() {
     }));
   };
 
+  // Toggle ẩn / hiện từ vựng không cần thiết (xóa khỏi bài học)
+  const handleToggleHideWord = (id: string) => {
+    updateProgress((prev) => {
+      const currentHidden = prev.hiddenWords || [];
+      const isHidden = currentHidden.includes(id);
+      return {
+        ...prev,
+        hiddenWords: isHidden
+          ? currentHidden.filter((wId) => wId !== id)
+          : [...currentHidden, id]
+      };
+    });
+  };
+
+  // Khôi phục tất cả từ vựng đã ẩn trong bài học hiện tại
+  const handleRestoreLessonHiddenWords = () => {
+    const lessonWordIds = new Set(currentLessonData.words.map((w) => w.id));
+    updateProgress((prev) => {
+      const currentHidden = prev.hiddenWords || [];
+      return {
+        ...prev,
+        hiddenWords: currentHidden.filter((id) => !lessonWordIds.has(id))
+      };
+    });
+  };
+
   // Lấy dữ liệu giáo trình và bài học hiện tại
   const currentCourseData = courseDatasets[currentCourse] || courseDatasets.MINNA_1;
   const currentLessonData = currentCourseData.lessons.find((l) => l.lesson === selectedLessonNum) || currentCourseData.lessons[0] || { lesson: 1, title: 'Bài 1', level: currentCourse, words: [] };
   const currentKanjiList = kanjiDatasets[selectedKanjiLevel] || kanjiDatasets.N5;
 
-  // Khi đổi Cấp độ giáo trình thì tự chọn bài đầu tiên của tập đó
+  // Lấy dữ liệu ngữ pháp và bài đọc của bài hiện tại tùy theo cấp độ (N5, N4, N3, N2, N1)
+  const currentGrammarLesson = React.useMemo(() => {
+    if (currentCourse === 'MINNA_CHUKYU_1') {
+      return n3GrammarDatasets.find((g) => g.lesson === selectedLessonNum);
+    }
+    if (currentCourse === 'MINNA_CHUKYU_2') {
+      return n2GrammarDatasets.find((g) => g.lesson === selectedLessonNum);
+    }
+    if (currentCourse === 'JLPT_N1') {
+      return n1GrammarDatasets.find((g) => g.lesson === selectedLessonNum);
+    }
+    return minnaGrammarDatasets.find((g) => g.lesson === selectedLessonNum);
+  }, [currentCourse, selectedLessonNum]);
+
+  const currentReadingLesson = React.useMemo(() => {
+    if (currentCourse === 'MINNA_CHUKYU_1') {
+      return n3ReadingDatasets.find((r) => r.lesson === selectedLessonNum);
+    }
+    if (currentCourse === 'MINNA_CHUKYU_2') {
+      return n2ReadingDatasets.find((r) => r.lesson === selectedLessonNum);
+    }
+    if (currentCourse === 'JLPT_N1') {
+      return n1ReadingDatasets.find((r) => r.lesson === selectedLessonNum);
+    }
+    return minnaReadingDatasets.find((r) => r.lesson === selectedLessonNum);
+  }, [currentCourse, selectedLessonNum]);
+
+  // Khi đổi Cấp độ giáo trình thì tự chọn bài đầu tiên của tập đó và reset về tab Từ vựng
   const handleSelectCourse = (courseKey: string) => {
     setCurrentCourse(courseKey);
     const targetLessons = courseDatasets[courseKey]?.lessons || [];
     if (targetLessons.length > 0) {
       setSelectedLessonNum(targetLessons[0].lesson);
     }
+    setLessonSubTab('vocab');
   };
 
-  // Tính phần trăm thuộc từ vựng của bài hiện tại
-  const lessonMasteredCount = currentLessonData.words.filter((w) => progress.masteredWords.includes(w.id)).length;
-  const lessonProgressPercent = currentLessonData.words.length > 0 
-    ? Math.round((lessonMasteredCount / currentLessonData.words.length) * 100) 
+  // Khi chọn bài học mới thì luôn hiển thị danh sách từ vựng trước
+  const handleSelectLesson = (lessonNum: number) => {
+    setSelectedLessonNum(lessonNum);
+    setLessonSubTab('vocab');
+  };
+
+  // Lọc các từ đang học của bài (loại trừ từ người dùng đã chọn xóa/ẩn)
+  const activeLessonWords = React.useMemo(() => {
+    const hiddenSet = new Set(progress.hiddenWords || []);
+    const filtered = currentLessonData.words.filter((w) => !hiddenSet.has(w.id));
+    return filtered.length > 0 ? filtered : currentLessonData.words;
+  }, [currentLessonData.words, progress.hiddenWords]);
+
+  const hiddenCountInCurrentLesson = (progress.hiddenWords || []).filter((id) =>
+    currentLessonData.words.some((w) => w.id === id)
+  ).length;
+
+  const lessonActiveCount = currentLessonData.words.length - hiddenCountInCurrentLesson;
+  const lessonMasteredCount = currentLessonData.words.filter(
+    (w) => !(progress.hiddenWords || []).includes(w.id) && progress.masteredWords.includes(w.id)
+  ).length;
+  const lessonProgressPercent = lessonActiveCount > 0
+    ? Math.round((lessonMasteredCount / lessonActiveCount) * 100)
     : 0;
 
   return (
@@ -241,6 +330,7 @@ export function App() {
       {/* Main Content Area */}
       <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 py-6 sm:py-8 space-y-6">
         {/* PHÂN HỆ 1: TỪ VỰNG (TANGO) */}
+        {/* PHÂN HỆ 1: TỪ VỰNG & BÀI HỌC (TANGO) */}
         {activeTab === 'tango' && (
           <div className="space-y-6">
             {/* 1. Menu bên ngoài chọn Cấp độ N mấy rồi mới hiện menu từng bài */}
@@ -249,22 +339,22 @@ export function App() {
               onSelectCourse={handleSelectCourse}
               lessons={currentCourseData.lessons}
               selectedLessonNum={selectedLessonNum}
-              onSelectLesson={setSelectedLessonNum}
+              onSelectLesson={handleSelectLesson}
               masteredWords={progress.masteredWords}
             />
 
-            {/* Header bài học & Công cụ chuyển đổi List / Luyện tập 5 chế độ */}
-            <div className="bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 rounded-3xl p-6 shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+            {/* Header bài học & Thanh 4 Tab: Từ vựng, Ngữ pháp, Bài đọc, 5 Chế độ học */}
+            <div className="bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 rounded-3xl p-5 sm:p-6 shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
               <div>
                 <div className="flex items-center space-x-2">
                   <span className="px-2.5 py-0.5 rounded-lg text-xs font-bold uppercase tracking-wider bg-rose-100 dark:bg-rose-950/60 text-rose-600 dark:text-rose-400">
                     {currentCourseData.name} • {currentLessonData.level}
                   </span>
                   <span className="text-xs text-slate-400 font-medium">
-                    {currentLessonData.words.length} từ vựng
+                    {lessonActiveCount} từ vựng {hiddenCountInCurrentLesson > 0 && `(đã ẩn ${hiddenCountInCurrentLesson})`}
                   </span>
                 </div>
-                <h1 className="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white mt-1">
+                <h1 className="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white mt-1 tracking-tight">
                   Bài {currentLessonData.lesson}: {currentLessonData.title}
                 </h1>
                 {/* Thanh tiến trình % thuộc từ */}
@@ -276,49 +366,120 @@ export function App() {
                     ></div>
                   </div>
                   <span className="text-xs font-bold text-slate-500 dark:text-zinc-400">
-                    Đã thuộc: <strong className="text-emerald-500">{lessonMasteredCount}</strong>/{currentLessonData.words.length} ({lessonProgressPercent}%)
+                    Đã thuộc: <strong className="text-emerald-500">{lessonMasteredCount}</strong>/{lessonActiveCount} ({lessonProgressPercent}%)
                   </span>
                 </div>
               </div>
 
-              {/* Nút Toggle 5 Chế độ học / Danh sách từ vựng */}
-              <div className="flex items-center bg-slate-100 dark:bg-zinc-800 p-1 rounded-2xl">
+              {/* Thanh 4 Tab: Từ vựng | Ngữ pháp | Bài đọc | Luyện tập (5 chế độ) */}
+              <div className="flex items-center bg-slate-100 dark:bg-zinc-800 p-1.5 rounded-2xl overflow-x-auto w-full md:w-auto">
                 <button
-                  onClick={() => setTangoViewMode('study')}
-                  className={`flex items-center space-x-1.5 px-3.5 py-1.5 rounded-xl text-xs font-bold transition ${
-                    tangoViewMode === 'study'
+                  onClick={() => setLessonSubTab('vocab')}
+                  className={`flex items-center space-x-1.5 px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold transition whitespace-nowrap ${
+                    lessonSubTab === 'vocab'
                       ? 'bg-white dark:bg-zinc-700 text-rose-600 dark:text-rose-400 shadow-sm'
                       : 'text-slate-500 hover:text-slate-900 dark:hover:text-white'
                   }`}
                 >
-                  <Sparkles className="w-3.5 h-3.5" />
-                  <span>5 Chế độ học</span>
+                  <ListFilter className="w-4 h-4" />
+                  <span>Từ vựng</span>
                 </button>
 
                 <button
-                  onClick={() => setTangoViewMode('list')}
-                  className={`flex items-center space-x-1.5 px-3.5 py-1.5 rounded-xl text-xs font-bold transition ${
-                    tangoViewMode === 'list'
-                      ? 'bg-white dark:bg-zinc-700 text-rose-600 dark:text-rose-400 shadow-sm'
+                  onClick={() => setLessonSubTab('grammar')}
+                  className={`flex items-center space-x-1.5 px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold transition whitespace-nowrap ${
+                    lessonSubTab === 'grammar'
+                      ? 'bg-white dark:bg-zinc-700 text-indigo-600 dark:text-indigo-400 shadow-sm'
                       : 'text-slate-500 hover:text-slate-900 dark:hover:text-white'
                   }`}
                 >
-                  <ListFilter className="w-3.5 h-3.5" />
-                  <span>Danh sách từ</span>
+                  <BookOpen className="w-4 h-4" />
+                  <span>Ngữ pháp</span>
+                </button>
+
+                <button
+                  onClick={() => setLessonSubTab('reading')}
+                  className={`flex items-center space-x-1.5 px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold transition whitespace-nowrap ${
+                    lessonSubTab === 'reading'
+                      ? 'bg-white dark:bg-zinc-700 text-emerald-600 dark:text-emerald-400 shadow-sm'
+                      : 'text-slate-500 hover:text-slate-900 dark:hover:text-white'
+                  }`}
+                >
+                  <FileText className="w-4 h-4" />
+                  <span>Bài đọc</span>
+                </button>
+
+                <button
+                  onClick={() => setLessonSubTab('practice')}
+                  className={`flex items-center space-x-1.5 px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold transition whitespace-nowrap ${
+                    lessonSubTab === 'practice'
+                      ? 'bg-white dark:bg-zinc-700 text-amber-600 dark:text-amber-400 shadow-sm'
+                      : 'text-slate-500 hover:text-slate-900 dark:hover:text-white'
+                  }`}
+                >
+                  <Sparkles className="w-4 h-4 text-amber-500" />
+                  <span>Luyện tập (5 chế độ)</span>
                 </button>
               </div>
             </div>
 
-            {/* Nội dung Từ vựng: Danh sách hoặc 5 Chế độ học */}
-            {tangoViewMode === 'list' ? (
-              <WordListView
-                words={currentLessonData.words}
-                masteredWords={progress.masteredWords}
-                favoriteWords={progress.favoriteWords}
-                onToggleMaster={handleToggleMasterWord}
-                onToggleFavorite={handleToggleFavoriteWord}
+            {/* 1. Tab Từ vựng (Hiện đầu tiên khi vào bài) */}
+            {lessonSubTab === 'vocab' && (
+              <div className="space-y-4">
+                {/* Banner điều hướng nhanh sang Luyện tập */}
+                <div className="bg-gradient-to-r from-rose-500/10 via-amber-500/5 to-transparent border border-rose-500/20 rounded-2xl p-4 flex flex-col sm:flex-row items-center justify-between gap-3 shadow-2xs">
+                  <div className="flex items-center space-x-3 text-center sm:text-left">
+                    <div className="w-10 h-10 rounded-xl bg-rose-500 text-white flex items-center justify-center font-black shrink-0 shadow-sm">
+                      <Sparkles className="w-5 h-5" />
+                    </div>
+                    <div>
+                      <h3 className="text-sm font-black text-slate-900 dark:text-white">
+                        Xem xong từ vựng? Sẵn sàng ôn luyện!
+                      </h3>
+                      <p className="text-xs text-slate-500 dark:text-zinc-400">
+                        Thực hành ngay với 5 chế độ: Flashcard 3D, Trắc nghiệm, Gõ nhồi nhét, Dịch câu và Nghe đuổi.
+                      </p>
+                    </div>
+                  </div>
+                  <button
+                    onClick={() => setLessonSubTab('practice')}
+                    className="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-rose-500 hover:bg-rose-600 text-white font-bold text-xs sm:text-sm shadow-sm transition whitespace-nowrap shrink-0"
+                  >
+                    Bắt đầu luyện tập →
+                  </button>
+                </div>
+
+                <WordListView
+                  words={currentLessonData.words}
+                  masteredWords={progress.masteredWords}
+                  favoriteWords={progress.favoriteWords}
+                  hiddenWords={progress.hiddenWords || []}
+                  onToggleMaster={handleToggleMasterWord}
+                  onToggleFavorite={handleToggleFavoriteWord}
+                  onToggleHide={handleToggleHideWord}
+                  onRestoreAllHidden={handleRestoreLessonHiddenWords}
+                />
+              </div>
+            )}
+
+            {/* 2. Tab Ngữ pháp */}
+            {lessonSubTab === 'grammar' && (
+              <GrammarView
+                lesson={currentGrammarLesson}
+                lessonNum={selectedLessonNum}
               />
-            ) : (
+            )}
+
+            {/* 3. Tab Bài đọc hiểu */}
+            {lessonSubTab === 'reading' && (
+              <ReadingView
+                reading={currentReadingLesson}
+                lessonNum={selectedLessonNum}
+              />
+            )}
+
+            {/* 4. Tab Luyện tập (5 Chế độ học) */}
+            {lessonSubTab === 'practice' && (
               <div className="space-y-6">
                 {/* Bộ chọn 5 Chế độ học (Flashcard, Trắc nghiệm, Nhồi nhét, Dịch câu, Nghe đuổi) */}
                 <StudyModeSelector
@@ -329,7 +490,7 @@ export function App() {
                 {/* 1. Flashcard 3D */}
                 {studyMode === 'flashcard' && (
                   <FlashcardView
-                    words={currentLessonData.words}
+                    words={activeLessonWords}
                     masteredWords={progress.masteredWords}
                     favoriteWords={progress.favoriteWords}
                     onToggleMaster={handleToggleMasterWord}
@@ -340,7 +501,7 @@ export function App() {
                 {/* 2. Trắc nghiệm (Quiz) */}
                 {studyMode === 'quiz' && (
                   <PracticeView
-                    words={currentLessonData.words}
+                    words={activeLessonWords}
                     mistakeWords={progress.mistakeWords}
                     onAddMistake={handleAddMistake}
                     onRemoveMistake={handleRemoveMistake}
@@ -351,7 +512,7 @@ export function App() {
                 {/* 3. Nhồi nhét (Cramming Mode - Gõ Romaji sang Hiragana) */}
                 {studyMode === 'cram' && (
                   <CrammingModeView
-                    words={currentLessonData.words}
+                    words={activeLessonWords}
                     onFinish={(score, total) => handleSaveQuizScore(score, total, 'Nhồi nhét')}
                   />
                 )}
@@ -359,14 +520,14 @@ export function App() {
                 {/* 4. Dịch câu (Sentence Translate Puzzle) */}
                 {studyMode === 'translate' && (
                   <SentenceTranslateView
-                    words={currentLessonData.words}
+                    words={activeLessonWords}
                   />
                 )}
 
                 {/* 5. Nghe đuổi (Shadowing Mode) */}
                 {studyMode === 'shadowing' && (
                   <ShadowingView
-                    words={currentLessonData.words}
+                    words={activeLessonWords}
                     masteredWords={progress.masteredWords}
                     onToggleMaster={handleToggleMasterWord}
                   />
@@ -410,7 +571,7 @@ export function App() {
 
             {studyMode === 'flashcard' && (
               <FlashcardView
-                words={currentLessonData.words}
+                words={activeLessonWords}
                 masteredWords={progress.masteredWords}
                 favoriteWords={progress.favoriteWords}
                 onToggleMaster={handleToggleMasterWord}
@@ -420,7 +581,7 @@ export function App() {
 
             {studyMode === 'quiz' && (
               <PracticeView
-                words={currentLessonData.words}
+                words={activeLessonWords}
                 mistakeWords={progress.mistakeWords}
                 onAddMistake={handleAddMistake}
                 onRemoveMistake={handleRemoveMistake}
@@ -430,20 +591,20 @@ export function App() {
 
             {studyMode === 'cram' && (
               <CrammingModeView
-                words={currentLessonData.words}
+                words={activeLessonWords}
                 onFinish={(score, total) => handleSaveQuizScore(score, total, 'Nhồi nhét')}
               />
             )}
 
             {studyMode === 'translate' && (
               <SentenceTranslateView
-                words={currentLessonData.words}
+                words={activeLessonWords}
               />
             )}
 
             {studyMode === 'shadowing' && (
               <ShadowingView
-                words={currentLessonData.words}
+                words={activeLessonWords}
                 masteredWords={progress.masteredWords}
                 onToggleMaster={handleToggleMasterWord}
               />

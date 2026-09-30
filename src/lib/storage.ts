@@ -7,6 +7,7 @@ const defaultProgress: UserProgress = {
   masteredWords: [],
   favoriteWords: [],
   mistakeWords: [],
+  hiddenWords: [],
   masteredKanji: [],
   favoriteKanji: [],
   streak: 1,

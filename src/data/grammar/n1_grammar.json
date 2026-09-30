@@ -1,0 +1,2162 @@
+[
+  {
+    "lesson": 1,
+    "title": "Bài 1: Ngữ pháp Cao cấp N1 (～極まりない / ～極まる)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_1_1",
+        "structure": "～極まりない / ～極まる",
+        "meaning": "Vô cùng, cực kỳ ~",
+        "explanation": "【Cách nối: Aな + 極まりない】\nNhấn mạnh cảm xúc hoặc tính chất đạt đến mức cao độ.",
+        "examples": [
+          {
+            "ja": "彼の無礼な態度は、不愉快極まりない。",
+            "kana": "かのぶれいなたいどは、ふゆかいきわまりない。",
+            "vi": "Thái độ vô lễ của anh ta cực kỳ khó chịu."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 2,
+    "title": "Bài 2: Ngữ pháp Cao cấp N1 (～たるもの)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_2_1",
+        "structure": "～たるもの",
+        "meaning": "Đã là... thì phải...",
+        "explanation": "【Cách nối: N + たるもの】\nKhẳng định tư cách, bổn phận của một vai trò, nghề nghiệp cao quý.",
+        "examples": [
+          {
+            "ja": "指導者たるものは、常に誠実でなければならない。",
+            "kana": "しどうしゃたるものは、つねにせいじつでなければならない。",
+            "vi": "Đã là người lãnh đạo thì lúc nào cũng phải thành thực."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 3,
+    "title": "Bài 3: Ngữ pháp Cao cấp N1 (～まじき)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_3_1",
+        "structure": "～まじき",
+        "meaning": "Không thể chấp nhận được đối với...",
+        "explanation": "【Cách nối: V-る + まじき + N】\nLên án hành vi đi ngược lại đạo đức hay chuẩn mực nghiêm trọng.",
+        "examples": [
+          {
+            "ja": "それは教育者としてあるまじき行為だ。",
+            "kana": "それはきょういくしゃとしてあるまじきこういだ。",
+            "vi": "Đó là hành vi không thể chấp nhận được đối với một nhà giáo."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 4,
+    "title": "Bài 4: Ngữ pháp Cao cấp N1 (～や否や)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_4_1",
+        "structure": "～や否や",
+        "meaning": "Vừa mới... thì ngay lập tức...",
+        "explanation": "【Cách nối: V-る + や否や】\nChỉ sự việc diễn ra dồn dập trong chớp mắt.",
+        "examples": [
+          {
+            "ja": "ベルが鳴るや否や、生徒たちは教室から飛び出していった。",
+            "kana": "べるがなるやひや、せいとたちはきょうしつからとびだしていった。",
+            "vi": "Chuông vừa mới reo một cái là học sinh đã lập tức ùa ra khỏi lớp."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 5,
+    "title": "Bài 5: Ngữ pháp Cao cấp N1 (～に至るまで)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_5_1",
+        "structure": "～に至るまで",
+        "meaning": "Đến tận cả ~, từ... cho tới...",
+        "explanation": "【Cách nối: N + に至るまで】\nNhấn mạnh mức độ chi tiết bao trùm từ cái nhỏ đến cái lớn.",
+        "examples": [
+          {
+            "ja": "服装から持ち物に至るまで、細かくチェックされた。",
+            "kana": "ふくそうからもちものにいたるまで、こまかくちぇっくされた。",
+            "vi": "Từ trang phục cho đến tận đồ dùng mang theo đều bị kiểm tra tỉ mỉ."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 6,
+    "title": "Bài 6: Ngữ pháp Cao cấp N1 (～を禁じ得ない)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_6_1",
+        "structure": "～を禁じ得ない",
+        "meaning": "Không thể kìm nén được cảm xúc...",
+        "explanation": "【Cách nối: N + を禁じ得ない】\nDiễn tả cảm xúc bộc phát mạnh mẽ không kìm lại được (thương cảm, phẫn nộ...).",
+        "examples": [
+          {
+            "ja": "被災地の悲惨な現状に、同情を禁じ得ない。",
+            "kana": "ひさいちのひさんなげんじょうに、どうじょうをきんじえない。",
+            "vi": "Trước tình cảnh bi thảm của vùng chịu thiên tai, tôi không thể kìm nén được niềm xót thương."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 7,
+    "title": "Bài 7: Ngữ pháp Cao cấp N1 (～余儀なくされる)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_7_1",
+        "structure": "～余儀なくされる",
+        "meaning": "Buộc phải làm gì do hoàn cảnh ép buộc",
+        "explanation": "【Cách nối: N + を余儀なくされる】\nTình thế bắt buộc phải thay đổi hướng đi dù không muốn.",
+        "examples": [
+          {
+            "ja": "資金難のため、計画の変更を余儀なくされた。",
+            "kana": "しきんなんのため、けいかくのへんこうをよぎなくされた。",
+            "vi": "Vì khó khăn về tài chính, dự án buộc phải thay đổi kế hoạch."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 8,
+    "title": "Bài 8: Ngữ pháp Cao cấp N1 (～ずにはおかない)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_8_1",
+        "structure": "～ずにはおかない",
+        "meaning": "Nhất định sẽ khiến cho... / Không thể không...",
+        "explanation": "【Cách nối: V［thể ない bỏ ない］+ ずにはおかない】\nHành động có sức ảnh hưởng mạnh mẽ tất yếu sẽ gây ra kết quả.",
+        "examples": [
+          {
+            "ja": "彼の情熱的な演説は、聴衆を感動させずにはおかなかった。",
+            "kana": "かのじょうねつてきなえんぜつは、ちょうしゅうをかんどうさせずにはおかなかった。",
+            "vi": "Bài diễn văn đầy nhiệt huyết của ông đã lay động sâu sắc toàn thể thính giả."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 9,
+    "title": "Bài 9: Ngữ pháp Cao cấp N1 (～極まりない / ～極まる)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_9_1",
+        "structure": "～極まりない / ～極まる",
+        "meaning": "Vô cùng, cực kỳ ~",
+        "explanation": "【Cách nối: Aな + 極まりない】\nNhấn mạnh cảm xúc hoặc tính chất đạt đến mức cao độ.",
+        "examples": [
+          {
+            "ja": "彼の無礼な態度は、不愉快極まりない。",
+            "kana": "かのぶれいなたいどは、ふゆかいきわまりない。",
+            "vi": "Thái độ vô lễ của anh ta cực kỳ khó chịu."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 10,
+    "title": "Bài 10: Ngữ pháp Cao cấp N1 (～たるもの)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_10_1",
+        "structure": "～たるもの",
+        "meaning": "Đã là... thì phải...",
+        "explanation": "【Cách nối: N + たるもの】\nKhẳng định tư cách, bổn phận của một vai trò, nghề nghiệp cao quý.",
+        "examples": [
+          {
+            "ja": "指導者たるものは、常に誠実でなければならない。",
+            "kana": "しどうしゃたるものは、つねにせいじつでなければならない。",
+            "vi": "Đã là người lãnh đạo thì lúc nào cũng phải thành thực."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 11,
+    "title": "Bài 11: Ngữ pháp Cao cấp N1 (～まじき)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_11_1",
+        "structure": "～まじき",
+        "meaning": "Không thể chấp nhận được đối với...",
+        "explanation": "【Cách nối: V-る + まじき + N】\nLên án hành vi đi ngược lại đạo đức hay chuẩn mực nghiêm trọng.",
+        "examples": [
+          {
+            "ja": "それは教育者としてあるまじき行為だ。",
+            "kana": "それはきょういくしゃとしてあるまじきこういだ。",
+            "vi": "Đó là hành vi không thể chấp nhận được đối với một nhà giáo."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 12,
+    "title": "Bài 12: Ngữ pháp Cao cấp N1 (～や否や)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_12_1",
+        "structure": "～や否や",
+        "meaning": "Vừa mới... thì ngay lập tức...",
+        "explanation": "【Cách nối: V-る + や否や】\nChỉ sự việc diễn ra dồn dập trong chớp mắt.",
+        "examples": [
+          {
+            "ja": "ベルが鳴るや否や、生徒たちは教室から飛び出していった。",
+            "kana": "べるがなるやひや、せいとたちはきょうしつからとびだしていった。",
+            "vi": "Chuông vừa mới reo một cái là học sinh đã lập tức ùa ra khỏi lớp."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 13,
+    "title": "Bài 13: Ngữ pháp Cao cấp N1 (～に至るまで)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_13_1",
+        "structure": "～に至るまで",
+        "meaning": "Đến tận cả ~, từ... cho tới...",
+        "explanation": "【Cách nối: N + に至るまで】\nNhấn mạnh mức độ chi tiết bao trùm từ cái nhỏ đến cái lớn.",
+        "examples": [
+          {
+            "ja": "服装から持ち物に至るまで、細かくチェックされた。",
+            "kana": "ふくそうからもちものにいたるまで、こまかくちぇっくされた。",
+            "vi": "Từ trang phục cho đến tận đồ dùng mang theo đều bị kiểm tra tỉ mỉ."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 14,
+    "title": "Bài 14: Ngữ pháp Cao cấp N1 (～を禁じ得ない)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_14_1",
+        "structure": "～を禁じ得ない",
+        "meaning": "Không thể kìm nén được cảm xúc...",
+        "explanation": "【Cách nối: N + を禁じ得ない】\nDiễn tả cảm xúc bộc phát mạnh mẽ không kìm lại được (thương cảm, phẫn nộ...).",
+        "examples": [
+          {
+            "ja": "被災地の悲惨な現状に、同情を禁じ得ない。",
+            "kana": "ひさいちのひさんなげんじょうに、どうじょうをきんじえない。",
+            "vi": "Trước tình cảnh bi thảm của vùng chịu thiên tai, tôi không thể kìm nén được niềm xót thương."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 15,
+    "title": "Bài 15: Ngữ pháp Cao cấp N1 (～余儀なくされる)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_15_1",
+        "structure": "～余儀なくされる",
+        "meaning": "Buộc phải làm gì do hoàn cảnh ép buộc",
+        "explanation": "【Cách nối: N + を余儀なくされる】\nTình thế bắt buộc phải thay đổi hướng đi dù không muốn.",
+        "examples": [
+          {
+            "ja": "資金難のため、計画の変更を余儀なくされた。",
+            "kana": "しきんなんのため、けいかくのへんこうをよぎなくされた。",
+            "vi": "Vì khó khăn về tài chính, dự án buộc phải thay đổi kế hoạch."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 16,
+    "title": "Bài 16: Ngữ pháp Cao cấp N1 (～ずにはおかない)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_16_1",
+        "structure": "～ずにはおかない",
+        "meaning": "Nhất định sẽ khiến cho... / Không thể không...",
+        "explanation": "【Cách nối: V［thể ない bỏ ない］+ ずにはおかない】\nHành động có sức ảnh hưởng mạnh mẽ tất yếu sẽ gây ra kết quả.",
+        "examples": [
+          {
+            "ja": "彼の情熱的な演説は、聴衆を感動させずにはおかなかった。",
+            "kana": "かのじょうねつてきなえんぜつは、ちょうしゅうをかんどうさせずにはおかなかった。",
+            "vi": "Bài diễn văn đầy nhiệt huyết của ông đã lay động sâu sắc toàn thể thính giả."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 17,
+    "title": "Bài 17: Ngữ pháp Cao cấp N1 (～極まりない / ～極まる)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_17_1",
+        "structure": "～極まりない / ～極まる",
+        "meaning": "Vô cùng, cực kỳ ~",
+        "explanation": "【Cách nối: Aな + 極まりない】\nNhấn mạnh cảm xúc hoặc tính chất đạt đến mức cao độ.",
+        "examples": [
+          {
+            "ja": "彼の無礼な態度は、不愉快極まりない。",
+            "kana": "かのぶれいなたいどは、ふゆかいきわまりない。",
+            "vi": "Thái độ vô lễ của anh ta cực kỳ khó chịu."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 18,
+    "title": "Bài 18: Ngữ pháp Cao cấp N1 (～たるもの)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_18_1",
+        "structure": "～たるもの",
+        "meaning": "Đã là... thì phải...",
+        "explanation": "【Cách nối: N + たるもの】\nKhẳng định tư cách, bổn phận của một vai trò, nghề nghiệp cao quý.",
+        "examples": [
+          {
+            "ja": "指導者たるものは、常に誠実でなければならない。",
+            "kana": "しどうしゃたるものは、つねにせいじつでなければならない。",
+            "vi": "Đã là người lãnh đạo thì lúc nào cũng phải thành thực."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 19,
+    "title": "Bài 19: Ngữ pháp Cao cấp N1 (～まじき)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_19_1",
+        "structure": "～まじき",
+        "meaning": "Không thể chấp nhận được đối với...",
+        "explanation": "【Cách nối: V-る + まじき + N】\nLên án hành vi đi ngược lại đạo đức hay chuẩn mực nghiêm trọng.",
+        "examples": [
+          {
+            "ja": "それは教育者としてあるまじき行為だ。",
+            "kana": "それはきょういくしゃとしてあるまじきこういだ。",
+            "vi": "Đó là hành vi không thể chấp nhận được đối với một nhà giáo."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 20,
+    "title": "Bài 20: Ngữ pháp Cao cấp N1 (～や否や)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_20_1",
+        "structure": "～や否や",
+        "meaning": "Vừa mới... thì ngay lập tức...",
+        "explanation": "【Cách nối: V-る + や否や】\nChỉ sự việc diễn ra dồn dập trong chớp mắt.",
+        "examples": [
+          {
+            "ja": "ベルが鳴るや否や、生徒たちは教室から飛び出していった。",
+            "kana": "べるがなるやひや、せいとたちはきょうしつからとびだしていった。",
+            "vi": "Chuông vừa mới reo một cái là học sinh đã lập tức ùa ra khỏi lớp."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 21,
+    "title": "Bài 21: Ngữ pháp Cao cấp N1 (～に至るまで)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_21_1",
+        "structure": "～に至るまで",
+        "meaning": "Đến tận cả ~, từ... cho tới...",
+        "explanation": "【Cách nối: N + に至るまで】\nNhấn mạnh mức độ chi tiết bao trùm từ cái nhỏ đến cái lớn.",
+        "examples": [
+          {
+            "ja": "服装から持ち物に至るまで、細かくチェックされた。",
+            "kana": "ふくそうからもちものにいたるまで、こまかくちぇっくされた。",
+            "vi": "Từ trang phục cho đến tận đồ dùng mang theo đều bị kiểm tra tỉ mỉ."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 22,
+    "title": "Bài 22: Ngữ pháp Cao cấp N1 (～を禁じ得ない)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_22_1",
+        "structure": "～を禁じ得ない",
+        "meaning": "Không thể kìm nén được cảm xúc...",
+        "explanation": "【Cách nối: N + を禁じ得ない】\nDiễn tả cảm xúc bộc phát mạnh mẽ không kìm lại được (thương cảm, phẫn nộ...).",
+        "examples": [
+          {
+            "ja": "被災地の悲惨な現状に、同情を禁じ得ない。",
+            "kana": "ひさいちのひさんなげんじょうに、どうじょうをきんじえない。",
+            "vi": "Trước tình cảnh bi thảm của vùng chịu thiên tai, tôi không thể kìm nén được niềm xót thương."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 23,
+    "title": "Bài 23: Ngữ pháp Cao cấp N1 (～余儀なくされる)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_23_1",
+        "structure": "～余儀なくされる",
+        "meaning": "Buộc phải làm gì do hoàn cảnh ép buộc",
+        "explanation": "【Cách nối: N + を余儀なくされる】\nTình thế bắt buộc phải thay đổi hướng đi dù không muốn.",
+        "examples": [
+          {
+            "ja": "資金難のため、計画の変更を余儀なくされた。",
+            "kana": "しきんなんのため、けいかくのへんこうをよぎなくされた。",
+            "vi": "Vì khó khăn về tài chính, dự án buộc phải thay đổi kế hoạch."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 24,
+    "title": "Bài 24: Ngữ pháp Cao cấp N1 (～ずにはおかない)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_24_1",
+        "structure": "～ずにはおかない",
+        "meaning": "Nhất định sẽ khiến cho... / Không thể không...",
+        "explanation": "【Cách nối: V［thể ない bỏ ない］+ ずにはおかない】\nHành động có sức ảnh hưởng mạnh mẽ tất yếu sẽ gây ra kết quả.",
+        "examples": [
+          {
+            "ja": "彼の情熱的な演説は、聴衆を感動させずにはおかなかった。",
+            "kana": "かのじょうねつてきなえんぜつは、ちょうしゅうをかんどうさせずにはおかなかった。",
+            "vi": "Bài diễn văn đầy nhiệt huyết của ông đã lay động sâu sắc toàn thể thính giả."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 25,
+    "title": "Bài 25: Ngữ pháp Cao cấp N1 (～極まりない / ～極まる)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_25_1",
+        "structure": "～極まりない / ～極まる",
+        "meaning": "Vô cùng, cực kỳ ~",
+        "explanation": "【Cách nối: Aな + 極まりない】\nNhấn mạnh cảm xúc hoặc tính chất đạt đến mức cao độ.",
+        "examples": [
+          {
+            "ja": "彼の無礼な態度は、不愉快極まりない。",
+            "kana": "かのぶれいなたいどは、ふゆかいきわまりない。",
+            "vi": "Thái độ vô lễ của anh ta cực kỳ khó chịu."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 26,
+    "title": "Bài 26: Ngữ pháp Cao cấp N1 (～たるもの)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_26_1",
+        "structure": "～たるもの",
+        "meaning": "Đã là... thì phải...",
+        "explanation": "【Cách nối: N + たるもの】\nKhẳng định tư cách, bổn phận của một vai trò, nghề nghiệp cao quý.",
+        "examples": [
+          {
+            "ja": "指導者たるものは、常に誠実でなければならない。",
+            "kana": "しどうしゃたるものは、つねにせいじつでなければならない。",
+            "vi": "Đã là người lãnh đạo thì lúc nào cũng phải thành thực."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 27,
+    "title": "Bài 27: Ngữ pháp Cao cấp N1 (～まじき)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_27_1",
+        "structure": "～まじき",
+        "meaning": "Không thể chấp nhận được đối với...",
+        "explanation": "【Cách nối: V-る + まじき + N】\nLên án hành vi đi ngược lại đạo đức hay chuẩn mực nghiêm trọng.",
+        "examples": [
+          {
+            "ja": "それは教育者としてあるまじき行為だ。",
+            "kana": "それはきょういくしゃとしてあるまじきこういだ。",
+            "vi": "Đó là hành vi không thể chấp nhận được đối với một nhà giáo."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 28,
+    "title": "Bài 28: Ngữ pháp Cao cấp N1 (～や否や)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_28_1",
+        "structure": "～や否や",
+        "meaning": "Vừa mới... thì ngay lập tức...",
+        "explanation": "【Cách nối: V-る + や否や】\nChỉ sự việc diễn ra dồn dập trong chớp mắt.",
+        "examples": [
+          {
+            "ja": "ベルが鳴るや否や、生徒たちは教室から飛び出していった。",
+            "kana": "べるがなるやひや、せいとたちはきょうしつからとびだしていった。",
+            "vi": "Chuông vừa mới reo một cái là học sinh đã lập tức ùa ra khỏi lớp."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 29,
+    "title": "Bài 29: Ngữ pháp Cao cấp N1 (～に至るまで)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_29_1",
+        "structure": "～に至るまで",
+        "meaning": "Đến tận cả ~, từ... cho tới...",
+        "explanation": "【Cách nối: N + に至るまで】\nNhấn mạnh mức độ chi tiết bao trùm từ cái nhỏ đến cái lớn.",
+        "examples": [
+          {
+            "ja": "服装から持ち物に至るまで、細かくチェックされた。",
+            "kana": "ふくそうからもちものにいたるまで、こまかくちぇっくされた。",
+            "vi": "Từ trang phục cho đến tận đồ dùng mang theo đều bị kiểm tra tỉ mỉ."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 30,
+    "title": "Bài 30: Ngữ pháp Cao cấp N1 (～を禁じ得ない)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_30_1",
+        "structure": "～を禁じ得ない",
+        "meaning": "Không thể kìm nén được cảm xúc...",
+        "explanation": "【Cách nối: N + を禁じ得ない】\nDiễn tả cảm xúc bộc phát mạnh mẽ không kìm lại được (thương cảm, phẫn nộ...).",
+        "examples": [
+          {
+            "ja": "被災地の悲惨な現状に、同情を禁じ得ない。",
+            "kana": "ひさいちのひさんなげんじょうに、どうじょうをきんじえない。",
+            "vi": "Trước tình cảnh bi thảm của vùng chịu thiên tai, tôi không thể kìm nén được niềm xót thương."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 31,
+    "title": "Bài 31: Ngữ pháp Cao cấp N1 (～余儀なくされる)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_31_1",
+        "structure": "～余儀なくされる",
+        "meaning": "Buộc phải làm gì do hoàn cảnh ép buộc",
+        "explanation": "【Cách nối: N + を余儀なくされる】\nTình thế bắt buộc phải thay đổi hướng đi dù không muốn.",
+        "examples": [
+          {
+            "ja": "資金難のため、計画の変更を余儀なくされた。",
+            "kana": "しきんなんのため、けいかくのへんこうをよぎなくされた。",
+            "vi": "Vì khó khăn về tài chính, dự án buộc phải thay đổi kế hoạch."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 32,
+    "title": "Bài 32: Ngữ pháp Cao cấp N1 (～ずにはおかない)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_32_1",
+        "structure": "～ずにはおかない",
+        "meaning": "Nhất định sẽ khiến cho... / Không thể không...",
+        "explanation": "【Cách nối: V［thể ない bỏ ない］+ ずにはおかない】\nHành động có sức ảnh hưởng mạnh mẽ tất yếu sẽ gây ra kết quả.",
+        "examples": [
+          {
+            "ja": "彼の情熱的な演説は、聴衆を感動させずにはおかなかった。",
+            "kana": "かのじょうねつてきなえんぜつは、ちょうしゅうをかんどうさせずにはおかなかった。",
+            "vi": "Bài diễn văn đầy nhiệt huyết của ông đã lay động sâu sắc toàn thể thính giả."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 33,
+    "title": "Bài 33: Ngữ pháp Cao cấp N1 (～極まりない / ～極まる)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_33_1",
+        "structure": "～極まりない / ～極まる",
+        "meaning": "Vô cùng, cực kỳ ~",
+        "explanation": "【Cách nối: Aな + 極まりない】\nNhấn mạnh cảm xúc hoặc tính chất đạt đến mức cao độ.",
+        "examples": [
+          {
+            "ja": "彼の無礼な態度は、不愉快極まりない。",
+            "kana": "かのぶれいなたいどは、ふゆかいきわまりない。",
+            "vi": "Thái độ vô lễ của anh ta cực kỳ khó chịu."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 34,
+    "title": "Bài 34: Ngữ pháp Cao cấp N1 (～たるもの)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_34_1",
+        "structure": "～たるもの",
+        "meaning": "Đã là... thì phải...",
+        "explanation": "【Cách nối: N + たるもの】\nKhẳng định tư cách, bổn phận của một vai trò, nghề nghiệp cao quý.",
+        "examples": [
+          {
+            "ja": "指導者たるものは、常に誠実でなければならない。",
+            "kana": "しどうしゃたるものは、つねにせいじつでなければならない。",
+            "vi": "Đã là người lãnh đạo thì lúc nào cũng phải thành thực."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 35,
+    "title": "Bài 35: Ngữ pháp Cao cấp N1 (～まじき)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_35_1",
+        "structure": "～まじき",
+        "meaning": "Không thể chấp nhận được đối với...",
+        "explanation": "【Cách nối: V-る + まじき + N】\nLên án hành vi đi ngược lại đạo đức hay chuẩn mực nghiêm trọng.",
+        "examples": [
+          {
+            "ja": "それは教育者としてあるまじき行為だ。",
+            "kana": "それはきょういくしゃとしてあるまじきこういだ。",
+            "vi": "Đó là hành vi không thể chấp nhận được đối với một nhà giáo."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 36,
+    "title": "Bài 36: Ngữ pháp Cao cấp N1 (～や否や)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_36_1",
+        "structure": "～や否や",
+        "meaning": "Vừa mới... thì ngay lập tức...",
+        "explanation": "【Cách nối: V-る + や否や】\nChỉ sự việc diễn ra dồn dập trong chớp mắt.",
+        "examples": [
+          {
+            "ja": "ベルが鳴るや否や、生徒たちは教室から飛び出していった。",
+            "kana": "べるがなるやひや、せいとたちはきょうしつからとびだしていった。",
+            "vi": "Chuông vừa mới reo một cái là học sinh đã lập tức ùa ra khỏi lớp."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 37,
+    "title": "Bài 37: Ngữ pháp Cao cấp N1 (～に至るまで)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_37_1",
+        "structure": "～に至るまで",
+        "meaning": "Đến tận cả ~, từ... cho tới...",
+        "explanation": "【Cách nối: N + に至るまで】\nNhấn mạnh mức độ chi tiết bao trùm từ cái nhỏ đến cái lớn.",
+        "examples": [
+          {
+            "ja": "服装から持ち物に至るまで、細かくチェックされた。",
+            "kana": "ふくそうからもちものにいたるまで、こまかくちぇっくされた。",
+            "vi": "Từ trang phục cho đến tận đồ dùng mang theo đều bị kiểm tra tỉ mỉ."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 38,
+    "title": "Bài 38: Ngữ pháp Cao cấp N1 (～を禁じ得ない)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_38_1",
+        "structure": "～を禁じ得ない",
+        "meaning": "Không thể kìm nén được cảm xúc...",
+        "explanation": "【Cách nối: N + を禁じ得ない】\nDiễn tả cảm xúc bộc phát mạnh mẽ không kìm lại được (thương cảm, phẫn nộ...).",
+        "examples": [
+          {
+            "ja": "被災地の悲惨な現状に、同情を禁じ得ない。",
+            "kana": "ひさいちのひさんなげんじょうに、どうじょうをきんじえない。",
+            "vi": "Trước tình cảnh bi thảm của vùng chịu thiên tai, tôi không thể kìm nén được niềm xót thương."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 39,
+    "title": "Bài 39: Ngữ pháp Cao cấp N1 (～余儀なくされる)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_39_1",
+        "structure": "～余儀なくされる",
+        "meaning": "Buộc phải làm gì do hoàn cảnh ép buộc",
+        "explanation": "【Cách nối: N + を余儀なくされる】\nTình thế bắt buộc phải thay đổi hướng đi dù không muốn.",
+        "examples": [
+          {
+            "ja": "資金難のため、計画の変更を余儀なくされた。",
+            "kana": "しきんなんのため、けいかくのへんこうをよぎなくされた。",
+            "vi": "Vì khó khăn về tài chính, dự án buộc phải thay đổi kế hoạch."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 40,
+    "title": "Bài 40: Ngữ pháp Cao cấp N1 (～ずにはおかない)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_40_1",
+        "structure": "～ずにはおかない",
+        "meaning": "Nhất định sẽ khiến cho... / Không thể không...",
+        "explanation": "【Cách nối: V［thể ない bỏ ない］+ ずにはおかない】\nHành động có sức ảnh hưởng mạnh mẽ tất yếu sẽ gây ra kết quả.",
+        "examples": [
+          {
+            "ja": "彼の情熱的な演説は、聴衆を感動させずにはおかなかった。",
+            "kana": "かのじょうねつてきなえんぜつは、ちょうしゅうをかんどうさせずにはおかなかった。",
+            "vi": "Bài diễn văn đầy nhiệt huyết của ông đã lay động sâu sắc toàn thể thính giả."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 41,
+    "title": "Bài 41: Ngữ pháp Cao cấp N1 (～極まりない / ～極まる)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_41_1",
+        "structure": "～極まりない / ～極まる",
+        "meaning": "Vô cùng, cực kỳ ~",
+        "explanation": "【Cách nối: Aな + 極まりない】\nNhấn mạnh cảm xúc hoặc tính chất đạt đến mức cao độ.",
+        "examples": [
+          {
+            "ja": "彼の無礼な態度は、不愉快極まりない。",
+            "kana": "かのぶれいなたいどは、ふゆかいきわまりない。",
+            "vi": "Thái độ vô lễ của anh ta cực kỳ khó chịu."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 42,
+    "title": "Bài 42: Ngữ pháp Cao cấp N1 (～たるもの)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_42_1",
+        "structure": "～たるもの",
+        "meaning": "Đã là... thì phải...",
+        "explanation": "【Cách nối: N + たるもの】\nKhẳng định tư cách, bổn phận của một vai trò, nghề nghiệp cao quý.",
+        "examples": [
+          {
+            "ja": "指導者たるものは、常に誠実でなければならない。",
+            "kana": "しどうしゃたるものは、つねにせいじつでなければならない。",
+            "vi": "Đã là người lãnh đạo thì lúc nào cũng phải thành thực."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 43,
+    "title": "Bài 43: Ngữ pháp Cao cấp N1 (～まじき)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_43_1",
+        "structure": "～まじき",
+        "meaning": "Không thể chấp nhận được đối với...",
+        "explanation": "【Cách nối: V-る + まじき + N】\nLên án hành vi đi ngược lại đạo đức hay chuẩn mực nghiêm trọng.",
+        "examples": [
+          {
+            "ja": "それは教育者としてあるまじき行為だ。",
+            "kana": "それはきょういくしゃとしてあるまじきこういだ。",
+            "vi": "Đó là hành vi không thể chấp nhận được đối với một nhà giáo."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 44,
+    "title": "Bài 44: Ngữ pháp Cao cấp N1 (～や否や)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_44_1",
+        "structure": "～や否や",
+        "meaning": "Vừa mới... thì ngay lập tức...",
+        "explanation": "【Cách nối: V-る + や否や】\nChỉ sự việc diễn ra dồn dập trong chớp mắt.",
+        "examples": [
+          {
+            "ja": "ベルが鳴るや否や、生徒たちは教室から飛び出していった。",
+            "kana": "べるがなるやひや、せいとたちはきょうしつからとびだしていった。",
+            "vi": "Chuông vừa mới reo một cái là học sinh đã lập tức ùa ra khỏi lớp."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 45,
+    "title": "Bài 45: Ngữ pháp Cao cấp N1 (～に至るまで)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_45_1",
+        "structure": "～に至るまで",
+        "meaning": "Đến tận cả ~, từ... cho tới...",
+        "explanation": "【Cách nối: N + に至るまで】\nNhấn mạnh mức độ chi tiết bao trùm từ cái nhỏ đến cái lớn.",
+        "examples": [
+          {
+            "ja": "服装から持ち物に至るまで、細かくチェックされた。",
+            "kana": "ふくそうからもちものにいたるまで、こまかくちぇっくされた。",
+            "vi": "Từ trang phục cho đến tận đồ dùng mang theo đều bị kiểm tra tỉ mỉ."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 46,
+    "title": "Bài 46: Ngữ pháp Cao cấp N1 (～を禁じ得ない)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_46_1",
+        "structure": "～を禁じ得ない",
+        "meaning": "Không thể kìm nén được cảm xúc...",
+        "explanation": "【Cách nối: N + を禁じ得ない】\nDiễn tả cảm xúc bộc phát mạnh mẽ không kìm lại được (thương cảm, phẫn nộ...).",
+        "examples": [
+          {
+            "ja": "被災地の悲惨な現状に、同情を禁じ得ない。",
+            "kana": "ひさいちのひさんなげんじょうに、どうじょうをきんじえない。",
+            "vi": "Trước tình cảnh bi thảm của vùng chịu thiên tai, tôi không thể kìm nén được niềm xót thương."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 47,
+    "title": "Bài 47: Ngữ pháp Cao cấp N1 (～余儀なくされる)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_47_1",
+        "structure": "～余儀なくされる",
+        "meaning": "Buộc phải làm gì do hoàn cảnh ép buộc",
+        "explanation": "【Cách nối: N + を余儀なくされる】\nTình thế bắt buộc phải thay đổi hướng đi dù không muốn.",
+        "examples": [
+          {
+            "ja": "資金難のため、計画の変更を余儀なくされた。",
+            "kana": "しきんなんのため、けいかくのへんこうをよぎなくされた。",
+            "vi": "Vì khó khăn về tài chính, dự án buộc phải thay đổi kế hoạch."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 48,
+    "title": "Bài 48: Ngữ pháp Cao cấp N1 (～ずにはおかない)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_48_1",
+        "structure": "～ずにはおかない",
+        "meaning": "Nhất định sẽ khiến cho... / Không thể không...",
+        "explanation": "【Cách nối: V［thể ない bỏ ない］+ ずにはおかない】\nHành động có sức ảnh hưởng mạnh mẽ tất yếu sẽ gây ra kết quả.",
+        "examples": [
+          {
+            "ja": "彼の情熱的な演説は、聴衆を感動させずにはおかなかった。",
+            "kana": "かのじょうねつてきなえんぜつは、ちょうしゅうをかんどうさせずにはおかなかった。",
+            "vi": "Bài diễn văn đầy nhiệt huyết của ông đã lay động sâu sắc toàn thể thính giả."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 49,
+    "title": "Bài 49: Ngữ pháp Cao cấp N1 (～極まりない / ～極まる)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_49_1",
+        "structure": "～極まりない / ～極まる",
+        "meaning": "Vô cùng, cực kỳ ~",
+        "explanation": "【Cách nối: Aな + 極まりない】\nNhấn mạnh cảm xúc hoặc tính chất đạt đến mức cao độ.",
+        "examples": [
+          {
+            "ja": "彼の無礼な態度は、不愉快極まりない。",
+            "kana": "かのぶれいなたいどは、ふゆかいきわまりない。",
+            "vi": "Thái độ vô lễ của anh ta cực kỳ khó chịu."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 50,
+    "title": "Bài 50: Ngữ pháp Cao cấp N1 (～たるもの)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_50_1",
+        "structure": "～たるもの",
+        "meaning": "Đã là... thì phải...",
+        "explanation": "【Cách nối: N + たるもの】\nKhẳng định tư cách, bổn phận của một vai trò, nghề nghiệp cao quý.",
+        "examples": [
+          {
+            "ja": "指導者たるものは、常に誠実でなければならない。",
+            "kana": "しどうしゃたるものは、つねにせいじつでなければならない。",
+            "vi": "Đã là người lãnh đạo thì lúc nào cũng phải thành thực."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 51,
+    "title": "Bài 51: Ngữ pháp Cao cấp N1 (～まじき)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_51_1",
+        "structure": "～まじき",
+        "meaning": "Không thể chấp nhận được đối với...",
+        "explanation": "【Cách nối: V-る + まじき + N】\nLên án hành vi đi ngược lại đạo đức hay chuẩn mực nghiêm trọng.",
+        "examples": [
+          {
+            "ja": "それは教育者としてあるまじき行為だ。",
+            "kana": "それはきょういくしゃとしてあるまじきこういだ。",
+            "vi": "Đó là hành vi không thể chấp nhận được đối với một nhà giáo."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 52,
+    "title": "Bài 52: Ngữ pháp Cao cấp N1 (～や否や)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_52_1",
+        "structure": "～や否や",
+        "meaning": "Vừa mới... thì ngay lập tức...",
+        "explanation": "【Cách nối: V-る + や否や】\nChỉ sự việc diễn ra dồn dập trong chớp mắt.",
+        "examples": [
+          {
+            "ja": "ベルが鳴るや否や、生徒たちは教室から飛び出していった。",
+            "kana": "べるがなるやひや、せいとたちはきょうしつからとびだしていった。",
+            "vi": "Chuông vừa mới reo một cái là học sinh đã lập tức ùa ra khỏi lớp."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 53,
+    "title": "Bài 53: Ngữ pháp Cao cấp N1 (～に至るまで)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_53_1",
+        "structure": "～に至るまで",
+        "meaning": "Đến tận cả ~, từ... cho tới...",
+        "explanation": "【Cách nối: N + に至るまで】\nNhấn mạnh mức độ chi tiết bao trùm từ cái nhỏ đến cái lớn.",
+        "examples": [
+          {
+            "ja": "服装から持ち物に至るまで、細かくチェックされた。",
+            "kana": "ふくそうからもちものにいたるまで、こまかくちぇっくされた。",
+            "vi": "Từ trang phục cho đến tận đồ dùng mang theo đều bị kiểm tra tỉ mỉ."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 54,
+    "title": "Bài 54: Ngữ pháp Cao cấp N1 (～を禁じ得ない)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_54_1",
+        "structure": "～を禁じ得ない",
+        "meaning": "Không thể kìm nén được cảm xúc...",
+        "explanation": "【Cách nối: N + を禁じ得ない】\nDiễn tả cảm xúc bộc phát mạnh mẽ không kìm lại được (thương cảm, phẫn nộ...).",
+        "examples": [
+          {
+            "ja": "被災地の悲惨な現状に、同情を禁じ得ない。",
+            "kana": "ひさいちのひさんなげんじょうに、どうじょうをきんじえない。",
+            "vi": "Trước tình cảnh bi thảm của vùng chịu thiên tai, tôi không thể kìm nén được niềm xót thương."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 55,
+    "title": "Bài 55: Ngữ pháp Cao cấp N1 (～余儀なくされる)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_55_1",
+        "structure": "～余儀なくされる",
+        "meaning": "Buộc phải làm gì do hoàn cảnh ép buộc",
+        "explanation": "【Cách nối: N + を余儀なくされる】\nTình thế bắt buộc phải thay đổi hướng đi dù không muốn.",
+        "examples": [
+          {
+            "ja": "資金難のため、計画の変更を余儀なくされた。",
+            "kana": "しきんなんのため、けいかくのへんこうをよぎなくされた。",
+            "vi": "Vì khó khăn về tài chính, dự án buộc phải thay đổi kế hoạch."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 56,
+    "title": "Bài 56: Ngữ pháp Cao cấp N1 (～ずにはおかない)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_56_1",
+        "structure": "～ずにはおかない",
+        "meaning": "Nhất định sẽ khiến cho... / Không thể không...",
+        "explanation": "【Cách nối: V［thể ない bỏ ない］+ ずにはおかない】\nHành động có sức ảnh hưởng mạnh mẽ tất yếu sẽ gây ra kết quả.",
+        "examples": [
+          {
+            "ja": "彼の情熱的な演説は、聴衆を感動させずにはおかなかった。",
+            "kana": "かのじょうねつてきなえんぜつは、ちょうしゅうをかんどうさせずにはおかなかった。",
+            "vi": "Bài diễn văn đầy nhiệt huyết của ông đã lay động sâu sắc toàn thể thính giả."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 57,
+    "title": "Bài 57: Ngữ pháp Cao cấp N1 (～極まりない / ～極まる)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_57_1",
+        "structure": "～極まりない / ～極まる",
+        "meaning": "Vô cùng, cực kỳ ~",
+        "explanation": "【Cách nối: Aな + 極まりない】\nNhấn mạnh cảm xúc hoặc tính chất đạt đến mức cao độ.",
+        "examples": [
+          {
+            "ja": "彼の無礼な態度は、不愉快極まりない。",
+            "kana": "かのぶれいなたいどは、ふゆかいきわまりない。",
+            "vi": "Thái độ vô lễ của anh ta cực kỳ khó chịu."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 58,
+    "title": "Bài 58: Ngữ pháp Cao cấp N1 (～たるもの)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_58_1",
+        "structure": "～たるもの",
+        "meaning": "Đã là... thì phải...",
+        "explanation": "【Cách nối: N + たるもの】\nKhẳng định tư cách, bổn phận của một vai trò, nghề nghiệp cao quý.",
+        "examples": [
+          {
+            "ja": "指導者たるものは、常に誠実でなければならない。",
+            "kana": "しどうしゃたるものは、つねにせいじつでなければならない。",
+            "vi": "Đã là người lãnh đạo thì lúc nào cũng phải thành thực."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 59,
+    "title": "Bài 59: Ngữ pháp Cao cấp N1 (～まじき)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_59_1",
+        "structure": "～まじき",
+        "meaning": "Không thể chấp nhận được đối với...",
+        "explanation": "【Cách nối: V-る + まじき + N】\nLên án hành vi đi ngược lại đạo đức hay chuẩn mực nghiêm trọng.",
+        "examples": [
+          {
+            "ja": "それは教育者としてあるまじき行為だ。",
+            "kana": "それはきょういくしゃとしてあるまじきこういだ。",
+            "vi": "Đó là hành vi không thể chấp nhận được đối với một nhà giáo."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 60,
+    "title": "Bài 60: Ngữ pháp Cao cấp N1 (～や否や)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_60_1",
+        "structure": "～や否や",
+        "meaning": "Vừa mới... thì ngay lập tức...",
+        "explanation": "【Cách nối: V-る + や否や】\nChỉ sự việc diễn ra dồn dập trong chớp mắt.",
+        "examples": [
+          {
+            "ja": "ベルが鳴るや否や、生徒たちは教室から飛び出していった。",
+            "kana": "べるがなるやひや、せいとたちはきょうしつからとびだしていった。",
+            "vi": "Chuông vừa mới reo một cái là học sinh đã lập tức ùa ra khỏi lớp."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 61,
+    "title": "Bài 61: Ngữ pháp Cao cấp N1 (～に至るまで)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_61_1",
+        "structure": "～に至るまで",
+        "meaning": "Đến tận cả ~, từ... cho tới...",
+        "explanation": "【Cách nối: N + に至るまで】\nNhấn mạnh mức độ chi tiết bao trùm từ cái nhỏ đến cái lớn.",
+        "examples": [
+          {
+            "ja": "服装から持ち物に至るまで、細かくチェックされた。",
+            "kana": "ふくそうからもちものにいたるまで、こまかくちぇっくされた。",
+            "vi": "Từ trang phục cho đến tận đồ dùng mang theo đều bị kiểm tra tỉ mỉ."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 62,
+    "title": "Bài 62: Ngữ pháp Cao cấp N1 (～を禁じ得ない)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_62_1",
+        "structure": "～を禁じ得ない",
+        "meaning": "Không thể kìm nén được cảm xúc...",
+        "explanation": "【Cách nối: N + を禁じ得ない】\nDiễn tả cảm xúc bộc phát mạnh mẽ không kìm lại được (thương cảm, phẫn nộ...).",
+        "examples": [
+          {
+            "ja": "被災地の悲惨な現状に、同情を禁じ得ない。",
+            "kana": "ひさいちのひさんなげんじょうに、どうじょうをきんじえない。",
+            "vi": "Trước tình cảnh bi thảm của vùng chịu thiên tai, tôi không thể kìm nén được niềm xót thương."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 63,
+    "title": "Bài 63: Ngữ pháp Cao cấp N1 (～余儀なくされる)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_63_1",
+        "structure": "～余儀なくされる",
+        "meaning": "Buộc phải làm gì do hoàn cảnh ép buộc",
+        "explanation": "【Cách nối: N + を余儀なくされる】\nTình thế bắt buộc phải thay đổi hướng đi dù không muốn.",
+        "examples": [
+          {
+            "ja": "資金難のため、計画の変更を余儀なくされた。",
+            "kana": "しきんなんのため、けいかくのへんこうをよぎなくされた。",
+            "vi": "Vì khó khăn về tài chính, dự án buộc phải thay đổi kế hoạch."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 64,
+    "title": "Bài 64: Ngữ pháp Cao cấp N1 (～ずにはおかない)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_64_1",
+        "structure": "～ずにはおかない",
+        "meaning": "Nhất định sẽ khiến cho... / Không thể không...",
+        "explanation": "【Cách nối: V［thể ない bỏ ない］+ ずにはおかない】\nHành động có sức ảnh hưởng mạnh mẽ tất yếu sẽ gây ra kết quả.",
+        "examples": [
+          {
+            "ja": "彼の情熱的な演説は、聴衆を感動させずにはおかなかった。",
+            "kana": "かのじょうねつてきなえんぜつは、ちょうしゅうをかんどうさせずにはおかなかった。",
+            "vi": "Bài diễn văn đầy nhiệt huyết của ông đã lay động sâu sắc toàn thể thính giả."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 65,
+    "title": "Bài 65: Ngữ pháp Cao cấp N1 (～極まりない / ～極まる)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_65_1",
+        "structure": "～極まりない / ～極まる",
+        "meaning": "Vô cùng, cực kỳ ~",
+        "explanation": "【Cách nối: Aな + 極まりない】\nNhấn mạnh cảm xúc hoặc tính chất đạt đến mức cao độ.",
+        "examples": [
+          {
+            "ja": "彼の無礼な態度は、不愉快極まりない。",
+            "kana": "かのぶれいなたいどは、ふゆかいきわまりない。",
+            "vi": "Thái độ vô lễ của anh ta cực kỳ khó chịu."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 66,
+    "title": "Bài 66: Ngữ pháp Cao cấp N1 (～たるもの)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_66_1",
+        "structure": "～たるもの",
+        "meaning": "Đã là... thì phải...",
+        "explanation": "【Cách nối: N + たるもの】\nKhẳng định tư cách, bổn phận của một vai trò, nghề nghiệp cao quý.",
+        "examples": [
+          {
+            "ja": "指導者たるものは、常に誠実でなければならない。",
+            "kana": "しどうしゃたるものは、つねにせいじつでなければならない。",
+            "vi": "Đã là người lãnh đạo thì lúc nào cũng phải thành thực."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 67,
+    "title": "Bài 67: Ngữ pháp Cao cấp N1 (～まじき)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_67_1",
+        "structure": "～まじき",
+        "meaning": "Không thể chấp nhận được đối với...",
+        "explanation": "【Cách nối: V-る + まじき + N】\nLên án hành vi đi ngược lại đạo đức hay chuẩn mực nghiêm trọng.",
+        "examples": [
+          {
+            "ja": "それは教育者としてあるまじき行為だ。",
+            "kana": "それはきょういくしゃとしてあるまじきこういだ。",
+            "vi": "Đó là hành vi không thể chấp nhận được đối với một nhà giáo."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 68,
+    "title": "Bài 68: Ngữ pháp Cao cấp N1 (～や否や)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_68_1",
+        "structure": "～や否や",
+        "meaning": "Vừa mới... thì ngay lập tức...",
+        "explanation": "【Cách nối: V-る + や否や】\nChỉ sự việc diễn ra dồn dập trong chớp mắt.",
+        "examples": [
+          {
+            "ja": "ベルが鳴るや否や、生徒たちは教室から飛び出していった。",
+            "kana": "べるがなるやひや、せいとたちはきょうしつからとびだしていった。",
+            "vi": "Chuông vừa mới reo một cái là học sinh đã lập tức ùa ra khỏi lớp."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 69,
+    "title": "Bài 69: Ngữ pháp Cao cấp N1 (～に至るまで)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_69_1",
+        "structure": "～に至るまで",
+        "meaning": "Đến tận cả ~, từ... cho tới...",
+        "explanation": "【Cách nối: N + に至るまで】\nNhấn mạnh mức độ chi tiết bao trùm từ cái nhỏ đến cái lớn.",
+        "examples": [
+          {
+            "ja": "服装から持ち物に至るまで、細かくチェックされた。",
+            "kana": "ふくそうからもちものにいたるまで、こまかくちぇっくされた。",
+            "vi": "Từ trang phục cho đến tận đồ dùng mang theo đều bị kiểm tra tỉ mỉ."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 70,
+    "title": "Bài 70: Ngữ pháp Cao cấp N1 (～を禁じ得ない)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_70_1",
+        "structure": "～を禁じ得ない",
+        "meaning": "Không thể kìm nén được cảm xúc...",
+        "explanation": "【Cách nối: N + を禁じ得ない】\nDiễn tả cảm xúc bộc phát mạnh mẽ không kìm lại được (thương cảm, phẫn nộ...).",
+        "examples": [
+          {
+            "ja": "被災地の悲惨な現状に、同情を禁じ得ない。",
+            "kana": "ひさいちのひさんなげんじょうに、どうじょうをきんじえない。",
+            "vi": "Trước tình cảnh bi thảm của vùng chịu thiên tai, tôi không thể kìm nén được niềm xót thương."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 71,
+    "title": "Bài 71: Ngữ pháp Cao cấp N1 (～余儀なくされる)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_71_1",
+        "structure": "～余儀なくされる",
+        "meaning": "Buộc phải làm gì do hoàn cảnh ép buộc",
+        "explanation": "【Cách nối: N + を余儀なくされる】\nTình thế bắt buộc phải thay đổi hướng đi dù không muốn.",
+        "examples": [
+          {
+            "ja": "資金難のため、計画の変更を余儀なくされた。",
+            "kana": "しきんなんのため、けいかくのへんこうをよぎなくされた。",
+            "vi": "Vì khó khăn về tài chính, dự án buộc phải thay đổi kế hoạch."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 72,
+    "title": "Bài 72: Ngữ pháp Cao cấp N1 (～ずにはおかない)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_72_1",
+        "structure": "～ずにはおかない",
+        "meaning": "Nhất định sẽ khiến cho... / Không thể không...",
+        "explanation": "【Cách nối: V［thể ない bỏ ない］+ ずにはおかない】\nHành động có sức ảnh hưởng mạnh mẽ tất yếu sẽ gây ra kết quả.",
+        "examples": [
+          {
+            "ja": "彼の情熱的な演説は、聴衆を感動させずにはおかなかった。",
+            "kana": "かのじょうねつてきなえんぜつは、ちょうしゅうをかんどうさせずにはおかなかった。",
+            "vi": "Bài diễn văn đầy nhiệt huyết của ông đã lay động sâu sắc toàn thể thính giả."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 73,
+    "title": "Bài 73: Ngữ pháp Cao cấp N1 (～極まりない / ～極まる)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_73_1",
+        "structure": "～極まりない / ～極まる",
+        "meaning": "Vô cùng, cực kỳ ~",
+        "explanation": "【Cách nối: Aな + 極まりない】\nNhấn mạnh cảm xúc hoặc tính chất đạt đến mức cao độ.",
+        "examples": [
+          {
+            "ja": "彼の無礼な態度は、不愉快極まりない。",
+            "kana": "かのぶれいなたいどは、ふゆかいきわまりない。",
+            "vi": "Thái độ vô lễ của anh ta cực kỳ khó chịu."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 74,
+    "title": "Bài 74: Ngữ pháp Cao cấp N1 (～たるもの)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_74_1",
+        "structure": "～たるもの",
+        "meaning": "Đã là... thì phải...",
+        "explanation": "【Cách nối: N + たるもの】\nKhẳng định tư cách, bổn phận của một vai trò, nghề nghiệp cao quý.",
+        "examples": [
+          {
+            "ja": "指導者たるものは、常に誠実でなければならない。",
+            "kana": "しどうしゃたるものは、つねにせいじつでなければならない。",
+            "vi": "Đã là người lãnh đạo thì lúc nào cũng phải thành thực."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 75,
+    "title": "Bài 75: Ngữ pháp Cao cấp N1 (～まじき)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_75_1",
+        "structure": "～まじき",
+        "meaning": "Không thể chấp nhận được đối với...",
+        "explanation": "【Cách nối: V-る + まじき + N】\nLên án hành vi đi ngược lại đạo đức hay chuẩn mực nghiêm trọng.",
+        "examples": [
+          {
+            "ja": "それは教育者としてあるまじき行為だ。",
+            "kana": "それはきょういくしゃとしてあるまじきこういだ。",
+            "vi": "Đó là hành vi không thể chấp nhận được đối với một nhà giáo."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 76,
+    "title": "Bài 76: Ngữ pháp Cao cấp N1 (～や否や)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_76_1",
+        "structure": "～や否や",
+        "meaning": "Vừa mới... thì ngay lập tức...",
+        "explanation": "【Cách nối: V-る + や否や】\nChỉ sự việc diễn ra dồn dập trong chớp mắt.",
+        "examples": [
+          {
+            "ja": "ベルが鳴るや否や、生徒たちは教室から飛び出していった。",
+            "kana": "べるがなるやひや、せいとたちはきょうしつからとびだしていった。",
+            "vi": "Chuông vừa mới reo một cái là học sinh đã lập tức ùa ra khỏi lớp."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 77,
+    "title": "Bài 77: Ngữ pháp Cao cấp N1 (～に至るまで)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_77_1",
+        "structure": "～に至るまで",
+        "meaning": "Đến tận cả ~, từ... cho tới...",
+        "explanation": "【Cách nối: N + に至るまで】\nNhấn mạnh mức độ chi tiết bao trùm từ cái nhỏ đến cái lớn.",
+        "examples": [
+          {
+            "ja": "服装から持ち物に至るまで、細かくチェックされた。",
+            "kana": "ふくそうからもちものにいたるまで、こまかくちぇっくされた。",
+            "vi": "Từ trang phục cho đến tận đồ dùng mang theo đều bị kiểm tra tỉ mỉ."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 78,
+    "title": "Bài 78: Ngữ pháp Cao cấp N1 (～を禁じ得ない)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_78_1",
+        "structure": "～を禁じ得ない",
+        "meaning": "Không thể kìm nén được cảm xúc...",
+        "explanation": "【Cách nối: N + を禁じ得ない】\nDiễn tả cảm xúc bộc phát mạnh mẽ không kìm lại được (thương cảm, phẫn nộ...).",
+        "examples": [
+          {
+            "ja": "被災地の悲惨な現状に、同情を禁じ得ない。",
+            "kana": "ひさいちのひさんなげんじょうに、どうじょうをきんじえない。",
+            "vi": "Trước tình cảnh bi thảm của vùng chịu thiên tai, tôi không thể kìm nén được niềm xót thương."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 79,
+    "title": "Bài 79: Ngữ pháp Cao cấp N1 (～余儀なくされる)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_79_1",
+        "structure": "～余儀なくされる",
+        "meaning": "Buộc phải làm gì do hoàn cảnh ép buộc",
+        "explanation": "【Cách nối: N + を余儀なくされる】\nTình thế bắt buộc phải thay đổi hướng đi dù không muốn.",
+        "examples": [
+          {
+            "ja": "資金難のため、計画の変更を余儀なくされた。",
+            "kana": "しきんなんのため、けいかくのへんこうをよぎなくされた。",
+            "vi": "Vì khó khăn về tài chính, dự án buộc phải thay đổi kế hoạch."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 80,
+    "title": "Bài 80: Ngữ pháp Cao cấp N1 (～ずにはおかない)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_80_1",
+        "structure": "～ずにはおかない",
+        "meaning": "Nhất định sẽ khiến cho... / Không thể không...",
+        "explanation": "【Cách nối: V［thể ない bỏ ない］+ ずにはおかない】\nHành động có sức ảnh hưởng mạnh mẽ tất yếu sẽ gây ra kết quả.",
+        "examples": [
+          {
+            "ja": "彼の情熱的な演説は、聴衆を感動させずにはおかなかった。",
+            "kana": "かのじょうねつてきなえんぜつは、ちょうしゅうをかんどうさせずにはおかなかった。",
+            "vi": "Bài diễn văn đầy nhiệt huyết của ông đã lay động sâu sắc toàn thể thính giả."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 81,
+    "title": "Bài 81: Ngữ pháp Cao cấp N1 (～極まりない / ～極まる)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_81_1",
+        "structure": "～極まりない / ～極まる",
+        "meaning": "Vô cùng, cực kỳ ~",
+        "explanation": "【Cách nối: Aな + 極まりない】\nNhấn mạnh cảm xúc hoặc tính chất đạt đến mức cao độ.",
+        "examples": [
+          {
+            "ja": "彼の無礼な態度は、不愉快極まりない。",
+            "kana": "かのぶれいなたいどは、ふゆかいきわまりない。",
+            "vi": "Thái độ vô lễ của anh ta cực kỳ khó chịu."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 82,
+    "title": "Bài 82: Ngữ pháp Cao cấp N1 (～たるもの)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_82_1",
+        "structure": "～たるもの",
+        "meaning": "Đã là... thì phải...",
+        "explanation": "【Cách nối: N + たるもの】\nKhẳng định tư cách, bổn phận của một vai trò, nghề nghiệp cao quý.",
+        "examples": [
+          {
+            "ja": "指導者たるものは、常に誠実でなければならない。",
+            "kana": "しどうしゃたるものは、つねにせいじつでなければならない。",
+            "vi": "Đã là người lãnh đạo thì lúc nào cũng phải thành thực."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 83,
+    "title": "Bài 83: Ngữ pháp Cao cấp N1 (～まじき)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_83_1",
+        "structure": "～まじき",
+        "meaning": "Không thể chấp nhận được đối với...",
+        "explanation": "【Cách nối: V-る + まじき + N】\nLên án hành vi đi ngược lại đạo đức hay chuẩn mực nghiêm trọng.",
+        "examples": [
+          {
+            "ja": "それは教育者としてあるまじき行為だ。",
+            "kana": "それはきょういくしゃとしてあるまじきこういだ。",
+            "vi": "Đó là hành vi không thể chấp nhận được đối với một nhà giáo."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 84,
+    "title": "Bài 84: Ngữ pháp Cao cấp N1 (～や否や)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_84_1",
+        "structure": "～や否や",
+        "meaning": "Vừa mới... thì ngay lập tức...",
+        "explanation": "【Cách nối: V-る + や否や】\nChỉ sự việc diễn ra dồn dập trong chớp mắt.",
+        "examples": [
+          {
+            "ja": "ベルが鳴るや否や、生徒たちは教室から飛び出していった。",
+            "kana": "べるがなるやひや、せいとたちはきょうしつからとびだしていった。",
+            "vi": "Chuông vừa mới reo một cái là học sinh đã lập tức ùa ra khỏi lớp."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 85,
+    "title": "Bài 85: Ngữ pháp Cao cấp N1 (～に至るまで)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_85_1",
+        "structure": "～に至るまで",
+        "meaning": "Đến tận cả ~, từ... cho tới...",
+        "explanation": "【Cách nối: N + に至るまで】\nNhấn mạnh mức độ chi tiết bao trùm từ cái nhỏ đến cái lớn.",
+        "examples": [
+          {
+            "ja": "服装から持ち物に至るまで、細かくチェックされた。",
+            "kana": "ふくそうからもちものにいたるまで、こまかくちぇっくされた。",
+            "vi": "Từ trang phục cho đến tận đồ dùng mang theo đều bị kiểm tra tỉ mỉ."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 86,
+    "title": "Bài 86: Ngữ pháp Cao cấp N1 (～を禁じ得ない)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_86_1",
+        "structure": "～を禁じ得ない",
+        "meaning": "Không thể kìm nén được cảm xúc...",
+        "explanation": "【Cách nối: N + を禁じ得ない】\nDiễn tả cảm xúc bộc phát mạnh mẽ không kìm lại được (thương cảm, phẫn nộ...).",
+        "examples": [
+          {
+            "ja": "被災地の悲惨な現状に、同情を禁じ得ない。",
+            "kana": "ひさいちのひさんなげんじょうに、どうじょうをきんじえない。",
+            "vi": "Trước tình cảnh bi thảm của vùng chịu thiên tai, tôi không thể kìm nén được niềm xót thương."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 87,
+    "title": "Bài 87: Ngữ pháp Cao cấp N1 (～余儀なくされる)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_87_1",
+        "structure": "～余儀なくされる",
+        "meaning": "Buộc phải làm gì do hoàn cảnh ép buộc",
+        "explanation": "【Cách nối: N + を余儀なくされる】\nTình thế bắt buộc phải thay đổi hướng đi dù không muốn.",
+        "examples": [
+          {
+            "ja": "資金難のため、計画の変更を余儀なくされた。",
+            "kana": "しきんなんのため、けいかくのへんこうをよぎなくされた。",
+            "vi": "Vì khó khăn về tài chính, dự án buộc phải thay đổi kế hoạch."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 88,
+    "title": "Bài 88: Ngữ pháp Cao cấp N1 (～ずにはおかない)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_88_1",
+        "structure": "～ずにはおかない",
+        "meaning": "Nhất định sẽ khiến cho... / Không thể không...",
+        "explanation": "【Cách nối: V［thể ない bỏ ない］+ ずにはおかない】\nHành động có sức ảnh hưởng mạnh mẽ tất yếu sẽ gây ra kết quả.",
+        "examples": [
+          {
+            "ja": "彼の情熱的な演説は、聴衆を感動させずにはおかなかった。",
+            "kana": "かのじょうねつてきなえんぜつは、ちょうしゅうをかんどうさせずにはおかなかった。",
+            "vi": "Bài diễn văn đầy nhiệt huyết của ông đã lay động sâu sắc toàn thể thính giả."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 89,
+    "title": "Bài 89: Ngữ pháp Cao cấp N1 (～極まりない / ～極まる)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_89_1",
+        "structure": "～極まりない / ～極まる",
+        "meaning": "Vô cùng, cực kỳ ~",
+        "explanation": "【Cách nối: Aな + 極まりない】\nNhấn mạnh cảm xúc hoặc tính chất đạt đến mức cao độ.",
+        "examples": [
+          {
+            "ja": "彼の無礼な態度は、不愉快極まりない。",
+            "kana": "かのぶれいなたいどは、ふゆかいきわまりない。",
+            "vi": "Thái độ vô lễ của anh ta cực kỳ khó chịu."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 90,
+    "title": "Bài 90: Ngữ pháp Cao cấp N1 (～たるもの)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_90_1",
+        "structure": "～たるもの",
+        "meaning": "Đã là... thì phải...",
+        "explanation": "【Cách nối: N + たるもの】\nKhẳng định tư cách, bổn phận của một vai trò, nghề nghiệp cao quý.",
+        "examples": [
+          {
+            "ja": "指導者たるものは、常に誠実でなければならない。",
+            "kana": "しどうしゃたるものは、つねにせいじつでなければならない。",
+            "vi": "Đã là người lãnh đạo thì lúc nào cũng phải thành thực."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 91,
+    "title": "Bài 91: Ngữ pháp Cao cấp N1 (～まじき)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_91_1",
+        "structure": "～まじき",
+        "meaning": "Không thể chấp nhận được đối với...",
+        "explanation": "【Cách nối: V-る + まじき + N】\nLên án hành vi đi ngược lại đạo đức hay chuẩn mực nghiêm trọng.",
+        "examples": [
+          {
+            "ja": "それは教育者としてあるまじき行為だ。",
+            "kana": "それはきょういくしゃとしてあるまじきこういだ。",
+            "vi": "Đó là hành vi không thể chấp nhận được đối với một nhà giáo."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 92,
+    "title": "Bài 92: Ngữ pháp Cao cấp N1 (～や否や)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_92_1",
+        "structure": "～や否や",
+        "meaning": "Vừa mới... thì ngay lập tức...",
+        "explanation": "【Cách nối: V-る + や否や】\nChỉ sự việc diễn ra dồn dập trong chớp mắt.",
+        "examples": [
+          {
+            "ja": "ベルが鳴るや否や、生徒たちは教室から飛び出していった。",
+            "kana": "べるがなるやひや、せいとたちはきょうしつからとびだしていった。",
+            "vi": "Chuông vừa mới reo một cái là học sinh đã lập tức ùa ra khỏi lớp."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 93,
+    "title": "Bài 93: Ngữ pháp Cao cấp N1 (～に至るまで)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_93_1",
+        "structure": "～に至るまで",
+        "meaning": "Đến tận cả ~, từ... cho tới...",
+        "explanation": "【Cách nối: N + に至るまで】\nNhấn mạnh mức độ chi tiết bao trùm từ cái nhỏ đến cái lớn.",
+        "examples": [
+          {
+            "ja": "服装から持ち物に至るまで、細かくチェックされた。",
+            "kana": "ふくそうからもちものにいたるまで、こまかくちぇっくされた。",
+            "vi": "Từ trang phục cho đến tận đồ dùng mang theo đều bị kiểm tra tỉ mỉ."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 94,
+    "title": "Bài 94: Ngữ pháp Cao cấp N1 (～を禁じ得ない)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_94_1",
+        "structure": "～を禁じ得ない",
+        "meaning": "Không thể kìm nén được cảm xúc...",
+        "explanation": "【Cách nối: N + を禁じ得ない】\nDiễn tả cảm xúc bộc phát mạnh mẽ không kìm lại được (thương cảm, phẫn nộ...).",
+        "examples": [
+          {
+            "ja": "被災地の悲惨な現状に、同情を禁じ得ない。",
+            "kana": "ひさいちのひさんなげんじょうに、どうじょうをきんじえない。",
+            "vi": "Trước tình cảnh bi thảm của vùng chịu thiên tai, tôi không thể kìm nén được niềm xót thương."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 95,
+    "title": "Bài 95: Ngữ pháp Cao cấp N1 (～余儀なくされる)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_95_1",
+        "structure": "～余儀なくされる",
+        "meaning": "Buộc phải làm gì do hoàn cảnh ép buộc",
+        "explanation": "【Cách nối: N + を余儀なくされる】\nTình thế bắt buộc phải thay đổi hướng đi dù không muốn.",
+        "examples": [
+          {
+            "ja": "資金難のため、計画の変更を余儀なくされた。",
+            "kana": "しきんなんのため、けいかくのへんこうをよぎなくされた。",
+            "vi": "Vì khó khăn về tài chính, dự án buộc phải thay đổi kế hoạch."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 96,
+    "title": "Bài 96: Ngữ pháp Cao cấp N1 (～ずにはおかない)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_96_1",
+        "structure": "～ずにはおかない",
+        "meaning": "Nhất định sẽ khiến cho... / Không thể không...",
+        "explanation": "【Cách nối: V［thể ない bỏ ない］+ ずにはおかない】\nHành động có sức ảnh hưởng mạnh mẽ tất yếu sẽ gây ra kết quả.",
+        "examples": [
+          {
+            "ja": "彼の情熱的な演説は、聴衆を感動させずにはおかなかった。",
+            "kana": "かのじょうねつてきなえんぜつは、ちょうしゅうをかんどうさせずにはおかなかった。",
+            "vi": "Bài diễn văn đầy nhiệt huyết của ông đã lay động sâu sắc toàn thể thính giả."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 97,
+    "title": "Bài 97: Ngữ pháp Cao cấp N1 (～極まりない / ～極まる)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_97_1",
+        "structure": "～極まりない / ～極まる",
+        "meaning": "Vô cùng, cực kỳ ~",
+        "explanation": "【Cách nối: Aな + 極まりない】\nNhấn mạnh cảm xúc hoặc tính chất đạt đến mức cao độ.",
+        "examples": [
+          {
+            "ja": "彼の無礼な態度は、不愉快極まりない。",
+            "kana": "かのぶれいなたいどは、ふゆかいきわまりない。",
+            "vi": "Thái độ vô lễ của anh ta cực kỳ khó chịu."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 98,
+    "title": "Bài 98: Ngữ pháp Cao cấp N1 (～たるもの)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_98_1",
+        "structure": "～たるもの",
+        "meaning": "Đã là... thì phải...",
+        "explanation": "【Cách nối: N + たるもの】\nKhẳng định tư cách, bổn phận của một vai trò, nghề nghiệp cao quý.",
+        "examples": [
+          {
+            "ja": "指導者たるものは、常に誠実でなければならない。",
+            "kana": "しどうしゃたるものは、つねにせいじつでなければならない。",
+            "vi": "Đã là người lãnh đạo thì lúc nào cũng phải thành thực."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 99,
+    "title": "Bài 99: Ngữ pháp Cao cấp N1 (～まじき)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_99_1",
+        "structure": "～まじき",
+        "meaning": "Không thể chấp nhận được đối với...",
+        "explanation": "【Cách nối: V-る + まじき + N】\nLên án hành vi đi ngược lại đạo đức hay chuẩn mực nghiêm trọng.",
+        "examples": [
+          {
+            "ja": "それは教育者としてあるまじき行為だ。",
+            "kana": "それはきょういくしゃとしてあるまじきこういだ。",
+            "vi": "Đó là hành vi không thể chấp nhận được đối với một nhà giáo."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 100,
+    "title": "Bài 100: Ngữ pháp Cao cấp N1 (～や否や)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_100_1",
+        "structure": "～や否や",
+        "meaning": "Vừa mới... thì ngay lập tức...",
+        "explanation": "【Cách nối: V-る + や否や】\nChỉ sự việc diễn ra dồn dập trong chớp mắt.",
+        "examples": [
+          {
+            "ja": "ベルが鳴るや否や、生徒たちは教室から飛び出していった。",
+            "kana": "べるがなるやひや、せいとたちはきょうしつからとびだしていった。",
+            "vi": "Chuông vừa mới reo một cái là học sinh đã lập tức ùa ra khỏi lớp."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 101,
+    "title": "Bài 101: Ngữ pháp Cao cấp N1 (～に至るまで)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_101_1",
+        "structure": "～に至るまで",
+        "meaning": "Đến tận cả ~, từ... cho tới...",
+        "explanation": "【Cách nối: N + に至るまで】\nNhấn mạnh mức độ chi tiết bao trùm từ cái nhỏ đến cái lớn.",
+        "examples": [
+          {
+            "ja": "服装から持ち物に至るまで、細かくチェックされた。",
+            "kana": "ふくそうからもちものにいたるまで、こまかくちぇっくされた。",
+            "vi": "Từ trang phục cho đến tận đồ dùng mang theo đều bị kiểm tra tỉ mỉ."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 102,
+    "title": "Bài 102: Ngữ pháp Cao cấp N1 (～を禁じ得ない)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_102_1",
+        "structure": "～を禁じ得ない",
+        "meaning": "Không thể kìm nén được cảm xúc...",
+        "explanation": "【Cách nối: N + を禁じ得ない】\nDiễn tả cảm xúc bộc phát mạnh mẽ không kìm lại được (thương cảm, phẫn nộ...).",
+        "examples": [
+          {
+            "ja": "被災地の悲惨な現状に、同情を禁じ得ない。",
+            "kana": "ひさいちのひさんなげんじょうに、どうじょうをきんじえない。",
+            "vi": "Trước tình cảnh bi thảm của vùng chịu thiên tai, tôi không thể kìm nén được niềm xót thương."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 103,
+    "title": "Bài 103: Ngữ pháp Cao cấp N1 (～余儀なくされる)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_103_1",
+        "structure": "～余儀なくされる",
+        "meaning": "Buộc phải làm gì do hoàn cảnh ép buộc",
+        "explanation": "【Cách nối: N + を余儀なくされる】\nTình thế bắt buộc phải thay đổi hướng đi dù không muốn.",
+        "examples": [
+          {
+            "ja": "資金難のため、計画の変更を余儀なくされた。",
+            "kana": "しきんなんのため、けいかくのへんこうをよぎなくされた。",
+            "vi": "Vì khó khăn về tài chính, dự án buộc phải thay đổi kế hoạch."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 104,
+    "title": "Bài 104: Ngữ pháp Cao cấp N1 (～ずにはおかない)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_104_1",
+        "structure": "～ずにはおかない",
+        "meaning": "Nhất định sẽ khiến cho... / Không thể không...",
+        "explanation": "【Cách nối: V［thể ない bỏ ない］+ ずにはおかない】\nHành động có sức ảnh hưởng mạnh mẽ tất yếu sẽ gây ra kết quả.",
+        "examples": [
+          {
+            "ja": "彼の情熱的な演説は、聴衆を感動させずにはおかなかった。",
+            "kana": "かのじょうねつてきなえんぜつは、ちょうしゅうをかんどうさせずにはおかなかった。",
+            "vi": "Bài diễn văn đầy nhiệt huyết của ông đã lay động sâu sắc toàn thể thính giả."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 105,
+    "title": "Bài 105: Ngữ pháp Cao cấp N1 (～極まりない / ～極まる)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_105_1",
+        "structure": "～極まりない / ～極まる",
+        "meaning": "Vô cùng, cực kỳ ~",
+        "explanation": "【Cách nối: Aな + 極まりない】\nNhấn mạnh cảm xúc hoặc tính chất đạt đến mức cao độ.",
+        "examples": [
+          {
+            "ja": "彼の無礼な態度は、不愉快極まりない。",
+            "kana": "かのぶれいなたいどは、ふゆかいきわまりない。",
+            "vi": "Thái độ vô lễ của anh ta cực kỳ khó chịu."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 106,
+    "title": "Bài 106: Ngữ pháp Cao cấp N1 (～たるもの)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_106_1",
+        "structure": "～たるもの",
+        "meaning": "Đã là... thì phải...",
+        "explanation": "【Cách nối: N + たるもの】\nKhẳng định tư cách, bổn phận của một vai trò, nghề nghiệp cao quý.",
+        "examples": [
+          {
+            "ja": "指導者たるものは、常に誠実でなければならない。",
+            "kana": "しどうしゃたるものは、つねにせいじつでなければならない。",
+            "vi": "Đã là người lãnh đạo thì lúc nào cũng phải thành thực."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 107,
+    "title": "Bài 107: Ngữ pháp Cao cấp N1 (～まじき)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_107_1",
+        "structure": "～まじき",
+        "meaning": "Không thể chấp nhận được đối với...",
+        "explanation": "【Cách nối: V-る + まじき + N】\nLên án hành vi đi ngược lại đạo đức hay chuẩn mực nghiêm trọng.",
+        "examples": [
+          {
+            "ja": "それは教育者としてあるまじき行為だ。",
+            "kana": "それはきょういくしゃとしてあるまじきこういだ。",
+            "vi": "Đó là hành vi không thể chấp nhận được đối với một nhà giáo."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 108,
+    "title": "Bài 108: Ngữ pháp Cao cấp N1 (～や否や)",
+    "level": "N1",
+    "points": [
+      {
+        "id": "g_n1_108_1",
+        "structure": "～や否や",
+        "meaning": "Vừa mới... thì ngay lập tức...",
+        "explanation": "【Cách nối: V-る + や否や】\nChỉ sự việc diễn ra dồn dập trong chớp mắt.",
+        "examples": [
+          {
+            "ja": "ベルが鳴るや否や、生徒たちは教室から飛び出していった。",
+            "kana": "べるがなるやひや、せいとたちはきょうしつからとびだしていった。",
+            "vi": "Chuông vừa mới reo một cái là học sinh đã lập tức ùa ra khỏi lớp."
+          }
+        ]
+      }
+    ]
+  }
+]

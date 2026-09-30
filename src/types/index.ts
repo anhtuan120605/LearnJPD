@@ -45,6 +45,7 @@ export interface UserProgress {
   masteredWords: string[];
   favoriteWords: string[];
   mistakeWords: string[];
+  hiddenWords?: string[];
   masteredKanji: string[];
   favoriteKanji: string[];
   streak: number;
@@ -56,4 +57,40 @@ export interface UserProgress {
     score: number;
     total: number;
   }>;
+}
+
+export interface GrammarPoint {
+  id: string;
+  structure: string;
+  meaning: string;
+  explanation: string;
+  examples: Array<{
+    ja: string;
+    kana: string;
+    vi: string;
+  }>;
+}
+
+export interface GrammarLesson {
+  lesson: number;
+  title: string;
+  level: string;
+  points: GrammarPoint[];
+}
+
+export interface ReadingQuestion {
+  q: string;
+  options: string[];
+  answer: number;
+  explain: string;
+}
+
+export interface ReadingLesson {
+  lesson: number;
+  title_ja: string;
+  title_vi: string;
+  content: string;
+  content_kana: string;
+  translation: string;
+  questions: ReadingQuestion[];
 }

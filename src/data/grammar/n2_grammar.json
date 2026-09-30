@@ -1,0 +1,482 @@
+[
+  {
+    "lesson": 13,
+    "title": "Bài 13: Ngữ pháp Trung Cao cấp N2 (～に際して / ～にあたって)",
+    "level": "N2",
+    "points": [
+      {
+        "id": "g_n2_13_1",
+        "structure": "～に際して / ～にあたって",
+        "meaning": "Nhân dịp, trước khi bắt đầu ~",
+        "explanation": "【Cách nối: N / V-る + に際して】\nDùng trong các dịp trọng đại, nghi lễ, bắt đầu kế hoạch lớn.",
+        "examples": [
+          {
+            "ja": "新しい事業を始めるに際して、綿密な計画を立てた。",
+            "kana": "あたらしいじぎょうをはじめるにさいして、めんみつなけいかくをたてた。",
+            "vi": "Trước khi bắt đầu dự án kinh doanh mới, chúng tôi đã lập kế hoạch tỉ mỉ."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 14,
+    "title": "Bài 14: Ngữ pháp Trung Cao cấp N2 (～を契機に / ～をきっかけに)",
+    "level": "N2",
+    "points": [
+      {
+        "id": "g_n2_14_1",
+        "structure": "～を契機に / ～をきっかけに",
+        "meaning": "Từ duyên cớ, bước ngoặt ~",
+        "explanation": "【Cách nối: N + を契機に】\nChỉ sự việc là cái cớ hoặc bước ngoặt làm thay đổi tình hình.",
+        "examples": [
+          {
+            "ja": "留学を契機に、異文化理解の重要性を実感した。",
+            "kana": "りゅうがくをけいきに、いぶんかりかいのじゅうようせいをじっかんした。",
+            "vi": "Từ cơ duyên đi du học, tôi đã cảm nhận sâu sắc tầm quan trọng của việc thấu hiểu văn hóa."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 15,
+    "title": "Bài 15: Ngữ pháp Trung Cao cấp N2 (～次第)",
+    "level": "N2",
+    "points": [
+      {
+        "id": "g_n2_15_1",
+        "structure": "～次第",
+        "meaning": "Ngay sau khi ~ thì sẽ lập tức...",
+        "explanation": "【Cách nối: V［bỏ ます］+ 次第】\nDiễn tả hành động sẽ được tiến hành ngay khi điều kiện tiên quyết hoàn thành.",
+        "examples": [
+          {
+            "ja": "詳しい日程が決まり次第、ご連絡いたします。",
+            "kana": "くわしいにっていがきまりしだい、ごれんらくいたします。",
+            "vi": "Ngay sau khi lịch trình chi tiết được quyết định, tôi sẽ liên hệ với bạn."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 16,
+    "title": "Bài 16: Ngữ pháp Trung Cao cấp N2 (～に伴って)",
+    "level": "N2",
+    "points": [
+      {
+        "id": "g_n2_16_1",
+        "structure": "～に伴って",
+        "meaning": "Cùng với việc ~, kéo theo ~",
+        "explanation": "【Cách nối: V-る / N + に伴って】\nMột sự biến đổi lớn kéo theo các thay đổi tương ứng.",
+        "examples": [
+          {
+            "ja": "都市の開発に伴って、交通の便が飛躍的に向上した。",
+            "kana": "としのかいはつにともなって、こうつうのびんがひやくてきにこうじょうした。",
+            "vi": "Cùng với sự phát triển đô thị, sự tiện lợi về giao thông đã được nâng cao vượt bậc."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 17,
+    "title": "Bài 17: Ngữ pháp Trung Cao cấp N2 (～どころか)",
+    "level": "N2",
+    "points": [
+      {
+        "id": "g_n2_17_1",
+        "structure": "～どころか",
+        "meaning": "Nói chi đến ~, thậm chí còn không...",
+        "explanation": "【Cách nối: N / Thể thông thường + どころか】\nNhấn mạnh thực tế trái ngược hoàn toàn hoặc tệ hơn dự đoán nhiều.",
+        "examples": [
+          {
+            "ja": "旅行どころか、忙しくて日曜日も休めない。",
+            "kana": "りょこうどころか、いそがしくてにちようびもやすめない。",
+            "vi": "Nói chi đến đi du lịch, bận đến mức chủ nhật còn không được nghỉ."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 18,
+    "title": "Bài 18: Ngữ pháp Trung Cao cấp N2 (～末に)",
+    "level": "N2",
+    "points": [
+      {
+        "id": "g_n2_18_1",
+        "structure": "～末に",
+        "meaning": "Sau một hồi ~, kết cục là...",
+        "explanation": "【Cách nối: V-た / Nの + 末に】\nSau một quá trình dài nỗ lực, đắn đo thì đạt được kết quả.",
+        "examples": [
+          {
+            "ja": "熟慮の末に、会社を設立することを決断した。",
+            "kana": "じゅくりょのまつに、かいしゃをせつりつすることをけつだんした。",
+            "vi": "Sau một hồi suy nghĩ thấu đáo, tôi đã quyết định thành lập công ty."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 19,
+    "title": "Bài 19: Ngữ pháp Trung Cao cấp N2 (～折に)",
+    "level": "N2",
+    "points": [
+      {
+        "id": "g_n2_19_1",
+        "structure": "～折に",
+        "meaning": "Khi, nhân dịp ~",
+        "explanation": "【Cách nối: V-る / V-た / Nの + 折に】\nDùng trong thư từ trang trọng diễn tả thời điểm thuận tiện.",
+        "examples": [
+          {
+            "ja": "東京にお越しの折には、ぜひお立ち寄りください。",
+            "kana": "とうきょうにおこしのおりには、ぜひおたちよりください。",
+            "vi": "Nhân dịp có chuyến đến Tokyo, xin mời bạn ghé qua chúng tôi nhé."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 20,
+    "title": "Bài 20: Ngữ pháp Trung Cao cấp N2 (～まい)",
+    "level": "N2",
+    "points": [
+      {
+        "id": "g_n2_20_1",
+        "structure": "～まい",
+        "meaning": "Quyết không ~ / Có lẽ không ~",
+        "explanation": "【Cách nối: V-る + まい (Nhóm 2 bỏ る)】\nThể hiện ý chí kiên quyết không làm điều gì lặp lại lần nữa.",
+        "examples": [
+          {
+            "ja": "二度と同じ過ちは繰り返すまいと心に誓った。",
+            "kana": "にどとおなじあやまちはくりかえすまいとこころにちかった。",
+            "vi": "Tôi đã thề trong tim quyết không lặp lại lỗi lầm tương tự lần thứ hai."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 21,
+    "title": "Bài 21: Ngữ pháp Trung Cao cấp N2 (～ざるを得ない)",
+    "level": "N2",
+    "points": [
+      {
+        "id": "g_n2_21_1",
+        "structure": "～ざるを得ない",
+        "meaning": "Đành phải ~, không thể không ~",
+        "explanation": "【Cách nối: V［thể ない bỏ ない］+ ざるを得ない (する -> せざる)】\nTình thế bắt buộc phải làm dù bản thân không hề muốn.",
+        "examples": [
+          {
+            "ja": "天候が悪化した場合、登山を中止せざるを得ない。",
+            "kana": "てんこうがあっかしたばあい、とざんをちゅうしせざるをえない。",
+            "vi": "Trong trường hợp thời tiết xấu đi, đành phải hủy bỏ chuyến leo núi."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 22,
+    "title": "Bài 22: Ngữ pháp Trung Cao cấp N2 (～にほかならない)",
+    "level": "N2",
+    "points": [
+      {
+        "id": "g_n2_22_1",
+        "structure": "～にほかならない",
+        "meaning": "Chính là ~, không gì khác ngoài ~",
+        "explanation": "【Cách nối: N + にほかならない】\nKhẳng định một cách mạnh mẽ nguyên nhân cốt lõi duy nhất.",
+        "examples": [
+          {
+            "ja": "今回の成功は、チーム全員の努力の賜物にほかならない。",
+            "kana": "こんかいのせいこうは、ちーむぜんいんのどりょくのたまものにほかならない。",
+            "vi": "Thành công lần này không gì khác chính là kết tinh từ nỗ lực của toàn thể đội ngũ."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 23,
+    "title": "Bài 23: Ngữ pháp Trung Cao cấp N2 (～に限って)",
+    "level": "N2",
+    "points": [
+      {
+        "id": "g_n2_23_1",
+        "structure": "～に限って",
+        "meaning": "Chỉ riêng ~ thì lại... (xui xẻo)",
+        "explanation": "【Cách nối: N + に限って】\nChỉ sự việc trớ trêu luôn xảy ra vào đúng thời điểm đó.",
+        "examples": [
+          {
+            "ja": "傘を持っていない日に限って、雨が降る。",
+            "kana": "かさをもっていないにちにかぎって、あめがふる。",
+            "vi": "Cứ đúng vào cái ngày không mang ô thì trời lại đổ mưa."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 24,
+    "title": "Bài 24: Ngữ pháp Trung Cao cấp N2 (～にすぎない)",
+    "level": "N2",
+    "points": [
+      {
+        "id": "g_n2_24_1",
+        "structure": "～にすぎない",
+        "meaning": "Chỉ đơn thuần là ~, không hơn không kém",
+        "explanation": "【Cách nối: N / Thể thông thường + にすぎない】\nĐánh giá mức độ sự việc chỉ là nhỏ bé, khiêm tốn.",
+        "examples": [
+          {
+            "ja": "私の意見は、一つの提案にすぎません。",
+            "kana": "わたしのいけんは、ひとつのていあんにすぎません。",
+            "vi": "Ý kiến của tôi cũng chỉ đơn thuần là một lời đề xuất mà thôi."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 25,
+    "title": "Bài 25: Ngữ pháp Trung Cao cấp N2 (～に際して / ～にあたって)",
+    "level": "N2",
+    "points": [
+      {
+        "id": "g_n2_25_1",
+        "structure": "～に際して / ～にあたって",
+        "meaning": "Nhân dịp, trước khi bắt đầu ~",
+        "explanation": "【Cách nối: N / V-る + に際して】\nDùng trong các dịp trọng đại, nghi lễ, bắt đầu kế hoạch lớn.",
+        "examples": [
+          {
+            "ja": "新しい事業を始めるに際して、綿密な計画を立てた。",
+            "kana": "あたらしいじぎょうをはじめるにさいして、めんみつなけいかくをたてた。",
+            "vi": "Trước khi bắt đầu dự án kinh doanh mới, chúng tôi đã lập kế hoạch tỉ mỉ."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 26,
+    "title": "Bài 26: Ngữ pháp Trung Cao cấp N2 (～を契機に / ～をきっかけに)",
+    "level": "N2",
+    "points": [
+      {
+        "id": "g_n2_26_1",
+        "structure": "～を契機に / ～をきっかけに",
+        "meaning": "Từ duyên cớ, bước ngoặt ~",
+        "explanation": "【Cách nối: N + を契機に】\nChỉ sự việc là cái cớ hoặc bước ngoặt làm thay đổi tình hình.",
+        "examples": [
+          {
+            "ja": "留学を契機に、異文化理解の重要性を実感した。",
+            "kana": "りゅうがくをけいきに、いぶんかりかいのじゅうようせいをじっかんした。",
+            "vi": "Từ cơ duyên đi du học, tôi đã cảm nhận sâu sắc tầm quan trọng của việc thấu hiểu văn hóa."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 27,
+    "title": "Bài 27: Ngữ pháp Trung Cao cấp N2 (～次第)",
+    "level": "N2",
+    "points": [
+      {
+        "id": "g_n2_27_1",
+        "structure": "～次第",
+        "meaning": "Ngay sau khi ~ thì sẽ lập tức...",
+        "explanation": "【Cách nối: V［bỏ ます］+ 次第】\nDiễn tả hành động sẽ được tiến hành ngay khi điều kiện tiên quyết hoàn thành.",
+        "examples": [
+          {
+            "ja": "詳しい日程が決まり次第、ご連絡いたします。",
+            "kana": "くわしいにっていがきまりしだい、ごれんらくいたします。",
+            "vi": "Ngay sau khi lịch trình chi tiết được quyết định, tôi sẽ liên hệ với bạn."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 28,
+    "title": "Bài 28: Ngữ pháp Trung Cao cấp N2 (～に伴って)",
+    "level": "N2",
+    "points": [
+      {
+        "id": "g_n2_28_1",
+        "structure": "～に伴って",
+        "meaning": "Cùng với việc ~, kéo theo ~",
+        "explanation": "【Cách nối: V-る / N + に伴って】\nMột sự biến đổi lớn kéo theo các thay đổi tương ứng.",
+        "examples": [
+          {
+            "ja": "都市の開発に伴って、交通の便が飛躍的に向上した。",
+            "kana": "としのかいはつにともなって、こうつうのびんがひやくてきにこうじょうした。",
+            "vi": "Cùng với sự phát triển đô thị, sự tiện lợi về giao thông đã được nâng cao vượt bậc."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 29,
+    "title": "Bài 29: Ngữ pháp Trung Cao cấp N2 (～どころか)",
+    "level": "N2",
+    "points": [
+      {
+        "id": "g_n2_29_1",
+        "structure": "～どころか",
+        "meaning": "Nói chi đến ~, thậm chí còn không...",
+        "explanation": "【Cách nối: N / Thể thông thường + どころか】\nNhấn mạnh thực tế trái ngược hoàn toàn hoặc tệ hơn dự đoán nhiều.",
+        "examples": [
+          {
+            "ja": "旅行どころか、忙しくて日曜日も休めない。",
+            "kana": "りょこうどころか、いそがしくてにちようびもやすめない。",
+            "vi": "Nói chi đến đi du lịch, bận đến mức chủ nhật còn không được nghỉ."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 30,
+    "title": "Bài 30: Ngữ pháp Trung Cao cấp N2 (～末に)",
+    "level": "N2",
+    "points": [
+      {
+        "id": "g_n2_30_1",
+        "structure": "～末に",
+        "meaning": "Sau một hồi ~, kết cục là...",
+        "explanation": "【Cách nối: V-た / Nの + 末に】\nSau một quá trình dài nỗ lực, đắn đo thì đạt được kết quả.",
+        "examples": [
+          {
+            "ja": "熟慮の末に、会社を設立することを決断した。",
+            "kana": "じゅくりょのまつに、かいしゃをせつりつすることをけつだんした。",
+            "vi": "Sau một hồi suy nghĩ thấu đáo, tôi đã quyết định thành lập công ty."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 31,
+    "title": "Bài 31: Ngữ pháp Trung Cao cấp N2 (～折に)",
+    "level": "N2",
+    "points": [
+      {
+        "id": "g_n2_31_1",
+        "structure": "～折に",
+        "meaning": "Khi, nhân dịp ~",
+        "explanation": "【Cách nối: V-る / V-た / Nの + 折に】\nDùng trong thư từ trang trọng diễn tả thời điểm thuận tiện.",
+        "examples": [
+          {
+            "ja": "東京にお越しの折には、ぜひお立ち寄りください。",
+            "kana": "とうきょうにおこしのおりには、ぜひおたちよりください。",
+            "vi": "Nhân dịp có chuyến đến Tokyo, xin mời bạn ghé qua chúng tôi nhé."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 32,
+    "title": "Bài 32: Ngữ pháp Trung Cao cấp N2 (～まい)",
+    "level": "N2",
+    "points": [
+      {
+        "id": "g_n2_32_1",
+        "structure": "～まい",
+        "meaning": "Quyết không ~ / Có lẽ không ~",
+        "explanation": "【Cách nối: V-る + まい (Nhóm 2 bỏ る)】\nThể hiện ý chí kiên quyết không làm điều gì lặp lại lần nữa.",
+        "examples": [
+          {
+            "ja": "二度と同じ過ちは繰り返すまいと心に誓った。",
+            "kana": "にどとおなじあやまちはくりかえすまいとこころにちかった。",
+            "vi": "Tôi đã thề trong tim quyết không lặp lại lỗi lầm tương tự lần thứ hai."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 33,
+    "title": "Bài 33: Ngữ pháp Trung Cao cấp N2 (～ざるを得ない)",
+    "level": "N2",
+    "points": [
+      {
+        "id": "g_n2_33_1",
+        "structure": "～ざるを得ない",
+        "meaning": "Đành phải ~, không thể không ~",
+        "explanation": "【Cách nối: V［thể ない bỏ ない］+ ざるを得ない (する -> せざる)】\nTình thế bắt buộc phải làm dù bản thân không hề muốn.",
+        "examples": [
+          {
+            "ja": "天候が悪化した場合、登山を中止せざるを得ない。",
+            "kana": "てんこうがあっかしたばあい、とざんをちゅうしせざるをえない。",
+            "vi": "Trong trường hợp thời tiết xấu đi, đành phải hủy bỏ chuyến leo núi."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 34,
+    "title": "Bài 34: Ngữ pháp Trung Cao cấp N2 (～にほかならない)",
+    "level": "N2",
+    "points": [
+      {
+        "id": "g_n2_34_1",
+        "structure": "～にほかならない",
+        "meaning": "Chính là ~, không gì khác ngoài ~",
+        "explanation": "【Cách nối: N + にほかならない】\nKhẳng định một cách mạnh mẽ nguyên nhân cốt lõi duy nhất.",
+        "examples": [
+          {
+            "ja": "今回の成功は、チーム全員の努力の賜物にほかならない。",
+            "kana": "こんかいのせいこうは、ちーむぜんいんのどりょくのたまものにほかならない。",
+            "vi": "Thành công lần này không gì khác chính là kết tinh từ nỗ lực của toàn thể đội ngũ."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 35,
+    "title": "Bài 35: Ngữ pháp Trung Cao cấp N2 (～に限って)",
+    "level": "N2",
+    "points": [
+      {
+        "id": "g_n2_35_1",
+        "structure": "～に限って",
+        "meaning": "Chỉ riêng ~ thì lại... (xui xẻo)",
+        "explanation": "【Cách nối: N + に限って】\nChỉ sự việc trớ trêu luôn xảy ra vào đúng thời điểm đó.",
+        "examples": [
+          {
+            "ja": "傘を持っていない日に限って、雨が降る。",
+            "kana": "かさをもっていないにちにかぎって、あめがふる。",
+            "vi": "Cứ đúng vào cái ngày không mang ô thì trời lại đổ mưa."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 36,
+    "title": "Bài 36: Ngữ pháp Trung Cao cấp N2 (～にすぎない)",
+    "level": "N2",
+    "points": [
+      {
+        "id": "g_n2_36_1",
+        "structure": "～にすぎない",
+        "meaning": "Chỉ đơn thuần là ~, không hơn không kém",
+        "explanation": "【Cách nối: N / Thể thông thường + にすぎない】\nĐánh giá mức độ sự việc chỉ là nhỏ bé, khiêm tốn.",
+        "examples": [
+          {
+            "ja": "私の意見は、一つの提案にすぎません。",
+            "kana": "わたしのいけんは、ひとつのていあんにすぎません。",
+            "vi": "Ý kiến của tôi cũng chỉ đơn thuần là một lời đề xuất mà thôi."
+          }
+        ]
+      }
+    ]
+  }
+]

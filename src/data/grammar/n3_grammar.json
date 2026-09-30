@@ -1,0 +1,602 @@
+[
+  {
+    "lesson": 1,
+    "title": "Bài 1: Ngữ pháp Trung cấp N3 (～に関して / ～について)",
+    "level": "N3",
+    "points": [
+      {
+        "id": "g_n3_1_1",
+        "structure": "～に関して / ～について",
+        "meaning": "Về việc ~, liên quan đến ~",
+        "explanation": "【Cách nối: N + に関して / に関するN】\nDùng khi nói về một chủ đề, nội dung nghiên cứu hay thảo luận.",
+        "examples": [
+          {
+            "ja": "この問題に関して、ご意見をお聞かせください。",
+            "kana": "このもんだいにかんして、ごいけんをおきかせください。",
+            "vi": "Về vấn đề này, xin hãy cho tôi biết ý kiến của bạn."
+          },
+          {
+            "ja": "実生活で「～に関して / ～について」の表現をよく耳にします。",
+            "kana": "じっせいかつで「～にかんして / ～について」のひょうげんをよくみみにします。",
+            "vi": "Trong đời sống thực tế thường xuyên nghe thấy cách diễn đạt「～に関して / ～について」."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 2,
+    "title": "Bài 2: Ngữ pháp Trung cấp N3 (～に対して)",
+    "level": "N3",
+    "points": [
+      {
+        "id": "g_n3_2_1",
+        "structure": "～に対して",
+        "meaning": "Đối với ~ / Trái ngược với ~",
+        "explanation": "【Cách nối: N + に対して / に対するN】\nChỉ đối tượng hướng đến hoặc so sánh tương phản giữa hai sự việc.",
+        "examples": [
+          {
+            "ja": "お客様に対して、失礼な言葉を使ってはいけません。",
+            "kana": "おきゃくさまにたいして、しつれいなことばをつかってはいけません。",
+            "vi": "Đối với khách hàng, không được dùng lời lẽ thất lễ."
+          },
+          {
+            "ja": "実生活で「～に対して」の表現をよく耳にします。",
+            "kana": "じっせいかつで「～にたいして」のひょうげんをよくみみにします。",
+            "vi": "Trong đời sống thực tế thường xuyên nghe thấy cách diễn đạt「～に対して」."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 3,
+    "title": "Bài 3: Ngữ pháp Trung cấp N3 (～に基づいて)",
+    "level": "N3",
+    "points": [
+      {
+        "id": "g_n3_3_1",
+        "structure": "～に基づいて",
+        "meaning": "Dựa trên ~, căn cứ vào ~",
+        "explanation": "【Cách nối: N + に基づいて / に基づくN】\nLấy một nguyên tắc, số liệu, pháp luật hay kinh nghiệm làm cơ sở.",
+        "examples": [
+          {
+            "ja": "最新の調査結果に基づいて計画を立てます。",
+            "kana": "さいしんのちょうさけっかにもとづいてけいかくをたてます。",
+            "vi": "Lập kế hoạch dựa trên kết quả khảo sát mới nhất."
+          },
+          {
+            "ja": "実生活で「～に基づいて」の表現をよく耳にします。",
+            "kana": "じっせいかつで「～にもとづいて」のひょうげんをよくみみにします。",
+            "vi": "Trong đời sống thực tế thường xuyên nghe thấy cách diễn đạt「～に基づいて」."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 4,
+    "title": "Bài 4: Ngữ pháp Trung cấp N3 (～にわたって)",
+    "level": "N3",
+    "points": [
+      {
+        "id": "g_n3_4_1",
+        "structure": "～にわたって",
+        "meaning": "Suốt, trải khắp ~",
+        "explanation": "【Cách nối: N (thời gian/không gian) + にわたって】\nChỉ một hành động hay trạng thái diễn ra trên diện rộng hoặc thời gian dài.",
+        "examples": [
+          {
+            "ja": "3日間にわたって国際会議が開催されました。",
+            "kana": "3にちかんにわたってこくさいかいぎがかいさいされました。",
+            "vi": "Hội nghị quốc tế đã được tổ chức suốt 3 ngày."
+          },
+          {
+            "ja": "実生活で「～にわたって」の表現をよく耳にします。",
+            "kana": "じっせいかつで「～にわたって」のひょうげんをよくみみにします。",
+            "vi": "Trong đời sống thực tế thường xuyên nghe thấy cách diễn đạt「～にわたって」."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 5,
+    "title": "Bài 5: Ngữ pháp Trung cấp N3 (～をはじめ（として）)",
+    "level": "N3",
+    "points": [
+      {
+        "id": "g_n3_5_1",
+        "structure": "～をはじめ（として）",
+        "meaning": "Trước tiên phải kể đến ~, tiêu biểu là ~",
+        "explanation": "【Cách nối: N + をはじめ / をはじめとするN】\nĐưa ra ví dụ điển hình nhất trong số nhiều đối tượng.",
+        "examples": [
+          {
+            "ja": "富士山をはじめ、日本には美しい山がたくさんあります。",
+            "kana": "ふじさんをはじめ、にっぽんにはうつくしいやまがたくさんあります。",
+            "vi": "Tiêu biểu là núi Phú Sĩ, ở Nhật có rất nhiều ngọn núi đẹp."
+          },
+          {
+            "ja": "実生活で「～をはじめ（として）」の表現をよく耳にします。",
+            "kana": "じっせいかつで「～をはじめ（として）」のひょうげんをよくみみにします。",
+            "vi": "Trong đời sống thực tế thường xuyên nghe thấy cách diễn đạt「～をはじめ（として）」."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 6,
+    "title": "Bài 6: Ngữ pháp Trung cấp N3 (～とともに)",
+    "level": "N3",
+    "points": [
+      {
+        "id": "g_n3_6_1",
+        "structure": "～とともに",
+        "meaning": "Cùng với ~ / Đồng thời với ~",
+        "explanation": "【Cách nối: N / V-る + とともに】\nHai sự việc diễn ra đồng thời hoặc cùng lúc có sự biến đổi.",
+        "examples": [
+          {
+            "ja": "言葉の発達とともに、社会も変化していきます。",
+            "kana": "ことばのはったつとともに、しゃかいもへんかしていきます。",
+            "vi": "Cùng với sự phát triển của ngôn ngữ, xã hội cũng biến đổi theo."
+          },
+          {
+            "ja": "実生活で「～とともに」の表現をよく耳にします。",
+            "kana": "じっせいかつで「～とともに」のひょうげんをよくみみにします。",
+            "vi": "Trong đời sống thực tế thường xuyên nghe thấy cách diễn đạt「～とともに」."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 7,
+    "title": "Bài 7: Ngữ pháp Trung cấp N3 (～を通じて / ～を通して)",
+    "level": "N3",
+    "points": [
+      {
+        "id": "g_n3_7_1",
+        "structure": "～を通じて / ～を通して",
+        "meaning": "Thông qua ~ / Trong suốt ~",
+        "explanation": "【Cách nối: N + を通じて / を通して】\nChỉ phương tiện, phương thức trung gian hoặc khoảng thời gian liên tục.",
+        "examples": [
+          {
+            "ja": "インターネットを通じて、世界中のニュースを知ることができます。",
+            "kana": "いんたーねっとをつうじて、せかいじゅうのにゅーすをしることができます。",
+            "vi": "Thông qua Internet, chúng ta có thể biết tin tức trên toàn thế giới."
+          },
+          {
+            "ja": "実生活で「～を通じて / ～を通して」の表現をよく耳にします。",
+            "kana": "じっせいかつで「～をつうじて / ～をとうして」のひょうげんをよくみみにします。",
+            "vi": "Trong đời sống thực tế thường xuyên nghe thấy cách diễn đạt「～を通じて / ～を通して」."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 8,
+    "title": "Bài 8: Ngữ pháp Trung cấp N3 (～に違いない)",
+    "level": "N3",
+    "points": [
+      {
+        "id": "g_n3_8_1",
+        "structure": "～に違いない",
+        "meaning": "Chắc chắn là ~",
+        "explanation": "【Cách nối: Thể thông thường + に違いない】\nBày tỏ sự phán đoán có căn cứ xác thực và độ tin cậy rất cao.",
+        "examples": [
+          {
+            "ja": "彼は毎日夜遅くまで勉強していたから、合格するに違いない。",
+            "kana": "かれはまいにちよるおそくまでべんきょうしていたから、ごうかくするにちがいない。",
+            "vi": "Vì anh ấy học muộn mỗi ngày nên chắc chắn sẽ thi đỗ."
+          },
+          {
+            "ja": "実生活で「～に違いない」の表現をよく耳にします。",
+            "kana": "じっせいかつで「～にちがいない」のひょうげんをよくみみにします。",
+            "vi": "Trong đời sống thực tế thường xuyên nghe thấy cách diễn đạt「～に違いない」."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 9,
+    "title": "Bài 9: Ngữ pháp Trung cấp N3 (～恐れがある)",
+    "level": "N3",
+    "points": [
+      {
+        "id": "g_n3_9_1",
+        "structure": "～恐れがある",
+        "meaning": "Có nguy cơ là ~, e rằng ~",
+        "explanation": "【Cách nối: V-る / Nの + 恐れがある】\nDiễn tả sự lo ngại về một kết quả xấu có thể xảy ra.",
+        "examples": [
+          {
+            "ja": "台風の影響で、大雨になる恐れがあります。",
+            "kana": "たいふうのえいきょうで、おおあめになるおそれがあります。",
+            "vi": "Do ảnh hưởng của bão, e rằng sẽ có mưa lớn."
+          },
+          {
+            "ja": "実生活で「～恐れがある」の表現をよく耳にします。",
+            "kana": "じっせいかつで「～おそれがある」のひょうげんをよくみみにします。",
+            "vi": "Trong đời sống thực tế thường xuyên nghe thấy cách diễn đạt「～恐れがある」."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 10,
+    "title": "Bài 10: Ngữ pháp Trung cấp N3 (～わけではない)",
+    "level": "N3",
+    "points": [
+      {
+        "id": "g_n3_10_1",
+        "structure": "～わけではない",
+        "meaning": "Không hẳn là ~, không có nghĩa là ~",
+        "explanation": "【Cách nối: Thể thông thường + わけではない】\nPhủ định một phần nhận định hay định kiến thông thường.",
+        "examples": [
+          {
+            "ja": "日本料理が嫌いなわけではありませんが、辛いものが好きです。",
+            "kana": "にほんりょうりがきらいなわけではありませんが、つらいものがすきです。",
+            "vi": "Không hẳn là tôi ghét món Nhật, nhưng tôi thích ăn cay hơn."
+          },
+          {
+            "ja": "実生活で「～わけではない」の表現をよく耳にします。",
+            "kana": "じっせいかつで「～わけではない」のひょうげんをよくみみにします。",
+            "vi": "Trong đời sống thực tế thường xuyên nghe thấy cách diễn đạt「～わけではない」."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 11,
+    "title": "Bài 11: Ngữ pháp Trung cấp N3 (～わけがない)",
+    "level": "N3",
+    "points": [
+      {
+        "id": "g_n3_11_1",
+        "structure": "～わけがない",
+        "meaning": "Lẽ nào lại ~, tuyệt đối không thể nào ~",
+        "explanation": "【Cách nối: Thể thông thường + わけがない】\nKhẳng định chắc chắn điều gì đó là bất khả thi hoặc phi lý.",
+        "examples": [
+          {
+            "ja": "彼がそんな嘘をつくわけがありません。",
+            "kana": "かれがそんなうそをつくわけがありません。",
+            "vi": "Lẽ nào anh ấy lại nói dối như vậy, tuyệt đối không có chuyện đó."
+          },
+          {
+            "ja": "実生活で「～わけがない」の表現をよく耳にします。",
+            "kana": "じっせいかつで「～わけがない」のひょうげんをよくみみにします。",
+            "vi": "Trong đời sống thực tế thường xuyên nghe thấy cách diễn đạt「～わけがない」."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 12,
+    "title": "Bài 12: Ngữ pháp Trung cấp N3 (～べきだ / ～べきではない)",
+    "level": "N3",
+    "points": [
+      {
+        "id": "g_n3_12_1",
+        "structure": "～べきだ / ～べきではない",
+        "meaning": "Nên ~ / Không nên ~",
+        "explanation": "【Cách nối: V-る + べきだ (する -> すべき)】\nBày tỏ đạo lý, bổn phận hoặc lời khuyên nên làm gì theo lẽ thường.",
+        "examples": [
+          {
+            "ja": "約束は必ず守るべきです。",
+            "kana": "やくそくはかならずまもるべきです。",
+            "vi": "Đã hứa thì nhất định phải giữ lời."
+          },
+          {
+            "ja": "実生活で「～べきだ / ～べきではない」の表現をよく耳にします。",
+            "kana": "じっせいかつで「～べきだ / ～べきではない」のひょうげんをよくみみにします。",
+            "vi": "Trong đời sống thực tế thường xuyên nghe thấy cách diễn đạt「～べきだ / ～べきではない」."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 13,
+    "title": "Bài 13: Ngữ pháp Trung cấp N3 (～にかかわらず / ～をとわず)",
+    "level": "N3",
+    "points": [
+      {
+        "id": "g_n3_13_1",
+        "structure": "～にかかわらず / ～をとわず",
+        "meaning": "Bất kể ~, không phân biệt ~",
+        "explanation": "【Cách nối: N + にかかわらず / を問わず】\nHành động hay kết quả không bị ảnh hưởng bởi điều kiện phía trước.",
+        "examples": [
+          {
+            "ja": "年齢や性別にかかわらず、誰でも参加できます。",
+            "kana": "ねんれいやせいべつにかかわらず、だれでもさんかできます。",
+            "vi": "Bất kể tuổi tác hay giới tính, ai cũng có thể tham gia."
+          },
+          {
+            "ja": "実生活で「～にかかわらず / ～をとわず」の表現をよく耳にします。",
+            "kana": "じっせいかつで「～にかかわらず / ～をとわず」のひょうげんをよくみみにします。",
+            "vi": "Trong đời sống thực tế thường xuyên nghe thấy cách diễn đạt「～にかかわらず / ～をとわず」."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 14,
+    "title": "Bài 14: Ngữ pháp Trung cấp N3 (～に応じて)",
+    "level": "N3",
+    "points": [
+      {
+        "id": "g_n3_14_1",
+        "structure": "～に応じて",
+        "meaning": "Ứng với ~, phù hợp với ~",
+        "explanation": "【Cách nối: N + に応じて / に応じたN】\nThay đổi hành động cho tương thích với mức độ, hoàn cảnh.",
+        "examples": [
+          {
+            "ja": "予算に応じて、最適なプランをお選びいただけます。",
+            "kana": "よさんにおうじて、さいてきなぷらんをおえらびいただけます。",
+            "vi": "Tùy ứng theo ngân sách, quý khách có thể chọn phương án tối ưu."
+          },
+          {
+            "ja": "実生活で「～に応じて」の表現をよく耳にします。",
+            "kana": "じっせいかつで「～におうじて」のひょうげんをよくみみにします。",
+            "vi": "Trong đời sống thực tế thường xuyên nghe thấy cách diễn đạt「～に応じて」."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 15,
+    "title": "Bài 15: Ngữ pháp Trung cấp N3 (～につれて / ～にしたがって)",
+    "level": "N3",
+    "points": [
+      {
+        "id": "g_n3_15_1",
+        "structure": "～につれて / ～にしたがって",
+        "meaning": "Càng... thì càng...",
+        "explanation": "【Cách nối: V-る / N + につれて】\nSự thay đổi của vế A kéo theo sự biến đổi tỷ lệ thuận của vế B.",
+        "examples": [
+          {
+            "ja": "時間が経つにつれて、緊張がほぐれてきました。",
+            "kana": "じかんがへつにつれて、きんちょうがほぐれてきました。",
+            "vi": "Thời gian càng trôi qua thì sự căng thẳng càng vơi bớt."
+          },
+          {
+            "ja": "実生活で「～につれて / ～にしたがって」の表現をよく耳にします。",
+            "kana": "じっせいかつで「～につれて / ～にしたがって」のひょうげんをよくみみにします。",
+            "vi": "Trong đời sống thực tế thường xuyên nghe thấy cách diễn đạt「～につれて / ～にしたがって」."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 16,
+    "title": "Bài 16: Ngữ pháp Trung cấp N3 (～一方だ)",
+    "level": "N3",
+    "points": [
+      {
+        "id": "g_n3_16_1",
+        "structure": "～一方だ",
+        "meaning": "Có xu hướng ngày càng ~",
+        "explanation": "【Cách nối: V-る + 一方だ】\nSự biến đổi liên tục theo một chiều hướng (thường là xấu hoặc mạnh dần).",
+        "examples": [
+          {
+            "ja": "物価は上がる一方です。",
+            "kana": "ぶっかはあがるいっぽうです。",
+            "vi": "Giá cả hàng hóa thì ngày một leo thang."
+          },
+          {
+            "ja": "実生活で「～一方だ」の表現をよく耳にします。",
+            "kana": "じっせいかつで「～いっぽうだ」のひょうげんをよくみみにします。",
+            "vi": "Trong đời sống thực tế thường xuyên nghe thấy cách diễn đạt「～一方だ」."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 17,
+    "title": "Bài 17: Ngữ pháp Trung cấp N3 (～最中に)",
+    "level": "N3",
+    "points": [
+      {
+        "id": "g_n3_17_1",
+        "structure": "～最中に",
+        "meaning": "Đúng lúc đang ~ thì...",
+        "explanation": "【Cách nối: V-ている / Nの + 最中に】\nMột việc bất ngờ chen ngang khi một hành động đang ở đỉnh điểm.",
+        "examples": [
+          {
+            "ja": "食事の最中に、電話がかかってきました。",
+            "kana": "しょくじのさいちゅうに、でんわがかかってきました。",
+            "vi": "Đúng lúc đang ăn cơm thì chuông điện thoại reo."
+          },
+          {
+            "ja": "実生活で「～最中に」の表現をよく耳にします。",
+            "kana": "じっせいかつで「～さいちゅうに」のひょうげんをよくみみにします。",
+            "vi": "Trong đời sống thực tế thường xuyên nghe thấy cách diễn đạt「～最中に」."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 18,
+    "title": "Bài 18: Ngữ pháp Trung cấp N3 (～うちに)",
+    "level": "N3",
+    "points": [
+      {
+        "id": "g_n3_18_1",
+        "structure": "～うちに",
+        "meaning": "Trong khi còn ~ thì hãy...",
+        "explanation": "【Cách nối: V-る / V-ない / A-い / A-な / Nの + うちに】\nTận dụng thời điểm trạng thái còn giữ nguyên để làm gì đó.",
+        "examples": [
+          {
+            "ja": "温かいうちに、どうぞ召し上がってください。",
+            "kana": "あたたかいうちに、どうぞめしあがってください。",
+            "vi": "Mời bạn dùng ngay trong khi món ăn còn nóng hổi nhé."
+          },
+          {
+            "ja": "実生活で「～うちに」の表現をよく耳にします。",
+            "kana": "じっせいかつで「～うちに」のひょうげんをよくみみにします。",
+            "vi": "Trong đời sống thực tế thường xuyên nghe thấy cách diễn đạt「～うちに」."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 19,
+    "title": "Bài 19: Ngữ pháp Trung cấp N3 (～おかげで / ～せいで)",
+    "level": "N3",
+    "points": [
+      {
+        "id": "g_n3_19_1",
+        "structure": "～おかげで / ～せいで",
+        "meaning": "Nhờ có ~ / Tại vì ~",
+        "explanation": "【Cách nối: Thể thông thường + おかげで / せいで】\nおかげで (kết quả tốt do ai giúp), せいで (kết quả xấu do nguyên nhân tiêu cực).",
+        "examples": [
+          {
+            "ja": "先生のおかげで、無事に合格できました。",
+            "kana": "せんせいのおかげで、ぶじにごうかくできました。",
+            "vi": "Nhờ có thầy giáo mà em đã thi đỗ bình an vô sự."
+          },
+          {
+            "ja": "実生活で「～おかげで / ～せいで」の表現をよく耳にします。",
+            "kana": "じっせいかつで「～おかげで / ～せいで」のひょうげんをよくみみにします。",
+            "vi": "Trong đời sống thực tế thường xuyên nghe thấy cách diễn đạt「～おかげで / ～せいで」."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 20,
+    "title": "Bài 20: Ngữ pháp Trung cấp N3 (～たとたん（に）)",
+    "level": "N3",
+    "points": [
+      {
+        "id": "g_n3_20_1",
+        "structure": "～たとたん（に）",
+        "meaning": "Ngay sau khi vừa... thì...",
+        "explanation": "【Cách nối: V-た + とたん（に）】\nKhoảnh khắc vế A vừa xảy ra thì lập tức kéo theo vế B ngoài dự kiến.",
+        "examples": [
+          {
+            "ja": "窓を開けたとたん、冷たい風が入ってきました。",
+            "kana": "まどをひらけたとたん、つめたいかぜがいっってきました。",
+            "vi": "Vừa mới mở cửa sổ ra thì cơn gió lạnh lập tức ùa vào."
+          },
+          {
+            "ja": "実生活で「～たとたん（に）」の表現をよく耳にします。",
+            "kana": "じっせいかつで「～たとたん（に）」のひょうげんをよくみみにします。",
+            "vi": "Trong đời sống thực tế thường xuyên nghe thấy cách diễn đạt「～たとたん（に）」."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 21,
+    "title": "Bài 21: Ngữ pháp Trung cấp N3 (～たびに)",
+    "level": "N3",
+    "points": [
+      {
+        "id": "g_n3_21_1",
+        "structure": "～たびに",
+        "meaning": "Mỗi lần... lại...",
+        "explanation": "【Cách nối: V-る / Nの + たびに】\nCứ mỗi khi vế A lặp lại thì vế B luôn luôn xảy ra.",
+        "examples": [
+          {
+            "ja": "この曲を聴くたびに、学生時代を思い出します。",
+            "kana": "このきょくをきくたびに、がくせいじだいをおもいだします。",
+            "vi": "Mỗi lần nghe bài hát này, tôi lại nhớ về thời học sinh."
+          },
+          {
+            "ja": "実生活で「～たびに」の表現をよく耳にします。",
+            "kana": "じっせいかつで「～たびに」のひょうげんをよくみみにします。",
+            "vi": "Trong đời sống thực tế thường xuyên nghe thấy cách diễn đạt「～たびに」."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 22,
+    "title": "Bài 22: Ngữ pháp Trung cấp N3 (～ばかりか / ～だけでなく)",
+    "level": "N3",
+    "points": [
+      {
+        "id": "g_n3_22_1",
+        "structure": "～ばかりか / ～だけでなく",
+        "meaning": "Không chỉ... mà còn...",
+        "explanation": "【Cách nối: Thể thông thường + ばかりか】\nBổ sung thêm mức độ nặng hơn hoặc rộng hơn.",
+        "examples": [
+          {
+            "ja": "彼は英語ばかりか、中国語も上手に話せます。",
+            "kana": "かれはえいごばかりか、ちゅうごくごもじょうずにはなせます。",
+            "vi": "Anh ấy không chỉ tiếng Anh mà tiếng Trung nói cũng rất giỏi."
+          },
+          {
+            "ja": "実生活で「～ばかりか / ～だけでなく」の表現をよく耳にします。",
+            "kana": "じっせいかつで「～ばかりか / ～だけでなく」のひょうげんをよくみみにします。",
+            "vi": "Trong đời sống thực tế thường xuyên nghe thấy cách diễn đạt「～ばかりか / ～だけでなく」."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 23,
+    "title": "Bài 23: Ngữ pháp Trung cấp N3 (～っこない)",
+    "level": "N3",
+    "points": [
+      {
+        "id": "g_n3_23_1",
+        "structure": "～っこない",
+        "meaning": "Tuyệt đối không thể nào...",
+        "explanation": "【Cách nối: V［bỏ ます］+ っこない】\nVăn nói thể hiện sự khẳng định mạnh mẽ rằng việc đó là bất khả thi.",
+        "examples": [
+          {
+            "ja": "こんな難しい問題、一人で解けっこありません。",
+            "kana": "こんなむずかしいもんだい、ひとりでとけっこありません。",
+            "vi": "Câu hỏi khó thế này, một mình tuyệt đối không thể nào giải được."
+          },
+          {
+            "ja": "実生活で「～っこない」の表現をよく耳にします。",
+            "kana": "じっせいかつで「～っこない」のひょうげんをよくみみにします。",
+            "vi": "Trong đời sống thực tế thường xuyên nghe thấy cách diễn đạt「～っこない」."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": 24,
+    "title": "Bài 24: Ngữ pháp Trung cấp N3 (～際（に）)",
+    "level": "N3",
+    "points": [
+      {
+        "id": "g_n3_24_1",
+        "structure": "～際（に）",
+        "meaning": "Khi, nhân dịp...",
+        "explanation": "【Cách nối: V-る / V-た / Nの + 際（に）】\nDùng trong văn phong trang trọng, thông báo quy định.",
+        "examples": [
+          {
+            "ja": "非常の際は、エレベーターを使わないでください。",
+            "kana": "ひじょうのきわは、えれべーたーをつかわないでください。",
+            "vi": "Khi xảy ra sự cố khẩn cấp, xin vui lòng không sử dụng thang máy."
+          },
+          {
+            "ja": "実生活で「～際（に）」の表現をよく耳にします。",
+            "kana": "じっせいかつで「～きわ（に）」のひょうげんをよくみみにします。",
+            "vi": "Trong đời sống thực tế thường xuyên nghe thấy cách diễn đạt「～際（に）」."
+          }
+        ]
+      }
+    ]
+  }
+]
