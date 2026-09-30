@@ -18,8 +18,32 @@ export const FlashcardView: React.FC<FlashcardViewProps> = ({
   onToggleMaster,
   onToggleFavorite
 }) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const sessionKey = React.useMemo(() => {
+    if (!words || words.length === 0) return 'learn_jpd_flashcard_idx';
+    return `learn_jpd_flashcard_${words.length}_${words[0]?.id}`;
+  }, [words]);
+
+  const [currentIndex, setCurrentIndex] = useState(() => {
+    try {
+      const saved = localStorage.getItem(sessionKey);
+      if (saved) {
+        const parsed = parseInt(saved, 10);
+        if (!isNaN(parsed) && parsed >= 0 && parsed < (words?.length || 0)) {
+          return parsed;
+        }
+      }
+    } catch {}
+    return 0;
+  });
+
   const [isFlipped, setIsFlipped] = useState(false);
+
+  // Lưu thẻ hiện tại khi người dùng chuyển thẻ
+  React.useEffect(() => {
+    try {
+      localStorage.setItem(sessionKey, currentIndex.toString());
+    } catch {}
+  }, [currentIndex, sessionKey]);
 
   if (!words || words.length === 0) {
     return (

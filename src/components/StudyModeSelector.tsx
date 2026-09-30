@@ -77,10 +77,10 @@ export const StudyModeSelector: React.FC<StudyModeSelectorProps> = ({
     },
   ];
 
-  // Dạng Compact: Thanh tab ngang gọn gàng (Dùng trong sub-tab của bài học)
+  // Dạng Compact: Lưới 5 cột tự co giãn vừa khít 100% bề ngang, không cuộn ngang
   if (variant === 'compact') {
     return (
-      <div className="flex items-center space-x-1.5 bg-slate-100 dark:bg-zinc-800 p-1.5 rounded-2xl overflow-x-auto scrollbar-thin">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-1.5 bg-slate-100 dark:bg-zinc-800/90 p-1.5 rounded-2xl w-full">
         {modes.map((m) => {
           const isSelected = currentMode === m.key;
           const Icon = m.icon;
@@ -88,14 +88,14 @@ export const StudyModeSelector: React.FC<StudyModeSelectorProps> = ({
             <button
               key={m.key}
               onClick={() => onSelectMode(m.key)}
-              className={`flex items-center space-x-2 px-3.5 py-2 rounded-xl text-xs font-bold transition whitespace-nowrap ${
+              className={`flex items-center justify-center space-x-1.5 py-2.5 px-2 rounded-xl text-xs font-bold transition text-center ${
                 isSelected
                   ? 'bg-white dark:bg-zinc-700 text-slate-900 dark:text-white shadow-xs ring-1 ring-slate-200 dark:ring-zinc-600'
-                  : 'text-slate-500 hover:text-slate-900 dark:hover:text-white'
+                  : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
               }`}
             >
-              <Icon className={`w-3.5 h-3.5 ${isSelected ? m.activeText : 'text-slate-400'}`} />
-              <span>{m.label}</span>
+              <Icon className={`w-3.5 h-3.5 shrink-0 ${isSelected ? m.activeText : 'text-slate-400'}`} />
+              <span className="truncate">{m.label}</span>
             </button>
           );
         })}

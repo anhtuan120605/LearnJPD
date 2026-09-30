@@ -12,6 +12,14 @@ import {
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { speakJapanese } from '../lib/audio';
+import { normalizeJapaneseAnswer, isJapaneseAnswerMatch } from '../lib/textUtils';
+import { 
+  getPracticeSessionKey, 
+  savePracticeSession, 
+  loadPracticeSession, 
+  clearPracticeSession,
+  QuizSessionState 
+} from '../lib/practiceSession';
 
 interface PracticeViewProps {
   words: WordItem[];
@@ -19,6 +27,7 @@ interface PracticeViewProps {
   onAddMistake: (id: string) => void;
   onRemoveMistake: (id: string) => void;
   onSaveQuizScore: (score: number, total: number, type: string) => void;
+  onAddMastered?: (id: string) => void;
 }
 
 type PracticeMode = 'multiple_choice' | 'typing' | 'matching';
@@ -28,7 +37,8 @@ export const PracticeView: React.FC<PracticeViewProps> = ({
   mistakeWords,
   onAddMistake,
   onRemoveMistake,
-  onSaveQuizScore
+  onSaveQuizScore,
+  onAddMastered
 }) => {
   const [mode, setMode] = useState<PracticeMode>('multiple_choice');
   const [currentIdx, setCurrentIdx] = useState(0);
@@ -42,13 +52,72 @@ export const PracticeView: React.FC<PracticeViewProps> = ({
   const [inputVal, setInputVal] = useState('');
   const [isTypingCorrect, setIsTypingCorrect] = useState<boolean | null>(null);
 
-  // Chuẩn bị danh sách câu hỏi
-  const quizList = words.slice(0, 15); // mỗi bài làm 15 câu
+  // Chuẩn bị danh sách câu hỏi dạng hàng đợi động (nếu trả lời sai sẽ đẩy về sau làm lại)
+  const [quizQueue, setQuizQueue] = useState<WordItem[]>(() => words.slice(0, 15));
+  // Bật/tắt chế độ lặp lại câu sai cho đến khi đúng
+  const [repeatMistakes, setRepeatMistakes] = useState<boolean>(true);
+  // Tập hợp các ID từ đã trả lời đúng lần đầu
+  const [resolvedWordIds, setResolvedWordIds] = useState<Set<string>>(new Set());
+  // Đếm số lượt đã lặp lại câu sai
+  const [retryCount, setRetryCount] = useState<number>(0);
+
+  // Key phiên làm bài & thông báo tự động khôi phục
+  const sessionKey = React.useMemo(() => getPracticeSessionKey('quiz', words), [words]);
+  const [restoredBanner, setRestoredBanner] = useState<string | null>(null);
+
+  // Khởi tạo hoặc khôi phục tiến độ khi bộ từ đầu vào thay đổi hoặc tải lại trang
+  useEffect(() => {
+    const saved = loadPracticeSession<QuizSessionState>(sessionKey);
+    if (saved && saved.currentIdx > 0 && saved.currentIdx < saved.quizQueue.length) {
+      setQuizQueue(saved.quizQueue);
+      setCurrentIdx(saved.currentIdx);
+      setScore(saved.score);
+      setMode(saved.mode || 'multiple_choice');
+      setResolvedWordIds(new Set(saved.resolvedWordIds || []));
+      setRetryCount(saved.retryCount || 0);
+      setRepeatMistakes(saved.repeatMistakes !== undefined ? saved.repeatMistakes : true);
+      setIsFinished(false);
+      setSelectedAnswer(null);
+      setIsAnswered(false);
+      setInputVal('');
+      setIsTypingCorrect(null);
+      setRestoredBanner(`Đã khôi phục câu số ${saved.currentIdx + 1}/${saved.quizQueue.length} đang làm dở`);
+    } else {
+      setQuizQueue(words.slice(0, 15));
+      setCurrentIdx(0);
+      setScore(0);
+      setIsFinished(false);
+      setSelectedAnswer(null);
+      setIsAnswered(false);
+      setInputVal('');
+      setIsTypingCorrect(null);
+      setResolvedWordIds(new Set());
+      setRetryCount(0);
+      setRestoredBanner(null);
+    }
+  }, [words, sessionKey]);
+
+  // Tự động lưu tiến độ vào LocalStorage mỗi khi trả lời hoặc chuyển câu
+  useEffect(() => {
+    if (isFinished || quizQueue.length === 0) return;
+    if (currentIdx > 0 || resolvedWordIds.size > 0 || retryCount > 0) {
+      savePracticeSession<QuizSessionState>(sessionKey, {
+        currentIdx,
+        quizQueue,
+        score,
+        mode,
+        resolvedWordIds: Array.from(resolvedWordIds),
+        retryCount,
+        repeatMistakes,
+        updatedAt: Date.now()
+      });
+    }
+  }, [currentIdx, quizQueue, score, mode, resolvedWordIds, retryCount, repeatMistakes, isFinished, sessionKey]);
 
   // Tạo 4 đáp án trắc nghiệm khi đổi câu hỏi
   useEffect(() => {
-    if (quizList.length === 0 || isFinished) return;
-    const currentWord = quizList[currentIdx];
+    if (quizQueue.length === 0 || isFinished) return;
+    const currentWord = quizQueue[currentIdx];
     if (!currentWord) return;
 
     // Lấy đáp án đúng và 3 đáp án sai ngẫu nhiên
@@ -65,21 +134,30 @@ export const PracticeView: React.FC<PracticeViewProps> = ({
     setIsAnswered(false);
     setInputVal('');
     setIsTypingCorrect(null);
-  }, [currentIdx, mode, words]);
+  }, [currentIdx, mode, quizQueue]);
 
   // Xử lý chọn đáp án trắc nghiệm
   const handleSelectOption = (opt: string) => {
     if (isAnswered) return;
-    const currentWord = quizList[currentIdx];
+    const currentWord = quizQueue[currentIdx];
     setSelectedAnswer(opt);
     setIsAnswered(true);
 
     const isCorrect = opt === currentWord.meaning;
     if (isCorrect) {
-      setScore(s => s + 1);
+      if (!resolvedWordIds.has(currentWord.id)) {
+        setScore(s => s + 1);
+        setResolvedWordIds(prev => new Set(prev).add(currentWord.id));
+      }
       onRemoveMistake(currentWord.id);
+      onAddMastered?.(currentWord.id);
     } else {
       onAddMistake(currentWord.id);
+      if (repeatMistakes) {
+        // Đẩy câu hỏi sai về cuối hàng đợi để người học làm lại ở lần sau
+        setQuizQueue(prev => [...prev, currentWord]);
+        setRetryCount(c => c + 1);
+      }
     }
   };
 
@@ -87,38 +165,50 @@ export const PracticeView: React.FC<PracticeViewProps> = ({
   const handleCheckTyping = (e: React.FormEvent) => {
     e.preventDefault();
     if (isAnswered) return;
-    const currentWord = quizList[currentIdx];
-    const val = inputVal.trim().toLowerCase();
-    
+    const currentWord = quizQueue[currentIdx];
     const isCorrect = 
-      val === currentWord.kana.toLowerCase() ||
-      val === currentWord.romaji.toLowerCase() ||
-      val === currentWord.kanji.toLowerCase();
+      isJapaneseAnswerMatch(inputVal, currentWord.kana) ||
+      isJapaneseAnswerMatch(inputVal, currentWord.romaji) ||
+      isJapaneseAnswerMatch(inputVal, currentWord.kanji || '');
 
     setIsTypingCorrect(isCorrect);
     setIsAnswered(true);
 
     if (isCorrect) {
-      setScore(s => s + 1);
+      if (!resolvedWordIds.has(currentWord.id)) {
+        setScore(s => s + 1);
+        setResolvedWordIds(prev => new Set(prev).add(currentWord.id));
+      }
       onRemoveMistake(currentWord.id);
+      onAddMastered?.(currentWord.id);
     } else {
       onAddMistake(currentWord.id);
+      if (repeatMistakes) {
+        // Đẩy câu hỏi sai về cuối hàng đợi
+        setQuizQueue(prev => [...prev, currentWord]);
+        setRetryCount(c => c + 1);
+      }
     }
   };
 
   // Chuyển sang câu tiếp
   const handleNextQuestion = () => {
-    if (currentIdx + 1 < quizList.length) {
+    if (currentIdx + 1 < quizQueue.length) {
       setCurrentIdx(i => i + 1);
     } else {
       // Kết thúc bài kiểm tra
       setIsFinished(true);
+      clearPracticeSession(sessionKey);
+      setRestoredBanner(null);
       confetti({ particleCount: 120, spread: 70, origin: { y: 0.6 } });
-      onSaveQuizScore(score + (isAnswered && (selectedAnswer === quizList[currentIdx].meaning || isTypingCorrect) ? 1 : 0), quizList.length, mode);
+      onSaveQuizScore(score, Math.min(words.length, 15), mode);
     }
   };
 
   const handleRestart = () => {
+    clearPracticeSession(sessionKey);
+    setRestoredBanner(null);
+    setQuizQueue(words.slice(0, 15));
     setCurrentIdx(0);
     setScore(0);
     setIsFinished(false);
@@ -126,9 +216,11 @@ export const PracticeView: React.FC<PracticeViewProps> = ({
     setIsAnswered(false);
     setInputVal('');
     setIsTypingCorrect(null);
+    setResolvedWordIds(new Set());
+    setRetryCount(0);
   };
 
-  if (quizList.length === 0) {
+  if (quizQueue.length === 0) {
     return (
       <div className="text-center py-20 bg-white dark:bg-zinc-900 rounded-3xl border border-slate-200 dark:border-zinc-800 p-8 shadow-sm">
         <p className="text-slate-500">Vui lòng chọn bài học có từ vựng để bắt đầu luyện tập.</p>
@@ -136,31 +228,62 @@ export const PracticeView: React.FC<PracticeViewProps> = ({
     );
   }
 
-  const currentWord = quizList[currentIdx];
+  const currentWord = quizQueue[currentIdx];
 
   return (
-    <div className="max-w-2xl mx-auto space-y-6">
-      {/* Lựa chọn chế độ Luyện tập */}
-      <div className="flex items-center justify-center space-x-2 bg-slate-100 dark:bg-zinc-800 p-1.5 rounded-2xl">
+    <div className="max-w-2xl mx-auto space-y-4">
+      {/* Banner thông báo đã khôi phục phiên làm bài dở dang */}
+      {restoredBanner && !isFinished && (
+        <div className="flex items-center justify-between bg-blue-50 dark:bg-blue-950/40 border border-blue-200 dark:border-blue-900/60 px-4 py-2.5 rounded-2xl text-xs text-blue-700 dark:text-blue-300 shadow-2xs">
+          <div className="flex items-center space-x-2">
+            <span className="text-sm">🔄</span>
+            <span>{restoredBanner} (tiến độ được tự động lưu lại).</span>
+          </div>
+          <button
+            onClick={handleRestart}
+            className="font-bold underline hover:text-blue-900 dark:hover:text-blue-100 ml-3 shrink-0"
+          >
+            Làm lại từ đầu
+          </button>
+        </div>
+      )}
+
+      {/* Header điều khiển: Chế độ & Bật tắt lặp lại câu sai */}
+      <div className="flex flex-col sm:flex-row items-center justify-between gap-3 bg-slate-100 dark:bg-zinc-800 p-2 rounded-2xl">
+        <div className="flex items-center space-x-2">
+          <button
+            onClick={() => { setMode('multiple_choice'); handleRestart(); }}
+            className={`px-4 py-2 rounded-xl text-xs font-bold transition ${
+              mode === 'multiple_choice'
+                ? 'bg-white dark:bg-zinc-700 text-rose-600 dark:text-rose-400 shadow-sm'
+                : 'text-slate-500 hover:text-slate-900 dark:hover:text-white'
+            }`}
+          >
+            Trắc nghiệm 4 đáp án
+          </button>
+          <button
+            onClick={() => { setMode('typing'); handleRestart(); }}
+            className={`px-4 py-2 rounded-xl text-xs font-bold transition ${
+              mode === 'typing'
+                ? 'bg-white dark:bg-zinc-700 text-rose-600 dark:text-rose-400 shadow-sm'
+                : 'text-slate-500 hover:text-slate-900 dark:hover:text-white'
+            }`}
+          >
+            Gõ từ (Typing Test)
+          </button>
+        </div>
+
         <button
-          onClick={() => { setMode('multiple_choice'); handleRestart(); }}
-          className={`px-5 py-2 rounded-xl text-xs font-bold transition ${
-            mode === 'multiple_choice'
-              ? 'bg-white dark:bg-zinc-700 text-rose-600 dark:text-rose-400 shadow-sm'
-              : 'text-slate-500 hover:text-slate-900 dark:hover:text-white'
+          onClick={() => setRepeatMistakes(prev => !prev)}
+          className={`inline-flex items-center space-x-1.5 px-3 py-2 rounded-xl text-xs font-bold transition border ${
+            repeatMistakes 
+              ? 'bg-rose-50 dark:bg-rose-950/40 text-rose-600 dark:text-rose-400 border-rose-200 dark:border-rose-900/60 shadow-2xs' 
+              : 'bg-white dark:bg-zinc-700 text-slate-500 dark:text-slate-400 border-slate-200 dark:border-zinc-600'
           }`}
+          title="Khi sai câu nào, hệ thống sẽ đẩy câu đó về sau làm lại cho đến khi đúng"
         >
-          Trắc nghiệm 4 đáp án
-        </button>
-        <button
-          onClick={() => { setMode('typing'); handleRestart(); }}
-          className={`px-5 py-2 rounded-xl text-xs font-bold transition ${
-            mode === 'typing'
-              ? 'bg-white dark:bg-zinc-700 text-rose-600 dark:text-rose-400 shadow-sm'
-              : 'text-slate-500 hover:text-slate-900 dark:hover:text-white'
-          }`}
-        >
-          Gõ từ (Typing Test)
+          <RotateCcw className={`w-3.5 h-3.5 ${repeatMistakes ? 'animate-spin-slow text-rose-500' : ''}`} />
+          <span>Lặp lại câu sai: {repeatMistakes ? 'BẬT' : 'TẮT'}</span>
         </button>
       </div>
 
@@ -176,7 +299,7 @@ export const PracticeView: React.FC<PracticeViewProps> = ({
               Hoàn Thành Luyện Tập!
             </h3>
             <p className="text-sm text-slate-500 dark:text-zinc-400 mt-1">
-              Bạn đã trả lời đúng <strong className="text-emerald-500 font-extrabold text-lg">{score}</strong> / {quizList.length} câu.
+              Bạn đã giải quyết đúng tất cả các câu hỏi trong bài! (Đạt <strong className="text-emerald-500 font-extrabold text-lg">{score}</strong> / {Math.min(words.length, 15)} điểm chuẩn{retryCount > 0 ? `, đã lặp lại và vượt qua ${retryCount} lượt câu sai` : ''}).
             </p>
           </div>
 
@@ -195,7 +318,14 @@ export const PracticeView: React.FC<PracticeViewProps> = ({
         <div className="bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 rounded-3xl p-6 sm:p-8 shadow-sm space-y-6">
           {/* Header câu hỏi */}
           <div className="flex items-center justify-between text-xs font-bold text-slate-400">
-            <span>Câu {currentIdx + 1} / {quizList.length}</span>
+            <div className="flex items-center space-x-2">
+              <span>Lượt câu {currentIdx + 1} / {quizQueue.length}</span>
+              {repeatMistakes && retryCount > 0 && quizQueue.length > currentIdx + 1 && (
+                <span className="px-2 py-0.5 rounded-md text-[10px] font-bold bg-amber-50 dark:bg-amber-950/50 text-amber-600 dark:text-amber-400 border border-amber-200 dark:border-amber-900/40">
+                  Đang lặp câu sai ({quizQueue.length - currentIdx - 1} còn lại)
+                </span>
+              )}
+            </div>
             <div className="flex items-center space-x-2">
               <span className="text-emerald-500 font-extrabold">Đúng: {score}</span>
             </div>
@@ -205,7 +335,7 @@ export const PracticeView: React.FC<PracticeViewProps> = ({
           <div className="w-full bg-slate-100 dark:bg-zinc-800 h-1.5 rounded-full overflow-hidden">
             <div 
               className="bg-rose-500 h-full transition-all duration-300"
-              style={{ width: `${((currentIdx + 1) / quizList.length) * 100}%` }}
+              style={{ width: `${((currentIdx + 1) / quizQueue.length) * 100}%` }}
             ></div>
           </div>
 
@@ -308,7 +438,7 @@ export const PracticeView: React.FC<PracticeViewProps> = ({
                 onClick={handleNextQuestion}
                 className="flex items-center space-x-2 px-6 py-3 rounded-2xl bg-slate-900 dark:bg-white text-white dark:text-slate-900 font-bold text-sm hover:opacity-90 active:scale-95 transition"
               >
-                <span>{currentIdx + 1 === quizList.length ? 'Xem kết quả' : 'Câu tiếp theo'}</span>
+                <span>{currentIdx + 1 === quizQueue.length ? 'Xem kết quả' : 'Câu tiếp theo'}</span>
                 <ArrowRight className="w-4 h-4" />
               </button>
             </div>

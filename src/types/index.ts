@@ -104,3 +104,6 @@ export interface ReadingLesson {
   translation: string;
   questions: ReadingQuestion[];
 }
+
+export type WordPracticeFilter = 'all' | 'unmastered' | 'favorite' | 'mistake';
+export type StudyMode = 'flashcard' | 'quiz' | 'cram' | 'translate' | 'shadowing';

@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { WordItem } from '../types';
-import { Volume2, Star, CheckCircle2, Eye, EyeOff, Search, Sparkles, MessageSquare, ChevronDown, ChevronUp, Trash2, RotateCcw } from 'lucide-react';
+import { Volume2, Star, CheckCircle2, Eye, EyeOff, Search, Sparkles, MessageSquare, ChevronDown, ChevronUp, Trash2, RotateCcw, PenTool, Edit3, Plus, ShieldCheck } from 'lucide-react';
 import { speakJapanese } from '../lib/audio';
+import { KanjiStrokeModal } from './KanjiStrokeModal';
 
 interface WordListViewProps {
   words: WordItem[];
@@ -12,6 +13,12 @@ interface WordListViewProps {
   onToggleFavorite: (id: string) => void;
   onToggleHide?: (id: string) => void;
   onRestoreAllHidden?: () => void;
+  isAdmin?: boolean;
+  onEditWord?: (word: WordItem) => void;
+  onAddNewWord?: () => void;
+  onAdminDeleteWord?: (wordId: string) => Promise<void> | void;
+  deletedWordsCount?: number;
+  onOpenDeletedWords?: () => void;
 }
 
 export const WordListView: React.FC<WordListViewProps> = ({
@@ -22,7 +29,13 @@ export const WordListView: React.FC<WordListViewProps> = ({
   onToggleMaster,
   onToggleFavorite,
   onToggleHide,
-  onRestoreAllHidden
+  onRestoreAllHidden,
+  isAdmin = false,
+  onEditWord,
+  onAddNewWord,
+  onAdminDeleteWord,
+  deletedWordsCount = 0,
+  onOpenDeletedWords,
 }) => {
   const [searchTerm, setSearchTerm] = useState('');
   const [showFurigana, setShowFurigana] = useState(true);
@@ -30,6 +43,7 @@ export const WordListView: React.FC<WordListViewProps> = ({
   const [showExamples, setShowExamples] = useState(true);
   const [expandedWordIds, setExpandedWordIds] = useState<string[]>([]);
   const [filterType, setFilterType] = useState<'all' | 'unlearned' | 'mastered' | 'favorite' | 'hidden'>('all');
+  const [strokeKanji, setStrokeKanji] = useState<{ kanji: string; hanviet?: string; meaning?: string } | null>(null);
 
   const toggleWordExpand = (id: string) => {
     setExpandedWordIds(prev => 
@@ -73,6 +87,51 @@ export const WordListView: React.FC<WordListViewProps> = ({
 
   return (
     <div className="space-y-4">
+      {/* Thanh thông báo Quản trị viên (Admin) */}
+      {isAdmin && (
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-gradient-to-r from-amber-500/10 via-yellow-500/10 to-orange-500/10 border border-amber-500/30 p-4 rounded-2xl shadow-xs animate-in fade-in duration-200">
+          <div className="flex items-center space-x-3">
+            <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-amber-500 to-yellow-400 text-slate-950 flex items-center justify-center shadow-xs font-black text-base shrink-0">
+              👑
+            </div>
+            <div>
+              <p className="text-xs sm:text-sm font-extrabold text-slate-900 dark:text-zinc-100 flex items-center gap-2">
+                <span>Chế độ Quản trị viên (Admin)</span>
+                <span className="text-[10px] px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-600 dark:text-emerald-400 font-bold border border-emerald-500/30">
+                  Đang hoạt động
+                </span>
+              </p>
+              <p className="text-[11px] text-slate-600 dark:text-zinc-400 mt-0.5">
+                Đầy đủ quyền <strong>Thêm từ mới</strong>, <strong>Chỉnh sửa</strong> và <strong>Xóa vĩnh viễn</strong>. Mọi thay đổi tự động đồng bộ Cloud cho tất cả tài khoản.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex items-center space-x-2 shrink-0">
+            {deletedWordsCount > 0 && onOpenDeletedWords && (
+              <button
+                onClick={onOpenDeletedWords}
+                className="inline-flex items-center space-x-1.5 px-3 py-2 bg-rose-500/10 hover:bg-rose-500/20 text-rose-700 dark:text-rose-300 border border-rose-500/30 text-xs font-bold rounded-xl transition active:scale-95"
+                title="Xem danh sách từ đã bị Admin xóa và khôi phục lại"
+              >
+                <Trash2 className="w-3.5 h-3.5" />
+                <span>Từ đã xóa ({deletedWordsCount})</span>
+              </button>
+            )}
+
+            {onAddNewWord && (
+              <button
+                onClick={onAddNewWord}
+                className="inline-flex items-center space-x-1.5 px-3.5 py-2 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white text-xs font-bold rounded-xl shadow-sm shadow-blue-500/25 transition active:scale-95"
+              >
+                <Plus className="w-4 h-4" />
+                <span>Thêm từ mới</span>
+              </button>
+            )}
+          </div>
+        </div>
+      )}
+
       {/* Thanh công cụ tìm kiếm và lọc */}
       <div className="bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 rounded-2xl p-4 shadow-sm flex flex-col md:flex-row items-center justify-between gap-4">
         {/* Input Tìm kiếm */}
@@ -263,6 +322,15 @@ export const WordListView: React.FC<WordListViewProps> = ({
                           <h4 className="text-xl sm:text-2xl font-jp font-bold text-slate-900 dark:text-white leading-tight">
                             {word.kanji || word.kana}
                           </h4>
+                          {word.kanji && (
+                            <button
+                              onClick={() => setStrokeKanji({ kanji: word.kanji, hanviet: word.hanviet, meaning: word.meaning })}
+                              title={`Xem nét viết chữ ${word.kanji}`}
+                              className="p-1 rounded-lg text-slate-400 hover:text-blue-600 hover:bg-blue-50 dark:hover:bg-slate-800 transition"
+                            >
+                              <PenTool className="w-3.5 h-3.5" />
+                            </button>
+                          )}
                           {isHidden && (
                             <span className="text-[10px] font-bold px-1.5 py-0.5 rounded bg-red-100 dark:bg-red-950/60 text-red-600 dark:text-red-400">
                               Đã ẩn
@@ -342,8 +410,8 @@ export const WordListView: React.FC<WordListViewProps> = ({
                         </>
                       )}
 
-                      {/* NÚT XÓA / ẨN / KHÔI PHỤC TỪ KHỎI BÀI HỌC */}
-                      {onToggleHide && (
+                      {/* NÚT ẨN / KHÔI PHỤC TỪ KHỎI BÀI HỌC DÀNH CHO HỌC VIÊN CÁ NHÂN (chỉ hiện khi không ở chế độ Admin) */}
+                      {!isAdmin && onToggleHide && (
                         <button
                           onClick={() => onToggleHide(word.id)}
                           className={`p-2 rounded-xl transition ${
@@ -351,7 +419,7 @@ export const WordListView: React.FC<WordListViewProps> = ({
                               ? 'text-emerald-600 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/40 hover:bg-emerald-100'
                               : 'text-slate-300 hover:text-red-500 hover:bg-red-50 dark:hover:bg-red-950/30'
                           }`}
-                          title={isHidden ? 'Khôi phục từ này để học lại' : 'Ẩn / Xóa từ này khỏi bài học'}
+                          title={isHidden ? 'Khôi phục từ này để học lại' : 'Ẩn từ này khỏi bài học của bạn'}
                         >
                           {isHidden ? (
                             <RotateCcw className="w-4 h-4" />
@@ -359,6 +427,35 @@ export const WordListView: React.FC<WordListViewProps> = ({
                             <Trash2 className="w-4 h-4" />
                           )}
                         </button>
+                      )}
+
+                      {/* BỘ NÚT CHỨC NĂNG ADMIN ĐẦY ĐỦ: SỬA & XÓA VĨNH VIỄN */}
+                      {isAdmin && (
+                        <div className="flex items-center space-x-1 pl-1.5 border-l border-amber-500/30">
+                          {onEditWord && (
+                            <button
+                              onClick={() => onEditWord(word)}
+                              className="p-2 rounded-xl text-blue-600 dark:text-sky-400 bg-blue-50 dark:bg-blue-950/50 hover:bg-blue-100 dark:hover:bg-blue-900/60 border border-blue-200/60 dark:border-blue-800/50 transition shadow-2xs active:scale-95"
+                              title="[Admin] Chỉnh sửa từ vựng này"
+                            >
+                              <Edit3 className="w-4 h-4" />
+                            </button>
+                          )}
+                          {onAdminDeleteWord && (
+                            <button
+                              onClick={() => {
+                                const wordLabel = word.kanji ? `${word.kanji} (${word.kana})` : word.kana;
+                                if (window.confirm(`⚠️ BẠN CÓ CHẮC MUỐN XÓA VĨNH VIỄN TỪ NÀY?\n\n"${wordLabel} - ${word.meaning}"\n\nTừ này sẽ bị xóa và đồng bộ ẩn khỏi TẤT CẢ các tài khoản khác trên hệ thống!`)) {
+                                  onAdminDeleteWord(word.id);
+                                }
+                              }}
+                              className="p-2 rounded-xl text-rose-600 dark:text-rose-400 bg-rose-50 dark:bg-rose-950/50 hover:bg-rose-100 dark:hover:bg-rose-900/60 border border-rose-200/60 dark:border-rose-800/50 transition shadow-2xs active:scale-95"
+                              title="[Admin] Xóa vĩnh viễn từ này khỏi hệ thống (Đồng bộ mọi tài khoản)"
+                            >
+                              <Trash2 className="w-4 h-4" />
+                            </button>
+                          )}
+                        </div>
                       )}
                     </div>
                   </div>
@@ -409,6 +506,17 @@ export const WordListView: React.FC<WordListViewProps> = ({
           )}
         </div>
       </div>
+
+      {/* Modal Nét viết & Tập viết Kanji */}
+      {strokeKanji && (
+        <KanjiStrokeModal
+          isOpen={!!strokeKanji}
+          onClose={() => setStrokeKanji(null)}
+          kanji={strokeKanji.kanji}
+          hanviet={strokeKanji.hanviet}
+          meaning={strokeKanji.meaning}
+        />
+      )}
     </div>
   );
 };

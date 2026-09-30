@@ -3,11 +3,28 @@ import { WordItem } from '../types';
 import * as wanakana from 'wanakana';
 import { Settings, Lightbulb, Keyboard, CheckCircle, XCircle, RotateCcw, Volume2, Sparkles, ChevronRight, Check } from 'lucide-react';
 import { speakJapanese } from '../lib/audio';
+import { 
+  normalizeJapaneseAnswer, 
+  isPunctuationOrSymbol, 
+  isJapaneseAnswerMatch, 
+  smartHybridConvert 
+} from '../lib/textUtils';
 import confetti from 'canvas-confetti';
+import { 
+  getPracticeSessionKey, 
+  savePracticeSession, 
+  loadPracticeSession, 
+  clearPracticeSession,
+  CrammingSessionState 
+} from '../lib/practiceSession';
 
 interface CrammingModeViewProps {
   words: WordItem[];
   onFinish?: (score: number, total: number) => void;
+  onAddMastered?: (id: string) => void;
+  onAddMasteredList?: (ids: string[]) => void;
+  onAddMistake?: (id: string) => void;
+  onRemoveMistake?: (id: string) => void;
 }
 
 // Bảng giải mã Telex tiếng Việt nhầm khi gõ romaji (vd: gõ "amerika" bị thành "amẻika")
@@ -43,9 +60,19 @@ function cleanVietnameseTelex(text: string): string {
 export const CrammingModeView: React.FC<CrammingModeViewProps> = ({
   words,
   onFinish,
+  onAddMastered,
+  onAddMasteredList,
+  onAddMistake,
+  onRemoveMistake,
 }) => {
   // Chế độ kiểm tra: 'reading' (Cách đọc Hiragana) hoặc 'han' (Âm Hán Việt)
   const [testType, setTestType] = useState<'reading' | 'han'>('reading');
+
+  // Hàng đợi từ vựng động (nếu gõ sai sẽ tự động đẩy về sau để gõ lại cho đến khi đúng)
+  const [activeWords, setActiveWords] = useState<WordItem[]>(words);
+  const [repeatMistakes, setRepeatMistakes] = useState<boolean>(true);
+  const [resolvedWordIds, setResolvedWordIds] = useState<Set<string>>(new Set());
+  const [retryCount, setRetryCount] = useState<number>(0);
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [inputValue, setInputValue] = useState('');
@@ -61,15 +88,64 @@ export const CrammingModeView: React.FC<CrammingModeViewProps> = ({
 
   const inputRef = useRef<HTMLInputElement>(null);
 
-  const currentWord = words[currentIndex] || words[0];
+  // Key phiên làm bài & thông báo tự động khôi phục
+  const sessionKey = React.useMemo(() => getPracticeSessionKey('cramming', words), [words]);
+  const [restoredBanner, setRestoredBanner] = useState<string | null>(null);
+
+  // Khôi phục phiên dở dang hoặc khởi tạo mới
+  useEffect(() => {
+    const saved = loadPracticeSession<CrammingSessionState>(sessionKey);
+    if (saved && saved.currentIndex > 0 && saved.currentIndex < saved.activeWords.length) {
+      setActiveWords(saved.activeWords);
+      setCurrentIndex(saved.currentIndex);
+      setScore(saved.score);
+      setResolvedWordIds(new Set(saved.resolvedWordIds || []));
+      setRetryCount(saved.retryCount || 0);
+      setTestType(saved.testType || 'reading');
+      setRepeatMistakes(saved.repeatMistakes !== undefined ? saved.repeatMistakes : true);
+      setIsCompleted(false);
+      setRestoredBanner(`Đã khôi phục từ số ${saved.currentIndex + 1}/${saved.activeWords.length} đang gõ dở`);
+    } else {
+      setActiveWords(words);
+      setCurrentIndex(0);
+      setScore(0);
+      setIsCompleted(false);
+      setResolvedWordIds(new Set());
+      setRetryCount(0);
+      setRestoredBanner(null);
+    }
+  }, [words, sessionKey]);
+
+  // Tự động lưu tiến độ vào LocalStorage mỗi khi hoàn thành 1 từ
+  useEffect(() => {
+    if (isCompleted || activeWords.length === 0) return;
+    if (currentIndex > 0 || resolvedWordIds.size > 0 || retryCount > 0) {
+      savePracticeSession<CrammingSessionState>(sessionKey, {
+        currentIndex,
+        activeWords,
+        score,
+        resolvedWordIds: Array.from(resolvedWordIds),
+        retryCount,
+        testType,
+        repeatMistakes,
+        updatedAt: Date.now()
+      });
+    }
+  }, [currentIndex, activeWords, score, resolvedWordIds, retryCount, testType, repeatMistakes, isCompleted, sessionKey]);
+
+  const currentWord = activeWords[currentIndex] || activeWords[0];
   const targetAnswer = testType === 'reading' 
     ? (currentWord?.kana || '') 
     : (currentWord?.hanviet || currentWord?.kana || '');
 
-  // Kiểm tra từ mục tiêu có phải là Katakana không (vd: アメリカ, イギリス,...)
-  const isTargetKatakana = React.useMemo(() => {
-    const text = targetAnswer || currentWord?.kana || currentWord?.kanji || '';
-    return /[\u30A0-\u30FF]/.test(text);
+  // Phân loại kiểu chữ của từ mục tiêu: 'katakana' (thuần) | 'hybrid' (ghép Katakana + Hiragana) | 'hiragana'
+  const scriptType = React.useMemo(() => {
+    const text = targetAnswer || currentWord?.kana || '';
+    const hasKata = /[\u30A0-\u30FF]/.test(text);
+    const hasHira = /[\u3040-\u309F]/.test(text);
+    if (hasKata && hasHira) return 'hybrid';
+    if (hasKata) return 'katakana';
+    return 'hiragana';
   }, [targetAnswer, currentWord]);
 
   const totalChars = targetAnswer.length;
@@ -83,9 +159,9 @@ export const CrammingModeView: React.FC<CrammingModeViewProps> = ({
     setShowRomajiHint(false);
     setStatus('idle');
 
-    // Khởi tạo các vạch gạch chân
+    // Khởi tạo các vạch gạch chân (các ký hiệu như ～, -, () sẽ được hiển thị sẵn chứ không bắt gõ)
     const chars = targetAnswer.split('');
-    setRevealedChars(new Array(chars.length).fill(''));
+    setRevealedChars(chars.map(c => isPunctuationOrSymbol(c) ? c : ''));
 
     // Tự động focus vào ô nhập liệu
     setTimeout(() => {
@@ -101,27 +177,23 @@ export const CrammingModeView: React.FC<CrammingModeViewProps> = ({
     );
   }
 
-  // Tự động chuyển Romaji sang đúng loại chữ (Katakana nếu từ là Katakana, Hiragana nếu là Hiragana)
+  // Tự động chuyển Romaji sang đúng chữ tiếng Nhật (thông minh cho cả từ thuần Katakana, Hiragana và từ ghép lai)
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const raw = e.target.value;
     if (testType === 'reading') {
       const deTelexted = cleanVietnameseTelex(raw);
-      const converted = isTargetKatakana
-        ? wanakana.toKatakana(deTelexted, { IMEMode: true })
-        : wanakana.toHiragana(deTelexted, { IMEMode: true });
+      const converted = smartHybridConvert(deTelexted, targetAnswer);
       setInputValue(converted);
     } else {
       setInputValue(raw.toUpperCase());
     }
   };
 
-  // Bấm gợi ý: Lần lượt hé lộ từng chữ cái cho tới khi hết toàn bộ
+  // Bấm gợi ý: Lần lượt hé lộ từng chữ cái cho tới khi hết toàn bộ (bỏ qua ký hiệu)
   const handleHint = () => {
     const answerChars = targetAnswer.split('');
-    if (hintCount >= answerChars.length) return;
-    
     const newRevealed = [...revealedChars];
-    const nextIdx = newRevealed.findIndex(c => c === '');
+    const nextIdx = newRevealed.findIndex((c, i) => !c && !isPunctuationOrSymbol(answerChars[i]));
     if (nextIdx !== -1 && nextIdx < answerChars.length) {
       newRevealed[nextIdx] = answerChars[nextIdx];
       setRevealedChars(newRevealed);
@@ -145,7 +217,8 @@ export const CrammingModeView: React.FC<CrammingModeViewProps> = ({
 
   // Ẩn gợi ý
   const handleHideHint = () => {
-    setRevealedChars(new Array(targetAnswer.length).fill(''));
+    const chars = targetAnswer.split('');
+    setRevealedChars(chars.map(c => isPunctuationOrSymbol(c) ? c : ''));
     setHintCount(0);
     setShowRomajiHint(false);
   };
@@ -174,55 +247,79 @@ export const CrammingModeView: React.FC<CrammingModeViewProps> = ({
 
     let isCorrect = false;
     if (testType === 'reading') {
-      const userHira = wanakana.toHiragana(trimmedInput);
-      const targetHira = wanakana.toHiragana(cleanTarget);
-      const userKata = wanakana.toKatakana(trimmedInput);
-      const targetKata = wanakana.toKatakana(cleanTarget);
-      const userRomaji = wanakana.toRomaji(trimmedInput);
-      const targetRomajiClean = wanakana.toRomaji(cleanTarget);
-
-      isCorrect = 
-        normalizeText(userHira) === normalizeText(targetHira) || 
-        normalizeText(userKata) === normalizeText(targetKata) || 
-        normalizeText(userRomaji) === normalizeText(targetRomajiClean) ||
-        normalizeText(trimmedInput) === normalizeText(cleanTarget);
+      isCorrect = isJapaneseAnswerMatch(trimmedInput, cleanTarget);
     } else {
-      isCorrect = trimmedInput.toLowerCase() === cleanTarget.toLowerCase();
+      isCorrect = normalizeJapaneseAnswer(trimmedInput) === normalizeJapaneseAnswer(cleanTarget);
     }
 
     if (isCorrect) {
       setStatus('correct');
-      setScore(s => s + 1);
+      if (!resolvedWordIds.has(currentWord.id)) {
+        setScore(s => s + 1);
+        setResolvedWordIds(prev => new Set(prev).add(currentWord.id));
+      }
+      onRemoveMistake?.(currentWord.id);
+      onAddMastered?.(currentWord.id);
       speakJapanese(currentWord.kana || currentWord.kanji);
       setTimeout(() => {
         handleNext();
       }, 700);
     } else {
       setStatus('wrong');
+      onAddMistake?.(currentWord.id);
+      if (repeatMistakes) {
+        // Đẩy từ sai về sau hàng đợi để luyện lại
+        setActiveWords(prev => [...prev, currentWord]);
+        setRetryCount(c => c + 1);
+      }
       speakJapanese(currentWord.kana || currentWord.kanji);
     }
   };
 
   // Chuyển sang câu tiếp theo
   const handleNext = () => {
-    if (currentIndex + 1 < words.length) {
+    if (currentIndex + 1 < activeWords.length) {
       setCurrentIndex(prev => prev + 1);
     } else {
       setIsCompleted(true);
+      clearPracticeSession(sessionKey);
+      setRestoredBanner(null);
       confetti({ particleCount: 150, spread: 80, origin: { y: 0.6 } });
+      onAddMasteredList?.(words.map(w => w.id));
       if (onFinish) onFinish(score, words.length);
     }
   };
 
   // Chơi lại
   const handleRestart = () => {
+    clearPracticeSession(sessionKey);
+    setRestoredBanner(null);
+    setActiveWords(words);
     setCurrentIndex(0);
     setScore(0);
     setIsCompleted(false);
+    setResolvedWordIds(new Set());
+    setRetryCount(0);
   };
 
   return (
-    <div className="max-w-4xl mx-auto">
+    <div className="max-w-4xl mx-auto space-y-4">
+      {/* Banner thông báo đã khôi phục phiên gõ dở */}
+      {restoredBanner && !isCompleted && (
+        <div className="flex items-center justify-between bg-orange-500/10 border border-orange-500/30 px-4 py-2.5 rounded-2xl text-xs text-orange-300 shadow-2xs">
+          <div className="flex items-center space-x-2">
+            <span className="text-sm">🔄</span>
+            <span>{restoredBanner} (tiến độ được tự động lưu lại).</span>
+          </div>
+          <button
+            onClick={handleRestart}
+            className="font-bold underline hover:text-orange-100 ml-3 shrink-0"
+          >
+            Làm lại từ đầu
+          </button>
+        </div>
+      )}
+
       {isCompleted ? (
         /* Màn hình kết thúc */
         <div className="bg-[#232F46] text-white rounded-3xl p-10 text-center shadow-2xl space-y-6">
@@ -255,6 +352,19 @@ export const CrammingModeView: React.FC<CrammingModeViewProps> = ({
             </div>
 
             <div className="flex items-center space-x-2">
+              <button
+                onClick={() => setRepeatMistakes(prev => !prev)}
+                className={`inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-xl text-xs font-bold transition border ${
+                  repeatMistakes
+                    ? 'bg-amber-500/20 text-amber-300 border-amber-500/40 shadow-xs'
+                    : 'bg-[#1B2436] text-slate-400 border-transparent hover:text-slate-200'
+                }`}
+                title="Khi gõ sai từ nào, hệ thống sẽ đẩy từ đó về sau để làm lại cho đến khi gõ đúng"
+              >
+                <RotateCcw className={`w-3.5 h-3.5 ${repeatMistakes ? 'animate-spin-slow text-amber-400' : ''}`} />
+                <span>Lặp lại câu sai: {repeatMistakes ? 'BẬT' : 'TẮT'}</span>
+              </button>
+
               <div className="flex items-center bg-[#1B2436] p-1 rounded-xl">
                 <button
                   onClick={() => setTestType('reading')}
@@ -293,17 +403,39 @@ export const CrammingModeView: React.FC<CrammingModeViewProps> = ({
               <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-white px-4 leading-tight">
                 {currentWord.meaning}
               </h2>
-              {testType === 'reading' && isTargetKatakana && (
-                <span className="inline-block mt-2 px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider bg-amber-500/20 text-amber-400 border border-amber-500/30">
-                  Từ mượn Katakana
-                </span>
+              {testType === 'reading' && (
+                <div className="flex items-center justify-center space-x-2 mt-2">
+                  {scriptType === 'katakana' && (
+                    <span className="px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider bg-amber-500/20 text-amber-400 border border-amber-500/30">
+                      Từ mượn Katakana
+                    </span>
+                  )}
+                  {scriptType === 'hybrid' && (
+                    <span className="px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">
+                      Từ ghép Katakana + Hiragana
+                    </span>
+                  )}
+                </div>
               )}
             </div>
 
             {/* Vạch gạch chân ký tự _ _ _ (hiện dần từng ký tự khi bấm gợi ý) */}
             <div className="flex flex-wrap items-center justify-center gap-2 select-none px-4">
               {targetAnswer.split('').map((char, idx) => {
-                const revealed = revealedChars[idx];
+                const isSymbol = isPunctuationOrSymbol(char);
+                const revealed = revealedChars[idx] || (isSymbol ? char : '');
+                
+                if (isSymbol) {
+                  return (
+                    <div key={idx} className="flex flex-col items-center justify-center px-1">
+                      <span className="h-8 text-2xl font-bold font-jp text-slate-400 flex items-center">
+                        {char}
+                      </span>
+                      <div className="w-4 h-1"></div>
+                    </div>
+                  );
+                }
+
                 return (
                   <div key={idx} className="flex flex-col items-center">
                     <span className="h-8 text-xl font-bold font-jp text-orange-400 transition-all duration-200">
@@ -334,9 +466,11 @@ export const CrammingModeView: React.FC<CrammingModeViewProps> = ({
                 disabled={status === 'correct'}
                 placeholder={
                   testType === 'reading'
-                    ? (isTargetKatakana 
+                    ? (scriptType === 'katakana' 
                         ? "Gõ romaji (tự động chuyển Katakana: vd amerika → アメリカ)" 
-                        : "Gõ romaji (tự động chuyển Hiragana: vd toshokan → としょかん)")
+                        : scriptType === 'hybrid'
+                          ? "Gõ romaji (vd: pawa-denki hoặc pawadenki - tự động chuyển Katakana + Hiragana)"
+                          : "Gõ romaji (tự động chuyển Hiragana: vd toshokan → としょかん)")
                     : "Gõ âm Hán Việt (vd: THỰC, SINH VIÊN)"
                 }
                 className={`w-full py-3.5 px-5 rounded-2xl bg-[#1B2436] text-white placeholder-slate-500 text-base font-semibold focus:outline-hidden transition border-2 ${
@@ -356,6 +490,22 @@ export const CrammingModeView: React.FC<CrammingModeViewProps> = ({
                 <Volume2 className="w-4 h-4" />
               </button>
             </div>
+
+            {/* Mẹo thông minh cho từ có ký hiệu phụ ngữ pháp ～ hoặc từ ghép lai */}
+            {testType === 'reading' && (
+              <>
+                {(targetAnswer.includes('～') || targetAnswer.includes('~')) && (
+                  <div className="p-2.5 bg-blue-500/10 border border-blue-500/20 rounded-xl text-[11px] text-sky-300 text-center">
+                    💡 <strong>Mẹo:</strong> Ký hiệu <span className="font-mono text-amber-300 font-bold">～</span> là hậu tố/tiền tố. Bạn chỉ cần gõ <span className="font-mono text-amber-300 font-bold">san</span> (hoặc <span className="font-mono text-amber-300 font-bold">~san</span>) đều được chấp nhận!
+                  </div>
+                )}
+                {scriptType === 'hybrid' && (
+                  <div className="p-2.5 bg-indigo-500/10 border border-indigo-500/20 rounded-xl text-[11px] text-indigo-200 text-center">
+                    ✨ <strong>Từ ghép linh hoạt:</strong> Bạn chỉ cần gõ Romaji bình thường (<span className="font-mono text-amber-300 font-bold">{targetRomaji || 'pawadenki'}</span>). Hệ thống chấp nhận cả Hiragana, Katakana và Romaji!
+                  </div>
+                )}
+              </>
+            )}
 
             {/* Thông báo nếu sai */}
             {status === 'wrong' && (
@@ -450,13 +600,18 @@ export const CrammingModeView: React.FC<CrammingModeViewProps> = ({
 
           {/* Footer dưới cùng: Tiến độ câu & Thanh xanh lá */}
           <div className="mt-6 pt-4 border-t border-slate-700/50 flex flex-col space-y-2">
-            <span className="text-xs font-bold text-slate-400">
-              {currentIndex + 1} / {words.length}
-            </span>
+            <div className="flex items-center justify-between text-xs font-bold text-slate-400">
+              <span>Lượt từ {currentIndex + 1} / {activeWords.length}</span>
+              {repeatMistakes && retryCount > 0 && activeWords.length > currentIndex + 1 && (
+                <span className="text-[11px] text-amber-400 font-bold bg-amber-500/10 px-2 py-0.5 rounded-md border border-amber-500/20">
+                  Đang lặp từ sai ({activeWords.length - currentIndex - 1} từ chờ gõ lại)
+                </span>
+              )}
+            </div>
             <div className="w-full h-1.5 bg-slate-700 rounded-full overflow-hidden">
               <div 
                 className="h-full bg-emerald-500 transition-all duration-300"
-                style={{ width: `${((currentIndex + 1) / words.length) * 100}%` }}
+                style={{ width: `${((currentIndex + 1) / activeWords.length) * 100}%` }}
               ></div>
             </div>
           </div>

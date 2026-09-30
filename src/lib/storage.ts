@@ -1,9 +1,14 @@
 import { UserProgress } from '../types';
 import { supabase, isSupabaseConfigured } from './supabase';
 
-const STORAGE_KEY = 'learn_jpd_progress_v1';
+const BASE_STORAGE_KEY = 'learn_jpd_progress';
 
-const defaultProgress: UserProgress = {
+function getStorageKey(userId?: string): string {
+  if (userId) return `${BASE_STORAGE_KEY}_user_${userId}`;
+  return `${BASE_STORAGE_KEY}_guest`;
+}
+
+export const defaultProgress: UserProgress = {
   masteredWords: [],
   favoriteWords: [],
   mistakeWords: [],
@@ -23,11 +28,18 @@ const defaultProgress: UserProgress = {
   ]
 };
 
-// 1. Tải tiến độ từ LocalStorage
-export function loadLocalProgress(): UserProgress {
+// 1. Tải tiến độ từ LocalStorage (cô lập theo từng tài khoản / khách)
+export function loadLocalProgress(userId?: string): UserProgress {
   try {
-    const raw = localStorage.getItem(STORAGE_KEY);
-    if (!raw) return defaultProgress;
+    const key = getStorageKey(userId);
+    let raw = localStorage.getItem(key);
+    
+    // Fallback: nếu chưa có key mới nhưng có legacy key và là guest
+    if (!raw && !userId) {
+      raw = localStorage.getItem('learn_jpd_progress_v1');
+    }
+
+    if (!raw) return { ...defaultProgress, customNotebooks: [...defaultProgress.customNotebooks] };
     const parsed = JSON.parse(raw);
     
     // Kiểm tra streak
@@ -43,12 +55,15 @@ export function loadLocalProgress(): UserProgress {
         parsed.streak = 1;
       }
       parsed.lastActiveDate = today;
-      saveLocalProgress(parsed);
+      saveLocalProgress(parsed, userId);
     }
     
     const progress: UserProgress = { ...defaultProgress, ...parsed };
     if (!progress.customNotebooks || progress.customNotebooks.length === 0) {
       progress.customNotebooks = defaultProgress.customNotebooks;
+    }
+    if (!progress.hiddenWords) {
+      progress.hiddenWords = [];
     }
     return progress;
   } catch (e) {
@@ -57,10 +72,11 @@ export function loadLocalProgress(): UserProgress {
   }
 }
 
-// 2. Lưu tiến độ vào LocalStorage
-export function saveLocalProgress(progress: UserProgress): void {
+// 2. Lưu tiến độ vào LocalStorage (cô lập theo từng tài khoản)
+export function saveLocalProgress(progress: UserProgress, userId?: string): void {
   try {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(progress));
+    const key = getStorageKey(userId);
+    localStorage.setItem(key, JSON.stringify(progress));
   } catch (e) {
     console.error('Lỗi khi lưu LocalStorage:', e);
   }
@@ -78,14 +94,14 @@ export function exportProgressJSON(progress: UserProgress): void {
 }
 
 // 4. Nhập file backup JSON
-export function importProgressJSON(file: File): Promise<UserProgress> {
+export function importProgressJSON(file: File, userId?: string): Promise<UserProgress> {
   return new Promise((resolve, reject) => {
     const reader = new FileReader();
     reader.onload = (e) => {
       try {
         const content = e.target?.result as string;
         const parsed = JSON.parse(content) as UserProgress;
-        saveLocalProgress(parsed);
+        saveLocalProgress(parsed, userId);
         resolve(parsed);
       } catch (err) {
         reject(err);
@@ -143,11 +159,13 @@ export async function fetchFromSupabase(userId: string): Promise<UserProgress | 
       masteredWords: data.mastered_words || [],
       favoriteWords: data.favorite_words || [],
       mistakeWords: data.mistake_words || [],
+      hiddenWords: [],
       masteredKanji: data.mastered_kanji || [],
       favoriteKanji: data.favorite_kanji || [],
       streak: data.streak || 1,
       lastActiveDate: data.last_active_date || new Date().toISOString().split('T')[0],
-      quizScores: data.quiz_scores || []
+      quizScores: data.quiz_scores || [],
+      customNotebooks: defaultProgress.customNotebooks
     };
   } catch (err) {
     console.error('Lỗi lấy dữ liệu từ Supabase:', err);

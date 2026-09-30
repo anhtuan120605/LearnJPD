@@ -227,7 +227,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
                 }}
                 className={`py-2 rounded-xl transition ${
                   authMode !== 'signup'
-                    ? 'bg-white dark:bg-zinc-700 text-rose-600 dark:text-rose-400 shadow-xs'
+                    ? 'bg-white dark:bg-zinc-700 text-blue-600 dark:text-sky-400 shadow-xs'
                     : 'text-slate-500 hover:text-slate-900 dark:hover:text-white'
                 }`}
               >
@@ -242,7 +242,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
                 }}
                 className={`py-2 rounded-xl transition ${
                   authMode === 'signup'
-                    ? 'bg-white dark:bg-zinc-700 text-rose-600 dark:text-rose-400 shadow-xs'
+                    ? 'bg-white dark:bg-zinc-700 text-blue-600 dark:text-sky-400 shadow-xs'
                     : 'text-slate-500 hover:text-slate-900 dark:hover:text-white'
                 }`}
               >
@@ -262,7 +262,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
                   placeholder="nhapemail@example.com"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="w-full px-4 py-3 rounded-2xl border border-slate-200 dark:border-zinc-700 bg-slate-50 dark:bg-zinc-800 text-sm text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-rose-500/30 transition"
+                  className="w-full px-4 py-3 rounded-2xl border border-slate-200 dark:border-zinc-700 bg-slate-50 dark:bg-zinc-800 text-sm text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500/30 transition"
                 />
               </div>
 
@@ -281,7 +281,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
                           setErrorMsg('');
                           setSuccessMsg('');
                         }}
-                        className="text-[11px] text-rose-600 dark:text-rose-400 font-semibold hover:underline"
+                        className="text-[11px] text-blue-600 dark:text-sky-400 font-semibold hover:underline"
                       >
                         Đăng nhập không cần mật khẩu?
                       </button>
@@ -293,14 +293,14 @@ export const AuthModal: React.FC<AuthModalProps> = ({
                     placeholder="Nhập mật khẩu (tối thiểu 6 ký tự)"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
-                    className="w-full px-4 py-3 rounded-2xl border border-slate-200 dark:border-zinc-700 bg-slate-50 dark:bg-zinc-800 text-sm text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-rose-500/30 transition"
+                    className="w-full px-4 py-3 rounded-2xl border border-slate-200 dark:border-zinc-700 bg-slate-50 dark:bg-zinc-800 text-sm text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500/30 transition"
                   />
                 </div>
               )}
 
               {/* Thông báo lỗi */}
               {errorMsg && (
-                <div className="p-3 rounded-xl bg-rose-50 dark:bg-rose-950/40 border border-rose-200 dark:border-rose-900/50 text-rose-600 dark:text-rose-400 text-xs font-medium">
+                <div className="p-3 rounded-xl bg-red-50 dark:bg-red-950/40 border border-red-200 dark:border-red-900/50 text-red-600 dark:text-red-400 text-xs font-medium">
                   {errorMsg}
                 </div>
               )}
@@ -316,7 +316,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full py-3.5 rounded-2xl bg-rose-500 hover:bg-rose-600 text-white font-bold text-sm shadow-lg shadow-rose-500/25 transition active:scale-95 disabled:opacity-50"
+                className="w-full py-3.5 rounded-2xl bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-bold text-sm shadow-lg shadow-blue-500/25 transition active:scale-95 disabled:opacity-50"
               >
                 {loading 
                   ? 'Đang xử lý...' 

@@ -33,6 +33,7 @@ import {
 import { speakJapanese } from '../lib/audio';
 import * as wanakana from 'wanakana';
 import confetti from 'canvas-confetti';
+import { KanjiStrokeModal } from './KanjiStrokeModal';
 
 interface KanjiRoadmapViewProps {
   kanjiList: KanjiItem[];
@@ -202,6 +203,7 @@ export const KanjiRoadmapView: React.FC<KanjiRoadmapViewProps> = ({
   const [isAnswered, setIsAnswered] = useState<boolean>(false);
   const [cramInput, setCramInput] = useState<string>('');
   const [cramStatus, setCramStatus] = useState<'idle' | 'correct' | 'wrong'>('idle');
+  const [showStrokeModal, setShowStrokeModal] = useState<boolean>(false);
 
   // Bảng vẽ luyện viết
   const [showCanvas, setShowCanvas] = useState<boolean>(false);
@@ -1149,6 +1151,14 @@ export const KanjiRoadmapView: React.FC<KanjiRoadmapViewProps> = ({
           </button>
 
           <button
+            onClick={() => setShowStrokeModal(true)}
+            className="px-4 py-2 rounded-xl bg-indigo-50 dark:bg-indigo-950/30 text-indigo-600 dark:text-sky-300 border border-indigo-200 dark:border-indigo-900/50 font-bold text-xs flex items-center space-x-1.5 hover:bg-indigo-100 dark:hover:bg-indigo-900/40 transition shadow-2xs"
+          >
+            <Sparkles className="w-3.5 h-3.5" />
+            <span>Thứ tự nét & Tập viết</span>
+          </button>
+
+          <button
             onClick={() => speakJapanese(currentKanji.kanji)}
             className="px-4 py-2 rounded-xl bg-amber-50 dark:bg-amber-950/30 text-amber-700 dark:text-amber-400 border border-amber-200 dark:border-amber-900/50 font-bold text-xs flex items-center space-x-1.5 hover:bg-amber-100 transition shadow-2xs"
           >
@@ -1483,6 +1493,18 @@ export const KanjiRoadmapView: React.FC<KanjiRoadmapViewProps> = ({
             </div>
           </div>
         )}
+
+        {/* Modal Nét viết & Tập viết Kanji */}
+        {showStrokeModal && currentKanji && (
+          <KanjiStrokeModal
+            isOpen={showStrokeModal}
+            onClose={() => setShowStrokeModal(false)}
+            kanji={currentKanji.kanji}
+            hanviet={currentKanji.hanviet}
+            meaning={currentKanji.meanings_vi.join(', ')}
+            strokes={currentKanji.strokes}
+          />
+        )}
       </div>
     );
   }
@@ -1691,6 +1713,18 @@ export const KanjiRoadmapView: React.FC<KanjiRoadmapViewProps> = ({
           </div>
         </div>
       </div>
+
+      {/* Modal Nét viết & Tập viết Kanji */}
+      {showStrokeModal && currentKanji && (
+        <KanjiStrokeModal
+          isOpen={showStrokeModal}
+          onClose={() => setShowStrokeModal(false)}
+          kanji={currentKanji.kanji}
+          hanviet={currentKanji.hanviet}
+          meaning={currentKanji.meanings_vi.join(', ')}
+          strokes={currentKanji.strokes}
+        />
+      )}
     </div>
   );
 };

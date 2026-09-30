@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { KanjiItem, WordItem } from '../types';
-import { Search, Volume2, Star, Sparkles, X, Map, LayoutGrid } from 'lucide-react';
+import { Search, Volume2, Star, Sparkles, X, Map, LayoutGrid, PenTool } from 'lucide-react';
 import { speakJapanese } from '../lib/audio';
 import { KanjiRoadmapView } from './KanjiRoadmapView';
+import { KanjiStrokeModal } from './KanjiStrokeModal';
 
 interface KanjiMasterViewProps {
   kanjiList: KanjiItem[];
@@ -30,6 +31,7 @@ export const KanjiMasterView: React.FC<KanjiMasterViewProps> = ({
   const [activeSubTab, setActiveSubTab] = useState<'roadmap' | 'explorer'>('roadmap');
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedKanji, setSelectedKanji] = useState<KanjiItem | null>(null);
+  const [strokeKanji, setStrokeKanji] = useState<KanjiItem | null>(null);
   const [filterType, setFilterType] = useState<'all' | 'unlearned' | 'mastered'>('all');
 
   const filtered = kanjiList.filter(k => {
@@ -183,7 +185,19 @@ export const KanjiMasterView: React.FC<KanjiMasterViewProps> = ({
                   : 'border-slate-200 dark:border-zinc-800 hover:border-rose-400'
               }`}
             >
-              {/* Nút yêu thích nhỏ góc trên */}
+              {/* Nút nét viết nhỏ góc trên trái */}
+              <button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setStrokeKanji(k);
+                }}
+                title="Xem nét viết & Tập viết"
+                className="absolute top-2.5 left-2.5 p-1 text-slate-300 group-hover:text-blue-500 hover:!text-blue-600 transition"
+              >
+                <PenTool className="w-3.5 h-3.5" />
+              </button>
+
+              {/* Nút yêu thích nhỏ góc trên phải */}
               <button
                 onClick={(e) => {
                   e.stopPropagation();
@@ -306,15 +320,25 @@ export const KanjiMasterView: React.FC<KanjiMasterViewProps> = ({
               </ul>
             </div>
 
-            {/* Footer Modal: Audio + Master Button */}
-            <div className="pt-4 border-t border-slate-100 dark:border-zinc-800 flex items-center justify-between">
-              <button
-                onClick={() => speakJapanese(selectedKanji.kunyomi[0] || selectedKanji.onyomi[0] || selectedKanji.kanji)}
-                className="flex items-center space-x-2 px-4 py-2.5 rounded-xl bg-slate-100 dark:bg-zinc-800 hover:bg-slate-200 text-slate-700 dark:text-zinc-200 text-xs font-bold transition"
-              >
-                <Volume2 className="w-4 h-4 text-rose-500" />
-                <span>Phát âm mẫu</span>
-              </button>
+            {/* Footer Modal: Audio + Stroke Modal + Master Button */}
+            <div className="pt-4 border-t border-slate-100 dark:border-zinc-800 flex flex-wrap items-center justify-between gap-2">
+              <div className="flex items-center space-x-2">
+                <button
+                  onClick={() => speakJapanese(selectedKanji.kunyomi[0] || selectedKanji.onyomi[0] || selectedKanji.kanji)}
+                  className="flex items-center space-x-1.5 px-3 py-2 rounded-xl bg-slate-100 dark:bg-zinc-800 hover:bg-slate-200 text-slate-700 dark:text-zinc-200 text-xs font-bold transition"
+                >
+                  <Volume2 className="w-3.5 h-3.5 text-rose-500" />
+                  <span>Phát âm</span>
+                </button>
+
+                <button
+                  onClick={() => setStrokeKanji(selectedKanji)}
+                  className="flex items-center space-x-1.5 px-3 py-2 rounded-xl bg-blue-50 dark:bg-blue-950/40 hover:bg-blue-100 dark:hover:bg-blue-900/40 text-blue-600 dark:text-sky-300 text-xs font-bold transition border border-blue-200/60 dark:border-blue-800/40"
+                >
+                  <PenTool className="w-3.5 h-3.5" />
+                  <span>Nét viết & Tập vẽ</span>
+                </button>
+              </div>
 
               <button
                 onClick={() => {
@@ -334,6 +358,18 @@ export const KanjiMasterView: React.FC<KanjiMasterViewProps> = ({
         </div>
       )}
         </div>
+      )}
+
+      {/* Modal Nét viết & Tập viết Kanji */}
+      {strokeKanji && (
+        <KanjiStrokeModal
+          isOpen={!!strokeKanji}
+          onClose={() => setStrokeKanji(null)}
+          kanji={strokeKanji.kanji}
+          hanviet={strokeKanji.hanviet}
+          meaning={strokeKanji.meanings_vi.join(', ')}
+          strokes={strokeKanji.strokes}
+        />
       )}
     </div>
   );
