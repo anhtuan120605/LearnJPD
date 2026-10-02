@@ -50,15 +50,35 @@ export function isPunctuationOrSymbol(char: string): boolean {
   return /[~～〜\uFF5E\u301C\-–—_()[\]（）「」『』・.,!?。、\s\u3000]/.test(char);
 }
 
+export function toHiragana(text: string): string {
+  if (!text) return '';
+  return wanakana.toHiragana(text, { IMEMode: true });
+}
+
 /**
  * Kiểm tra đáp án tiếng Nhật toàn diện (chấp nhận mọi cách biểu diễn hợp lệ của người học)
  * - Chấp nhận cả Hiragana, Katakana, Romaji, hỗn hợp Katakana + Hiragana
- * - Chấp nhận cả trường âm có gạch nối '-' lẫn không có '-'
- * - Bỏ qua ký hiệu ngữ pháp ~, ～, ()
+ * - Hỗ trợ nhiều đáp án hợp lệ thay thế (như Kanji, Romaji...)
  */
-export function isJapaneseAnswerMatch(userInput: string, targetAnswer: string): boolean {
-  if (!userInput || !targetAnswer) return false;
+export function isJapaneseAnswerMatch(
+  userInput: string, 
+  targetAnswer: string,
+  ...alternativeTargets: (string | undefined)[]
+): boolean {
+  if (!userInput) return false;
 
+  const allTargets = [targetAnswer, ...alternativeTargets].filter((t): t is string => Boolean(t && t.trim()));
+  if (allTargets.length === 0) return false;
+
+  for (const target of allTargets) {
+    if (checkSingleMatch(userInput, target)) {
+      return true;
+    }
+  }
+  return false;
+}
+
+function checkSingleMatch(userInput: string, targetAnswer: string): boolean {
   const cleanUser = userInput.trim();
   const cleanTarget = targetAnswer.trim();
   if (cleanUser === cleanTarget) return true;

@@ -137,4 +137,4 @@ export interface ReadingLesson {
 }
 
 export type WordPracticeFilter = 'all' | 'unmastered' | 'favorite' | 'mistake';
-export type StudyMode = 'flashcard' | 'quiz' | 'cram' | 'translate' | 'shadowing';
+export type StudyMode = 'flashcard' | 'learn' | 'test' | 'match' | 'quiz' | 'cram' | 'translate' | 'shadowing';

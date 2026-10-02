@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { ReadingLesson, ReadingQuestion } from '../types';
 import { Volume2, VolumeX, Eye, EyeOff, BookOpen, CheckCircle2, XCircle, HelpCircle, Sparkles, RefreshCw } from 'lucide-react';
-import { speakJapanese } from '../lib/audio';
+import { speakJapanese, stopSpeaking } from '../lib/audio';
 
 interface ReadingViewProps {
   reading: ReadingLesson | undefined;
@@ -16,6 +16,13 @@ export const ReadingView: React.FC<ReadingViewProps> = ({ reading, lessonNum }) 
   // Trạng thái câu trả lời câu hỏi đọc hiểu: { [qIdx]: selectedOptionIndex }
   const [selectedAnswers, setSelectedAnswers] = useState<Record<number, number>>({});
   const [showResults, setShowResults] = useState(false);
+
+  // Dừng phát âm khi unmount khỏi ReadingView
+  useEffect(() => {
+    return () => {
+      stopSpeaking();
+    };
+  }, []);
 
   if (!reading) {
     return (
@@ -34,18 +41,13 @@ export const ReadingView: React.FC<ReadingViewProps> = ({ reading, lessonNum }) 
   // Phát âm toàn bộ bài đọc
   const handlePlayReadingAudio = () => {
     if (isPlayingAudio) {
-      if ('speechSynthesis' in window) {
-        window.speechSynthesis.cancel();
-      }
+      stopSpeaking();
       setIsPlayingAudio(false);
     } else {
       setIsPlayingAudio(true);
-      speakJapanese(reading.content, 0.9);
-      // Ước lượng thời gian đọc xong
-      const estimatedSec = Math.max(3000, reading.content.length * 280);
-      setTimeout(() => {
+      speakJapanese(reading.content, 0.85, () => {
         setIsPlayingAudio(false);
-      }, estimatedSec);
+      });
     }
   };
 

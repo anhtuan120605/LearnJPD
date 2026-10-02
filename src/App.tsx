@@ -8,6 +8,9 @@ import { CrammingModeView } from './components/CrammingModeView';
 import { SentenceTranslateView } from './components/SentenceTranslateView';
 import { ShadowingView } from './components/ShadowingView';
 import { StudyModeSelector, StudyMode } from './components/StudyModeSelector';
+import { AdaptiveLearnView } from './components/AdaptiveLearnView';
+import { MatchGameView } from './components/MatchGameView';
+import { PracticeTestView } from './components/PracticeTestView';
 import { GrammarView } from './components/GrammarView';
 import { ReadingView } from './components/ReadingView';
 import { AuthModal } from './components/AuthModal';
@@ -1043,6 +1046,38 @@ export function App() {
                           />
                         )}
 
+                        {/* Quizlet: Chế độ Học thích ứng (Learn Mode) */}
+                        {studyMode === 'learn' && (
+                          <AdaptiveLearnView
+                            words={finalLessonPracticeWords}
+                            masteredWords={progress.masteredWords}
+                            favoriteWords={progress.favoriteWords}
+                            onAddMastered={handleAddMasterWord}
+                            onToggleFavorite={handleToggleFavoriteWord}
+                            onSaveScore={(score, total) => handleSaveQuizScore(score, total, 'Học thông minh (Learn)')}
+                          />
+                        )}
+
+                        {/* Quizlet: Chế độ Kiểm tra (Test Mode) */}
+                        {studyMode === 'test' && (
+                          <PracticeTestView
+                            words={finalLessonPracticeWords}
+                            favoriteWords={progress.favoriteWords}
+                            lessonNum={selectedLessonNum}
+                            onSaveScore={(score, total) => handleSaveQuizScore(score, total, 'Kiểm tra (Test)')}
+                          />
+                        )}
+
+                        {/* Quizlet: Game Ghép thẻ (Match Game) */}
+                        {studyMode === 'match' && (
+                          <MatchGameView
+                            words={finalLessonPracticeWords}
+                            favoriteWords={progress.favoriteWords}
+                            lessonNum={selectedLessonNum}
+                            onToggleFavorite={handleToggleFavoriteWord}
+                          />
+                        )}
+
                         {/* 2. Trắc nghiệm (Quiz) */}
                         {studyMode === 'quiz' && (
                           <PracticeView
@@ -1218,6 +1253,38 @@ export function App() {
                     masteredWords={progress.masteredWords}
                     favoriteWords={progress.favoriteWords}
                     onToggleMaster={handleToggleMasterWord}
+                    onToggleFavorite={handleToggleFavoriteWord}
+                  />
+                )}
+
+                {/* Quizlet: Chế độ Học thích ứng (Learn Mode) */}
+                {studyMode === 'learn' && (
+                  <AdaptiveLearnView
+                    words={finalPracticeWords}
+                    masteredWords={progress.masteredWords}
+                    favoriteWords={progress.favoriteWords}
+                    onAddMastered={handleAddMasterWord}
+                    onToggleFavorite={handleToggleFavoriteWord}
+                    onSaveScore={(score, total) => handleSaveQuizScore(score, total, 'Học thông minh (Learn)')}
+                  />
+                )}
+
+                {/* Quizlet: Chế độ Kiểm tra (Test Mode) */}
+                {studyMode === 'test' && (
+                  <PracticeTestView
+                    words={finalPracticeWords}
+                    favoriteWords={progress.favoriteWords}
+                    lessonNum={selectedLessonNum}
+                    onSaveScore={(score, total) => handleSaveQuizScore(score, total, 'Kiểm tra (Test)')}
+                  />
+                )}
+
+                {/* Quizlet: Game Ghép thẻ (Match Game) */}
+                {studyMode === 'match' && (
+                  <MatchGameView
+                    words={finalPracticeWords}
+                    favoriteWords={progress.favoriteWords}
+                    lessonNum={selectedLessonNum}
                     onToggleFavorite={handleToggleFavoriteWord}
                   />
                 )}
