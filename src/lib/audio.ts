@@ -1,12 +1,16 @@
 /**
  * Audio Engine cho LearnJPD
- * Hỗ trợ Dual-Engine:
- * 1. Primary Engine: Native Japanese Dictionary Audio (Âm thanh phát âm bản xứ chuẩn, trong trẻo, chân thực)
- * 2. Fallback Engine: Web Speech Synthesis API (Được tối ưu cho mọi trình duyệt: Chrome, Safari, Edge, Firefox, macOS, Windows, iOS, Android)
+ * Hỗ trợ:
+ * 1. Primary Engine: Native Japanese Neural Audio (Google TTS engine - phát âm tự nhiên cả từ vựng và câu văn, chuẩn Tokyo)
+ * 2. Fallback Engine: Web Speech Synthesis API (hỗ trợ offline & tương thích mọi trình duyệt Safari, Chrome, Edge, Firefox, iOS, Android)
  */
 
 // Quản lý active HTML5 Audio element
 let currentAudio: HTMLAudioElement | null = null;
+let currentPlaylist: string[] = [];
+let currentPlaylistIndex = 0;
+let currentPlaylistRate = 0.9;
+let currentPlaylistOnEnd: (() => void) | undefined = undefined;
 
 // Quản lý active SpeechSynthesisUtterances để ngăn V8 Garbage Collection bug làm mất tiếng giữa chừng
 const activeUtterances = new Set<SpeechSynthesisUtterance>();
@@ -33,7 +37,7 @@ if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
 
 /**
  * Làm sạch và chuẩn hóa văn bản tiếng Nhật trước khi phát âm
- * Xử lý triệt để các trường hợp: ngoặc giải thích, furigana markdown, gạch nối, tilde sóng ~
+ * Xử lý hoàn hảo cả: từ vựng đơn lẻ, mẫu câu ngữ pháp, hội thoại dài, furigana markdown, chú thích trong ngoặc
  */
 export function cleanJapaneseForSpeech(text: string): string {
   if (!text) return '';
@@ -43,29 +47,36 @@ export function cleanJapaneseForSpeech(text: string): string {
   // 1. Loại bỏ thẻ HTML nếu có
   clean = clean.replace(/<[^>]+>/g, '');
 
-  // 2. Xử lý furigana dạng markdown [Kanji](kana) -> trích lấy kana để phát âm chuẩn ngữ âm
+  // 2. Loại bỏ tiền tố người nói trong hội thoại như "A: ", "B: ", "田中: ", "ミラー："
+  clean = clean.replace(/^[A-Za-z0-9\u3040-\u30ff\u4e00-\u9faf]+[:：]\s*/, '');
+
+  // 3. Xử lý furigana dạng markdown [Kanji](kana) -> trích lấy kana để phát âm chuẩn ngữ âm
   clean = clean.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '$2');
 
-  // 3. Xử lý dấu ngoặc đơn / ngoặc kép:
-  // Nếu có dạng "なんさい（おいくつ）" hoặc "A (B)" -> lấy phần chính phía trước
-  const parenMatch = clean.match(/^([^\(（]+)[\(（](.*?)[\)）]/);
-  if (parenMatch && parenMatch[1].trim()) {
-    clean = parenMatch[1].trim();
-  } else {
-    // Nếu ngoặc ở đầu như （お）みず -> xóa ký tự ngoặc giữ chữ
-    clean = clean.replace(/[（\(\)）「」『』【】［］\[\]]/g, '');
+  // 4. Loại bỏ các phần chú thích giải nghĩa chứa chữ cái Latin / tiếng Việt trong ngoặc
+  // Ví dụ: "佐藤さんは先生じゃありません。(Không phải giáo viên)" -> "佐藤さんは先生じゃありません。"
+  clean = clean.replace(/[\(（][^()（）]*[a-zA-Zà-ỹÀ-Ỹ][^()（）]*[\)）]/g, '');
+
+  // 5. Kiểm tra nếu là từ vựng có cách đọc bổ trợ (ví dụ: "なんさい（おいくつ）")
+  const isSentence = /[。、？！\n]/.test(clean) || clean.length > 18;
+  if (!isSentence) {
+    const parenMatch = clean.match(/^([^\(（]+)[\(（](.*?)[\)）]/);
+    if (parenMatch && parenMatch[1].trim()) {
+      clean = parenMatch[1].trim();
+    }
   }
 
-  // 4. Xóa gạch nối ở đầu từ (ví dụ: －かい -> かい để không bị đọc thành "mainasu kai")
-  clean = clean.replace(/^[－ー―\-~～〜]+/g, '');
+  // 6. Xóa các dấu ngoặc còn sót lại nhưng giữ lại nội dung tiếng Nhật bên trong
+  clean = clean.replace(/[（\(\)）「」『』【】［］\[\]"'`]/g, '');
 
-  // 5. Xóa ký hiệu sóng ~ (ví dụ: 〜さん -> さん)
+  // 7. Xóa gạch nối, tilde sóng ở đầu từ (ví dụ: －かい -> かい, 〜さん -> さん)
+  clean = clean.replace(/^[－ー―\-~～〜]+/g, '');
   clean = clean.replace(/[~～〜]/g, '');
 
-  // 6. Xóa ký tự gạch chéo, dấu chấm nakaguro
+  // 8. Xóa các ký tự ngăn cách như gạch chéo, bullet
   clean = clean.replace(/[/／・\\|｜…\^]/g, ' ');
 
-  // 7. Chuẩn hóa khoảng trắng
+  // 9. Chuẩn hóa khoảng trắng
   clean = clean.replace(/\s+/g, ' ').trim();
 
   return clean;
@@ -105,6 +116,10 @@ function getBestJapaneseVoice(): SpeechSynthesisVoice | null {
  * Dừng mọi âm thanh đang phát ngay lập tức (cả HTML5 Audio lẫn SpeechSynthesis)
  */
 export function stopSpeaking(): void {
+  currentPlaylist = [];
+  currentPlaylistIndex = 0;
+  currentPlaylistOnEnd = undefined;
+
   // Dừng HTML5 Audio
   if (currentAudio) {
     try {
@@ -126,7 +141,7 @@ export function stopSpeaking(): void {
 }
 
 /**
- * Phát âm qua Web Speech API (Engine chuẩn & Fallback)
+ * Phát âm qua Web Speech API (Engine chuẩn offline & Fallback)
  */
 function speakViaSpeechSynthesis(
   cleanText: string,
@@ -149,7 +164,7 @@ function speakViaSpeechSynthesis(
     try {
       const utterance = new SpeechSynthesisUtterance(cleanText);
       utterance.lang = 'ja-JP';
-      utterance.rate = Math.max(0.6, Math.min(1.5, rate));
+      utterance.rate = Math.max(0.6, Math.min(1.4, rate));
 
       const voice = getBestJapaneseVoice();
       if (voice) {
@@ -185,7 +200,7 @@ function speakViaSpeechSynthesis(
         if (window.speechSynthesis.paused) {
           window.speechSynthesis.resume();
         }
-      }, 4000);
+      }, 3000);
 
       window.speechSynthesis.speak(utterance);
     } catch (err) {
@@ -196,8 +211,113 @@ function speakViaSpeechSynthesis(
 }
 
 /**
+ * Phát tuần tự từng chunk câu nếu văn bản dài (>160 ký tự)
+ */
+function playNextChunk(): void {
+  if (currentPlaylistIndex >= currentPlaylist.length) {
+    const cb = currentPlaylistOnEnd;
+    stopSpeaking();
+    cb?.();
+    return;
+  }
+
+  const chunk = currentPlaylist[currentPlaylistIndex];
+  currentPlaylistIndex++;
+
+  const audioUrl = `https://translate.googleapis.com/translate_tts?client=gtx&tl=ja&q=${encodeURIComponent(chunk)}`;
+  const audio = new Audio(audioUrl);
+  currentAudio = audio;
+  audio.playbackRate = Math.max(0.7, Math.min(1.4, currentPlaylistRate));
+
+  let hasEnded = false;
+  let hasFailed = false;
+
+  const timer = setTimeout(() => {
+    if (!hasEnded && !hasFailed && currentAudio === audio && audio.readyState === 0) {
+      hasFailed = true;
+      stopSpeaking();
+      speakViaSpeechSynthesis(chunk, currentPlaylistRate, currentPlaylistOnEnd);
+    }
+  }, 3500);
+
+  audio.onended = () => {
+    clearTimeout(timer);
+    if (!hasEnded && !hasFailed) {
+      hasEnded = true;
+      playNextChunk();
+    }
+  };
+
+  audio.onerror = () => {
+    clearTimeout(timer);
+    if (!hasEnded && !hasFailed) {
+      hasFailed = true;
+      stopSpeaking();
+      speakViaSpeechSynthesis(chunk, currentPlaylistRate, currentPlaylistOnEnd);
+    }
+  };
+
+  const playPromise = audio.play();
+  if (playPromise !== undefined) {
+    playPromise.catch(() => {
+      clearTimeout(timer);
+      if (!hasEnded && !hasFailed) {
+        hasFailed = true;
+        stopSpeaking();
+        speakViaSpeechSynthesis(chunk, currentPlaylistRate, currentPlaylistOnEnd);
+      }
+    });
+  }
+}
+
+/**
+ * Tách đoạn văn thành các câu ngắn vừa vặn cho audio stream (<160 ký tự)
+ */
+function splitIntoAudioChunks(text: string): string[] {
+  if (text.length <= 160) return [text];
+
+  const sentences = text.split(/([。？！\n]+)/);
+  const chunks: string[] = [];
+  let buffer = '';
+
+  for (let i = 0; i < sentences.length; i += 2) {
+    const sentence = sentences[i];
+    const punct = sentences[i + 1] || '';
+    const full = (sentence + punct).trim();
+    if (!full) continue;
+
+    if ((buffer + full).length <= 160) {
+      buffer += full;
+    } else {
+      if (buffer) chunks.push(buffer);
+      if (full.length <= 160) {
+        buffer = full;
+      } else {
+        // Trường hợp câu đơn quá dài không có dấu chấm, chia theo dấu phẩy
+        const subParts = full.split(/([、,]+)/);
+        let subBuffer = '';
+        for (let j = 0; j < subParts.length; j += 2) {
+          const s = subParts[j] + (subParts[j + 1] || '');
+          if ((subBuffer + s).length <= 160) {
+            subBuffer += s;
+          } else {
+            if (subBuffer) chunks.push(subBuffer);
+            subBuffer = s;
+          }
+        }
+        if (subBuffer) buffer = subBuffer;
+      }
+    }
+  }
+
+  if (buffer) chunks.push(buffer);
+  return chunks.length > 0 ? chunks : [text.slice(0, 160)];
+}
+
+/**
  * Hàm phát âm tiếng Nhật chính cho toàn bộ ứng dụng
  * Tự động chọn Native Online Audio chất lượng cao hoặc SpeechSynthesis
+ * Hỗ trợ từ vựng, cụm từ, câu ví dụ ngữ pháp và đoạn hội thoại
  */
 export function speakJapanese(
   text: string,
@@ -213,68 +333,12 @@ export function speakJapanese(
   // Dừng âm thanh trước đó
   stopSpeaking();
 
-  // Đối với từ vựng và câu ngắn (<= 60 ký tự, không chứa xuống dòng):
-  // Dùng Native Japanese Audio từ nguồn từ điển chuẩn bản xứ
-  const isShortPhrase = cleanText.length <= 60 && !cleanText.includes('\n');
+  const chunks = splitIntoAudioChunks(cleanText);
+  currentPlaylist = chunks;
+  currentPlaylistIndex = 0;
+  currentPlaylistRate = rate;
+  currentPlaylistOnEnd = onEnd;
 
-  if (isShortPhrase) {
-    try {
-      const audioUrl = `https://dict.youdao.com/dictvoice?audio=${encodeURIComponent(cleanText)}&le=jap`;
-      const audio = new Audio(audioUrl);
-      currentAudio = audio;
-      audio.playbackRate = Math.max(0.7, Math.min(1.4, rate));
-
-      let hasEnded = false;
-      let hasFailed = false;
-
-      // Timeout watchdog: Nếu tải mạng quá 2 giây chưa có phản hồi -> tự động chuyển sang SpeechSynthesis
-      const networkTimeout = setTimeout(() => {
-        if (!hasEnded && !hasFailed && currentAudio === audio && audio.readyState === 0) {
-          hasFailed = true;
-          stopSpeaking();
-          speakViaSpeechSynthesis(cleanText, rate, onEnd);
-        }
-      }, 2000);
-
-      const handleFinish = () => {
-        clearTimeout(networkTimeout);
-        if (!hasEnded && !hasFailed) {
-          hasEnded = true;
-          if (currentAudio === audio) currentAudio = null;
-          onEnd?.();
-        }
-      };
-
-      audio.onended = handleFinish;
-
-      audio.onerror = () => {
-        clearTimeout(networkTimeout);
-        if (!hasEnded && !hasFailed) {
-          hasFailed = true;
-          if (currentAudio === audio) currentAudio = null;
-          // Fallback sang SpeechSynthesis
-          speakViaSpeechSynthesis(cleanText, rate, onEnd);
-        }
-      };
-
-      const playPromise = audio.play();
-      if (playPromise !== undefined) {
-        playPromise.catch(() => {
-          clearTimeout(networkTimeout);
-          if (!hasEnded && !hasFailed) {
-            hasFailed = true;
-            if (currentAudio === audio) currentAudio = null;
-            // Nếu bị trình duyệt chặn autoplay hoặc lỗi mạng -> Fallback sang SpeechSynthesis
-            speakViaSpeechSynthesis(cleanText, rate, onEnd);
-          }
-        });
-      }
-      return;
-    } catch (err) {
-      console.warn('Native audio initialization error, falling back:', err);
-    }
-  }
-
-  // Đoạn văn dài hoặc fallback trực tiếp sang SpeechSynthesis
-  speakViaSpeechSynthesis(cleanText, rate, onEnd);
+  playNextChunk();
 }
+

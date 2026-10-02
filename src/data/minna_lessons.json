@@ -714,7 +714,7 @@
         "kana": "アイエムシー",
         "romaji": "aimushi",
         "hanviet": "",
-        "meaning": "Công ty IMC (công ty máy tính hư cấu trong giáo trình)",
+        "meaning": "Công ty IMC (công ty máy tính)",
         "meaning_en": "IMC Company",
         "examples": [
           {
@@ -768,7 +768,7 @@
         "kana": "AKC",
         "romaji": "AKC",
         "hanviet": "",
-        "meaning": "một viện hư cấu",
+        "meaning": "Viện nghiên cứu AKC",
         "meaning_en": "a fictitious institute\",",
         "examples": [
           {
@@ -786,7 +786,7 @@
         "kana": "こうべびょういん",
         "romaji": "kōbebyōin",
         "hanviet": "THẦN HỘ BỆNH VIỆN",
-        "meaning": "một bệnh viện hư cấu",
+        "meaning": "Bệnh viện Kobe (tên riêng)",
         "meaning_en": "a fictitious hospital\",",
         "examples": [
           {
@@ -804,7 +804,7 @@
         "kana": "さくらだいがく",
         "romaji": "sakuradaigaku",
         "hanviet": "ĐẠI HỌC",
-        "meaning": "Trường đại học Sakura (tên trường hư cấu trong giáo trình)",
+        "meaning": "Trường đại học Sakura (tên riêng)",
         "meaning_en": "Sakura University",
         "examples": [
           {
@@ -822,7 +822,7 @@
         "kana": "ふじだいがく",
         "romaji": "fujidaigaku",
         "hanviet": "PHÚ SĨ ĐẠI HỌC",
-        "meaning": "Trường đại học Phú Sĩ (tên trường hư cấu trong giáo trình)",
+        "meaning": "Trường đại học Phú Sĩ (tên riêng)",
         "meaning_en": "Fuji University",
         "examples": [
           {
@@ -3885,7 +3885,7 @@
         "kana": "あすか",
         "romaji": "asuka",
         "hanviet": "",
-        "meaning": "một nhà hàng Nhật Bản hư cấu",
+        "meaning": "あすか",
         "meaning_en": "a fictitious Japanese restaurant\",",
         "examples": [
           {
@@ -3903,7 +3903,7 @@
         "kana": "アップルぎんこう",
         "romaji": "appuruginkō",
         "hanviet": "NGÂN HÀNG",
-        "meaning": "một ngân hàng hư cấu",
+        "meaning": "アップル銀行",
         "meaning_en": "a fictitious bank\",",
         "examples": [
           {
@@ -3921,7 +3921,7 @@
         "kana": "みどりとしょかん",
         "romaji": "midoritoshokan",
         "hanviet": "ĐỒ THƯ QUÁN",
-        "meaning": "một thư viện hư cấu",
+        "meaning": "みどり図書館",
         "meaning_en": "a fictitious library\",",
         "examples": [
           {
@@ -3939,7 +3939,7 @@
         "kana": "やまとびじゅつかん",
         "romaji": "yamatobijutsukan",
         "hanviet": "MĨ THUẬT QUÁN",
-        "meaning": "một phòng trưng bày nghệ thuật hư cấu",
+        "meaning": "やまと美術館",
         "meaning_en": "a fictitious art gallery\",",
         "examples": [
           {
@@ -6185,13 +6185,13 @@
         "kana": "おおさかデパート",
         "romaji": "ōsakadepāto",
         "hanviet": "THÁI",
-        "meaning": "một cửa hàng bách hóa hư cấu",
+        "meaning": "大阪デパート",
         "meaning_en": "a fictitious department store\",",
         "examples": [
           {
             "ja": "レストランで 大阪デパートを 買いました。",
             "kana": "れすとらんで おおさかでぱーとを かいました。",
-            "vi": "Tôi đã mua một cửa hàng bách hóa hư cấu ở nhà hàng."
+            "vi": "Tôi đã mua cửa hàng bách hóa ở nhà hàng."
           }
         ]
       },
@@ -6203,13 +6203,13 @@
         "kana": "つるや",
         "romaji": "tsuruya",
         "hanviet": "",
-        "meaning": "một nhà hàng hư cấu",
+        "meaning": "つるや",
         "meaning_en": "a fictitious restaurant\",",
         "examples": [
           {
             "ja": "レストランで つるやを 買いました。",
             "kana": "れすとらんで つるやを かいました。",
-            "vi": "Tôi đã mua một nhà hàng hư cấu ở nhà hàng."
+            "vi": "Tôi đã mua nhà hàng ở nhà hàng."
           }
         ]
       },
@@ -6221,13 +6221,13 @@
         "kana": "フランスや",
         "romaji": "furansuya",
         "hanviet": "ỐC",
-        "meaning": "một siêu thị hư cấu",
+        "meaning": "フランス屋",
         "meaning_en": "a fictitious supermarket\",",
         "examples": [
           {
             "ja": "レストランで フランス屋を 買いました。",
             "kana": "れすとらんで ふらんすやを かいました。",
-            "vi": "Tôi đã mua một siêu thị hư cấu ở nhà hàng."
+            "vi": "Tôi đã mua siêu thị ở nhà hàng."
           }
         ]
       },
@@ -6239,13 +6239,13 @@
         "kana": "まいにちや",
         "romaji": "mainichiya",
         "hanviet": "MỖI NHẬT ỐC",
-        "meaning": "một siêu thị hư cấu",
+        "meaning": "Cửa hàng Mainichiya (tên siêu thị)",
         "meaning_en": "a fictitious supermarket\",",
         "examples": [
           {
             "ja": "レストランで 毎日屋を 買いました。",
             "kana": "れすとらんで まいにちやを かいました。",
-            "vi": "Tôi đã mua một siêu thị hư cấu ở nhà hàng."
+            "vi": "Tôi đã mua siêu thị ở nhà hàng."
           }
         ]
       },
@@ -10389,13 +10389,13 @@
         "kana": "アジアストア",
         "romaji": "ajiasutoa",
         "hanviet": "",
-        "meaning": "một siêu thị hư cấu",
+        "meaning": "アジアストア",
         "meaning_en": "a fictitious supermarket\",",
         "examples": [
           {
             "ja": "部屋に アジアストアが あります。",
             "kana": "へやに あじあすとあが あります。",
-            "vi": "Trong phòng có một siêu thị hư cấu."
+            "vi": "Trong phòng có siêu thị."
           }
         ]
       },
@@ -10539,7 +10539,7 @@
           {
             "ja": "部屋に ユニューア・ストアが あります。",
             "kana": "へやに ゆにゅーあ・すとあが あります。",
-            "vi": "Trong phòng có siêu thị hư cấu."
+            "vi": "Trong phòng có siêu thị ."
           }
         ]
       }
@@ -12689,13 +12689,13 @@
         "kana": "ABC ストア",
         "romaji": "ABC sutoa",
         "hanviet": "",
-        "meaning": "một siêu thị hư cấu",
+        "meaning": "ABC ストア",
         "meaning_en": "a fictitious supermarket\",",
         "examples": [
           {
             "ja": "図書館で ABC ストアに ついて 調べました。",
             "kana": "としょかんで ABC すとあに ついて しらべました。",
-            "vi": "Tôi đã tìm hiểu về một siêu thị hư cấu ở thư viện."
+            "vi": "Tôi đã tìm hiểu về siêu thị ở thư viện."
           }
         ]
       },
@@ -12779,13 +12779,13 @@
         "kana": "まいにちや",
         "romaji": "mainichiya",
         "hanviet": "MỖI NHẬT ỐC",
-        "meaning": "siêu thị hư cấu",
+        "meaning": "Cửa hàng Mainichiya (tên siêu thị)",
         "meaning_en": "fictitious supermarket\",",
         "examples": [
           {
             "ja": "図書館で 毎日屋に ついて 調べました。",
             "kana": "としょかんで まいにちやに ついて しらべました。",
-            "vi": "Tôi đã tìm hiểu về siêu thị hư cấu ở thư viện."
+            "vi": "Tôi đã tìm hiểu về siêu thị  ở thư viện."
           }
         ]
       }
@@ -13362,13 +13362,13 @@
         "kana": "アキックス",
         "romaji": "akikkusu",
         "hanviet": "",
-        "meaning": "một công ty hư cấu",
+        "meaning": "アキックス",
         "meaning_en": "a fictitious company\",",
         "examples": [
           {
             "ja": "図書館で アキックスに ついて 調べました。",
             "kana": "としょかんで あきっくすに ついて しらべました。",
-            "vi": "Tôi đã tìm hiểu về một công ty hư cấu ở thư viện."
+            "vi": "Tôi đã tìm hiểu về một công ty  ở thư viện."
           }
         ]
       },
@@ -13380,13 +13380,13 @@
         "kana": "おはようテレビ",
         "romaji": "ohayōterebi",
         "hanviet": "",
-        "meaning": "một chương trình truyền hình hư cấu",
+        "meaning": "おはようテレビ",
         "meaning_en": "a fictitious TV programme\",",
         "examples": [
           {
             "ja": "図書館で おはようテレビに ついて 調べました。",
             "kana": "としょかんで おはようてれびに ついて しらべました。",
-            "vi": "Tôi đã tìm hiểu về một chương trình truyền hình hư cấu ở thư viện."
+            "vi": "Tôi đã tìm hiểu về một chương trình truyền hình  ở thư viện."
           }
         ]
       },
@@ -13602,7 +13602,7 @@
           {
             "ja": "図書館で つるやに ついて 調べました。",
             "kana": "としょかんで つるやに ついて しらべました。",
-            "vi": "Tôi đã tìm hiểu về nhà hàng Nhật Bản hư cấu ở thư viện."
+            "vi": "Tôi đã tìm hiểu về nhà hàng Nhật Bản  ở thư viện."
           }
         ]
       }
@@ -14431,13 +14431,13 @@
         "kana": "みどり ちょう",
         "romaji": "midori chō",
         "hanviet": "ĐINH",
-        "meaning": "một thị trấn hư cấu",
+        "meaning": "みどり 町",
         "meaning_en": "a fictitious town\",",
         "examples": [
           {
             "ja": "ちょっと みどり 町て ください。",
             "kana": "ちょっと みどり まちて ください。",
-            "vi": "Xin hãy một thị trấn hư cấu một chút."
+            "vi": "Xin hãy một thị trấn  một chút."
           }
         ]
       },
@@ -14942,13 +14942,13 @@
         "kana": "みんなの インタビュー",
         "romaji": "minnano intabyū",
         "hanviet": "",
-        "meaning": "một chương trình truyền hình hư cấu",
+        "meaning": "みんなの インタビュー",
         "meaning_en": "a fictitious TV programme\",",
         "examples": [
           {
             "ja": "図書館で みんなの インタビューに ついて 調べました。",
             "kana": "としょかんで みんなの いんたびゅーに ついて しらべました。",
-            "vi": "Tôi đã tìm hiểu về một chương trình truyền hình hư cấu ở thư viện."
+            "vi": "Tôi đã tìm hiểu về một chương trình truyền hình  ở thư viện."
           }
         ]
       },
@@ -16173,13 +16173,13 @@
         "kana": "だいがくまえ",
         "romaji": "daigakumae",
         "hanviet": "THÁI HỌC TIỀN",
-        "meaning": "một trạm xe buýt hư cấu",
+        "meaning": "大学前",
         "meaning_en": "a fictitious bus stop\",",
         "examples": [
           {
             "ja": "図書館で 大学前に ついて 調べました。",
             "kana": "としょかんで だいがくまえに ついて しらべました。",
-            "vi": "Tôi đã tìm hiểu về một trạm xe buýt hư cấu ở thư viện."
+            "vi": "Tôi đã tìm hiểu về một trạm xe buýt  ở thư viện."
           }
         ]
       },
@@ -19682,13 +19682,13 @@
         "kana": "ヨーネン",
         "romaji": "yōnen",
         "hanviet": "",
-        "meaning": "một công ty hư cấu",
+        "meaning": "ヨーネン",
         "meaning_en": "a fictitious company\",",
         "examples": [
           {
             "ja": "図書館で ヨーネンに ついて 調べました。",
             "kana": "としょかんで よーねんに ついて しらべました。",
-            "vi": "Tôi đã tìm hiểu về một công ty hư cấu ở thư viện."
+            "vi": "Tôi đã tìm hiểu về một công ty  ở thư viện."
           }
         ]
       },
@@ -20481,13 +20481,13 @@
         "kana": "みんなの アンケート",
         "romaji": "minnano ankēto",
         "hanviet": "",
-        "meaning": "tiêu đề của một câu hỏi hư cấu",
+        "meaning": "tiêu đề của",
         "meaning_en": "title of a fictitious questionnaire\",",
         "examples": [
           {
             "ja": "図書館で みんなの アンケートに ついて 調べました。",
             "kana": "としょかんで みんなの あんけーとに ついて しらべました。",
-            "vi": "Tôi đã tìm hiểu về tiêu đề của một câu hỏi hư cấu ở thư viện."
+            "vi": "Tôi đã tìm hiểu về tiêu đề của một câu hỏi  ở thư viện."
           }
         ]
       },
@@ -21028,13 +21028,13 @@
         "kana": "げんきちゃ",
         "romaji": "genkicha",
         "hanviet": "NGUYÊN KHÍ TRÀ",
-        "meaning": "một loại trà hư cấu",
+        "meaning": "Trà Genkicha (nhãn hiệu trà)",
         "meaning_en": "a fictitious tea\",",
         "examples": [
           {
             "ja": "図書館で 元気茶に ついて 調べました。",
             "kana": "としょかんで げんきちゃに ついて しらべました。",
-            "vi": "Tôi đã tìm hiểu về một loại trà hư cấu ở thư viện."
+            "vi": "Tôi đã tìm hiểu về một loại trà  ở thư viện."
           }
         ]
       },
@@ -21046,13 +21046,13 @@
         "kana": "ほんだえき",
         "romaji": "hondaeki",
         "hanviet": "BÔN ĐIỀN DỊCH",
-        "meaning": "một trạm hư cấu",
+        "meaning": "Ga Honda",
         "meaning_en": "a fictitious station\",",
         "examples": [
           {
             "ja": "図書館で 本田駅に ついて 調べました。",
             "kana": "としょかんで ほんだえきに ついて しらべました。",
-            "vi": "Tôi đã tìm hiểu về một trạm hư cấu ở thư viện."
+            "vi": "Tôi đã tìm hiểu về một trạm  ở thư viện."
           }
         ]
       },
@@ -21064,13 +21064,13 @@
         "kana": "としょかんまえ",
         "romaji": "toshokanmae",
         "hanviet": "ĐỒ THƯ QUÁN TIỀN",
-        "meaning": "một trạm xe buýt hư cấu",
+        "meaning": "Trạm trước thư viện",
         "meaning_en": "a fictitious bus stop\",",
         "examples": [
           {
             "ja": "図書館で 図書館前に ついて 調べました。",
             "kana": "としょかんで としょかんまえに ついて しらべました。",
-            "vi": "Tôi đã tìm hiểu về một trạm xe buýt hư cấu ở thư viện."
+            "vi": "Tôi đã tìm hiểu về một trạm xe buýt  ở thư viện."
           }
         ]
       },
@@ -22639,7 +22639,7 @@
           {
             "ja": "図書館で エドアストアに ついて 調べました。",
             "kana": "としょかんで えどあすとあに ついて しらべました。",
-            "vi": "Tôi đã tìm hiểu về cửa hàng hư cấu ở thư viện."
+            "vi": "Tôi đã tìm hiểu về cửa hàng  ở thư viện."
           }
         ]
       },
@@ -32854,7 +32854,7 @@
           {
             "ja": "図書館で みんなの 学校に ついて 調べました。",
             "kana": "としょかんで みんなの がっこうに ついて しらべました。",
-            "vi": "Tôi đã tìm hiểu về école de japonais hư cấu ở thư viện."
+            "vi": "Tôi đã tìm hiểu về école de japonais  ở thư viện."
           }
         ]
       },
@@ -32866,13 +32866,13 @@
         "kana": "だいこくずし",
         "romaji": "daikokuzushi",
         "hanviet": "THÁI HẮC",
-        "meaning": "một nhà hàng sushi hư cấu",
+        "meaning": "Quán sushi Daikoku",
         "meaning_en": "a fictitious sushi restaurant\",",
         "examples": [
           {
             "ja": "図書館で 大黒ずしに ついて 調べました。",
             "kana": "としょかんで だいこくずしに ついて しらべました。",
-            "vi": "Tôi đã tìm hiểu về một nhà hàng sushi hư cấu ở thư viện."
+            "vi": "Tôi đã tìm hiểu về một nhà hàng sushi  ở thư viện."
           }
         ]
       },
@@ -32884,13 +32884,13 @@
         "kana": "IMCパソコンきょうしつ",
         "romaji": "IMCpasokonkyōshitsu",
         "hanviet": "GIAO THẤT",
-        "meaning": "một trường máy tính hư cấu",
+        "meaning": "Công ty IMC (công ty máy tính)",
         "meaning_en": "a fictitious computer school\",",
         "examples": [
           {
             "ja": "図書館で IMCパソコン教室に ついて 調べました。",
             "kana": "としょかんで IMCぱそこんきょうしつに ついて しらべました。",
-            "vi": "Tôi đã tìm hiểu về một trường máy tính hư cấu ở thư viện."
+            "vi": "Tôi đã tìm hiểu về một trường máy tính  ở thư viện."
           }
         ]
       },
@@ -32902,13 +32902,13 @@
         "kana": "ははの あじ",
         "romaji": "hahano aji",
         "hanviet": "MÔ VỊ",
-        "meaning": "một cuốn sách hư cấu",
+        "meaning": "母の 味",
         "meaning_en": "a fictitious book\",",
         "examples": [
           {
             "ja": "図書館で 母の 味に ついて 調べました。",
             "kana": "としょかんで ははの あじに ついて しらべました。",
-            "vi": "Tôi đã tìm hiểu về một cuốn sách hư cấu ở thư viện."
+            "vi": "Tôi đã tìm hiểu về một cuốn sách  ở thư viện."
           }
         ]
       },
@@ -32938,13 +32938,13 @@
         "kana": "さとうしか",
         "romaji": "satōshika",
         "hanviet": "TÁ ĐẰNG XỈ KHOA",
-        "meaning": "một phòng khám nha khoa hư cấu",
+        "meaning": "Phòng khám nha khoa Sato",
         "meaning_en": "a fictitious dental clinic\",",
         "examples": [
           {
             "ja": "図書館で 佐藤歯科に ついて 調べました。",
             "kana": "としょかんで さとうしかに ついて しらべました。",
-            "vi": "Tôi đã tìm hiểu về một phòng khám nha khoa hư cấu ở thư viện."
+            "vi": "Tôi đã tìm hiểu về một phòng khám nha khoa  ở thư viện."
           }
         ]
       },
@@ -32956,13 +32956,13 @@
         "kana": "まいにちクッキング",
         "romaji": "mainichikukkingu",
         "hanviet": "MỖI NHẬT",
-        "meaning": "một trường dạy nấu ăn hư cấu",
+        "meaning": "毎日クッキング",
         "meaning_en": "a fictitious cooking school\",",
         "examples": [
           {
             "ja": "図書館で 毎日クッキングに ついて 調べました。",
             "kana": "としょかんで まいにちくっきんぐに ついて しらべました。",
-            "vi": "Tôi đã tìm hiểu về một trường dạy nấu ăn hư cấu ở thư viện."
+            "vi": "Tôi đã tìm hiểu về một trường dạy nấu ăn  ở thư viện."
           }
         ]
       },
@@ -41591,13 +41591,13 @@
         "kana": "こどもニュース",
         "romaji": "kodomonyūsu",
         "hanviet": "",
-        "meaning": "một chương trình tin tức hư cấu",
+        "meaning": "こどもニュース",
         "meaning_en": "a fictitious news programme\",",
         "examples": [
           {
             "ja": "図書館で こどもニュースに ついて 調べました。",
             "kana": "としょかんで こどもにゅーすに ついて しらべました。",
-            "vi": "Tôi đã tìm hiểu về một chương trình tin tức hư cấu ở thư viện."
+            "vi": "Tôi đã tìm hiểu về một chương trình tin tức  ở thư viện."
           }
         ]
       },
@@ -43405,13 +43405,13 @@
         "kana": "ホテルひろしま",
         "romaji": "hoteruhiroshima",
         "hanviet": "",
-        "meaning": "một khách sạn hư cấu",
+        "meaning": "ホテルひろしま",
         "meaning_en": "a fictitious hotel\",",
         "examples": [
           {
             "ja": "図書館で ホテルひろしまに ついて 調べました。",
             "kana": "としょかんで ほてるひろしまに ついて しらべました。",
-            "vi": "Tôi đã tìm hiểu về một khách sạn hư cấu ở thư viện."
+            "vi": "Tôi đã tìm hiểu về một khách sạn  ở thư viện."
           }
         ]
       },
@@ -47454,13 +47454,13 @@
         "kana": "ひまわりしょうがっこう",
         "romaji": "himawarishōgakkō",
         "hanviet": "TIỂU HỌC GIÁO",
-        "meaning": "trường tiểu học hư cấu",
+        "meaning": "Trường tiểu học Himawari",
         "meaning_en": "fictitious elementary school\",",
         "examples": [
           {
             "ja": "図書館で ひまわり小学校に ついて 調べました。",
             "kana": "としょかんで ひまわりしょうがっこうに ついて しらべました。",
-            "vi": "Tôi đã tìm hiểu về trường tiểu học hư cấu ở thư viện."
+            "vi": "Tôi đã tìm hiểu về trường tiểu học  ở thư viện."
           }
         ]
       },

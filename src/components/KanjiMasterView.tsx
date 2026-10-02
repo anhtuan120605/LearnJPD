@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import { KanjiItem, WordItem } from '../types';
-import { Search, Volume2, Star, Sparkles, X, Map, LayoutGrid, PenTool } from 'lucide-react';
+import { Search, Volume2, Star, Sparkles, X, Map, LayoutGrid, PenTool, Layers, Brain, Gamepad2 } from 'lucide-react';
 import { speakJapanese } from '../lib/audio';
 import { KanjiRoadmapView } from './KanjiRoadmapView';
 import { KanjiStrokeModal } from './KanjiStrokeModal';
+import { KanjiFlashcardView } from './KanjiFlashcardView';
+import { KanjiLearnView } from './KanjiLearnView';
+import { KanjiMatchGameView } from './KanjiMatchGameView';
 
 interface KanjiMasterViewProps {
   kanjiList: KanjiItem[];
@@ -17,6 +20,8 @@ interface KanjiMasterViewProps {
   streak?: number;
 }
 
+export type KanjiStudySubTab = 'roadmap' | 'flashcard' | 'learn' | 'match' | 'explorer';
+
 export const KanjiMasterView: React.FC<KanjiMasterViewProps> = ({
   kanjiList,
   allVocabWords = [],
@@ -28,7 +33,7 @@ export const KanjiMasterView: React.FC<KanjiMasterViewProps> = ({
   onToggleFavorite,
   streak = 0,
 }) => {
-  const [activeSubTab, setActiveSubTab] = useState<'roadmap' | 'explorer'>('roadmap');
+  const [activeSubTab, setActiveSubTab] = useState<KanjiStudySubTab>('roadmap');
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedKanji, setSelectedKanji] = useState<KanjiItem | null>(null);
   const [strokeKanji, setStrokeKanji] = useState<KanjiItem | null>(null);
@@ -49,66 +54,26 @@ export const KanjiMasterView: React.FC<KanjiMasterViewProps> = ({
     return true;
   });
 
+  const masteredCount = kanjiList.filter(k => masteredKanji.includes(k.id)).length;
+  const favoriteCount = kanjiList.filter(k => favoriteKanji.includes(k.id)).length;
+
   return (
     <div className="space-y-6">
-      {/* Chuyển đổi chế độ: Lộ trình 10 chữ / Tra cứu từ điển */}
-      <div className="flex items-center justify-between bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 p-2 rounded-2xl shadow-sm">
-        <div className="flex items-center space-x-1.5">
-          <button
-            onClick={() => setActiveSubTab('roadmap')}
-            className={`px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition flex items-center space-x-2 ${
-              activeSubTab === 'roadmap'
-                ? 'bg-blue-600 text-white shadow-md shadow-blue-500/20'
-                : 'text-slate-600 dark:text-zinc-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-zinc-800'
-            }`}
-          >
-            <Map className="w-4 h-4" />
-            <span>Lộ trình học Kanji (10 chữ/ngày)</span>
-          </button>
-
-          <button
-            onClick={() => setActiveSubTab('explorer')}
-            className={`px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition flex items-center space-x-2 ${
-              activeSubTab === 'explorer'
-                ? 'bg-rose-500 text-white shadow-md shadow-rose-500/20'
-                : 'text-slate-600 dark:text-zinc-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-zinc-800'
-            }`}
-          >
-            <LayoutGrid className="w-4 h-4" />
-            <span>Tra cứu từ điển Kanji ({kanjiList.length})</span>
-          </button>
-        </div>
-      </div>
-
-      {activeSubTab === 'roadmap' ? (
-        <KanjiRoadmapView
-          kanjiList={kanjiList}
-          allVocabWords={allVocabWords}
-          currentLevel={currentLevel}
-          onSelectLevel={onSelectLevel}
-          masteredKanji={masteredKanji}
-          favoriteKanji={favoriteKanji}
-          onToggleMaster={onToggleMaster}
-          onToggleFavorite={onToggleFavorite}
-          streak={streak}
-        />
-      ) : (
-        <div className="space-y-6">
-          {/* Level Selector N5 -> N1 & Stats */}
-          <div className="bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 rounded-3xl p-6 shadow-sm">
-            <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-              <div>
-                <h2 className="text-xl font-extrabold text-slate-900 dark:text-white flex items-center space-x-2">
-                  <Sparkles className="w-5 h-5 text-rose-500" />
-                  <span>Chinh Phục Kanji Chuyên Sâu ({currentLevel})</span>
-                </h2>
+      {/* Top Banner: Chọn Trình độ JLPT & Thống kê nhanh */}
+      <div className="bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 rounded-3xl p-5 sm:p-6 shadow-sm">
+        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          <div>
+            <h2 className="text-xl sm:text-2xl font-black text-slate-900 dark:text-white flex items-center space-x-2">
+              <Sparkles className="w-5 h-5 text-rose-500" />
+              <span>Chinh Phục Kanji Chuyên Sâu ({currentLevel})</span>
+            </h2>
             <p className="text-xs text-slate-500 dark:text-zinc-400 mt-1">
-              Đầy đủ Âm Hán Việt, Onyomi, Kunyomi, Số nét và Nghĩa chi tiết
+              Đã thuộc <strong className="text-emerald-500">{masteredCount}</strong> / {kanjiList.length} chữ ({Math.round((masteredCount / Math.max(1, kanjiList.length)) * 100)}%) • Yêu thích <strong className="text-amber-500">{favoriteCount}</strong> chữ
             </p>
           </div>
 
-          {/* Level Tabs */}
-          <div className="flex items-center space-x-1 bg-slate-100 dark:bg-zinc-800 p-1.5 rounded-2xl">
+          {/* Cấp độ JLPT N5 -> N1 */}
+          <div className="flex items-center space-x-1 bg-slate-100 dark:bg-zinc-800 p-1.5 rounded-2xl shrink-0">
             {['N5', 'N4', 'N3', 'N2', 'N1'].map((lvl) => {
               const isDemo = ['N3', 'N2', 'N1'].includes(lvl);
               const isSelected = currentLevel === lvl;
@@ -147,27 +112,167 @@ export const KanjiMasterView: React.FC<KanjiMasterViewProps> = ({
             </span>
           </div>
         )}
+      </div>
 
-        {/* Search & Filter */}
-        <div className="mt-6 flex flex-col sm:flex-row items-center justify-between gap-4 pt-4 border-t border-slate-100 dark:border-zinc-800">
-          <div className="relative w-full sm:w-72">
-            <Search className="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2" />
-            <input
-              type="text"
-              placeholder="Tìm Kanji, Hán Việt, On, Kun..."
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-              className="w-full pl-10 pr-4 py-2 bg-slate-50 dark:bg-zinc-800 border border-slate-200 dark:border-zinc-700/60 rounded-xl text-xs focus:outline-none focus:ring-2 focus:ring-rose-500/20"
-            />
-          </div>
+      {/* Chuyển đổi chế độ học tập đa dạng (Tương tự Từ vựng Quizlet Plus) */}
+      <div className="bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 p-2 rounded-2xl shadow-sm overflow-x-auto">
+        <div className="flex items-center space-x-1.5 min-w-max">
+          <button
+            onClick={() => setActiveSubTab('roadmap')}
+            className={`px-3.5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition flex items-center space-x-2 ${
+              activeSubTab === 'roadmap'
+                ? 'bg-blue-600 text-white shadow-md shadow-blue-500/20'
+                : 'text-slate-600 dark:text-zinc-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-zinc-800'
+            }`}
+          >
+            <Map className="w-4 h-4" />
+            <span>Lộ trình (10 chữ/ngày)</span>
+          </button>
 
-          <div className="flex items-center space-x-2 text-xs font-semibold">
-            <span className="text-slate-400">
-              Đã thuộc: <strong className="text-emerald-500">{kanjiList.filter(k => masteredKanji.includes(k.id)).length}</strong> / {kanjiList.length}
-            </span>
-          </div>
+          <button
+            onClick={() => setActiveSubTab('flashcard')}
+            className={`px-3.5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition flex items-center space-x-2 ${
+              activeSubTab === 'flashcard'
+                ? 'bg-rose-500 text-white shadow-md shadow-rose-500/20'
+                : 'text-slate-600 dark:text-zinc-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-zinc-800'
+            }`}
+          >
+            <Layers className="w-4 h-4" />
+            <span>Flashcard 3D</span>
+          </button>
+
+          <button
+            onClick={() => setActiveSubTab('learn')}
+            className={`px-3.5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition flex items-center space-x-2 ${
+              activeSubTab === 'learn'
+                ? 'bg-amber-500 text-white shadow-md shadow-amber-500/20'
+                : 'text-slate-600 dark:text-zinc-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-zinc-800'
+            }`}
+          >
+            <Brain className="w-4 h-4" />
+            <span>Học thông minh (Learn)</span>
+          </button>
+
+          <button
+            onClick={() => setActiveSubTab('match')}
+            className={`px-3.5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition flex items-center space-x-2 ${
+              activeSubTab === 'match'
+                ? 'bg-indigo-600 text-white shadow-md shadow-indigo-500/20'
+                : 'text-slate-600 dark:text-zinc-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-zinc-800'
+            }`}
+          >
+            <Gamepad2 className="w-4 h-4" />
+            <span>Ghép thẻ Match</span>
+          </button>
+
+          <button
+            onClick={() => setActiveSubTab('explorer')}
+            className={`px-3.5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition flex items-center space-x-2 ${
+              activeSubTab === 'explorer'
+                ? 'bg-teal-600 text-white shadow-md shadow-teal-500/20'
+                : 'text-slate-600 dark:text-zinc-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-zinc-800'
+            }`}
+          >
+            <LayoutGrid className="w-4 h-4" />
+            <span>Tra cứu từ điển ({kanjiList.length})</span>
+          </button>
         </div>
       </div>
+
+      {/* NỘI DUNG TỪNG PHÂN HỆ */}
+      {activeSubTab === 'roadmap' && (
+        <KanjiRoadmapView
+          kanjiList={kanjiList}
+          allVocabWords={allVocabWords}
+          currentLevel={currentLevel}
+          onSelectLevel={onSelectLevel}
+          masteredKanji={masteredKanji}
+          favoriteKanji={favoriteKanji}
+          onToggleMaster={onToggleMaster}
+          onToggleFavorite={onToggleFavorite}
+          streak={streak}
+        />
+      )}
+
+      {activeSubTab === 'flashcard' && (
+        <KanjiFlashcardView
+          kanjiList={kanjiList}
+          masteredKanji={masteredKanji}
+          favoriteKanji={favoriteKanji}
+          onToggleMaster={onToggleMaster}
+          onToggleFavorite={onToggleFavorite}
+        />
+      )}
+
+      {activeSubTab === 'learn' && (
+        <KanjiLearnView
+          kanjiList={kanjiList}
+          masteredKanji={masteredKanji}
+          favoriteKanji={favoriteKanji}
+          onAddMastered={onToggleMaster}
+          onToggleFavorite={onToggleFavorite}
+        />
+      )}
+
+      {activeSubTab === 'match' && (
+        <KanjiMatchGameView
+          kanjiList={kanjiList}
+          favoriteKanji={favoriteKanji}
+          currentLevel={currentLevel}
+          onToggleFavorite={onToggleFavorite}
+        />
+      )}
+
+      {activeSubTab === 'explorer' && (
+        <div className="space-y-6">
+          {/* Search & Filter Bar */}
+          <div className="bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 rounded-2xl p-4 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div className="relative w-full sm:w-80">
+              <Search className="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2" />
+              <input
+                type="text"
+                placeholder="Tìm Kanji, Hán Việt, On, Kun, nghĩa..."
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                className="w-full pl-10 pr-4 py-2 bg-slate-50 dark:bg-zinc-800 border border-slate-200 dark:border-zinc-700/60 rounded-xl text-xs focus:outline-none focus:ring-2 focus:ring-rose-500/20"
+              />
+            </div>
+
+            <div className="flex items-center space-x-2 text-xs font-semibold">
+              <button
+                onClick={() => setFilterType('all')}
+                className={`px-3 py-1.5 rounded-lg transition ${
+                  filterType === 'all'
+                    ? 'bg-slate-900 dark:bg-white text-white dark:text-slate-900 font-bold'
+                    : 'text-slate-500 hover:text-slate-900 dark:hover:text-white'
+                }`}
+              >
+                Tất cả ({kanjiList.length})
+              </button>
+              <button
+                onClick={() => setFilterType('unlearned')}
+                className={`px-3 py-1.5 rounded-lg transition ${
+                  filterType === 'unlearned'
+                    ? 'bg-rose-500 text-white font-bold'
+                    : 'text-slate-500 hover:text-rose-500'
+                }`}
+              >
+                Chưa thuộc ({kanjiList.length - masteredCount})
+              </button>
+              <button
+                onClick={() => setFilterType('mastered')}
+                className={`px-3 py-1.5 rounded-lg transition ${
+                  filterType === 'mastered'
+                    ? 'bg-emerald-500 text-white font-bold'
+                    : 'text-slate-500 hover:text-emerald-500'
+                }`}
+              >
+                Đã thuộc ({masteredCount})
+              </button>
+            </div>
+          </div>
+
+
 
       {/* Grid thẻ Kanji */}
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3.5">

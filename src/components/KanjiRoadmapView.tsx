@@ -51,13 +51,17 @@ interface KanjiRoadmapViewProps {
 export const ROADMAP_DAY_TOPICS: Record<string, Record<number, string>> = {
   N5: {
     1: 'Số đếm cơ bản (1 ~ 10)',
-    2: 'Tiền tệ & Thứ ngày trong tuần',
-    3: 'Thời gian & Lịch trình',
+    2: 'Số lớn, Tiền tệ & Thứ ngày trong tuần',
+    3: 'Thời gian, Buổi & Lịch trình',
     4: 'Phương hướng & Vị trí không gian',
-    5: 'Con người & Gia đình',
-    6: 'Trường học & Tính chất',
-    7: 'Thiên nhiên & Di chuyển',
-    8: 'Sinh hoạt & Giao tiếp',
+    5: 'Con người & Gia đình ruột thịt',
+    6: 'Bộ phận cơ thể con người',
+    7: 'Trường học, Danh xưng & Quốc gia',
+    8: 'Thiên nhiên, Thời tiết & Động thực vật',
+    9: 'Tính chất & Màu sắc cơ bản',
+    10: 'Hành động di chuyển & Ăn uống',
+    11: 'Hoạt động giao tiếp & Ngôn ngữ',
+    12: 'Giao thông, Địa điểm & Xã hội'
   },
   N4: {
     1: 'Bộ phận cơ thể & Sức khoẻ',
@@ -73,10 +77,7 @@ export const ROADMAP_DAY_TOPICS: Record<string, Record<number, string>> = {
     11: 'Nhà cửa & Nơi công cộng',
     12: 'Hành động sinh hoạt thường nhật',
     13: 'Nghệ thuật, Giải trí & Du lịch',
-    14: 'Công việc & Xã hội',
-    15: 'Giao tiếp & Tiền tệ',
-    16: 'Thời gian, Thế giới & Đo lường',
-    17: 'Trạng thái & Chuyển biến',
+    14: 'Công việc, Xã hội & Đời sống'
   },
   N3: {
     1: 'Đô thị & Giao thông công cộng',

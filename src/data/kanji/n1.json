@@ -41,7 +41,7 @@
   {
     "id": "kanji-丁",
     "kanji": "丁",
-    "hanviet": "CHÊNH TRANH TRÀNH ĐINH",
+    "hanviet": "CHÊNH",
     "strokes": 2,
     "jlpt": "N1",
     "onyomi": [
@@ -108,7 +108,7 @@
   {
     "id": "kanji-又",
     "kanji": "又",
-    "hanviet": "HỮU HỰU",
+    "hanviet": "HỮU",
     "strokes": 2,
     "jlpt": "N1",
     "onyomi": [
@@ -141,7 +141,7 @@
   {
     "id": "kanji-矢",
     "kanji": "矢",
-    "hanviet": "THI THỈ",
+    "hanviet": "THỈ",
     "strokes": 5,
     "jlpt": "N1",
     "onyomi": [
@@ -179,7 +179,7 @@
   {
     "id": "kanji-羊",
     "kanji": "羊",
-    "hanviet": "DƯƠNG TƯỜNG",
+    "hanviet": "DƯƠNG",
     "strokes": 6,
     "jlpt": "N1",
     "onyomi": [
@@ -208,7 +208,7 @@
   {
     "id": "kanji-氏",
     "kanji": "氏",
-    "hanviet": "CHI THỊ",
+    "hanviet": "CHI",
     "strokes": 4,
     "jlpt": "N1",
     "onyomi": [
@@ -254,7 +254,7 @@
   {
     "id": "kanji-仮",
     "kanji": "仮",
-    "hanviet": "GIÁ GIẢ",
+    "hanviet": "GIÁ",
     "strokes": 6,
     "jlpt": "N1",
     "onyomi": [
@@ -864,20 +864,13 @@
         "meaning": "người biện hộ; luật sư",
         "hanviet": "BIỀN HỘ SĨ",
         "level": "N4"
-      },
-      {
-        "word": "富士大学",
-        "reading": "ふじだいがく",
-        "meaning": "Trường đại học Phú Sĩ (tên trường hư cấu trong giáo trình)",
-        "hanviet": "PHÚ SĨ ĐẠI HỌC",
-        "level": "N5"
       }
     ]
   },
   {
     "id": "kanji-標",
     "kanji": "標",
-    "hanviet": "PHIÊU TIÊU",
+    "hanviet": "PHIÊU",
     "strokes": 15,
     "jlpt": "N1",
     "onyomi": [
@@ -954,7 +947,7 @@
   {
     "id": "kanji-鏡",
     "kanji": "鏡",
-    "hanviet": "CẢNH KÍNH",
+    "hanviet": "CẢNH",
     "strokes": 19,
     "jlpt": "N1",
     "onyomi": [
@@ -1016,7 +1009,7 @@
   {
     "id": "kanji-養",
     "kanji": "養",
-    "hanviet": "DƯỜNG DƯỠNG DƯỢNG DẠNG",
+    "hanviet": "DƯỜNG",
     "strokes": 15,
     "jlpt": "N1",
     "onyomi": [
@@ -1169,7 +1162,7 @@
   {
     "id": "kanji-松",
     "kanji": "松",
-    "hanviet": "TUNG TÔNG TÙNG",
+    "hanviet": "TUNG",
     "strokes": 8,
     "jlpt": "N1",
     "onyomi": [
@@ -1408,7 +1401,7 @@
   {
     "id": "kanji-司",
     "kanji": "司",
-    "hanviet": "TI TY TƯ",
+    "hanviet": "TI",
     "strokes": 5,
     "jlpt": "N1",
     "onyomi": [
@@ -1502,7 +1495,7 @@
   {
     "id": "kanji-紀",
     "kanji": "紀",
-    "hanviet": "KỈ KỶ",
+    "hanviet": "KỈ",
     "strokes": 9,
     "jlpt": "N1",
     "onyomi": [
@@ -1708,7 +1701,7 @@
   {
     "id": "kanji-弁",
     "kanji": "弁",
-    "hanviet": "BIỀN BIỆN BÀN",
+    "hanviet": "BIỀN",
     "strokes": 5,
     "jlpt": "N1",
     "onyomi": [
@@ -1901,7 +1894,7 @@
   {
     "id": "kanji-冒",
     "kanji": "冒",
-    "hanviet": "MẠO MẶC",
+    "hanviet": "MẠO",
     "strokes": 9,
     "jlpt": "N1",
     "onyomi": [
@@ -2030,7 +2023,7 @@
   {
     "id": "kanji-結",
     "kanji": "結",
-    "hanviet": "KẾ KẾT",
+    "hanviet": "KẾT",
     "strokes": 12,
     "jlpt": "N1",
     "onyomi": [
@@ -2222,7 +2215,7 @@
   {
     "id": "kanji-虚",
     "kanji": "虚",
-    "hanviet": "HƯ KHƯ",
+    "hanviet": "HƯ",
     "strokes": 11,
     "jlpt": "N1",
     "onyomi": [
@@ -2259,7 +2252,7 @@
   {
     "id": "kanji-幻",
     "kanji": "幻",
-    "hanviet": "HUYỄN ẢO",
+    "hanviet": "HUYỄN",
     "strokes": 4,
     "jlpt": "N1",
     "onyomi": [
@@ -2325,7 +2318,7 @@
   {
     "id": "kanji-汽",
     "kanji": "汽",
-    "hanviet": "HẤT KHÍ ẤT",
+    "hanviet": "HẤT",
     "strokes": 7,
     "jlpt": "N1",
     "onyomi": [
@@ -2388,7 +2381,7 @@
   {
     "id": "kanji-禅",
     "kanji": "禅",
-    "hanviet": "THIỀN THIỆN",
+    "hanviet": "THIỀN",
     "strokes": 13,
     "jlpt": "N1",
     "onyomi": [
@@ -2422,7 +2415,7 @@
   {
     "id": "kanji-句",
     "kanji": "句",
-    "hanviet": "CÂU CÚ CẤU",
+    "hanviet": "CÂU",
     "strokes": 5,
     "jlpt": "N1",
     "onyomi": [
@@ -2482,7 +2475,7 @@
   {
     "id": "kanji-節",
     "kanji": "節",
-    "hanviet": "TIẾT TIỆT",
+    "hanviet": "TIẾT",
     "strokes": 13,
     "jlpt": "N1",
     "onyomi": [
@@ -2717,7 +2710,7 @@
   {
     "id": "kanji-履",
     "kanji": "履",
-    "hanviet": "LÍ LÝ",
+    "hanviet": "LÍ",
     "strokes": 15,
     "jlpt": "N1",
     "onyomi": [
@@ -2759,7 +2752,7 @@
   {
     "id": "kanji-善",
     "kanji": "善",
-    "hanviet": "THIẾN THIỆN",
+    "hanviet": "THIẾN",
     "strokes": 12,
     "jlpt": "N1",
     "onyomi": [
@@ -2891,7 +2884,7 @@
   {
     "id": "kanji-率",
     "kanji": "率",
-    "hanviet": "LUẬT LÔ SOÁT SUÝ SUẤT",
+    "hanviet": "LUẬT",
     "strokes": 11,
     "jlpt": "N1",
     "onyomi": [
@@ -2994,7 +2987,7 @@
   {
     "id": "kanji-妨",
     "kanji": "妨",
-    "hanviet": "PHƯƠNG PHƯỚNG",
+    "hanviet": "PHƯƠNG",
     "strokes": 7,
     "jlpt": "N1",
     "onyomi": [
@@ -3193,7 +3186,7 @@
   {
     "id": "kanji-臭",
     "kanji": "臭",
-    "hanviet": "KHỨU XÚ",
+    "hanviet": "KHỨU",
     "strokes": 9,
     "jlpt": "N1",
     "onyomi": [
@@ -3414,7 +3407,7 @@
   {
     "id": "kanji-派",
     "kanji": "派",
-    "hanviet": "BA PHÁI",
+    "hanviet": "BA",
     "strokes": 9,
     "jlpt": "N1",
     "onyomi": [
@@ -3786,7 +3779,7 @@
   {
     "id": "kanji-条",
     "kanji": "条",
-    "hanviet": "THIÊU ĐIÊU ĐIỀU",
+    "hanviet": "THIÊU",
     "strokes": 7,
     "jlpt": "N1",
     "onyomi": [
@@ -4060,7 +4053,7 @@
   {
     "id": "kanji-脱",
     "kanji": "脱",
-    "hanviet": "THOÁT ĐOÁI",
+    "hanviet": "THOÁT",
     "strokes": 11,
     "jlpt": "N1",
     "onyomi": [
@@ -4529,13 +4522,6 @@
     "radical": "thảo 艸 (+15 nét)",
     "examples": [
       {
-        "word": "佐藤歯科",
-        "reading": "さとうしか",
-        "meaning": "một phòng khám nha khoa hư cấu",
-        "hanviet": "TÁ ĐẰNG XỈ KHOA",
-        "level": "N4"
-      },
-      {
         "word": "安藤百福",
         "reading": "あんどうももふく",
         "meaning": "doanh nhân và nhà phát minh người Nhật (1910-2007)",
@@ -4687,7 +4673,7 @@
   {
     "id": "kanji-提",
     "kanji": "提",
-    "hanviet": "THÌ ĐỀ ĐỂ",
+    "hanviet": "THÌ",
     "strokes": 12,
     "jlpt": "N1",
     "onyomi": [
@@ -4757,7 +4743,7 @@
   {
     "id": "kanji-援",
     "kanji": "援",
-    "hanviet": "VIÊN VIỆN",
+    "hanviet": "VIỆN",
     "strokes": 12,
     "jlpt": "N1",
     "onyomi": [
@@ -5101,7 +5087,7 @@
   {
     "id": "kanji-崎",
     "kanji": "崎",
-    "hanviet": "KHI KỲ",
+    "hanviet": "KHI",
     "strokes": 11,
     "jlpt": "N1",
     "onyomi": [
@@ -5134,7 +5120,7 @@
   {
     "id": "kanji-看",
     "kanji": "看",
-    "hanviet": "KHAN KHÁN",
+    "hanviet": "KHAN",
     "strokes": 9,
     "jlpt": "N1",
     "onyomi": [
@@ -5187,7 +5173,7 @@
   {
     "id": "kanji-幹",
     "kanji": "幹",
-    "hanviet": "CAN CÁN HÀN",
+    "hanviet": "CAN",
     "strokes": 13,
     "jlpt": "N1",
     "onyomi": [
@@ -5242,7 +5228,7 @@
   {
     "id": "kanji-張",
     "kanji": "張",
-    "hanviet": "TRƯƠNG TRƯỚNG",
+    "hanviet": "TRƯƠNG",
     "strokes": 11,
     "jlpt": "N1",
     "onyomi": [
@@ -5341,7 +5327,7 @@
   {
     "id": "kanji-沢",
     "kanji": "沢",
-    "hanviet": "DỊCH THÍCH TRẠCH",
+    "hanviet": "DỊCH",
     "strokes": 7,
     "jlpt": "N1",
     "onyomi": [
@@ -5400,7 +5386,7 @@
   {
     "id": "kanji-施",
     "kanji": "施",
-    "hanviet": "DI DỊ THI THÍ THỈ",
+    "hanviet": "DI",
     "strokes": 9,
     "jlpt": "N1",
     "onyomi": [
@@ -5454,7 +5440,7 @@
   {
     "id": "kanji-俳",
     "kanji": "俳",
-    "hanviet": "BÀI BỒI",
+    "hanviet": "BÀI",
     "strokes": 10,
     "jlpt": "N1",
     "onyomi": [
@@ -5631,7 +5617,7 @@
   {
     "id": "kanji-載",
     "kanji": "載",
-    "hanviet": "TÁI TẠI TẢI",
+    "hanviet": "TÁI",
     "strokes": 13,
     "jlpt": "N1",
     "onyomi": [
@@ -5883,7 +5869,7 @@
   {
     "id": "kanji-株",
     "kanji": "株",
-    "hanviet": "CHU CHÂU",
+    "hanviet": "CHU",
     "strokes": 10,
     "jlpt": "N1",
     "onyomi": [
@@ -6033,7 +6019,7 @@
   {
     "id": "kanji-票",
     "kanji": "票",
-    "hanviet": "PHIÊU PHIẾU TIÊU",
+    "hanviet": "PHIÊU",
     "strokes": 11,
     "jlpt": "N1",
     "onyomi": [
@@ -6147,7 +6133,7 @@
   {
     "id": "kanji-逮",
     "kanji": "逮",
-    "hanviet": "ĐÃI ĐỆ",
+    "hanviet": "ĐÃI",
     "strokes": 11,
     "jlpt": "N1",
     "onyomi": [
@@ -6243,7 +6229,7 @@
   {
     "id": "kanji-鮮",
     "kanji": "鮮",
-    "hanviet": "TIÊN TIỂN",
+    "hanviet": "TIÊN",
     "strokes": 17,
     "jlpt": "N1",
     "onyomi": [
@@ -6285,7 +6271,7 @@
   {
     "id": "kanji-属",
     "kanji": "属",
-    "hanviet": "CHÚ CHÚC THUỘC",
+    "hanviet": "CHÚ",
     "strokes": 12,
     "jlpt": "N1",
     "onyomi": [
@@ -6387,7 +6373,7 @@
   {
     "id": "kanji-絞",
     "kanji": "絞",
-    "hanviet": "GIẢO HÀO",
+    "hanviet": "GIẢO",
     "strokes": 12,
     "jlpt": "N1",
     "onyomi": [
@@ -6516,7 +6502,7 @@
   {
     "id": "kanji-授",
     "kanji": "授",
-    "hanviet": "THỌ THỤ",
+    "hanviet": "THỌ",
     "strokes": 11,
     "jlpt": "N1",
     "onyomi": [
@@ -6577,7 +6563,7 @@
   {
     "id": "kanji-創",
     "kanji": "創",
-    "hanviet": "SANG SÁNG",
+    "hanviet": "SANG",
     "strokes": 12,
     "jlpt": "N1",
     "onyomi": [
@@ -6691,7 +6677,7 @@
   {
     "id": "kanji-較",
     "kanji": "較",
-    "hanviet": "GIÁC GIÁO GIẢO GIẾU",
+    "hanviet": "GIÁC",
     "strokes": 13,
     "jlpt": "N1",
     "onyomi": [
@@ -6730,7 +6716,7 @@
   {
     "id": "kanji-鉛",
     "kanji": "鉛",
-    "hanviet": "DIÊN DUYÊN",
+    "hanviet": "DIÊN",
     "strokes": 13,
     "jlpt": "N1",
     "onyomi": [
@@ -6870,7 +6856,7 @@
   {
     "id": "kanji-障",
     "kanji": "障",
-    "hanviet": "CHƯƠNG CHƯỚNG",
+    "hanviet": "CHƯƠNG",
     "strokes": 14,
     "jlpt": "N1",
     "onyomi": [
@@ -7097,7 +7083,7 @@
   {
     "id": "kanji-激",
     "kanji": "激",
-    "hanviet": "KHÍCH KÍCH",
+    "hanviet": "KHÍCH",
     "strokes": 16,
     "jlpt": "N1",
     "onyomi": [
@@ -7277,7 +7263,7 @@
   {
     "id": "kanji-徴",
     "kanji": "徴",
-    "hanviet": "CHUỶ TRƯNG TRỪNG",
+    "hanviet": "CHUỶ",
     "strokes": 14,
     "jlpt": "N1",
     "onyomi": [
@@ -7417,7 +7403,7 @@
   {
     "id": "kanji-振",
     "kanji": "振",
-    "hanviet": "CHÂN CHẤN CHẨN",
+    "hanviet": "CHÂN",
     "strokes": 10,
     "jlpt": "N1",
     "onyomi": [
@@ -7516,7 +7502,7 @@
   {
     "id": "kanji-豚",
     "kanji": "豚",
-    "hanviet": "ĐỒN ĐỘN",
+    "hanviet": "ĐỒN",
     "strokes": 11,
     "jlpt": "N1",
     "onyomi": [
@@ -7644,7 +7630,7 @@
   {
     "id": "kanji-屈",
     "kanji": "屈",
-    "hanviet": "KHUẤT QUẬT",
+    "hanviet": "KHUẤT",
     "strokes": 8,
     "jlpt": "N1",
     "onyomi": [
@@ -7700,7 +7686,7 @@
   {
     "id": "kanji-暇",
     "kanji": "暇",
-    "hanviet": "HẠ XUYẾT",
+    "hanviet": "HẠ",
     "strokes": 13,
     "jlpt": "N1",
     "onyomi": [
@@ -7764,7 +7750,7 @@
   {
     "id": "kanji-織",
     "kanji": "織",
-    "hanviet": "CHÍ CHỨC XÍ",
+    "hanviet": "CHÍ",
     "strokes": 18,
     "jlpt": "N1",
     "onyomi": [
@@ -8029,7 +8015,7 @@
   {
     "id": "kanji-症",
     "kanji": "症",
-    "hanviet": "CHỨNG TRƯNG",
+    "hanviet": "CHỨNG",
     "strokes": 10,
     "jlpt": "N1",
     "onyomi": [
@@ -8065,7 +8051,7 @@
   {
     "id": "kanji-締",
     "kanji": "締",
-    "hanviet": "ĐẾ ĐỀ",
+    "hanviet": "ĐẾ",
     "strokes": 15,
     "jlpt": "N1",
     "onyomi": [
@@ -8144,7 +8130,7 @@
   {
     "id": "kanji-迫",
     "kanji": "迫",
-    "hanviet": "BÀI BÁCH",
+    "hanviet": "BÀI",
     "strokes": 8,
     "jlpt": "N1",
     "onyomi": [
@@ -8340,7 +8326,7 @@
   {
     "id": "kanji-康",
     "kanji": "康",
-    "hanviet": "KHANG KHƯƠNG",
+    "hanviet": "KHANG",
     "strokes": 11,
     "jlpt": "N1",
     "onyomi": [
@@ -8567,7 +8553,7 @@
   {
     "id": "kanji-隊",
     "kanji": "隊",
-    "hanviet": "TOẠI TRUỴ ĐỘI",
+    "hanviet": "TOẠI",
     "strokes": 12,
     "jlpt": "N1",
     "onyomi": [
@@ -8710,7 +8696,7 @@
   {
     "id": "kanji-奇",
     "kanji": "奇",
-    "hanviet": "CƠ KÌ KỲ",
+    "hanviet": "CƠ",
     "strokes": 8,
     "jlpt": "N1",
     "onyomi": [
@@ -8804,7 +8790,7 @@
   {
     "id": "kanji-麗",
     "kanji": "麗",
-    "hanviet": "LY LỆ",
+    "hanviet": "LY",
     "strokes": 19,
     "jlpt": "N1",
     "onyomi": [
@@ -8839,7 +8825,7 @@
   {
     "id": "kanji-微",
     "kanji": "微",
-    "hanviet": "VI VY",
+    "hanviet": "VI",
     "strokes": 13,
     "jlpt": "N1",
     "onyomi": [
@@ -9059,7 +9045,7 @@
   {
     "id": "kanji-傘",
     "kanji": "傘",
-    "hanviet": "TÁN TẢN",
+    "hanviet": "TÁN",
     "strokes": 12,
     "jlpt": "N1",
     "onyomi": [
@@ -9096,7 +9082,7 @@
   {
     "id": "kanji-浜",
     "kanji": "浜",
-    "hanviet": "BANH BINH",
+    "hanviet": "BANH",
     "strokes": 10,
     "jlpt": "N1",
     "onyomi": [
@@ -9254,7 +9240,7 @@
   {
     "id": "kanji-監",
     "kanji": "監",
-    "hanviet": "GIAM GIÁM",
+    "hanviet": "GIAM",
     "strokes": 15,
     "jlpt": "N1",
     "onyomi": [
@@ -9447,7 +9433,7 @@
   {
     "id": "kanji-請",
     "kanji": "請",
-    "hanviet": "THỈNH TÌNH TÍNH",
+    "hanviet": "THỈNH",
     "strokes": 15,
     "jlpt": "N1",
     "onyomi": [
@@ -9546,7 +9532,7 @@
   {
     "id": "kanji-壊",
     "kanji": "壊",
-    "hanviet": "BÔI BÙI HOẠI KHÔI NHƯỠNG PHÔI",
+    "hanviet": "BÔI",
     "strokes": 16,
     "jlpt": "N1",
     "onyomi": [
@@ -9855,7 +9841,7 @@
   {
     "id": "kanji-宗",
     "kanji": "宗",
-    "hanviet": "TÔN TÔNG",
+    "hanviet": "TÔN",
     "strokes": 8,
     "jlpt": "N1",
     "onyomi": [
@@ -10097,7 +10083,7 @@
   {
     "id": "kanji-索",
     "kanji": "索",
-    "hanviet": "SÁCH TÁC",
+    "hanviet": "SÁCH",
     "strokes": 10,
     "jlpt": "N1",
     "onyomi": [
@@ -10143,7 +10129,7 @@
   {
     "id": "kanji-詳",
     "kanji": "詳",
-    "hanviet": "DƯƠNG TƯỜNG",
+    "hanviet": "DƯƠNG",
     "strokes": 13,
     "jlpt": "N1",
     "onyomi": [
@@ -10213,7 +10199,7 @@
   {
     "id": "kanji-渇",
     "kanji": "渇",
-    "hanviet": "HẠT KHÁT KIỆT",
+    "hanviet": "HẠT",
     "strokes": 11,
     "jlpt": "N1",
     "onyomi": [
@@ -10288,7 +10274,7 @@
   {
     "id": "kanji-旗",
     "kanji": "旗",
-    "hanviet": "KÌ KỲ",
+    "hanviet": "KÌ",
     "strokes": 14,
     "jlpt": "N1",
     "onyomi": [
@@ -10437,7 +10423,7 @@
   {
     "id": "kanji-懐",
     "kanji": "懐",
-    "hanviet": "HOÀI PHÓ PHỤ",
+    "hanviet": "HOÀI",
     "strokes": 16,
     "jlpt": "N1",
     "onyomi": [
@@ -10502,7 +10488,7 @@
   {
     "id": "kanji-漏",
     "kanji": "漏",
-    "hanviet": "LÂU LẬU",
+    "hanviet": "LÂU",
     "strokes": 14,
     "jlpt": "N1",
     "onyomi": [
@@ -10818,7 +10804,7 @@
   {
     "id": "kanji-離",
     "kanji": "離",
-    "hanviet": "LI LY LỆ",
+    "hanviet": "LI",
     "strokes": 19,
     "jlpt": "N1",
     "onyomi": [
@@ -10887,7 +10873,7 @@
   {
     "id": "kanji-融",
     "kanji": "融",
-    "hanviet": "DONG DUNG",
+    "hanviet": "DONG",
     "strokes": 16,
     "jlpt": "N1",
     "onyomi": [
@@ -10934,7 +10920,7 @@
   {
     "id": "kanji-華",
     "kanji": "華",
-    "hanviet": "HOA HOÁ",
+    "hanviet": "HOA",
     "strokes": 10,
     "jlpt": "N1",
     "onyomi": [
@@ -11002,7 +10988,7 @@
   {
     "id": "kanji-既",
     "kanji": "既",
-    "hanviet": "KÍ KÝ",
+    "hanviet": "KÍ",
     "strokes": 10,
     "jlpt": "N1",
     "onyomi": [
@@ -11295,7 +11281,7 @@
   {
     "id": "kanji-倉",
     "kanji": "倉",
-    "hanviet": "SẢNG THƯƠNG THẢNG XƯƠNG",
+    "hanviet": "SẢNG",
     "strokes": 10,
     "jlpt": "N1",
     "onyomi": [
@@ -11624,7 +11610,7 @@
   {
     "id": "kanji-綺",
     "kanji": "綺",
-    "hanviet": "KHỈ Ỷ",
+    "hanviet": "KHỈ",
     "strokes": 14,
     "jlpt": "N1",
     "onyomi": [
@@ -11849,7 +11835,7 @@
   {
     "id": "kanji-眼",
     "kanji": "眼",
-    "hanviet": "NHÃN NHẪN",
+    "hanviet": "NHÃN",
     "strokes": 11,
     "jlpt": "N1",
     "onyomi": [
@@ -11908,7 +11894,7 @@
   {
     "id": "kanji-興",
     "kanji": "興",
-    "hanviet": "HƯNG HỨNG",
+    "hanviet": "HƯNG",
     "strokes": 16,
     "jlpt": "N1",
     "onyomi": [
@@ -12425,7 +12411,7 @@
   {
     "id": "kanji-暖",
     "kanji": "暖",
-    "hanviet": "HUYÊN NOÃN",
+    "hanviet": "NOÃN",
     "strokes": 13,
     "jlpt": "N1",
     "onyomi": [
@@ -12894,7 +12880,7 @@
   {
     "id": "kanji-拡",
     "kanji": "拡",
-    "hanviet": "KHOÁC KHOÁCH KHOÁNG KHOẮC KHUẾCH",
+    "hanviet": "KHOÁC",
     "strokes": 8,
     "jlpt": "N1",
     "onyomi": [
@@ -12953,7 +12939,7 @@
   {
     "id": "kanji-操",
     "kanji": "操",
-    "hanviet": "THAO THÁO",
+    "hanviet": "THAO",
     "strokes": 16,
     "jlpt": "N1",
     "onyomi": [
@@ -13060,7 +13046,7 @@
   {
     "id": "kanji-異",
     "kanji": "異",
-    "hanviet": "DI DỊ",
+    "hanviet": "DI",
     "strokes": 11,
     "jlpt": "N1",
     "onyomi": [
@@ -13189,7 +13175,7 @@
   {
     "id": "kanji-盛",
     "kanji": "盛",
-    "hanviet": "THÀNH THÌNH THẠNH THỊNH",
+    "hanviet": "THÀNH",
     "strokes": 11,
     "jlpt": "N1",
     "onyomi": [
@@ -13413,7 +13399,7 @@
   {
     "id": "kanji-肺",
     "kanji": "肺",
-    "hanviet": "BÁI PHẾ",
+    "hanviet": "BÁI",
     "strokes": 9,
     "jlpt": "N1",
     "onyomi": [
@@ -13440,7 +13426,7 @@
   {
     "id": "kanji-賃",
     "kanji": "賃",
-    "hanviet": "NHẤM NHẪM",
+    "hanviet": "NHẤM",
     "strokes": 13,
     "jlpt": "N1",
     "onyomi": [
@@ -13648,7 +13634,7 @@
   {
     "id": "kanji-芋",
     "kanji": "芋",
-    "hanviet": "DỤ HU VU",
+    "hanviet": "DỤ",
     "strokes": 6,
     "jlpt": "N1",
     "onyomi": [
@@ -13942,7 +13928,7 @@
   {
     "id": "kanji-射",
     "kanji": "射",
-    "hanviet": "DẠ DỊCH XẠ",
+    "hanviet": "DẠ",
     "strokes": 10,
     "jlpt": "N1",
     "onyomi": [
@@ -14020,7 +14006,7 @@
   {
     "id": "kanji-幕",
     "kanji": "幕",
-    "hanviet": "MÁN MÔ MẠC MẠN MỘ",
+    "hanviet": "MÁN",
     "strokes": 13,
     "jlpt": "N1",
     "onyomi": [
@@ -14053,7 +14039,7 @@
   {
     "id": "kanji-薦",
     "kanji": "薦",
-    "hanviet": "TIẾN TRÃI TẤN",
+    "hanviet": "TIẾN",
     "strokes": 16,
     "jlpt": "N1",
     "onyomi": [
@@ -14088,7 +14074,7 @@
   {
     "id": "kanji-推",
     "kanji": "推",
-    "hanviet": "SUY THÔI",
+    "hanviet": "SUY",
     "strokes": 11,
     "jlpt": "N1",
     "onyomi": [
@@ -14199,7 +14185,7 @@
   {
     "id": "kanji-沿",
     "kanji": "沿",
-    "hanviet": "DIÊN DUYÊN",
+    "hanviet": "DIÊN",
     "strokes": 8,
     "jlpt": "N1",
     "onyomi": [
@@ -14426,7 +14412,7 @@
   {
     "id": "kanji-腐",
     "kanji": "腐",
-    "hanviet": "HỦ PHỤ",
+    "hanviet": "HỦ",
     "strokes": 14,
     "jlpt": "N1",
     "onyomi": [
@@ -14627,7 +14613,7 @@
   {
     "id": "kanji-己",
     "kanji": "己",
-    "hanviet": "KỈ KỶ",
+    "hanviet": "KỈ",
     "strokes": 3,
     "jlpt": "N1",
     "onyomi": [
@@ -14661,7 +14647,7 @@
   {
     "id": "kanji-厄",
     "kanji": "厄",
-    "hanviet": "NGOẢ ÁCH",
+    "hanviet": "NGOẢ",
     "strokes": 4,
     "jlpt": "N1",
     "onyomi": [
@@ -14763,7 +14749,7 @@
   {
     "id": "kanji-杉",
     "kanji": "杉",
-    "hanviet": "AM SAM",
+    "hanviet": "AM",
     "strokes": 7,
     "jlpt": "N1",
     "onyomi": [
@@ -14793,7 +14779,7 @@
   {
     "id": "kanji-汁",
     "kanji": "汁",
-    "hanviet": "CHẤP HIỆP TRẤP",
+    "hanviet": "CHẤP",
     "strokes": 5,
     "jlpt": "N1",
     "onyomi": [
@@ -14831,7 +14817,7 @@
   {
     "id": "kanji-炎",
     "kanji": "炎",
-    "hanviet": "DIỄM VIÊM ĐÀM",
+    "hanviet": "DIỄM",
     "strokes": 8,
     "jlpt": "N1",
     "onyomi": [
@@ -14863,7 +14849,7 @@
   {
     "id": "kanji-為",
     "kanji": "為",
-    "hanviet": "VI VY VỊ",
+    "hanviet": "VI",
     "strokes": 9,
     "jlpt": "N1",
     "onyomi": [
@@ -15068,7 +15054,7 @@
   {
     "id": "kanji-酢",
     "kanji": "酢",
-    "hanviet": "THỐ TẠC",
+    "hanviet": "THỐ",
     "strokes": 12,
     "jlpt": "N1",
     "onyomi": [
@@ -15136,7 +15122,7 @@
   {
     "id": "kanji-遺",
     "kanji": "遺",
-    "hanviet": "DI DỊ",
+    "hanviet": "DI",
     "strokes": 15,
     "jlpt": "N1",
     "onyomi": [
@@ -15396,7 +15382,7 @@
   {
     "id": "kanji-核",
     "kanji": "核",
-    "hanviet": "HẠCH HẠT HỒ",
+    "hanviet": "HẠCH",
     "strokes": 10,
     "jlpt": "N1",
     "onyomi": [
@@ -15433,7 +15419,7 @@
   {
     "id": "kanji-沖",
     "kanji": "沖",
-    "hanviet": "TRÙNG XUNG",
+    "hanviet": "TRÙNG",
     "strokes": 7,
     "jlpt": "N1",
     "onyomi": [
@@ -15468,7 +15454,7 @@
   {
     "id": "kanji-縄",
     "kanji": "縄",
-    "hanviet": "MẪN THẰNG",
+    "hanviet": "MẪN",
     "strokes": 15,
     "jlpt": "N1",
     "onyomi": [
@@ -15699,7 +15685,7 @@
   {
     "id": "kanji-伎",
     "kanji": "伎",
-    "hanviet": "KY KĨ KỸ",
+    "hanviet": "KY",
     "strokes": 6,
     "jlpt": "N1",
     "onyomi": [
@@ -15853,7 +15839,7 @@
   {
     "id": "kanji-跳",
     "kanji": "跳",
-    "hanviet": "KHIÊU ĐÀO",
+    "hanviet": "KHIÊU",
     "strokes": 13,
     "jlpt": "N1",
     "onyomi": [
@@ -15892,7 +15878,7 @@
   {
     "id": "kanji-昭",
     "kanji": "昭",
-    "hanviet": "CHIÊU THIỀU",
+    "hanviet": "CHIÊU",
     "strokes": 9,
     "jlpt": "N1",
     "onyomi": [
@@ -16065,7 +16051,7 @@
   {
     "id": "kanji-塁",
     "kanji": "塁",
-    "hanviet": "LỖI LUẬT LUỸ",
+    "hanviet": "LỖI",
     "strokes": 12,
     "jlpt": "N1",
     "onyomi": [
@@ -16222,7 +16208,7 @@
   {
     "id": "kanji-抵",
     "kanji": "抵",
-    "hanviet": "CHỈ ĐỂ",
+    "hanviet": "CHỈ",
     "strokes": 8,
     "jlpt": "N1",
     "onyomi": [
@@ -16259,7 +16245,7 @@
   {
     "id": "kanji-旬",
     "kanji": "旬",
-    "hanviet": "QUYÊN QUÂN TUẦN",
+    "hanviet": "QUYÊN",
     "strokes": 6,
     "jlpt": "N1",
     "onyomi": [
@@ -16312,7 +16298,7 @@
   {
     "id": "kanji-弾",
     "kanji": "弾",
-    "hanviet": "ĐÀN ĐẠN",
+    "hanviet": "ĐÀN",
     "strokes": 12,
     "jlpt": "N1",
     "onyomi": [
@@ -16444,7 +16430,7 @@
   {
     "id": "kanji-遣",
     "kanji": "遣",
-    "hanviet": "KHIỂN KHÁN",
+    "hanviet": "KHIỂN",
     "strokes": 13,
     "jlpt": "N1",
     "onyomi": [
@@ -16590,7 +16576,7 @@
   {
     "id": "kanji-臨",
     "kanji": "臨",
-    "hanviet": "LÂM LẤM LẬM",
+    "hanviet": "LÂM",
     "strokes": 18,
     "jlpt": "N1",
     "onyomi": [
@@ -16633,7 +16619,7 @@
   {
     "id": "kanji-削",
     "kanji": "削",
-    "hanviet": "SẢO TƯỚC",
+    "hanviet": "SẢO",
     "strokes": 9,
     "jlpt": "N1",
     "onyomi": [
@@ -16683,7 +16669,7 @@
   {
     "id": "kanji-契",
     "kanji": "契",
-    "hanviet": "KHIẾT KHẤT KHẾ TIẾT",
+    "hanviet": "KHIẾT",
     "strokes": 9,
     "jlpt": "N1",
     "onyomi": [
@@ -16788,7 +16774,7 @@
   {
     "id": "kanji-掲",
     "kanji": "掲",
-    "hanviet": "KHẾ YẾT",
+    "hanviet": "KHẾ",
     "strokes": 11,
     "jlpt": "N1",
     "onyomi": [
@@ -16888,7 +16874,7 @@
   {
     "id": "kanji-需",
     "kanji": "需",
-    "hanviet": "NHU NHUYỄN NOẠ TU",
+    "hanviet": "NHU",
     "strokes": 14,
     "jlpt": "N1",
     "onyomi": [
@@ -16964,7 +16950,7 @@
   {
     "id": "kanji-繰",
     "kanji": "繰",
-    "hanviet": "SÀO TAO TẢO",
+    "hanviet": "SÀO",
     "strokes": 19,
     "jlpt": "N1",
     "onyomi": [
@@ -17013,7 +16999,7 @@
   {
     "id": "kanji-避",
     "kanji": "避",
-    "hanviet": "TỊ TỴ",
+    "hanviet": "TỊ",
     "strokes": 16,
     "jlpt": "N1",
     "onyomi": [
@@ -17063,7 +17049,7 @@
   {
     "id": "kanji-妊",
     "kanji": "妊",
-    "hanviet": "NHÂM NHẬM",
+    "hanviet": "NHÂM",
     "strokes": 7,
     "jlpt": "N1",
     "onyomi": [
@@ -17175,7 +17161,7 @@
   {
     "id": "kanji-奏",
     "kanji": "奏",
-    "hanviet": "THẤU TẤU",
+    "hanviet": "THẤU",
     "strokes": 9,
     "jlpt": "N1",
     "onyomi": [
@@ -17214,7 +17200,7 @@
   {
     "id": "kanji-伴",
     "kanji": "伴",
-    "hanviet": "BẠN PHÁN",
+    "hanviet": "BẠN",
     "strokes": 7,
     "jlpt": "N1",
     "onyomi": [
@@ -17281,7 +17267,7 @@
   {
     "id": "kanji-却",
     "kanji": "却",
-    "hanviet": "KHƯỚC NGANG TỨC",
+    "hanviet": "KHƯỚC",
     "strokes": 7,
     "jlpt": "N1",
     "onyomi": [
@@ -17319,7 +17305,7 @@
   {
     "id": "kanji-慮",
     "kanji": "慮",
-    "hanviet": "LƯ LỤC LỰ",
+    "hanviet": "LƯ",
     "strokes": 15,
     "jlpt": "N1",
     "onyomi": [
@@ -17427,7 +17413,7 @@
   {
     "id": "kanji-房",
     "kanji": "房",
-    "hanviet": "BÀNG PHÒNG",
+    "hanviet": "BÀNG",
     "strokes": 8,
     "jlpt": "N1",
     "onyomi": [
@@ -17484,7 +17470,7 @@
   {
     "id": "kanji-扱",
     "kanji": "扱",
-    "hanviet": "HẤP THÁP TRÁP",
+    "hanviet": "HẤP",
     "strokes": 6,
     "jlpt": "N1",
     "onyomi": [
@@ -17726,7 +17712,7 @@
   {
     "id": "kanji-称",
     "kanji": "称",
-    "hanviet": "XƯNG XỨNG",
+    "hanviet": "XƯNG",
     "strokes": 10,
     "jlpt": "N1",
     "onyomi": [
@@ -17906,7 +17892,7 @@
   {
     "id": "kanji-還",
     "kanji": "還",
-    "hanviet": "HOÀN TOÀN",
+    "hanviet": "HOÀN",
     "strokes": 16,
     "jlpt": "N1",
     "onyomi": [
@@ -18014,7 +18000,7 @@
   {
     "id": "kanji-岐",
     "kanji": "岐",
-    "hanviet": "KÌ KỲ",
+    "hanviet": "KÌ",
     "strokes": 7,
     "jlpt": "N1",
     "onyomi": [
@@ -18085,7 +18071,7 @@
   {
     "id": "kanji-控",
     "kanji": "控",
-    "hanviet": "KHOANG KHỐNG",
+    "hanviet": "KHOANG",
     "strokes": 11,
     "jlpt": "N1",
     "onyomi": [
@@ -18167,7 +18153,7 @@
   {
     "id": "kanji-棋",
     "kanji": "棋",
-    "hanviet": "KY KÌ KÍ KÝ KỲ",
+    "hanviet": "KY",
     "strokes": 12,
     "jlpt": "N1",
     "onyomi": [
@@ -18313,7 +18299,7 @@
   {
     "id": "kanji-免",
     "kanji": "免",
-    "hanviet": "MIỄN VẤN",
+    "hanviet": "MIỄN",
     "strokes": 8,
     "jlpt": "N1",
     "onyomi": [
@@ -18420,7 +18406,7 @@
   {
     "id": "kanji-圏",
     "kanji": "圏",
-    "hanviet": "KHUYÊN QUYỂN",
+    "hanviet": "KHUYÊN",
     "strokes": 12,
     "jlpt": "N1",
     "onyomi": [
@@ -18532,7 +18518,7 @@
   {
     "id": "kanji-拒",
     "kanji": "拒",
-    "hanviet": "CỦ CỰ",
+    "hanviet": "CỦ",
     "strokes": 8,
     "jlpt": "N1",
     "onyomi": [
@@ -18661,7 +18647,7 @@
   {
     "id": "kanji-斐",
     "kanji": "斐",
-    "hanviet": "PHI PHỈ",
+    "hanviet": "PHI",
     "strokes": 12,
     "jlpt": "N1",
     "onyomi": [
@@ -18798,7 +18784,7 @@
   {
     "id": "kanji-謙",
     "kanji": "謙",
-    "hanviet": "KHIÊM KHIỂM KHIỆM",
+    "hanviet": "KHIÊM",
     "strokes": 17,
     "jlpt": "N1",
     "onyomi": [
@@ -18837,7 +18823,7 @@
   {
     "id": "kanji-躍",
     "kanji": "躍",
-    "hanviet": "DƯỢC THÍCH",
+    "hanviet": "DƯỢC",
     "strokes": 21,
     "jlpt": "N1",
     "onyomi": [
@@ -19247,7 +19233,7 @@
   {
     "id": "kanji-巡",
     "kanji": "巡",
-    "hanviet": "DUYÊN TUẦN",
+    "hanviet": "DUYÊN",
     "strokes": 6,
     "jlpt": "N1",
     "onyomi": [
@@ -19613,7 +19599,7 @@
   {
     "id": "kanji-繁",
     "kanji": "繁",
-    "hanviet": "BÀ BÀN PHIỀN PHỒN",
+    "hanviet": "BÀ",
     "strokes": 16,
     "jlpt": "N1",
     "onyomi": [
@@ -19701,7 +19687,7 @@
   {
     "id": "kanji-殖",
     "kanji": "殖",
-    "hanviet": "SỰ THỰC",
+    "hanviet": "SỰ",
     "strokes": 12,
     "jlpt": "N1",
     "onyomi": [
@@ -19820,7 +19806,7 @@
   {
     "id": "kanji-褒",
     "kanji": "褒",
-    "hanviet": "BAO BẦU",
+    "hanviet": "BAO",
     "strokes": 15,
     "jlpt": "N1",
     "onyomi": [
@@ -19939,7 +19925,7 @@
   {
     "id": "kanji-雅",
     "kanji": "雅",
-    "hanviet": "NHA NHÃ",
+    "hanviet": "NHA",
     "strokes": 13,
     "jlpt": "N1",
     "onyomi": [
@@ -20087,7 +20073,7 @@
   {
     "id": "kanji-措",
     "kanji": "措",
-    "hanviet": "THỐ TRÁCH",
+    "hanviet": "THỐ",
     "strokes": 11,
     "jlpt": "N1",
     "onyomi": [
@@ -20219,7 +20205,7 @@
   {
     "id": "kanji-樹",
     "kanji": "樹",
-    "hanviet": "THỌ THỤ",
+    "hanviet": "THỌ",
     "strokes": 16,
     "jlpt": "N1",
     "onyomi": [
@@ -20479,7 +20465,7 @@
   {
     "id": "kanji-仁",
     "kanji": "仁",
-    "hanviet": "NHÂN NHƠN",
+    "hanviet": "NHÂN",
     "strokes": 4,
     "jlpt": "N1",
     "onyomi": [
@@ -20676,7 +20662,7 @@
   {
     "id": "kanji-侵",
     "kanji": "侵",
-    "hanviet": "THẨM TẨM XÂM",
+    "hanviet": "THẨM",
     "strokes": 9,
     "jlpt": "N1",
     "onyomi": [
@@ -20825,7 +20811,7 @@
   {
     "id": "kanji-喪",
     "kanji": "喪",
-    "hanviet": "TANG TÁNG",
+    "hanviet": "TANG",
     "strokes": 12,
     "jlpt": "N1",
     "onyomi": [
@@ -20901,7 +20887,7 @@
   {
     "id": "kanji-括",
     "kanji": "括",
-    "hanviet": "HOẠT QUÁT",
+    "hanviet": "HOẠT",
     "strokes": 9,
     "jlpt": "N1",
     "onyomi": [
@@ -20941,7 +20927,7 @@
   {
     "id": "kanji-弧",
     "kanji": "弧",
-    "hanviet": "HỒ O Ô",
+    "hanviet": "HỒ",
     "strokes": 9,
     "jlpt": "N1",
     "onyomi": [
@@ -20970,7 +20956,7 @@
   {
     "id": "kanji-挑",
     "kanji": "挑",
-    "hanviet": "KHIÊU THAO THIÊU THIỂU",
+    "hanviet": "KHIÊU",
     "strokes": 9,
     "jlpt": "N1",
     "onyomi": [
@@ -21047,7 +21033,7 @@
   {
     "id": "kanji-握",
     "kanji": "握",
-    "hanviet": "ÁC ỐC",
+    "hanviet": "ÁC",
     "strokes": 12,
     "jlpt": "N1",
     "onyomi": [
@@ -21093,7 +21079,7 @@
   {
     "id": "kanji-揺",
     "kanji": "揺",
-    "hanviet": "DAO DIÊU",
+    "hanviet": "DAO",
     "strokes": 12,
     "jlpt": "N1",
     "onyomi": [
@@ -21415,7 +21401,7 @@
   {
     "id": "kanji-滑",
     "kanji": "滑",
-    "hanviet": "CỐT HOẠT",
+    "hanviet": "CỐT",
     "strokes": 13,
     "jlpt": "N1",
     "onyomi": [
@@ -21509,7 +21495,7 @@
   {
     "id": "kanji-焦",
     "kanji": "焦",
-    "hanviet": "TIÊU TIỀU",
+    "hanviet": "TIÊU",
     "strokes": 12,
     "jlpt": "N1",
     "onyomi": [
@@ -21677,7 +21663,7 @@
   {
     "id": "kanji-糾",
     "kanji": "糾",
-    "hanviet": "CỦ KIỂU",
+    "hanviet": "CỦ",
     "strokes": 9,
     "jlpt": "N1",
     "onyomi": [
@@ -22010,7 +21996,7 @@
   {
     "id": "kanji-趣",
     "kanji": "趣",
-    "hanviet": "THÚ XÚC",
+    "hanviet": "THÚ",
     "strokes": 15,
     "jlpt": "N1",
     "onyomi": [
@@ -22257,7 +22243,7 @@
   {
     "id": "kanji-潮",
     "kanji": "潮",
-    "hanviet": "TRIỀU TRÀO",
+    "hanviet": "TRIỀU",
     "strokes": 15,
     "jlpt": "N1",
     "onyomi": [
@@ -22366,7 +22352,7 @@
   {
     "id": "kanji-威",
     "kanji": "威",
-    "hanviet": "OAI UY",
+    "hanviet": "OAI",
     "strokes": 9,
     "jlpt": "N1",
     "onyomi": [
@@ -22446,7 +22432,7 @@
   {
     "id": "kanji-慰",
     "kanji": "慰",
-    "hanviet": "UÝ UỶ",
+    "hanviet": "UÝ",
     "strokes": 15,
     "jlpt": "N1",
     "onyomi": [
@@ -22659,7 +22645,7 @@
   {
     "id": "kanji-撲",
     "kanji": "撲",
-    "hanviet": "BẠC PHÁC PHỐC",
+    "hanviet": "BẠC",
     "strokes": 15,
     "jlpt": "N1",
     "onyomi": [
@@ -22948,7 +22934,7 @@
   {
     "id": "kanji-炉",
     "kanji": "炉",
-    "hanviet": "LÔ LƯ",
+    "hanviet": "LÔ",
     "strokes": 8,
     "jlpt": "N1",
     "onyomi": [
@@ -23237,7 +23223,7 @@
   {
     "id": "kanji-刃",
     "kanji": "刃",
-    "hanviet": "NHẪN NHẬN",
+    "hanviet": "NHẪN",
     "strokes": 3,
     "jlpt": "N1",
     "onyomi": [
@@ -23408,7 +23394,7 @@
   {
     "id": "kanji-斗",
     "kanji": "斗",
-    "hanviet": "ĐẤU ĐẨU ẨU",
+    "hanviet": "ĐẤU",
     "strokes": 4,
     "jlpt": "N1",
     "onyomi": [
@@ -23441,7 +23427,7 @@
   {
     "id": "kanji-朱",
     "kanji": "朱",
-    "hanviet": "CHU CHÂU",
+    "hanviet": "CHU",
     "strokes": 6,
     "jlpt": "N1",
     "onyomi": [
@@ -23475,7 +23461,7 @@
   {
     "id": "kanji-丘",
     "kanji": "丘",
-    "hanviet": "KHIÊU KHÂU",
+    "hanviet": "KHIÊU",
     "strokes": 5,
     "jlpt": "N1",
     "onyomi": [
@@ -23719,7 +23705,7 @@
   {
     "id": "kanji-棚",
     "kanji": "棚",
-    "hanviet": "BÀNH BẰNG",
+    "hanviet": "BÀNH",
     "strokes": 12,
     "jlpt": "N1",
     "onyomi": [
@@ -23806,7 +23792,7 @@
   {
     "id": "kanji-雷",
     "kanji": "雷",
-    "hanviet": "LÔI LỖI",
+    "hanviet": "LÔI",
     "strokes": 13,
     "jlpt": "N1",
     "onyomi": [
@@ -24179,7 +24165,7 @@
   {
     "id": "kanji-也",
     "kanji": "也",
-    "hanviet": "DÃ GIÃ GIẢ",
+    "hanviet": "DÃ",
     "strokes": 3,
     "jlpt": "N1",
     "onyomi": [
@@ -24213,7 +24199,7 @@
   {
     "id": "kanji-井",
     "kanji": "井",
-    "hanviet": "TĨNH TỈNH ĐÁN",
+    "hanviet": "TĨNH",
     "strokes": 4,
     "jlpt": "N1",
     "onyomi": [
@@ -24343,7 +24329,7 @@
   {
     "id": "kanji-眺",
     "kanji": "眺",
-    "hanviet": "DIỂU THIẾU",
+    "hanviet": "DIỂU",
     "strokes": 11,
     "jlpt": "N1",
     "onyomi": [
@@ -24385,7 +24371,7 @@
   {
     "id": "kanji-裸",
     "kanji": "裸",
-    "hanviet": "KHOÃ KHOẢ LOÃ LOẢ QUÁN",
+    "hanviet": "KHOÃ",
     "strokes": 13,
     "jlpt": "N1",
     "onyomi": [
@@ -24528,7 +24514,7 @@
   {
     "id": "kanji-陰",
     "kanji": "陰",
-    "hanviet": "UẨN ÁM ÂM ẤM",
+    "hanviet": "UẨN",
     "strokes": 11,
     "jlpt": "N1",
     "onyomi": [
@@ -25095,7 +25081,7 @@
   {
     "id": "kanji-寧",
     "kanji": "寧",
-    "hanviet": "NINH TRỮ",
+    "hanviet": "NINH",
     "strokes": 14,
     "jlpt": "N1",
     "onyomi": [
@@ -25203,7 +25189,7 @@
   {
     "id": "kanji-碁",
     "kanji": "碁",
-    "hanviet": "KÌ KỲ",
+    "hanviet": "KÌ",
     "strokes": 13,
     "jlpt": "N1",
     "onyomi": [
@@ -25309,7 +25295,7 @@
   {
     "id": "kanji-泡",
     "kanji": "泡",
-    "hanviet": "BÀO PHAO PHÁO",
+    "hanviet": "BÀO",
     "strokes": 8,
     "jlpt": "N1",
     "onyomi": [
@@ -25342,7 +25328,7 @@
   {
     "id": "kanji-癖",
     "kanji": "癖",
-    "hanviet": "PHÍCH TÍCH",
+    "hanviet": "PHÍCH",
     "strokes": 18,
     "jlpt": "N1",
     "onyomi": [
@@ -25377,7 +25363,7 @@
   {
     "id": "kanji-鍛",
     "kanji": "鍛",
-    "hanviet": "THUYẾN ĐOÀN ĐOÁN ĐOẠN",
+    "hanviet": "THUYẾN",
     "strokes": 17,
     "jlpt": "N1",
     "onyomi": [
@@ -25446,7 +25432,7 @@
   {
     "id": "kanji-穂",
     "kanji": "穂",
-    "hanviet": "TOẠI TUỆ",
+    "hanviet": "TOẠI",
     "strokes": 15,
     "jlpt": "N1",
     "onyomi": [
@@ -25586,7 +25572,7 @@
   {
     "id": "kanji-誇",
     "kanji": "誇",
-    "hanviet": "KHOA KHOẢ",
+    "hanviet": "KHOA",
     "strokes": 13,
     "jlpt": "N1",
     "onyomi": [
@@ -25632,7 +25618,7 @@
   {
     "id": "kanji-庄",
     "kanji": "庄",
-    "hanviet": "BÀNH TRANG",
+    "hanviet": "BÀNH",
     "strokes": 6,
     "jlpt": "N1",
     "onyomi": [
@@ -25814,13 +25800,6 @@
         "meaning": "cái cáng",
         "hanviet": "ĐAM GIÁ",
         "level": "N1"
-      },
-      {
-        "word": "架空",
-        "reading": "かくう",
-        "meaning": "ở trên trời; điều hư cấu; điều tưởng tượng",
-        "hanviet": "GIÁ KHÔNG",
-        "level": "N2"
       }
     ]
   },
@@ -26090,20 +26069,12 @@
       "Help"
     ],
     "radical": "nhân 人 (+5 nét)",
-    "examples": [
-      {
-        "word": "佐藤歯科",
-        "reading": "さとうしか",
-        "meaning": "một phòng khám nha khoa hư cấu",
-        "hanviet": "TÁ ĐẰNG XỈ KHOA",
-        "level": "N4"
-      }
-    ]
+    "examples": []
   },
   {
     "id": "kanji-尺",
     "kanji": "尺",
-    "hanviet": "CHỈ XÍCH",
+    "hanviet": "CHỈ",
     "strokes": 4,
     "jlpt": "N1",
     "onyomi": [
@@ -26172,7 +26143,7 @@
   {
     "id": "kanji-唇",
     "kanji": "唇",
-    "hanviet": "CHẤN THẦN",
+    "hanviet": "CHẤN",
     "strokes": 10,
     "jlpt": "N1",
     "onyomi": [
@@ -26458,7 +26429,7 @@
   {
     "id": "kanji-扇",
     "kanji": "扇",
-    "hanviet": "PHIẾN THIÊN",
+    "hanviet": "PHIẾN",
     "strokes": 10,
     "jlpt": "N1",
     "onyomi": [
@@ -26541,7 +26512,7 @@
   {
     "id": "kanji-挿",
     "kanji": "挿",
-    "hanviet": "SÁP THÁP TRÁP",
+    "hanviet": "SÁP",
     "strokes": 10,
     "jlpt": "N1",
     "onyomi": [
@@ -26619,7 +26590,7 @@
   {
     "id": "kanji-炊",
     "kanji": "炊",
-    "hanviet": "XUY XUÝ",
+    "hanviet": "XUY",
     "strokes": 8,
     "jlpt": "N1",
     "onyomi": [
@@ -26701,7 +26672,7 @@
   {
     "id": "kanji-瞭",
     "kanji": "瞭",
-    "hanviet": "LIÊU LIỄU LIỆU",
+    "hanviet": "LIÊU",
     "strokes": 17,
     "jlpt": "N1",
     "onyomi": [
@@ -26762,7 +26733,7 @@
   {
     "id": "kanji-虹",
     "kanji": "虹",
-    "hanviet": "HỐNG HỒNG",
+    "hanviet": "HỐNG",
     "strokes": 9,
     "jlpt": "N1",
     "onyomi": [
@@ -26877,7 +26848,7 @@
   {
     "id": "kanji-蛇",
     "kanji": "蛇",
-    "hanviet": "DI SÁ XÀ",
+    "hanviet": "DI",
     "strokes": 11,
     "jlpt": "N1",
     "onyomi": [
@@ -27004,7 +26975,7 @@
   {
     "id": "kanji-飢",
     "kanji": "飢",
-    "hanviet": "CƠ KY",
+    "hanviet": "CƠ",
     "strokes": 10,
     "jlpt": "N1",
     "onyomi": [
@@ -27043,7 +27014,7 @@
   {
     "id": "kanji-餓",
     "kanji": "餓",
-    "hanviet": "NGÃ NGẠ",
+    "hanviet": "NGÃ",
     "strokes": 15,
     "jlpt": "N1",
     "onyomi": [
@@ -27102,7 +27073,7 @@
   {
     "id": "kanji-騎",
     "kanji": "騎",
-    "hanviet": "KỊ KỴ",
+    "hanviet": "KỊ",
     "strokes": 18,
     "jlpt": "N1",
     "onyomi": [
@@ -27178,7 +27149,7 @@
   {
     "id": "kanji-尽",
     "kanji": "尽",
-    "hanviet": "TẦN TẪN TẬN",
+    "hanviet": "TẦN",
     "strokes": 6,
     "jlpt": "N1",
     "onyomi": [
@@ -27233,7 +27204,7 @@
   {
     "id": "kanji-彩",
     "kanji": "彩",
-    "hanviet": "THÁI THẢI THỂ",
+    "hanviet": "THÁI",
     "strokes": 11,
     "jlpt": "N1",
     "onyomi": [
@@ -27295,7 +27266,7 @@
   {
     "id": "kanji-耐",
     "kanji": "耐",
-    "hanviet": "NĂNG NẠI",
+    "hanviet": "NĂNG",
     "strokes": 9,
     "jlpt": "N1",
     "onyomi": [
@@ -27460,7 +27431,7 @@
   {
     "id": "kanji-培",
     "kanji": "培",
-    "hanviet": "BẪU BẬU BỒI",
+    "hanviet": "BẪU",
     "strokes": 11,
     "jlpt": "N1",
     "onyomi": [
@@ -27490,7 +27461,7 @@
   {
     "id": "kanji-悔",
     "kanji": "悔",
-    "hanviet": "HỐI HỔI",
+    "hanviet": "HỐI",
     "strokes": 9,
     "jlpt": "N1",
     "onyomi": [
@@ -27608,7 +27579,7 @@
   {
     "id": "kanji-斜",
     "kanji": "斜",
-    "hanviet": "GIA TÀ",
+    "hanviet": "GIA",
     "strokes": 11,
     "jlpt": "N1",
     "onyomi": [
@@ -27661,7 +27632,7 @@
   {
     "id": "kanji-殴",
     "kanji": "殴",
-    "hanviet": "ẤU ẨU",
+    "hanviet": "ẤU",
     "strokes": 8,
     "jlpt": "N1",
     "onyomi": [
@@ -27693,7 +27664,7 @@
   {
     "id": "kanji-盾",
     "kanji": "盾",
-    "hanviet": "MY THUẪN",
+    "hanviet": "MY",
     "strokes": 9,
     "jlpt": "N1",
     "onyomi": [
@@ -27940,7 +27911,7 @@
   {
     "id": "kanji-拓",
     "kanji": "拓",
-    "hanviet": "CHÍCH THÁC THÁP",
+    "hanviet": "CHÍCH",
     "strokes": 8,
     "jlpt": "N1",
     "onyomi": [
@@ -27973,7 +27944,7 @@
   {
     "id": "kanji-拘",
     "kanji": "拘",
-    "hanviet": "CÂU CÙ",
+    "hanviet": "CÂU",
     "strokes": 8,
     "jlpt": "N1",
     "onyomi": [
@@ -28100,7 +28071,7 @@
   {
     "id": "kanji-剛",
     "kanji": "剛",
-    "hanviet": "CANG CƯƠNG",
+    "hanviet": "CANG",
     "strokes": 10,
     "jlpt": "N1",
     "onyomi": [
@@ -28129,7 +28100,7 @@
   {
     "id": "kanji-唯",
     "kanji": "唯",
-    "hanviet": "DUY DUỴ",
+    "hanviet": "DUY",
     "strokes": 11,
     "jlpt": "N1",
     "onyomi": [
@@ -28207,7 +28178,7 @@
   {
     "id": "kanji-尼",
     "kanji": "尼",
-    "hanviet": "NI NÊ NẬT NẶC NỆ",
+    "hanviet": "NI",
     "strokes": 5,
     "jlpt": "N1",
     "onyomi": [
@@ -28236,7 +28207,7 @@
   {
     "id": "kanji-概",
     "kanji": "概",
-    "hanviet": "HỊ KHÁI",
+    "hanviet": "HỊ",
     "strokes": 14,
     "jlpt": "N1",
     "onyomi": [
@@ -28305,7 +28276,7 @@
   {
     "id": "kanji-浸",
     "kanji": "浸",
-    "hanviet": "THÂM TẨM",
+    "hanviet": "THÂM",
     "strokes": 10,
     "jlpt": "N1",
     "onyomi": [
@@ -28343,7 +28314,7 @@
   {
     "id": "kanji-淡",
     "kanji": "淡",
-    "hanviet": "ĐÀM ĐẠM",
+    "hanviet": "ĐÀM",
     "strokes": 11,
     "jlpt": "N1",
     "onyomi": [
@@ -28437,7 +28408,7 @@
   {
     "id": "kanji-覆",
     "kanji": "覆",
-    "hanviet": "PHÚ PHÚC",
+    "hanviet": "PHÚ",
     "strokes": 18,
     "jlpt": "N1",
     "onyomi": [
@@ -28527,7 +28498,7 @@
   {
     "id": "kanji-陶",
     "kanji": "陶",
-    "hanviet": "DAO GIAO ĐÀO",
+    "hanviet": "DAO",
     "strokes": 11,
     "jlpt": "N1",
     "onyomi": [
@@ -28613,7 +28584,7 @@
   {
     "id": "kanji-征",
     "kanji": "征",
-    "hanviet": "CHINH TRƯNG",
+    "hanviet": "CHINH",
     "strokes": 8,
     "jlpt": "N1",
     "onyomi": [
@@ -28824,7 +28795,7 @@
   {
     "id": "kanji-衰",
     "kanji": "衰",
-    "hanviet": "SUY SUÝ THOA THÔI",
+    "hanviet": "SUY",
     "strokes": 10,
     "jlpt": "N1",
     "onyomi": [
@@ -28988,7 +28959,7 @@
   {
     "id": "kanji-妃",
     "kanji": "妃",
-    "hanviet": "PHI PHỐI",
+    "hanviet": "PHI",
     "strokes": 6,
     "jlpt": "N1",
     "onyomi": [
@@ -29098,7 +29069,7 @@
   {
     "id": "kanji-邪",
     "kanji": "邪",
-    "hanviet": "DA TÀ TỪ",
+    "hanviet": "DA",
     "strokes": 8,
     "jlpt": "N1",
     "onyomi": [
@@ -29245,7 +29216,7 @@
   {
     "id": "kanji-簿",
     "kanji": "簿",
-    "hanviet": "BẠ BẠC BỘ",
+    "hanviet": "BẠ",
     "strokes": 19,
     "jlpt": "N1",
     "onyomi": [
@@ -29302,7 +29273,7 @@
   {
     "id": "kanji-漫",
     "kanji": "漫",
-    "hanviet": "MAN MẠN",
+    "hanviet": "MAN",
     "strokes": 14,
     "jlpt": "N1",
     "onyomi": [
@@ -29374,7 +29345,7 @@
   {
     "id": "kanji-諮",
     "kanji": "諮",
-    "hanviet": "TI TY TƯ",
+    "hanviet": "TI",
     "strokes": 16,
     "jlpt": "N1",
     "onyomi": [
@@ -29433,7 +29404,7 @@
   {
     "id": "kanji-堤",
     "kanji": "堤",
-    "hanviet": "ĐÊ ĐỀ",
+    "hanviet": "ĐÊ",
     "strokes": 12,
     "jlpt": "N1",
     "onyomi": [
@@ -29464,7 +29435,7 @@
   {
     "id": "kanji-漂",
     "kanji": "漂",
-    "hanviet": "PHIÊU PHIẾU XIẾU",
+    "hanviet": "PHIÊU",
     "strokes": 14,
     "jlpt": "N1",
     "onyomi": [
@@ -29572,7 +29543,7 @@
   {
     "id": "kanji-后",
     "kanji": "后",
-    "hanviet": "HẤU HẬU",
+    "hanviet": "HẤU",
     "strokes": 6,
     "jlpt": "N1",
     "onyomi": [
@@ -29683,7 +29654,7 @@
   {
     "id": "kanji-仰",
     "kanji": "仰",
-    "hanviet": "NGANG NGƯỠNG NHẠNG",
+    "hanviet": "NGANG",
     "strokes": 6,
     "jlpt": "N1",
     "onyomi": [
@@ -29731,7 +29702,7 @@
   {
     "id": "kanji-伯",
     "kanji": "伯",
-    "hanviet": "BÁ BÁCH",
+    "hanviet": "BÁ",
     "strokes": 7,
     "jlpt": "N1",
     "onyomi": [
@@ -29791,7 +29762,7 @@
   {
     "id": "kanji-墳",
     "kanji": "墳",
-    "hanviet": "BỔN PHẦN PHẪN",
+    "hanviet": "BỔN",
     "strokes": 15,
     "jlpt": "N1",
     "onyomi": [
@@ -29819,7 +29790,7 @@
   {
     "id": "kanji-壮",
     "kanji": "壮",
-    "hanviet": "TRANG TRÁNG",
+    "hanviet": "TRANG",
     "strokes": 6,
     "jlpt": "N1",
     "onyomi": [
@@ -29851,7 +29822,7 @@
   {
     "id": "kanji-把",
     "kanji": "把",
-    "hanviet": "BÀ BÁ BẢ",
+    "hanviet": "BÀ",
     "strokes": 7,
     "jlpt": "N1",
     "onyomi": [
@@ -29884,7 +29855,7 @@
   {
     "id": "kanji-搬",
     "kanji": "搬",
-    "hanviet": "BAN BÀN",
+    "hanviet": "BAN",
     "strokes": 13,
     "jlpt": "N1",
     "onyomi": [
@@ -29944,7 +29915,7 @@
   {
     "id": "kanji-洞",
     "kanji": "洞",
-    "hanviet": "ĐỖNG ĐỘNG",
+    "hanviet": "ĐỖNG",
     "strokes": 9,
     "jlpt": "N1",
     "onyomi": [
@@ -30133,7 +30104,7 @@
   {
     "id": "kanji-釈",
     "kanji": "釈",
-    "hanviet": "DỊCH THÍCH",
+    "hanviet": "DỊCH",
     "strokes": 11,
     "jlpt": "N1",
     "onyomi": [
@@ -30226,7 +30197,7 @@
   {
     "id": "kanji-媛",
     "kanji": "媛",
-    "hanviet": "VIÊN VIỆN",
+    "hanviet": "VIÊN",
     "strokes": 12,
     "jlpt": "N1",
     "onyomi": [
@@ -30366,7 +30337,7 @@
   {
     "id": "kanji-渦",
     "kanji": "渦",
-    "hanviet": "OA QUA",
+    "hanviet": "OA",
     "strokes": 12,
     "jlpt": "N1",
     "onyomi": [
@@ -30398,7 +30369,7 @@
   {
     "id": "kanji-慈",
     "kanji": "慈",
-    "hanviet": "TƯ TỪ",
+    "hanviet": "TƯ",
     "strokes": 13,
     "jlpt": "N1",
     "onyomi": [
@@ -30489,7 +30460,7 @@
   {
     "id": "kanji-亮",
     "kanji": "亮",
-    "hanviet": "LƯƠNG LƯỢNG",
+    "hanviet": "LƯƠNG",
     "strokes": 9,
     "jlpt": "N1",
     "onyomi": [
@@ -30553,7 +30524,7 @@
   {
     "id": "kanji-浦",
     "kanji": "浦",
-    "hanviet": "PHỐ PHỔ",
+    "hanviet": "PHỐ",
     "strokes": 10,
     "jlpt": "N1",
     "onyomi": [
@@ -30589,7 +30560,7 @@
   {
     "id": "kanji-塚",
     "kanji": "塚",
-    "hanviet": "TRŨNG TRỦNG",
+    "hanviet": "TRŨNG",
     "strokes": 12,
     "jlpt": "N1",
     "onyomi": [
@@ -30660,7 +30631,7 @@
   {
     "id": "kanji-貫",
     "kanji": "貫",
-    "hanviet": "OAN QUÁN",
+    "hanviet": "OAN",
     "strokes": 11,
     "jlpt": "N1",
     "onyomi": [
@@ -30703,7 +30674,7 @@
   {
     "id": "kanji-覇",
     "kanji": "覇",
-    "hanviet": "BÁ PHÁCH",
+    "hanviet": "BÁ",
     "strokes": 19,
     "jlpt": "N1",
     "onyomi": [
@@ -30737,7 +30708,7 @@
   {
     "id": "kanji-呂",
     "kanji": "呂",
-    "hanviet": "LÃ LỮ",
+    "hanviet": "LÃ",
     "strokes": 7,
     "jlpt": "N1",
     "onyomi": [
@@ -30777,7 +30748,7 @@
   {
     "id": "kanji-擁",
     "kanji": "擁",
-    "hanviet": "UNG ỦNG",
+    "hanviet": "UNG",
     "strokes": 16,
     "jlpt": "N1",
     "onyomi": [
@@ -30925,7 +30896,7 @@
   {
     "id": "kanji-噴",
     "kanji": "噴",
-    "hanviet": "PHÔN PHÚN",
+    "hanviet": "PHÔN",
     "strokes": 15,
     "jlpt": "N1",
     "onyomi": [
@@ -31037,7 +31008,7 @@
   {
     "id": "kanji-秩",
     "kanji": "秩",
-    "hanviet": "DẬT TRẬT",
+    "hanviet": "DẬT",
     "strokes": 10,
     "jlpt": "N1",
     "onyomi": [
@@ -31194,7 +31165,7 @@
   {
     "id": "kanji-恒",
     "kanji": "恒",
-    "hanviet": "CĂNG CẮNG HẰNG",
+    "hanviet": "CĂNG",
     "strokes": 9,
     "jlpt": "N1",
     "onyomi": [
@@ -31254,7 +31225,7 @@
   {
     "id": "kanji-陳",
     "kanji": "陳",
-    "hanviet": "TRẦN TRẬN",
+    "hanviet": "TRẦN",
     "strokes": 11,
     "jlpt": "N1",
     "onyomi": [
@@ -31660,7 +31631,7 @@
   {
     "id": "kanji-惰",
     "kanji": "惰",
-    "hanviet": "NOẠ ĐOẠ",
+    "hanviet": "NOẠ",
     "strokes": 12,
     "jlpt": "N1",
     "onyomi": [
@@ -31688,7 +31659,7 @@
   {
     "id": "kanji-猟",
     "kanji": "猟",
-    "hanviet": "LIỆP LẠP",
+    "hanviet": "LIỆP",
     "strokes": 11,
     "jlpt": "N1",
     "onyomi": [
@@ -31723,7 +31694,7 @@
   {
     "id": "kanji-乃",
     "kanji": "乃",
-    "hanviet": "NÃI ÁI",
+    "hanviet": "NÃI",
     "strokes": 2,
     "jlpt": "N1",
     "onyomi": [
@@ -32084,7 +32055,7 @@
   {
     "id": "kanji-丹",
     "kanji": "丹",
-    "hanviet": "ĐAN ĐƠN",
+    "hanviet": "ĐAN",
     "strokes": 4,
     "jlpt": "N1",
     "onyomi": [
@@ -32219,7 +32190,7 @@
   {
     "id": "kanji-緯",
     "kanji": "緯",
-    "hanviet": "VĨ VỊ",
+    "hanviet": "VĨ",
     "strokes": 16,
     "jlpt": "N1",
     "onyomi": [
@@ -32289,7 +32260,7 @@
   {
     "id": "kanji-披",
     "kanji": "披",
-    "hanviet": "BIA PHI",
+    "hanviet": "BIA",
     "strokes": 8,
     "jlpt": "N1",
     "onyomi": [
@@ -32350,7 +32321,7 @@
   {
     "id": "kanji-准",
     "kanji": "准",
-    "hanviet": "CHUYẾT CHUẨN",
+    "hanviet": "CHUYẾT",
     "strokes": 10,
     "jlpt": "N1",
     "onyomi": [
@@ -32380,7 +32351,7 @@
   {
     "id": "kanji-剰",
     "kanji": "剰",
-    "hanviet": "THẶNG THỪA",
+    "hanviet": "THẶNG",
     "strokes": 11,
     "jlpt": "N1",
     "onyomi": [
@@ -32555,7 +32526,7 @@
   {
     "id": "kanji-据",
     "kanji": "据",
-    "hanviet": "CƯ CỨ",
+    "hanviet": "CƯ",
     "strokes": 11,
     "jlpt": "N1",
     "onyomi": [
@@ -32638,7 +32609,7 @@
   {
     "id": "kanji-搭",
     "kanji": "搭",
-    "hanviet": "THÁP ĐÁP",
+    "hanviet": "THÁP",
     "strokes": 12,
     "jlpt": "N1",
     "onyomi": [
@@ -32669,7 +32640,7 @@
   {
     "id": "kanji-鯉",
     "kanji": "鯉",
-    "hanviet": "LÍ LÝ",
+    "hanviet": "LÍ",
     "strokes": 18,
     "jlpt": "N1",
     "onyomi": [
@@ -32793,7 +32764,7 @@
   {
     "id": "kanji-帥",
     "kanji": "帥",
-    "hanviet": "SOÁI SUÝ SUẤT",
+    "hanviet": "SOÁI",
     "strokes": 9,
     "jlpt": "N1",
     "onyomi": [
@@ -32824,7 +32795,7 @@
   {
     "id": "kanji-啓",
     "kanji": "啓",
-    "hanviet": "KHẢI KHỞI",
+    "hanviet": "KHẢI",
     "strokes": 11,
     "jlpt": "N1",
     "onyomi": [
@@ -32919,7 +32890,7 @@
   {
     "id": "kanji-諒",
     "kanji": "諒",
-    "hanviet": "LƯỢNG LẠNG",
+    "hanviet": "LƯỢNG",
     "strokes": 15,
     "jlpt": "N1",
     "onyomi": [
@@ -32954,7 +32925,7 @@
   {
     "id": "kanji-莉",
     "kanji": "莉",
-    "hanviet": "LÊ LỊ",
+    "hanviet": "LÊ",
     "strokes": 10,
     "jlpt": "N1",
     "onyomi": [
@@ -32983,7 +32954,7 @@
   {
     "id": "kanji-鯨",
     "kanji": "鯨",
-    "hanviet": "CANH KÌNH",
+    "hanviet": "CANH",
     "strokes": 19,
     "jlpt": "N1",
     "onyomi": [
@@ -33050,7 +33021,7 @@
   {
     "id": "kanji-栽",
     "kanji": "栽",
-    "hanviet": "TÀI TẢI",
+    "hanviet": "TÀI",
     "strokes": 10,
     "jlpt": "N1",
     "onyomi": [
@@ -33108,7 +33079,7 @@
   {
     "id": "kanji-冠",
     "kanji": "冠",
-    "hanviet": "QUAN QUÁN",
+    "hanviet": "QUAN",
     "strokes": 9,
     "jlpt": "N1",
     "onyomi": [
@@ -33205,7 +33176,7 @@
   {
     "id": "kanji-紋",
     "kanji": "紋",
-    "hanviet": "VĂN VẤN",
+    "hanviet": "VĂN",
     "strokes": 10,
     "jlpt": "N1",
     "onyomi": [
@@ -33577,7 +33548,7 @@
   {
     "id": "kanji-疎",
     "kanji": "疎",
-    "hanviet": "SƠ SỚ",
+    "hanviet": "SƠ",
     "strokes": 12,
     "jlpt": "N1",
     "onyomi": [
@@ -33798,7 +33769,7 @@
   {
     "id": "kanji-且",
     "kanji": "且",
-    "hanviet": "THƯ THẢ TỒ",
+    "hanviet": "THƯ",
     "strokes": 5,
     "jlpt": "N1",
     "onyomi": [
@@ -33896,7 +33867,7 @@
   {
     "id": "kanji-阿",
     "kanji": "阿",
-    "hanviet": "A Á ỐC",
+    "hanviet": "A",
     "strokes": 8,
     "jlpt": "N1",
     "onyomi": [
@@ -33995,7 +33966,7 @@
   {
     "id": "kanji-茜",
     "kanji": "茜",
-    "hanviet": "THIẾN TRỆ TÂY TÊ",
+    "hanviet": "THIẾN",
     "strokes": 9,
     "jlpt": "N1",
     "onyomi": [
@@ -34027,7 +33998,7 @@
   {
     "id": "kanji-栞",
     "kanji": "栞",
-    "hanviet": "KHAN SAN",
+    "hanviet": "KHAN",
     "strokes": 10,
     "jlpt": "N1",
     "onyomi": [
@@ -34059,7 +34030,7 @@
   {
     "id": "kanji-伏",
     "kanji": "伏",
-    "hanviet": "BẶC PHU PHÚC PHỤC",
+    "hanviet": "BẶC",
     "strokes": 6,
     "jlpt": "N1",
     "onyomi": [
@@ -34141,7 +34112,7 @@
   {
     "id": "kanji-奉",
     "kanji": "奉",
-    "hanviet": "BỔNG PHỤNG",
+    "hanviet": "BỔNG",
     "strokes": 8,
     "jlpt": "N1",
     "onyomi": [
@@ -34220,7 +34191,7 @@
   {
     "id": "kanji-朴",
     "kanji": "朴",
-    "hanviet": "PHU PHÁC",
+    "hanviet": "PHU",
     "strokes": 6,
     "jlpt": "N1",
     "onyomi": [
@@ -34328,7 +34299,7 @@
   {
     "id": "kanji-悼",
     "kanji": "悼",
-    "hanviet": "NẠO ĐIỆU",
+    "hanviet": "NẠO",
     "strokes": 11,
     "jlpt": "N1",
     "onyomi": [
@@ -34459,7 +34430,7 @@
   {
     "id": "kanji-傍",
     "kanji": "傍",
-    "hanviet": "BÀNG BẠNG",
+    "hanviet": "BÀNG",
     "strokes": 12,
     "jlpt": "N1",
     "onyomi": [
@@ -34499,7 +34470,7 @@
   {
     "id": "kanji-累",
     "kanji": "累",
-    "hanviet": "LOÃ LUY LUỴ LUỸ",
+    "hanviet": "LOÃ",
     "strokes": 11,
     "jlpt": "N1",
     "onyomi": [
@@ -34598,7 +34569,7 @@
   {
     "id": "kanji-尿",
     "kanji": "尿",
-    "hanviet": "NIẾU NIỆU TUY",
+    "hanviet": "NIẾU",
     "strokes": 7,
     "jlpt": "N1",
     "onyomi": [
@@ -34636,7 +34607,7 @@
   {
     "id": "kanji-賓",
     "kanji": "賓",
-    "hanviet": "THẤN TÂN",
+    "hanviet": "THẤN",
     "strokes": 15,
     "jlpt": "N1",
     "onyomi": [
@@ -34698,7 +34669,7 @@
   {
     "id": "kanji-憾",
     "kanji": "憾",
-    "hanviet": "HÁM ĐẢM",
+    "hanviet": "HÁM",
     "strokes": 16,
     "jlpt": "N1",
     "onyomi": [
@@ -34729,7 +34700,7 @@
   {
     "id": "kanji-弥",
     "kanji": "弥",
-    "hanviet": "DI MY",
+    "hanviet": "DI",
     "strokes": 8,
     "jlpt": "N1",
     "onyomi": [
@@ -34764,7 +34735,7 @@
   {
     "id": "kanji-粗",
     "kanji": "粗",
-    "hanviet": "THÔ THỐ",
+    "hanviet": "THÔ",
     "strokes": 11,
     "jlpt": "N1",
     "onyomi": [
@@ -34963,7 +34934,7 @@
   {
     "id": "kanji-愉",
     "kanji": "愉",
-    "hanviet": "DU THÂU",
+    "hanviet": "DU",
     "strokes": 12,
     "jlpt": "N1",
     "onyomi": [
@@ -35026,7 +34997,7 @@
   {
     "id": "kanji-栓",
     "kanji": "栓",
-    "hanviet": "THUYÊN XUYÊN",
+    "hanviet": "THUYÊN",
     "strokes": 10,
     "jlpt": "N1",
     "onyomi": [
@@ -35155,7 +35126,7 @@
   {
     "id": "kanji-那",
     "kanji": "那",
-    "hanviet": "NA NÁ NẢ",
+    "hanviet": "NA",
     "strokes": 7,
     "jlpt": "N1",
     "onyomi": [
@@ -35189,7 +35160,7 @@
   {
     "id": "kanji-拍",
     "kanji": "拍",
-    "hanviet": "BÁC PHÁCH",
+    "hanviet": "BÁC",
     "strokes": 8,
     "jlpt": "N1",
     "onyomi": [
@@ -35219,7 +35190,7 @@
   {
     "id": "kanji-猶",
     "kanji": "猶",
-    "hanviet": "DO DỨU",
+    "hanviet": "DO",
     "strokes": 12,
     "jlpt": "N1",
     "onyomi": [
@@ -35321,7 +35292,7 @@
   {
     "id": "kanji-縫",
     "kanji": "縫",
-    "hanviet": "PHÙNG PHÚNG",
+    "hanviet": "PHÙNG",
     "strokes": 16,
     "jlpt": "N1",
     "onyomi": [
@@ -35393,7 +35364,7 @@
   {
     "id": "kanji-凡",
     "kanji": "凡",
-    "hanviet": "HOÀN PHÀM",
+    "hanviet": "HOÀN",
     "strokes": 3,
     "jlpt": "N1",
     "onyomi": [
@@ -35465,7 +35436,7 @@
   {
     "id": "kanji-錯",
     "kanji": "錯",
-    "hanviet": "THÁC THỐ",
+    "hanviet": "THÁC",
     "strokes": 16,
     "jlpt": "N1",
     "onyomi": [
@@ -35558,7 +35529,7 @@
   {
     "id": "kanji-弊",
     "kanji": "弊",
-    "hanviet": "TIẾT TẾ TỆ",
+    "hanviet": "TIẾT",
     "strokes": 15,
     "jlpt": "N1",
     "onyomi": [
@@ -35589,7 +35560,7 @@
   {
     "id": "kanji-舶",
     "kanji": "舶",
-    "hanviet": "BẠC BẠCH",
+    "hanviet": "BẠC",
     "strokes": 11,
     "jlpt": "N1",
     "onyomi": [
@@ -35694,7 +35665,7 @@
   {
     "id": "kanji-縛",
     "kanji": "縛",
-    "hanviet": "PHƯỢC PHỌC",
+    "hanviet": "PHƯỢC",
     "strokes": 16,
     "jlpt": "N1",
     "onyomi": [
@@ -35797,7 +35768,7 @@
   {
     "id": "kanji-窒",
     "kanji": "窒",
-    "hanviet": "CHẤT TRẤT",
+    "hanviet": "CHẤT",
     "strokes": 11,
     "jlpt": "N1",
     "onyomi": [
@@ -35974,7 +35945,7 @@
   {
     "id": "kanji-庸",
     "kanji": "庸",
-    "hanviet": "DONG DUNG",
+    "hanviet": "DONG",
     "strokes": 11,
     "jlpt": "N1",
     "onyomi": [
@@ -36005,7 +35976,7 @@
   {
     "id": "kanji-靖",
     "kanji": "靖",
-    "hanviet": "TĨNH TỊNH",
+    "hanviet": "TĨNH",
     "strokes": 13,
     "jlpt": "N1",
     "onyomi": [
@@ -36158,7 +36129,7 @@
   {
     "id": "kanji-尉",
     "kanji": "尉",
-    "hanviet": "UÝ UẤT",
+    "hanviet": "UÝ",
     "strokes": 11,
     "jlpt": "N1",
     "onyomi": [
@@ -36221,7 +36192,7 @@
   {
     "id": "kanji-遥",
     "kanji": "遥",
-    "hanviet": "DAO DIÊU",
+    "hanviet": "DAO",
     "strokes": 12,
     "jlpt": "N1",
     "onyomi": [
@@ -36345,7 +36316,7 @@
   {
     "id": "kanji-旋",
     "kanji": "旋",
-    "hanviet": "TOÀN TUYỀN",
+    "hanviet": "TOÀN",
     "strokes": 11,
     "jlpt": "N1",
     "onyomi": [
@@ -36378,7 +36349,7 @@
   {
     "id": "kanji-腸",
     "kanji": "腸",
-    "hanviet": "TRÀNG TRƯỜNG",
+    "hanviet": "TRÀNG",
     "strokes": 13,
     "jlpt": "N1",
     "onyomi": [
@@ -36483,7 +36454,7 @@
   {
     "id": "kanji-漬",
     "kanji": "漬",
-    "hanviet": "TÍ TÝ",
+    "hanviet": "TÍ",
     "strokes": 14,
     "jlpt": "N1",
     "onyomi": [
@@ -36611,7 +36582,7 @@
   {
     "id": "kanji-峡",
     "kanji": "峡",
-    "hanviet": "GIÁP HIỆP HẠP",
+    "hanviet": "GIÁP",
     "strokes": 9,
     "jlpt": "N1",
     "onyomi": [
@@ -36702,7 +36673,7 @@
   {
     "id": "kanji-弔",
     "kanji": "弔",
-    "hanviet": "ĐIẾU ĐÍCH",
+    "hanviet": "ĐIẾU",
     "strokes": 4,
     "jlpt": "N1",
     "onyomi": [
@@ -36812,7 +36783,7 @@
   {
     "id": "kanji-衡",
     "kanji": "衡",
-    "hanviet": "HOÀNH HÀNH",
+    "hanviet": "HOÀNH",
     "strokes": 16,
     "jlpt": "N1",
     "onyomi": [
@@ -36908,7 +36879,7 @@
   {
     "id": "kanji-喝",
     "kanji": "喝",
-    "hanviet": "HÁT HẠT ÁI ỚI",
+    "hanviet": "HÁT",
     "strokes": 11,
     "jlpt": "N1",
     "onyomi": [
@@ -36980,7 +36951,7 @@
   {
     "id": "kanji-膜",
     "kanji": "膜",
-    "hanviet": "MÔ MẠC",
+    "hanviet": "MÔ",
     "strokes": 14,
     "jlpt": "N1",
     "onyomi": [
@@ -37009,7 +36980,7 @@
   {
     "id": "kanji-盲",
     "kanji": "盲",
-    "hanviet": "MANH VỌNG",
+    "hanviet": "MANH",
     "strokes": 8,
     "jlpt": "N1",
     "onyomi": [
@@ -37069,7 +37040,7 @@
   {
     "id": "kanji-酵",
     "kanji": "酵",
-    "hanviet": "DIẾU GIÁO",
+    "hanviet": "DIẾU",
     "strokes": 14,
     "jlpt": "N1",
     "onyomi": [
@@ -37096,7 +37067,7 @@
   {
     "id": "kanji-堕",
     "kanji": "堕",
-    "hanviet": "HUY ĐOẠ",
+    "hanviet": "HUY",
     "strokes": 12,
     "jlpt": "N1",
     "onyomi": [
@@ -37298,7 +37269,7 @@
   {
     "id": "kanji-蒼",
     "kanji": "蒼",
-    "hanviet": "THƯƠNG THƯỞNG",
+    "hanviet": "THƯƠNG",
     "strokes": 13,
     "jlpt": "N1",
     "onyomi": [
@@ -37513,7 +37484,7 @@
   {
     "id": "kanji-扶",
     "kanji": "扶",
-    "hanviet": "BỒ PHÙ",
+    "hanviet": "BỒ",
     "strokes": 7,
     "jlpt": "N1",
     "onyomi": [
@@ -37544,7 +37515,7 @@
   {
     "id": "kanji-戯",
     "kanji": "戯",
-    "hanviet": "HÍ HÝ",
+    "hanviet": "HÍ",
     "strokes": 15,
     "jlpt": "N1",
     "onyomi": [
@@ -37580,7 +37551,7 @@
   {
     "id": "kanji-忌",
     "kanji": "忌",
-    "hanviet": "KÍ KÝ KỊ KỴ",
+    "hanviet": "KÍ",
     "strokes": 7,
     "jlpt": "N1",
     "onyomi": [
@@ -37614,7 +37585,7 @@
   {
     "id": "kanji-濁",
     "kanji": "濁",
-    "hanviet": "TRẠC TRỌC",
+    "hanviet": "TRẠC",
     "strokes": 16,
     "jlpt": "N1",
     "onyomi": [
@@ -37656,7 +37627,7 @@
   {
     "id": "kanji-奔",
     "kanji": "奔",
-    "hanviet": "BÔN PHẪN",
+    "hanviet": "BÔN",
     "strokes": 8,
     "jlpt": "N1",
     "onyomi": [
@@ -37688,7 +37659,7 @@
   {
     "id": "kanji-肖",
     "kanji": "肖",
-    "hanviet": "TIÊU TIẾU",
+    "hanviet": "TIÊU",
     "strokes": 7,
     "jlpt": "N1",
     "onyomi": [
@@ -37826,7 +37797,7 @@
   {
     "id": "kanji-藩",
     "kanji": "藩",
-    "hanviet": "PHAN PHIÊN",
+    "hanviet": "PHAN",
     "strokes": 18,
     "jlpt": "N1",
     "onyomi": [
@@ -37946,7 +37917,7 @@
   {
     "id": "kanji-迭",
     "kanji": "迭",
-    "hanviet": "TUYỂN ĐIỆT",
+    "hanviet": "TUYỂN",
     "strokes": 8,
     "jlpt": "N1",
     "onyomi": [
@@ -37975,7 +37946,7 @@
   {
     "id": "kanji-椎",
     "kanji": "椎",
-    "hanviet": "CHUY CHUỲ TRUỲ",
+    "hanviet": "CHUY",
     "strokes": 12,
     "jlpt": "N1",
     "onyomi": [
@@ -38096,7 +38067,7 @@
   {
     "id": "kanji-譜",
     "kanji": "譜",
-    "hanviet": "PHẢ PHỔ",
+    "hanviet": "PHẢ",
     "strokes": 19,
     "jlpt": "N1",
     "onyomi": [
@@ -38161,7 +38132,7 @@
   {
     "id": "kanji-帆",
     "kanji": "帆",
-    "hanviet": "PHÀM PHÂM",
+    "hanviet": "PHÀM",
     "strokes": 6,
     "jlpt": "N1",
     "onyomi": [
@@ -38190,7 +38161,7 @@
   {
     "id": "kanji-憤",
     "kanji": "憤",
-    "hanviet": "PHẤN PHẪN",
+    "hanviet": "PHẤN",
     "strokes": 15,
     "jlpt": "N1",
     "onyomi": [
@@ -38420,7 +38391,7 @@
   {
     "id": "kanji-璃",
     "kanji": "璃",
-    "hanviet": "LI LY LÊ",
+    "hanviet": "LI",
     "strokes": 15,
     "jlpt": "N1",
     "onyomi": [
@@ -38514,7 +38485,7 @@
   {
     "id": "kanji-峠",
     "kanji": "峠",
-    "hanviet": "CA KHẢI SÁ TẠP",
+    "hanviet": "CA",
     "strokes": 9,
     "jlpt": "N1",
     "onyomi": [],
@@ -38831,7 +38802,7 @@
   {
     "id": "kanji-漆",
     "kanji": "漆",
-    "hanviet": "THẾ TẤT",
+    "hanviet": "THẾ",
     "strokes": 14,
     "jlpt": "N1",
     "onyomi": [
@@ -38926,7 +38897,7 @@
   {
     "id": "kanji-礁",
     "kanji": "礁",
-    "hanviet": "TIÊU TIỀU",
+    "hanviet": "TIÊU",
     "strokes": 17,
     "jlpt": "N1",
     "onyomi": [
@@ -38956,7 +38927,7 @@
   {
     "id": "kanji-屯",
     "kanji": "屯",
-    "hanviet": "TRUÂN ĐỒN",
+    "hanviet": "TRUÂN",
     "strokes": 4,
     "jlpt": "N1",
     "onyomi": [
@@ -39179,7 +39150,7 @@
   {
     "id": "kanji-卑",
     "kanji": "卑",
-    "hanviet": "TI TY",
+    "hanviet": "TI",
     "strokes": 9,
     "jlpt": "N1",
     "onyomi": [
@@ -39221,7 +39192,7 @@
   {
     "id": "kanji-侮",
     "kanji": "侮",
-    "hanviet": "HỐI VŨ",
+    "hanviet": "HỐI",
     "strokes": 8,
     "jlpt": "N1",
     "onyomi": [
@@ -39289,7 +39260,7 @@
   {
     "id": "kanji-胆",
     "kanji": "胆",
-    "hanviet": "ĐÀN ĐẢM",
+    "hanviet": "ĐÀN",
     "strokes": 9,
     "jlpt": "N1",
     "onyomi": [
@@ -39321,7 +39292,7 @@
   {
     "id": "kanji-浪",
     "kanji": "浪",
-    "hanviet": "LANG LÃNG",
+    "hanviet": "LANG",
     "strokes": 10,
     "jlpt": "N1",
     "onyomi": [
@@ -39415,7 +39386,7 @@
   {
     "id": "kanji-憧",
     "kanji": "憧",
-    "hanviet": "SUNG TRÁNG XUNG",
+    "hanviet": "SUNG",
     "strokes": 15,
     "jlpt": "N1",
     "onyomi": [
@@ -39457,7 +39428,7 @@
   {
     "id": "kanji-慶",
     "kanji": "慶",
-    "hanviet": "KHANH KHÁNH KHƯƠNG",
+    "hanviet": "KHANH",
     "strokes": 15,
     "jlpt": "N1",
     "onyomi": [
@@ -39489,7 +39460,7 @@
   {
     "id": "kanji-亜",
     "kanji": "亜",
-    "hanviet": "A Á",
+    "hanviet": "A",
     "strokes": 7,
     "jlpt": "N1",
     "onyomi": [
@@ -39522,7 +39493,7 @@
   {
     "id": "kanji-汰",
     "kanji": "汰",
-    "hanviet": "THÁI THẢI",
+    "hanviet": "THÁI",
     "strokes": 7,
     "jlpt": "N1",
     "onyomi": [
@@ -39599,7 +39570,7 @@
   {
     "id": "kanji-沙",
     "kanji": "沙",
-    "hanviet": "SA SÁ",
+    "hanviet": "SA",
     "strokes": 7,
     "jlpt": "N1",
     "onyomi": [
@@ -39853,7 +39824,7 @@
   {
     "id": "kanji-唄",
     "kanji": "唄",
-    "hanviet": "BÁI BẠI BỐI",
+    "hanviet": "BÁI",
     "strokes": 10,
     "jlpt": "N1",
     "onyomi": [
@@ -39912,7 +39883,7 @@
   {
     "id": "kanji-渓",
     "kanji": "渓",
-    "hanviet": "HOÁT KHÊ",
+    "hanviet": "HOÁT",
     "strokes": 11,
     "jlpt": "N1",
     "onyomi": [
@@ -40115,7 +40086,7 @@
   {
     "id": "kanji-殉",
     "kanji": "殉",
-    "hanviet": "TUẪN TUẬN",
+    "hanviet": "TUẪN",
     "strokes": 10,
     "jlpt": "N1",
     "onyomi": [
@@ -40211,7 +40182,7 @@
   {
     "id": "kanji-桟",
     "kanji": "桟",
-    "hanviet": "CHĂN SẠN TRẢN TRĂN XIỄN",
+    "hanviet": "CHĂN",
     "strokes": 10,
     "jlpt": "N1",
     "onyomi": [
@@ -40311,7 +40282,7 @@
   {
     "id": "kanji-罷",
     "kanji": "罷",
-    "hanviet": "BÃI BÌ",
+    "hanviet": "BÃI",
     "strokes": 15,
     "jlpt": "N1",
     "onyomi": [
@@ -40480,7 +40451,7 @@
   {
     "id": "kanji-漸",
     "kanji": "漸",
-    "hanviet": "TIÊM TIỀM TIỆM",
+    "hanviet": "TIÊM",
     "strokes": 14,
     "jlpt": "N1",
     "onyomi": [
@@ -40547,7 +40518,7 @@
   {
     "id": "kanji-妄",
     "kanji": "妄",
-    "hanviet": "VONG VÔ VỌNG",
+    "hanviet": "VONG",
     "strokes": 6,
     "jlpt": "N1",
     "onyomi": [
@@ -40643,7 +40614,7 @@
   {
     "id": "kanji-渥",
     "kanji": "渥",
-    "hanviet": "ÁC ỐC",
+    "hanviet": "ÁC",
     "strokes": 12,
     "jlpt": "N1",
     "onyomi": [
@@ -40732,7 +40703,7 @@
   {
     "id": "kanji-鮎",
     "kanji": "鮎",
-    "hanviet": "NIÊM NIỀM",
+    "hanviet": "NIÊM",
     "strokes": 16,
     "jlpt": "N1",
     "onyomi": [
@@ -40798,7 +40769,7 @@
   {
     "id": "kanji-亥",
     "kanji": "亥",
-    "hanviet": "GIAI HỢI",
+    "hanviet": "GIAI",
     "strokes": 6,
     "jlpt": "N1",
     "onyomi": [
@@ -40830,7 +40801,7 @@
   {
     "id": "kanji-郁",
     "kanji": "郁",
-    "hanviet": "UẤT ÚC ÚC",
+    "hanviet": "UẤT",
     "strokes": 9,
     "jlpt": "N1",
     "onyomi": [
@@ -40860,7 +40831,7 @@
   {
     "id": "kanji-磯",
     "kanji": "磯",
-    "hanviet": "KI KY",
+    "hanviet": "KI",
     "strokes": 17,
     "jlpt": "N1",
     "onyomi": [
@@ -40920,7 +40891,7 @@
   {
     "id": "kanji-允",
     "kanji": "允",
-    "hanviet": "DOÃN DUẪN",
+    "hanviet": "DOÃN",
     "strokes": 4,
     "jlpt": "N1",
     "onyomi": [
@@ -41015,7 +40986,7 @@
   {
     "id": "kanji-卯",
     "kanji": "卯",
-    "hanviet": "MÃO MẸO",
+    "hanviet": "MÃO",
     "strokes": 5,
     "jlpt": "N1",
     "onyomi": [
@@ -41048,7 +41019,7 @@
   {
     "id": "kanji-丑",
     "kanji": "丑",
-    "hanviet": "SỬU XÚ",
+    "hanviet": "SỬU",
     "strokes": 4,
     "jlpt": "N1",
     "onyomi": [
@@ -41182,7 +41153,7 @@
   {
     "id": "kanji-苑",
     "kanji": "苑",
-    "hanviet": "UYỂN UÂN UẤT UẨN",
+    "hanviet": "UYỂN",
     "strokes": 8,
     "jlpt": "N1",
     "onyomi": [
@@ -41215,7 +41186,7 @@
   {
     "id": "kanji-於",
     "kanji": "於",
-    "hanviet": "Ô Ư",
+    "hanviet": "Ô",
     "strokes": 8,
     "jlpt": "N1",
     "onyomi": [
@@ -41318,7 +41289,7 @@
   {
     "id": "kanji-伽",
     "kanji": "伽",
-    "hanviet": "CÀ GIA GIÀ",
+    "hanviet": "CÀ",
     "strokes": 7,
     "jlpt": "N1",
     "onyomi": [
@@ -41387,7 +41358,7 @@
   {
     "id": "kanji-茄",
     "kanji": "茄",
-    "hanviet": "CÀ GIA GIÀ",
+    "hanviet": "CÀ",
     "strokes": 8,
     "jlpt": "N1",
     "onyomi": [
@@ -41511,7 +41482,7 @@
   {
     "id": "kanji-馨",
     "kanji": "馨",
-    "hanviet": "HINH HẤN",
+    "hanviet": "HINH",
     "strokes": 20,
     "jlpt": "N1",
     "onyomi": [
@@ -41576,7 +41547,7 @@
   {
     "id": "kanji-褐",
     "kanji": "褐",
-    "hanviet": "CÁT HẠT",
+    "hanviet": "CÁT",
     "strokes": 13,
     "jlpt": "N1",
     "onyomi": [
@@ -41605,7 +41576,7 @@
   {
     "id": "kanji-叶",
     "kanji": "叶",
-    "hanviet": "DIỆP HIỆP",
+    "hanviet": "DIỆP",
     "strokes": 5,
     "jlpt": "N1",
     "onyomi": [
@@ -41739,7 +41710,7 @@
   {
     "id": "kanji-棺",
     "kanji": "棺",
-    "hanviet": "QUAN QUÁN",
+    "hanviet": "QUAN",
     "strokes": 12,
     "jlpt": "N1",
     "onyomi": [
@@ -41767,7 +41738,7 @@
   {
     "id": "kanji-莞",
     "kanji": "莞",
-    "hanviet": "HOÀN HOÁN HOẢN QUẢN",
+    "hanviet": "HOÀN",
     "strokes": 10,
     "jlpt": "N1",
     "onyomi": [
@@ -41834,7 +41805,7 @@
   {
     "id": "kanji-嬉",
     "kanji": "嬉",
-    "hanviet": "HI HY",
+    "hanviet": "HI",
     "strokes": 15,
     "jlpt": "N1",
     "onyomi": [
@@ -41896,7 +41867,7 @@
   {
     "id": "kanji-稀",
     "kanji": "稀",
-    "hanviet": "HI HY",
+    "hanviet": "HI",
     "strokes": 12,
     "jlpt": "N1",
     "onyomi": [
@@ -42022,7 +41993,7 @@
   {
     "id": "kanji-亨",
     "kanji": "亨",
-    "hanviet": "HANH HƯỞNG PHANH",
+    "hanviet": "HANH",
     "strokes": 7,
     "jlpt": "N1",
     "onyomi": [
@@ -42086,7 +42057,7 @@
   {
     "id": "kanji-喬",
     "kanji": "喬",
-    "hanviet": "KIÊU KIỀU",
+    "hanviet": "KIÊU",
     "strokes": 12,
     "jlpt": "N1",
     "onyomi": [
@@ -42148,7 +42119,7 @@
   {
     "id": "kanji-桐",
     "kanji": "桐",
-    "hanviet": "THÔNG ĐỒNG",
+    "hanviet": "THÔNG",
     "strokes": 10,
     "jlpt": "N1",
     "onyomi": [
@@ -42178,7 +42149,7 @@
   {
     "id": "kanji-斤",
     "kanji": "斤",
-    "hanviet": "CÂN CẤN",
+    "hanviet": "CÂN",
     "strokes": 4,
     "jlpt": "N1",
     "onyomi": [
@@ -42243,7 +42214,7 @@
   {
     "id": "kanji-欽",
     "kanji": "欽",
-    "hanviet": "KHÂM KHẤM",
+    "hanviet": "KHÂM",
     "strokes": 12,
     "jlpt": "N1",
     "onyomi": [
@@ -42304,7 +42275,7 @@
   {
     "id": "kanji-衿",
     "kanji": "衿",
-    "hanviet": "CÂM KHÂM",
+    "hanviet": "CÂM",
     "strokes": 9,
     "jlpt": "N1",
     "onyomi": [
@@ -42476,7 +42447,7 @@
   {
     "id": "kanji-袈",
     "kanji": "袈",
-    "hanviet": "CA CÀ GIÀ",
+    "hanviet": "CA",
     "strokes": 11,
     "jlpt": "N1",
     "onyomi": [
@@ -42536,7 +42507,7 @@
   {
     "id": "kanji-慧",
     "kanji": "慧",
-    "hanviet": "HUỆ TUỆ",
+    "hanviet": "HUỆ",
     "strokes": 15,
     "jlpt": "N1",
     "onyomi": [
@@ -42662,7 +42633,7 @@
   {
     "id": "kanji-梧",
     "kanji": "梧",
-    "hanviet": "NGÔ NGỘ",
+    "hanviet": "NGÔ",
     "strokes": 11,
     "jlpt": "N1",
     "onyomi": [
@@ -42692,7 +42663,7 @@
   {
     "id": "kanji-瑚",
     "kanji": "瑚",
-    "hanviet": "HÔ HỒ",
+    "hanviet": "HÔ",
     "strokes": 13,
     "jlpt": "N1",
     "onyomi": [
@@ -42721,7 +42692,7 @@
   {
     "id": "kanji-侯",
     "kanji": "侯",
-    "hanviet": "HẦU HẬU",
+    "hanviet": "HẦU",
     "strokes": 9,
     "jlpt": "N1",
     "onyomi": [
@@ -42781,7 +42752,7 @@
   {
     "id": "kanji-宏",
     "kanji": "宏",
-    "hanviet": "HOÀNH HOẰNG",
+    "hanviet": "HOÀNH",
     "strokes": 7,
     "jlpt": "N1",
     "onyomi": [
@@ -42878,7 +42849,7 @@
   {
     "id": "kanji-晃",
     "kanji": "晃",
-    "hanviet": "HOÀNG HOẢNG",
+    "hanviet": "HOÀNG",
     "strokes": 10,
     "jlpt": "N1",
     "onyomi": [
@@ -43131,7 +43102,7 @@
   {
     "id": "kanji-采",
     "kanji": "采",
-    "hanviet": "THÁI THẢI",
+    "hanviet": "THÁI",
     "strokes": 8,
     "jlpt": "N1",
     "onyomi": [
@@ -43330,7 +43301,7 @@
   {
     "id": "kanji-蚕",
     "kanji": "蚕",
-    "hanviet": "TÀM TẰM",
+    "hanviet": "TÀM",
     "strokes": 10,
     "jlpt": "N1",
     "onyomi": [
@@ -43453,7 +43424,7 @@
   {
     "id": "kanji-爾",
     "kanji": "爾",
-    "hanviet": "NHĨ NỄ",
+    "hanviet": "NHĨ",
     "strokes": 14,
     "jlpt": "N1",
     "onyomi": [
@@ -43492,7 +43463,7 @@
   {
     "id": "kanji-蒔",
     "kanji": "蒔",
-    "hanviet": "THI THÌ",
+    "hanviet": "THI",
     "strokes": 13,
     "jlpt": "N1",
     "onyomi": [
@@ -43558,7 +43529,7 @@
   {
     "id": "kanji-偲",
     "kanji": "偲",
-    "hanviet": "TAI TI TY",
+    "hanviet": "TAI",
     "strokes": 11,
     "jlpt": "N1",
     "onyomi": [
@@ -43623,7 +43594,7 @@
   {
     "id": "kanji-勺",
     "kanji": "勺",
-    "hanviet": "CHƯỚC THƯỢC",
+    "hanviet": "CHƯỚC",
     "strokes": 3,
     "jlpt": "N1",
     "onyomi": [
@@ -43684,7 +43655,7 @@
   {
     "id": "kanji-儒",
     "kanji": "儒",
-    "hanviet": "NHO NHU",
+    "hanviet": "NHO",
     "strokes": 16,
     "jlpt": "N1",
     "onyomi": [
@@ -43811,7 +43782,7 @@
   {
     "id": "kanji-竣",
     "kanji": "竣",
-    "hanviet": "THUYÊN THUÂN",
+    "hanviet": "THUYÊN",
     "strokes": 12,
     "jlpt": "N1",
     "onyomi": [
@@ -43935,7 +43906,7 @@
   {
     "id": "kanji-渚",
     "kanji": "渚",
-    "hanviet": "CHỬ HỬ",
+    "hanviet": "CHỬ",
     "strokes": 11,
     "jlpt": "N1",
     "onyomi": [
@@ -44062,7 +44033,7 @@
   {
     "id": "kanji-捷",
     "kanji": "捷",
-    "hanviet": "THIỆP TIỆP",
+    "hanviet": "THIỆP",
     "strokes": 11,
     "jlpt": "N1",
     "onyomi": [
@@ -44093,7 +44064,7 @@
   {
     "id": "kanji-梢",
     "kanji": "梢",
-    "hanviet": "SAO TIÊU",
+    "hanviet": "SAO",
     "strokes": 11,
     "jlpt": "N1",
     "onyomi": [
@@ -44238,7 +44209,7 @@
   {
     "id": "kanji-丞",
     "kanji": "丞",
-    "hanviet": "CHƯNG CHỬNG THỪA",
+    "hanviet": "CHƯNG",
     "strokes": 6,
     "jlpt": "N1",
     "onyomi": [
@@ -44333,7 +44304,7 @@
   {
     "id": "kanji-榛",
     "kanji": "榛",
-    "hanviet": "TRÂN TRĂN",
+    "hanviet": "TRÂN",
     "strokes": 14,
     "jlpt": "N1",
     "onyomi": [
@@ -44462,7 +44433,7 @@
   {
     "id": "kanji-錘",
     "kanji": "錘",
-    "hanviet": "CHUY CHUÝ CHUỲ",
+    "hanviet": "CHUY",
     "strokes": 16,
     "jlpt": "N1",
     "onyomi": [
@@ -44676,7 +44647,7 @@
   {
     "id": "kanji-銑",
     "kanji": "銑",
-    "hanviet": "TIÊN TIỂN",
+    "hanviet": "TIÊN",
     "strokes": 14,
     "jlpt": "N1",
     "onyomi": [
@@ -44803,7 +44774,7 @@
   {
     "id": "kanji-綜",
     "kanji": "綜",
-    "hanviet": "TÔNG TỐNG TỔNG",
+    "hanviet": "TÔNG",
     "strokes": 14,
     "jlpt": "N1",
     "onyomi": [
@@ -44924,7 +44895,7 @@
   {
     "id": "kanji-啄",
     "kanji": "啄",
-    "hanviet": "TRÁC TRỤ",
+    "hanviet": "TRÁC",
     "strokes": 10,
     "jlpt": "N1",
     "onyomi": [
@@ -44986,7 +44957,7 @@
   {
     "id": "kanji-只",
     "kanji": "只",
-    "hanviet": "CHÍCH CHỈ",
+    "hanviet": "CHÍCH",
     "strokes": 5,
     "jlpt": "N1",
     "onyomi": [
@@ -45019,7 +44990,7 @@
   {
     "id": "kanji-但",
     "kanji": "但",
-    "hanviet": "ĐÁN ĐÃN",
+    "hanviet": "ĐÁN",
     "strokes": 7,
     "jlpt": "N1",
     "onyomi": [
@@ -45051,7 +45022,7 @@
   {
     "id": "kanji-辰",
     "kanji": "辰",
-    "hanviet": "THÌN THẦN",
+    "hanviet": "THÌN",
     "strokes": 7,
     "jlpt": "N1",
     "onyomi": [
@@ -45208,7 +45179,7 @@
   {
     "id": "kanji-衷",
     "kanji": "衷",
-    "hanviet": "CHUNG TRUNG TRÚNG",
+    "hanviet": "CHUNG",
     "strokes": 10,
     "jlpt": "N1",
     "onyomi": [
@@ -45454,7 +45425,7 @@
   {
     "id": "kanji-椿",
     "kanji": "椿",
-    "hanviet": "THUNG XUÂN",
+    "hanviet": "THUNG",
     "strokes": 13,
     "jlpt": "N1",
     "onyomi": [
@@ -45514,7 +45485,7 @@
   {
     "id": "kanji-悌",
     "kanji": "悌",
-    "hanviet": "ĐỂ ĐỄ",
+    "hanviet": "ĐỂ",
     "strokes": 10,
     "jlpt": "N1",
     "onyomi": [
@@ -45574,7 +45545,7 @@
   {
     "id": "kanji-逓",
     "kanji": "逓",
-    "hanviet": "ĐÁI ĐỆ",
+    "hanviet": "ĐÁI",
     "strokes": 10,
     "jlpt": "N1",
     "onyomi": [
@@ -45798,7 +45769,7 @@
   {
     "id": "kanji-敦",
     "kanji": "敦",
-    "hanviet": "ĐIÊU ĐOÀN ĐÔI ĐÔN ĐẠO ĐỐI ĐỒN ĐỘN",
+    "hanviet": "ĐIÊU",
     "strokes": 12,
     "jlpt": "N1",
     "onyomi": [
@@ -46062,7 +46033,7 @@
   {
     "id": "kanji-頒",
     "kanji": "頒",
-    "hanviet": "BAN PHÂN PHẦN",
+    "hanviet": "BAN",
     "strokes": 13,
     "jlpt": "N1",
     "onyomi": [
@@ -46094,7 +46065,7 @@
   {
     "id": "kanji-眉",
     "kanji": "眉",
-    "hanviet": "MI MY",
+    "hanviet": "MI",
     "strokes": 9,
     "jlpt": "N1",
     "onyomi": [
@@ -46471,7 +46442,7 @@
   {
     "id": "kanji-倣",
     "kanji": "倣",
-    "hanviet": "PHÓNG PHẢNG PHỎNG",
+    "hanviet": "PHÓNG",
     "strokes": 10,
     "jlpt": "N1",
     "onyomi": [
@@ -46538,7 +46509,7 @@
   {
     "id": "kanji-鳳",
     "kanji": "鳳",
-    "hanviet": "PHƯỢNG PHỤNG",
+    "hanviet": "PHƯỢNG",
     "strokes": 14,
     "jlpt": "N1",
     "onyomi": [
@@ -46725,7 +46696,7 @@
   {
     "id": "kanji-麿",
     "kanji": "麿",
-    "hanviet": "MI MY",
+    "hanviet": "MI",
     "strokes": 18,
     "jlpt": "N1",
     "onyomi": [],
@@ -46756,7 +46727,7 @@
   {
     "id": "kanji-巳",
     "kanji": "巳",
-    "hanviet": "TỊ TỴ",
+    "hanviet": "TỊ",
     "strokes": 3,
     "jlpt": "N1",
     "onyomi": [
@@ -46787,7 +46758,7 @@
   {
     "id": "kanji-稔",
     "kanji": "稔",
-    "hanviet": "NHẪM NẪM",
+    "hanviet": "NHẪM",
     "strokes": 13,
     "jlpt": "N1",
     "onyomi": [
@@ -46853,7 +46824,7 @@
   {
     "id": "kanji-孟",
     "kanji": "孟",
-    "hanviet": "MÃNG MẠNH",
+    "hanviet": "MÃNG",
     "strokes": 8,
     "jlpt": "N1",
     "onyomi": [
@@ -46887,7 +46858,7 @@
   {
     "id": "kanji-耗",
     "kanji": "耗",
-    "hanviet": "HAO HÁO MAO MẠO",
+    "hanviet": "HAO",
     "strokes": 10,
     "jlpt": "N1",
     "onyomi": [
@@ -46917,7 +46888,7 @@
   {
     "id": "kanji-匁",
     "kanji": "匁",
-    "hanviet": "LẠNG LƯỠNG",
+    "hanviet": "LẠNG",
     "strokes": 4,
     "jlpt": "N1",
     "onyomi": [],
@@ -46980,7 +46951,7 @@
   {
     "id": "kanji-耶",
     "kanji": "耶",
-    "hanviet": "DA GIA TÀ",
+    "hanviet": "DA",
     "strokes": 9,
     "jlpt": "N1",
     "onyomi": [
@@ -47011,7 +46982,7 @@
   {
     "id": "kanji-佑",
     "kanji": "佑",
-    "hanviet": "HỮU HỰU",
+    "hanviet": "HỮU",
     "strokes": 7,
     "jlpt": "N1",
     "onyomi": [
@@ -47074,7 +47045,7 @@
   {
     "id": "kanji-柚",
     "kanji": "柚",
-    "hanviet": "DỮU TRỤC",
+    "hanviet": "DỮU",
     "strokes": 9,
     "jlpt": "N1",
     "onyomi": [
@@ -47106,7 +47077,7 @@
   {
     "id": "kanji-祐",
     "kanji": "祐",
-    "hanviet": "HỮU HỰU",
+    "hanviet": "HỮU",
     "strokes": 9,
     "jlpt": "N1",
     "onyomi": [
@@ -47196,7 +47167,7 @@
   {
     "id": "kanji-窯",
     "kanji": "窯",
-    "hanviet": "DAO DIÊU",
+    "hanviet": "DAO",
     "strokes": 15,
     "jlpt": "N1",
     "onyomi": [
@@ -47262,7 +47233,7 @@
   {
     "id": "kanji-蓉",
     "kanji": "蓉",
-    "hanviet": "DONG DUNG",
+    "hanviet": "DONG",
     "strokes": 13,
     "jlpt": "N1",
     "onyomi": [
@@ -47289,7 +47260,7 @@
   {
     "id": "kanji-濫",
     "kanji": "濫",
-    "hanviet": "CÃM HẠM LAM LÃM LẠM",
+    "hanviet": "CÃM",
     "strokes": 18,
     "jlpt": "N1",
     "onyomi": [
@@ -47387,7 +47358,7 @@
   {
     "id": "kanji-李",
     "kanji": "李",
-    "hanviet": "LÍ LÝ",
+    "hanviet": "LÍ",
     "strokes": 7,
     "jlpt": "N1",
     "onyomi": [
@@ -47446,7 +47417,7 @@
   {
     "id": "kanji-稜",
     "kanji": "稜",
-    "hanviet": "LĂNG LẮNG",
+    "hanviet": "LĂNG",
     "strokes": 13,
     "jlpt": "N1",
     "onyomi": [
@@ -47482,7 +47453,7 @@
   {
     "id": "kanji-厘",
     "kanji": "厘",
-    "hanviet": "HI LI LY TRIỀN",
+    "hanviet": "HI",
     "strokes": 9,
     "jlpt": "N1",
     "onyomi": [
@@ -47604,7 +47575,7 @@
   {
     "id": "kanji-嶺",
     "kanji": "嶺",
-    "hanviet": "LÃNH LĨNH",
+    "hanviet": "LÃNH",
     "strokes": 17,
     "jlpt": "N1",
     "onyomi": [
@@ -47635,7 +47606,7 @@
   {
     "id": "kanji-怜",
     "kanji": "怜",
-    "hanviet": "LINH LIÊN LÂN",
+    "hanviet": "LINH",
     "strokes": 8,
     "jlpt": "N1",
     "onyomi": [
@@ -47760,7 +47731,7 @@
   {
     "id": "kanji-倭",
     "kanji": "倭",
-    "hanviet": "NUỴ OA OẢI UY",
+    "hanviet": "NUỴ",
     "strokes": 10,
     "jlpt": "N1",
     "onyomi": [
@@ -47793,7 +47764,7 @@
   {
     "id": "kanji-亘",
     "kanji": "亘",
-    "hanviet": "CẮNG HOÀN TUYÊN",
+    "hanviet": "CẮNG",
     "strokes": 6,
     "jlpt": "N1",
     "onyomi": [
@@ -47858,7 +47829,7 @@
   {
     "id": "kanji-勁",
     "kanji": "勁",
-    "hanviet": "KÌNH KÍNH",
+    "hanviet": "KÌNH",
     "strokes": 9,
     "jlpt": "N1",
     "onyomi": [
@@ -48008,7 +47979,7 @@
   {
     "id": "kanji-晏",
     "kanji": "晏",
-    "hanviet": "YẾN ÁN",
+    "hanviet": "YẾN",
     "strokes": 10,
     "jlpt": "N1",
     "onyomi": [
@@ -48073,7 +48044,7 @@
   {
     "id": "kanji-晟",
     "kanji": "晟",
-    "hanviet": "THẠNH THỊNH",
+    "hanviet": "THẠNH",
     "strokes": 10,
     "jlpt": "N1",
     "onyomi": [
@@ -48135,7 +48106,7 @@
   {
     "id": "kanji-椰",
     "kanji": "椰",
-    "hanviet": "DA GIA",
+    "hanviet": "DA",
     "strokes": 13,
     "jlpt": "N1",
     "onyomi": [
@@ -48195,7 +48166,7 @@
   {
     "id": "kanji-洸",
     "kanji": "洸",
-    "hanviet": "HOẢNG QUANG",
+    "hanviet": "HOẢNG",
     "strokes": 9,
     "jlpt": "N1",
     "onyomi": [
@@ -48223,7 +48194,7 @@
   {
     "id": "kanji-洵",
     "kanji": "洵",
-    "hanviet": "TUÂN TUẦN",
+    "hanviet": "TUÂN",
     "strokes": 9,
     "jlpt": "N1",
     "onyomi": [
@@ -48285,7 +48256,7 @@
   {
     "id": "kanji-漱",
     "kanji": "漱",
-    "hanviet": "SẤU THẤU TÂU",
+    "hanviet": "SẤU",
     "strokes": 14,
     "jlpt": "N1",
     "onyomi": [
@@ -48383,7 +48354,7 @@
   {
     "id": "kanji-燿",
     "kanji": "燿",
-    "hanviet": "DIỆU SẢO",
+    "hanviet": "DIỆU",
     "strokes": 18,
     "jlpt": "N1",
     "onyomi": [
@@ -48443,7 +48414,7 @@
   {
     "id": "kanji-皓",
     "kanji": "皓",
-    "hanviet": "CÁO CẢO HẠO",
+    "hanviet": "CÁO",
     "strokes": 12,
     "jlpt": "N1",
     "onyomi": [
@@ -48505,7 +48476,7 @@
   {
     "id": "kanji-笙",
     "kanji": "笙",
-    "hanviet": "SANH SINH",
+    "hanviet": "SANH",
     "strokes": 11,
     "jlpt": "N1",
     "onyomi": [
@@ -48537,7 +48508,7 @@
   {
     "id": "kanji-綸",
     "kanji": "綸",
-    "hanviet": "LUÂN QUAN",
+    "hanviet": "LUÂN",
     "strokes": 14,
     "jlpt": "N1",
     "onyomi": [
@@ -48628,7 +48599,7 @@
   {
     "id": "kanji-菫",
     "kanji": "菫",
-    "hanviet": "CẦN CẬN",
+    "hanviet": "CẦN",
     "strokes": 11,
     "jlpt": "N1",
     "onyomi": [
@@ -48688,7 +48659,7 @@
   {
     "id": "kanji-諄",
     "kanji": "諄",
-    "hanviet": "CHUÂN TRUÂN",
+    "hanviet": "CHUÂN",
     "strokes": 15,
     "jlpt": "N1",
     "onyomi": [
@@ -48783,7 +48754,7 @@
   {
     "id": "kanji-頌",
     "kanji": "頌",
-    "hanviet": "DUNG TỤNG",
+    "hanviet": "DUNG",
     "strokes": 13,
     "jlpt": "N1",
     "onyomi": [
@@ -48881,7 +48852,7 @@
   {
     "id": "kanji-熙",
     "kanji": "熙",
-    "hanviet": "HI HY",
+    "hanviet": "HI",
     "strokes": 15,
     "jlpt": "N1",
     "onyomi": [

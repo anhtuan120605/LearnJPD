@@ -1,503 +1,8 @@
 [
   {
-    "id": "kanji-目",
-    "kanji": "目",
-    "hanviet": "MỤC",
-    "strokes": 5,
-    "jlpt": "N4",
-    "onyomi": [
-      "もく",
-      "ぼく"
-    ],
-    "kunyomi": [
-      "め",
-      "-め",
-      "ま-"
-    ],
-    "meanings_vi": [
-      "mục:  mắt",
-      "mục:  khoản mục"
-    ],
-    "meanings_en": [
-      "Eye",
-      "Class",
-      "Look",
-      "Insight",
-      "Experience",
-      "Care",
-      "Favor"
-    ],
-    "radical": "mục 目 (+0 nét)",
-    "examples": [
-      {
-        "word": "－段目",
-        "reading": "－だんめ",
-        "meaning": "kệ thứ (だん là quầy tính giá kệ)",
-        "hanviet": "ĐOÀN MỤC",
-        "level": "N5",
-        "lesson": 10
-      },
-      {
-        "word": "目",
-        "reading": "め",
-        "meaning": "con mắt",
-        "hanviet": "MỤC",
-        "level": "N5",
-        "lesson": 16
-      },
-      {
-        "word": "－目",
-        "reading": "－め",
-        "meaning": "con mắt",
-        "hanviet": "MỤC",
-        "level": "N5",
-        "lesson": 23
-      },
-      {
-        "word": "目が 覚めます",
-        "reading": "めが さめます",
-        "meaning": "thức dậy đi",
-        "hanviet": "MỤC GIÁC",
-        "level": "N4",
-        "lesson": 30
-      },
-      {
-        "word": "目的",
-        "reading": "もくてき",
-        "meaning": "đích",
-        "hanviet": "MỤC",
-        "level": "N4",
-        "lesson": 42
-      },
-      {
-        "word": "目覚まし",
-        "reading": "めざまし",
-        "meaning": "đồng hồ báo thức",
-        "hanviet": "MỤC GIÁC THÌ KÊ",
-        "level": "N4",
-        "lesson": 45
-      },
-      {
-        "word": "目指します",
-        "reading": "めざします",
-        "meaning": "nhằm tới",
-        "hanviet": "MỤC CHỈ",
-        "level": "N4",
-        "lesson": 49
-      },
-      {
-        "word": "お目に かかります",
-        "reading": "おめに かかります",
-        "meaning": "Gặp mặt (Khiêm nhường ngữ của 会います)",
-        "hanviet": "MỤC",
-        "level": "N4",
-        "lesson": 50
-      },
-      {
-        "word": "お目に掛かる",
-        "reading": "おめにかかる",
-        "meaning": "gặp gỡ; đương đầu",
-        "hanviet": "MỤC QUẢI",
-        "level": "N3",
-        "lesson": 22
-      },
-      {
-        "word": "科目",
-        "reading": "かもく",
-        "meaning": "khoa mục",
-        "hanviet": "KHOA MỤC",
-        "level": "N3",
-        "lesson": 26
-      },
-      {
-        "word": "目上",
-        "reading": "めうえ",
-        "meaning": "cấp trên; bề trên",
-        "hanviet": "MỤC THƯỚNG",
-        "level": "N3",
-        "lesson": 43
-      },
-      {
-        "word": "目標",
-        "reading": "もくひょう",
-        "meaning": "đích",
-        "hanviet": "MỤC PHIÊU",
-        "level": "N3",
-        "lesson": 43
-      }
-    ]
-  },
-  {
-    "id": "kanji-口",
-    "kanji": "口",
-    "hanviet": "KHẨU",
-    "strokes": 3,
-    "jlpt": "N4",
-    "onyomi": [
-      "こう",
-      "く"
-    ],
-    "kunyomi": [
-      "くち"
-    ],
-    "meanings_vi": [
-      "khẩu:  mồm, miệng",
-      "khẩu:  cửa"
-    ],
-    "meanings_en": [
-      "Mouth"
-    ],
-    "radical": "khẩu 口 (+0 nét)",
-    "examples": [
-      {
-        "word": "口",
-        "reading": "くち",
-        "meaning": "cửa; miệng; chỗ cho vào",
-        "hanviet": "KHẨU",
-        "level": "N5",
-        "lesson": 16
-      },
-      {
-        "word": "入口",
-        "reading": "いりぐち",
-        "meaning": "cổng vào",
-        "hanviet": "NHẬP KHẨU",
-        "level": "N4",
-        "lesson": 33
-      },
-      {
-        "word": "出口",
-        "reading": "でぐち",
-        "meaning": "cổng ra",
-        "hanviet": "XUÝ KHẨU",
-        "level": "N4",
-        "lesson": 33
-      },
-      {
-        "word": "非常口",
-        "reading": "ひじょうぐち",
-        "meaning": "cửa ra khẩn cấp; cửa thoát hiểm",
-        "hanviet": "PHI THƯỜNG KHẨU",
-        "level": "N4",
-        "lesson": 33
-      },
-      {
-        "word": "人口",
-        "reading": "じんこう",
-        "meaning": "dân số; số dân",
-        "hanviet": "NHÂN KHẨU",
-        "level": "N4",
-        "lesson": 47
-      },
-      {
-        "word": "利口",
-        "reading": "りこう",
-        "meaning": "lanh lợi; mồm mép",
-        "hanviet": "LỢI KHẨU",
-        "level": "N3",
-        "lesson": 47
-      },
-      {
-        "word": "悪口",
-        "reading": "わるくち",
-        "meaning": "sự nói xấu về ai đó",
-        "hanviet": "ÁC KHẨU",
-        "level": "N3",
-        "lesson": 49
-      },
-      {
-        "word": "～口",
-        "reading": "～くち",
-        "meaning": "~ khai mạc; ~ lối vào, ~ lối ra",
-        "hanviet": "KHẨU",
-        "level": "N2",
-        "lesson": 2
-      },
-      {
-        "word": "裏口",
-        "reading": "うらぐち",
-        "meaning": "cửa sau; cổng sau",
-        "hanviet": "LÍ KHẨU",
-        "level": "N2",
-        "lesson": 10
-      },
-      {
-        "word": "火口",
-        "reading": "かこう",
-        "meaning": "Miệng núi lửa",
-        "hanviet": "HOẢ KHẨU",
-        "level": "N2",
-        "lesson": 16
-      },
-      {
-        "word": "口紅",
-        "reading": "くちべに",
-        "meaning": "ống son; thỏi son; son môi",
-        "hanviet": "KHẨU CÔNG",
-        "level": "N2",
-        "lesson": 22
-      },
-      {
-        "word": "口実",
-        "reading": "こうじつ",
-        "meaning": "lời xin lỗi; lời bào chữa; lời phân trần",
-        "hanviet": "KHẨU CHÍ",
-        "level": "N2",
-        "lesson": 25
-      }
-    ]
-  },
-  {
-    "id": "kanji-手",
-    "kanji": "手",
-    "hanviet": "THỦ",
-    "strokes": 4,
-    "jlpt": "N4",
-    "onyomi": [
-      "しゅ",
-      "ず"
-    ],
-    "kunyomi": [
-      "て",
-      "て-",
-      "-て",
-      "た-"
-    ],
-    "meanings_vi": [
-      "thủ:  cái tay"
-    ],
-    "meanings_en": [
-      "Hand"
-    ],
-    "radical": "thủ 手 (+0 nét)",
-    "examples": [
-      {
-        "word": "手帳",
-        "reading": "てちょう",
-        "meaning": "Sổ tay cá nhân",
-        "hanviet": "THỦ TRƯỚNG",
-        "level": "N5",
-        "lesson": 2
-      },
-      {
-        "word": "お手洗い",
-        "reading": "おてあらい",
-        "meaning": "Phòng vệ sinh (cách nói lịch sự, tao nhã)",
-        "hanviet": "THỦ TẨY",
-        "level": "N5",
-        "lesson": 3
-      },
-      {
-        "word": "手紙",
-        "reading": "てがみ",
-        "meaning": "Lá thư",
-        "hanviet": "THỦ CHỈ",
-        "level": "N5",
-        "lesson": 6
-      },
-      {
-        "word": "手",
-        "reading": "て",
-        "meaning": "Tay, bàn tay",
-        "hanviet": "THỦ",
-        "level": "N5",
-        "lesson": 7
-      },
-      {
-        "word": "上手",
-        "reading": "じょうず",
-        "meaning": "Giỏi, khéo",
-        "hanviet": "THƯỚNG THỦ",
-        "level": "N5",
-        "lesson": 9
-      },
-      {
-        "word": "下手",
-        "reading": "へた",
-        "meaning": "Kém, dở",
-        "hanviet": "HÁ THỦ",
-        "level": "N5",
-        "lesson": 9
-      },
-      {
-        "word": "切手",
-        "reading": "きって",
-        "meaning": "tem; tem hàng",
-        "hanviet": "THIẾT THỦ",
-        "level": "N5",
-        "lesson": 11
-      },
-      {
-        "word": "手伝います",
-        "reading": "てつだいます",
-        "meaning": "trợ giúp (với một nhiệm vụ)",
-        "hanviet": "THỦ TRUYỀN",
-        "level": "N5",
-        "lesson": 14
-      },
-      {
-        "word": "歌手",
-        "reading": "かしゅ",
-        "meaning": "ca kỹ",
-        "hanviet": "CA THỦ",
-        "level": "N4",
-        "lesson": 28
-      },
-      {
-        "word": "相手",
-        "reading": "あいて",
-        "meaning": "đối phương; người đối diện",
-        "hanviet": "TƯƠNG THỦ",
-        "level": "N4",
-        "lesson": 33
-      },
-      {
-        "word": "上手に",
-        "reading": "じょうずに",
-        "meaning": "ừm, một cách khéo léo",
-        "hanviet": "THƯỚNG THỦ",
-        "level": "N4",
-        "lesson": 36
-      },
-      {
-        "word": "運転手",
-        "reading": "うんてんしゅ",
-        "meaning": "người cầm lái",
-        "hanviet": "VẬN CHUYỂN THỦ",
-        "level": "N4",
-        "lesson": 40
-      }
-    ]
-  },
-  {
-    "id": "kanji-足",
-    "kanji": "足",
-    "hanviet": "TÚ TÚC",
-    "strokes": 7,
-    "jlpt": "N4",
-    "onyomi": [
-      "そく"
-    ],
-    "kunyomi": [
-      "あし",
-      "た.りる",
-      "た.る",
-      "た.す"
-    ],
-    "meanings_vi": [
-      "túc:  chân thú",
-      "túc:  đầy đủ"
-    ],
-    "meanings_en": [
-      "Leg",
-      "Foot",
-      "Be Sufficient",
-      "Counter For Pairs Of Footwear"
-    ],
-    "radical": "túc 足 (+0 nét)",
-    "examples": [
-      {
-        "word": "足",
-        "reading": "あし",
-        "meaning": "cẳng",
-        "hanviet": "TÚ",
-        "level": "N5",
-        "lesson": 16
-      },
-      {
-        "word": "足ります",
-        "reading": "たります",
-        "meaning": "đủ rồi, đủ rồi",
-        "hanviet": "TÚ",
-        "level": "N5",
-        "lesson": 21
-      },
-      {
-        "word": "満足",
-        "reading": "まんぞく",
-        "meaning": "lạc thú",
-        "hanviet": "MÃN TÚ",
-        "level": "N3",
-        "lesson": 41
-      },
-      {
-        "word": "足袋",
-        "reading": "たび",
-        "meaning": "loại tất có ngón của Nhật",
-        "hanviet": "TÚ ĐẠI",
-        "level": "N3",
-        "lesson": 57
-      },
-      {
-        "word": "不足",
-        "reading": "ふそく",
-        "meaning": "bất túc",
-        "hanviet": "BƯU TÚ",
-        "level": "N3",
-        "lesson": 76
-      },
-      {
-        "word": "～足",
-        "reading": "～そく",
-        "meaning": "quầy để giày",
-        "hanviet": "TÚ",
-        "level": "N2",
-        "lesson": 3
-      },
-      {
-        "word": "足跡",
-        "reading": "あしあと",
-        "meaning": "vết chân; dấu chân",
-        "hanviet": "TÚ TÍCH",
-        "level": "N2",
-        "lesson": 6
-      },
-      {
-        "word": "足元",
-        "reading": "あしもと",
-        "meaning": "dáng đi; bước chân; bước đi",
-        "hanviet": "TÚ NGUYÊN",
-        "level": "N2",
-        "lesson": 6
-      },
-      {
-        "word": "遠足",
-        "reading": "えんそく",
-        "meaning": "chuyến tham quan; dã ngoại",
-        "hanviet": "VIẾN TÚ",
-        "level": "N2",
-        "lesson": 11
-      },
-      {
-        "word": "足る",
-        "reading": "たる",
-        "meaning": "đủ",
-        "hanviet": "TÚ",
-        "level": "N2",
-        "lesson": 46
-      },
-      {
-        "word": "駆け足",
-        "reading": "かけあし",
-        "meaning": "sự chạy nhanh; sự nhanh",
-        "hanviet": "KHU TÚ",
-        "level": "N1",
-        "lesson": 33
-      },
-      {
-        "word": "足し算",
-        "reading": "たしざん",
-        "meaning": "sự thêm vào; tính cộng",
-        "hanviet": "TÚ TOÁN",
-        "level": "N1",
-        "lesson": 66
-      }
-    ]
-  },
-  {
     "id": "kanji-体",
     "kanji": "体",
-    "hanviet": "BỔN THỂ",
+    "hanviet": "THỂ",
     "strokes": 7,
     "jlpt": "N4",
     "onyomi": [
@@ -771,14 +276,6 @@
     "radical": "lực 力 (+0 nét)",
     "examples": [
       {
-        "word": "力",
-        "reading": "ちから",
-        "meaning": "công suất máy",
-        "hanviet": "LỰC",
-        "level": "N4",
-        "lesson": 28
-      },
-      {
         "word": "入力します",
         "reading": "にゅうりょくします",
         "meaning": "đầu vào",
@@ -833,14 +330,6 @@
         "hanviet": "NỖ LỰC",
         "level": "N3",
         "lesson": 66
-      },
-      {
-        "word": "能力",
-        "reading": "のうりょく",
-        "meaning": "công suất máy",
-        "hanviet": "NAI LỰC",
-        "level": "N3",
-        "lesson": 69
       },
       {
         "word": "～力",
@@ -1033,14 +522,6 @@
         "lesson": 8
       },
       {
-        "word": "元気茶",
-        "reading": "げんきちゃ",
-        "meaning": "một loại trà hư cấu",
-        "hanviet": "NGUYÊN KHÍ TRÀ",
-        "level": "N5",
-        "lesson": 23
-      },
-      {
         "word": "どうぞ お元気で。",
         "reading": "どうぞ おげんきで。",
         "meaning": "Xin hãy chăm sóc bản thân. (nói khi mong đợi một cuộc chia ly dài)",
@@ -1147,14 +628,6 @@
         "lesson": 1
       },
       {
-        "word": "神戸病院",
-        "reading": "こうべびょういん",
-        "meaning": "một bệnh viện hư cấu",
-        "hanviet": "THẦN HỘ BỆNH VIỆN",
-        "level": "N5",
-        "lesson": 1
-      },
-      {
         "word": "病気",
         "reading": "びょうき",
         "meaning": "bệnh tật; bệnh; sự ốm",
@@ -1215,7 +688,7 @@
   {
     "id": "kanji-医",
     "kanji": "医",
-    "hanviet": "Y Ế",
+    "hanviet": "Y",
     "strokes": 7,
     "jlpt": "N4",
     "onyomi": [
@@ -1327,14 +800,6 @@
         "lesson": 1
       },
       {
-        "word": "神戸病院",
-        "reading": "こうべびょういん",
-        "meaning": "một bệnh viện hư cấu",
-        "hanviet": "THẦN HỘ BỆNH VIỆN",
-        "level": "N5",
-        "lesson": 1
-      },
-      {
         "word": "美容院",
         "reading": "びよういん",
         "meaning": "mỹ viện",
@@ -1403,7 +868,7 @@
   {
     "id": "kanji-親",
     "kanji": "親",
-    "hanviet": "THÂN THẤN",
+    "hanviet": "THÂN",
     "strokes": 16,
     "jlpt": "N4",
     "onyomi": [
@@ -1530,7 +995,7 @@
   {
     "id": "kanji-族",
     "kanji": "族",
-    "hanviet": "THẤU TẤU TỘC",
+    "hanviet": "TỘC",
     "strokes": 11,
     "jlpt": "N4",
     "onyomi": [
@@ -1577,253 +1042,6 @@
         "hanviet": "DÂN THẤU",
         "level": "N1",
         "lesson": 95
-      }
-    ]
-  },
-  {
-    "id": "kanji-兄",
-    "kanji": "兄",
-    "hanviet": "HUYNH HUỐNG",
-    "strokes": 5,
-    "jlpt": "N4",
-    "onyomi": [
-      "けい",
-      "きょう"
-    ],
-    "kunyomi": [
-      "あに"
-    ],
-    "meanings_vi": [
-      "huynh:  anh trai"
-    ],
-    "meanings_en": [
-      "Elder Brother",
-      "Big Brother"
-    ],
-    "radical": "nhân 儿 (+3 nét)",
-    "examples": [
-      {
-        "word": "兄弟",
-        "reading": "きょうだい",
-        "meaning": "anh em; huynh đệ",
-        "hanviet": "HUYNH ĐỄ",
-        "level": "N5",
-        "lesson": 11
-      },
-      {
-        "word": "兄",
-        "reading": "あに",
-        "meaning": "Anh tôi hiện đang làm việc tại công ty A",
-        "hanviet": "HUYNH",
-        "level": "N5",
-        "lesson": 11
-      },
-      {
-        "word": "お兄さん",
-        "reading": "おにいさん",
-        "meaning": "Ghi chú",
-        "hanviet": "HUYNH",
-        "level": "N5",
-        "lesson": 11
-      },
-      {
-        "word": "ライト兄弟",
-        "reading": "ライトきょうだい",
-        "meaning": "Anh em nhà Wright, những người Mỹ tiên phong trong lĩnh vực hàng không; Wilbur Wright (1867-1912) Orville Wright (1871-1948)",
-        "hanviet": "HUYNH ĐỄ",
-        "level": "N4",
-        "lesson": 36
-      },
-      {
-        "word": "従兄弟",
-        "reading": "いとこ",
-        "meaning": "anh em họ",
-        "hanviet": "TÒNG HUYNH ĐỄ",
-        "level": "N3",
-        "lesson": 17
-      }
-    ]
-  },
-  {
-    "id": "kanji-弟",
-    "kanji": "弟",
-    "hanviet": "ĐỄ ĐỆ",
-    "strokes": 7,
-    "jlpt": "N4",
-    "onyomi": [
-      "てい",
-      "だい",
-      "で"
-    ],
-    "kunyomi": [
-      "おとうと"
-    ],
-    "meanings_vi": [
-      "đệ:  em trai",
-      "đệ:  dễ dãi"
-    ],
-    "meanings_en": [
-      "Younger Brother",
-      "Faithful Service To Elders"
-    ],
-    "radical": "cung 弓 (+4 nét)",
-    "examples": [
-      {
-        "word": "兄弟",
-        "reading": "きょうだい",
-        "meaning": "anh em; huynh đệ",
-        "hanviet": "HUYNH ĐỄ",
-        "level": "N5",
-        "lesson": 11
-      },
-      {
-        "word": "弟",
-        "reading": "おとうと",
-        "meaning": "bào đệ",
-        "hanviet": "ĐỄ",
-        "level": "N5",
-        "lesson": 11
-      },
-      {
-        "word": "弟さん",
-        "reading": "おとうとさん",
-        "meaning": "em trai (của người khác)",
-        "hanviet": "ĐỄ",
-        "level": "N5",
-        "lesson": 11
-      },
-      {
-        "word": "ライト兄弟",
-        "reading": "ライトきょうだい",
-        "meaning": "Anh em nhà Wright, những người Mỹ tiên phong trong lĩnh vực hàng không; Wilbur Wright (1867-1912) Orville Wright (1871-1948)",
-        "hanviet": "HUYNH ĐỄ",
-        "level": "N4",
-        "lesson": 36
-      },
-      {
-        "word": "従兄弟",
-        "reading": "いとこ",
-        "meaning": "anh em họ",
-        "hanviet": "TÒNG HUYNH ĐỄ",
-        "level": "N3",
-        "lesson": 17
-      },
-      {
-        "word": "弟子",
-        "reading": "でし",
-        "meaning": "Học sinh; môn đệ; đệ tử",
-        "hanviet": "ĐỄ TÍ",
-        "level": "N2",
-        "lesson": 51
-      }
-    ]
-  },
-  {
-    "id": "kanji-姉",
-    "kanji": "姉",
-    "hanviet": "TỶ",
-    "strokes": 8,
-    "jlpt": "N4",
-    "onyomi": [
-      "し"
-    ],
-    "kunyomi": [
-      "あね",
-      "はは"
-    ],
-    "meanings_vi": [
-      "tỷ:  chị gái"
-    ],
-    "meanings_en": [
-      "Elder Sister"
-    ],
-    "radical": "nữ 女 (+4 nét)",
-    "examples": [
-      {
-        "word": "姉",
-        "reading": "あね",
-        "meaning": "chị; chị của mình",
-        "hanviet": "TỶ",
-        "level": "N5",
-        "lesson": 11
-      },
-      {
-        "word": "お姉さん",
-        "reading": "おねえさん",
-        "meaning": "chị",
-        "hanviet": "TỶ",
-        "level": "N5",
-        "lesson": 11
-      },
-      {
-        "word": "姉妹",
-        "reading": "しまい",
-        "meaning": "chị em",
-        "hanviet": "TỶ MUỘI",
-        "level": "N4",
-        "lesson": 38
-      },
-      {
-        "word": "従姉妹",
-        "reading": "いとこ",
-        "meaning": "anh em họ",
-        "hanviet": "TÒNG TỶ MUỘI",
-        "level": "N3",
-        "lesson": 17
-      }
-    ]
-  },
-  {
-    "id": "kanji-妹",
-    "kanji": "妹",
-    "hanviet": "MUỘI",
-    "strokes": 8,
-    "jlpt": "N4",
-    "onyomi": [
-      "まい"
-    ],
-    "kunyomi": [
-      "いもうと"
-    ],
-    "meanings_vi": [
-      "muội:  em gái"
-    ],
-    "meanings_en": [
-      "Younger Sister"
-    ],
-    "radical": "nữ 女 (+5 nét)",
-    "examples": [
-      {
-        "word": "妹",
-        "reading": "いもうと",
-        "meaning": "em gái",
-        "hanviet": "MUỘI",
-        "level": "N5",
-        "lesson": 11
-      },
-      {
-        "word": "妹さん",
-        "reading": "いもうとさん",
-        "meaning": "em gái của (người khác)",
-        "hanviet": "MUỘI",
-        "level": "N5",
-        "lesson": 11
-      },
-      {
-        "word": "姉妹",
-        "reading": "しまい",
-        "meaning": "chị em",
-        "hanviet": "TỶ MUỘI",
-        "level": "N4",
-        "lesson": 38
-      },
-      {
-        "word": "従姉妹",
-        "reading": "いとこ",
-        "meaning": "anh em họ",
-        "hanviet": "TÒNG TỶ MUỘI",
-        "level": "N3",
-        "lesson": 17
       }
     ]
   },
@@ -1903,7 +1121,7 @@
   {
     "id": "kanji-主",
     "kanji": "主",
-    "hanviet": "CHÚA CHỦ",
+    "hanviet": "CHỦ",
     "strokes": 5,
     "jlpt": "N4",
     "onyomi": [
@@ -2069,7 +1287,7 @@
   {
     "id": "kanji-夏",
     "kanji": "夏",
-    "hanviet": "GIÁ GIẠ HẠ",
+    "hanviet": "HẠ",
     "strokes": 10,
     "jlpt": "N4",
     "onyomi": [
@@ -2102,7 +1320,7 @@
   {
     "id": "kanji-秋",
     "kanji": "秋",
-    "hanviet": "THU THÂU",
+    "hanviet": "THU",
     "strokes": 9,
     "jlpt": "N4",
     "onyomi": [
@@ -2182,7 +1400,7 @@
   {
     "id": "kanji-朝",
     "kanji": "朝",
-    "hanviet": "TRIÊU TRIỀU TRÀO",
+    "hanviet": "TRIÊU",
     "strokes": 12,
     "jlpt": "N4",
     "onyomi": [
@@ -2409,7 +1627,7 @@
   {
     "id": "kanji-夜",
     "kanji": "夜",
-    "hanviet": "DẠ DỊCH",
+    "hanviet": "DẠ",
     "strokes": 8,
     "jlpt": "N4",
     "onyomi": [
@@ -2527,100 +1745,6 @@
     ]
   },
   {
-    "id": "kanji-早",
-    "kanji": "早",
-    "hanviet": "TẢO",
-    "strokes": 6,
-    "jlpt": "N4",
-    "onyomi": [
-      "そう",
-      "さっ"
-    ],
-    "kunyomi": [
-      "はや.い",
-      "はや",
-      "はや-",
-      "はや.まる",
-      "はや.める",
-      "さ-"
-    ],
-    "meanings_vi": [
-      "tảo:  buổi sáng",
-      "tảo:  sớm"
-    ],
-    "meanings_en": [
-      "Early",
-      "Fast"
-    ],
-    "radical": "nhật 日 (+2 nét)",
-    "examples": [
-      {
-        "word": "早く、速く",
-        "reading": "はやく",
-        "meaning": "Sớm, nhanh",
-        "hanviet": "TẢO TỐC",
-        "level": "N5",
-        "lesson": 9
-      },
-      {
-        "word": "速い、早い",
-        "reading": "はやい",
-        "meaning": "sớm; nhanh chóng",
-        "hanviet": "TỐC TẢO",
-        "level": "N5",
-        "lesson": 12
-      },
-      {
-        "word": "早退します",
-        "reading": "そうたいします",
-        "meaning": "nghỉ (đi làm hoặc đi học) sớm hơn bình thường",
-        "hanviet": "TẢO THOÁI",
-        "level": "N4",
-        "lesson": 39
-      },
-      {
-        "word": "早速",
-        "reading": "さっそく",
-        "meaning": "ngay lập tức; không một chút chần chờ",
-        "hanviet": "TẢO TỐC",
-        "level": "N2",
-        "lesson": 30
-      },
-      {
-        "word": "早口",
-        "reading": "はやくち",
-        "meaning": "sự nhanh mồm",
-        "hanviet": "TẢO KHẨU",
-        "level": "N2",
-        "lesson": 59
-      },
-      {
-        "word": "素早い",
-        "reading": "すばやい",
-        "meaning": "nhanh nhẹn; mau lẹ; nhanh chóng",
-        "hanviet": "TỐ TẢO",
-        "level": "N1",
-        "lesson": 58
-      },
-      {
-        "word": "早急",
-        "reading": "そうきゅう",
-        "meaning": "sự khẩn cấp; khẩn cấp",
-        "hanviet": "TẢO CẤP",
-        "level": "N1",
-        "lesson": 62
-      },
-      {
-        "word": "早める",
-        "reading": "はやめる",
-        "meaning": "làm nhanh; làm gấp; thúc đẩy",
-        "hanviet": "TẢO",
-        "level": "N1",
-        "lesson": 105
-      }
-    ]
-  },
-  {
     "id": "kanji-曜",
     "kanji": "曜",
     "hanviet": "DIỆU",
@@ -2726,37 +1850,6 @@
         "hanviet": "THUỶ DIỆU",
         "level": "N2",
         "lesson": 39
-      }
-    ]
-  },
-  {
-    "id": "kanji-犬",
-    "kanji": "犬",
-    "hanviet": "KHUYỂN",
-    "strokes": 4,
-    "jlpt": "N4",
-    "onyomi": [
-      "けん"
-    ],
-    "kunyomi": [
-      "いぬ",
-      "いぬ-"
-    ],
-    "meanings_vi": [
-      "khuyển:  con chó"
-    ],
-    "meanings_en": [
-      "Dog"
-    ],
-    "radical": "khuyển 犬 (+0 nét)",
-    "examples": [
-      {
-        "word": "犬",
-        "reading": "いぬ",
-        "meaning": "Con chó",
-        "hanviet": "KHUYỂN",
-        "level": "N5",
-        "lesson": 10
       }
     ]
   },
@@ -2875,157 +1968,6 @@
         "hanviet": "ĐỘ ĐIỂU",
         "level": "N1",
         "lesson": 76
-      }
-    ]
-  },
-  {
-    "id": "kanji-魚",
-    "kanji": "魚",
-    "hanviet": "NGƯ",
-    "strokes": 11,
-    "jlpt": "N4",
-    "onyomi": [
-      "ぎょ"
-    ],
-    "kunyomi": [
-      "うお",
-      "さかな",
-      "-ざかな"
-    ],
-    "meanings_vi": [
-      "ngư:  con cá"
-    ],
-    "meanings_en": [
-      "Fish"
-    ],
-    "radical": "ngư 魚 (+0 nét)",
-    "examples": [
-      {
-        "word": "魚",
-        "reading": "さかな",
-        "meaning": "Cá",
-        "hanviet": "NGƯ",
-        "level": "N5",
-        "lesson": 6
-      },
-      {
-        "word": "金魚",
-        "reading": "きんぎょ",
-        "meaning": "cá vàng",
-        "hanviet": "KIM NGƯ",
-        "level": "N2",
-        "lesson": 21
-      }
-    ]
-  },
-  {
-    "id": "kanji-花",
-    "kanji": "花",
-    "hanviet": "HOA",
-    "strokes": 7,
-    "jlpt": "N4",
-    "onyomi": [
-      "か",
-      "け"
-    ],
-    "kunyomi": [
-      "はな"
-    ],
-    "meanings_vi": [
-      "hoa:  bông hoa"
-    ],
-    "meanings_en": [
-      "Flower"
-    ],
-    "radical": "thảo 艸 (+4 nét)",
-    "examples": [
-      {
-        "word": "花見",
-        "reading": "はなみ",
-        "meaning": "Ngắm hoa anh đào",
-        "hanviet": "HOA HIỆN",
-        "level": "N5",
-        "lesson": 6
-      },
-      {
-        "word": "花",
-        "reading": "はな",
-        "meaning": "Bông hoa",
-        "hanviet": "HOA",
-        "level": "N5",
-        "lesson": 7
-      },
-      {
-        "word": "生け花",
-        "reading": "いけばな",
-        "meaning": "nghệ thuật cắm hoa",
-        "hanviet": "SANH HOA",
-        "level": "N5",
-        "lesson": 12
-      },
-      {
-        "word": "花火",
-        "reading": "はなび",
-        "meaning": "pháo bông",
-        "hanviet": "HOA HOẢ",
-        "level": "N4",
-        "lesson": 27
-      },
-      {
-        "word": "花瓶",
-        "reading": "かびん",
-        "meaning": "bình hoa; lọ hoa",
-        "hanviet": "HOA BÌNH",
-        "level": "N4",
-        "lesson": 30
-      },
-      {
-        "word": "花嫁",
-        "reading": "はなよめ",
-        "meaning": "cô dâu",
-        "hanviet": "HOA GIÁ",
-        "level": "N2",
-        "lesson": 59
-      },
-      {
-        "word": "花壇",
-        "reading": "かだん",
-        "meaning": "vườn hoa",
-        "hanviet": "HOA ĐÀN",
-        "level": "N1",
-        "lesson": 34
-      },
-      {
-        "word": "花粉",
-        "reading": "かふん",
-        "meaning": "phấn hoa",
-        "hanviet": "HOA PHẤN",
-        "level": "N1",
-        "lesson": 35
-      },
-      {
-        "word": "(花を〜) 生ける, 活ける",
-        "reading": "(はなを～) いける",
-        "meaning": "sắp xếp (hoa)",
-        "hanviet": "HOA SANH HOẠT",
-        "level": "N1",
-        "lesson": 52
-      },
-      {
-        "word": "花びら",
-        "reading": "はなびら",
-        "meaning": "cánh hoa",
-        "hanviet": "HOA",
-        "level": "N1",
-        "lesson": 105
-      },
-      {
-        "word": "火花",
-        "reading": "ひばな",
-        "meaning": "hoa lửa",
-        "hanviet": "HOẢ HOA",
-        "level": "N1",
-        "lesson": 108
       }
     ]
   },
@@ -3155,224 +2097,6 @@
     ]
   },
   {
-    "id": "kanji-田",
-    "kanji": "田",
-    "hanviet": "ĐIỀN",
-    "strokes": 5,
-    "jlpt": "N4",
-    "onyomi": [
-      "でん"
-    ],
-    "kunyomi": [
-      "た"
-    ],
-    "meanings_vi": [
-      "điền:  ruộng, đồng"
-    ],
-    "meanings_en": [
-      "Rice Field",
-      "Rice Paddy"
-    ],
-    "radical": "điền 田 (+0 nét)",
-    "examples": [
-      {
-        "word": "梅田",
-        "reading": "うめだ",
-        "meaning": "tên một thị trấn ở Osaka",
-        "hanviet": "MAI ĐIỀN",
-        "level": "N5",
-        "lesson": 14
-      },
-      {
-        "word": "本田駅",
-        "reading": "ほんだえき",
-        "meaning": "một trạm hư cấu",
-        "hanviet": "BÔN ĐIỀN DỊCH",
-        "level": "N5",
-        "lesson": 23
-      },
-      {
-        "word": "田舎",
-        "reading": "いなか",
-        "meaning": "nông thôn; ngoại thành",
-        "hanviet": "ĐIỀN XÁ",
-        "level": "N5",
-        "lesson": 25
-      },
-      {
-        "word": "田",
-        "reading": "た",
-        "meaning": "Điền",
-        "hanviet": "ĐIỀN",
-        "level": "N3",
-        "lesson": 55
-      },
-      {
-        "word": "田植え",
-        "reading": "たうえ",
-        "meaning": "việc trồng cấy lúa",
-        "hanviet": "ĐIỀN THỰC",
-        "level": "N2",
-        "lesson": 45
-      },
-      {
-        "word": "田ぼ",
-        "reading": "たんぼ",
-        "meaning": "ruộng nước",
-        "hanviet": "ĐIỀN",
-        "level": "N2",
-        "lesson": 46
-      },
-      {
-        "word": "水田",
-        "reading": "すいでん",
-        "meaning": "ruộng lúa nước",
-        "hanviet": "THUỶ ĐIỀN",
-        "level": "N1",
-        "lesson": 57
-      },
-      {
-        "word": "田園",
-        "reading": "でんえん",
-        "meaning": "vùng nông thôn; miền quê",
-        "hanviet": "ĐIỀN VIÊN",
-        "level": "N1",
-        "lesson": 75
-      }
-    ]
-  },
-  {
-    "id": "kanji-空",
-    "kanji": "空",
-    "hanviet": "KHÔNG KHỐNG KHỔNG",
-    "strokes": 8,
-    "jlpt": "N4",
-    "onyomi": [
-      "くう"
-    ],
-    "kunyomi": [
-      "そら",
-      "あ.く",
-      "あ.き",
-      "あ.ける",
-      "から",
-      "す.く",
-      "す.かす",
-      "むな.しい"
-    ],
-    "meanings_vi": [
-      "không:  trống rỗng",
-      "không:  không gian",
-      "khống:  bỏ trống"
-    ],
-    "meanings_en": [
-      "Empty",
-      "Sky",
-      "Void",
-      "Vacant",
-      "Vacuum"
-    ],
-    "radical": "huyệt 穴 (+3 nét)",
-    "examples": [
-      {
-        "word": "航空便",
-        "reading": "こうくうびん",
-        "meaning": "Thư gửi đường hàng không",
-        "hanviet": "HÀNG KHÔNG TIỆN",
-        "level": "N5",
-        "lesson": 11
-      },
-      {
-        "word": "空港",
-        "reading": "くうこう",
-        "meaning": "sân bay; không cảng; phi trường",
-        "hanviet": "KHÔNG CẢNG",
-        "level": "N5",
-        "lesson": 12
-      },
-      {
-        "word": "空",
-        "reading": "そら",
-        "meaning": "sự rỗng không; trống rỗng; trống trải",
-        "hanviet": "KHÔNG",
-        "level": "N4",
-        "lesson": 27
-      },
-      {
-        "word": "関西空港",
-        "reading": "かんさいくうこう",
-        "meaning": "Sân bay quốc tế Kansai",
-        "hanviet": "QUAN TÂY KHÔNG CẢNG",
-        "level": "N4",
-        "lesson": 27
-      },
-      {
-        "word": "空気",
-        "reading": "くうき",
-        "meaning": "không khí; khí",
-        "hanviet": "KHÔNG KHÍ",
-        "level": "N4",
-        "lesson": 44
-      },
-      {
-        "word": "空き",
-        "reading": "あき",
-        "meaning": "chỗ trống",
-        "hanviet": "KHÔNG",
-        "level": "N3",
-        "lesson": 13
-      },
-      {
-        "word": "航空",
-        "reading": "こうくう",
-        "meaning": "hàng không",
-        "hanviet": "HÀNG KHÔNG",
-        "level": "N3",
-        "lesson": 36
-      },
-      {
-        "word": "架空",
-        "reading": "かくう",
-        "meaning": "ở trên trời; điều hư cấu; điều tưởng tượng",
-        "hanviet": "GIÁ KHÔNG",
-        "level": "N2",
-        "lesson": 15
-      },
-      {
-        "word": "空っぽ",
-        "reading": "からっぽ",
-        "meaning": "trống không; không còn gì; không có gì",
-        "hanviet": "KHÔNG",
-        "level": "N2",
-        "lesson": 18
-      },
-      {
-        "word": "空～",
-        "reading": "くう～",
-        "meaning": "trống rỗng ~",
-        "hanviet": "KHÔNG",
-        "level": "N2",
-        "lesson": 21
-      },
-      {
-        "word": "空想",
-        "reading": "くうそう",
-        "meaning": "sự không tưởng; sự tưởng tượng không thực tế; không tưởng",
-        "hanviet": "KHÔNG TƯỞNG",
-        "level": "N2",
-        "lesson": 21
-      },
-      {
-        "word": "空中",
-        "reading": "くうちゅう",
-        "meaning": "không trung; bầu trời; không gian",
-        "hanviet": "KHÔNG TRUNG",
-        "level": "N2",
-        "lesson": 21
-      }
-    ]
-  },
-  {
     "id": "kanji-海",
     "kanji": "海",
     "hanviet": "HẢI",
@@ -3494,7 +2218,7 @@
   {
     "id": "kanji-風",
     "kanji": "風",
-    "hanviet": "PHONG PHÓNG PHÚNG",
+    "hanviet": "PHONG",
     "strokes": 9,
     "jlpt": "N4",
     "onyomi": [
@@ -3740,7 +2464,7 @@
   {
     "id": "kanji-赤",
     "kanji": "赤",
-    "hanviet": "THÍCH XÍCH",
+    "hanviet": "XÍCH",
     "strokes": 7,
     "jlpt": "N4",
     "onyomi": [
@@ -3942,14 +2666,6 @@
         "lesson": 34
       },
       {
-        "word": "大黒ずし",
-        "reading": "だいこくずし",
-        "meaning": "một nhà hàng sushi hư cấu",
-        "hanviet": "THÁI HẮC",
-        "level": "N4",
-        "lesson": 35
-      },
-      {
         "word": "黒板",
         "reading": "こくばん",
         "meaning": "bảng",
@@ -4109,7 +2825,7 @@
   {
     "id": "kanji-広",
     "kanji": "広",
-    "hanviet": "KHOÁT QUẢNG",
+    "hanviet": "QUẢNG",
     "strokes": 5,
     "jlpt": "N4",
     "onyomi": [
@@ -4217,559 +2933,9 @@
     ]
   },
   {
-    "id": "kanji-多",
-    "kanji": "多",
-    "hanviet": "ĐA",
-    "strokes": 6,
-    "jlpt": "N4",
-    "onyomi": [
-      "た"
-    ],
-    "kunyomi": [
-      "おお.い",
-      "まさ.に",
-      "まさ.る"
-    ],
-    "meanings_vi": [
-      "đa:  nhiều"
-    ],
-    "meanings_en": [
-      "Many",
-      "Frequent",
-      "Much"
-    ],
-    "radical": "tịch 夕 (+3 nét)",
-    "examples": [
-      {
-        "word": "博多",
-        "reading": "はかた",
-        "meaning": "tên một thị trấn ở Kyushu",
-        "hanviet": "BÁC ĐA",
-        "level": "N5",
-        "lesson": 5
-      },
-      {
-        "word": "多い",
-        "reading": "おおい",
-        "meaning": "nhiều [người], nhiều",
-        "hanviet": "ĐA NHÂN",
-        "level": "N5",
-        "lesson": 12
-      },
-      {
-        "word": "多くの ～",
-        "reading": "おおくの ～",
-        "meaning": "nhiều ～, nhiều ～",
-        "hanviet": "ĐA",
-        "level": "N4",
-        "lesson": 49
-      },
-      {
-        "word": "滅多に",
-        "reading": "めったに",
-        "meaning": "hiếm khi",
-        "hanviet": "DIỆT ĐA",
-        "level": "N3",
-        "lesson": 43
-      },
-      {
-        "word": "多少",
-        "reading": "たしょう",
-        "meaning": "hơn hoặc kém; ít nhiều; một chút",
-        "hanviet": "ĐA THIẾU",
-        "level": "N3",
-        "lesson": 56
-      },
-      {
-        "word": "幾多",
-        "reading": "いくた",
-        "meaning": "ều; rất nhiều",
-        "hanviet": "CƠ ĐA",
-        "level": "N1",
-        "lesson": 52
-      },
-      {
-        "word": "多数決",
-        "reading": "たすうけつ",
-        "meaning": "biểu quyết",
-        "hanviet": "ĐA SÁC HUYẾT",
-        "level": "N1",
-        "lesson": 66
-      },
-      {
-        "word": "多忙",
-        "reading": "たぼう",
-        "meaning": "rất bận; bận rộn",
-        "hanviet": "ĐA MANG",
-        "level": "N1",
-        "lesson": 67
-      },
-      {
-        "word": "多様",
-        "reading": "たよう",
-        "meaning": "đa dạng",
-        "hanviet": "ĐA DẠNG",
-        "level": "N1",
-        "lesson": 67
-      }
-    ]
-  },
-  {
-    "id": "kanji-少",
-    "kanji": "少",
-    "hanviet": "THIẾU THIỂU",
-    "strokes": 4,
-    "jlpt": "N4",
-    "onyomi": [
-      "しょう"
-    ],
-    "kunyomi": [
-      "すく.ない",
-      "すこ.し"
-    ],
-    "meanings_vi": [
-      "thiếu:  kém, không đủ",
-      "thiếu:  trẻ tuổi",
-      "thiểu:  ít ỏi"
-    ],
-    "meanings_en": [
-      "Few",
-      "Little"
-    ],
-    "radical": "tiểu 小 (+1 nét)",
-    "examples": [
-      {
-        "word": "少し",
-        "reading": "すこし",
-        "meaning": "Một ít, một chút",
-        "hanviet": "THIẾU",
-        "level": "N5",
-        "lesson": 9
-      },
-      {
-        "word": "少ない",
-        "reading": "すくない",
-        "meaning": "vài [người], một chút",
-        "hanviet": "THIẾU NHÂN",
-        "level": "N5",
-        "lesson": 12
-      },
-      {
-        "word": "もう 少し",
-        "reading": "もう すこし",
-        "meaning": "một chút nữa",
-        "hanviet": "THIẾU",
-        "level": "N5",
-        "lesson": 14
-      },
-      {
-        "word": "少女",
-        "reading": "しょうじょ",
-        "meaning": "thiếu nữ; cô gái",
-        "hanviet": "THIẾU NHỮ",
-        "level": "N3",
-        "lesson": 6
-      },
-      {
-        "word": "少々",
-        "reading": "しょうしょう",
-        "meaning": "một chút; một lát",
-        "hanviet": "THIẾU",
-        "level": "N3",
-        "lesson": 6
-      },
-      {
-        "word": "少年",
-        "reading": "しょうねん",
-        "meaning": "thiếu niên",
-        "hanviet": "THIẾU NIÊN",
-        "level": "N3",
-        "lesson": 7
-      },
-      {
-        "word": "少しも",
-        "reading": "すこしも",
-        "meaning": "một chút cũng (không)",
-        "hanviet": "THIẾU",
-        "level": "N3",
-        "lesson": 10
-      },
-      {
-        "word": "減少",
-        "reading": "げんしょう",
-        "meaning": "sự giảm; suy giảm; giảm bớt",
-        "hanviet": "GIẢM THIẾU",
-        "level": "N3",
-        "lesson": 52
-      },
-      {
-        "word": "多少",
-        "reading": "たしょう",
-        "meaning": "hơn hoặc kém; ít nhiều; một chút",
-        "hanviet": "ĐA THIẾU",
-        "level": "N3",
-        "lesson": 56
-      },
-      {
-        "word": "少なくとも",
-        "reading": "すくなくとも",
-        "meaning": "tối thiểu là; ít nhất thì; chí ít ra thì",
-        "hanviet": "THIẾU",
-        "level": "N2",
-        "lesson": 39
-      },
-      {
-        "word": "青少年",
-        "reading": "せいしょうねん",
-        "meaning": "thanh thiếu niên",
-        "hanviet": "THANH THIẾU NIÊN",
-        "level": "N2",
-        "lesson": 40
-      }
-    ]
-  },
-  {
-    "id": "kanji-古",
-    "kanji": "古",
-    "hanviet": "CỔ",
-    "strokes": 5,
-    "jlpt": "N4",
-    "onyomi": [
-      "こ"
-    ],
-    "kunyomi": [
-      "ふる.い",
-      "ふる-",
-      "-ふる.す"
-    ],
-    "meanings_vi": [
-      "cổ:  cũ, xưa"
-    ],
-    "meanings_en": [
-      "Old"
-    ],
-    "radical": "khẩu 口 (+2 nét)",
-    "examples": [
-      {
-        "word": "古い",
-        "reading": "ふるい",
-        "meaning": "Cũ, cổ",
-        "hanviet": "CỔ",
-        "level": "N5",
-        "lesson": 8
-      },
-      {
-        "word": "中古",
-        "reading": "ちゅうこ",
-        "meaning": "đồ second hand; đồ cũ; đồ Si đa",
-        "hanviet": "TRUNG CỔ",
-        "level": "N3",
-        "lesson": 60
-      },
-      {
-        "word": "稽古",
-        "reading": "けいこ",
-        "meaning": "sự khổ luyện; sự luyện tập; sự rèn luyện",
-        "hanviet": "CỔ",
-        "level": "N2",
-        "lesson": 23
-      },
-      {
-        "word": "古典",
-        "reading": "こてん",
-        "meaning": "cổ điển",
-        "hanviet": "CỔ ĐIỂN",
-        "level": "N2",
-        "lesson": 27
-      },
-      {
-        "word": "古～",
-        "reading": "ふる～",
-        "meaning": "cũ ~",
-        "hanviet": "CỔ",
-        "level": "N2",
-        "lesson": 64
-      },
-      {
-        "word": "古里",
-        "reading": "ふるさと",
-        "meaning": "quê hương; nơi chôn nhau cắt rốn",
-        "hanviet": "CỔ",
-        "level": "N2",
-        "lesson": 64
-      },
-      {
-        "word": "考古学",
-        "reading": "こうこがく",
-        "meaning": "Khảo cổ học",
-        "hanviet": "KHẢO CỔ HỌC",
-        "level": "N1",
-        "lesson": 2
-      },
-      {
-        "word": "古代",
-        "reading": "こだい",
-        "meaning": "cổ",
-        "hanviet": "CỔ ĐẠI",
-        "level": "N1",
-        "lesson": 5
-      }
-    ]
-  },
-  {
-    "id": "kanji-新",
-    "kanji": "新",
-    "hanviet": "TÂN",
-    "strokes": 13,
-    "jlpt": "N4",
-    "onyomi": [
-      "しん"
-    ],
-    "kunyomi": [
-      "あたら.しい",
-      "あら.た",
-      "あら-",
-      "にい-"
-    ],
-    "meanings_vi": [
-      "tân:  mới mẻ"
-    ],
-    "meanings_en": [
-      "New"
-    ],
-    "radical": "cân 斤 (+9 nét)",
-    "examples": [
-      {
-        "word": "新聞",
-        "reading": "しんぶん",
-        "meaning": "Báo, tờ báo",
-        "hanviet": "TÂN VĂN",
-        "level": "N5",
-        "lesson": 2
-      },
-      {
-        "word": "新大阪",
-        "reading": "しんおおさか",
-        "meaning": "tên một ga ở Osaka",
-        "hanviet": "TÂN THÁI",
-        "level": "N5",
-        "lesson": 3
-      },
-      {
-        "word": "新幹線",
-        "reading": "しんかんせん",
-        "meaning": "Tàu siêu tốc Shinkansen",
-        "hanviet": "TÂN CAN TUYẾN",
-        "level": "N5",
-        "lesson": 5
-      },
-      {
-        "word": "新しい",
-        "reading": "あたらしい",
-        "meaning": "Mới",
-        "hanviet": "TÂN",
-        "level": "N5",
-        "lesson": 8
-      },
-      {
-        "word": "新聞社",
-        "reading": "しんぶんしゃ",
-        "meaning": "tòa báo",
-        "hanviet": "TÂN VĂN XÃ",
-        "level": "N4",
-        "lesson": 26
-      },
-      {
-        "word": "新宿",
-        "reading": "しんじゅく",
-        "meaning": "tên ga/quận ở Tokyo",
-        "hanviet": "TÂN TÚ",
-        "level": "N4",
-        "lesson": 29
-      },
-      {
-        "word": "新神戸",
-        "reading": "しんこうべ",
-        "meaning": "tên một ga ở tỉnh Hyogo",
-        "hanviet": "TÂN THẦN HỘ",
-        "level": "N4",
-        "lesson": 31
-      },
-      {
-        "word": "新年会",
-        "reading": "しんねんかい",
-        "meaning": "Bữa tiệc năm mới",
-        "hanviet": "TÂN NIÊN CỐI",
-        "level": "N4",
-        "lesson": 40
-      },
-      {
-        "word": "新鮮",
-        "reading": "しんせん",
-        "meaning": "tươi; mới",
-        "hanviet": "TÂN TIÊN",
-        "level": "N3",
-        "lesson": 8
-      },
-      {
-        "word": "新た",
-        "reading": "あらた",
-        "meaning": "sự tươi; sự mới",
-        "hanviet": "TÂN",
-        "level": "N3",
-        "lesson": 14
-      },
-      {
-        "word": "新興",
-        "reading": "しんこう",
-        "meaning": "sự tăng lên; tăng lên; sự phát triển",
-        "hanviet": "TÂN HƯNG",
-        "level": "N3",
-        "lesson": 82
-      },
-      {
-        "word": "革新",
-        "reading": "かくしん",
-        "meaning": "đổi mới; cách tân; cuộc cách mạng",
-        "hanviet": "CÁCH TÂN",
-        "level": "N1",
-        "lesson": 33
-      }
-    ]
-  },
-  {
-    "id": "kanji-安",
-    "kanji": "安",
-    "hanviet": "AN YÊN",
-    "strokes": 6,
-    "jlpt": "N4",
-    "onyomi": [
-      "あん"
-    ],
-    "kunyomi": [
-      "やす.い",
-      "やす.まる",
-      "やす",
-      "やす.らか"
-    ],
-    "meanings_vi": [
-      "an:  yên tĩnh, yên lành",
-      "an:  làm yên lòng",
-      "an:  an toàn"
-    ],
-    "meanings_en": [
-      "Relax",
-      "Cheap",
-      "Low",
-      "Quiet",
-      "Rested",
-      "Contented",
-      "Peaceful"
-    ],
-    "radical": "miên 宀 (+3 nét)",
-    "examples": [
-      {
-        "word": "安い",
-        "reading": "やすい",
-        "meaning": "Rẻ",
-        "hanviet": "AN",
-        "level": "N5",
-        "lesson": 8
-      },
-      {
-        "word": "安全",
-        "reading": "あんぜん",
-        "meaning": "an toàn",
-        "hanviet": "AN TOÀN",
-        "level": "N4",
-        "lesson": 36
-      },
-      {
-        "word": "安心します",
-        "reading": "あんしんします",
-        "meaning": "nhẹ nhõm",
-        "hanviet": "AN TÂM",
-        "level": "N4",
-        "lesson": 39
-      },
-      {
-        "word": "安藤百福",
-        "reading": "あんどうももふく",
-        "meaning": "doanh nhân và nhà phát minh người Nhật (1910-2007)",
-        "hanviet": "AN ĐẰNG BÁ PHÚC",
-        "level": "N4",
-        "lesson": 42
-      },
-      {
-        "word": "安心",
-        "reading": "あんしん",
-        "meaning": "nhẹ nhõm",
-        "hanviet": "AN TÂM",
-        "level": "N4",
-        "lesson": 44
-      },
-      {
-        "word": "安定",
-        "reading": "あんてい",
-        "meaning": "ơn",
-        "hanviet": "AN ĐÍNH",
-        "level": "N3",
-        "lesson": 15
-      },
-      {
-        "word": "不安",
-        "reading": "ふあん",
-        "meaning": "không yên tâm; bất an",
-        "hanviet": "BƯU AN",
-        "level": "N3",
-        "lesson": 75
-      },
-      {
-        "word": "安易",
-        "reading": "あんい",
-        "meaning": "dễ dàng; đơn giản",
-        "hanviet": "AN DỊ",
-        "level": "N2",
-        "lesson": 7
-      },
-      {
-        "word": "目安",
-        "reading": "めやす",
-        "meaning": "mục tiêu; mục đích",
-        "hanviet": "MỤC AN",
-        "level": "N2",
-        "lesson": 71
-      },
-      {
-        "word": "安静",
-        "reading": "あんせい",
-        "meaning": "điềm",
-        "hanviet": "AN TĨNH",
-        "level": "N1",
-        "lesson": 51
-      },
-      {
-        "word": "治安",
-        "reading": "ちあん",
-        "meaning": "trị an",
-        "hanviet": "TRÌ AN",
-        "level": "N1",
-        "lesson": 68
-      },
-      {
-        "word": "安っぽい",
-        "reading": "やすっぽい",
-        "meaning": "rẻ tiền; trông có vẻ rẻ tiền",
-        "hanviet": "AN",
-        "level": "N1",
-        "lesson": 99
-      }
-    ]
-  },
-  {
     "id": "kanji-重",
     "kanji": "重",
-    "hanviet": "TRÙNG TRỌNG",
+    "hanviet": "TRỌNG",
     "strokes": 9,
     "jlpt": "N4",
     "onyomi": [
@@ -5036,7 +3202,7 @@
   {
     "id": "kanji-近",
     "kanji": "近",
-    "hanviet": "CẤN CẬN KÝ",
+    "hanviet": "CẬN",
     "strokes": 7,
     "jlpt": "N4",
     "onyomi": [
@@ -5158,7 +3324,7 @@
   {
     "id": "kanji-正",
     "kanji": "正",
-    "hanviet": "CHINH CHÁNH CHÍNH",
+    "hanviet": "CHÍNH",
     "strokes": 5,
     "jlpt": "N4",
     "onyomi": [
@@ -5649,7 +3815,7 @@
   {
     "id": "kanji-不",
     "kanji": "不",
-    "hanviet": "BƯU BẤT BỈ PHI PHU PHẦU PHỦ",
+    "hanviet": "BẤT",
     "strokes": 4,
     "jlpt": "N4",
     "onyomi": [
@@ -5770,7 +3936,7 @@
   {
     "id": "kanji-有",
     "kanji": "有",
-    "hanviet": "DỰU HỮU HỰU",
+    "hanviet": "HỮU",
     "strokes": 6,
     "jlpt": "N4",
     "onyomi": [
@@ -5888,134 +4054,6 @@
         "hanviet": "ĐẶC DỰU",
         "level": "N1",
         "lesson": 14
-      }
-    ]
-  },
-  {
-    "id": "kanji-道",
-    "kanji": "道",
-    "hanviet": "ĐÁO ĐẠO",
-    "strokes": 12,
-    "jlpt": "N4",
-    "onyomi": [
-      "どう",
-      "とう"
-    ],
-    "kunyomi": [
-      "みち",
-      "いう"
-    ],
-    "meanings_vi": [
-      "đạo:  đường, tia",
-      "đạo:  đạo",
-      "đạo:  nói"
-    ],
-    "meanings_en": [
-      "Road-way",
-      "Street",
-      "District",
-      "Journey",
-      "Course",
-      "Moral",
-      "Teachings"
-    ],
-    "radical": "sước 辵 (+9 nét)",
-    "examples": [
-      {
-        "word": "道",
-        "reading": "みち",
-        "meaning": "con đường; con phố",
-        "hanviet": "ĐÁO",
-        "level": "N5",
-        "lesson": 23
-      },
-      {
-        "word": "柔道",
-        "reading": "じゅうどう",
-        "meaning": "nhu đạo",
-        "hanviet": "NHU ĐÁO",
-        "level": "N4",
-        "lesson": 26
-      },
-      {
-        "word": "道具",
-        "reading": "どうぐ",
-        "meaning": "đồ dùng",
-        "hanviet": "ĐÁO CỤ",
-        "level": "N4",
-        "lesson": 27
-      },
-      {
-        "word": "水道",
-        "reading": "すいどう",
-        "meaning": "nước dịch vụ; nước máy",
-        "hanviet": "THUỶ ĐÁO",
-        "level": "N4",
-        "lesson": 32
-      },
-      {
-        "word": "茶道",
-        "reading": "さどう",
-        "meaning": "Trà đạo",
-        "hanviet": "TRÀ ĐÁO",
-        "level": "N4",
-        "lesson": 34
-      },
-      {
-        "word": "剣道",
-        "reading": "けんどう",
-        "meaning": "kiếm đạo",
-        "hanviet": "KIẾM ĐÁO",
-        "level": "N4",
-        "lesson": 36
-      },
-      {
-        "word": "鉄道",
-        "reading": "てつどう",
-        "meaning": "đường ray",
-        "hanviet": "THIẾT ĐÁO",
-        "level": "N3",
-        "lesson": 63
-      },
-      {
-        "word": "道徳",
-        "reading": "どうとく",
-        "meaning": "đạo",
-        "hanviet": "ĐÁO ĐỨC",
-        "level": "N3",
-        "lesson": 64
-      },
-      {
-        "word": "道路",
-        "reading": "どうろ",
-        "meaning": "con đường; con phố",
-        "hanviet": "ĐÁO LẠC",
-        "level": "N3",
-        "lesson": 64
-      },
-      {
-        "word": "歩道",
-        "reading": "ほどう",
-        "meaning": "hè",
-        "hanviet": "BỘ ĐÁO",
-        "level": "N3",
-        "lesson": 78
-      },
-      {
-        "word": "～道",
-        "reading": "～どう",
-        "meaning": "loại đường đi, con đường",
-        "hanviet": "ĐÁO",
-        "level": "N2",
-        "lesson": 4
-      },
-      {
-        "word": "片道",
-        "reading": "かたみち",
-        "meaning": "một chiều; một lượt",
-        "hanviet": "PHIẾN ĐÁO",
-        "level": "N2",
-        "lesson": 17
       }
     ]
   },
@@ -6322,7 +4360,7 @@
   {
     "id": "kanji-止",
     "kanji": "止",
-    "hanviet": "CHI CHỈ",
+    "hanviet": "CHỈ",
     "strokes": 4,
     "jlpt": "N4",
     "onyomi": [
@@ -6449,191 +4487,6 @@
         "hanviet": "CHI",
         "level": "N1",
         "lesson": 15
-      }
-    ]
-  },
-  {
-    "id": "kanji-立",
-    "kanji": "立",
-    "hanviet": "LẬP",
-    "strokes": 5,
-    "jlpt": "N4",
-    "onyomi": [
-      "りつ",
-      "りゅう",
-      "りっとる"
-    ],
-    "kunyomi": [
-      "た.つ",
-      "-た.つ",
-      "た.ち-",
-      "た.てる",
-      "-た.てる",
-      "た.て-",
-      "たて-",
-      "-た.て",
-      "-だ.て",
-      "-だ.てる"
-    ],
-    "meanings_vi": [
-      "lập:  đứng thẳng",
-      "lập:  lập tức, tức thì"
-    ],
-    "meanings_en": [
-      "Stand Up",
-      "Rise",
-      "Set Up",
-      "Erect"
-    ],
-    "radical": "lập 立 (+0 nét)",
-    "examples": [
-      {
-        "word": "立ちます",
-        "reading": "たちます",
-        "meaning": "đứng lên",
-        "hanviet": "LẬP",
-        "level": "N5",
-        "lesson": 14
-      },
-      {
-        "word": "役に 立ちます",
-        "reading": "やくに たちます",
-        "meaning": "trở nên hữu ích",
-        "hanviet": "DỊCH LẬP",
-        "level": "N5",
-        "lesson": 21
-      },
-      {
-        "word": "立入禁止",
-        "reading": "たちいりきんし",
-        "meaning": "cấm dẫm chân lên (vạch, bãi cỏ...)",
-        "hanviet": "LẬP NHẬP CÂM CHI",
-        "level": "N4",
-        "lesson": 33
-      },
-      {
-        "word": "組み立てます",
-        "reading": "くみたてます",
-        "meaning": "tập hợp",
-        "hanviet": "TỔ LẬP",
-        "level": "N4",
-        "lesson": 34
-      },
-      {
-        "word": "埋め立てます",
-        "reading": "うめたてます",
-        "meaning": "đòi lại",
-        "hanviet": "MAI LẬP",
-        "level": "N4",
-        "lesson": 37
-      },
-      {
-        "word": "立ち上がる",
-        "reading": "たちあがる",
-        "meaning": "dậy",
-        "hanviet": "LẬP THƯỚNG",
-        "level": "N3",
-        "lesson": 57
-      },
-      {
-        "word": "立場",
-        "reading": "たちば",
-        "meaning": "lập trường",
-        "hanviet": "LẬP TRÀNG",
-        "level": "N3",
-        "lesson": 57
-      },
-      {
-        "word": "独立",
-        "reading": "どくりつ",
-        "meaning": "độc lập",
-        "hanviet": "ĐỘC LẬP",
-        "level": "N3",
-        "lesson": 65
-      },
-      {
-        "word": "組み立てる",
-        "reading": "くみたてる",
-        "meaning": "ghép",
-        "hanviet": "TỔ LẬP",
-        "level": "N2",
-        "lesson": 22
-      },
-      {
-        "word": "国立",
-        "reading": "こくりつ",
-        "meaning": "quốc lập; quốc gia",
-        "hanviet": "QUỐC LẬP",
-        "level": "N2",
-        "lesson": 27
-      },
-      {
-        "word": "献立",
-        "reading": "こんだて",
-        "meaning": "bảng thực đơn",
-        "hanviet": "HIẾN LẬP",
-        "level": "N2",
-        "lesson": 28
-      },
-      {
-        "word": "私立",
-        "reading": "しりつ",
-        "meaning": "tư nhân lập ra; tư lập",
-        "hanviet": "TƯ LẬP",
-        "level": "N2",
-        "lesson": 37
-      }
-    ]
-  },
-  {
-    "id": "kanji-駅",
-    "kanji": "駅",
-    "hanviet": "DỊCH",
-    "strokes": 14,
-    "jlpt": "N4",
-    "onyomi": [
-      "えき"
-    ],
-    "kunyomi": [],
-    "meanings_vi": [
-      "Station"
-    ],
-    "meanings_en": [
-      "Station"
-    ],
-    "radical": "mã 馬 (+4 nét)",
-    "examples": [
-      {
-        "word": "駅",
-        "reading": "えき",
-        "meaning": "Nhà ga",
-        "hanviet": "DỊCH",
-        "level": "N5",
-        "lesson": 5
-      },
-      {
-        "word": "本田駅",
-        "reading": "ほんだえき",
-        "meaning": "một trạm hư cấu",
-        "hanviet": "BÔN ĐIỀN DỊCH",
-        "level": "N5",
-        "lesson": 23
-      },
-      {
-        "word": "駅員",
-        "reading": "えきいん",
-        "meaning": "nhân viên nhà ga; người soát vé ở ga tàu",
-        "hanviet": "DỊCH VIÊN",
-        "level": "N4",
-        "lesson": 29
-      },
-      {
-        "word": "駅前",
-        "reading": "えきまえ",
-        "meaning": "trước ga",
-        "hanviet": "DỊCH TIỀN",
-        "level": "N4",
-        "lesson": 29
       }
     ]
   },
@@ -7016,7 +4869,7 @@
   {
     "id": "kanji-文",
     "kanji": "文",
-    "hanviet": "VĂN VẤN",
+    "hanviet": "VĂN",
     "strokes": 4,
     "jlpt": "N4",
     "onyomi": [
@@ -7392,7 +5245,7 @@
   {
     "id": "kanji-教",
     "kanji": "教",
-    "hanviet": "GIAO GIÁO",
+    "hanviet": "GIÁO",
     "strokes": 11,
     "jlpt": "N4",
     "onyomi": [
@@ -7453,14 +5306,6 @@
         "hanviet": "GIAO CỐI",
         "level": "N4",
         "lesson": 31
-      },
-      {
-        "word": "IMCパソコン教室",
-        "reading": "IMCパソコンきょうしつ",
-        "meaning": "một trường máy tính hư cấu",
-        "hanviet": "GIAO THẤT",
-        "level": "N4",
-        "lesson": 35
       },
       {
         "word": "教育",
@@ -7636,7 +5481,7 @@
   {
     "id": "kanji-勉",
     "kanji": "勉",
-    "hanviet": "MIỄN MẪN",
+    "hanviet": "MIỄN",
     "strokes": 10,
     "jlpt": "N4",
     "onyomi": [
@@ -7688,7 +5533,7 @@
   {
     "id": "kanji-強",
     "kanji": "強",
-    "hanviet": "CƯỜNG CƯỠNG",
+    "hanviet": "CƯỜNG",
     "strokes": 11,
     "jlpt": "N4",
     "onyomi": [
@@ -7812,7 +5657,7 @@
   {
     "id": "kanji-研",
     "kanji": "研",
-    "hanviet": "NGHIÊN NGHIỄN",
+    "hanviet": "NGHIÊN",
     "strokes": 9,
     "jlpt": "N4",
     "onyomi": [
@@ -8095,7 +5940,7 @@
   {
     "id": "kanji-題",
     "kanji": "題",
-    "hanviet": "ĐỀ ĐỆ",
+    "hanviet": "ĐỀ",
     "strokes": 18,
     "jlpt": "N4",
     "onyomi": [
@@ -8329,7 +6174,7 @@
   {
     "id": "kanji-質",
     "kanji": "質",
-    "hanviet": "CHÍ CHẤT",
+    "hanviet": "CHẤT",
     "strokes": 15,
     "jlpt": "N4",
     "onyomi": [
@@ -8538,7 +6383,7 @@
   {
     "id": "kanji-知",
     "kanji": "知",
-    "hanviet": "TRI TRÍ",
+    "hanviet": "TRI",
     "strokes": 8,
     "jlpt": "N4",
     "onyomi": [
@@ -8741,7 +6586,7 @@
   {
     "id": "kanji-思",
     "kanji": "思",
-    "hanviet": "TAI TƯ TỨ",
+    "hanviet": "TƯ",
     "strokes": 9,
     "jlpt": "N4",
     "onyomi": [
@@ -8862,7 +6707,7 @@
   {
     "id": "kanji-意",
     "kanji": "意",
-    "hanviet": "Y Ý",
+    "hanviet": "Ý",
     "strokes": 13,
     "jlpt": "N4",
     "onyomi": [
@@ -8985,101 +6830,9 @@
     ]
   },
   {
-    "id": "kanji-飲",
-    "kanji": "飲",
-    "hanviet": "ẤM ẨM",
-    "strokes": 12,
-    "jlpt": "N4",
-    "onyomi": [
-      "いん",
-      "おん"
-    ],
-    "kunyomi": [
-      "の.む",
-      "-の.み"
-    ],
-    "meanings_vi": [
-      "ẩm:  uống",
-      "ẩm:  nước uống",
-      "ẩm:  thuốc nước"
-    ],
-    "meanings_en": [
-      "Drink",
-      "Smoke",
-      "Take"
-    ],
-    "radical": "thực 食 (+4 nét)",
-    "examples": [
-      {
-        "word": "飲みます",
-        "reading": "のみます",
-        "meaning": "Uống",
-        "hanviet": "ẤM",
-        "level": "N5",
-        "lesson": 6
-      },
-      {
-        "word": "飲み物",
-        "reading": "のみもの",
-        "meaning": "Đồ uống",
-        "hanviet": "ẤM VẬT",
-        "level": "N5",
-        "lesson": 9
-      },
-      {
-        "word": "～でも 飲みませんか。",
-        "reading": "～でも のみませんか。",
-        "meaning": "Uống ～ hay gì đó thì sao?",
-        "hanviet": "ẤM",
-        "level": "N5",
-        "lesson": 21
-      },
-      {
-        "word": "一杯 飲みましょう。",
-        "reading": "いっぱい のみましょう。",
-        "meaning": "Chúng ta cùng uống một ly nhé",
-        "hanviet": "NHẤT BÔI ẤM",
-        "level": "N5",
-        "lesson": 25
-      },
-      {
-        "word": "飲み放題",
-        "reading": "のみほうだい",
-        "meaning": "Tất cả những gì bạn có thể uống",
-        "hanviet": "ẤM PHÓNG ĐỀ",
-        "level": "N4",
-        "lesson": 33
-      },
-      {
-        "word": "湯飲み",
-        "reading": "ゆのみ",
-        "meaning": "chén trà",
-        "hanviet": "SƯƠNG ẤM",
-        "level": "N2",
-        "lesson": 73
-      },
-      {
-        "word": "湯飲",
-        "reading": "ゆのみ",
-        "meaning": "chén trà",
-        "hanviet": "SƯƠNG ẤM",
-        "level": "N2",
-        "lesson": 74
-      },
-      {
-        "word": "飲み込む",
-        "reading": "のみこむ",
-        "meaning": "hiểu; thành thục",
-        "hanviet": "ẤM VU",
-        "level": "N1",
-        "lesson": 21
-      }
-    ]
-  },
-  {
     "id": "kanji-飯",
     "kanji": "飯",
-    "hanviet": "PHÃN PHẠN",
+    "hanviet": "PHÃN",
     "strokes": 12,
     "jlpt": "N4",
     "onyomi": [
@@ -9126,221 +6879,9 @@
     ]
   },
   {
-    "id": "kanji-肉",
-    "kanji": "肉",
-    "hanviet": "NHỤ NHỤC NẬU",
-    "strokes": 6,
-    "jlpt": "N4",
-    "onyomi": [
-      "にく"
-    ],
-    "kunyomi": [
-      "しし"
-    ],
-    "meanings_vi": [
-      "nhục:  thịt",
-      "nhục:  cùi quả"
-    ],
-    "meanings_en": [
-      "Meat"
-    ],
-    "radical": "nhục 肉 (+0 nét)",
-    "examples": [
-      {
-        "word": "肉",
-        "reading": "にく",
-        "meaning": "Thịt",
-        "hanviet": "NHỤ",
-        "level": "N5",
-        "lesson": 6
-      },
-      {
-        "word": "豚肉",
-        "reading": "ぶたにく",
-        "meaning": "thịt heo",
-        "hanviet": "ĐỒN NHỤ",
-        "level": "N5",
-        "lesson": 12
-      },
-      {
-        "word": "とり肉",
-        "reading": "とりにく",
-        "meaning": "Thịt gà",
-        "hanviet": "NHỤ",
-        "level": "N5",
-        "lesson": 12
-      },
-      {
-        "word": "牛肉",
-        "reading": "ぎゅうにく",
-        "meaning": "thịt bò",
-        "hanviet": "NGƯU NHỤ",
-        "level": "N5",
-        "lesson": 12
-      },
-      {
-        "word": "鳥肉",
-        "reading": "とりにく",
-        "meaning": "Thịt gà",
-        "hanviet": "ĐIỂU NHỤ",
-        "level": "N4",
-        "lesson": 34
-      },
-      {
-        "word": "筋肉",
-        "reading": "きんにく",
-        "meaning": "cơ bắp; bắp thịt; tay chân",
-        "hanviet": "CÂN NHỤ",
-        "level": "N3",
-        "lesson": 32
-      },
-      {
-        "word": "皮肉",
-        "reading": "ひにく",
-        "meaning": "giễu cợt; châm chọc",
-        "hanviet": "BÌ NHỤ",
-        "level": "N2",
-        "lesson": 61
-      },
-      {
-        "word": "肉親",
-        "reading": "にくしん",
-        "meaning": "mối quan hệ máu mủ",
-        "hanviet": "NHỤ THÂN",
-        "level": "N1",
-        "lesson": 19
-      },
-      {
-        "word": "肉体",
-        "reading": "にくたい",
-        "meaning": "cơ thể; thân thể",
-        "hanviet": "NHỤ BỔN",
-        "level": "N1",
-        "lesson": 19
-      }
-    ]
-  },
-  {
-    "id": "kanji-茶",
-    "kanji": "茶",
-    "hanviet": "TRÀ",
-    "strokes": 9,
-    "jlpt": "N4",
-    "onyomi": [
-      "ちゃ",
-      "さ"
-    ],
-    "kunyomi": [],
-    "meanings_vi": [
-      "trà:  chè"
-    ],
-    "meanings_en": [
-      "Tea"
-    ],
-    "radical": "thảo 艸 (+6 nét)",
-    "examples": [
-      {
-        "word": "お茶",
-        "reading": "おちゃ",
-        "meaning": "Trà, chè xanh",
-        "hanviet": "TRÀ",
-        "level": "N5",
-        "lesson": 6
-      },
-      {
-        "word": "紅茶",
-        "reading": "こうちゃ",
-        "meaning": "Trà đen, hồng trà",
-        "hanviet": "CÔNG TRÀ",
-        "level": "N5",
-        "lesson": 6
-      },
-      {
-        "word": "喫茶店",
-        "reading": "きっさてん",
-        "meaning": "Quán giải khát, quán cà phê",
-        "hanviet": "KHIẾT TRÀ ĐIẾM",
-        "level": "N5",
-        "lesson": 10
-      },
-      {
-        "word": "元気茶",
-        "reading": "げんきちゃ",
-        "meaning": "một loại trà hư cấu",
-        "hanviet": "NGUYÊN KHÍ TRÀ",
-        "level": "N5",
-        "lesson": 23
-      },
-      {
-        "word": "茶色",
-        "reading": "ちゃいろ",
-        "meaning": "màu nâu nhạt",
-        "hanviet": "TRÀ SẮC",
-        "level": "N4",
-        "lesson": 34
-      },
-      {
-        "word": "茶道",
-        "reading": "さどう",
-        "meaning": "Trà đạo",
-        "hanviet": "TRÀ ĐÁO",
-        "level": "N4",
-        "lesson": 34
-      },
-      {
-        "word": "お茶を たてます",
-        "reading": "おちゃを たてます",
-        "meaning": "pha trà (xanh) (trong trà đạo)",
-        "hanviet": "TRÀ",
-        "level": "N4",
-        "lesson": 34
-      },
-      {
-        "word": "茶",
-        "reading": "ちゃ",
-        "meaning": "chè",
-        "hanviet": "TRÀ",
-        "level": "N3",
-        "lesson": 59
-      },
-      {
-        "word": "茶色い",
-        "reading": "ちゃいろい",
-        "meaning": "ăm ngăm đen",
-        "hanviet": "TRÀ SẮC",
-        "level": "N2",
-        "lesson": 47
-      },
-      {
-        "word": "焦げ茶",
-        "reading": "こげちゃ",
-        "meaning": "è đen",
-        "hanviet": "TIÊU TRÀ",
-        "level": "N1",
-        "lesson": 4
-      },
-      {
-        "word": "茶の間",
-        "reading": "ちゃのま",
-        "meaning": "phòng khách (kiểu Nhật)",
-        "hanviet": "TRÀ GIAN",
-        "level": "N1",
-        "lesson": 69
-      },
-      {
-        "word": "茶の湯",
-        "reading": "ちゃのゆ",
-        "meaning": "tiệc trà",
-        "hanviet": "TRÀ SƯƠNG",
-        "level": "N1",
-        "lesson": 69
-      }
-    ]
-  },
-  {
     "id": "kanji-料",
     "kanji": "料",
-    "hanviet": "LIÊU LIỆU",
+    "hanviet": "LIỆU",
     "strokes": 10,
     "jlpt": "N4",
     "onyomi": [
@@ -9459,7 +7000,7 @@
   {
     "id": "kanji-理",
     "kanji": "理",
-    "hanviet": "LÍ LÝ",
+    "hanviet": "LÝ",
     "strokes": 11,
     "jlpt": "N4",
     "onyomi": [
@@ -9633,14 +7174,6 @@
         "hanviet": "ĐIỀU VỊ LIÊU",
         "level": "N4",
         "lesson": 34
-      },
-      {
-        "word": "母の 味",
-        "reading": "ははの あじ",
-        "meaning": "một cuốn sách hư cấu",
-        "hanviet": "MÔ VỊ",
-        "level": "N4",
-        "lesson": 35
       },
       {
         "word": "興味",
@@ -9826,63 +7359,9 @@
     ]
   },
   {
-    "id": "kanji-買",
-    "kanji": "買",
-    "hanviet": "MÃI",
-    "strokes": 12,
-    "jlpt": "N4",
-    "onyomi": [
-      "ばい"
-    ],
-    "kunyomi": [
-      "か.う"
-    ],
-    "meanings_vi": [
-      "mãi:  mua, sắm, tậu"
-    ],
-    "meanings_en": [
-      "Buy"
-    ],
-    "radical": "bối 貝 (+5 nét)",
-    "examples": [
-      {
-        "word": "買います",
-        "reading": "かいます",
-        "meaning": "Mua",
-        "hanviet": "MÃI",
-        "level": "N5",
-        "lesson": 6
-      },
-      {
-        "word": "買い物します",
-        "reading": "かいものします",
-        "meaning": "đi mua sắm",
-        "hanviet": "MÃI VẬT",
-        "level": "N5",
-        "lesson": 13
-      },
-      {
-        "word": "売買",
-        "reading": "ばいばい",
-        "meaning": "buôn bán",
-        "hanviet": "MẠI MÃI",
-        "level": "N2",
-        "lesson": 57
-      },
-      {
-        "word": "購買",
-        "reading": "こうばい",
-        "meaning": "sự mua; việc mua vào",
-        "hanviet": "CẤU MÃI",
-        "level": "N1",
-        "lesson": 3
-      }
-    ]
-  },
-  {
     "id": "kanji-売",
     "kanji": "売",
-    "hanviet": "MẠI",
+    "hanviet": "MÃI",
     "strokes": 7,
     "jlpt": "N4",
     "onyomi": [
@@ -10001,7 +7480,7 @@
   {
     "id": "kanji-家",
     "kanji": "家",
-    "hanviet": "CÔ GIA",
+    "hanviet": "CÔ",
     "strokes": 10,
     "jlpt": "N4",
     "onyomi": [
@@ -10128,7 +7607,7 @@
   {
     "id": "kanji-住",
     "kanji": "住",
-    "hanviet": "TRÚ TRỤ",
+    "hanviet": "TRÚ",
     "strokes": 7,
     "jlpt": "N4",
     "onyomi": [
@@ -10247,7 +7726,7 @@
   {
     "id": "kanji-町",
     "kanji": "町",
-    "hanviet": "ĐINH ĐỈNH",
+    "hanviet": "ĐINH",
     "strokes": 7,
     "jlpt": "N4",
     "onyomi": [
@@ -10277,14 +7756,6 @@
         "lesson": 8
       },
       {
-        "word": "みどり 町",
-        "reading": "みどり ちょう",
-        "meaning": "một thị trấn hư cấu",
-        "hanviet": "ĐINH",
-        "level": "N5",
-        "lesson": 14
-      },
-      {
         "word": "下町",
         "reading": "したまち",
         "meaning": "phần thành phố phía dưới",
@@ -10297,7 +7768,7 @@
   {
     "id": "kanji-京",
     "kanji": "京",
-    "hanviet": "KINH NGUYÊN",
+    "hanviet": "KINH",
     "strokes": 8,
     "jlpt": "N4",
     "onyomi": [
@@ -10492,217 +7963,6 @@
     ]
   },
   {
-    "id": "kanji-社",
-    "kanji": "社",
-    "hanviet": "XÃ",
-    "strokes": 7,
-    "jlpt": "N4",
-    "onyomi": [
-      "しゃ"
-    ],
-    "kunyomi": [
-      "やしろ"
-    ],
-    "meanings_vi": [
-      "xã:  thần đất",
-      "xã:  đền thờ thần đất"
-    ],
-    "meanings_en": [
-      "Company",
-      "Firm",
-      "Office",
-      "Association",
-      "Shrine"
-    ],
-    "radical": "kỳ 示 (+3 nét)",
-    "examples": [
-      {
-        "word": "会社員",
-        "reading": "かいしゃいん",
-        "meaning": "Nhân viên công ty",
-        "hanviet": "CỐI XÃ VIÊN",
-        "level": "N5",
-        "lesson": 1
-      },
-      {
-        "word": "社員",
-        "reading": "しゃいん",
-        "meaning": "Nhân viên công ty (dùng kèm tên công ty)",
-        "hanviet": "XÃ VIÊN",
-        "level": "N5",
-        "lesson": 1
-      },
-      {
-        "word": "会社",
-        "reading": "かいしゃ",
-        "meaning": "Công ty",
-        "hanviet": "CỐI XÃ",
-        "level": "N5",
-        "lesson": 3
-      },
-      {
-        "word": "神社",
-        "reading": "じんじゃ",
-        "meaning": "đền",
-        "hanviet": "THẦN XÃ",
-        "level": "N5",
-        "lesson": 16
-      },
-      {
-        "word": "社長",
-        "reading": "しゃちょう",
-        "meaning": "chủ tịch công ty",
-        "hanviet": "XÃ TRÀNG",
-        "level": "N5",
-        "lesson": 18
-      },
-      {
-        "word": "～会社",
-        "reading": "～がいしゃ",
-        "meaning": "Công ty",
-        "hanviet": "CỐI XÃ",
-        "level": "N4",
-        "lesson": 26
-      },
-      {
-        "word": "新聞社",
-        "reading": "しんぶんしゃ",
-        "meaning": "tòa báo",
-        "hanviet": "TÂN VĂN XÃ",
-        "level": "N4",
-        "lesson": 26
-      },
-      {
-        "word": "本社",
-        "reading": "ほんしゃ",
-        "meaning": "trụ sở điều hành chính; văn phòng điều hành; trụ sở chính",
-        "hanviet": "BÔN XÃ",
-        "level": "N4",
-        "lesson": 31
-      },
-      {
-        "word": "旅行社",
-        "reading": "りょこうしゃ",
-        "meaning": "khách lữ hành",
-        "hanviet": "LỮ HÀNG XÃ",
-        "level": "N4",
-        "lesson": 35
-      },
-      {
-        "word": "出雲大社",
-        "reading": "いずもたいしゃ",
-        "meaning": "một ngôi đền ở thành phố Izumo thuộc tỉnh Shimane",
-        "hanviet": "XUÝ VÂN THÁI XÃ",
-        "level": "N4",
-        "lesson": 38
-      },
-      {
-        "word": "社会",
-        "reading": "しゃかい",
-        "meaning": "xã hội",
-        "hanviet": "XÃ CỐI",
-        "level": "N4",
-        "lesson": 42
-      },
-      {
-        "word": "～社",
-        "reading": "～しゃ",
-        "meaning": "quầy cho công ty",
-        "hanviet": "XÃ",
-        "level": "N2",
-        "lesson": 3
-      }
-    ]
-  },
-  {
-    "id": "kanji-店",
-    "kanji": "店",
-    "hanviet": "ĐIẾM",
-    "strokes": 8,
-    "jlpt": "N4",
-    "onyomi": [
-      "てん"
-    ],
-    "kunyomi": [
-      "みせ",
-      "たな"
-    ],
-    "meanings_vi": [
-      "điếm:  quán trọ, tiệm hàng"
-    ],
-    "meanings_en": [
-      "Store",
-      "Shop"
-    ],
-    "radical": "nghiễm 广 (+5 nét)",
-    "examples": [
-      {
-        "word": "店",
-        "reading": "みせ",
-        "meaning": "Cửa hàng, tiệm",
-        "hanviet": "ĐIẾM",
-        "level": "N5",
-        "lesson": 6
-      },
-      {
-        "word": "喫茶店",
-        "reading": "きっさてん",
-        "meaning": "Quán giải khát, quán cà phê",
-        "hanviet": "KHIẾT TRÀ ĐIẾM",
-        "level": "N5",
-        "lesson": 10
-      },
-      {
-        "word": "支店",
-        "reading": "してん",
-        "meaning": "công ty chi nhánh; cửa hàng chi nhánh",
-        "hanviet": "CHI ĐIẾM",
-        "level": "N4",
-        "lesson": 31
-      },
-      {
-        "word": "商店",
-        "reading": "しょうてん",
-        "meaning": "cửa hàng buôn bán; nhà buôn bán",
-        "hanviet": "THƯƠNG ĐIẾM",
-        "level": "N2",
-        "lesson": 36
-      },
-      {
-        "word": "書店",
-        "reading": "しょてん",
-        "meaning": "cửa hàng sách",
-        "hanviet": "THƯ ĐIẾM",
-        "level": "N2",
-        "lesson": 37
-      },
-      {
-        "word": "売店",
-        "reading": "ばいてん",
-        "meaning": "quầy bán hàng",
-        "hanviet": "MẠI ĐIẾM",
-        "level": "N2",
-        "lesson": 57
-      },
-      {
-        "word": "店屋",
-        "reading": "みせや",
-        "meaning": "ửa hiệu, tiệm, quán",
-        "hanviet": "ĐIẾM ỐC",
-        "level": "N2",
-        "lesson": 69
-      },
-      {
-        "word": "洋品店",
-        "reading": "ようひんてん",
-        "meaning": "đi mua hàng phía tây những cán nào - gọi tên y phục và phụ kiện",
-        "hanviet": "DƯƠNG PHẨM ĐIẾM",
-        "level": "N2",
-        "lesson": 74
-      }
-    ]
-  },
-  {
     "id": "kanji-屋",
     "kanji": "屋",
     "hanviet": "ỐC",
@@ -10734,22 +7994,6 @@
         "hanviet": "BẪU ỐC",
         "level": "N5",
         "lesson": 3
-      },
-      {
-        "word": "フランス屋",
-        "reading": "フランスや",
-        "meaning": "một siêu thị hư cấu",
-        "hanviet": "ỐC",
-        "level": "N5",
-        "lesson": 6
-      },
-      {
-        "word": "毎日屋",
-        "reading": "まいにちや",
-        "meaning": "một siêu thị hư cấu",
-        "hanviet": "MỖI NHẬT ỐC",
-        "level": "N5",
-        "lesson": 6
       },
       {
         "word": "～屋",
@@ -10828,7 +8072,7 @@
   {
     "id": "kanji-堂",
     "kanji": "堂",
-    "hanviet": "ĐÀNG ĐƯỜNG",
+    "hanviet": "ĐƯỜNG",
     "strokes": 11,
     "jlpt": "N4",
     "onyomi": [
@@ -10920,30 +8164,6 @@
         "lesson": 4
       },
       {
-        "word": "みどり図書館",
-        "reading": "みどりとしょかん",
-        "meaning": "một thư viện hư cấu",
-        "hanviet": "ĐỒ THƯ QUÁN",
-        "level": "N5",
-        "lesson": 4
-      },
-      {
-        "word": "やまと美術館",
-        "reading": "やまとびじゅつかん",
-        "meaning": "một phòng trưng bày nghệ thuật hư cấu",
-        "hanviet": "MĨ THUẬT QUÁN",
-        "level": "N5",
-        "lesson": 4
-      },
-      {
-        "word": "図書館前",
-        "reading": "としょかんまえ",
-        "meaning": "một trạm xe buýt hư cấu",
-        "hanviet": "ĐỒ THƯ QUÁN TIỀN",
-        "level": "N5",
-        "lesson": 23
-      },
-      {
         "word": "大使館",
         "reading": "たいしかん",
         "meaning": "đại sứ quán",
@@ -11004,7 +8224,7 @@
   {
     "id": "kanji-起",
     "kanji": "起",
-    "hanviet": "KHỈ KHỞI",
+    "hanviet": "KHỞI",
     "strokes": 10,
     "jlpt": "N4",
     "onyomi": [
@@ -11106,7 +8326,7 @@
   {
     "id": "kanji-使",
     "kanji": "使",
-    "hanviet": "SỨ SỬ",
+    "hanviet": "SỬ",
     "strokes": 8,
     "jlpt": "N4",
     "onyomi": [
@@ -11227,7 +8447,7 @@
   {
     "id": "kanji-作",
     "kanji": "作",
-    "hanviet": "TÁ TÁC",
+    "hanviet": "TÁC",
     "strokes": 7,
     "jlpt": "N4",
     "onyomi": [
@@ -11965,7 +9185,7 @@
   {
     "id": "kanji-始",
     "kanji": "始",
-    "hanviet": "THUỶ THÍ THỈ",
+    "hanviet": "THỦY",
     "strokes": 8,
     "jlpt": "N4",
     "onyomi": [
@@ -12311,7 +9531,7 @@
   {
     "id": "kanji-音",
     "kanji": "音",
-    "hanviet": "ÂM ẤM",
+    "hanviet": "ÂM",
     "strokes": 9,
     "jlpt": "N4",
     "onyomi": [
@@ -12723,7 +9943,7 @@
   {
     "id": "kanji-画",
     "kanji": "画",
-    "hanviet": "HOẠ HOẠCH",
+    "hanviet": "HỌA",
     "strokes": 8,
     "jlpt": "N4",
     "onyomi": [
@@ -13095,7 +10315,7 @@
   {
     "id": "kanji-着",
     "kanji": "着",
-    "hanviet": "HỒ TRƯỚC TRỨ TRỮ",
+    "hanviet": "TRƯỚC",
     "strokes": 12,
     "jlpt": "N4",
     "onyomi": [
@@ -13971,7 +11191,7 @@
   {
     "id": "kanji-建",
     "kanji": "建",
-    "hanviet": "KIẾN KIỂN",
+    "hanviet": "KIẾN",
     "strokes": 9,
     "jlpt": "N4",
     "onyomi": [
@@ -14069,7 +11289,7 @@
   {
     "id": "kanji-場",
     "kanji": "場",
-    "hanviet": "TRÀNG TRƯỜNG",
+    "hanviet": "TRƯỜNG",
     "strokes": 12,
     "jlpt": "N4",
     "onyomi": [
@@ -14226,28 +11446,12 @@
         "lesson": 4
       },
       {
-        "word": "みどり図書館",
-        "reading": "みどりとしょかん",
-        "meaning": "một thư viện hư cấu",
-        "hanviet": "ĐỒ THƯ QUÁN",
-        "level": "N5",
-        "lesson": 4
-      },
-      {
         "word": "地図",
         "reading": "ちず",
         "meaning": "bản đồ",
         "hanviet": "ĐỊA ĐỒ",
         "level": "N5",
         "lesson": 14
-      },
-      {
-        "word": "図書館前",
-        "reading": "としょかんまえ",
-        "meaning": "một trạm xe buýt hư cấu",
-        "hanviet": "ĐỒ THƯ QUÁN TIỀN",
-        "level": "N5",
-        "lesson": 23
       },
       {
         "word": "図",
@@ -14318,7 +11522,7 @@
   {
     "id": "kanji-員",
     "kanji": "員",
-    "hanviet": "VIÊN VÂN",
+    "hanviet": "VIÊN",
     "strokes": 10,
     "jlpt": "N4",
     "onyomi": [
@@ -14435,256 +11639,6 @@
     ]
   },
   {
-    "id": "kanji-会",
-    "kanji": "会",
-    "hanviet": "CỐI HỘI",
-    "strokes": 6,
-    "jlpt": "N4",
-    "onyomi": [
-      "かい",
-      "え"
-    ],
-    "kunyomi": [
-      "あ.う",
-      "あ.わせる",
-      "あつ.まる"
-    ],
-    "meanings_vi": [
-      "cối:  tính gộp, tính cộng lại sổ sách trong một năm",
-      "hội:  hội hè",
-      "hội:  tụ hội"
-    ],
-    "meanings_en": [
-      "Meeting",
-      "Meet",
-      "Party",
-      "Association",
-      "Interview",
-      "Join"
-    ],
-    "radical": "nhân 人 (+4 nét)",
-    "examples": [
-      {
-        "word": "会社員",
-        "reading": "かいしゃいん",
-        "meaning": "Nhân viên công ty",
-        "hanviet": "CỐI XÃ VIÊN",
-        "level": "N5",
-        "lesson": 1
-      },
-      {
-        "word": "会議室",
-        "reading": "かいぎしつ",
-        "meaning": "Phòng họp",
-        "hanviet": "CỐI NGHỊ THẤT",
-        "level": "N5",
-        "lesson": 3
-      },
-      {
-        "word": "会社",
-        "reading": "かいしゃ",
-        "meaning": "Công ty",
-        "hanviet": "CỐI XÃ",
-        "level": "N5",
-        "lesson": 3
-      },
-      {
-        "word": "会議",
-        "reading": "かいぎ",
-        "meaning": "Cuộc họp",
-        "hanviet": "CỐI NGHỊ",
-        "level": "N5",
-        "lesson": 4
-      },
-      {
-        "word": "会います",
-        "reading": "あいます",
-        "meaning": "Gặp gỡ [bạn bè]",
-        "hanviet": "CỐI HỮU ĐẠT",
-        "level": "N5",
-        "lesson": 6
-      },
-      {
-        "word": "運動会",
-        "reading": "うんどうかい",
-        "meaning": "cuộc thi thể thao; hội thi thể thao",
-        "hanviet": "VẬN ĐỘNG CỐI",
-        "level": "N4",
-        "lesson": 26
-      },
-      {
-        "word": "国会議事堂",
-        "reading": "こっかいぎじどう",
-        "meaning": "tòa nhà nghị sự quốc hội; tòa quốc hội; tòa nhà quốc hội",
-        "hanviet": "QUỐC CỐI NGHỊ SỰ ĐÀNG",
-        "level": "N4",
-        "lesson": 26
-      },
-      {
-        "word": "～会社",
-        "reading": "～がいしゃ",
-        "meaning": "Công ty",
-        "hanviet": "CỐI XÃ",
-        "level": "N4",
-        "lesson": 26
-      },
-      {
-        "word": "会話",
-        "reading": "かいわ",
-        "meaning": "đối thoại",
-        "hanviet": "CỐI THOẠI",
-        "level": "N4",
-        "lesson": 28
-      },
-      {
-        "word": "展覧会",
-        "reading": "てんらんかい",
-        "meaning": "cuộc triển lãm; cuộc trưng bày",
-        "hanviet": "TRIỂN LÃM CỐI",
-        "level": "N4",
-        "lesson": 31
-      },
-      {
-        "word": "教会",
-        "reading": "きょうかい",
-        "meaning": "giáo đường; nhà thờ",
-        "hanviet": "GIAO CỐI",
-        "level": "N4",
-        "lesson": 31
-      },
-      {
-        "word": "都会",
-        "reading": "とかい",
-        "meaning": "đô hội",
-        "hanviet": "ĐÔ CỐI",
-        "level": "N4",
-        "lesson": 31
-      }
-    ]
-  },
-  {
-    "id": "kanji-言",
-    "kanji": "言",
-    "hanviet": "NGÂN NGÔN",
-    "strokes": 7,
-    "jlpt": "N4",
-    "onyomi": [
-      "げん",
-      "ごん"
-    ],
-    "kunyomi": [
-      "い.う",
-      "こと"
-    ],
-    "meanings_vi": [
-      "ngôn:  nói",
-      "ngôn:  lời nói"
-    ],
-    "meanings_en": [
-      "Say",
-      "Word"
-    ],
-    "radical": "ngôn 言 (+0 nét)",
-    "examples": [
-      {
-        "word": "言います",
-        "reading": "いいます",
-        "meaning": "nói",
-        "hanviet": "NGÂN",
-        "level": "N5",
-        "lesson": 21
-      },
-      {
-        "word": "言い伝え",
-        "reading": "いいつたえ",
-        "meaning": "truyền thuyết",
-        "hanviet": "NGÂN TRUYỀN",
-        "level": "N4",
-        "lesson": 37
-      },
-      {
-        "word": "言わば",
-        "reading": "いわば",
-        "meaning": "có thể nói như là...; ví dụ như là",
-        "hanviet": "NGÂN",
-        "level": "N3",
-        "lesson": 18
-      },
-      {
-        "word": "言語",
-        "reading": "げんご",
-        "meaning": "ngôn ngữ; tiếng nói",
-        "hanviet": "NGÂN NGỨ",
-        "level": "N3",
-        "lesson": 35
-      },
-      {
-        "word": "一言",
-        "reading": "ひとこと",
-        "meaning": "một từ; một lời",
-        "hanviet": "NHẤT NGÂN",
-        "level": "N3",
-        "lesson": 74
-      },
-      {
-        "word": "伝言",
-        "reading": "でんごん",
-        "meaning": "lời nhắn; lời nói",
-        "hanviet": "TRUYỀN NGÂN",
-        "level": "N3",
-        "lesson": 84
-      },
-      {
-        "word": "言い出す",
-        "reading": "いいだす",
-        "meaning": "nói ra; bắt đầu nói; ngỏ lời",
-        "hanviet": "NGÂN XUÝ",
-        "level": "N2",
-        "lesson": 7
-      },
-      {
-        "word": "言い付ける",
-        "reading": "いいつける",
-        "meaning": "chỉ ra",
-        "hanviet": "NGÂN PHÓ",
-        "level": "N2",
-        "lesson": 8
-      },
-      {
-        "word": "言付ける",
-        "reading": "ことづける",
-        "meaning": "nhắn tin; truyền đạt tới; chuyển tới",
-        "hanviet": "NGÂN PHÓ",
-        "level": "N2",
-        "lesson": 27
-      },
-      {
-        "word": "言葉遣い",
-        "reading": "ことばづかい",
-        "meaning": "cách sử dụng từ ngữ; cách dùng từ; lời ăn tiếng nói",
-        "hanviet": "NGÂN DIẾP KHIỂN",
-        "level": "N2",
-        "lesson": 27
-      },
-      {
-        "word": "独り言",
-        "reading": "ひとりごと",
-        "meaning": "việc nói một mình; sự độc thoại",
-        "hanviet": "ĐỘC NGÂN",
-        "level": "N2",
-        "lesson": 61
-      },
-      {
-        "word": "方言",
-        "reading": "ほうげん",
-        "meaning": "phương ngôn",
-        "hanviet": "BÀNG NGÂN",
-        "level": "N2",
-        "lesson": 66
-      }
-    ]
-  },
-  {
     "id": "kanji-借",
     "kanji": "借",
     "hanviet": "TÁ",
@@ -14742,7 +11696,7 @@
   {
     "id": "kanji-貸",
     "kanji": "貸",
-    "hanviet": "THẢI THẮC",
+    "hanviet": "THẢI",
     "strokes": 12,
     "jlpt": "N4",
     "onyomi": [
@@ -14849,14 +11803,6 @@
         "lesson": 4
       },
       {
-        "word": "アップル銀行",
-        "reading": "アップルぎんこう",
-        "meaning": "một ngân hàng hư cấu",
-        "hanviet": "NGÂN HÀNG",
-        "level": "N5",
-        "lesson": 4
-      },
-      {
         "word": "銀",
         "reading": "ぎん",
         "meaning": "bạc",
@@ -14869,7 +11815,7 @@
   {
     "id": "kanji-計",
     "kanji": "計",
-    "hanviet": "KÊ KẾ",
+    "hanviet": "KÊ",
     "strokes": 9,
     "jlpt": "N4",
     "onyomi": [
@@ -15085,7 +12031,7 @@
   {
     "id": "kanji-切",
     "kanji": "切",
-    "hanviet": "THIẾT THẾ",
+    "hanviet": "THIẾT",
     "strokes": 4,
     "jlpt": "N4",
     "onyomi": [
@@ -15459,109 +12405,9 @@
     ]
   },
   {
-    "id": "kanji-週",
-    "kanji": "週",
-    "hanviet": "CHU",
-    "strokes": 11,
-    "jlpt": "N4",
-    "onyomi": [
-      "しゅう"
-    ],
-    "kunyomi": [],
-    "meanings_vi": [
-      "chu:  đi khắp nơi"
-    ],
-    "meanings_en": [
-      "Week"
-    ],
-    "radical": "sước 辵 (+8 nét)",
-    "examples": [
-      {
-        "word": "先週",
-        "reading": "せんしゅう",
-        "meaning": "Tuần trước",
-        "hanviet": "TIÊN CHU",
-        "level": "N5",
-        "lesson": 5
-      },
-      {
-        "word": "今週",
-        "reading": "こんしゅう",
-        "meaning": "Tuần này",
-        "hanviet": "KIM CHU",
-        "level": "N5",
-        "lesson": 5
-      },
-      {
-        "word": "来週",
-        "reading": "らいしゅう",
-        "meaning": "Tuần sau",
-        "hanviet": "LAI CHU",
-        "level": "N5",
-        "lesson": 5
-      },
-      {
-        "word": "－週間",
-        "reading": "－しゅうかん",
-        "meaning": "hàng tuần; tuần lễ",
-        "hanviet": "CHU GIAN",
-        "level": "N5",
-        "lesson": 11
-      },
-      {
-        "word": "週末",
-        "reading": "しゅうまつ",
-        "meaning": "cuối tuần",
-        "hanviet": "CHU MẠT",
-        "level": "N5",
-        "lesson": 13
-      },
-      {
-        "word": "毎週",
-        "reading": "まいしゅう",
-        "meaning": "hàng tuần",
-        "hanviet": "MỖI CHU",
-        "level": "N4",
-        "lesson": 36
-      },
-      {
-        "word": "さ来週",
-        "reading": "さらいしゅう",
-        "meaning": "tuần sau nữa",
-        "hanviet": "LAI CHU",
-        "level": "N4",
-        "lesson": 50
-      },
-      {
-        "word": "週",
-        "reading": "しゅう",
-        "meaning": "tuần",
-        "hanviet": "CHU",
-        "level": "N3",
-        "lesson": 4
-      },
-      {
-        "word": "先々週",
-        "reading": "せんせんしゅう",
-        "meaning": "ần trước lần cuối",
-        "hanviet": "TIÊN CHU",
-        "level": "N2",
-        "lesson": 42
-      },
-      {
-        "word": "隔週",
-        "reading": "かくしゅう",
-        "meaning": "cách mỗi tuần",
-        "hanviet": "CÁCH CHU",
-        "level": "N1",
-        "lesson": 33
-      }
-    ]
-  },
-  {
     "id": "kanji-度",
     "kanji": "度",
-    "hanviet": "ĐẠC ĐỘ",
+    "hanviet": "ĐỘ",
     "strokes": 9,
     "jlpt": "N4",
     "onyomi": [
@@ -16038,7 +12884,7 @@
   {
     "id": "kanji-去",
     "kanji": "去",
-    "hanviet": "KHU KHỨ KHỬ",
+    "hanviet": "KHU",
     "strokes": 5,
     "jlpt": "N4",
     "onyomi": [
@@ -16110,7 +12956,7 @@
   {
     "id": "kanji-方",
     "kanji": "方",
-    "hanviet": "BÀNG PHƯƠNG",
+    "hanviet": "PHƯƠNG",
     "strokes": 4,
     "jlpt": "N4",
     "onyomi": [
@@ -16884,14 +13730,6 @@
         "lesson": 27
       },
       {
-        "word": "IMCパソコン教室",
-        "reading": "IMCパソコンきょうしつ",
-        "meaning": "một trường máy tính hư cấu",
-        "hanviet": "GIAO THẤT",
-        "level": "N4",
-        "lesson": 35
-      },
-      {
         "word": "研究室",
         "reading": "けんきゅうしつ",
         "meaning": "phòng nghiên cứu",
@@ -16952,7 +13790,7 @@
   {
     "id": "kanji-台",
     "kanji": "台",
-    "hanviet": "DI THAI ĐÀI",
+    "hanviet": "DI",
     "strokes": 5,
     "jlpt": "N4",
     "onyomi": [
