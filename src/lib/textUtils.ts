@@ -2,22 +2,25 @@ import * as wanakana from 'wanakana';
 
 /**
  * Chuẩn hóa chuỗi tiếng Nhật / Romaji / Hán Việt để so sánh đáp án chính xác
- * - Loại bỏ toàn bộ các biến thể dấu ngã (half-width ~, full-width ～, wave dash 〜, ...)
- * - Loại bỏ dấu ba chấm, dấu gạch nối, dấu ngoặc, dấu câu tiếng Nhật và tiếng Anh
- * - Chuyển chữ thường, bỏ khoảng trắng
+ * - Loại bỏ toàn bộ các biến thể dấu ngã (half-width ~, full-width ～, wave dash 〜, 〰, ...)
+ * - Loại bỏ toàn bộ các biến thể dấu gạch ngang (ASCII -, fullwidth －, trường âm ー, horizontal bar ―, en dash –, em dash —, ‒)
+ * - Loại bỏ dấu ngoặc đơn, ngoặc vuông, ngoặc tiếng Nhật
+ * - Chuyển chữ thường, bỏ khoảng trắng và dấu câu
  * - Xử lý trợ từ / biến âm: ha/wa, wo/o
  */
 export function normalizeJapaneseAnswer(text: string): string {
   if (!text) return '';
   return text
     .toLowerCase()
-    // Loại bỏ tất cả biến thể dấu ngã (half-width, full-width, wave dash)
-    .replace(/[~～〜\uFF5E\u301C]/g, '')
-    // Loại bỏ dấu ba chấm, gạch ngang, ngoặc đơn/kép, dấu chấm giữa
-    .replace(/[.…\-–—_()[\]（）「」『』・]/g, '')
-    // Loại bỏ dấu câu tiếng Nhật và tiếng Anh, khoảng trắng
-    .replace(/[.,!?。、\s\u3000]/g, '')
-    // Biến âm trợ từ thường gặp
+    // 1. Loại bỏ tất cả biến thể dấu ngã (half-width ~, full-width ～, wave dash 〜, 〰, ...)
+    .replace(/[~～〜\uFF5E\u301C\u3030]/g, '')
+    // 2. Loại bỏ tất cả các loại gạch ngang, gạch nối, trường âm, gạch dưới (-, －, ー, ―, –, —, ‒, _)
+    .replace(/[\-－ー―–—‒_]/g, '')
+    // 3. Loại bỏ dấu ngoặc đơn, ngoặc vuông, ngoặc nhọn, ngoặc tiếng Nhật
+    .replace(/[()[\]（）「」『』【】［］〔〕]/g, '')
+    // 4. Loại bỏ dấu ba chấm, dấu chấm giữa (nakaguro), dấu câu, khoảng trắng
+    .replace(/[.…・·.,!?。、\s\u3000/／\\|｜]/g, '')
+    // 5. Biến âm trợ từ thường gặp
     .replace(/ha/g, 'wa')
     .replace(/wo/g, 'o')
     .replace(/は/g, 'わ')
@@ -43,11 +46,11 @@ export function normalizeJapaneseLenient(text: string): string {
 }
 
 /**
- * Kiểm tra xem một ký tự có phải là ký hiệu phụ (dấu ngã, ngoặc, gạch nối, ...) không cần gõ hay không
+ * Kiểm tra xem một ký tự có phải là ký hiệu phụ (dấu ngã, ngoặc, gạch nối, ...) không cần bắt buộc gõ hay không
  */
 export function isPunctuationOrSymbol(char: string): boolean {
   if (!char) return false;
-  return /[~～〜\uFF5E\u301C\-–—_()[\]（）「」『』・.,!?。、\s\u3000]/.test(char);
+  return /[~～〜\uFF5E\u301C\u3030\-－ー―–—‒_()[\]（）「」『』【】［］〔〕・·.,!?。、\s\u3000/／]/.test(char);
 }
 
 export function toHiragana(text: string): string {
@@ -56,9 +59,57 @@ export function toHiragana(text: string): string {
 }
 
 /**
+ * Tách và mở rộng các đáp án thay thế có chứa ngoặc đơn hoặc tiền tố gạch nối
+ * Ví dụ:
+ * - "なんさい（おいくつ）" -> ["なんさい", "おいくつ", "なんさいおいくつ"]
+ * - "－かい（－がい）" -> ["－かい", "－がい", "かい", "がい"]
+ * - "４分の１（１／４）" -> ["４分の１", "１／４", "1/4", "1／4"]
+ * - "－さい" -> ["－さい", "さい"]
+ * - "〜さん" -> ["〜さん", "さん"]
+ */
+export function expandAlternativeTargets(targets: (string | undefined)[]): string[] {
+  const result = new Set<string>();
+
+  for (const raw of targets) {
+    if (!raw) continue;
+    const t = raw.trim();
+    if (!t) continue;
+    result.add(t);
+
+    // 1. Nếu có chứa ngoặc đơn hoặc ngoặc tiếng Nhật
+    const parenMatch = t.match(/^([^\(（]+)[\(（](.*?)[\)）]/);
+    if (parenMatch) {
+      const mainPart = parenMatch[1].trim();
+      const parenPart = parenMatch[2].trim();
+      if (mainPart) {
+        result.add(mainPart);
+        // Tước thêm dấu nối nếu có (vd: －かい -> かい)
+        const strippedMain = mainPart.replace(/^[~～〜\uFF5E\u301C\u3030\-－ー―–—‒_]+/g, '').trim();
+        if (strippedMain) result.add(strippedMain);
+      }
+      if (parenPart) {
+        result.add(parenPart);
+        const strippedParen = parenPart.replace(/^[~～〜\uFF5E\u301C\u3030\-－ー―–—‒_]+/g, '').trim();
+        if (strippedParen) result.add(strippedParen);
+      }
+      // Ghép toàn bộ không ngoặc
+      result.add(t.replace(/[（\(\)）]/g, '').trim());
+    }
+
+    // 2. Tước các ký tự gạch nối, tilde ở đầu chuỗi (vd: －さい -> さい, 〜さん -> さん)
+    const strippedPrefix = t.replace(/^[~～〜\uFF5E\u301C\u3030\-－ー―–—‒_]+/g, '').trim();
+    if (strippedPrefix && strippedPrefix !== t) {
+      result.add(strippedPrefix);
+    }
+  }
+
+  return Array.from(result);
+}
+
+/**
  * Kiểm tra đáp án tiếng Nhật toàn diện (chấp nhận mọi cách biểu diễn hợp lệ của người học)
  * - Chấp nhận cả Hiragana, Katakana, Romaji, hỗn hợp Katakana + Hiragana
- * - Hỗ trợ nhiều đáp án hợp lệ thay thế (như Kanji, Romaji...)
+ * - Hỗ trợ nhiều đáp án hợp lệ thay thế (như Kanji, Romaji, từ phụ trong ngoặc...)
  */
 export function isJapaneseAnswerMatch(
   userInput: string, 
@@ -67,7 +118,7 @@ export function isJapaneseAnswerMatch(
 ): boolean {
   if (!userInput) return false;
 
-  const allTargets = [targetAnswer, ...alternativeTargets].filter((t): t is string => Boolean(t && t.trim()));
+  const allTargets = expandAlternativeTargets([targetAnswer, ...alternativeTargets]);
   if (allTargets.length === 0) return false;
 
   for (const target of allTargets) {
@@ -83,10 +134,10 @@ function checkSingleMatch(userInput: string, targetAnswer: string): boolean {
   const cleanTarget = targetAnswer.trim();
   if (cleanUser === cleanTarget) return true;
 
-  // 1. So khớp chuẩn hóa chặt chẽ
+  // 1. So khớp chuẩn hóa chặt chẽ (đã gỡ bỏ toàn bộ gạch ngang, tilde, ngoặc)
   const normUserStrict = normalizeJapaneseAnswer(cleanUser);
   const normTargetStrict = normalizeJapaneseAnswer(cleanTarget);
-  if (normUserStrict === normTargetStrict) return true;
+  if (normUserStrict && normUserStrict === normTargetStrict) return true;
 
   // 2. So khớp đồng dạng Hiragana (cả 2 cùng quy về Hiragana)
   const userHira = wanakana.toHiragana(cleanUser);
@@ -106,7 +157,7 @@ function checkSingleMatch(userInput: string, targetAnswer: string): boolean {
   // 5. So khớp ngữ âm mềm dẻo (hỗ trợ từ ghép Katakana + Hiragana, từ mượn trường âm)
   const userLenient = normalizeJapaneseLenient(cleanUser);
   const targetLenient = normalizeJapaneseLenient(cleanTarget);
-  if (userLenient === targetLenient) return true;
+  if (userLenient && userLenient === targetLenient) return true;
 
   return false;
 }

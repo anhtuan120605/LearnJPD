@@ -247,7 +247,13 @@ export const CrammingModeView: React.FC<CrammingModeViewProps> = ({
 
     let isCorrect = false;
     if (testType === 'reading') {
-      isCorrect = isJapaneseAnswerMatch(trimmedInput, cleanTarget);
+      isCorrect = isJapaneseAnswerMatch(
+        trimmedInput, 
+        cleanTarget,
+        currentWord.kana,
+        currentWord.kanji,
+        currentWord.romaji
+      );
     } else {
       isCorrect = normalizeJapaneseAnswer(trimmedInput) === normalizeJapaneseAnswer(cleanTarget);
     }

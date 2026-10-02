@@ -41,9 +41,9 @@ export const StudyModeSelector: React.FC<StudyModeSelectorProps> = ({
     },
     { 
       key: 'learn' as StudyMode, 
-      label: 'Chế độ Học (Learn)', 
+      label: 'Học thích ứng', 
       desc: 'Chuẩn Quizlet Learn: 3 tầng thích ứng (Chưa học ➔ Quen ➔ Thuộc)',
-      badge: 'QUIZLET PLUS',
+      badge: 'Quizlet Plus',
       icon: Brain,
       color: 'rose',
       activeBorder: 'border-rose-500',
@@ -55,7 +55,7 @@ export const StudyModeSelector: React.FC<StudyModeSelectorProps> = ({
       key: 'test' as StudyMode, 
       label: 'Kiểm tra (Test)', 
       desc: 'Thi thử tùy biến số câu, Trắc nghiệm, Đúng/Sai, Viết & Trả điểm A-F',
-      badge: 'MỚI • Thi thử',
+      badge: 'Thi thử',
       icon: FileCheck2,
       color: 'emerald',
       activeBorder: 'border-emerald-500',
@@ -67,7 +67,7 @@ export const StudyModeSelector: React.FC<StudyModeSelectorProps> = ({
       key: 'match' as StudyMode, 
       label: 'Ghép thẻ (Match)', 
       desc: 'Game đua thời gian bấm giờ mili-giây, triệt tiêu thẻ và lập kỷ lục',
-      badge: 'HOT • Game',
+      badge: 'Game',
       icon: Gamepad2,
       color: 'amber',
       activeBorder: 'border-amber-500',
@@ -77,9 +77,9 @@ export const StudyModeSelector: React.FC<StudyModeSelectorProps> = ({
     },
     { 
       key: 'quiz' as StudyMode, 
-      label: 'Trắc nghiệm nhanh', 
+      label: 'Trắc nghiệm', 
       desc: 'Thử thách 4 đáp án Furigana / Ý nghĩa với hàng đợi lặp câu sai',
-      badge: 'Đo lường',
+      badge: 'Quiz',
       icon: Target,
       color: 'blue',
       activeBorder: 'border-blue-500',
@@ -101,9 +101,9 @@ export const StudyModeSelector: React.FC<StudyModeSelectorProps> = ({
     },
     { 
       key: 'translate' as StudyMode, 
-      label: 'Dịch câu (Puzzle)', 
+      label: 'Dịch câu', 
       desc: 'Ghép các mảnh từ vựng thành câu hoàn chỉnh theo ngữ pháp Minna',
-      badge: 'Cấu trúc câu',
+      badge: 'Ghép câu',
       icon: FileText,
       color: 'cyan',
       activeBorder: 'border-cyan-500',
@@ -113,9 +113,9 @@ export const StudyModeSelector: React.FC<StudyModeSelectorProps> = ({
     },
     { 
       key: 'shadowing' as StudyMode, 
-      label: 'Nghe đuổi (Shadowing)', 
+      label: 'Nghe đuổi', 
       desc: 'Luyện tai nghe và nói đuổi theo giọng đọc bản xứ chuẩn',
-      badge: 'Luyện phát âm',
+      badge: 'Phát âm',
       icon: Headphones,
       color: 'purple',
       activeBorder: 'border-purple-500',
@@ -125,28 +125,45 @@ export const StudyModeSelector: React.FC<StudyModeSelectorProps> = ({
     },
   ];
 
-  // Dạng Compact: Thanh nút chọn chế độ linh hoạt, cuộn ngang mượt mà trên mobile
+  // Dạng Compact: Lưới 2 tầng (4 cột x 2 hàng trên Desktop / Tablet, 2 cột trên Mobile) - KHÔNG BỊ TRÀN HAY PHẢI CUỘN NGANG
   if (variant === 'compact') {
     return (
-      <div className="flex items-center gap-1.5 bg-slate-100 dark:bg-zinc-800/90 p-1.5 rounded-2xl w-full overflow-x-auto scrollbar-none">
-        {modes.map((m) => {
-          const isSelected = currentMode === m.key;
-          const Icon = m.icon;
-          return (
-            <button
-              key={m.key}
-              onClick={() => onSelectMode(m.key)}
-              className={`flex items-center space-x-1.5 py-2 px-3 rounded-xl text-xs font-bold transition shrink-0 ${
-                isSelected
-                  ? 'bg-white dark:bg-zinc-700 text-slate-900 dark:text-white shadow-xs ring-1 ring-slate-200 dark:ring-zinc-600'
-                  : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
-              }`}
-            >
-              <Icon className={`w-3.5 h-3.5 shrink-0 ${isSelected ? m.activeText : 'text-slate-400'}`} />
-              <span>{m.label}</span>
-            </button>
-          );
-        })}
+      <div className="w-full">
+        {/* Lưới 8 chế độ học: hiển thị toàn bộ trong tầm mắt mà không cần kéo qua lại */}
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 w-full">
+          {modes.map((m) => {
+            const isSelected = currentMode === m.key;
+            const Icon = m.icon;
+            return (
+              <button
+                key={m.key}
+                type="button"
+                onClick={() => onSelectMode(m.key)}
+                className={`flex items-center justify-between px-3 py-2 sm:py-2.5 rounded-xl text-xs font-bold transition-all border text-left ${
+                  isSelected
+                    ? `${m.activeBorder} ${m.activeBg} ${m.activeText} shadow-sm ring-1 ring-offset-0 ${m.activeBorder}`
+                    : 'bg-slate-50/80 dark:bg-zinc-800/70 hover:bg-white dark:hover:bg-zinc-800 text-slate-700 dark:text-slate-300 border-slate-200/70 dark:border-zinc-700/60 hover:border-slate-300'
+                }`}
+              >
+                <div className="flex items-center space-x-2 min-w-0">
+                  <div className={`p-1.5 rounded-lg shrink-0 ${isSelected ? m.iconBg : 'bg-slate-200/70 dark:bg-zinc-700 text-slate-500 dark:text-slate-400'}`}>
+                    <Icon className="w-3.5 h-3.5" />
+                  </div>
+                  <span className="truncate">{m.label}</span>
+                </div>
+                {m.badge && (
+                  <span className={`text-[9px] px-1.5 py-0.5 rounded-md font-bold uppercase tracking-wider shrink-0 ml-1.5 hidden xl:inline-block ${
+                    isSelected 
+                      ? 'bg-white/80 dark:bg-zinc-900/80 text-current shadow-2xs' 
+                      : 'bg-slate-200/60 dark:bg-zinc-700/60 text-slate-500 dark:text-slate-400'
+                  }`}>
+                    {m.badge.split('•')[0].trim()}
+                  </span>
+                )}
+              </button>
+            );
+          })}
+        </div>
       </div>
     );
   }
