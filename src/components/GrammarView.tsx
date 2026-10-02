@@ -14,6 +14,7 @@ import {
   Globe2 
 } from 'lucide-react';
 import { speakJapanese } from '../lib/audio';
+import { GrammarBookEmbedView } from './GrammarBookEmbedView';
 
 interface GrammarViewProps {
   lesson: GrammarLesson | undefined;
@@ -21,6 +22,9 @@ interface GrammarViewProps {
 }
 
 export const GrammarView: React.FC<GrammarViewProps> = ({ lesson, lessonNum }) => {
+  // Chế độ hiển thị: 'interactive' (Bản số hóa tương tác) | 'book' (Sách gốc PDF) | 'split' (Song song hai bên)
+  const [displayMode, setDisplayMode] = useState<'interactive' | 'book' | 'split'>('interactive');
+
   // Tab nội bộ của bài học ngữ pháp theo đúng sách:
   // 'kaisetsu' (IV. Giải thích ngữ pháp) | 'bunkei_reibun' (II. Mẫu câu & Ví dụ) | 'kaiwa' (II. Hội thoại) | 'reference' (III. Tham khảo)
   const [activeSection, setActiveSection] = useState<'kaisetsu' | 'bunkei_reibun' | 'kaiwa' | 'reference'>('kaisetsu');
@@ -35,14 +39,17 @@ export const GrammarView: React.FC<GrammarViewProps> = ({ lesson, lessonNum }) =
 
   if (!lesson) {
     return (
-      <div className="bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 rounded-3xl p-10 text-center shadow-sm">
-        <BookOpen className="w-12 h-12 text-slate-300 dark:text-zinc-600 mx-auto mb-3" />
-        <h3 className="text-lg font-bold text-slate-800 dark:text-white">
-          Chưa có dữ liệu ngữ pháp cho Bài {lessonNum}
-        </h3>
-        <p className="text-sm text-slate-500 dark:text-zinc-400 mt-1">
-          Hệ thống đang tiếp tục cập nhật ngữ pháp chi tiết cho bài học này.
-        </p>
+      <div className="space-y-4">
+        <div className="bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 rounded-3xl p-6 text-center shadow-sm">
+          <BookOpen className="w-10 h-10 text-blue-500 mx-auto mb-2" />
+          <h3 className="text-base font-bold text-slate-800 dark:text-white">
+            Đang hiển thị sách gốc PDF cho Bài {lessonNum}
+          </h3>
+          <p className="text-xs text-slate-500 dark:text-zinc-400 mt-1">
+            Bản số hóa tương tác cho bài này đang được cập nhật. Bạn có thể xem và đọc trực tiếp sách gốc bên dưới:
+          </p>
+        </div>
+        <GrammarBookEmbedView lessonNum={lessonNum} />
       </div>
     );
   }
@@ -61,7 +68,56 @@ export const GrammarView: React.FC<GrammarViewProps> = ({ lesson, lessonNum }) =
   return (
     <div className="space-y-6">
       {/* Header Giới thiệu Ngữ pháp bài học */}
-      <div className="bg-gradient-to-br from-indigo-500/10 via-purple-500/5 to-transparent border border-indigo-500/20 rounded-3xl p-6 shadow-sm">
+      <div className="bg-gradient-to-br from-indigo-500/10 via-purple-500/5 to-transparent border border-indigo-500/20 rounded-3xl p-5 sm:p-6 shadow-sm space-y-4">
+        {/* Bộ chuyển đổi chế độ xem: [ ✨ Bản số hóa (Audio) ] | [ 📖 Nhúng sách gốc (PDF) ] | [ ⚡ Chia đôi ] */}
+        <div className="flex flex-wrap items-center justify-between gap-3 p-2 bg-white/80 dark:bg-zinc-800/80 rounded-2xl border border-indigo-100 dark:border-zinc-700/60 shadow-2xs">
+          <div className="flex items-center space-x-1.5">
+            <span className="text-xs font-bold text-slate-500 dark:text-slate-400 px-2 hidden sm:inline">Chế độ xem:</span>
+            <button
+              type="button"
+              onClick={() => setDisplayMode('interactive')}
+              className={`px-3 py-1.5 rounded-xl text-xs font-bold transition flex items-center space-x-1.5 ${
+                displayMode === 'interactive'
+                  ? 'bg-indigo-600 text-white shadow-sm shadow-indigo-500/25'
+                  : 'text-slate-600 dark:text-zinc-300 hover:bg-white dark:hover:bg-zinc-700'
+              }`}
+            >
+              <Sparkles className="w-3.5 h-3.5" />
+              <span>Bản số hóa (Audio)</span>
+            </button>
+
+            <button
+              type="button"
+              onClick={() => setDisplayMode('book')}
+              className={`px-3 py-1.5 rounded-xl text-xs font-bold transition flex items-center space-x-1.5 ${
+                displayMode === 'book'
+                  ? 'bg-blue-600 text-white shadow-sm shadow-blue-500/25'
+                  : 'text-slate-600 dark:text-zinc-300 hover:bg-white dark:hover:bg-zinc-700'
+              }`}
+            >
+              <BookOpen className="w-3.5 h-3.5" />
+              <span>Nhúng sách gốc (PDF)</span>
+            </button>
+
+            <button
+              type="button"
+              onClick={() => setDisplayMode('split')}
+              className={`hidden lg:flex px-3 py-1.5 rounded-xl text-xs font-bold transition items-center space-x-1.5 ${
+                displayMode === 'split'
+                  ? 'bg-emerald-600 text-white shadow-sm shadow-emerald-500/25'
+                  : 'text-slate-600 dark:text-zinc-300 hover:bg-white dark:hover:bg-zinc-700'
+              }`}
+            >
+              <Globe2 className="w-3.5 h-3.5" />
+              <span>Chia đôi màn hình</span>
+            </button>
+          </div>
+
+          <div className="text-[11px] text-slate-500 dark:text-slate-400 font-medium px-2">
+            Trang sách Bài {lessonNum}: <strong>Trang {33 + (lessonNum - 1) * 6}</strong>
+          </div>
+        </div>
+
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
           <div>
             <div className="flex items-center space-x-2">
@@ -81,7 +137,7 @@ export const GrammarView: React.FC<GrammarViewProps> = ({ lesson, lessonNum }) =
           </div>
 
           {/* Ô tìm kiếm cấu trúc */}
-          {activeSection === 'kaisetsu' && (
+          {activeSection === 'kaisetsu' && displayMode !== 'book' && (
             <div className="relative w-full md:w-64">
               <Search className="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2" />
               <input
@@ -95,8 +151,9 @@ export const GrammarView: React.FC<GrammarViewProps> = ({ lesson, lessonNum }) =
           )}
         </div>
 
-        {/* Thanh chuyển đổi 4 phân mục chuẩn theo sách Minna */}
-        <div className="flex items-center gap-1.5 sm:gap-2 mt-6 overflow-x-auto pb-1 border-t border-indigo-500/10 pt-4">
+        {/* Thanh chuyển đổi 4 phân mục chuẩn theo sách Minna (khi không ở chế độ chỉ xem sách) */}
+        {displayMode !== 'book' && (
+          <div className="flex items-center gap-1.5 sm:gap-2 mt-6 overflow-x-auto pb-1 border-t border-indigo-500/10 pt-4">
           <button
             onClick={() => setActiveSection('kaisetsu')}
             className={`px-3.5 py-2 rounded-xl text-xs font-bold flex items-center space-x-1.5 transition shrink-0 ${
@@ -151,12 +208,22 @@ export const GrammarView: React.FC<GrammarViewProps> = ({ lesson, lessonNum }) =
             </button>
           )}
         </div>
+        )}
       </div>
 
-      {/* ======================================================== */}
-      {/* PHÂN MỤC 1: IV. GIẢI THÍCH NGỮ PHÁP (BUNPOU KAISETSU)    */}
-      {/* ======================================================== */}
-      {activeSection === 'kaisetsu' && (
+      {/* 1. Chế độ xem sách gốc PDF (Toàn bộ) */}
+      {displayMode === 'book' && (
+        <GrammarBookEmbedView lessonNum={lessonNum} />
+      )}
+
+      {/* 2. Chế độ bản số hóa tương tác & 3. Chế độ song song Split */}
+      {displayMode !== 'book' && (
+        <div className={displayMode === 'split' ? 'grid grid-cols-1 lg:grid-cols-2 gap-6 items-start' : 'space-y-6'}>
+          <div className="space-y-6">
+            {/* ======================================================== */}
+            {/* PHÂN MỤC 1: IV. GIẢI THÍCH NGỮ PHÁP (BUNPOU KAISETSU)    */}
+            {/* ======================================================== */}
+            {activeSection === 'kaisetsu' && (
         <div className="space-y-4">
           {filteredPoints.map((point: GrammarPoint, idx: number) => {
             const isExpanded = !searchTerm && (expandedIds.includes(point.id) || idx === 0);
@@ -518,6 +585,15 @@ export const GrammarView: React.FC<GrammarViewProps> = ({ lesson, lessonNum }) =
               </div>
             ))}
           </div>
+        </div>
+      )}
+          </div>
+
+          {displayMode === 'split' && (
+            <div className="lg:sticky lg:top-20">
+              <GrammarBookEmbedView lessonNum={lessonNum} />
+            </div>
+          )}
         </div>
       )}
     </div>
