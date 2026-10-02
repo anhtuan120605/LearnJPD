@@ -67,8 +67,8 @@ export const Navbar: React.FC<NavbarProps> = ({
           </div>
         </div>
 
-        {/* Navigation Tabs */}
-        <nav className="flex items-center space-x-1 sm:space-x-2 bg-slate-100/90 dark:bg-slate-800/70 p-1 rounded-2xl border border-slate-200/60 dark:border-slate-700/50">
+        {/* Navigation Tabs (Desktop only - Mobile uses Bottom Navigation Bar) */}
+        <nav className="hidden md:flex items-center space-x-1 sm:space-x-2 bg-slate-100/90 dark:bg-slate-800/70 p-1 rounded-2xl border border-slate-200/60 dark:border-slate-700/50">
           <button
             onClick={() => setActiveTab('tango')}
             className={`flex items-center space-x-2 px-3 sm:px-4 py-1.5 rounded-xl text-sm font-semibold transition-all ${
@@ -131,7 +131,7 @@ export const Navbar: React.FC<NavbarProps> = ({
         </nav>
 
         {/* Right Tools (Streak, DarkMode, Cloud/Auth, Backup) */}
-        <div className="flex items-center space-x-2">
+        <div className="flex items-center space-x-1.5 sm:space-x-2">
           {/* Nút Kho từ hay sai nếu có từ sai */}
           {mistakeCount > 0 && onOpenMistakeBank && (
             <button
@@ -147,17 +147,17 @@ export const Navbar: React.FC<NavbarProps> = ({
           {/* Streak pill */}
           <div 
             title={`Chuỗi ${streak} ngày học liên tục!`}
-            className="flex items-center space-x-1.5 px-3 py-1.5 rounded-2xl bg-amber-500/10 dark:bg-amber-500/15 border border-amber-500/20 text-amber-600 dark:text-amber-400 font-bold text-xs"
+            className="flex items-center space-x-1.5 px-2.5 sm:px-3 py-1.5 rounded-2xl bg-amber-500/10 dark:bg-amber-500/15 border border-amber-500/20 text-amber-600 dark:text-amber-400 font-bold text-xs"
           >
             <Flame className="w-4 h-4 fill-current text-amber-500 animate-pulse" />
             <span>{streak}</span>
           </div>
 
-          {/* Backup & Sync button */}
+          {/* Backup & Sync button (Desktop/Tablet) */}
           <button
             onClick={onOpenBackup}
             title="Sao lưu / Khôi phục dữ liệu"
-            className="p-2 rounded-xl text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition"
+            className="hidden sm:flex p-2 rounded-xl text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition items-center justify-center"
           >
             <Share2 className="w-4 h-4" />
           </button>

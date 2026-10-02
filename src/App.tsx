@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Navbar } from './components/Navbar';
+import { MobileBottomNav } from './components/MobileBottomNav';
 import { WordListView } from './components/WordListView';
 import { FlashcardView } from './components/FlashcardView';
 import { KanjiMasterView } from './components/KanjiMasterView';
@@ -738,7 +739,7 @@ export function App() {
       />
 
       {/* Main Content Area */}
-      <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 py-6 sm:py-8 space-y-6">
+      <main className="flex-1 max-w-7xl w-full mx-auto px-3 sm:px-6 py-4 sm:py-8 pb-24 md:pb-8 space-y-6">
         {/* Banner thông báo chế độ chỉnh sửa Admin đang BẬT */}
         {hasAdminAccess && isAdminEditMode && (
           <div className="bg-amber-500/10 border border-amber-500/30 px-4 py-3 rounded-2xl flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 text-xs text-amber-800 dark:text-amber-300 shadow-xs animate-in fade-in slide-in-from-top-2 duration-200">
@@ -1460,6 +1461,18 @@ export function App() {
         deletedWords={deletedWordsInCurrentLesson}
         lessonNum={selectedLessonNum}
         onRestoreWord={handleAdminRestoreWord}
+      />
+
+      {/* Mobile Bottom Navigation Bar (Chỉ hiển thị trên thiết bị di động) */}
+      <MobileBottomNav
+        activeTab={activeTab}
+        setActiveTab={(tab) => {
+          setActiveTab(tab);
+          if (tab === 'practice') {
+            setPracticeStage('overview');
+          }
+        }}
+        mistakeCount={progress.mistakeWords.length}
       />
     </div>
   );
