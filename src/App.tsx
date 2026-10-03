@@ -54,7 +54,7 @@ import {
   n1GrammarDatasets,
   n1ReadingDatasets
 } from './data';
-import { loadLocalProgress, saveLocalProgress, syncWithSupabase, fetchFromSupabase } from './lib/storage';
+import { loadLocalProgress, saveLocalProgress, syncWithSupabase, fetchFromSupabase, recordStudyActivity } from './lib/storage';
 import { supabase, isSupabaseConfigured } from './lib/supabase';
 import { UserProgress, CustomNotebookLesson, WordPracticeFilter, WordItem, SrsRating } from './types';
 import { 
@@ -324,12 +324,13 @@ export function App() {
   const handleToggleMasterWord = (id: string) => {
     updateProgress((prev) => {
       const isMastered = prev.masteredWords.includes(id);
-      return {
+      const nextProgress = {
         ...prev,
         masteredWords: isMastered
           ? prev.masteredWords.filter((wId) => wId !== id)
           : [...prev.masteredWords, id]
       };
+      return !isMastered ? recordStudyActivity(nextProgress) : nextProgress;
     });
   };
 
@@ -337,10 +338,10 @@ export function App() {
   const handleAddMasterWord = (id: string) => {
     updateProgress((prev) => {
       if (prev.masteredWords.includes(id)) return prev;
-      return {
+      return recordStudyActivity({
         ...prev,
         masteredWords: [...prev.masteredWords, id]
-      };
+      });
     });
   };
 
@@ -357,10 +358,10 @@ export function App() {
         }
       });
       if (!changed) return prev;
-      return {
+      return recordStudyActivity({
         ...prev,
         masteredWords: Array.from(existingSet)
-      };
+      });
     });
   };
 
@@ -381,12 +382,13 @@ export function App() {
   const handleToggleMasterKanji = (id: string) => {
     updateProgress((prev) => {
       const isMastered = prev.masteredKanji.includes(id);
-      return {
+      const nextProgress = {
         ...prev,
         masteredKanji: isMastered
           ? prev.masteredKanji.filter((kId) => kId !== id)
           : [...prev.masteredKanji, id]
       };
+      return !isMastered ? recordStudyActivity(nextProgress) : nextProgress;
     });
   };
 
@@ -420,19 +422,22 @@ export function App() {
 
   // Lưu điểm số sau khi làm xong bài
   const handleSaveQuizScore = (score: number, total: number, type: string) => {
-    updateProgress((prev) => ({
-      ...prev,
-      quizScores: [
-        ...prev.quizScores,
-        {
-          date: new Date().toISOString(),
-          type,
-          level: `Bài ${selectedLessonNum}`,
-          score,
-          total
-        }
-      ]
-    }));
+    updateProgress((prev) => {
+      const nextProgress = {
+        ...prev,
+        quizScores: [
+          ...prev.quizScores,
+          {
+            date: new Date().toISOString(),
+            type,
+            level: `Bài ${selectedLessonNum}`,
+            score,
+            total
+          }
+        ]
+      };
+      return recordStudyActivity(nextProgress);
+    });
   };
 
   // Toggle ẩn / hiện từ vựng không cần thiết (xóa khỏi bài học)
@@ -547,13 +552,14 @@ export function App() {
     updateProgress((prev) => {
       const currentItem = (prev.srsItems || {})[id];
       const nextItem = calculateNextSrsItem(currentItem, id, type, rating);
-      return {
+      const nextProgress = {
         ...prev,
         srsItems: {
           ...(prev.srsItems || {}),
           [id]: nextItem,
         },
       };
+      return recordStudyActivity(nextProgress);
     });
   };
 
@@ -777,7 +783,7 @@ export function App() {
   }, [reviewWords, isLessonPracticeShuffled, lessonPracticeShuffleKey]);
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#faf9f5] dark:bg-[#0f1117] text-stone-800 dark:text-stone-100 transition-colors duration-300 relative selection:bg-indigo-600 selection:text-white">
+    <div className="min-h-screen flex flex-col bg-[#faf9f5] dark:bg-[#0f1117] text-stone-800 dark:text-stone-100 transition-colors duration-300 relative selection:bg-indigo-600 selection:text-white overflow-x-hidden w-full max-w-[100vw]">
       {/* Top Navbar */}
       <Navbar
         activeTab={activeTab}
@@ -803,7 +809,7 @@ export function App() {
       />
 
       {/* Main Content Area */}
-      <main className="flex-1 max-w-[1400px] w-full mx-auto px-4 sm:px-8 py-5 sm:py-8 pb-24 md:pb-8 space-y-6">
+      <main className="flex-1 max-w-[1400px] w-full mx-auto px-3 sm:px-8 py-4 sm:py-8 pb-24 md:pb-8 space-y-5 sm:space-y-6 overflow-x-hidden">
         {/* Banner thông báo chế độ chỉnh sửa Admin đang BẬT */}
         {hasAdminAccess && isAdminEditMode && (
           <div className="bg-amber-500/10 border border-amber-500/30 px-4 py-3 rounded-2xl flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 text-xs text-amber-800 dark:text-amber-300 shadow-xs animate-in fade-in slide-in-from-top-2 duration-200">

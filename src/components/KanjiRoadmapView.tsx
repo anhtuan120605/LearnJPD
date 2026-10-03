@@ -185,7 +185,7 @@ export const KanjiRoadmapView: React.FC<KanjiRoadmapViewProps> = ({
   favoriteKanji,
   onToggleMaster,
   onToggleFavorite,
-  streak = 1
+  streak = 0
 }) => {
   // Chế độ xem: 'dashboard' (danh sách ngày) | 'study' (học chi tiết 10 chữ) | 'test' (kiểm tra 10 chữ)
   const [viewState, setViewState] = useState<'dashboard' | 'study' | 'test'>('dashboard');
@@ -1675,10 +1675,10 @@ export const KanjiRoadmapView: React.FC<KanjiRoadmapViewProps> = ({
       <div className="bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 rounded-3xl p-5 sm:p-6 shadow-sm space-y-6">
         {/* Switch tab trên cùng: Lộ trình mặc định vs Lộ trình của tôi */}
         <div className="flex items-center justify-center">
-          <div className="inline-flex items-center bg-slate-100 dark:bg-zinc-800 p-1.5 rounded-2xl">
+          <div className="inline-flex items-center bg-slate-100 dark:bg-zinc-800 p-1 rounded-xl sm:rounded-2xl max-w-full">
             <button 
               onClick={() => setRoadmapType('default')}
-              className={`px-5 py-2 rounded-xl text-xs sm:text-sm font-bold transition flex items-center space-x-2 ${
+              className={`px-3 py-1.5 sm:px-5 sm:py-2 rounded-lg sm:rounded-xl text-xs sm:text-sm font-bold transition flex items-center space-x-1 sm:space-x-2 ${
                 roadmapType === 'default'
                   ? 'bg-blue-600 text-white shadow-sm'
                   : 'text-slate-500 hover:text-slate-900 dark:hover:text-white'
@@ -1688,7 +1688,7 @@ export const KanjiRoadmapView: React.FC<KanjiRoadmapViewProps> = ({
             </button>
             <button 
               onClick={() => setRoadmapType('custom')}
-              className={`px-5 py-2 rounded-xl text-xs sm:text-sm font-bold transition flex items-center space-x-2 ${
+              className={`px-3 py-1.5 sm:px-5 sm:py-2 rounded-lg sm:rounded-xl text-xs sm:text-sm font-bold transition flex items-center space-x-1 sm:space-x-2 ${
                 roadmapType === 'custom'
                   ? 'bg-rose-500 text-white shadow-sm'
                   : 'text-slate-500 hover:text-slate-900 dark:hover:text-white'
@@ -1705,19 +1705,19 @@ export const KanjiRoadmapView: React.FC<KanjiRoadmapViewProps> = ({
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
               <div>
                 <h4 className="text-sm font-bold text-slate-900 dark:text-white flex items-center space-x-2">
-                  <Sparkles className="w-4 h-4 text-rose-500" />
+                  <Sparkles className="w-4 h-4 text-rose-500 shrink-0" />
                   <span>Cài đặt Lộ trình cá nhân hóa</span>
                 </h4>
-                <p className="text-xs text-slate-500 dark:text-zinc-400">
+                <p className="text-xs text-slate-500 dark:text-zinc-400 mt-0.5">
                   Tùy chỉnh số lượng học mỗi ngày và đối tượng Kanji phù hợp với thời gian biểu của bạn
                 </p>
               </div>
 
               {/* Bộ lọc đối tượng: Tất cả / Chưa thuộc / Yêu thích */}
-              <div className="flex items-center space-x-1.5 bg-white dark:bg-zinc-900 p-1 rounded-xl border border-slate-200 dark:border-zinc-700">
+              <div className="flex flex-wrap items-center gap-1 bg-white dark:bg-zinc-900 p-1 rounded-xl border border-slate-200 dark:border-zinc-700">
                 <button
                   onClick={() => setCustomFilterTarget('all')}
-                  className={`px-3 py-1 rounded-lg text-xs font-bold transition ${
+                  className={`px-2.5 sm:px-3 py-1 rounded-lg text-xs font-bold transition ${
                     customFilterTarget === 'all'
                       ? 'bg-slate-900 dark:bg-white text-white dark:text-slate-900'
                       : 'text-slate-500 hover:text-slate-900 dark:hover:text-white'
@@ -1727,7 +1727,7 @@ export const KanjiRoadmapView: React.FC<KanjiRoadmapViewProps> = ({
                 </button>
                 <button
                   onClick={() => setCustomFilterTarget('unlearned')}
-                  className={`px-3 py-1 rounded-lg text-xs font-bold transition ${
+                  className={`px-2.5 sm:px-3 py-1 rounded-lg text-xs font-bold transition ${
                     customFilterTarget === 'unlearned'
                       ? 'bg-rose-500 text-white'
                       : 'text-slate-500 hover:text-rose-500'
@@ -1737,7 +1737,7 @@ export const KanjiRoadmapView: React.FC<KanjiRoadmapViewProps> = ({
                 </button>
                 <button
                   onClick={() => setCustomFilterTarget('favorite')}
-                  className={`px-3 py-1 rounded-lg text-xs font-bold transition ${
+                  className={`px-2.5 sm:px-3 py-1 rounded-lg text-xs font-bold transition ${
                     customFilterTarget === 'favorite'
                       ? 'bg-amber-500 text-white'
                       : 'text-slate-500 hover:text-amber-500'
@@ -1878,7 +1878,7 @@ export const KanjiRoadmapView: React.FC<KanjiRoadmapViewProps> = ({
                   )}
                 </div>
                 <p className="text-[11px] text-slate-400 font-medium mt-0.5">
-                  {lvl === 'N5' ? '79 chữ - 8 ngày' : lvl === 'N4' ? '166 chữ - 17 ngày' : 'Chuyên sâu'}
+                  {lvl === 'N5' ? '112 chữ - 12 ngày' : lvl === 'N4' ? '166 chữ - 17 ngày' : lvl === 'N3' ? '300+ chữ' : lvl === 'N2' ? '400+ chữ' : '1.000+ chữ'}
                 </p>
               </button>
             );

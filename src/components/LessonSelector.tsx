@@ -309,17 +309,17 @@ export const LessonSelector: React.FC<LessonSelectorProps> = ({
           </div>
 
           {/* Cụm nút hành động nhanh */}
-          <div className="flex items-center space-x-2">
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 sm:gap-2.5 w-full md:w-auto shrink-0">
             {onToggleMultiMode && (
               <button
                 onClick={() => onToggleMultiMode(!isMultiMode)}
-                className={`px-4 py-2.5 rounded-xl text-xs font-bold transition flex items-center space-x-2 border ${
+                className={`px-4 py-2.5 rounded-xl text-xs font-bold transition flex items-center justify-center space-x-2 border w-full sm:w-auto ${
                   isMultiMode
                     ? 'bg-indigo-500/20 border-indigo-500/40 text-indigo-300'
                     : 'bg-stone-800 hover:bg-stone-700 border-stone-700 text-stone-300'
                 }`}
               >
-                <CheckSquare className="w-4 h-4" />
+                <CheckSquare className="w-4 h-4 shrink-0" />
                 <span>{isMultiMode ? `Đang chọn ${selectedLessons.length} bài` : 'Chọn nhiều bài để ôn'}</span>
               </button>
             )}
@@ -332,10 +332,10 @@ export const LessonSelector: React.FC<LessonSelectorProps> = ({
                   onSelectLesson(selectedLessonNum);
                 }
               }}
-              className="px-5 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-xs flex items-center space-x-2 shadow-sm shadow-indigo-600/25 transition active:scale-95"
+              className="px-5 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-xs flex items-center justify-center space-x-2 shadow-sm shadow-indigo-600/25 transition active:scale-95 w-full sm:w-auto"
             >
               <span>Học tiếp Bài {selectedLessonNum}</span>
-              <ArrowRight className="w-4 h-4" />
+              <ArrowRight className="w-4 h-4 shrink-0" />
             </button>
           </div>
         </div>

@@ -3,10 +3,20 @@
 @tailwind utilities;
 
 @layer base {
-  body {
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
     font-feature-settings: "cv02", "cv03", "cv04", "cv11";
     background-color: #faf9f5;
     color: #1f2937;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  #root {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
   }
 
   .dark body {

@@ -122,136 +122,140 @@ export const KanjiMasterView: React.FC<KanjiMasterViewProps> = ({
       </div>
 
       {/* Chuyển đổi chế độ học tập đa dạng phong cách Zen Modern - Không cuộn ngang */}
-      <div className="bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 p-3 sm:p-4 rounded-3xl shadow-sm space-y-2.5">
+      <div className="bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 p-3 sm:p-4 rounded-3xl shadow-sm space-y-3">
         {/* Nhóm 1: Các phương pháp học & rèn luyện chuyên sâu */}
-        <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
-          <span className="text-[11px] font-black uppercase tracking-wider text-slate-400 dark:text-zinc-500 mr-1 shrink-0">
+        <div>
+          <span className="block text-[10px] sm:text-[11px] font-black uppercase tracking-wider text-slate-400 dark:text-zinc-500 mb-1.5">
             Học & Rèn luyện:
           </span>
 
-          <button
-            onClick={() => setActiveSubTab('roadmap')}
-            className={`px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold transition flex items-center space-x-2 ${
-              activeSubTab === 'roadmap'
-                ? 'bg-blue-600 text-white shadow-sm'
-                : 'text-slate-600 dark:text-zinc-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-zinc-800'
-            }`}
-          >
-            <Map className="w-4 h-4" />
-            <span>Lộ trình học</span>
-          </button>
+          <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
+            <button
+              onClick={() => setActiveSubTab('roadmap')}
+              className={`px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-xl text-xs sm:text-sm font-bold transition flex items-center space-x-1.5 sm:space-x-2 ${
+                activeSubTab === 'roadmap'
+                  ? 'bg-blue-600 text-white shadow-sm'
+                  : 'text-slate-600 dark:text-zinc-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-zinc-800'
+              }`}
+            >
+              <Map className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+              <span>Lộ trình học</span>
+            </button>
 
-          <button
-            onClick={() => setActiveSubTab('jukugo')}
-            className={`px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold transition flex items-center space-x-2 ${
-              activeSubTab === 'jukugo'
-                ? 'bg-indigo-600 text-white shadow-sm'
-                : 'text-slate-600 dark:text-zinc-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-zinc-800'
-            }`}
-          >
-            <Puzzle className="w-4 h-4 text-indigo-400" />
-            <span>Ghép từ Jukugo</span>
-            <span className="px-1.5 py-0.2 rounded-full bg-indigo-500/20 text-indigo-500 dark:text-indigo-300 text-[9px] font-black uppercase">
-              Mới
-            </span>
-          </button>
+            <button
+              onClick={() => setActiveSubTab('jukugo')}
+              className={`px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-xl text-xs sm:text-sm font-bold transition flex items-center space-x-1.5 sm:space-x-2 ${
+                activeSubTab === 'jukugo'
+                  ? 'bg-indigo-600 text-white shadow-sm'
+                  : 'text-slate-600 dark:text-zinc-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-zinc-800'
+              }`}
+            >
+              <Puzzle className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-indigo-400" />
+              <span>Ghép từ Jukugo</span>
+              <span className="px-1.5 py-0.2 rounded-full bg-indigo-500/20 text-indigo-500 dark:text-indigo-300 text-[9px] font-black uppercase">
+                Mới
+              </span>
+            </button>
 
-          <button
-            onClick={() => setActiveSubTab('context')}
-            className={`px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold transition flex items-center space-x-2 ${
-              activeSubTab === 'context'
-                ? 'bg-emerald-600 text-white shadow-sm'
-                : 'text-slate-600 dark:text-zinc-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-zinc-800'
-            }`}
-          >
-            <BookOpen className="w-4 h-4 text-emerald-400" />
-            <span>Đọc trong câu</span>
-            <span className="px-1.5 py-0.2 rounded-full bg-emerald-500/20 text-emerald-500 dark:text-emerald-300 text-[9px] font-black uppercase">
-              Mới
-            </span>
-          </button>
+            <button
+              onClick={() => setActiveSubTab('context')}
+              className={`px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-xl text-xs sm:text-sm font-bold transition flex items-center space-x-1.5 sm:space-x-2 ${
+                activeSubTab === 'context'
+                  ? 'bg-emerald-600 text-white shadow-sm'
+                  : 'text-slate-600 dark:text-zinc-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-zinc-800'
+              }`}
+            >
+              <BookOpen className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-emerald-400" />
+              <span>Đọc trong câu</span>
+              <span className="px-1.5 py-0.2 rounded-full bg-emerald-500/20 text-emerald-500 dark:text-emerald-300 text-[9px] font-black uppercase">
+                Mới
+              </span>
+            </button>
 
-          <button
-            onClick={() => setActiveSubTab('lookalike')}
-            className={`px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold transition flex items-center space-x-2 ${
-              activeSubTab === 'lookalike'
-                ? 'bg-amber-600 text-white shadow-sm'
-                : 'text-slate-600 dark:text-zinc-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-zinc-800'
-            }`}
-          >
-            <Scale className="w-4 h-4 text-amber-400" />
-            <span>Chữ dễ lẫn</span>
-            <span className="px-1.5 py-0.2 rounded-full bg-amber-500/20 text-amber-500 dark:text-amber-300 text-[9px] font-black uppercase">
-              Mới
-            </span>
-          </button>
+            <button
+              onClick={() => setActiveSubTab('lookalike')}
+              className={`px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-xl text-xs sm:text-sm font-bold transition flex items-center space-x-1.5 sm:space-x-2 ${
+                activeSubTab === 'lookalike'
+                  ? 'bg-amber-600 text-white shadow-sm'
+                  : 'text-slate-600 dark:text-zinc-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-zinc-800'
+              }`}
+            >
+              <Scale className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-amber-400" />
+              <span>Chữ dễ lẫn</span>
+              <span className="px-1.5 py-0.2 rounded-full bg-amber-500/20 text-amber-500 dark:text-amber-300 text-[9px] font-black uppercase">
+                Mới
+              </span>
+            </button>
+          </div>
         </div>
 
         {/* Nhóm 2: Ôn tập phản xạ & Tra cứu */}
-        <div className="border-t border-slate-100 dark:border-zinc-800/80 pt-2.5 flex flex-wrap items-center gap-1.5 sm:gap-2">
-          <span className="text-[11px] font-black uppercase tracking-wider text-slate-400 dark:text-zinc-500 mr-1 shrink-0">
+        <div className="border-t border-slate-100 dark:border-zinc-800/80 pt-2.5">
+          <span className="block text-[10px] sm:text-[11px] font-black uppercase tracking-wider text-slate-400 dark:text-zinc-500 mb-1.5">
             Ôn luyện & Tra cứu:
           </span>
 
-          <button
-            onClick={() => setActiveSubTab('flashcard')}
-            className={`px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold transition flex items-center space-x-2 ${
-              activeSubTab === 'flashcard'
-                ? 'bg-rose-500 text-white shadow-sm'
-                : 'text-slate-600 dark:text-zinc-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-zinc-800'
-            }`}
-          >
-            <Layers className="w-4 h-4" />
-            <span>Flashcard 3D</span>
-          </button>
+          <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
+            <button
+              onClick={() => setActiveSubTab('flashcard')}
+              className={`px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-xl text-xs sm:text-sm font-bold transition flex items-center space-x-1.5 sm:space-x-2 ${
+                activeSubTab === 'flashcard'
+                  ? 'bg-rose-500 text-white shadow-sm'
+                  : 'text-slate-600 dark:text-zinc-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-zinc-800'
+              }`}
+            >
+              <Layers className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+              <span>Flashcard 3D</span>
+            </button>
 
-          <button
-            onClick={() => setActiveSubTab('learn')}
-            className={`px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold transition flex items-center space-x-2 ${
-              activeSubTab === 'learn'
-                ? 'bg-amber-500 text-white shadow-sm'
-                : 'text-slate-600 dark:text-zinc-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-zinc-800'
-            }`}
-          >
-            <Brain className="w-4 h-4" />
-            <span>Học thông minh</span>
-          </button>
+            <button
+              onClick={() => setActiveSubTab('learn')}
+              className={`px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-xl text-xs sm:text-sm font-bold transition flex items-center space-x-1.5 sm:space-x-2 ${
+                activeSubTab === 'learn'
+                  ? 'bg-amber-500 text-white shadow-sm'
+                  : 'text-slate-600 dark:text-zinc-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-zinc-800'
+              }`}
+            >
+              <Brain className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+              <span>Học thông minh</span>
+            </button>
 
-          <button
-            onClick={() => setActiveSubTab('match')}
-            className={`px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold transition flex items-center space-x-2 ${
-              activeSubTab === 'match'
-                ? 'bg-purple-600 text-white shadow-sm'
-                : 'text-slate-600 dark:text-zinc-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-zinc-800'
-            }`}
-          >
-            <Gamepad2 className="w-4 h-4" />
-            <span>Ghép thẻ Match</span>
-          </button>
+            <button
+              onClick={() => setActiveSubTab('match')}
+              className={`px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-xl text-xs sm:text-sm font-bold transition flex items-center space-x-1.5 sm:space-x-2 ${
+                activeSubTab === 'match'
+                  ? 'bg-purple-600 text-white shadow-sm'
+                  : 'text-slate-600 dark:text-zinc-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-zinc-800'
+              }`}
+            >
+              <Gamepad2 className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+              <span>Ghép thẻ Match</span>
+            </button>
 
-          <button
-            onClick={() => setActiveSubTab('radicals')}
-            className={`px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold transition flex items-center space-x-2 ${
-              activeSubTab === 'radicals'
-                ? 'bg-sky-600 text-white shadow-sm'
-                : 'text-slate-600 dark:text-zinc-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-zinc-800'
-            }`}
-          >
-            <Compass className="w-4 h-4" />
-            <span>214 Bộ Thủ</span>
-          </button>
+            <button
+              onClick={() => setActiveSubTab('radicals')}
+              className={`px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-xl text-xs sm:text-sm font-bold transition flex items-center space-x-1.5 sm:space-x-2 ${
+                activeSubTab === 'radicals'
+                  ? 'bg-sky-600 text-white shadow-sm'
+                  : 'text-slate-600 dark:text-zinc-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-zinc-800'
+              }`}
+            >
+              <Compass className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+              <span>214 Bộ Thủ</span>
+            </button>
 
-          <button
-            onClick={() => setActiveSubTab('explorer')}
-            className={`px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold transition flex items-center space-x-2 ${
-              activeSubTab === 'explorer'
-                ? 'bg-teal-600 text-white shadow-sm'
-                : 'text-slate-600 dark:text-zinc-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-zinc-800'
-            }`}
-          >
-            <LayoutGrid className="w-4 h-4" />
-            <span>Tra cứu từ điển ({kanjiList.length})</span>
-          </button>
+            <button
+              onClick={() => setActiveSubTab('explorer')}
+              className={`px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-xl text-xs sm:text-sm font-bold transition flex items-center space-x-1.5 sm:space-x-2 ${
+                activeSubTab === 'explorer'
+                  ? 'bg-teal-600 text-white shadow-sm'
+                  : 'text-slate-600 dark:text-zinc-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-zinc-800'
+              }`}
+            >
+              <LayoutGrid className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+              <span>Tra cứu từ điển ({kanjiList.length})</span>
+            </button>
+          </div>
         </div>
       </div>
 

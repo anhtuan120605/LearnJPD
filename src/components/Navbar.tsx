@@ -78,22 +78,22 @@ export const Navbar: React.FC<NavbarProps> = ({
 
   return (
     <header className="sticky top-0 z-40 w-full backdrop-blur-md bg-[#faf9f5]/90 dark:bg-[#0f1117]/90 border-b border-stone-200/70 dark:border-stone-800/80 transition-colors">
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-8 h-18 flex items-center justify-between gap-4">
+      <div className="max-w-[1400px] mx-auto px-3 sm:px-8 h-15 sm:h-18 flex items-center justify-between gap-2 sm:gap-4">
         
         {/* Brand / Logo (Left) */}
         <div 
-          className="flex items-center space-x-3 cursor-pointer select-none group" 
+          className="flex items-center space-x-2 sm:space-x-3 cursor-pointer select-none group shrink-0" 
           onClick={() => setActiveTab('tango')}
         >
-          <div className="w-11 h-11 rounded-2xl bg-stone-900 dark:bg-stone-100 flex items-center justify-center text-stone-100 dark:text-stone-900 shadow-sm font-jp font-bold text-2xl tracking-wider transition group-hover:scale-105">
+          <div className="w-8.5 h-8.5 sm:w-11 sm:h-11 rounded-xl sm:rounded-2xl bg-stone-900 dark:bg-stone-100 flex items-center justify-center text-stone-100 dark:text-stone-900 shadow-sm font-jp font-bold text-lg sm:text-2xl tracking-wider transition group-hover:scale-105 shrink-0">
             日
           </div>
           <div>
-            <div className="flex items-center space-x-2">
-              <span className="font-extrabold text-lg sm:text-xl tracking-tight text-stone-900 dark:text-stone-100">
+            <div className="flex items-center space-x-1.5 sm:space-x-2">
+              <span className="font-extrabold text-base sm:text-xl tracking-tight text-stone-900 dark:text-stone-100">
                 LearnJPD
               </span>
-              <span className="text-[11px] px-2 py-0.5 rounded-md font-bold bg-stone-200/70 dark:bg-stone-800 text-stone-700 dark:text-stone-300">
+              <span className="text-[10px] sm:text-[11px] px-1.5 sm:px-2 py-0.5 rounded-md font-bold bg-stone-200/70 dark:bg-stone-800 text-stone-700 dark:text-stone-300">
                 Zen
               </span>
             </div>
@@ -163,21 +163,21 @@ export const Navbar: React.FC<NavbarProps> = ({
         </nav>
 
         {/* Right Area: Status Capsule & Profile Menu */}
-        <div className="flex items-center space-x-2.5">
+        <div className="flex items-center space-x-1 sm:space-x-2.5 shrink-0">
           
           {/* Quick Status Capsule (SRS & Mistakes & Streak) */}
-          <div className="flex items-center bg-stone-100 dark:bg-stone-900/80 p-1 rounded-2xl border border-stone-200/70 dark:border-stone-800/80 text-sm">
+          <div className="flex items-center bg-stone-100 dark:bg-stone-900/80 p-0.5 sm:p-1 rounded-xl sm:rounded-2xl border border-stone-200/70 dark:border-stone-800/80 text-xs sm:text-sm">
             
             {/* SRS Quick Button */}
             {dueSrsCount > 0 && onOpenSrsReview && (
               <button
                 onClick={onOpenSrsReview}
                 title={`Bạn có ${dueSrsCount} mục đến hạn ôn tập ngắt quãng (SRS SM-2)`}
-                className="flex items-center space-x-1.5 px-3 py-1.5 rounded-xl bg-indigo-500/10 hover:bg-indigo-500/20 text-indigo-600 dark:text-indigo-400 font-bold transition"
+                className="flex items-center space-x-1 sm:space-x-1.5 px-2 sm:px-3 py-1 sm:py-1.5 rounded-lg sm:rounded-xl bg-indigo-500/10 hover:bg-indigo-500/20 text-indigo-600 dark:text-indigo-400 font-bold transition"
               >
-                <Clock className="w-4 h-4" />
+                <Clock className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                 <span className="hidden sm:inline text-xs">SRS</span>
-                <span className="font-mono text-xs bg-indigo-600 text-white px-2 py-0.5 rounded-full leading-none">
+                <span className="font-mono text-[11px] sm:text-xs bg-indigo-600 text-white px-1.5 sm:px-2 py-0.2 sm:py-0.5 rounded-full leading-none">
                   {dueSrsCount}
                 </span>
               </button>
@@ -188,51 +188,51 @@ export const Navbar: React.FC<NavbarProps> = ({
               <button
                 onClick={onOpenMistakeBank}
                 title={`Bạn có ${mistakeCount} từ cần phục hồi trong Kho từ sai`}
-                className="flex items-center space-x-1.5 px-3 py-1.5 rounded-xl bg-rose-500/10 hover:bg-rose-500/20 text-rose-600 dark:text-rose-400 font-bold transition"
+                className="flex items-center space-x-1 sm:space-x-1.5 px-2 sm:px-3 py-1 sm:py-1.5 rounded-lg sm:rounded-xl bg-rose-500/10 hover:bg-rose-500/20 text-rose-600 dark:text-rose-400 font-bold transition"
               >
-                <AlertCircle className="w-4 h-4" />
-                <span className="font-mono text-xs">{mistakeCount}</span>
+                <AlertCircle className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+                <span className="font-mono text-[11px] sm:text-xs">{mistakeCount}</span>
               </button>
             )}
 
             {/* Streak Counter */}
             <div 
               title={`Chuỗi ${streak} ngày học liên tục`}
-              className="flex items-center space-x-1.5 px-3 py-1.5 text-amber-600 dark:text-amber-400 font-bold"
+              className="flex items-center space-x-1 sm:space-x-1.5 px-2 sm:px-3 py-1 sm:py-1.5 text-amber-600 dark:text-amber-400 font-bold"
             >
-              <Flame className="w-4 h-4 fill-current text-amber-500" />
-              <span className="font-mono text-sm">{streak}</span>
+              <Flame className="w-3.5 h-3.5 sm:w-4 sm:h-4 fill-current text-amber-500" />
+              <span className="font-mono text-xs sm:text-sm">{streak}</span>
             </div>
           </div>
 
-          {/* Quick Dark Mode Toggle (Desktop) */}
+          {/* Quick Dark Mode Toggle */}
           <button
             onClick={() => setIsDarkMode(!isDarkMode)}
             title={isDarkMode ? 'Chuyển sang giao diện Sáng' : 'Chuyển sang giao diện Tối'}
-            className="p-2.5 rounded-xl text-stone-500 dark:text-stone-400 hover:bg-stone-200/50 dark:hover:bg-stone-800 transition"
+            className="p-1.5 sm:p-2.5 rounded-lg sm:rounded-xl text-stone-500 dark:text-stone-400 hover:bg-stone-200/50 dark:hover:bg-stone-800 transition"
           >
-            {isDarkMode ? <Sun className="w-4.5 h-4.5 text-amber-400" /> : <Moon className="w-4.5 h-4.5 text-stone-600" />}
+            {isDarkMode ? <Sun className="w-4 h-4 sm:w-4.5 sm:h-4.5 text-amber-400" /> : <Moon className="w-4 h-4 sm:w-4.5 sm:h-4.5 text-stone-600" />}
           </button>
 
           {/* Profile Menu Trigger (Dropdown) */}
           <div className="relative" ref={profileMenuRef}>
             <button
               onClick={() => setIsProfileMenuOpen((prev) => !prev)}
-              className="flex items-center space-x-2 px-3 py-1.5 rounded-xl bg-white dark:bg-stone-800 border border-stone-200 dark:border-stone-700 hover:border-stone-300 dark:hover:border-stone-600 text-stone-700 dark:text-stone-200 transition shadow-2xs"
+              className="flex items-center space-x-1.5 sm:space-x-2 p-1 sm:px-3 sm:py-1.5 rounded-xl bg-white dark:bg-stone-800 border border-stone-200 dark:border-stone-700 hover:border-stone-300 dark:hover:border-stone-600 text-stone-700 dark:text-stone-200 transition shadow-2xs"
             >
               {avatarLetter ? (
-                <div className="w-7 h-7 rounded-lg bg-indigo-600 text-white flex items-center justify-center font-bold text-xs">
+                <div className="w-6.5 h-6.5 sm:w-7 sm:h-7 rounded-lg bg-indigo-600 text-white flex items-center justify-center font-bold text-xs">
                   {avatarLetter}
                 </div>
               ) : (
-                <div className="w-7 h-7 rounded-lg bg-stone-200 dark:bg-stone-700 text-stone-600 dark:text-stone-300 flex items-center justify-center">
-                  <User className="w-4 h-4" />
+                <div className="w-6.5 h-6.5 sm:w-7 sm:h-7 rounded-lg bg-stone-200 dark:bg-stone-700 text-stone-600 dark:text-stone-300 flex items-center justify-center">
+                  <User className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                 </div>
               )}
               <span className="text-sm font-semibold hidden md:inline max-w-[110px] truncate">
                 {userEmail ? userEmail.split('@')[0] : 'Tài khoản'}
               </span>
-              <ChevronDown className="w-4 h-4 text-stone-400 transition-transform duration-200" style={{ transform: isProfileMenuOpen ? 'rotate(180deg)' : 'none' }} />
+              <ChevronDown className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-stone-400 transition-transform duration-200 hidden sm:block" style={{ transform: isProfileMenuOpen ? 'rotate(180deg)' : 'none' }} />
             </button>
 
             {/* Profile Dropdown Drawer */}

@@ -449,10 +449,10 @@ export const PracticeHubOverview: React.FC<PracticeHubOverviewProps> = ({
           </div>
 
           {/* Nút to CTA: Bắt đầu luyện tập */}
-          <div className="flex items-center space-x-3">
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5 sm:gap-3 w-full md:w-auto shrink-0">
             <button
               onClick={() => onToggleMultiMode(!isMultiMode)}
-              className={`px-4 py-2.5 rounded-xl text-xs font-bold transition flex items-center space-x-2 border ${
+              className={`px-4 py-2.5 rounded-xl text-xs font-bold transition flex items-center justify-center space-x-2 border w-full sm:w-auto ${
                 isMultiMode 
                   ? 'bg-indigo-500/20 border-indigo-500/40 text-indigo-300' 
                   : 'bg-stone-800 hover:bg-stone-700 border-stone-700 text-stone-300'
@@ -465,13 +465,13 @@ export const PracticeHubOverview: React.FC<PracticeHubOverviewProps> = ({
             <button
               onClick={() => onStartPractice()}
               disabled={readyWordsCount === 0}
-              className={`px-6 py-2.5 rounded-xl font-bold text-sm flex items-center space-x-2 shadow-sm transition active:scale-95 whitespace-nowrap ${
+              className={`px-5 py-2.5 rounded-xl font-bold text-xs sm:text-sm flex items-center justify-center space-x-2 shadow-sm transition active:scale-95 w-full sm:w-auto ${
                 readyWordsCount > 0
                   ? 'bg-indigo-600 hover:bg-indigo-500 text-white shadow-indigo-600/25'
                   : 'bg-stone-800 text-stone-500 cursor-not-allowed'
               }`}
             >
-              <Play className="w-4 h-4 fill-white" />
+              <Play className="w-4 h-4 fill-white shrink-0" />
               <span>Bắt đầu luyện tập ({readyWordsCount} từ) →</span>
             </button>
           </div>
