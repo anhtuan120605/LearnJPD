@@ -1494,23 +1494,23 @@ export const KanjiRoadmapView: React.FC<KanjiRoadmapViewProps> = ({
                   kanjiVocab.map((v, i) => (
                     <div
                       key={i}
-                      className="p-3 rounded-xl bg-slate-50 dark:bg-zinc-800/60 border border-slate-100 dark:border-zinc-800 flex items-center justify-between text-xs hover:border-slate-300 dark:hover:border-zinc-700 transition"
+                      className="p-3 rounded-xl bg-slate-50 dark:bg-zinc-800/60 border border-slate-100 dark:border-zinc-800 flex items-start justify-between text-xs hover:border-slate-300 dark:hover:border-zinc-700 transition gap-2"
                     >
-                      <div className="flex items-center space-x-2.5">
-                        <span className="text-blue-500 font-bold">👉</span>
-                        <div>
-                          <div className="flex items-baseline space-x-2">
-                            <span className="text-sm font-extrabold text-slate-900 dark:text-white font-jp">
+                      <div className="flex items-start space-x-2.5 flex-1 min-w-0">
+                        <span className="text-blue-500 font-bold shrink-0 mt-0.5">👉</span>
+                        <div className="flex-1 min-w-0">
+                          <div className="flex flex-wrap items-baseline gap-1.5">
+                            <span className="text-sm font-extrabold text-slate-900 dark:text-white font-jp break-keep">
                               {v.word}
                             </span>
-                            <span className="text-xs text-blue-600 dark:text-blue-400 font-jp font-semibold">
+                            <span className="text-xs text-blue-600 dark:text-blue-400 font-jp font-semibold break-keep">
                               ({v.reading})
                             </span>
-                            <span className="px-1.5 py-0.5 rounded text-[10px] font-bold bg-blue-100 dark:bg-blue-950/60 text-blue-700 dark:text-blue-300">
+                            <span className="px-1.5 py-0.5 rounded text-[10px] font-bold bg-blue-100 dark:bg-blue-950/60 text-blue-700 dark:text-blue-300 whitespace-nowrap shrink-0">
                               {v.level}{v.lesson ? ` • Bài ${v.lesson}` : ''}
                             </span>
                           </div>
-                          <p className="text-[11px] text-slate-500 dark:text-zinc-400 mt-0.5">
+                          <p className="text-[11px] text-slate-500 dark:text-zinc-400 mt-1 leading-relaxed break-words">
                             <span className="font-semibold text-amber-600 dark:text-amber-400 uppercase mr-1">{v.hanviet}</span>
                             — {v.meaning}
                           </p>
@@ -1519,7 +1519,7 @@ export const KanjiRoadmapView: React.FC<KanjiRoadmapViewProps> = ({
 
                       <button
                         onClick={() => speakJapanese(v.word)}
-                        className="p-1.5 rounded-lg text-slate-400 hover:text-slate-700 dark:hover:text-white hover:bg-slate-200 dark:hover:bg-zinc-700 transition shrink-0"
+                        className="p-1.5 rounded-lg text-slate-400 hover:text-slate-700 dark:hover:text-white hover:bg-slate-200 dark:hover:bg-zinc-700 transition shrink-0 mt-0.5"
                         title="Nghe phát âm"
                       >
                         <Volume2 className="w-3.5 h-3.5" />
@@ -1531,10 +1531,10 @@ export const KanjiRoadmapView: React.FC<KanjiRoadmapViewProps> = ({
             </div>
 
             {/* Dưới cùng: Nút Kiểm tra & Chuyển chữ */}
-            <div className="pt-4 border-t border-slate-100 dark:border-zinc-800 flex items-center justify-between gap-3">
+            <div className="pt-4 border-t border-slate-100 dark:border-zinc-800 flex items-center justify-between gap-2.5">
               <button
                 onClick={() => { setViewState('test'); setTestQuestionIdx(0); }}
-                className="px-5 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs sm:text-sm shadow-sm transition flex items-center space-x-1.5"
+                className="flex-1 py-2.5 px-3 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs sm:text-sm shadow-sm transition flex items-center justify-center space-x-1.5"
               >
                 <span>🧠 Kiểm tra 10 chữ ngày {safeDay}</span>
               </button>
@@ -1542,13 +1542,13 @@ export const KanjiRoadmapView: React.FC<KanjiRoadmapViewProps> = ({
               {activeKanjiIndex + 1 < dayKanjiList.length ? (
                 <button
                   onClick={() => setActiveKanjiIndex(prev => prev + 1)}
-                  className="px-4 py-2.5 rounded-xl bg-slate-100 dark:bg-zinc-800 hover:bg-slate-200 dark:hover:bg-zinc-700 text-slate-700 dark:text-zinc-200 font-bold text-xs transition flex items-center space-x-1"
+                  className="py-2.5 px-3.5 sm:px-4 rounded-xl bg-slate-100 dark:bg-zinc-800 hover:bg-slate-200 dark:hover:bg-zinc-700 text-slate-700 dark:text-zinc-200 font-bold text-xs transition flex items-center justify-center space-x-1 whitespace-nowrap shrink-0"
                 >
                   <span>Chữ tiếp theo</span>
-                  <ArrowRight className="w-3.5 h-3.5" />
+                  <ArrowRight className="w-3.5 h-3.5 shrink-0" />
                 </button>
               ) : (
-                <span className="text-xs text-emerald-600 font-bold">
+                <span className="text-xs text-emerald-600 font-bold whitespace-nowrap shrink-0">
                   ✓ Đã xem hết 10 chữ!
                 </span>
               )}

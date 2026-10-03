@@ -80,7 +80,7 @@ export const KanjiMasterView: React.FC<KanjiMasterViewProps> = ({
           </div>
 
           {/* Cấp độ JLPT N5 -> N1 */}
-          <div className="flex items-center space-x-1 bg-slate-100 dark:bg-zinc-800 p-1.5 rounded-2xl shrink-0">
+          <div className="w-full sm:w-auto flex items-center justify-between sm:justify-start gap-1 bg-slate-100 dark:bg-zinc-800 p-1 sm:p-1.5 rounded-xl sm:rounded-2xl">
             {['N5', 'N4', 'N3', 'N2', 'N1'].map((lvl) => {
               const isDemo = ['N3', 'N2', 'N1'].includes(lvl);
               const isSelected = currentLevel === lvl;
@@ -88,7 +88,7 @@ export const KanjiMasterView: React.FC<KanjiMasterViewProps> = ({
                 <button
                   key={lvl}
                   onClick={() => onSelectLevel(lvl)}
-                  className={`px-3 sm:px-4 py-2 rounded-xl text-xs font-bold transition flex items-center space-x-1.5 ${
+                  className={`flex-1 sm:flex-initial px-2 sm:px-4 py-1.5 sm:py-2 rounded-lg sm:rounded-xl text-xs font-bold transition flex items-center justify-center space-x-1 sm:space-x-1.5 ${
                     isSelected
                       ? 'bg-rose-500 text-white shadow-md shadow-rose-500/20'
                       : 'text-slate-600 dark:text-zinc-300 hover:text-slate-900 dark:hover:text-white'
@@ -96,7 +96,7 @@ export const KanjiMasterView: React.FC<KanjiMasterViewProps> = ({
                 >
                   <span>{lvl}</span>
                   {isDemo && (
-                    <span className={`text-[9px] font-black uppercase px-1 py-0.2 rounded-sm ${
+                    <span className={`text-[8px] sm:text-[9px] font-black uppercase px-1 py-0.2 rounded-xs ${
                       isSelected ? 'bg-amber-400 text-slate-900' : 'bg-amber-500 text-white'
                     }`}>
                       Demo
