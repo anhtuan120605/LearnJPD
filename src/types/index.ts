@@ -43,11 +43,33 @@ export interface KanjiItem {
   }>;
 }
 
+export interface RadicalItem {
+  id: number;
+  glyph: string;
+  strokes: number;
+  hanviet: string;
+  meaning: string;
+  variants?: string[];
+  jaName?: string;
+}
+
 export interface CustomNotebookLesson {
   id: string;
   title: string;
   createdAt: string;
   words: WordItem[];
+}
+
+export type SrsRating = 'again' | 'hard' | 'good' | 'easy';
+
+export interface SrsItem {
+  id: string; // word or kanji ID
+  type: 'word' | 'kanji';
+  level: number; // 0 to 5
+  nextReviewDate: string; // YYYY-MM-DD
+  lastReviewedDate?: string;
+  intervalDays: number;
+  repetitions: number;
 }
 
 export interface UserProgress {
@@ -67,6 +89,7 @@ export interface UserProgress {
     total: number;
   }>;
   customNotebooks?: CustomNotebookLesson[];
+  srsItems?: Record<string, SrsItem>;
 }
 
 export interface GrammarPoint {

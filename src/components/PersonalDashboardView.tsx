@@ -26,7 +26,8 @@ import {
   Zap,
   LogIn,
   Sliders,
-  Compass
+  Compass,
+  Clock
 } from 'lucide-react';
 
 interface PersonalDashboardViewProps {
@@ -41,6 +42,8 @@ interface PersonalDashboardViewProps {
   onNavigateToKanji: (level: string) => void;
   onNavigateToNotebook: () => void;
   onOpenConjugationTrainer?: () => void;
+  dueSrsCount?: number;
+  onOpenSrsReview?: () => void;
 }
 
 export const PersonalDashboardView: React.FC<PersonalDashboardViewProps> = ({
@@ -54,7 +57,9 @@ export const PersonalDashboardView: React.FC<PersonalDashboardViewProps> = ({
   onNavigateToCourse,
   onNavigateToKanji,
   onNavigateToNotebook,
-  onOpenConjugationTrainer
+  onOpenConjugationTrainer,
+  dueSrsCount = 0,
+  onOpenSrsReview,
 }) => {
   // Mục tiêu học mỗi ngày (mặc định 20 từ)
   const [dailyTarget, setDailyTarget] = useState<number>(() => {
@@ -307,6 +312,15 @@ export const PersonalDashboardView: React.FC<PersonalDashboardViewProps> = ({
                   >
                     <Zap className="w-3.5 h-3.5 fill-current" />
                     <span>Luyện chia thể Động từ ⚡</span>
+                  </button>
+                )}
+                {onOpenSrsReview && (
+                  <button
+                    onClick={onOpenSrsReview}
+                    className="inline-flex items-center space-x-1.5 px-3 py-1 rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white text-xs font-bold transition shadow-xs transform active:scale-95"
+                  >
+                    <Clock className="w-3.5 h-3.5" />
+                    <span>Ôn tập SRS {dueSrsCount > 0 ? `(${dueSrsCount})` : ''}</span>
                   </button>
                 )}
               </div>

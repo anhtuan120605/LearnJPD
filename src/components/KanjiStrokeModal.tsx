@@ -24,6 +24,9 @@ interface KanjiStrokeModalProps {
   hanviet?: string;
   meaning?: string;
   strokes?: number;
+  radical?: string;
+  onyomi?: string[];
+  kunyomi?: string[];
 }
 
 interface StrokeData {
@@ -39,7 +42,10 @@ export const KanjiStrokeModal: React.FC<KanjiStrokeModalProps> = ({
   kanji,
   hanviet,
   meaning,
-  strokes: propStrokes
+  strokes: propStrokes,
+  radical,
+  onyomi,
+  kunyomi
 }) => {
   const [activeTab, setActiveTab] = useState<'animate' | 'write' | 'grid'>('animate');
   const [strokesList, setStrokesList] = useState<StrokeData[]>([]);
@@ -300,6 +306,23 @@ export const KanjiStrokeModal: React.FC<KanjiStrokeModalProps> = ({
                 <p className="text-xs text-slate-500 dark:text-slate-400 line-clamp-1 mt-0.5">
                   {meaning}
                 </p>
+              )}
+              {radical && (
+                <div className="flex flex-wrap items-center gap-1.5 mt-1.5">
+                  <span className="text-[11px] font-bold px-2 py-0.5 rounded-md bg-purple-50 dark:bg-purple-950/60 text-purple-600 dark:text-purple-300 border border-purple-200/60 dark:border-purple-800/40">
+                    Bộ: {radical}
+                  </span>
+                  {onyomi && onyomi.length > 0 && (
+                    <span className="text-[11px] font-bold px-2 py-0.5 rounded-md bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 font-jp">
+                      On: {onyomi.join(', ')}
+                    </span>
+                  )}
+                  {kunyomi && kunyomi.length > 0 && (
+                    <span className="text-[11px] font-bold px-2 py-0.5 rounded-md bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 font-jp">
+                      Kun: {kunyomi.join(', ')}
+                    </span>
+                  )}
+                </div>
               )}
             </div>
           </div>

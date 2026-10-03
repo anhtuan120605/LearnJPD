@@ -211,23 +211,79 @@ export const KanjiRoadmapView: React.FC<KanjiRoadmapViewProps> = ({
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [isDrawing, setIsDrawing] = useState<boolean>(false);
 
-  // Mỗi ngày 10 chữ
-  const KANJI_PER_DAY = 10;
-  const totalDays = Math.ceil(kanjiList.length / KANJI_PER_DAY) || 1;
+  // Chế độ Lộ trình: 'default' (10 chữ/ngày) | 'custom' (Lộ trình của tôi tùy chỉnh cá nhân)
+  const [roadmapType, setRoadmapType] = useState<'default' | 'custom'>(() => {
+    return (localStorage.getItem('learnjpd_kanji_roadmap_type') as 'default' | 'custom') || 'default';
+  });
+
+  // Tùy chỉnh số lượng học / ngày cho Lộ trình của tôi (Mặc định 10)
+  const [customKanjiPerDay, setCustomKanjiPerDay] = useState<number>(() => {
+    const saved = localStorage.getItem('learnjpd_kanji_per_day');
+    return saved ? Math.max(1, Math.min(50, parseInt(saved, 10))) : 10;
+  });
+
+  // Tùy chỉnh đối tượng học tập cá nhân: 'all' | 'unlearned' | 'favorite'
+  const [customFilterTarget, setCustomFilterTarget] = useState<'all' | 'unlearned' | 'favorite'>(() => {
+    return (localStorage.getItem('learnjpd_kanji_custom_target') as any) || 'all';
+  });
+
+  // Tùy chọn tự động đánh dấu đã thuộc và đưa vào SRS khi đạt >= 80% điểm bài test ngày
+  const [autoMasterOnPass, setAutoMasterOnPass] = useState<boolean>(() => {
+    const saved = localStorage.getItem('learnjpd_auto_master_kanji_on_pass');
+    return saved !== null ? saved === 'true' : true; // Mặc định là bật (true)
+  });
+
+  // Lưu cấu hình vào localStorage khi thay đổi
+  useEffect(() => {
+    localStorage.setItem('learnjpd_kanji_roadmap_type', roadmapType);
+  }, [roadmapType]);
+
+  useEffect(() => {
+    localStorage.setItem('learnjpd_kanji_per_day', customKanjiPerDay.toString());
+  }, [customKanjiPerDay]);
+
+  useEffect(() => {
+    localStorage.setItem('learnjpd_kanji_custom_target', customFilterTarget);
+  }, [customFilterTarget]);
+
+  useEffect(() => {
+    localStorage.setItem('learnjpd_auto_master_kanji_on_pass', autoMasterOnPass.toString());
+  }, [autoMasterOnPass]);
+
+  // Danh sách Kanji thực tế theo chế độ lộ trình
+  const effectiveKanjiList = useMemo(() => {
+    if (roadmapType === 'default') {
+      return kanjiList;
+    }
+    if (customFilterTarget === 'unlearned') {
+      return kanjiList.filter(k => !masteredKanji.includes(k.id));
+    }
+    if (customFilterTarget === 'favorite') {
+      return kanjiList.filter(k => favoriteKanji.includes(k.id));
+    }
+    return kanjiList;
+  }, [kanjiList, roadmapType, customFilterTarget, masteredKanji, favoriteKanji]);
+
+  // Số lượng chữ học mỗi ngày đang áp dụng
+  const activeKanjiPerDay = roadmapType === 'default' ? 10 : customKanjiPerDay;
+  const totalDays = Math.ceil(effectiveKanjiList.length / activeKanjiPerDay) || 1;
 
   // Đảm bảo currentDay luôn hợp lệ
   const safeDay = Math.min(Math.max(currentDay, 1), totalDays);
 
-  // Danh sách 10 chữ của ngày đang chọn
+  // Danh sách chữ của ngày đang chọn
   const dayKanjiList = useMemo(() => {
-    const start = (safeDay - 1) * KANJI_PER_DAY;
-    return kanjiList.slice(start, start + KANJI_PER_DAY);
-  }, [kanjiList, safeDay]);
+    const start = (safeDay - 1) * activeKanjiPerDay;
+    return effectiveKanjiList.slice(start, start + activeKanjiPerDay);
+  }, [effectiveKanjiList, safeDay, activeKanjiPerDay]);
 
   // Chủ đề logic của ngày học hiện tại
   const currentDayTopic = useMemo(() => {
-    return ROADMAP_DAY_TOPICS[currentLevel]?.[safeDay] || `Chuyên đề ${currentLevel} • Bài ${safeDay}`;
-  }, [currentLevel, safeDay]);
+    if (roadmapType === 'default') {
+      return ROADMAP_DAY_TOPICS[currentLevel]?.[safeDay] || `Chuyên đề ${currentLevel} • Bài ${safeDay}`;
+    }
+    return `Lộ trình cá nhân • Ngày ${safeDay} (${dayKanjiList.length} chữ)`;
+  }, [currentLevel, safeDay, roadmapType, dayKanjiList.length]);
 
   // Bộ lọc cấp độ từ vựng ghép ('current' = chỉ cấp độ đang học, 'all' = tất cả)
   const [vocabLevelFilter, setVocabLevelFilter] = useState<'current' | 'all'>('current');
@@ -282,9 +338,9 @@ export const KanjiRoadmapView: React.FC<KanjiRoadmapViewProps> = ({
   }, [currentKanji, allVocabWords, currentLevel, vocabLevelFilter]);
 
   // Thống kê ngày
-  const masteredCount = kanjiList.filter(k => masteredKanji.includes(k.id)).length;
-  const progressPercent = kanjiList.length > 0 ? Math.round((masteredCount / kanjiList.length) * 100) : 0;
-  const completedDays = Math.floor(masteredCount / KANJI_PER_DAY);
+  const masteredCount = effectiveKanjiList.filter(k => masteredKanji.includes(k.id)).length;
+  const progressPercent = effectiveKanjiList.length > 0 ? Math.round((masteredCount / effectiveKanjiList.length) * 100) : 0;
+  const completedDays = Math.floor(masteredCount / activeKanjiPerDay);
 
   // Xử lý canvas vẽ nét
   const handleStartDraw = (e: React.MouseEvent<HTMLCanvasElement> | React.TouchEvent<HTMLCanvasElement>) => {
@@ -502,7 +558,27 @@ export const KanjiRoadmapView: React.FC<KanjiRoadmapViewProps> = ({
     } else {
       setIsTestFinished(true);
       confetti({ particleCount: 120, spread: 70, origin: { y: 0.6 } });
+
+      // Tự động đánh dấu đã thuộc vào SRS nếu đạt từ 80% điểm trở lên
+      const passRate = totalTestCount > 0 ? (testScore / totalTestCount) : 0;
+      if (passRate >= 0.8 && autoMasterOnPass) {
+        dayKanjiList.forEach(k => {
+          if (!masteredKanji.includes(k.id)) {
+            onToggleMaster(k.id);
+          }
+        });
+      }
     }
+  };
+
+  // Đánh dấu toàn bộ chữ của ngày học hiện tại là đã thuộc
+  const handleMasterAllDayKanji = () => {
+    dayKanjiList.forEach(k => {
+      if (!masteredKanji.includes(k.id)) {
+        onToggleMaster(k.id);
+      }
+    });
+    confetti({ particleCount: 60, spread: 50, origin: { y: 0.7 } });
   };
 
   // Gõ từ và tự động lọc Telex
@@ -589,36 +665,116 @@ export const KanjiRoadmapView: React.FC<KanjiRoadmapViewProps> = ({
 
         {/* MÀN HÌNH HOÀN THÀNH */}
         {isTestFinished ? (
-          <div className="bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 rounded-3xl p-8 text-center shadow-xl space-y-6 animate-in zoom-in-95 duration-200">
-            <div className="w-20 h-20 mx-auto rounded-3xl bg-emerald-500/10 text-[#05b651] flex items-center justify-center">
-              <Trophy className="w-10 h-10 animate-bounce" />
-            </div>
+          (() => {
+            const passRate = totalTestCount > 0 ? (testScore / totalTestCount) : 0;
+            const isPassed = passRate >= 0.8;
+            const unmasteredInDay = dayKanjiList.filter(k => !masteredKanji.includes(k.id)).length;
+            const allMastered = unmasteredInDay === 0;
 
-            <div>
-              <h3 className="text-2xl font-black text-slate-900 dark:text-white">
-                Hoàn Thành Kiểm Tra!
-              </h3>
-              <p className="text-sm text-slate-500 dark:text-zinc-400 mt-1">
-                Bạn đã trả lời đúng <strong className="text-[#05b651] font-extrabold text-lg">{testScore}</strong> / {totalTestCount} câu của Ngày {safeDay}.
-              </p>
-            </div>
+            return (
+              <div className="bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 rounded-3xl p-6 sm:p-8 text-center shadow-xl space-y-6 animate-in zoom-in-95 duration-200 max-w-xl mx-auto">
+                <div className={`w-20 h-20 mx-auto rounded-3xl flex items-center justify-center ${
+                  isPassed ? 'bg-emerald-500/10 text-[#05b651]' : 'bg-amber-500/10 text-amber-500'
+                }`}>
+                  <Trophy className="w-10 h-10 animate-bounce" />
+                </div>
 
-            <div className="pt-4 border-t border-slate-100 dark:border-zinc-800 flex items-center justify-center space-x-3">
-              <button
-                onClick={handleRestartTest}
-                className="flex items-center space-x-2 px-6 py-3 rounded-2xl bg-[#05b651] hover:bg-[#049a44] text-white font-bold text-sm shadow-md shadow-emerald-500/20 transition active:scale-95"
-              >
-                <RotateCcw className="w-4 h-4" />
-                <span>Làm lại lần nữa</span>
-              </button>
-              <button
-                onClick={() => setViewState('study')}
-                className="flex items-center space-x-2 px-6 py-3 rounded-2xl bg-slate-100 dark:bg-zinc-800 hover:bg-slate-200 dark:hover:bg-zinc-700 text-slate-700 dark:text-zinc-200 font-bold text-sm transition"
-              >
-                <span>Về bài học Ngày {safeDay}</span>
-              </button>
-            </div>
-          </div>
+                <div>
+                  <h3 className="text-2xl font-black text-slate-900 dark:text-white">
+                    {isPassed ? 'Hoàn Thành Xuất Sắc!' : 'Hoàn Thành Kiểm Tra!'}
+                  </h3>
+                  <p className="text-sm text-slate-500 dark:text-zinc-400 mt-1">
+                    Bạn đã trả lời đúng <strong className="text-[#05b651] font-extrabold text-lg">{testScore}</strong> / {totalTestCount} câu ({Math.round(passRate * 100)}%) của Ngày {safeDay}.
+                  </p>
+                </div>
+
+                {/* Hộp thông báo ghi nhận Đã thuộc & SRS */}
+                <div className={`p-4 rounded-2xl border text-left space-y-2.5 ${
+                  isPassed 
+                    ? 'bg-emerald-50/80 dark:bg-emerald-950/30 border-emerald-200 dark:border-emerald-800/50' 
+                    : 'bg-amber-50/80 dark:bg-amber-950/30 border-amber-200 dark:border-amber-800/50'
+                }`}>
+                  <div className="flex items-center space-x-2">
+                    <CheckCircle2 className={`w-5 h-5 shrink-0 ${isPassed ? 'text-emerald-600' : 'text-amber-600'}`} />
+                    <span className="text-xs font-black uppercase tracking-wider text-slate-800 dark:text-zinc-200">
+                      {isPassed ? 'Ghi nhận tiến độ & Ôn tập ngắt quãng (SRS)' : 'Trạng thái ghi nhớ'}
+                    </span>
+                  </div>
+
+                  {isPassed ? (
+                    <p className="text-xs text-slate-700 dark:text-zinc-300 leading-relaxed font-medium">
+                      {allMastered 
+                        ? `🎉 Toàn bộ ${dayKanjiList.length} chữ Kanji của Ngày ${safeDay} đã được ghi nhận ĐÃ THUỘC và kích hoạt vào chu kỳ Ôn tập ngắt quãng (SRS)!`
+                        : autoMasterOnPass 
+                          ? `🎉 Bạn đã đạt trên 80% điểm! Hệ thống đã TỰ ĐỘNG ĐÁNH DẤU ${dayKanjiList.length} chữ Kanji của Ngày ${safeDay} là ĐÃ THUỘC và đưa vào hàng đợi Ôn tập ngắt quãng (SRS).`
+                          : `Bạn đã đạt trên 80% điểm. Còn ${unmasteredInDay} chữ chưa đánh dấu đã thuộc.`
+                      }
+                    </p>
+                  ) : (
+                    <p className="text-xs text-slate-700 dark:text-zinc-300 leading-relaxed font-medium">
+                      Cần đạt từ <strong>80% điểm</strong> để tự động xác nhận Đã thuộc. Hãy rèn luyện thêm hoặc tự đánh dấu chữ bạn đã chắc chắn nhé!
+                    </p>
+                  )}
+
+                  {/* Nút hành động đánh dấu thủ công nếu chưa thuộc hết */}
+                  {!allMastered && (
+                    <button
+                      onClick={handleMasterAllDayKanji}
+                      className="w-full mt-2 py-2 px-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs shadow-sm transition flex items-center justify-center space-x-1.5 active:scale-98"
+                    >
+                      <Sparkles className="w-3.5 h-3.5" />
+                      <span>Đánh dấu tất cả {unmasteredInDay} chữ còn lại là ĐÃ THUỘC ngay</span>
+                    </button>
+                  )}
+
+                  {/* Checkbox tùy chọn tự động */}
+                  <label className="flex items-center space-x-2 pt-2 border-t border-slate-200/60 dark:border-zinc-700/60 cursor-pointer">
+                    <input
+                      type="checkbox"
+                      checked={autoMasterOnPass}
+                      onChange={(e) => setAutoMasterOnPass(e.target.checked)}
+                      className="rounded text-emerald-600 focus:ring-emerald-500 w-4 h-4 cursor-pointer"
+                    />
+                    <span className="text-[11px] text-slate-600 dark:text-zinc-300 font-medium select-none">
+                      Tự động đánh dấu Đã thuộc & đưa vào SRS khi đạt từ 80% điểm
+                    </span>
+                  </label>
+                </div>
+
+                {/* Các nút hành động */}
+                <div className="pt-2 border-t border-slate-100 dark:border-zinc-800 flex flex-wrap items-center justify-center gap-3">
+                  <button
+                    onClick={handleRestartTest}
+                    className="flex items-center space-x-2 px-5 py-2.5 rounded-2xl bg-[#05b651] hover:bg-[#049a44] text-white font-bold text-xs sm:text-sm shadow-md shadow-emerald-500/20 transition active:scale-95"
+                  >
+                    <RotateCcw className="w-4 h-4" />
+                    <span>Làm lại lần nữa</span>
+                  </button>
+
+                  {safeDay < totalDays && (
+                    <button
+                      onClick={() => {
+                        setCurrentDay(prev => Math.min(prev + 1, totalDays));
+                        setViewState('study');
+                        setActiveKanjiIndex(0);
+                      }}
+                      className="flex items-center space-x-2 px-5 py-2.5 rounded-2xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs sm:text-sm shadow-md shadow-blue-500/20 transition active:scale-95"
+                    >
+                      <span>Học tiếp Ngày {safeDay + 1}</span>
+                      <ArrowRight className="w-4 h-4" />
+                    </button>
+                  )}
+
+                  <button
+                    onClick={() => setViewState('study')}
+                    className="flex items-center space-x-2 px-5 py-2.5 rounded-2xl bg-slate-100 dark:bg-zinc-800 hover:bg-slate-200 dark:hover:bg-zinc-700 text-slate-700 dark:text-zinc-200 font-bold text-xs sm:text-sm transition"
+                  >
+                    <span>Về bài học Ngày {safeDay}</span>
+                  </button>
+                </div>
+              </div>
+            );
+          })()
         ) : (
           <div className="space-y-6">
             {/* THẺ CÂU HỎI TRUNG TÂM (Dark Navy Box chuẩn theo ảnh) */}
@@ -1517,29 +1673,135 @@ export const KanjiRoadmapView: React.FC<KanjiRoadmapViewProps> = ({
     <div className="space-y-6">
       {/* 1. Header & Switcher */}
       <div className="bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 rounded-3xl p-5 sm:p-6 shadow-sm space-y-6">
-        {/* Switch tab trên cùng */}
+        {/* Switch tab trên cùng: Lộ trình mặc định vs Lộ trình của tôi */}
         <div className="flex items-center justify-center">
           <div className="inline-flex items-center bg-slate-100 dark:bg-zinc-800 p-1.5 rounded-2xl">
-            <button className="px-5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-blue-600 text-white shadow-sm flex items-center space-x-2">
+            <button 
+              onClick={() => setRoadmapType('default')}
+              className={`px-5 py-2 rounded-xl text-xs sm:text-sm font-bold transition flex items-center space-x-2 ${
+                roadmapType === 'default'
+                  ? 'bg-blue-600 text-white shadow-sm'
+                  : 'text-slate-500 hover:text-slate-900 dark:hover:text-white'
+              }`}
+            >
               <span>🔗 Lộ trình mặc định</span>
             </button>
             <button 
-              onClick={() => alert('Tính năng lộ trình tùy chỉnh cá nhân hóa đang được chuẩn bị!')}
-              className="px-5 py-2 rounded-xl text-xs sm:text-sm font-bold text-slate-500 hover:text-slate-900 dark:hover:text-white transition flex items-center space-x-2"
+              onClick={() => setRoadmapType('custom')}
+              className={`px-5 py-2 rounded-xl text-xs sm:text-sm font-bold transition flex items-center space-x-2 ${
+                roadmapType === 'custom'
+                  ? 'bg-rose-500 text-white shadow-sm'
+                  : 'text-slate-500 hover:text-slate-900 dark:hover:text-white'
+              }`}
             >
               <span>📍 Lộ trình của tôi</span>
             </button>
           </div>
         </div>
 
+        {/* Khung tùy chỉnh Lộ trình của tôi (Khi chọn tab Lộ trình của tôi) */}
+        {roadmapType === 'custom' && (
+          <div className="bg-slate-50 dark:bg-zinc-800/60 border border-rose-200/80 dark:border-rose-900/40 rounded-2xl p-4 sm:p-5 space-y-4 animate-in fade-in duration-200">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+              <div>
+                <h4 className="text-sm font-bold text-slate-900 dark:text-white flex items-center space-x-2">
+                  <Sparkles className="w-4 h-4 text-rose-500" />
+                  <span>Cài đặt Lộ trình cá nhân hóa</span>
+                </h4>
+                <p className="text-xs text-slate-500 dark:text-zinc-400">
+                  Tùy chỉnh số lượng học mỗi ngày và đối tượng Kanji phù hợp với thời gian biểu của bạn
+                </p>
+              </div>
+
+              {/* Bộ lọc đối tượng: Tất cả / Chưa thuộc / Yêu thích */}
+              <div className="flex items-center space-x-1.5 bg-white dark:bg-zinc-900 p-1 rounded-xl border border-slate-200 dark:border-zinc-700">
+                <button
+                  onClick={() => setCustomFilterTarget('all')}
+                  className={`px-3 py-1 rounded-lg text-xs font-bold transition ${
+                    customFilterTarget === 'all'
+                      ? 'bg-slate-900 dark:bg-white text-white dark:text-slate-900'
+                      : 'text-slate-500 hover:text-slate-900 dark:hover:text-white'
+                  }`}
+                >
+                  Tất cả ({kanjiList.length})
+                </button>
+                <button
+                  onClick={() => setCustomFilterTarget('unlearned')}
+                  className={`px-3 py-1 rounded-lg text-xs font-bold transition ${
+                    customFilterTarget === 'unlearned'
+                      ? 'bg-rose-500 text-white'
+                      : 'text-slate-500 hover:text-rose-500'
+                  }`}
+                >
+                  Chưa thuộc ({kanjiList.filter(k => !masteredKanji.includes(k.id)).length})
+                </button>
+                <button
+                  onClick={() => setCustomFilterTarget('favorite')}
+                  className={`px-3 py-1 rounded-lg text-xs font-bold transition ${
+                    customFilterTarget === 'favorite'
+                      ? 'bg-amber-500 text-white'
+                      : 'text-slate-500 hover:text-amber-500'
+                  }`}
+                >
+                  Yêu thích ({kanjiList.filter(k => favoriteKanji.includes(k.id)).length})
+                </button>
+              </div>
+            </div>
+
+            {/* Chọn số lượng học / ngày */}
+            <div className="flex flex-wrap items-center gap-2 pt-2 border-t border-slate-200/60 dark:border-zinc-700/60">
+              <span className="text-xs font-bold text-slate-600 dark:text-zinc-300">
+                Số chữ mỗi ngày:
+              </span>
+              {[5, 10, 15, 20, 25].map(cnt => (
+                <button
+                  key={cnt}
+                  onClick={() => setCustomKanjiPerDay(cnt)}
+                  className={`px-3 py-1.5 rounded-xl text-xs font-bold transition ${
+                    customKanjiPerDay === cnt
+                      ? 'bg-rose-500 text-white shadow-sm'
+                      : 'bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-700 text-slate-700 dark:text-zinc-200 hover:border-rose-400'
+                  }`}
+                >
+                  {cnt} chữ/ngày
+                </button>
+              ))}
+
+              {/* Nhập số lượng tùy ý */}
+              <div className="flex items-center space-x-1.5 ml-auto">
+                <span className="text-xs text-slate-400">Tùy biến:</span>
+                <input
+                  type="number"
+                  min={1}
+                  max={50}
+                  value={customKanjiPerDay}
+                  onChange={(e) => setCustomKanjiPerDay(Math.max(1, Math.min(50, parseInt(e.target.value, 10) || 1)))}
+                  className="w-16 px-2.5 py-1 text-xs font-bold text-center bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-700 rounded-xl focus:ring-2 focus:ring-rose-500/20"
+                />
+                <span className="text-xs text-slate-400">chữ</span>
+              </div>
+            </div>
+
+            {/* Thẻ dự báo hoàn thành */}
+            <div className="p-3 rounded-xl bg-rose-500/10 border border-rose-500/20 text-xs text-rose-700 dark:text-rose-300 flex items-center justify-between">
+              <span>
+                🎯 Mục tiêu: <strong>{effectiveKanjiList.length}</strong> chữ • Tốc độ: <strong>{activeKanjiPerDay}</strong> chữ/ngày
+              </span>
+              <span className="font-bold">
+                Dự kiến hoàn thành trong {totalDays} ngày
+              </span>
+            </div>
+          </div>
+        )}
+
         {/* Tiêu đề chính */}
         <div className="text-center space-y-1">
           <h1 className="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white flex items-center justify-center space-x-2">
             <span>📜</span>
-            <span>Lộ trình học Kanji</span>
+            <span>{roadmapType === 'custom' ? 'Lộ trình cá nhân của tôi' : 'Lộ trình học Kanji'}</span>
           </h1>
           <p className="text-xs sm:text-sm text-slate-500 dark:text-zinc-400 font-medium">
-            {KANJI_PER_DAY} chữ mỗi ngày • Tổng cộng {totalDays} ngày chinh phục {currentLevel}
+            {activeKanjiPerDay} chữ mỗi ngày • Tổng cộng {totalDays} ngày chinh phục {currentLevel} ({effectiveKanjiList.length} chữ)
           </p>
         </div>
 

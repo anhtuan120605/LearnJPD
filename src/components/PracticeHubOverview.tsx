@@ -10,7 +10,10 @@ import {
   Search,
   ArrowRight,
   Play,
-  Check
+  Check,
+  Keyboard,
+  Zap,
+  Clock
 } from 'lucide-react';
 import { courseDatasets } from '../data';
 import { getLessonTopic } from '../data/lessonTopics';
@@ -42,7 +45,10 @@ interface PracticeHubOverviewProps {
   };
   onStartPractice: (lessonNum?: number) => void;
   onOpenConjugationTrainer?: () => void;
+  onOpenTypingMaster?: () => void;
   onOpenMistakeBank?: () => void;
+  dueSrsCount?: number;
+  onOpenSrsReview?: () => void;
 }
 
 export const PracticeHubOverview: React.FC<PracticeHubOverviewProps> = ({
@@ -66,7 +72,10 @@ export const PracticeHubOverview: React.FC<PracticeHubOverviewProps> = ({
   counts,
   onStartPractice,
   onOpenConjugationTrainer,
-  onOpenMistakeBank
+  onOpenTypingMaster,
+  onOpenMistakeBank,
+  dueSrsCount = 0,
+  onOpenSrsReview,
 }) => {
   const [searchQuery, setSearchQuery] = useState('');
   const [statusFilter, setStatusFilter] = useState<'all' | 'completed' | 'in_progress' | 'not_started'>('all');
@@ -157,37 +166,114 @@ export const PracticeHubOverview: React.FC<PracticeHubOverviewProps> = ({
 
   return (
     <div className="space-y-6">
-      {/* BANNER ĐẶC BIỆT: BỘ LUYỆN CHIA THỂ ĐỘNG TỪ (CONJUGATION TRAINER) */}
-      {onOpenConjugationTrainer && (
-        <div className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-blue-700 via-indigo-700 to-slate-900 text-white p-5 sm:p-6 shadow-lg shadow-indigo-950/20 border border-indigo-500/30 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-          <div className="flex items-center space-x-3.5 z-10">
-            <div className="w-12 h-12 rounded-2xl bg-amber-500/20 border border-amber-400/30 flex items-center justify-center text-amber-400 font-bold text-2xl shadow-inner shrink-0">
-              ⚡
-            </div>
-            <div>
-              <div className="flex items-center space-x-2">
-                <h2 className="text-base sm:text-lg font-black text-white">
-                  Bộ Luyện Chia Thể Động Từ & Tính Từ (Conjugation Trainer)
-                </h2>
-                <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-400/30">
-                  MỚI
-                </span>
+      {/* KHU VỰC CÁC ĐẤU TRƯỜNG THỰC CHIẾN ĐẶC BIỆT */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        {/* THẺ 1: ÔN TẬP NGẮT QUÃNG SRS (SM-2 ANKI ALGORITHM) */}
+        {onOpenSrsReview && (
+          <div className="relative overflow-hidden rounded-2xl bg-stone-900 dark:bg-stone-900 text-stone-100 p-5 shadow-2xs border border-stone-800 flex flex-col justify-between gap-4">
+            <div className="flex items-start space-x-3.5 z-10">
+              <div className="w-10 h-10 rounded-xl bg-indigo-500/20 border border-indigo-400/30 flex items-center justify-center text-indigo-400 font-bold shrink-0">
+                <Clock className="w-5 h-5" />
               </div>
-              <p className="text-xs text-slate-300 mt-0.5">
-                Thực chiến phản xạ chia thể て, ない, た, khả năng, bị động, sai khiến, điều kiện (ば) với thử thách 60 giây!
-              </p>
+              <div>
+                <div className="flex items-center space-x-2">
+                  <h2 className="text-sm sm:text-base font-bold text-stone-100">
+                    Ôn Tập Ngắt Quãng (SRS)
+                  </h2>
+                  {dueSrsCount > 0 ? (
+                    <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-rose-500 text-white">
+                      {dueSrsCount} cần ôn
+                    </span>
+                  ) : (
+                    <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">
+                      Đã xong ✓
+                    </span>
+                  )}
+                </div>
+                <p className="text-xs text-stone-400 mt-1 line-clamp-2">
+                  Chu kỳ lặp lại SM-2 giúp khắc sâu từ vựng & kanji vào trí nhớ vĩnh viễn.
+                </p>
+              </div>
             </div>
-          </div>
 
-          <button
-            onClick={onOpenConjugationTrainer}
-            className="shrink-0 px-5 py-2.5 rounded-2xl bg-white text-slate-900 hover:bg-slate-100 font-black text-xs shadow-md transition transform active:scale-95 flex items-center justify-center space-x-2 z-10"
-          >
-            <span>Vào đấu trường chia thể</span>
-            <ArrowRight className="w-4 h-4 text-blue-600" />
-          </button>
-        </div>
-      )}
+            <button
+              onClick={onOpenSrsReview}
+              className={`w-full sm:w-auto self-end px-4 py-2 rounded-xl font-bold text-xs shadow-xs transition active:scale-95 flex items-center justify-center space-x-1.5 z-10 ${
+                dueSrsCount > 0 
+                  ? 'bg-indigo-600 hover:bg-indigo-500 text-white' 
+                  : 'bg-stone-800 hover:bg-stone-700 text-stone-300'
+              }`}
+            >
+              <span>{dueSrsCount > 0 ? `Ôn ngay ${dueSrsCount} mục` : 'Xem hàng đợi SRS'}</span>
+              <ArrowRight className="w-3.5 h-3.5" />
+            </button>
+          </div>
+        )}
+
+        {/* THẺ 2: BỘ LUYỆN CHIA THỂ ĐỘNG TỪ */}
+        {onOpenConjugationTrainer && (
+          <div className="relative overflow-hidden rounded-2xl bg-white dark:bg-stone-900 border border-stone-200/80 dark:border-stone-800 p-5 shadow-2xs flex flex-col justify-between gap-4">
+            <div className="flex items-start space-x-3.5 z-10">
+              <div className="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-400/20 flex items-center justify-center text-amber-500 font-bold shrink-0">
+                ⚡
+              </div>
+              <div>
+                <div className="flex items-center space-x-2">
+                  <h2 className="text-sm sm:text-base font-bold text-stone-900 dark:text-stone-100">
+                    Đấu Trường Chia Thể
+                  </h2>
+                  <span className="text-[10px] font-bold px-1.5 py-0.5 rounded-full bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/20">
+                    Phản xạ 60s
+                  </span>
+                </div>
+                <p className="text-xs text-stone-500 dark:text-stone-400 mt-1 line-clamp-2">
+                  Luyện phản xạ chia thể て, ない, た, khả năng, bị động, sai khiến, thể điều kiện (ば).
+                </p>
+              </div>
+            </div>
+
+            <button
+              onClick={onOpenConjugationTrainer}
+              className="w-full sm:w-auto self-end px-4 py-2 rounded-xl bg-stone-100 hover:bg-stone-200 dark:bg-stone-800 dark:hover:bg-stone-700 text-stone-800 dark:text-stone-200 font-bold text-xs transition active:scale-95 flex items-center justify-center space-x-1.5 z-10"
+            >
+              <span>Vào luyện chia thể</span>
+              <ArrowRight className="w-3.5 h-3.5 text-indigo-600 dark:text-indigo-400" />
+            </button>
+          </div>
+        )}
+
+        {/* THẺ 3: ĐẤU TRƯỜNG LUYỆN GÕ TIẾNG NHẬT */}
+        {onOpenTypingMaster && (
+          <div className="relative overflow-hidden rounded-2xl bg-white dark:bg-stone-900 border border-stone-200/80 dark:border-stone-800 p-5 shadow-2xs flex flex-col justify-between gap-4">
+            <div className="flex items-start space-x-3.5 z-10">
+              <div className="w-10 h-10 rounded-xl bg-rose-500/10 border border-rose-400/20 flex items-center justify-center text-rose-500 font-bold shrink-0">
+                <Keyboard className="w-5 h-5 text-rose-500" />
+              </div>
+              <div>
+                <div className="flex items-center space-x-2">
+                  <h2 className="text-sm sm:text-base font-bold text-stone-900 dark:text-stone-100">
+                    Luyện Gõ Phím Tiếng Nhật
+                  </h2>
+                  <span className="text-[10px] font-bold px-1.5 py-0.5 rounded-full bg-rose-500/10 text-rose-600 dark:text-rose-400 border border-rose-500/20">
+                    Tốc độ CPM
+                  </span>
+                </div>
+                <p className="text-xs text-stone-500 dark:text-stone-400 mt-1 line-clamp-2">
+                  Gõ Romaji sang Kana tức thì, tự động giải mã lỗi gõ Telex, đo tốc độ CPM và WPM.
+                </p>
+              </div>
+            </div>
+
+            <button
+              onClick={onOpenTypingMaster}
+              className="w-full sm:w-auto self-end px-4 py-2 rounded-xl bg-stone-100 hover:bg-stone-200 dark:bg-stone-800 dark:hover:bg-stone-700 text-stone-800 dark:text-stone-200 font-bold text-xs transition active:scale-95 flex items-center justify-center space-x-1.5 z-10"
+            >
+              <span>Vào luyện gõ phím</span>
+              <Zap className="w-3.5 h-3.5 text-rose-500" />
+            </button>
+          </div>
+        )}
+      </div>
 
       {/* 1. THANH CHỌN GIÁO TRÌNH */}
       <div className="space-y-3">
@@ -203,25 +289,25 @@ export const PracticeHubOverview: React.FC<PracticeHubOverviewProps> = ({
               <button
                 key={c.key}
                 onClick={() => onSelectCourse(c.key)}
-                className={`p-3.5 rounded-2xl text-left transition-all border relative overflow-hidden group ${
+                className={`p-3.5 rounded-xl text-left transition-all border relative overflow-hidden group ${
                   isSelected
-                    ? 'bg-gradient-to-r from-blue-600 to-indigo-600 text-white border-blue-500 shadow-md shadow-blue-500/20'
-                    : 'bg-white dark:bg-[#111c30] border-slate-200/80 dark:border-slate-800 text-slate-700 dark:text-slate-200 hover:border-blue-400 hover:shadow-xs'
+                    ? 'bg-stone-900 dark:bg-stone-100 text-stone-100 dark:text-stone-900 border-stone-900 dark:border-stone-100 shadow-2xs'
+                    : 'bg-white dark:bg-stone-900 border-stone-200/80 dark:border-stone-800 text-stone-700 dark:text-stone-300 hover:border-stone-400 dark:hover:border-stone-600'
                 }`}
               >
                 <div className="flex items-center justify-between mb-1.5">
-                  <span className={`text-[10px] font-black px-2 py-0.5 rounded-md uppercase tracking-wider ${
+                  <span className={`text-[10px] font-bold px-1.5 py-0.5 rounded uppercase tracking-wider ${
                     isSelected 
-                      ? 'bg-white/20 text-white' 
-                      : 'bg-blue-50 dark:bg-slate-800 text-blue-600 dark:text-sky-400 border border-blue-100 dark:border-slate-700'
+                      ? 'bg-white/20 text-stone-100 dark:bg-stone-800 dark:text-stone-100' 
+                      : 'bg-stone-100 dark:bg-stone-800 text-stone-600 dark:text-stone-400 border border-stone-200/60 dark:border-stone-700/60'
                   }`}>
                     {c.badge}
                   </span>
-                  <span className={`text-[11px] font-mono ${isSelected ? 'text-blue-100' : 'text-slate-400'}`}>
+                  <span className={`text-[11px] font-mono ${isSelected ? 'text-stone-300 dark:text-stone-600' : 'text-stone-400'}`}>
                     {c.count} bài
                   </span>
                 </div>
-                <h4 className="text-xs font-black line-clamp-2 leading-snug">
+                <h4 className="text-xs font-bold line-clamp-2 leading-snug">
                   {c.name}
                 </h4>
               </button>
@@ -344,21 +430,21 @@ export const PracticeHubOverview: React.FC<PracticeHubOverviewProps> = ({
       )}
 
       {/* 3. BANNER ĐIỀU KHIỂN & HÀNH ĐỘNG BẮT ĐẦU */}
-      <div className="bg-gradient-to-br from-slate-900 via-[#0f172a] to-[#1e1b4b] border border-slate-800 text-white rounded-3xl p-5 sm:p-6 shadow-xl space-y-4">
+      <div className="bg-stone-900 dark:bg-stone-900 border border-stone-800 text-stone-100 rounded-2xl p-5 sm:p-6 shadow-2xs space-y-4">
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
           <div>
             <div className="flex items-center space-x-2 mb-1">
-              <span className="px-2.5 py-0.5 rounded-lg text-xs font-bold uppercase tracking-wider bg-blue-500/20 text-sky-300 border border-blue-500/30">
+              <span className="px-2 py-0.5 rounded-md text-[10px] font-bold uppercase tracking-wider bg-stone-800 text-stone-300 border border-stone-700">
                 PHẠM VI ĐANG CHỌN
               </span>
-              <span className="text-xs text-slate-300 font-mono">
+              <span className="text-xs text-stone-400 font-mono">
                 {isMultiMode 
                   ? `Đã chọn ${selectedLessons.length} bài học` 
                   : `Bài ${selectedLessonNum}: ${getLessonTopic(currentCourse, selectedLessonNum)}`}
               </span>
             </div>
-            <h3 className="text-lg sm:text-xl font-black">
-              Sẵn sàng luyện <span className="text-sky-400 font-mono">{readyWordsCount}</span> từ vựng ({wordFilter === 'all' ? 'Tất cả' : wordFilter === 'unmastered' ? 'Chưa thuộc' : wordFilter === 'favorite' ? 'Yêu thích' : 'Hay sai'})
+            <h3 className="text-lg sm:text-xl font-bold text-stone-100 font-jp">
+              Sẵn sàng luyện <span className="text-indigo-400 font-mono">{readyWordsCount}</span> từ vựng ({wordFilter === 'all' ? 'Tất cả' : wordFilter === 'unmastered' ? 'Chưa thuộc' : wordFilter === 'favorite' ? 'Yêu thích' : 'Hay sai'})
             </h3>
           </div>
 
@@ -366,23 +452,23 @@ export const PracticeHubOverview: React.FC<PracticeHubOverviewProps> = ({
           <div className="flex items-center space-x-3">
             <button
               onClick={() => onToggleMultiMode(!isMultiMode)}
-              className={`px-4 py-2.5 rounded-2xl text-xs font-bold transition flex items-center space-x-2 border ${
+              className={`px-4 py-2.5 rounded-xl text-xs font-bold transition flex items-center space-x-2 border ${
                 isMultiMode 
-                  ? 'bg-blue-500/20 border-blue-500/40 text-sky-300' 
-                  : 'bg-white/10 hover:bg-white/15 border-white/10 text-slate-200'
+                  ? 'bg-indigo-500/20 border-indigo-500/40 text-indigo-300' 
+                  : 'bg-stone-800 hover:bg-stone-700 border-stone-700 text-stone-300'
               }`}
             >
-              {isMultiMode ? <CheckSquare className="w-4 h-4 text-sky-400" /> : <Square className="w-4 h-4" />}
+              {isMultiMode ? <CheckSquare className="w-4 h-4 text-indigo-400" /> : <Square className="w-4 h-4" />}
               <span>{isMultiMode ? 'Đang chọn nhiều bài' : 'Chọn nhiều bài để ôn'}</span>
             </button>
 
             <button
               onClick={() => onStartPractice()}
               disabled={readyWordsCount === 0}
-              className={`px-6 py-3 rounded-2xl font-black text-sm flex items-center space-x-2 shadow-lg transition active:scale-95 whitespace-nowrap ${
+              className={`px-6 py-2.5 rounded-xl font-bold text-sm flex items-center space-x-2 shadow-sm transition active:scale-95 whitespace-nowrap ${
                 readyWordsCount > 0
-                  ? 'bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-700 hover:from-blue-500 hover:to-indigo-500 text-white shadow-blue-500/30'
-                  : 'bg-slate-800 text-slate-500 cursor-not-allowed'
+                  ? 'bg-indigo-600 hover:bg-indigo-500 text-white shadow-indigo-600/25'
+                  : 'bg-stone-800 text-stone-500 cursor-not-allowed'
               }`}
             >
               <Play className="w-4 h-4 fill-white" />

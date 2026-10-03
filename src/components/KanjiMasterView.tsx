@@ -1,16 +1,22 @@
 import React, { useState } from 'react';
 import { KanjiItem, WordItem } from '../types';
-import { Search, Volume2, Star, Sparkles, X, Map, LayoutGrid, PenTool, Layers, Brain, Gamepad2 } from 'lucide-react';
+import { Search, Volume2, Star, Sparkles, X, Map, LayoutGrid, PenTool, Layers, Brain, Gamepad2, Compass, BookOpen, Scale, Puzzle } from 'lucide-react';
 import { speakJapanese } from '../lib/audio';
 import { KanjiRoadmapView } from './KanjiRoadmapView';
 import { KanjiStrokeModal } from './KanjiStrokeModal';
 import { KanjiFlashcardView } from './KanjiFlashcardView';
 import { KanjiLearnView } from './KanjiLearnView';
 import { KanjiMatchGameView } from './KanjiMatchGameView';
+import { RadicalsMasterView } from './RadicalsMasterView';
+import { KanjiJukugoView } from './KanjiJukugoView';
+import { KanjiContextSentenceView } from './KanjiContextSentenceView';
+import { KanjiLookAlikeView } from './KanjiLookAlikeView';
+import { getKanjiMnemonic } from '../data/kanjiMnemonics';
 
 interface KanjiMasterViewProps {
   kanjiList: KanjiItem[];
   allVocabWords?: WordItem[];
+  allKanjiAcrossLevels?: KanjiItem[];
   currentLevel: string;
   onSelectLevel: (lvl: string) => void;
   masteredKanji: string[];
@@ -20,11 +26,12 @@ interface KanjiMasterViewProps {
   streak?: number;
 }
 
-export type KanjiStudySubTab = 'roadmap' | 'flashcard' | 'learn' | 'match' | 'explorer';
+export type KanjiStudySubTab = 'roadmap' | 'jukugo' | 'context' | 'lookalike' | 'flashcard' | 'learn' | 'match' | 'radicals' | 'explorer';
 
 export const KanjiMasterView: React.FC<KanjiMasterViewProps> = ({
   kanjiList,
   allVocabWords = [],
+  allKanjiAcrossLevels = [],
   currentLevel,
   onSelectLevel,
   masteredKanji,
@@ -114,26 +121,83 @@ export const KanjiMasterView: React.FC<KanjiMasterViewProps> = ({
         )}
       </div>
 
-      {/* Chuyển đổi chế độ học tập đa dạng (Tương tự Từ vựng Quizlet Plus) */}
-      <div className="bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 p-2 rounded-2xl shadow-sm overflow-x-auto">
-        <div className="flex items-center space-x-1.5 min-w-max">
+      {/* Chuyển đổi chế độ học tập đa dạng phong cách Zen Modern - Không cuộn ngang */}
+      <div className="bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 p-3 sm:p-4 rounded-3xl shadow-sm space-y-2.5">
+        {/* Nhóm 1: Các phương pháp học & rèn luyện chuyên sâu */}
+        <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
+          <span className="text-[11px] font-black uppercase tracking-wider text-slate-400 dark:text-zinc-500 mr-1 shrink-0">
+            Học & Rèn luyện:
+          </span>
+
           <button
             onClick={() => setActiveSubTab('roadmap')}
-            className={`px-3.5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition flex items-center space-x-2 ${
+            className={`px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold transition flex items-center space-x-2 ${
               activeSubTab === 'roadmap'
-                ? 'bg-blue-600 text-white shadow-md shadow-blue-500/20'
+                ? 'bg-blue-600 text-white shadow-sm'
                 : 'text-slate-600 dark:text-zinc-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-zinc-800'
             }`}
           >
             <Map className="w-4 h-4" />
-            <span>Lộ trình (10 chữ/ngày)</span>
+            <span>Lộ trình học</span>
           </button>
 
           <button
+            onClick={() => setActiveSubTab('jukugo')}
+            className={`px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold transition flex items-center space-x-2 ${
+              activeSubTab === 'jukugo'
+                ? 'bg-indigo-600 text-white shadow-sm'
+                : 'text-slate-600 dark:text-zinc-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-zinc-800'
+            }`}
+          >
+            <Puzzle className="w-4 h-4 text-indigo-400" />
+            <span>Ghép từ Jukugo</span>
+            <span className="px-1.5 py-0.2 rounded-full bg-indigo-500/20 text-indigo-500 dark:text-indigo-300 text-[9px] font-black uppercase">
+              Mới
+            </span>
+          </button>
+
+          <button
+            onClick={() => setActiveSubTab('context')}
+            className={`px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold transition flex items-center space-x-2 ${
+              activeSubTab === 'context'
+                ? 'bg-emerald-600 text-white shadow-sm'
+                : 'text-slate-600 dark:text-zinc-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-zinc-800'
+            }`}
+          >
+            <BookOpen className="w-4 h-4 text-emerald-400" />
+            <span>Đọc trong câu</span>
+            <span className="px-1.5 py-0.2 rounded-full bg-emerald-500/20 text-emerald-500 dark:text-emerald-300 text-[9px] font-black uppercase">
+              Mới
+            </span>
+          </button>
+
+          <button
+            onClick={() => setActiveSubTab('lookalike')}
+            className={`px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold transition flex items-center space-x-2 ${
+              activeSubTab === 'lookalike'
+                ? 'bg-amber-600 text-white shadow-sm'
+                : 'text-slate-600 dark:text-zinc-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-zinc-800'
+            }`}
+          >
+            <Scale className="w-4 h-4 text-amber-400" />
+            <span>Chữ dễ lẫn</span>
+            <span className="px-1.5 py-0.2 rounded-full bg-amber-500/20 text-amber-500 dark:text-amber-300 text-[9px] font-black uppercase">
+              Mới
+            </span>
+          </button>
+        </div>
+
+        {/* Nhóm 2: Ôn tập phản xạ & Tra cứu */}
+        <div className="border-t border-slate-100 dark:border-zinc-800/80 pt-2.5 flex flex-wrap items-center gap-1.5 sm:gap-2">
+          <span className="text-[11px] font-black uppercase tracking-wider text-slate-400 dark:text-zinc-500 mr-1 shrink-0">
+            Ôn luyện & Tra cứu:
+          </span>
+
+          <button
             onClick={() => setActiveSubTab('flashcard')}
-            className={`px-3.5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition flex items-center space-x-2 ${
+            className={`px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold transition flex items-center space-x-2 ${
               activeSubTab === 'flashcard'
-                ? 'bg-rose-500 text-white shadow-md shadow-rose-500/20'
+                ? 'bg-rose-500 text-white shadow-sm'
                 : 'text-slate-600 dark:text-zinc-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-zinc-800'
             }`}
           >
@@ -143,21 +207,21 @@ export const KanjiMasterView: React.FC<KanjiMasterViewProps> = ({
 
           <button
             onClick={() => setActiveSubTab('learn')}
-            className={`px-3.5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition flex items-center space-x-2 ${
+            className={`px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold transition flex items-center space-x-2 ${
               activeSubTab === 'learn'
-                ? 'bg-amber-500 text-white shadow-md shadow-amber-500/20'
+                ? 'bg-amber-500 text-white shadow-sm'
                 : 'text-slate-600 dark:text-zinc-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-zinc-800'
             }`}
           >
             <Brain className="w-4 h-4" />
-            <span>Học thông minh (Learn)</span>
+            <span>Học thông minh</span>
           </button>
 
           <button
             onClick={() => setActiveSubTab('match')}
-            className={`px-3.5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition flex items-center space-x-2 ${
+            className={`px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold transition flex items-center space-x-2 ${
               activeSubTab === 'match'
-                ? 'bg-indigo-600 text-white shadow-md shadow-indigo-500/20'
+                ? 'bg-purple-600 text-white shadow-sm'
                 : 'text-slate-600 dark:text-zinc-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-zinc-800'
             }`}
           >
@@ -166,10 +230,22 @@ export const KanjiMasterView: React.FC<KanjiMasterViewProps> = ({
           </button>
 
           <button
+            onClick={() => setActiveSubTab('radicals')}
+            className={`px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold transition flex items-center space-x-2 ${
+              activeSubTab === 'radicals'
+                ? 'bg-sky-600 text-white shadow-sm'
+                : 'text-slate-600 dark:text-zinc-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-zinc-800'
+            }`}
+          >
+            <Compass className="w-4 h-4" />
+            <span>214 Bộ Thủ</span>
+          </button>
+
+          <button
             onClick={() => setActiveSubTab('explorer')}
-            className={`px-3.5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition flex items-center space-x-2 ${
+            className={`px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold transition flex items-center space-x-2 ${
               activeSubTab === 'explorer'
-                ? 'bg-teal-600 text-white shadow-md shadow-teal-500/20'
+                ? 'bg-teal-600 text-white shadow-sm'
                 : 'text-slate-600 dark:text-zinc-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-zinc-800'
             }`}
           >
@@ -191,6 +267,30 @@ export const KanjiMasterView: React.FC<KanjiMasterViewProps> = ({
           onToggleMaster={onToggleMaster}
           onToggleFavorite={onToggleFavorite}
           streak={streak}
+        />
+      )}
+
+      {activeSubTab === 'jukugo' && (
+        <KanjiJukugoView
+          kanjiList={kanjiList}
+          allVocabWords={allVocabWords}
+          currentLevel={currentLevel}
+          masteredKanji={masteredKanji}
+          onToggleMaster={onToggleMaster}
+        />
+      )}
+
+      {activeSubTab === 'context' && (
+        <KanjiContextSentenceView
+          kanjiList={kanjiList}
+          allVocabWords={allVocabWords}
+          currentLevel={currentLevel}
+        />
+      )}
+
+      {activeSubTab === 'lookalike' && (
+        <KanjiLookAlikeView
+          currentLevel={currentLevel}
         />
       )}
 
@@ -220,6 +320,15 @@ export const KanjiMasterView: React.FC<KanjiMasterViewProps> = ({
           favoriteKanji={favoriteKanji}
           currentLevel={currentLevel}
           onToggleFavorite={onToggleFavorite}
+        />
+      )}
+
+      {activeSubTab === 'radicals' && (
+        <RadicalsMasterView
+          allKanjiList={allKanjiAcrossLevels && allKanjiAcrossLevels.length > 0 ? allKanjiAcrossLevels : kanjiList}
+          onSelectKanji={(k) => setStrokeKanji(k)}
+          masteredKanji={masteredKanji}
+          favoriteKanji={favoriteKanji}
         />
       )}
 
@@ -425,6 +534,32 @@ export const KanjiMasterView: React.FC<KanjiMasterViewProps> = ({
               </ul>
             </div>
 
+            {/* Chiết tự & Mẹo nhớ Mnemonic hình ảnh (MỚI) */}
+            {(() => {
+              const mnemonic = getKanjiMnemonic(selectedKanji.kanji, selectedKanji.hanviet, selectedKanji.radical);
+              return (
+                <div className="p-4 rounded-2xl bg-amber-500/[0.08] dark:bg-amber-950/40 border border-amber-300/80 dark:border-amber-800/60 space-y-2.5">
+                  <div className="flex items-center space-x-2 text-amber-700 dark:text-amber-300 font-bold text-xs uppercase tracking-wider">
+                    <Sparkles className="w-3.5 h-3.5 text-amber-500" />
+                    <span>Chiết tự & Câu chuyện gợi nhớ (Mnemonic)</span>
+                  </div>
+                  {mnemonic.parts && mnemonic.parts.length > 0 && (
+                    <div className="flex flex-wrap gap-1.5">
+                      {mnemonic.parts.map((p, pIdx) => (
+                        <span key={pIdx} className="px-2.5 py-1 rounded-xl bg-white dark:bg-zinc-800 text-xs font-medium border border-amber-200 dark:border-amber-900/40 text-slate-700 dark:text-zinc-200 shadow-2xs">
+                          <strong className="font-jp text-amber-600 dark:text-amber-400 mr-1">{p.radical}</strong>
+                          <span>({p.meaning})</span>
+                        </span>
+                      ))}
+                    </div>
+                  )}
+                  <p className="text-xs text-slate-700 dark:text-zinc-200 leading-relaxed font-medium">
+                    💡 {mnemonic.story}
+                  </p>
+                </div>
+              );
+            })()}
+
             {/* Footer Modal: Audio + Stroke Modal + Master Button */}
             <div className="pt-4 border-t border-slate-100 dark:border-zinc-800 flex flex-wrap items-center justify-between gap-2">
               <div className="flex items-center space-x-2">
@@ -474,6 +609,9 @@ export const KanjiMasterView: React.FC<KanjiMasterViewProps> = ({
           hanviet={strokeKanji.hanviet}
           meaning={strokeKanji.meanings_vi.join(', ')}
           strokes={strokeKanji.strokes}
+          radical={strokeKanji.radical}
+          onyomi={strokeKanji.onyomi}
+          kunyomi={strokeKanji.kunyomi}
         />
       )}
     </div>

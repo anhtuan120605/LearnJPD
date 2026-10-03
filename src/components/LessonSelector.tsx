@@ -146,14 +146,14 @@ export const LessonSelector: React.FC<LessonSelectorProps> = ({
   // ==========================================
   if (mode === 'sidebar') {
     return (
-      <div className="bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 rounded-3xl p-4 shadow-sm space-y-4">
+      <div className="bg-white dark:bg-stone-900 border border-stone-200/80 dark:border-stone-800 rounded-2xl p-4 sm:p-5 shadow-2xs space-y-4">
         {/* Header Sidebar */}
-        <div className="flex items-center justify-between pb-3 border-b border-slate-100 dark:border-zinc-800">
+        <div className="flex items-center justify-between pb-3 border-b border-stone-100 dark:border-stone-800">
           <div>
-            <span className="text-[10px] font-black uppercase tracking-wider text-blue-600 dark:text-sky-400">
+            <span className="text-xs font-bold uppercase tracking-wider text-indigo-600 dark:text-indigo-400">
               {courseDatasets[currentCourse]?.badge || 'MINNA'}
             </span>
-            <h3 className="text-sm font-black text-slate-900 dark:text-white">
+            <h3 className="text-base font-bold text-stone-900 dark:text-stone-100">
               Danh sách bài học
             </h3>
           </div>
@@ -161,7 +161,7 @@ export const LessonSelector: React.FC<LessonSelectorProps> = ({
           {onBackToDashboard && (
             <button
               onClick={onBackToDashboard}
-              className="px-2.5 py-1 rounded-xl bg-slate-100 dark:bg-zinc-800 hover:bg-slate-200 text-slate-700 dark:text-zinc-200 text-xs font-bold transition flex items-center space-x-1"
+              className="px-3 py-1.5 rounded-xl bg-stone-100 dark:bg-stone-800 hover:bg-stone-200 text-stone-700 dark:text-stone-200 text-xs font-bold transition flex items-center space-x-1.5"
               title="Về Dashboard xem tất cả bài"
             >
               <LayoutGrid className="w-3.5 h-3.5" />
@@ -172,29 +172,29 @@ export const LessonSelector: React.FC<LessonSelectorProps> = ({
 
         {/* Nút bật chế độ chọn nhiều bài */}
         {onToggleMultiMode && (
-          <div className="flex items-center justify-between text-xs pt-1">
+          <div className="flex items-center justify-between text-xs pt-0.5">
             <button
               onClick={() => onToggleMultiMode(!isMultiMode)}
-              className={`w-full py-1.5 rounded-xl font-bold transition flex items-center justify-center space-x-1.5 ${
+              className={`w-full py-2 rounded-xl text-xs font-bold transition flex items-center justify-center space-x-2 ${
                 isMultiMode
-                  ? 'bg-blue-600 text-white shadow-sm'
-                  : 'border border-slate-200 dark:border-zinc-700 text-slate-600 dark:text-zinc-300 hover:bg-slate-50 dark:hover:bg-zinc-800'
+                  ? 'bg-indigo-600 text-white shadow-xs'
+                  : 'border border-stone-200 dark:border-stone-700 text-stone-700 dark:text-stone-300 hover:bg-stone-50 dark:hover:bg-stone-800'
               }`}
             >
-              <CheckSquare className="w-3.5 h-3.5" />
+              <CheckSquare className="w-4 h-4" />
               <span>{isMultiMode ? `Đã chọn (${selectedLessons.length} bài)` : 'Chọn nhiều bài để ôn'}</span>
             </button>
           </div>
         )}
 
-        {/* Lưới bài học 2 cột nhỏ gọn đúng chuẩn Split-View */}
-        <div className="grid grid-cols-2 gap-2 max-h-[calc(100vh-280px)] overflow-y-auto pr-1 scrollbar-thin">
+        {/* Lưới bài học 2 cột thoáng đãng */}
+        <div className="grid grid-cols-2 gap-2.5 max-h-[calc(100vh-280px)] overflow-y-auto pr-1 scrollbar-thin">
           {lessonStats.map(s => {
             const isSelected = isMultiMode
               ? selectedLessons.includes(s.lesson)
               : selectedLessonNum === s.lesson;
 
-            let dotColor = 'bg-slate-300 dark:bg-zinc-600';
+            let dotColor = 'bg-stone-300 dark:bg-stone-600';
             if (s.status === 'completed') dotColor = 'bg-emerald-500 shadow-xs shadow-emerald-500/50';
             else if (s.status === 'in_progress') dotColor = 'bg-amber-500 shadow-xs shadow-amber-500/50';
 
@@ -208,25 +208,25 @@ export const LessonSelector: React.FC<LessonSelectorProps> = ({
                     onSelectLesson(s.lesson);
                   }
                 }}
-                className={`p-2.5 rounded-2xl text-left border transition relative flex flex-col justify-between group active:scale-98 ${
+                className={`p-3 rounded-xl text-left border transition relative flex flex-col justify-between group active:scale-98 ${
                   isSelected
-                    ? 'border-blue-500 bg-blue-50/50 dark:bg-blue-950/30 text-blue-600 dark:text-sky-400 font-bold ring-2 ring-blue-500/20'
-                    : 'border-slate-200 dark:border-zinc-800 bg-slate-50/50 dark:bg-zinc-800/40 text-slate-700 dark:text-zinc-300 hover:border-slate-400'
+                    ? 'border-indigo-500 bg-indigo-50/50 dark:bg-indigo-950/30 text-indigo-600 dark:text-indigo-400 font-bold ring-2 ring-indigo-500/20'
+                    : 'border-stone-200/80 dark:border-stone-800 bg-stone-50/50 dark:bg-stone-800/40 text-stone-700 dark:text-stone-300 hover:border-stone-400'
                 }`}
                 title={`Bài ${s.lesson}: ${s.topic} (${s.percent}% đã thuộc)`}
               >
                 <div className="flex items-center justify-between w-full">
-                  <span className="text-xs font-black">
+                  <span className="text-sm font-bold">
                     Bài {s.lesson}
                   </span>
-                  <span className={`w-2 h-2 rounded-full ${dotColor}`} />
+                  <span className={`w-2.5 h-2.5 rounded-full ${dotColor}`} />
                 </div>
 
-                <p className="text-[10px] text-slate-500 dark:text-zinc-400 line-clamp-1 mt-1 font-medium leading-tight">
+                <p className="text-xs text-stone-500 dark:text-stone-400 line-clamp-1 mt-1 font-medium leading-tight">
                   {s.topic}
                 </p>
 
-                <div className="flex items-center justify-between mt-2 pt-1 border-t border-slate-100 dark:border-zinc-800/80 text-[9px] font-mono text-slate-400">
+                <div className="flex items-center justify-between mt-2 pt-1 border-t border-stone-200/60 dark:border-stone-800/80 text-[10px] font-mono text-stone-400">
                   <span>{s.masteredCount}/{s.totalWords}</span>
                   <span className={s.status === 'completed' ? 'text-emerald-500 font-bold' : ''}>{s.percent}%</span>
                 </div>
@@ -267,18 +267,18 @@ export const LessonSelector: React.FC<LessonSelectorProps> = ({
               >
                 <div>
                   <div className="flex items-center justify-between mb-1.5">
-                    <span className={`text-[10px] font-black uppercase px-2 py-0.5 rounded-full ${
+                    <span className={`text-[10px] font-bold uppercase px-2 py-0.5 rounded-md ${
                       isSelected 
-                        ? 'bg-white/20 text-white' 
-                        : 'bg-blue-50 dark:bg-slate-800 text-blue-600 dark:text-sky-400 border border-blue-100 dark:border-slate-700'
+                        ? 'bg-white/20 text-stone-100 dark:bg-stone-800 dark:text-stone-100' 
+                        : 'bg-stone-100 dark:bg-stone-800 text-stone-600 dark:text-stone-400 border border-stone-200/60 dark:border-stone-700/60'
                     }`}>
                       {c.badge}
                     </span>
-                    <span className={`text-[11px] font-mono ${isSelected ? 'text-blue-100' : 'text-slate-400'}`}>
+                    <span className={`text-[11px] font-mono ${isSelected ? 'text-stone-300 dark:text-stone-600' : 'text-stone-400'}`}>
                       {c.count} bài
                     </span>
                   </div>
-                  <h4 className="text-sm font-extrabold leading-snug">
+                  <h4 className="text-xs font-bold leading-snug">
                     {c.name}
                   </h4>
                 </div>
@@ -288,22 +288,22 @@ export const LessonSelector: React.FC<LessonSelectorProps> = ({
         </div>
       </div>
 
-      {/* 2. Banner Tiến Độ Tổng Quan & Thanh Gamification Phủ Xanh */}
-      <div className="bg-gradient-to-br from-slate-900 to-slate-800 dark:from-zinc-900 dark:to-zinc-950 text-white border border-slate-700 dark:border-zinc-800 rounded-3xl p-6 sm:p-7 shadow-lg space-y-4">
+      {/* 2. Banner Tiến Độ Tổng Quan Zen Modern */}
+      <div className="bg-stone-900 dark:bg-stone-900 text-stone-100 border border-stone-800 rounded-2xl p-6 shadow-2xs space-y-4">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
           <div>
             <div className="flex items-center space-x-2">
-              <span className="px-2.5 py-0.5 rounded-lg text-xs font-bold uppercase tracking-wider bg-blue-500/20 text-sky-300 border border-blue-500/30">
+              <span className="px-2 py-0.5 rounded-md text-[10px] font-bold uppercase tracking-wider bg-stone-800 text-stone-300 border border-stone-700">
                 Tiến độ giáo trình
               </span>
-              <span className="text-xs text-slate-400">
+              <span className="text-xs text-stone-400">
                 {courseDatasets[currentCourse]?.name}
               </span>
             </div>
-            <h2 className="text-2xl font-black mt-1">
+            <h2 className="text-xl sm:text-2xl font-bold mt-1 text-stone-100 font-jp">
               Đã thuộc <strong className="text-emerald-400">{overallStats.completedLessons}</strong> / {overallStats.totalLessons} bài học
             </h2>
-            <p className="text-xs text-slate-400 mt-0.5">
+            <p className="text-xs text-stone-400 mt-0.5">
               Tổng cộng {overallStats.totalMastered} / {overallStats.totalWords} từ vựng đã nhớ ({overallStats.overallPercent}%)
             </p>
           </div>
@@ -313,10 +313,10 @@ export const LessonSelector: React.FC<LessonSelectorProps> = ({
             {onToggleMultiMode && (
               <button
                 onClick={() => onToggleMultiMode(!isMultiMode)}
-                className={`px-4 py-2.5 rounded-2xl text-xs font-bold transition flex items-center space-x-2 ${
+                className={`px-4 py-2.5 rounded-xl text-xs font-bold transition flex items-center space-x-2 border ${
                   isMultiMode
-                    ? 'bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-md shadow-blue-500/30'
-                    : 'bg-white/10 hover:bg-white/20 text-white border border-white/10'
+                    ? 'bg-indigo-500/20 border-indigo-500/40 text-indigo-300'
+                    : 'bg-stone-800 hover:bg-stone-700 border-stone-700 text-stone-300'
                 }`}
               >
                 <CheckSquare className="w-4 h-4" />
@@ -332,7 +332,7 @@ export const LessonSelector: React.FC<LessonSelectorProps> = ({
                   onSelectLesson(selectedLessonNum);
                 }
               }}
-              className="px-5 py-2.5 rounded-2xl bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-xs flex items-center space-x-2 shadow-md shadow-emerald-500/25 transition active:scale-95"
+              className="px-5 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-xs flex items-center space-x-2 shadow-sm shadow-indigo-600/25 transition active:scale-95"
             >
               <span>Học tiếp Bài {selectedLessonNum}</span>
               <ArrowRight className="w-4 h-4" />
@@ -340,11 +340,11 @@ export const LessonSelector: React.FC<LessonSelectorProps> = ({
           </div>
         </div>
 
-        {/* Thanh Progress tổng thể rực rỡ */}
+        {/* Thanh Progress tổng thể tinh tế */}
         <div className="space-y-1.5">
-          <div className="w-full bg-slate-800 dark:bg-zinc-800 h-3 rounded-full overflow-hidden p-0.5 border border-slate-700 dark:border-zinc-700">
+          <div className="w-full bg-stone-800 h-2 rounded-full overflow-hidden">
             <div
-              className="bg-gradient-to-r from-emerald-500 via-teal-400 to-[#05b651] h-full rounded-full transition-all duration-500 shadow-sm"
+              className="bg-emerald-500 h-full rounded-full transition-all duration-500"
               style={{ width: `${overallStats.overallPercent}%` }}
             />
           </div>

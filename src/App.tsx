@@ -22,7 +22,9 @@ import { PracticeHubOverview } from './components/PracticeHubOverview';
 import { PracticeSessionHeader } from './components/PracticeSessionHeader';
 import { PersonalDashboardView } from './components/PersonalDashboardView';
 import { ConjugationTrainerView } from './components/ConjugationTrainerView';
+import { JapaneseTypingView } from './components/JapaneseTypingView';
 import { MistakeBankModal } from './components/MistakeBankModal';
+import { SrsReviewModal } from './components/SrsReviewModal';
 import { AdminWordEditModal } from './components/AdminWordEditModal';
 import { AdminDeletedWordsModal } from './components/AdminDeletedWordsModal';
 import { 
@@ -34,6 +36,11 @@ import {
   subscribeToCloudVocabOverrides
 } from './lib/vocabOverrides';
 import { checkIsAdmin } from './lib/admin';
+import { 
+  getDueSrsItems, 
+  calculateNextSrsItem, 
+  autoSeedSrsFromProgress 
+} from './lib/srs';
 
 import { 
   courseDatasets, 
@@ -49,7 +56,7 @@ import {
 } from './data';
 import { loadLocalProgress, saveLocalProgress, syncWithSupabase, fetchFromSupabase } from './lib/storage';
 import { supabase, isSupabaseConfigured } from './lib/supabase';
-import { UserProgress, CustomNotebookLesson, WordPracticeFilter, WordItem } from './types';
+import { UserProgress, CustomNotebookLesson, WordPracticeFilter, WordItem, SrsRating } from './types';
 import { 
   BookOpen, 
   ListFilter, 
@@ -111,8 +118,11 @@ export function App() {
   // Modal Kho từ hay sai (Mistake Bank)
   const [isMistakeBankOpen, setIsMistakeBankOpen] = useState<boolean>(false);
 
-  // Trạng thái hiển thị trong Phân hệ Luyện tập: 'overview' (Tổng thể) | 'session' (Phiên tập trung) | 'conjugation' (Đấu trường chia thể)
-  const [practiceStage, setPracticeStage] = useState<'overview' | 'session' | 'conjugation'>(initialNav.practiceStage);
+  // Modal Ôn tập ngắt quãng (SRS Review SM-2)
+  const [isSrsReviewOpen, setIsSrsReviewOpen] = useState<boolean>(false);
+
+  // Trạng thái hiển thị trong Phân hệ Luyện tập: 'overview' (Tổng thể) | 'session' (Phiên tập trung) | 'conjugation' (Đấu trường chia thể) | 'typing' (Đấu trường luyện gõ)
+  const [practiceStage, setPracticeStage] = useState<'overview' | 'session' | 'conjugation' | 'typing'>(initialNav.practiceStage);
 
   // Cấp độ Kanji đang chọn (N5 -> N1)
   const [selectedKanjiLevel, setSelectedKanjiLevel] = useState<string>(initialNav.kanjiLevel);
@@ -463,6 +473,7 @@ export function App() {
   const currentCourseData = courseDatasets[currentCourse] || courseDatasets.MINNA_1;
   const currentLessonData = currentCourseData.lessons.find((l) => l.lesson === selectedLessonNum) || currentCourseData.lessons[0] || { lesson: 1, title: 'Bài 1', level: currentCourse, words: [] };
   const currentKanjiList = kanjiDatasets[selectedKanjiLevel] || kanjiDatasets.N5;
+  const allKanjiAcrossLevels = React.useMemo(() => Object.values(kanjiDatasets).flat(), []);
 
   // Lấy dữ liệu ngữ pháp và bài đọc của bài hiện tại tùy theo cấp độ (N5, N4, N3, N2, N1)
   const currentGrammarLesson = React.useMemo(() => {
@@ -494,6 +505,57 @@ export function App() {
   const allVocabWords = React.useMemo(() => {
     return Object.values(courseDatasets).flatMap((c) => c.lessons.flatMap((l) => l.words));
   }, []);
+
+  // Tự động chuẩn bị hàng đợi SRS từ các từ đã thuộc / yêu thích / hay sai
+  useEffect(() => {
+    if (
+      progress.masteredWords.length > 0 ||
+      progress.favoriteWords.length > 0 ||
+      progress.mistakeWords.length > 0 ||
+      progress.masteredKanji.length > 0
+    ) {
+      const seeded = autoSeedSrsFromProgress(
+        progress.srsItems || {},
+        progress.masteredWords,
+        progress.favoriteWords,
+        progress.mistakeWords,
+        progress.masteredKanji
+      );
+      const prevKeys = Object.keys(progress.srsItems || {}).length;
+      const newKeys = Object.keys(seeded).length;
+      if (newKeys > prevKeys) {
+        updateProgress((prev) => ({
+          ...prev,
+          srsItems: seeded,
+        }));
+      }
+    }
+  }, [
+    progress.masteredWords,
+    progress.favoriteWords,
+    progress.mistakeWords,
+    progress.masteredKanji,
+  ]);
+
+  // Danh sách các mục đến hạn ôn tập SRS hôm nay
+  const dueSrsItems = React.useMemo(() => {
+    return getDueSrsItems(progress.srsItems || {}, allVocabWords, allKanjiAcrossLevels);
+  }, [progress.srsItems, allVocabWords, allKanjiAcrossLevels]);
+
+  // Đánh giá mức độ ghi nhớ trong phiên ôn tập SRS
+  const handleRateSrsItem = (id: string, type: 'word' | 'kanji', rating: SrsRating) => {
+    updateProgress((prev) => {
+      const currentItem = (prev.srsItems || {})[id];
+      const nextItem = calculateNextSrsItem(currentItem, id, type, rating);
+      return {
+        ...prev,
+        srsItems: {
+          ...(prev.srsItems || {}),
+          [id]: nextItem,
+        },
+      };
+    });
+  };
 
   // Khi đổi Cấp độ giáo trình thì tự chọn bài đầu tiên của tập đó và reset về tab Từ vựng
   const handleSelectCourse = (courseKey: string) => {
@@ -715,7 +777,7 @@ export function App() {
   }, [reviewWords, isLessonPracticeShuffled, lessonPracticeShuffleKey]);
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#f8fafc] dark:bg-[#0b1120] text-slate-800 dark:text-slate-100 transition-colors duration-300 relative selection:bg-blue-600 selection:text-white">
+    <div className="min-h-screen flex flex-col bg-[#faf9f5] dark:bg-[#0f1117] text-stone-800 dark:text-stone-100 transition-colors duration-300 relative selection:bg-indigo-600 selection:text-white">
       {/* Top Navbar */}
       <Navbar
         activeTab={activeTab}
@@ -733,13 +795,15 @@ export function App() {
         userEmail={currentUser?.email || null}
         mistakeCount={progress.mistakeWords.length}
         onOpenMistakeBank={() => setIsMistakeBankOpen(true)}
+        dueSrsCount={dueSrsItems.length}
+        onOpenSrsReview={() => setIsSrsReviewOpen(true)}
         hasAdminAccess={hasAdminAccess}
         isAdminEditMode={isAdminEditMode}
         onToggleAdminEditMode={() => setIsAdminEditMode((prev) => !prev)}
       />
 
       {/* Main Content Area */}
-      <main className="flex-1 max-w-7xl w-full mx-auto px-3 sm:px-6 py-4 sm:py-8 pb-24 md:pb-8 space-y-6">
+      <main className="flex-1 max-w-[1400px] w-full mx-auto px-4 sm:px-8 py-5 sm:py-8 pb-24 md:pb-8 space-y-6">
         {/* Banner thông báo chế độ chỉnh sửa Admin đang BẬT */}
         {hasAdminAccess && isAdminEditMode && (
           <div className="bg-amber-500/10 border border-amber-500/30 px-4 py-3 rounded-2xl flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 text-xs text-amber-800 dark:text-amber-300 shadow-xs animate-in fade-in slide-in-from-top-2 duration-200">
@@ -795,7 +859,7 @@ export function App() {
                         setTangoViewMode('dashboard');
                       }
                     }}
-                    className="inline-flex items-center space-x-2 px-4 py-2 rounded-2xl bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 text-xs font-bold text-slate-700 dark:text-zinc-200 hover:border-blue-400 hover:text-blue-600 dark:hover:text-sky-400 transition shadow-2xs group"
+                    className="inline-flex items-center space-x-2 px-4.5 py-2.5 rounded-xl bg-white dark:bg-stone-900 border border-stone-200/80 dark:border-stone-800 text-sm font-bold text-stone-700 dark:text-stone-200 hover:border-indigo-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition shadow-2xs group"
                   >
                     <ChevronLeft className="w-4 h-4 group-hover:-translate-x-0.5 transition-transform" />
                     <span>Quay lại Tổng quan bài học (Dashboard)</span>
@@ -804,14 +868,14 @@ export function App() {
                   <div className="flex items-center space-x-2">
                     <button
                       onClick={() => handleToggleLessonSelection(selectedLessonNum)}
-                      className={`px-3.5 py-2 rounded-2xl text-xs font-bold transition flex items-center space-x-1.5 ${
+                      className={`px-4.5 py-2.5 rounded-xl text-sm font-bold transition flex items-center space-x-2 ${
                         selectedLessons.includes(selectedLessonNum)
-                          ? 'bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-xs'
-                          : 'bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 text-slate-700 dark:text-zinc-200 hover:border-blue-400'
+                          ? 'bg-indigo-600 text-white shadow-xs'
+                          : 'bg-white dark:bg-stone-900 border border-stone-200/80 dark:border-stone-800 text-stone-700 dark:text-stone-200 hover:border-indigo-400'
                       }`}
                       title="Thêm cả bài này vào danh sách ôn tập tổng hợp"
                     >
-                      <Star className={`w-3.5 h-3.5 ${selectedLessons.includes(selectedLessonNum) ? 'fill-white' : ''}`} />
+                      <Star className={`w-4 h-4 ${selectedLessons.includes(selectedLessonNum) ? 'fill-white' : ''}`} />
                       <span>{selectedLessons.includes(selectedLessonNum) ? '✓ Đã thêm bài này vào ôn tập' : '⭐ Thêm cả bài vào ôn tập'}</span>
                     </button>
                   </div>
@@ -821,49 +885,62 @@ export function App() {
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
                   {/* CỘT TRÁI (Khung 75% - 9 cols): Không gian học tập trung */}
                   <div className="lg:col-span-9 space-y-6">
-                    {/* Header bài học & Thanh 4 Tab: Từ vựng, Ngữ pháp, Bài đọc, Luyện tập */}
-                    <div className="bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 rounded-3xl p-5 sm:p-6 shadow-sm space-y-4">
-                      {/* Tier 1: Tiêu đề bài học, badge khóa học & widget tiến trình thuộc từ */}
+                    {/* Header bài học tinh tế Zen Modern */}
+                    <div className="bg-white dark:bg-stone-900 border border-stone-200/80 dark:border-stone-800 rounded-2xl p-6 sm:p-7 shadow-2xs space-y-5">
+                      {/* Tiêu đề bài học, badge khóa học & tiến độ */}
                       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                         <div>
-                          <div className="flex items-center space-x-2">
-                            <span className="px-2.5 py-0.5 rounded-lg text-xs font-bold uppercase tracking-wider bg-blue-50 dark:bg-blue-950/60 text-blue-600 dark:text-sky-400 border border-blue-100 dark:border-blue-900/40 flex items-center space-x-1.5">
-                              <span>{currentCourseData.name} • {currentLessonData.level}</span>
+                          <div className="flex items-center space-x-2.5">
+                            <span className="px-3 py-1 rounded-md text-xs font-bold uppercase tracking-wider bg-stone-100 dark:bg-stone-800 text-stone-700 dark:text-stone-300 border border-stone-200/60 dark:border-stone-700/60">
+                              {currentCourseData.name} • {currentLessonData.level}
                             </span>
-                            <span className="text-xs text-slate-400 font-medium">
+                            <span className="text-sm text-stone-500 dark:text-stone-400 font-medium">
                               {isMultiLessonMode 
                                 ? `Đang chọn ${selectedLessons.length} bài (${reviewWords.length} từ vựng)`
                                 : `${lessonActiveCount} từ vựng ${hiddenCountInCurrentLesson > 0 ? `(đã ẩn ${hiddenCountInCurrentLesson})` : ''}`
                               }
                             </span>
                           </div>
-                          <h1 className="text-xl sm:text-2xl font-black text-slate-900 dark:text-white mt-1.5 tracking-tight">
+                          <h1 className="text-2xl sm:text-3xl font-black text-stone-900 dark:text-stone-100 mt-2 tracking-tight font-jp">
                             {isMultiLessonMode ? `Ôn tập tổng hợp: ${selectedLessons.length} bài học` : lessonHeading}
                           </h1>
                         </div>
 
-                        {/* Thanh tiến trình % thuộc từ (Widget gọn gàng bên phải) */}
-                        <div className="flex items-center space-x-3 bg-slate-50 dark:bg-zinc-800/80 px-3.5 py-2 rounded-2xl border border-slate-100 dark:border-zinc-800 shrink-0 self-start sm:self-auto">
-                          <div className="w-28 sm:w-36 bg-slate-200 dark:bg-zinc-700 h-2 rounded-full overflow-hidden">
-                            <div
-                              className="bg-emerald-500 h-full rounded-full transition-all duration-500"
-                              style={{ width: `${lessonProgressPercent}%` }}
-                            ></div>
+                        {/* Nút Primary Action: Luyện bài này + Widget % thuộc từ */}
+                        <div className="flex items-center space-x-3 shrink-0 self-start sm:self-auto">
+                          <button
+                            onClick={() => {
+                              setLessonSubTab('practice');
+                              setStudyMode('flashcard');
+                            }}
+                            className="px-5 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 active:scale-95 text-white font-bold text-sm flex items-center space-x-2 shadow-sm shadow-indigo-600/20 transition"
+                          >
+                            <Sparkles className="w-4 h-4" />
+                            <span>Luyện bài này</span>
+                          </button>
+
+                          <div className="flex items-center space-x-2.5 bg-stone-50 dark:bg-stone-800/80 px-3.5 py-2 rounded-xl border border-stone-200/60 dark:border-stone-800 text-sm">
+                            <div className="w-24 bg-stone-200 dark:bg-stone-700 h-2 rounded-full overflow-hidden">
+                              <div
+                                className="bg-emerald-500 h-full rounded-full transition-all duration-500"
+                                style={{ width: `${lessonProgressPercent}%` }}
+                              />
+                            </div>
+                            <span className="font-bold text-stone-700 dark:text-stone-300 text-xs sm:text-sm whitespace-nowrap">
+                              <strong className="text-emerald-600 dark:text-emerald-400">{lessonProgressPercent}%</strong>
+                            </span>
                           </div>
-                          <span className="text-xs font-bold text-slate-600 dark:text-zinc-300 whitespace-nowrap">
-                            Đã thuộc: <strong className="text-emerald-500">{lessonMasteredCount}</strong>/{lessonActiveCount} ({lessonProgressPercent}%)
-                          </span>
                         </div>
                       </div>
 
-                      {/* Tier 2: Thanh 4 Tab (Grid chia đều 4 cột 100% bề ngang, không cuộn ngang) */}
-                      <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 bg-slate-100 dark:bg-zinc-800/90 p-1.5 rounded-2xl w-full">
+                      {/* Thanh 4 Tab: Từ vựng, Ngữ pháp, Bài đọc, Luyện tập */}
+                      <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 bg-stone-100 dark:bg-stone-800/80 p-1.5 rounded-xl w-full">
                         <button
                           onClick={() => setLessonSubTab('vocab')}
-                          className={`flex items-center justify-center space-x-2 py-2.5 px-3 rounded-xl text-xs sm:text-sm font-bold transition ${
+                          className={`flex items-center justify-center space-x-2.5 py-2.5 px-4 rounded-lg text-sm font-bold transition ${
                             lessonSubTab === 'vocab'
-                              ? 'bg-white dark:bg-zinc-700 text-blue-600 dark:text-sky-400 shadow-sm'
-                              : 'text-slate-600 hover:text-slate-900 dark:text-zinc-400 dark:hover:text-white'
+                              ? 'bg-white dark:bg-stone-900 text-indigo-600 dark:text-indigo-400 shadow-2xs'
+                              : 'text-stone-600 hover:text-stone-900 dark:text-stone-400 dark:hover:text-stone-200'
                           }`}
                         >
                           <ListFilter className="w-4 h-4 shrink-0" />
@@ -872,10 +949,10 @@ export function App() {
 
                         <button
                           onClick={() => setLessonSubTab('grammar')}
-                          className={`flex items-center justify-center space-x-2 py-2.5 px-3 rounded-xl text-xs sm:text-sm font-bold transition ${
+                          className={`flex items-center justify-center space-x-2.5 py-2.5 px-4 rounded-lg text-sm font-bold transition ${
                             lessonSubTab === 'grammar'
-                              ? 'bg-white dark:bg-zinc-700 text-indigo-600 dark:text-indigo-400 shadow-sm'
-                              : 'text-slate-600 hover:text-slate-900 dark:text-zinc-400 dark:hover:text-white'
+                              ? 'bg-white dark:bg-stone-900 text-indigo-600 dark:text-indigo-400 shadow-2xs'
+                              : 'text-stone-600 hover:text-stone-900 dark:text-stone-400 dark:hover:text-stone-200'
                           }`}
                         >
                           <BookOpen className="w-4 h-4 shrink-0" />
@@ -884,10 +961,10 @@ export function App() {
 
                         <button
                           onClick={() => setLessonSubTab('reading')}
-                          className={`flex items-center justify-center space-x-2 py-2.5 px-3 rounded-xl text-xs sm:text-sm font-bold transition ${
+                          className={`flex items-center justify-center space-x-2.5 py-2.5 px-4 rounded-lg text-sm font-bold transition ${
                             lessonSubTab === 'reading'
-                              ? 'bg-white dark:bg-zinc-700 text-emerald-600 dark:text-emerald-400 shadow-sm'
-                              : 'text-slate-600 hover:text-slate-900 dark:text-zinc-400 dark:hover:text-white'
+                              ? 'bg-white dark:bg-stone-900 text-emerald-600 dark:text-emerald-400 shadow-2xs'
+                              : 'text-stone-600 hover:text-stone-900 dark:text-stone-400 dark:hover:text-stone-200'
                           }`}
                         >
                           <FileText className="w-4 h-4 shrink-0" />
@@ -896,10 +973,10 @@ export function App() {
 
                         <button
                           onClick={() => setLessonSubTab('practice')}
-                          className={`flex items-center justify-center space-x-2 py-2.5 px-3 rounded-xl text-xs sm:text-sm font-bold transition ${
+                          className={`flex items-center justify-center space-x-2.5 py-2.5 px-4 rounded-lg text-sm font-bold transition ${
                             lessonSubTab === 'practice'
-                              ? 'bg-white dark:bg-zinc-700 text-amber-600 dark:text-amber-400 shadow-sm'
-                              : 'text-slate-600 hover:text-slate-900 dark:text-zinc-400 dark:hover:text-white'
+                              ? 'bg-white dark:bg-stone-900 text-amber-600 dark:text-amber-400 shadow-2xs'
+                              : 'text-stone-600 hover:text-stone-900 dark:text-stone-400 dark:hover:text-stone-200'
                           }`}
                         >
                           <Sparkles className="w-4 h-4 text-amber-500 shrink-0" />
@@ -908,31 +985,9 @@ export function App() {
                       </div>
                     </div>
 
-                    {/* 1. Tab Từ vựng (Hiện đầu tiên khi vào bài) */}
+                    {/* 1. Tab Từ vựng (Hiện đầu tiên khi vào bài - sạch sẽ, không banner thừa) */}
                     {lessonSubTab === 'vocab' && (
                       <div className="space-y-4">
-                        {/* Banner điều hướng nhanh sang Luyện tập */}
-                        <div className="bg-gradient-to-r from-blue-600/10 via-indigo-500/5 to-transparent border border-blue-500/20 rounded-2xl p-4 flex flex-col sm:flex-row items-center justify-between gap-3 shadow-2xs">
-                          <div className="flex items-center space-x-3 text-center sm:text-left">
-                            <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 to-indigo-600 text-white flex items-center justify-center font-black shrink-0 shadow-sm shadow-blue-500/20">
-                              <Sparkles className="w-5 h-5" />
-                            </div>
-                            <div>
-                              <h3 className="text-sm font-black text-slate-900 dark:text-white">
-                                Xem xong từ vựng? Sẵn sàng ôn luyện!
-                              </h3>
-                              <p className="text-xs text-slate-500 dark:text-zinc-400">
-                                Thực hành ngay với 5 chế độ: Flashcard 3D, Trắc nghiệm, Gõ nhồi nhét, Dịch câu và Nghe đuổi.
-                              </p>
-                            </div>
-                          </div>
-                          <button
-                            onClick={() => setLessonSubTab('practice')}
-                            className="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-bold text-xs sm:text-sm shadow-sm shadow-blue-500/20 transition whitespace-nowrap shrink-0"
-                          >
-                            Bắt đầu luyện tập →
-                          </button>
-                        </div>
 
                         {/* Thanh thông báo gợi ý bật Admin nếu đang tắt */}
                         {hasAdminAccess && !isAdminEditMode && (
@@ -1159,6 +1214,7 @@ export function App() {
           <KanjiMasterView
             kanjiList={currentKanjiList}
             allVocabWords={allVocabWords}
+            allKanjiAcrossLevels={allKanjiAcrossLevels}
             currentLevel={selectedKanjiLevel}
             onSelectLevel={setSelectedKanjiLevel}
             masteredKanji={progress.masteredKanji}
@@ -1183,6 +1239,24 @@ export function App() {
                   }
                 }}
               />
+            ) : practiceStage === 'typing' ? (
+              /* GÓC NHÌN ĐẶC BIỆT: ĐẤU TRƯỜNG LUYỆN GÕ PHÍM TIẾNG NHẬT (LẤY CẢM HỨNG TỪ XIEHANZI) */
+              <JapaneseTypingView
+                allWords={allVocabWords}
+                currentLevel={currentCourseData.name.includes('N1') ? 'N1' : 'N5'}
+                onBack={() => {
+                  if (window.history.length > 1 && window.location.search.includes('stage=typing')) {
+                    window.history.back();
+                  } else {
+                    setPracticeStage('overview');
+                  }
+                }}
+                onAddFavorite={handleToggleFavoriteWord}
+                onAddMistake={handleAddMistake}
+                masteredWords={progress.masteredWords}
+                favoriteWords={progress.favoriteWords}
+                mistakeWords={progress.mistakeWords}
+              />
             ) : practiceStage === 'overview' ? (
               /* GÓC NHÌN 1: TỔNG THỂ TẤT CẢ CÁC BÀI HỌC (HIỂN THỊ ĐẦY ĐỦ, DỄ LỰA CHỌN) */
               <PracticeHubOverview
@@ -1205,7 +1279,10 @@ export function App() {
                 onSelectWordFilter={setPracticeWordFilter}
                 counts={practiceFilterCounts}
                 onOpenConjugationTrainer={() => setPracticeStage('conjugation')}
+                onOpenTypingMaster={() => setPracticeStage('typing')}
                 onOpenMistakeBank={() => setIsMistakeBankOpen(true)}
+                dueSrsCount={dueSrsItems.length}
+                onOpenSrsReview={() => setIsSrsReviewOpen(true)}
                 onStartPractice={(lessonNum) => {
                   if (lessonNum) {
                     setSelectedLessonNum(lessonNum);
@@ -1377,6 +1454,8 @@ export function App() {
               setActiveTab('practice');
               setPracticeStage('conjugation');
             }}
+            dueSrsCount={dueSrsItems.length}
+            onOpenSrsReview={() => setIsSrsReviewOpen(true)}
           />
         )}
       </main>
@@ -1441,6 +1520,14 @@ export function App() {
           setPracticeStage('session');
           setActiveTab('practice');
         }}
+      />
+
+      {/* Modal Ôn Tập Ngắt Quãng SRS (Spaced Repetition System SM-2) */}
+      <SrsReviewModal
+        isOpen={isSrsReviewOpen}
+        onClose={() => setIsSrsReviewOpen(false)}
+        dueItems={dueSrsItems}
+        onRateItem={handleRateSrsItem}
       />
 
       {/* Modal Chỉnh sửa / Thêm mới từ vựng dành cho Admin */}
