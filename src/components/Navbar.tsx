@@ -77,39 +77,40 @@ export const Navbar: React.FC<NavbarProps> = ({
   const avatarLetter = userEmail ? userEmail.charAt(0).toUpperCase() : null;
 
   return (
-    <header className="sticky top-0 z-40 w-full backdrop-blur-md bg-[#faf9f5]/90 dark:bg-[#0f1117]/90 border-b border-stone-200/70 dark:border-stone-800/80 transition-colors">
-      <div className="max-w-[1400px] mx-auto px-3 sm:px-8 h-15 sm:h-18 flex items-center justify-between gap-2 sm:gap-4">
+    <header className="sticky top-0 z-40 w-full backdrop-blur-xl bg-[#faf9f5]/85 dark:bg-[#0b0f19]/85 border-b border-stone-200/60 dark:border-stone-800/60 transition-colors pt-[env(safe-area-inset-top,0px)]">
+      <div className="max-w-[1400px] mx-auto px-3.5 sm:px-8 h-16 sm:h-19 flex items-center justify-between gap-3">
         
         {/* Brand / Logo (Left) */}
         <div 
-          className="flex items-center space-x-2 sm:space-x-3 cursor-pointer select-none group shrink-0" 
+          className="flex items-center space-x-2.5 sm:space-x-3.5 cursor-pointer select-none group shrink-0" 
           onClick={() => setActiveTab('tango')}
         >
-          <div className="w-8.5 h-8.5 sm:w-11 sm:h-11 rounded-xl sm:rounded-2xl bg-stone-900 dark:bg-stone-100 flex items-center justify-center text-stone-100 dark:text-stone-900 shadow-sm font-jp font-bold text-lg sm:text-2xl tracking-wider transition group-hover:scale-105 shrink-0">
+          {/* Logo Squircle with Gradient & Ring */}
+          <div className="w-9 h-9 sm:w-11 sm:h-11 rounded-2xl bg-gradient-to-br from-stone-900 via-stone-800 to-indigo-950 dark:from-indigo-600 dark:via-indigo-700 dark:to-purple-900 flex items-center justify-center text-white shadow-md shadow-stone-900/10 dark:shadow-indigo-900/30 font-jp font-black text-xl sm:text-2xl tracking-wider transition-all duration-300 group-hover:scale-105 group-hover:rotate-[-2deg] ring-1 ring-white/10 shrink-0">
             日
           </div>
           <div>
             <div className="flex items-center space-x-1.5 sm:space-x-2">
-              <span className="font-extrabold text-base sm:text-xl tracking-tight text-stone-900 dark:text-stone-100">
-                LearnJPD
+              <span className="font-black text-lg sm:text-xl tracking-tight text-stone-900 dark:text-stone-50 font-sans">
+                Learn<span className="bg-gradient-to-r from-indigo-600 to-rose-500 bg-clip-text text-transparent">JPD</span>
               </span>
-              <span className="text-[10px] sm:text-[11px] px-1.5 sm:px-2 py-0.5 rounded-md font-bold bg-stone-200/70 dark:bg-stone-800 text-stone-700 dark:text-stone-300">
+              <span className="text-[10px] px-1.5 py-0.2 rounded-full font-bold bg-indigo-500/10 dark:bg-indigo-400/15 text-indigo-600 dark:text-indigo-400 border border-indigo-500/20">
                 Zen
               </span>
             </div>
-            <p className="text-xs text-stone-500 dark:text-stone-400 font-medium hidden sm:block">
+            <p className="text-[11px] text-stone-400 dark:text-stone-400 font-medium hidden sm:block -mt-0.5">
               Học Tiếng Nhật Trọng Tâm
             </p>
           </div>
         </div>
 
         {/* 3 Core Tabs (Center - Desktop only) */}
-        <nav className="hidden md:flex items-center bg-stone-200/60 dark:bg-stone-900/70 p-1.5 rounded-2xl border border-stone-200/70 dark:border-stone-800/70 text-sm font-bold gap-1">
+        <nav className="hidden md:flex items-center bg-stone-200/50 dark:bg-stone-900/60 p-1.5 rounded-2xl border border-stone-200/60 dark:border-stone-800/60 text-sm font-bold gap-1 shadow-2xs backdrop-blur-md">
           <button
             onClick={() => setActiveTab('tango')}
-            className={`flex items-center space-x-2 px-5 py-2.5 rounded-xl transition-all ${
+            className={`flex items-center space-x-2 px-5 py-2 rounded-xl transition-all duration-200 ${
               activeTab === 'tango'
-                ? 'bg-white dark:bg-stone-800 text-indigo-600 dark:text-indigo-300 shadow-xs font-bold'
+                ? 'bg-white dark:bg-stone-800 text-indigo-600 dark:text-indigo-300 shadow-xs font-extrabold'
                 : 'text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-200'
             }`}
           >
@@ -119,9 +120,9 @@ export const Navbar: React.FC<NavbarProps> = ({
 
           <button
             onClick={() => setActiveTab('kanji')}
-            className={`flex items-center space-x-2 px-5 py-2.5 rounded-xl transition-all ${
+            className={`flex items-center space-x-2 px-5 py-2 rounded-xl transition-all duration-200 ${
               activeTab === 'kanji'
-                ? 'bg-white dark:bg-stone-800 text-rose-600 dark:text-rose-400 shadow-xs font-bold'
+                ? 'bg-white dark:bg-stone-800 text-rose-600 dark:text-rose-400 shadow-xs font-extrabold'
                 : 'text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-200'
             }`}
           >
@@ -131,22 +132,22 @@ export const Navbar: React.FC<NavbarProps> = ({
 
           <button
             onClick={() => setActiveTab('practice')}
-            className={`flex items-center space-x-2 px-5 py-2.5 rounded-xl transition-all relative ${
+            className={`flex items-center space-x-2 px-5 py-2 rounded-xl transition-all duration-200 relative ${
               activeTab === 'practice'
-                ? 'bg-white dark:bg-stone-800 text-emerald-600 dark:text-emerald-400 shadow-xs font-bold'
+                ? 'bg-white dark:bg-stone-800 text-emerald-600 dark:text-emerald-400 shadow-xs font-extrabold'
                 : 'text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-200'
             }`}
           >
             <Zap className="w-4 h-4" />
             <span>Ôn luyện</span>
             {dueSrsCount > 0 && (
-              <span className="w-2.5 h-2.5 rounded-full bg-indigo-500 absolute top-1.5 right-1.5" />
+              <span className="w-2.5 h-2.5 rounded-full bg-indigo-500 absolute top-1.5 right-1.5 ring-2 ring-white dark:ring-stone-800" />
             )}
           </button>
 
           {/* Tab phụ: Sổ tay hoặc Cá nhân khi đang mở */}
           {(activeTab === 'notebook' || activeTab === 'dashboard') && (
-            <span className="flex items-center space-x-2 px-4 py-2.5 rounded-xl bg-white dark:bg-stone-800 text-stone-800 dark:text-stone-200 shadow-xs font-bold ml-1 border border-stone-200 dark:border-stone-700">
+            <span className="flex items-center space-x-2 px-4 py-2 rounded-xl bg-white dark:bg-stone-800 text-stone-800 dark:text-stone-200 shadow-xs font-bold ml-1 border border-stone-200/80 dark:border-stone-700/80">
               {activeTab === 'notebook' ? (
                 <>
                   <Bookmark className="w-4 h-4 text-amber-500" />
@@ -162,77 +163,74 @@ export const Navbar: React.FC<NavbarProps> = ({
           )}
         </nav>
 
-        {/* Right Area: Status Capsule & Profile Menu */}
-        <div className="flex items-center space-x-1 sm:space-x-2.5 shrink-0">
+        {/* Right Area: Unified Glass Action Cluster */}
+        <div className="flex items-center space-x-2 sm:space-x-2.5 shrink-0">
           
-          {/* Quick Status Capsule (SRS & Mistakes & Streak) */}
-          <div className="flex items-center bg-stone-100 dark:bg-stone-900/80 p-0.5 sm:p-1 rounded-xl sm:rounded-2xl border border-stone-200/70 dark:border-stone-800/80 text-xs sm:text-sm">
-            
-            {/* SRS Quick Button */}
-            {dueSrsCount > 0 && onOpenSrsReview && (
-              <button
-                onClick={onOpenSrsReview}
-                title={`Bạn có ${dueSrsCount} mục đến hạn ôn tập ngắt quãng (SRS SM-2)`}
-                className="flex items-center space-x-1 sm:space-x-1.5 px-2 sm:px-3 py-1 sm:py-1.5 rounded-lg sm:rounded-xl bg-indigo-500/10 hover:bg-indigo-500/20 text-indigo-600 dark:text-indigo-400 font-bold transition"
-              >
-                <Clock className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
-                <span className="hidden sm:inline text-xs">SRS</span>
-                <span className="font-mono text-[11px] sm:text-xs bg-indigo-600 text-white px-1.5 sm:px-2 py-0.2 sm:py-0.5 rounded-full leading-none">
-                  {dueSrsCount}
-                </span>
-              </button>
-            )}
-
-            {/* Mistakes Quick Button */}
-            {mistakeCount > 0 && onOpenMistakeBank && (
-              <button
-                onClick={onOpenMistakeBank}
-                title={`Bạn có ${mistakeCount} từ cần phục hồi trong Kho từ sai`}
-                className="flex items-center space-x-1 sm:space-x-1.5 px-2 sm:px-3 py-1 sm:py-1.5 rounded-lg sm:rounded-xl bg-rose-500/10 hover:bg-rose-500/20 text-rose-600 dark:text-rose-400 font-bold transition"
-              >
-                <AlertCircle className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
-                <span className="font-mono text-[11px] sm:text-xs">{mistakeCount}</span>
-              </button>
-            )}
-
-            {/* Streak Counter */}
-            <div 
-              title={`Chuỗi ${streak} ngày học liên tục`}
-              className="flex items-center space-x-1 sm:space-x-1.5 px-2 sm:px-3 py-1 sm:py-1.5 text-amber-600 dark:text-amber-400 font-bold"
+          {/* SRS Quick Button (Chỉ hiện khi có từ cần ôn) */}
+          {dueSrsCount > 0 && onOpenSrsReview && (
+            <button
+              onClick={onOpenSrsReview}
+              title={`Bạn có ${dueSrsCount} mục đến hạn ôn tập ngắt quãng (SRS)`}
+              className="flex items-center space-x-1 sm:space-x-1.5 px-2.5 py-1.5 rounded-xl bg-indigo-500/10 hover:bg-indigo-500/20 text-indigo-600 dark:text-indigo-400 font-extrabold transition border border-indigo-500/20 active:scale-95"
             >
-              <Flame className="w-3.5 h-3.5 sm:w-4 sm:h-4 fill-current text-amber-500" />
-              <span className="font-mono text-xs sm:text-sm">{streak}</span>
-            </div>
+              <Clock className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-indigo-500 animate-pulse" />
+              <span className="font-mono text-xs">{dueSrsCount}</span>
+            </button>
+          )}
+
+          {/* Mistake Bank Button (Chỉ hiện khi có từ sai) */}
+          {mistakeCount > 0 && onOpenMistakeBank && (
+            <button
+              onClick={onOpenMistakeBank}
+              title={`Bạn có ${mistakeCount} từ trong Kho từ sai`}
+              className="flex items-center space-x-1 sm:space-x-1.5 px-2.5 py-1.5 rounded-xl bg-rose-500/10 hover:bg-rose-500/20 text-rose-600 dark:text-rose-400 font-extrabold transition border border-rose-500/20 active:scale-95"
+            >
+              <AlertCircle className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-rose-500" />
+              <span className="font-mono text-xs">{mistakeCount}</span>
+            </button>
+          )}
+
+          {/* Streak Badge - Minimalist Apple Pill */}
+          <div 
+            title={streak > 0 ? `Xuất sắc! Chuỗi ${streak} ngày học liên tục` : 'Học bài hôm nay để bắt đầu chuỗi ngọn lửa!'}
+            className={`flex items-center space-x-1 sm:space-x-1.5 px-2.5 sm:px-3 py-1.5 rounded-xl text-xs sm:text-sm font-extrabold transition border ${
+              streak > 0
+                ? 'bg-amber-500/10 text-amber-600 dark:text-amber-400 border-amber-500/25 shadow-2xs'
+                : 'bg-stone-100/80 dark:bg-stone-800/80 text-stone-400 dark:text-stone-500 border-stone-200/60 dark:border-stone-700/60'
+            }`}
+          >
+            <Flame className={`w-3.5 h-3.5 sm:w-4 sm:h-4 ${streak > 0 ? 'text-amber-500 fill-amber-500 animate-bounce' : 'text-stone-400'}`} />
+            <span className="font-mono">{streak}</span>
           </div>
 
           {/* Quick Dark Mode Toggle */}
           <button
             onClick={() => setIsDarkMode(!isDarkMode)}
             title={isDarkMode ? 'Chuyển sang giao diện Sáng' : 'Chuyển sang giao diện Tối'}
-            className="p-1.5 sm:p-2.5 rounded-lg sm:rounded-xl text-stone-500 dark:text-stone-400 hover:bg-stone-200/50 dark:hover:bg-stone-800 transition"
+            className="w-9 h-9 rounded-xl flex items-center justify-center bg-stone-100/80 dark:bg-stone-800/80 hover:bg-stone-200/60 dark:hover:bg-stone-700/60 text-stone-600 dark:text-stone-300 border border-stone-200/60 dark:border-stone-700/60 transition shadow-2xs active:scale-95"
           >
-            {isDarkMode ? <Sun className="w-4 h-4 sm:w-4.5 sm:h-4.5 text-amber-400" /> : <Moon className="w-4 h-4 sm:w-4.5 sm:h-4.5 text-stone-600" />}
+            {isDarkMode ? <Sun className="w-4 h-4 text-amber-400" /> : <Moon className="w-4 h-4 text-stone-600 dark:text-stone-300" />}
           </button>
 
           {/* Profile Menu Trigger (Dropdown) */}
           <div className="relative" ref={profileMenuRef}>
             <button
               onClick={() => setIsProfileMenuOpen((prev) => !prev)}
-              className="flex items-center space-x-1.5 sm:space-x-2 p-1 sm:px-3 sm:py-1.5 rounded-xl bg-white dark:bg-stone-800 border border-stone-200 dark:border-stone-700 hover:border-stone-300 dark:hover:border-stone-600 text-stone-700 dark:text-stone-200 transition shadow-2xs"
+              className="flex items-center space-x-1.5 sm:space-x-2 p-1 sm:px-2.5 sm:py-1.5 rounded-xl bg-stone-100/80 dark:bg-stone-800/80 hover:bg-stone-200/60 dark:hover:bg-stone-700/60 border border-stone-200/60 dark:border-stone-700/60 text-stone-700 dark:text-stone-200 transition shadow-2xs active:scale-95"
             >
               {avatarLetter ? (
-                <div className="w-6.5 h-6.5 sm:w-7 sm:h-7 rounded-lg bg-indigo-600 text-white flex items-center justify-center font-bold text-xs">
+                <div className="w-7 h-7 rounded-lg bg-gradient-to-tr from-indigo-600 to-purple-600 text-white flex items-center justify-center font-black text-xs shadow-xs ring-1 ring-white/20">
                   {avatarLetter}
                 </div>
               ) : (
-                <div className="w-6.5 h-6.5 sm:w-7 sm:h-7 rounded-lg bg-stone-200 dark:bg-stone-700 text-stone-600 dark:text-stone-300 flex items-center justify-center">
-                  <User className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+                <div className="w-7 h-7 rounded-lg bg-stone-200/80 dark:bg-stone-700 text-stone-600 dark:text-stone-300 flex items-center justify-center">
+                  <User className="w-4 h-4" />
                 </div>
               )}
-              <span className="text-sm font-semibold hidden md:inline max-w-[110px] truncate">
+              <span className="text-xs font-bold hidden md:inline max-w-[110px] truncate">
                 {userEmail ? userEmail.split('@')[0] : 'Tài khoản'}
               </span>
-              <ChevronDown className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-stone-400 transition-transform duration-200 hidden sm:block" style={{ transform: isProfileMenuOpen ? 'rotate(180deg)' : 'none' }} />
+              <ChevronDown className="w-3.5 h-3.5 text-stone-400 transition-transform duration-200 hidden sm:block" style={{ transform: isProfileMenuOpen ? 'rotate(180deg)' : 'none' }} />
             </button>
 
             {/* Profile Dropdown Drawer */}
