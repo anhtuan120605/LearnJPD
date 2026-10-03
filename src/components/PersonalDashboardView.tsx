@@ -825,6 +825,32 @@ export const PersonalDashboardView: React.FC<PersonalDashboardViewProps> = ({
           })}
         </div>
       </div>
+
+      {/* 5. THÔNG TIN PHÁT TRIỂN & BẢN QUYỀN */}
+      <div className="bg-gradient-to-br from-indigo-900/10 via-purple-900/5 to-slate-900/10 dark:from-indigo-950/40 dark:via-purple-950/20 dark:to-slate-900/40 rounded-3xl p-5 sm:p-6 border border-indigo-500/20 shadow-xs flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="flex items-center space-x-3.5">
+          <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-indigo-600 to-purple-600 text-white flex items-center justify-center font-bold text-lg shadow-md ring-2 ring-indigo-400/20 shrink-0">
+            AT
+          </div>
+          <div>
+            <div className="flex items-center space-x-2">
+              <span className="text-sm font-extrabold text-stone-900 dark:text-white">
+                Anh Tuấn
+              </span>
+              <span className="px-2 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider bg-indigo-500/15 text-indigo-600 dark:text-indigo-400 border border-indigo-500/20">
+                Nhà phát triển chính
+              </span>
+            </div>
+            <p className="text-xs text-stone-500 dark:text-stone-400 mt-0.5">
+              Xây dựng và phát triển nền tảng học tiếng Nhật thông minh LearnJPD
+            </p>
+          </div>
+        </div>
+        <div className="text-right text-[11px] text-stone-400 dark:text-stone-500 shrink-0">
+          <p className="font-mono font-semibold">LearnJPD Platform v2.5</p>
+          <p>© 2026 Anh Tuấn • All rights reserved</p>
+        </div>
+      </div>
     </div>
   );
 };

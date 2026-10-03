@@ -1467,11 +1467,11 @@ export function App() {
       </main>
 
       {/* Footer bản quyền & thông tin giáo trình */}
-      <footer className="mt-auto border-t border-slate-200 dark:border-zinc-800 bg-white/50 dark:bg-zinc-900/50 py-6 text-center text-xs text-slate-400 dark:text-zinc-500">
-        <p className="font-semibold text-slate-600 dark:text-zinc-400">
-          LearnJPD • Ứng dụng Học Tiếng Nhật & Kanji Thông Minh
+      <footer className="mt-auto border-t border-stone-200/60 dark:border-stone-800/60 bg-white/40 dark:bg-stone-900/40 py-6 text-center text-xs text-stone-400 dark:text-stone-500">
+        <p className="font-bold text-stone-700 dark:text-stone-300">
+          LearnJPD • Phát triển bởi <span className="text-indigo-600 dark:text-indigo-400 font-extrabold">Anh Tuấn</span>
         </p>
-        <p className="mt-1">
+        <p className="mt-1 text-[11px]">
           Dựa trên giáo trình Minna no Nihongo (50 bài) & Bộ Kanji chuẩn JLPT N5 - N1
         </p>
       </footer>

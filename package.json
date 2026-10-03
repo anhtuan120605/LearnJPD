@@ -1,7 +1,8 @@
 {
   "name": "learn-jpd",
   "private": true,
-  "version": "1.0.0",
+  "version": "2.5.0",
+  "author": "Anh Tuấn",
   "type": "module",
   "scripts": {
     "dev": "vite",

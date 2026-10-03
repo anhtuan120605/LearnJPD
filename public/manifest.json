@@ -2,6 +2,9 @@
   "short_name": "LearnJPD",
   "name": "LearnJPD - Học Tiếng Nhật & Kanji",
   "description": "Ứng dụng học Từ vựng, Kanji Minna & JLPT với phương pháp Spaced Repetition (SRS)",
+  "developer": {
+    "name": "Anh Tuấn"
+  },
   "icons": [
     {
       "src": "/icon-192.png",

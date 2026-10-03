@@ -371,6 +371,11 @@ export const Navbar: React.FC<NavbarProps> = ({
                     </button>
                   </div>
                 )}
+
+                {/* Developer Credit */}
+                <div className="px-4 py-2 border-t border-stone-100 dark:border-stone-800 text-[11px] text-stone-400 dark:text-stone-500 text-center">
+                  Phát triển bởi <strong className="text-indigo-600 dark:text-indigo-400 font-bold">Anh Tuấn</strong> • v2.5
+                </div>
               </div>
             )}
           </div>
