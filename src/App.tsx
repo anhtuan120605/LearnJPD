@@ -761,28 +761,46 @@ export function App() {
   }, [reviewWords, practiceWordFilter, progress.masteredWords, progress.favoriteWords, progress.mistakeWords]);
 
   // Bộ từ thực tế sau khi áp dụng bộ lọc và xáo trộn (nếu bật chế độ shuffle trong Luyện tập)
+  const prevPracticeWordsKey = React.useRef<string>('');
+  const cachedShuffledPracticeWords = React.useRef<WordItem[]>([]);
+
   const finalPracticeWords = React.useMemo(() => {
     if (!isPracticeShuffled) {
       return wordsForPractice;
     }
+    const currentKey = `${shuffleKey}_${wordsForPractice.map(w => w.id).join(',')}`;
+    if (prevPracticeWordsKey.current === currentKey && cachedShuffledPracticeWords.current.length === wordsForPractice.length) {
+      return cachedShuffledPracticeWords.current;
+    }
+    prevPracticeWordsKey.current = currentKey;
     const shuffled = [...wordsForPractice];
     for (let i = shuffled.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
     }
+    cachedShuffledPracticeWords.current = shuffled;
     return shuffled;
   }, [wordsForPractice, isPracticeShuffled, shuffleKey]);
 
   // Bộ từ thực tế trong mục Từ vựng khi bật Xáo trộn từ
+  const prevLessonWordsKey = React.useRef<string>('');
+  const cachedShuffledLessonWords = React.useRef<WordItem[]>([]);
+
   const finalLessonPracticeWords = React.useMemo(() => {
     if (!isLessonPracticeShuffled) {
       return reviewWords;
     }
+    const currentKey = `${lessonPracticeShuffleKey}_${reviewWords.map(w => w.id).join(',')}`;
+    if (prevLessonWordsKey.current === currentKey && cachedShuffledLessonWords.current.length === reviewWords.length) {
+      return cachedShuffledLessonWords.current;
+    }
+    prevLessonWordsKey.current = currentKey;
     const shuffled = [...reviewWords];
     for (let i = shuffled.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
     }
+    cachedShuffledLessonWords.current = shuffled;
     return shuffled;
   }, [reviewWords, isLessonPracticeShuffled, lessonPracticeShuffleKey]);
 
@@ -792,10 +810,14 @@ export function App() {
       <Navbar
         activeTab={activeTab}
         setActiveTab={(tab) => {
+          if (tab === 'tango' && activeTab === 'tango') {
+            setTangoViewMode('dashboard');
+          }
           setActiveTab(tab);
           if (tab === 'practice') {
             setPracticeStage('overview');
           }
+          window.scrollTo({ top: 0, behavior: 'smooth' });
         }}
         streak={progress.streak}
         isDarkMode={isDarkMode}
@@ -854,6 +876,7 @@ export function App() {
                   setSelectedLessonNum(lessonNum);
                   setSelectedLessons([lessonNum]);
                   setTangoViewMode('study');
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
                 }}
               />
             ) : (
@@ -863,11 +886,9 @@ export function App() {
                 <div className="flex flex-wrap items-center justify-between gap-3">
                   <button
                     onClick={() => {
-                      if (window.history.length > 1 && window.location.search.includes('view=study')) {
-                        window.history.back();
-                      } else {
-                        setTangoViewMode('dashboard');
-                      }
+                      setActiveTab('tango');
+                      setTangoViewMode('dashboard');
+                      window.scrollTo({ top: 0, behavior: 'smooth' });
                     }}
                     className="inline-flex items-center space-x-2 px-4.5 py-2.5 rounded-xl bg-white dark:bg-stone-900 border border-stone-200/80 dark:border-stone-800 text-sm font-bold text-stone-700 dark:text-stone-200 hover:border-indigo-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition shadow-2xs group"
                   >
@@ -1205,11 +1226,9 @@ export function App() {
                       onSelectRange={handleSelectRange}
                       mode="sidebar"
                       onBackToDashboard={() => {
-                        if (window.history.length > 1 && window.location.search.includes('view=study')) {
-                          window.history.back();
-                        } else {
-                          setTangoViewMode('dashboard');
-                        }
+                        setActiveTab('tango');
+                        setTangoViewMode('dashboard');
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
                       }}
                     />
                   </div>
@@ -1249,11 +1268,9 @@ export function App() {
                 <ShadowingHubView
                   onSelectVideo={(video) => setSelectedShadowingVideo(video)}
                   onBackToPractice={() => {
-                    if (window.history.length > 1 && window.location.search.includes('stage=shadowing')) {
-                      window.history.back();
-                    } else {
-                      setPracticeStage('overview');
-                    }
+                    setActiveTab('practice');
+                    setPracticeStage('overview');
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
                   }}
                 />
               )
@@ -1261,11 +1278,9 @@ export function App() {
               /* GÓC NHÌN ĐẶC BIỆT: BỘ LUYỆN CHIA THỂ ĐỘNG TỪ & TÍNH TỪ */
               <ConjugationTrainerView
                 onBack={() => {
-                  if (window.history.length > 1 && window.location.search.includes('stage=conjugation')) {
-                    window.history.back();
-                  } else {
-                    setPracticeStage('overview');
-                  }
+                  setActiveTab('practice');
+                  setPracticeStage('overview');
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
                 }}
               />
             ) : practiceStage === 'typing' ? (
@@ -1274,11 +1289,9 @@ export function App() {
                 allWords={allVocabWords}
                 currentLevel={currentCourseData.name.includes('N1') ? 'N1' : 'N5'}
                 onBack={() => {
-                  if (window.history.length > 1 && window.location.search.includes('stage=typing')) {
-                    window.history.back();
-                  } else {
-                    setPracticeStage('overview');
-                  }
+                  setActiveTab('practice');
+                  setPracticeStage('overview');
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
                 }}
                 onAddFavorite={handleToggleFavoriteWord}
                 onAddMistake={handleAddMistake}
@@ -1343,11 +1356,9 @@ export function App() {
                   onSelectWordFilter={setPracticeWordFilter}
                   filterCounts={practiceFilterCounts}
                   onBackToOverview={() => {
-                    if (window.history.length > 1 && window.location.search.includes('stage=session')) {
-                      window.history.back();
-                    } else {
-                      setPracticeStage('overview');
-                    }
+                    setActiveTab('practice');
+                    setPracticeStage('overview');
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
                   }}
                   isShuffled={isPracticeShuffled}
                   onToggleShuffle={() => setIsPracticeShuffled((prev) => !prev)}
@@ -1467,22 +1478,27 @@ export function App() {
               if (mode) setStudyMode(mode);
               setPracticeStage('session');
               setActiveTab('practice');
+              window.scrollTo({ top: 0, behavior: 'smooth' });
             }}
             onNavigateToCourse={(courseKey) => {
               handleSelectCourse(courseKey);
-              setTangoViewMode('study');
+              setTangoViewMode('dashboard');
               setActiveTab('tango');
+              window.scrollTo({ top: 0, behavior: 'smooth' });
             }}
             onNavigateToKanji={(level) => {
               setSelectedKanjiLevel(level);
               setActiveTab('kanji');
+              window.scrollTo({ top: 0, behavior: 'smooth' });
             }}
             onNavigateToNotebook={() => {
               setActiveTab('notebook');
+              window.scrollTo({ top: 0, behavior: 'smooth' });
             }}
             onOpenConjugationTrainer={() => {
               setActiveTab('practice');
               setPracticeStage('conjugation');
+              window.scrollTo({ top: 0, behavior: 'smooth' });
             }}
             dueSrsCount={dueSrsItems.length}
             onOpenSrsReview={() => setIsSrsReviewOpen(true)}
@@ -1584,10 +1600,14 @@ export function App() {
       <MobileBottomNav
         activeTab={activeTab}
         setActiveTab={(tab) => {
+          if (tab === 'tango' && activeTab === 'tango') {
+            setTangoViewMode('dashboard');
+          }
           setActiveTab(tab);
           if (tab === 'practice') {
             setPracticeStage('overview');
           }
+          window.scrollTo({ top: 0, behavior: 'smooth' });
         }}
         mistakeCount={progress.mistakeWords.length}
       />

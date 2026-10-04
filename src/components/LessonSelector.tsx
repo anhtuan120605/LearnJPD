@@ -509,7 +509,15 @@ export const LessonSelector: React.FC<LessonSelectorProps> = ({
                 isSelected && isMultiMode ? 'ring-2 ring-blue-500/30 border-blue-500' : ''
               }`}
             >
-              <div>
+              <div
+                className="cursor-pointer group/card"
+                onClick={() => {
+                  onSelectLesson(s.lesson);
+                  if (onEnterStudyMode) {
+                    onEnterStudyMode(s.lesson);
+                  }
+                }}
+              >
                 {/* Header thẻ: Số bài + Gamification badge */}
                 <div className="flex items-center justify-between mb-3">
                   <div className="flex items-center space-x-2">

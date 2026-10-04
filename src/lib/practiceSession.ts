@@ -23,14 +23,19 @@ export interface CrammingSessionState {
 }
 
 /**
- * Tạo session key duy nhất dựa trên danh sách từ vựng
+ * Tạo session key duy nhất dựa trên danh sách từ vựng (ổn định, không bị đổi khi xáo trộn thứ tự)
  */
 export function getPracticeSessionKey(prefix: string, words: WordItem[], customId?: string): string {
   if (customId) return `learn_jpd_session_${prefix}_${customId}`;
   if (!words || words.length === 0) return `learn_jpd_session_${prefix}_empty`;
-  const firstId = words[0]?.id || '0';
-  const lastId = words[words.length - 1]?.id || '0';
-  return `learn_jpd_session_${prefix}_${words.length}_${firstId}_${lastId}`;
+  
+  // Dùng tập hợp ID đã sort để key luôn cố định dù mảng bị xáo trộn thứ tự
+  const sortedIds = words.map(w => w.id).sort();
+  const firstId = sortedIds[0] || '0';
+  const lastId = sortedIds[sortedIds.length - 1] || '0';
+  const lesson = words[0]?.lesson !== undefined ? `L${words[0].lesson}` : '';
+  const level = words[0]?.level || '';
+  return `learn_jpd_session_${prefix}_${level}_${lesson}_${words.length}_${firstId}_${lastId}`;
 }
 
 /**
