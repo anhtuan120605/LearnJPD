@@ -864,6 +864,8 @@ export function App() {
                 selectedLessonNum={selectedLessonNum}
                 onSelectLesson={handleSelectLesson}
                 masteredWords={progress.masteredWords}
+                hiddenWords={progress.hiddenWords}
+                vocabOverrides={vocabOverrides}
                 isMultiMode={isMultiLessonMode}
                 onToggleMultiMode={setIsMultiLessonMode}
                 selectedLessons={selectedLessons}
@@ -1217,6 +1219,8 @@ export function App() {
                       selectedLessonNum={selectedLessonNum}
                       onSelectLesson={handleSelectLesson}
                       masteredWords={progress.masteredWords}
+                      hiddenWords={progress.hiddenWords}
+                      vocabOverrides={vocabOverrides}
                       isMultiMode={isMultiLessonMode}
                       onToggleMultiMode={setIsMultiLessonMode}
                       selectedLessons={selectedLessons}
@@ -1308,6 +1312,8 @@ export function App() {
                 selectedLessonNum={selectedLessonNum}
                 onSelectLesson={handleSelectLesson}
                 masteredWords={progress.masteredWords}
+                hiddenWords={progress.hiddenWords}
+                vocabOverrides={vocabOverrides}
                 isMultiMode={isMultiLessonMode}
                 onToggleMultiMode={setIsMultiLessonMode}
                 selectedLessons={selectedLessons}

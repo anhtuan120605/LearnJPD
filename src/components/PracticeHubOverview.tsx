@@ -19,6 +19,7 @@ import {
 import { courseDatasets } from '../data';
 import { getLessonTopic } from '../data/lessonTopics';
 import { StudyMode, StudyModeSelector } from './StudyModeSelector';
+import { applyVocabOverridesToWords, VocabOverride } from '../lib/vocabOverrides';
 
 interface PracticeHubOverviewProps {
   currentCourse: string;
@@ -27,6 +28,8 @@ interface PracticeHubOverviewProps {
   selectedLessonNum: number;
   onSelectLesson: (lessonNum: number) => void;
   masteredWords: string[];
+  hiddenWords?: string[];
+  vocabOverrides?: Record<string, VocabOverride>;
   isMultiMode: boolean;
   onToggleMultiMode: (val: boolean) => void;
   selectedLessons: number[];
@@ -60,6 +63,8 @@ export const PracticeHubOverview: React.FC<PracticeHubOverviewProps> = ({
   selectedLessonNum,
   onSelectLesson,
   masteredWords,
+  hiddenWords = [],
+  vocabOverrides,
   isMultiMode,
   onToggleMultiMode,
   selectedLessons,
@@ -93,16 +98,21 @@ export const PracticeHubOverview: React.FC<PracticeHubOverviewProps> = ({
     }));
   }, []);
 
-  // Thống kê tiến độ từng bài học
+  // Thống kê tiến độ từng bài học (đã loại trừ từ bị ẩn/xóa để đồng bộ 100%)
   const lessonStats = useMemo(() => {
+    const hiddenSet = new Set(hiddenWords || []);
     return lessons.map(l => {
       const topic = getLessonTopic(currentCourse, l.lesson);
-      const totalWords = l.words.length;
-      const masteredCount = l.words.filter(w => masteredWords.includes(w.id)).length;
+      const effectiveWords = vocabOverrides
+        ? applyVocabOverridesToWords(l.words, currentCourse, l.lesson, vocabOverrides)
+        : l.words;
+      const activeWords = effectiveWords.filter(w => !hiddenSet.has(w.id));
+      const totalWords = activeWords.length;
+      const masteredCount = activeWords.filter(w => masteredWords.includes(w.id)).length;
       const percent = totalWords > 0 ? Math.round((masteredCount / totalWords) * 100) : 0;
       
       let status: 'completed' | 'in_progress' | 'not_started' = 'not_started';
-      if (percent === 100) status = 'completed';
+      if (percent === 100 && totalWords > 0) status = 'completed';
       else if (percent > 0) status = 'in_progress';
 
       return {
@@ -113,10 +123,12 @@ export const PracticeHubOverview: React.FC<PracticeHubOverviewProps> = ({
         masteredCount,
         percent,
         status,
-        words: l.words
+        words: activeWords,
+        rawTotalWords: effectiveWords.length,
+        hiddenCount: effectiveWords.length - activeWords.length
       };
     });
-  }, [lessons, currentCourse, masteredWords]);
+  }, [lessons, currentCourse, masteredWords, hiddenWords, vocabOverrides]);
 
   // Thống kê tổng thể
   const overallStats = useMemo(() => {
