@@ -23,6 +23,9 @@ import { PracticeSessionHeader } from './components/PracticeSessionHeader';
 import { PersonalDashboardView } from './components/PersonalDashboardView';
 import { ConjugationTrainerView } from './components/ConjugationTrainerView';
 import { JapaneseTypingView } from './components/JapaneseTypingView';
+import { ShadowingHubView } from './components/shadowing/ShadowingHubView';
+import { ShadowingPlayerView } from './components/shadowing/ShadowingPlayerView';
+import { ShadowingVideoItem } from './types/shadowing';
 import { MistakeBankModal } from './components/MistakeBankModal';
 import { SrsReviewModal } from './components/SrsReviewModal';
 import { AdminWordEditModal } from './components/AdminWordEditModal';
@@ -121,8 +124,9 @@ export function App() {
   // Modal Ôn tập ngắt quãng (SRS Review SM-2)
   const [isSrsReviewOpen, setIsSrsReviewOpen] = useState<boolean>(false);
 
-  // Trạng thái hiển thị trong Phân hệ Luyện tập: 'overview' (Tổng thể) | 'session' (Phiên tập trung) | 'conjugation' (Đấu trường chia thể) | 'typing' (Đấu trường luyện gõ)
-  const [practiceStage, setPracticeStage] = useState<'overview' | 'session' | 'conjugation' | 'typing'>(initialNav.practiceStage);
+  // Trạng thái hiển thị trong Phân hệ Luyện tập: 'overview' | 'session' | 'conjugation' | 'typing' | 'shadowing'
+  const [practiceStage, setPracticeStage] = useState<'overview' | 'session' | 'conjugation' | 'typing' | 'shadowing'>(initialNav.practiceStage);
+  const [selectedShadowingVideo, setSelectedShadowingVideo] = useState<ShadowingVideoItem | null>(null);
 
   // Cấp độ Kanji đang chọn (N5 -> N1)
   const [selectedKanjiLevel, setSelectedKanjiLevel] = useState<string>(initialNav.kanjiLevel);
@@ -1234,7 +1238,26 @@ export function App() {
         {/* PHÂN HỆ 3: TRUNG TÂM LUYỆN TẬP CHUYÊN SÂU (PRACTICE HUB) */}
         {activeTab === 'practice' && (
           <div className="space-y-6">
-            {practiceStage === 'conjugation' ? (
+            {practiceStage === 'shadowing' ? (
+              /* GÓC NHÌN ĐẶC BIỆT: SHADOWING & CHÉP CHÍNH TẢ QUA VIDEO */
+              selectedShadowingVideo ? (
+                <ShadowingPlayerView
+                  video={selectedShadowingVideo}
+                  onBack={() => setSelectedShadowingVideo(null)}
+                />
+              ) : (
+                <ShadowingHubView
+                  onSelectVideo={(video) => setSelectedShadowingVideo(video)}
+                  onBackToPractice={() => {
+                    if (window.history.length > 1 && window.location.search.includes('stage=shadowing')) {
+                      window.history.back();
+                    } else {
+                      setPracticeStage('overview');
+                    }
+                  }}
+                />
+              )
+            ) : practiceStage === 'conjugation' ? (
               /* GÓC NHÌN ĐẶC BIỆT: BỘ LUYỆN CHIA THỂ ĐỘNG TỪ & TÍNH TỪ */
               <ConjugationTrainerView
                 onBack={() => {
@@ -1286,6 +1309,7 @@ export function App() {
                 counts={practiceFilterCounts}
                 onOpenConjugationTrainer={() => setPracticeStage('conjugation')}
                 onOpenTypingMaster={() => setPracticeStage('typing')}
+                onOpenShadowingHub={() => setPracticeStage('shadowing')}
                 onOpenMistakeBank={() => setIsMistakeBankOpen(true)}
                 dueSrsCount={dueSrsItems.length}
                 onOpenSrsReview={() => setIsSrsReviewOpen(true)}

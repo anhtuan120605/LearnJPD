@@ -5,6 +5,7 @@ LearnJPD hỗ trợ đồng bộ tiến độ học tập trên đám mây thôn
 ---
 
 ## 1. Tạo Project trên Supabase
+
 1. Truy cập [https://supabase.com](https://supabase.com) và đăng nhập (hoặc tạo tài khoản miễn phí).
 2. Nhấn **"New project"**.
 3. Điền tên dự án (ví dụ: `LearnJPD`) và tạo mật khẩu Database. Chọn khu vực gần Việt Nam (như `Singapore`).
@@ -13,6 +14,7 @@ LearnJPD hỗ trợ đồng bộ tiến độ học tập trên đám mây thôn
 ---
 
 ## 2. Khởi tạo Database Schema
+
 1. Trong giao diện Supabase Dashboard, điều hướng đến mục **SQL Editor** (biểu tượng `>_` ở thanh menu bên trái).
 2. Nhấn **"New query"**.
 3. Mở file [schema.sql](schema.sql), sao chép toàn bộ nội dung và dán vào SQL Editor.
@@ -22,6 +24,7 @@ LearnJPD hỗ trợ đồng bộ tiến độ học tập trên đám mây thôn
 ---
 
 ## 3. Cấu hình Biến Môi Trường (.env)
+
 1. Trong Supabase Dashboard, vào mục **Project Settings** (biểu tượng bánh răng ⚙️ ở góc dưới bên trái) -> chọn **API**.
 2. Sao chép hai thông số:
    - **Project URL**: Ví dụ `https://xyzcompany.supabase.co`
@@ -36,6 +39,7 @@ LearnJPD hỗ trợ đồng bộ tiến độ học tập trên đám mây thôn
 ---
 
 ## 4. Bật Xác Thực Người Dùng (Auth)
+
 1. Vào **Authentication** -> **Providers** -> Chọn **Email**.
 2. Đảm bảo mục **"Enable Email provider"** đang bật (ON).
 3. *(Tùy chọn)* Nếu muốn người dùng đăng nhập ngay mà không cần xác nhận email trong lúc thử nghiệm: Tắt mục **"Confirm email"** -> Nhấn **Save**.
@@ -43,6 +47,7 @@ LearnJPD hỗ trợ đồng bộ tiến độ học tập trên đám mây thôn
 ---
 
 ## 5. Trải nghiệm
+
 - Khi mở LearnJPD, nhấn vào biểu tượng đám mây hoặc nút **"Đăng nhập"** trên thanh Navbar.
 - Đăng ký tài khoản và đăng nhập.
-- Toàn bộ từ vựng đã thuộc, Kanji yêu thích, chuỗi ngày streak và điểm số bài thi sẽ tự động được đồng bộ an toàn và tức thì lên cơ sở dữ liệu Supabase!
+- Toàn bộ từ vựng đã thuộc, Kanji yêu thích, chuỗi ngày streak và điểm số bài thi sẽ tự động được đồng btôiộ an toàn và tức thì lên cơ sở dữ liệu Supabase!

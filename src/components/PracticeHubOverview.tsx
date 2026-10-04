@@ -13,7 +13,8 @@ import {
   Check,
   Keyboard,
   Zap,
-  Clock
+  Clock,
+  Headphones
 } from 'lucide-react';
 import { courseDatasets } from '../data';
 import { getLessonTopic } from '../data/lessonTopics';
@@ -47,6 +48,7 @@ interface PracticeHubOverviewProps {
   onOpenConjugationTrainer?: () => void;
   onOpenTypingMaster?: () => void;
   onOpenMistakeBank?: () => void;
+  onOpenShadowingHub?: () => void;
   dueSrsCount?: number;
   onOpenSrsReview?: () => void;
 }
@@ -74,6 +76,7 @@ export const PracticeHubOverview: React.FC<PracticeHubOverviewProps> = ({
   onOpenConjugationTrainer,
   onOpenTypingMaster,
   onOpenMistakeBank,
+  onOpenShadowingHub,
   dueSrsCount = 0,
   onOpenSrsReview,
 }) => {
@@ -270,6 +273,38 @@ export const PracticeHubOverview: React.FC<PracticeHubOverviewProps> = ({
             >
               <span>Vào luyện gõ phím</span>
               <Zap className="w-3.5 h-3.5 text-rose-500" />
+            </button>
+          </div>
+        )}
+
+        {/* THẺ 4: SHADOWING & CHÉP CHÍNH TẢ QUA VIDEO (JLPT / PODCAST) */}
+        {onOpenShadowingHub && (
+          <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-indigo-900/90 to-purple-900/90 text-white p-5 shadow-2xs border border-indigo-700/50 flex flex-col justify-between gap-4">
+            <div className="flex items-start space-x-3.5 z-10">
+              <div className="w-10 h-10 rounded-xl bg-white/15 border border-white/25 flex items-center justify-center text-white font-bold shrink-0">
+                <Headphones className="w-5 h-5 text-indigo-200" />
+              </div>
+              <div>
+                <div className="flex items-center space-x-2">
+                  <h2 className="text-sm sm:text-base font-bold text-white">
+                    Shadowing & Chép Chính Tả
+                  </h2>
+                  <span className="text-[10px] font-bold px-1.5 py-0.5 rounded-full bg-emerald-400/20 text-emerald-300 border border-emerald-400/30">
+                    Video JLPT • AI
+                  </span>
+                </div>
+                <p className="text-xs text-indigo-200/80 mt-1 line-clamp-2">
+                  Luyện nghe - nhại âm (Shadowing), gõ chính tả (Dictation) theo video YouTube và đề thi JLPT N5-N1.
+                </p>
+              </div>
+            </div>
+
+            <button
+              onClick={onOpenShadowingHub}
+              className="w-full sm:w-auto self-end px-4 py-2 rounded-xl bg-white text-indigo-900 hover:bg-indigo-50 font-bold text-xs shadow-xs transition active:scale-95 flex items-center justify-center space-x-1.5 z-10"
+            >
+              <span>Vào luyện nghe video</span>
+              <ArrowRight className="w-3.5 h-3.5 text-indigo-600" />
             </button>
           </div>
         )}
