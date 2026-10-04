@@ -15,7 +15,7 @@ LearnJPD hỗ trợ đồng bộ tiến độ học tập trên đám mây thôn
 ## 2. Khởi tạo Database Schema
 1. Trong giao diện Supabase Dashboard, điều hướng đến mục **SQL Editor** (biểu tượng `>_` ở thanh menu bên trái).
 2. Nhấn **"New query"**.
-3. Mở file [supabase/schema.sql](file:///Users/ghan81/Downloads/LearnJPD/supabase/schema.sql), sao chép toàn bộ nội dung và dán vào SQL Editor.
+3. Mở file [schema.sql](schema.sql), sao chép toàn bộ nội dung và dán vào SQL Editor.
 4. Nhấn **"Run"** (hoặc bấm `Cmd + Enter` / `Ctrl + Enter`).
 5. Kết quả báo `Success. No rows returned` là bạn đã tạo xong bảng `profiles`, `user_progress` và cấu hình bảo mật RLS!
 
