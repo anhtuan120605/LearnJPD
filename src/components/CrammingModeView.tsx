@@ -459,24 +459,28 @@ export const CrammingModeView: React.FC<CrammingModeViewProps> = ({
   };
 
   return (
-    <div className={
-      isFullscreen
-        ? "fixed inset-0 z-50 bg-[#121826]/98 backdrop-blur-2xl text-white p-4 sm:p-6 md:p-8 flex flex-col justify-center items-center overflow-y-auto"
-        : "max-w-4xl mx-auto space-y-4"
-    }>
+    <div 
+      style={isFullscreen ? { backgroundColor: '#0b0f19' } : undefined}
+      className={
+        isFullscreen
+          ? "fixed inset-0 z-50 text-white p-4 sm:p-6 md:p-8 flex flex-col justify-center items-center overflow-y-auto"
+          : "max-w-4xl mx-auto space-y-4"
+      }
+    >
       {/* Banner thông báo chế độ phóng to toàn màn hình */}
       {isFullscreen && (
-        <div className="w-full max-w-5xl mx-auto mb-3 flex items-center justify-between px-3 py-1 text-xs text-slate-400 shrink-0 select-none">
+        <div className="w-full max-w-5xl mx-auto mb-3 flex items-center justify-between px-3 py-1.5 text-xs text-slate-400 shrink-0 select-none">
           <div className="flex items-center space-x-2">
-            <span className="relative flex h-2.5 w-2.5">
+            <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
             </span>
-            <span className="font-bold text-slate-200">Chế độ gõ tập trung toàn màn hình</span>
+            <span className="font-medium text-slate-300">Chế độ gõ tập trung toàn màn hình</span>
           </div>
           <button
             onClick={toggleFullscreen}
-            className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-xl bg-slate-800/90 hover:bg-slate-700 text-slate-200 hover:text-white text-xs font-bold transition border border-slate-700 shadow-xs"
+            style={{ backgroundColor: '#182234' }}
+            className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-xl hover:bg-slate-700 text-slate-300 hover:text-white text-xs font-semibold transition border border-slate-700/80 shadow-xs"
             title="Thu nhỏ lại về kích thước thường (phím Esc)"
           >
             <Minimize2 className="w-3.5 h-3.5 text-orange-400" />
@@ -487,14 +491,17 @@ export const CrammingModeView: React.FC<CrammingModeViewProps> = ({
 
       {/* Banner thông báo đã khôi phục phiên gõ dở */}
       {restoredBanner && !isCompleted && (
-        <div className={`flex items-center justify-between bg-orange-500/10 border border-orange-500/30 px-4 py-2.5 rounded-2xl text-xs text-orange-300 shadow-2xs ${isFullscreen ? 'w-full max-w-5xl mx-auto mb-3 shrink-0' : ''}`}>
+        <div 
+          style={{ backgroundColor: '#1b2333' }}
+          className={`flex items-center justify-between border border-amber-500/30 px-4 py-2.5 rounded-2xl text-xs text-amber-300 shadow-2xs ${isFullscreen ? 'w-full max-w-5xl mx-auto mb-3 shrink-0' : ''}`}
+        >
           <div className="flex items-center space-x-2">
             <span className="text-sm">🔄</span>
             <span>{restoredBanner} (tiến độ được tự động lưu lại).</span>
           </div>
           <button
             onClick={handleRestart}
-            className="font-bold underline hover:text-orange-100 ml-3 shrink-0"
+            className="font-bold underline hover:text-amber-200 ml-3 shrink-0"
           >
             Làm lại từ đầu
           </button>
@@ -503,7 +510,10 @@ export const CrammingModeView: React.FC<CrammingModeViewProps> = ({
 
       {isCompleted ? (
         /* Màn hình kết thúc */
-        <div className={`bg-[#232F46] text-white rounded-3xl p-10 text-center shadow-2xl space-y-6 ${isFullscreen ? 'w-full max-w-5xl my-auto' : ''}`}>
+        <div 
+          style={{ backgroundColor: '#161f30' }}
+          className={`text-white rounded-3xl p-10 text-center shadow-2xl border border-slate-700/60 space-y-6 ${isFullscreen ? 'w-full max-w-5xl my-auto' : ''}`}
+        >
           <div className="w-20 h-20 mx-auto rounded-3xl bg-amber-500/20 text-amber-400 flex items-center justify-center">
             <Sparkles className="w-10 h-10 animate-bounce" />
           </div>
@@ -532,11 +542,14 @@ export const CrammingModeView: React.FC<CrammingModeViewProps> = ({
         </div>
       ) : (
         /* Giao diện Nhồi nhét Dark Navy chuẩn NhaiKanji */
-        <div className={`relative rounded-3xl bg-[#232F46] text-white shadow-2xl border border-slate-700/60 flex flex-col justify-between transition-all ${
-          isFullscreen 
-            ? 'w-full max-w-5xl my-auto p-6 sm:p-10 md:p-12 min-h-[580px]' 
-            : 'overflow-hidden p-6 sm:p-10 min-h-[480px]'
-        }`}>
+        <div 
+          style={{ backgroundColor: '#161f30' }}
+          className={`relative rounded-3xl text-white shadow-2xl border border-slate-700/70 flex flex-col justify-between transition-all ${
+            isFullscreen 
+              ? 'w-full max-w-5xl my-auto p-8 sm:p-12 md:p-14 min-h-[580px]' 
+              : 'overflow-hidden p-6 sm:p-10 min-h-[480px]'
+          }`}
+        >
           
           {/* Header trên: Mascot bên trái, Các nút điều khiển bên phải */}
           <div className="flex flex-wrap items-center justify-between gap-3">
@@ -749,14 +762,15 @@ export const CrammingModeView: React.FC<CrammingModeViewProps> = ({
                         : "Gõ romaji nguyên bản (vd: toshokan, kenkyuusha - chấp nhận cả Romaji và Kana)")
                     : "Gõ âm Hán Việt (vd: THỰC, SINH VIÊN)"
                 }
-                className={`w-full rounded-2xl bg-[#1B2436] text-white placeholder-slate-500 font-semibold focus:outline-hidden transition border-2 ${
+                style={{ backgroundColor: '#0f1726' }}
+                className={`w-full rounded-2xl text-white placeholder-slate-500 font-semibold focus:outline-hidden transition border-2 ${
                   isFullscreen ? 'py-4 sm:py-5 px-6 text-lg sm:text-xl' : 'py-3.5 px-5 text-base'
                 } ${
                   status === 'correct' 
                     ? 'border-emerald-500 bg-emerald-950/20 text-emerald-400' 
                     : status === 'wrong'
                       ? 'border-rose-500 bg-rose-950/20 text-rose-400 animate-shake'
-                      : 'border-slate-700/80 focus:border-orange-500'
+                      : 'border-slate-700/80 focus:border-orange-500/80'
                 }`}
               />
 
@@ -805,11 +819,12 @@ export const CrammingModeView: React.FC<CrammingModeViewProps> = ({
                 type="button"
                 onClick={handleHint}
                 disabled={hintCount >= totalChars || status !== 'idle'}
+                style={{ backgroundColor: '#222d42' }}
                 className={`${
                   isFullscreen ? 'py-3.5 sm:py-4 px-5 text-sm sm:text-base' : 'py-3 px-4 text-xs sm:text-sm'
-                } rounded-xl bg-white text-slate-800 font-bold hover:bg-slate-100 disabled:opacity-50 transition flex items-center justify-center space-x-1.5 shadow-sm`}
+                } rounded-xl hover:bg-[#2b3952] text-slate-200 border border-slate-600/50 font-bold disabled:opacity-40 transition flex items-center justify-center space-x-1.5 shadow-sm`}
               >
-                <Lightbulb className="w-4 h-4 text-amber-500 fill-amber-500" />
+                <Lightbulb className="w-4 h-4 text-amber-400 fill-amber-400" />
                 <span>
                   {hintCount >= totalChars 
                     ? 'Đã hiện hết từ!' 
@@ -822,7 +837,7 @@ export const CrammingModeView: React.FC<CrammingModeViewProps> = ({
                 type="submit"
                 className={`${
                   isFullscreen ? 'py-3.5 sm:py-4 px-5 text-sm sm:text-base' : 'py-3 px-4 text-xs sm:text-sm'
-                } rounded-xl bg-orange-500 hover:bg-orange-600 text-white font-bold shadow-lg shadow-orange-500/25 transition flex items-center justify-center space-x-1.5 active:scale-95`}
+                } rounded-xl bg-gradient-to-r from-orange-500 to-amber-600 hover:from-orange-600 hover:to-amber-700 text-white font-bold shadow-lg shadow-orange-500/20 transition flex items-center justify-center space-x-1.5 active:scale-95`}
               >
                 <Keyboard className="w-4 h-4" />
                 <span>{status === 'idle' ? 'Kiểm tra' : 'Câu tiếp theo ➔'}</span>
