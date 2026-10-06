@@ -98,7 +98,7 @@ export const SrsReviewModal: React.FC<SrsReviewModalProps> = ({
 
   return (
     <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-3 sm:p-4 animate-fade-in">
-      <div className="bg-white dark:bg-[#111c30] rounded-3xl border border-slate-200 dark:border-slate-800 w-full max-w-xl shadow-2xl overflow-hidden flex flex-col max-h-[90vh]">
+      <div className="bg-white dark:bg-[#111c30] rounded-3xl border border-slate-200 dark:border-slate-800 w-full max-w-2xl shadow-2xl overflow-hidden flex flex-col max-h-[90vh]">
         {/* Header Modal */}
         <div className="p-4 sm:p-5 border-b border-slate-100 dark:border-slate-800 flex items-center justify-between bg-slate-50/50 dark:bg-slate-800/30">
           <div className="flex items-center space-x-2.5">
@@ -168,11 +168,11 @@ export const SrsReviewModal: React.FC<SrsReviewModalProps> = ({
               {/* KHỐI FLASHCARD 3D TƯƠNG TÁC */}
               <div
                 onClick={() => setIsFlipped(!isFlipped)}
-                className="min-h-[260px] sm:min-h-[290px] rounded-3xl p-6 sm:p-8 bg-gradient-to-br from-slate-50 to-indigo-50/30 dark:from-slate-800/60 dark:to-slate-900/60 border-2 border-slate-200/80 dark:border-slate-700/80 hover:border-purple-400 transition cursor-pointer flex flex-col justify-between text-center relative group shadow-sm select-none"
+                className="min-h-[320px] sm:min-h-[360px] rounded-3xl p-6 sm:p-10 bg-gradient-to-br from-slate-50 to-indigo-50/30 dark:from-slate-800/60 dark:to-slate-900/60 border-2 border-slate-200/80 dark:border-slate-700/80 hover:border-purple-400 transition cursor-pointer flex flex-col justify-between text-center relative group shadow-sm select-none"
               >
                 {/* Header thẻ: Loại từ & Nút nghe */}
                 <div className="flex items-center justify-between">
-                  <span className="text-[10px] font-black uppercase px-2 py-0.5 rounded-md bg-white dark:bg-slate-800 text-slate-500 border border-slate-200 dark:border-slate-700">
+                  <span className="text-[10px] font-black uppercase px-2.5 py-1 rounded-md bg-white dark:bg-slate-800 text-slate-500 border border-slate-200 dark:border-slate-700">
                     {isWord ? 'Từ vựng' : 'Chữ Hán'}
                   </span>
 
@@ -181,27 +181,27 @@ export const SrsReviewModal: React.FC<SrsReviewModalProps> = ({
                       e.stopPropagation();
                       speakJapanese(subKana || mainText);
                     }}
-                    className="p-1.5 rounded-xl hover:bg-white dark:hover:bg-slate-700 text-slate-400 hover:text-blue-600 transition"
+                    className="p-2 rounded-xl hover:bg-white dark:hover:bg-slate-700 text-slate-400 hover:text-blue-600 transition"
                     title="Nghe phát âm"
                   >
-                    <Volume2 className="w-4 h-4" />
+                    <Volume2 className="w-5 h-5" />
                   </button>
                 </div>
 
                 {/* Nội dung MẶT TRƯỚC */}
-                <div className="my-auto space-y-2 py-4">
+                <div className="my-auto space-y-3 py-4">
                   {showFurigana && subKana && (
-                    <p className="text-sm sm:text-base font-bold text-slate-400 dark:text-slate-400 font-jp tracking-wider">
+                    <p className="text-base sm:text-lg font-bold text-slate-400 dark:text-slate-400 font-jp tracking-wider">
                       {subKana}
                     </p>
                   )}
-                  <h3 className="text-4xl sm:text-5xl font-black font-jp text-slate-900 dark:text-white">
+                  <h3 className="text-5xl sm:text-6xl md:text-7xl font-black font-jp text-slate-900 dark:text-white">
                     {mainText}
                   </h3>
 
                   {!isFlipped && (
-                    <p className="text-xs text-slate-400 mt-3 flex items-center justify-center space-x-1">
-                      <RotateCw className="w-3.5 h-3.5" />
+                    <p className="text-xs sm:text-sm text-slate-400 mt-4 flex items-center justify-center space-x-1.5">
+                      <RotateCw className="w-4 h-4 text-purple-500" />
                       <span>Bấm để lật thẻ xem nghĩa (hoặc phím Space)</span>
                     </p>
                   )}
@@ -209,13 +209,13 @@ export const SrsReviewModal: React.FC<SrsReviewModalProps> = ({
 
                 {/* Nội dung MẶT SAU (Khi đã lật) */}
                 {isFlipped && (
-                  <div className="pt-4 border-t border-slate-200 dark:border-slate-700/80 space-y-2 animate-fade-in">
+                  <div className="pt-4 border-t border-slate-200 dark:border-slate-700/80 space-y-2.5 animate-fade-in">
                     {hanviet && (
-                      <span className="inline-block px-3 py-1 rounded-full text-xs font-black uppercase tracking-wider bg-indigo-100 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400">
+                      <span className="inline-block px-3.5 py-1 rounded-full text-xs sm:text-sm font-black uppercase tracking-wider bg-indigo-100 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400">
                         【{hanviet}】
                       </span>
                     )}
-                    <p className="text-base sm:text-lg font-bold text-slate-800 dark:text-slate-200">
+                    <p className="text-xl sm:text-2xl font-bold text-slate-800 dark:text-slate-200">
                       {meaning}
                     </p>
                     {!isWord && current?.kanji?.radical && (

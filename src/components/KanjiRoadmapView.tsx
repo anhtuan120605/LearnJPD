@@ -1587,26 +1587,26 @@ export const KanjiRoadmapView: React.FC<KanjiRoadmapViewProps> = ({
                         setVocabPracticeFlipped(!vocabPracticeFlipped);
                         speakJapanese(currentV.word);
                       }}
-                      className="cursor-pointer min-h-56 p-6 rounded-3xl bg-slate-50 dark:bg-zinc-800/50 border-2 border-dashed border-blue-200 dark:border-blue-900/60 flex flex-col items-center justify-center text-center space-y-3 hover:border-blue-400 transition"
+                      className="cursor-pointer min-h-72 p-8 rounded-3xl bg-slate-50 dark:bg-zinc-800/50 border-2 border-dashed border-blue-200 dark:border-blue-900/60 flex flex-col items-center justify-center text-center space-y-3.5 hover:border-blue-400 transition"
                     >
-                      <h4 className="text-4xl sm:text-5xl font-jp font-bold text-slate-900 dark:text-white">
+                      <h4 className="text-5xl sm:text-6xl font-jp font-bold text-slate-900 dark:text-white">
                         {currentV.word}
                       </h4>
 
                       {vocabPracticeFlipped ? (
-                        <div className="space-y-1 animate-in fade-in duration-200">
-                          <p className="text-xl font-bold font-jp text-blue-600 dark:text-blue-400">
+                        <div className="space-y-1.5 animate-in fade-in duration-200">
+                          <p className="text-2xl font-bold font-jp text-blue-600 dark:text-blue-400">
                             {currentV.reading}
                           </p>
-                          <p className="text-xs font-bold uppercase text-amber-600 dark:text-amber-400">
+                          <p className="text-xs sm:text-sm font-bold uppercase text-amber-600 dark:text-amber-400">
                             Hán Việt: {currentV.hanviet}
                           </p>
-                          <p className="text-sm font-semibold text-slate-700 dark:text-zinc-200">
+                          <p className="text-base font-semibold text-slate-700 dark:text-zinc-200">
                             {currentV.meaning}
                           </p>
                         </div>
                       ) : (
-                        <p className="text-xs text-slate-400 font-semibold">
+                        <p className="text-xs sm:text-sm text-slate-400 font-semibold">
                           (Chạm vào thẻ để lật xem cách đọc & nghĩa)
                         </p>
                       )}

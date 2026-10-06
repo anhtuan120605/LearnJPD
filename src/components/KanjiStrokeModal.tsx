@@ -281,7 +281,7 @@ export const KanjiStrokeModal: React.FC<KanjiStrokeModalProps> = ({
   return (
     <div
       onClick={onClose}
-      className="fixed inset-0 z-[70] bg-slate-950/70 backdrop-blur-sm flex items-center justify-center p-3 sm:p-4 animate-in fade-in duration-200"
+      className="fixed inset-0 z-[10001] bg-slate-950/70 backdrop-blur-sm flex items-center justify-center p-3 sm:p-4 animate-in fade-in duration-200"
     >
       <div
         onClick={(e) => e.stopPropagation()}
