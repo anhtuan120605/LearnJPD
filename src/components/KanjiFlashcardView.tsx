@@ -338,7 +338,7 @@ export const KanjiFlashcardView: React.FC<KanjiFlashcardViewProps> = ({
       {/* THẺ 3D FLIP CARD CONTAINER */}
       <div
         style={{ perspective: '1200px' }}
-        className="w-full max-w-2xl mx-auto min-h-[380px] sm:min-h-[420px] select-none"
+        className="w-full max-w-3xl lg:max-w-4xl mx-auto min-h-[420px] sm:min-h-[470px] select-none"
       >
         <div
           onClick={handleFlip}
@@ -347,7 +347,7 @@ export const KanjiFlashcardView: React.FC<KanjiFlashcardViewProps> = ({
             transform: isFlipped ? 'rotateY(180deg)' : 'rotateY(0deg)',
             transition: 'transform 0.5s cubic-bezier(0.4, 0.2, 0.2, 1)'
           }}
-          className="relative w-full h-full min-h-[380px] sm:min-h-[420px] cursor-pointer rounded-3xl"
+          className="relative w-full h-full min-h-[420px] sm:min-h-[470px] cursor-pointer rounded-3xl"
         >
           {/* MẶT 1 (Front Side) */}
           <div
