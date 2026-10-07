@@ -31,7 +31,7 @@
         "word": "体",
         "reading": "からだ",
         "meaning": "cơ thể; sức khoẻ",
-        "hanviet": "BỔN",
+        "hanviet": "THỂ",
         "level": "N5",
         "lesson": 16
       },
@@ -39,7 +39,7 @@
         "word": "体に いい",
         "reading": "からだに いい",
         "meaning": "tốt cho sức khỏe",
-        "hanviet": "BỔN",
+        "hanviet": "THỂ",
         "level": "N5",
         "lesson": 19
       },
@@ -47,7 +47,7 @@
         "word": "体育館",
         "reading": "たいいくかん",
         "meaning": "phòng tập thể dục",
-        "hanviet": "BỔN DỤC QUÁN",
+        "hanviet": "THỂ DỤC QUÁN",
         "level": "N4",
         "lesson": 28
       },
@@ -55,7 +55,7 @@
         "word": "体温計",
         "reading": "たいおんけい",
         "meaning": "cái cặp nhiệt; nhiệt kế",
-        "hanviet": "BỔN UẨN KÊ",
+        "hanviet": "THỂ ÔN KÊ",
         "level": "N4",
         "lesson": 42
       },
@@ -63,7 +63,7 @@
         "word": "重体",
         "reading": "じゅうたい",
         "meaning": "sự ốm nặng; tình trạng nguy kịch; ốm nặng",
-        "hanviet": "TRÙNG BỔN",
+        "hanviet": "TRỌNG THỂ",
         "level": "N3",
         "lesson": 4
       },
@@ -71,7 +71,7 @@
         "word": "身体",
         "reading": "しんたい",
         "meaning": "thân thể; cơ thể; sức khoẻ",
-        "hanviet": "BỔN",
+        "hanviet": "THÂN THỂ",
         "level": "N3",
         "lesson": 8
       },
@@ -79,7 +79,7 @@
         "word": "一体",
         "reading": "いったい",
         "meaning": "đồng nhất; làm một; cùng nhau",
-        "hanviet": "NHẤT BỔN",
+        "hanviet": "NHẤT THỂ",
         "level": "N3",
         "lesson": 16
       },
@@ -87,7 +87,7 @@
         "word": "気体",
         "reading": "きたい",
         "meaning": "hơi",
-        "hanviet": "KHÍ BỔN",
+        "hanviet": "KHÍ THỂ",
         "level": "N3",
         "lesson": 29
       },
@@ -95,7 +95,7 @@
         "word": "具体",
         "reading": "ぐたい",
         "meaning": "ụ thể; hữu hình",
-        "hanviet": "CỤ BỔN",
+        "hanviet": "CỤ THỂ",
         "level": "N3",
         "lesson": 32
       },
@@ -103,7 +103,7 @@
         "word": "全体",
         "reading": "ぜんたい",
         "meaning": "cả người",
-        "hanviet": "TOÀN BỔN",
+        "hanviet": "TOÀN THỂ",
         "level": "N3",
         "lesson": 53
       },
@@ -111,7 +111,7 @@
         "word": "体育",
         "reading": "たいいく",
         "meaning": "môn thể dục; sự giáo dục thể chất",
-        "hanviet": "BỔN DỤC",
+        "hanviet": "THỂ DỤC",
         "level": "N3",
         "lesson": 55
       },
@@ -119,7 +119,7 @@
         "word": "体温",
         "reading": "たいおん",
         "meaning": "nhiệt độ cơ thể; thân nhiệt",
-        "hanviet": "BỔN UẨN",
+        "hanviet": "THỂ ÔN",
         "level": "N3",
         "lesson": 55
       }
@@ -218,7 +218,7 @@
         "word": "心理",
         "reading": "しんり",
         "meaning": "tâm lý",
-        "hanviet": "TÂM LÍ",
+        "hanviet": "TÂM LÝ",
         "level": "N3",
         "lesson": 9
       },
@@ -343,7 +343,7 @@
         "word": "引力",
         "reading": "いんりょく",
         "meaning": "lực hấp dẫn; lực hút",
-        "hanviet": "DẤN LỰC",
+        "hanviet": "DẪN LỰC",
         "level": "N2",
         "lesson": 9
       },
@@ -394,7 +394,7 @@
         "word": "自動販売機",
         "reading": "じどうはんばいき",
         "meaning": "Máy bán hàng tự động",
-        "hanviet": "TỰ ĐỘNG PHIẾN MẠI CƠ",
+        "hanviet": "TỰ ĐỘNG PHIẾN MÃI CƠ",
         "level": "N5",
         "lesson": 3
       },
@@ -410,7 +410,7 @@
         "word": "自分で",
         "reading": "じぶんで",
         "meaning": "của chính mình",
-        "hanviet": "TỰ",
+        "hanviet": "TỰ PHÂN",
         "level": "N5",
         "lesson": 24
       },
@@ -426,7 +426,7 @@
         "word": "自分",
         "reading": "じぶん",
         "meaning": "bản thân mình; tự mình",
-        "hanviet": "TỰ",
+        "hanviet": "TỰ PHÂN",
         "level": "N4",
         "lesson": 27
       },
@@ -442,7 +442,7 @@
         "word": "自殺",
         "reading": "じさつ",
         "meaning": "sự tự sát; sự tự tử",
-        "hanviet": "TỰ SÁI",
+        "hanviet": "TỰ SÁT",
         "level": "N3",
         "lesson": 2
       },
@@ -450,7 +450,7 @@
         "word": "自身",
         "reading": "じしん",
         "meaning": "bản thân",
-        "hanviet": "TỰ",
+        "hanviet": "TỰ THÂN",
         "level": "N3",
         "lesson": 2
       },
@@ -474,7 +474,7 @@
         "word": "不自由",
         "reading": "ふじゆう",
         "meaning": "không tự do",
-        "hanviet": "BƯU TỰ DO",
+        "hanviet": "BẤT TỰ DO",
         "level": "N3",
         "lesson": 75
       }
@@ -557,7 +557,7 @@
         "word": "足元",
         "reading": "あしもと",
         "meaning": "dáng đi; bước chân; bước đi",
-        "hanviet": "TÚ NGUYÊN",
+        "hanviet": "TÚC NGUYÊN",
         "level": "N2",
         "lesson": 6
       },
@@ -639,7 +639,7 @@
         "word": "重い 病気",
         "reading": "おもい びょうき",
         "meaning": "bệnh nặng",
-        "hanviet": "TRÙNG BỆNH KHÍ",
+        "hanviet": "TRỌNG BỆNH KHÍ",
         "level": "N4",
         "lesson": 33
       },
@@ -663,7 +663,7 @@
         "word": "臆病",
         "reading": "おくびょう",
         "meaning": "sự nhát gan; sự bẽn lẽn; nhút nhát",
-        "hanviet": "BỆNH",
+        "hanviet": "ỨC BỆNH",
         "level": "N1",
         "lesson": 28
       },
@@ -811,7 +811,7 @@
         "word": "大学院",
         "reading": "だいがくいん",
         "meaning": "sự tốt nghiệp đạt học",
-        "hanviet": "THÁI HỌC VIỆN",
+        "hanviet": "ĐẠI HỌC VIỆN",
         "level": "N4",
         "lesson": 31
       },
@@ -914,7 +914,7 @@
         "word": "親子どんぶり",
         "reading": "おやこどんぶり",
         "meaning": "một bát cơm với thịt gà và trứng",
-        "hanviet": "THÂN TÍ",
+        "hanviet": "THÂN TỬ",
         "level": "N4",
         "lesson": 34
       },
@@ -946,7 +946,7 @@
         "word": "親戚",
         "reading": "しんせき",
         "meaning": "bà con thân thuộc; họ hàng",
-        "hanviet": "THÂN",
+        "hanviet": "THÂN THÍCH",
         "level": "N3",
         "lesson": 8
       },
@@ -970,7 +970,7 @@
         "word": "母親",
         "reading": "ははおや",
         "meaning": "mẹ",
-        "hanviet": "MÔ THÂN",
+        "hanviet": "MẪU THÂN",
         "level": "N3",
         "lesson": 72
       },
@@ -1015,7 +1015,7 @@
         "word": "家族",
         "reading": "かぞく",
         "meaning": "Gia đình",
-        "hanviet": "CÔ THẤU",
+        "hanviet": "CÔ TỘC",
         "level": "N5",
         "lesson": 5
       },
@@ -1023,7 +1023,7 @@
         "word": "ご家族",
         "reading": "ごかぞく",
         "meaning": "gia đình bạn",
-        "hanviet": "CÔ THẤU",
+        "hanviet": "CÔ TỘC",
         "level": "N5",
         "lesson": 15
       },
@@ -1031,7 +1031,7 @@
         "word": "貴族",
         "reading": "きぞく",
         "meaning": "đài các",
-        "hanviet": "QUÝ THẤU",
+        "hanviet": "QUÝ TỘC",
         "level": "N1",
         "lesson": 39
       },
@@ -1039,7 +1039,7 @@
         "word": "民族",
         "reading": "みんぞく",
         "meaning": "dân tộc",
-        "hanviet": "DÂN THẤU",
+        "hanviet": "DÂN TỘC",
         "level": "N1",
         "lesson": 95
       }
@@ -1112,7 +1112,7 @@
         "word": "私有",
         "reading": "しゆう",
         "meaning": "tư hữu",
-        "hanviet": "TƯ DỰU",
+        "hanviet": "TƯ HỮU",
         "level": "N1",
         "lesson": 80
       }
@@ -1151,7 +1151,7 @@
         "word": "ご主人",
         "reading": "ごしゅじん",
         "meaning": "Chồng (người khác)",
-        "hanviet": "CHÚA NHÂN",
+        "hanviet": "CHỦ NHÂN",
         "level": "N5",
         "lesson": 9
       },
@@ -1167,7 +1167,7 @@
         "word": "主人公",
         "reading": "しゅじんこう",
         "meaning": "ông chủ; nhân vật chính",
-        "hanviet": "CHÚA NHÂN CÔNG",
+        "hanviet": "CHỦ NHÂN CÔNG",
         "level": "N4",
         "lesson": 27
       },
@@ -1175,7 +1175,7 @@
         "word": "主義",
         "reading": "しゅぎ",
         "meaning": "chủ nghĩa",
-        "hanviet": "CHÚA NGHĨA",
+        "hanviet": "CHỦ NGHĨA",
         "level": "N3",
         "lesson": 5
       },
@@ -1183,7 +1183,7 @@
         "word": "主張",
         "reading": "しゅちょう",
         "meaning": "chủ trương",
-        "hanviet": "CHÚA TRƯƠNG",
+        "hanviet": "CHỦ TRƯƠNG",
         "level": "N3",
         "lesson": 5
       },
@@ -1191,7 +1191,7 @@
         "word": "主婦",
         "reading": "しゅふ",
         "meaning": "vợ",
-        "hanviet": "CHÚA PHỤ",
+        "hanviet": "CHỦ PHỤ",
         "level": "N3",
         "lesson": 5
       },
@@ -1199,7 +1199,7 @@
         "word": "主要",
         "reading": "しゅよう",
         "meaning": "chủ yếu; quan trọng",
-        "hanviet": "CHÚA YÊU",
+        "hanviet": "CHỦ YÊU",
         "level": "N3",
         "lesson": 5
       },
@@ -1207,7 +1207,7 @@
         "word": "主に",
         "reading": "おもに",
         "meaning": "chủ yếu; chính",
-        "hanviet": "CHÚA",
+        "hanviet": "CHỦ",
         "level": "N3",
         "lesson": 22
       },
@@ -1215,7 +1215,7 @@
         "word": "主語",
         "reading": "しゅご",
         "meaning": "chủ ngữ",
-        "hanviet": "CHÚA NGỨ",
+        "hanviet": "CHỦ NGỮ",
         "level": "N2",
         "lesson": 34
       },
@@ -1223,7 +1223,7 @@
         "word": "主役",
         "reading": "しゅやく",
         "meaning": "nhân vật chính; vai chính",
-        "hanviet": "CHÚA DỊCH",
+        "hanviet": "CHỦ DỊCH",
         "level": "N2",
         "lesson": 35
       },
@@ -1231,7 +1231,7 @@
         "word": "民主～",
         "reading": "みんしゅ～",
         "meaning": "dân chủ",
-        "hanviet": "DÂN CHÚA",
+        "hanviet": "DÂN CHỦ",
         "level": "N2",
         "lesson": 70
       },
@@ -1239,7 +1239,7 @@
         "word": "家主",
         "reading": "やぬし",
         "meaning": "chủ nhà; chủ đất; gia chủ",
-        "hanviet": "CÔ CHÚA",
+        "hanviet": "CÔ CHỦ",
         "level": "N2",
         "lesson": 73
       }
@@ -1311,7 +1311,7 @@
         "word": "夏",
         "reading": "なつ",
         "meaning": "hạ",
-        "hanviet": "GIÁ",
+        "hanviet": "HẠ",
         "level": "N5",
         "lesson": 12
       }
@@ -1452,7 +1452,7 @@
         "word": "朝寝坊",
         "reading": "あさねぼう",
         "meaning": "dậy muộn (vào buổi sáng)",
-        "hanviet": "TRIÊU TẨM",
+        "hanviet": "TRIÊU TẨM PHƯỜNG",
         "level": "N2",
         "lesson": 6
       }
@@ -1491,7 +1491,7 @@
         "word": "昼休み",
         "reading": "ひるやすみ",
         "meaning": "Nghỉ trưa",
-        "hanviet": "TRÚ HU",
+        "hanviet": "TRÚ HƯU",
         "level": "N5",
         "lesson": 4
       },
@@ -1570,7 +1570,7 @@
         "word": "夕方",
         "reading": "ゆうがた",
         "meaning": "buổi hôm",
-        "hanviet": "TỊCH BÀNG",
+        "hanviet": "TỊCH PHƯƠNG",
         "level": "N4",
         "lesson": 32
       },
@@ -1666,7 +1666,7 @@
         "word": "夜行バス",
         "reading": "やこうバス",
         "meaning": "xe buýt qua đêm",
-        "hanviet": "DẠ HÀNG",
+        "hanviet": "DẠ HÀNH",
         "level": "N4",
         "lesson": 35
       },
@@ -1722,7 +1722,7 @@
         "word": "夜行",
         "reading": "やこう",
         "meaning": "chuyến đi vào buổi đêm; chuyến tàu đêm; đi dạo vào buổi tối",
-        "hanviet": "DẠ HÀNG",
+        "hanviet": "DẠ HÀNH",
         "level": "N2",
         "lesson": 73
       },
@@ -1775,7 +1775,7 @@
         "word": "火曜日",
         "reading": "かようび",
         "meaning": "Thứ ba",
-        "hanviet": "HOẢ DIỆU NHẬT",
+        "hanviet": "HỎA DIỆU NHẬT",
         "level": "N5",
         "lesson": 4
       },
@@ -1783,7 +1783,7 @@
         "word": "水曜日",
         "reading": "すいようび",
         "meaning": "Thứ tư",
-        "hanviet": "THUỶ DIỆU NHẬT",
+        "hanviet": "THỦY DIỆU NHẬT",
         "level": "N5",
         "lesson": 4
       },
@@ -1831,7 +1831,7 @@
         "word": "日曜大工",
         "reading": "にちようだいく",
         "meaning": "thợ mộc chủ nhật",
-        "hanviet": "NHẬT DIỆU THÁI CÔNG",
+        "hanviet": "NHẬT DIỆU ĐẠI CÔNG",
         "level": "N4",
         "lesson": 27
       },
@@ -1847,7 +1847,7 @@
         "word": "水曜",
         "reading": "すいよう",
         "meaning": "thứ tư",
-        "hanviet": "THUỶ DIỆU",
+        "hanviet": "THỦY DIỆU",
         "level": "N2",
         "lesson": 39
       }
@@ -1886,7 +1886,7 @@
         "word": "牛肉",
         "reading": "ぎゅうにく",
         "meaning": "thịt bò",
-        "hanviet": "NGƯU NHỤ",
+        "hanviet": "NGƯU NHỤC",
         "level": "N5",
         "lesson": 12
       },
@@ -1902,7 +1902,7 @@
         "word": "牡牛座",
         "reading": "おうしざ",
         "meaning": "Kim Ngưu",
-        "hanviet": "NGƯU TOÀ",
+        "hanviet": "MẪU NGƯU TOÀ",
         "level": "N4",
         "lesson": 32
       },
@@ -1949,7 +1949,7 @@
         "word": "鳥肉",
         "reading": "とりにく",
         "meaning": "Thịt gà",
-        "hanviet": "ĐIỂU NHỤ",
+        "hanviet": "ĐIỂU NHỤC",
         "level": "N4",
         "lesson": 34
       },
@@ -2018,7 +2018,7 @@
         "word": "吉野山",
         "reading": "よしのやま",
         "meaning": "Núi Yoshino (một ngọn núi ở tỉnh Nara)",
-        "hanviet": "CÁT DÃ SAN",
+        "hanviet": "CÁT DÃ SƠN",
         "level": "N5",
         "lesson": 21
       },
@@ -2026,7 +2026,7 @@
         "word": "上野公園",
         "reading": "うえのこうえん",
         "meaning": "Công viên Ueno (ở Tokyo)",
-        "hanviet": "THƯỚNG DÃ CÔNG VIÊN",
+        "hanviet": "THƯỢNG DÃ CÔNG VIÊN",
         "level": "N4",
         "lesson": 31
       },
@@ -2042,7 +2042,7 @@
         "word": "分野",
         "reading": "ぶんや",
         "meaning": "lĩnh vực",
-        "hanviet": "DÃ",
+        "hanviet": "PHÂN DÃ",
         "level": "N3",
         "lesson": 77
       },
@@ -2090,7 +2090,7 @@
         "word": "野生",
         "reading": "やせい",
         "meaning": "sự hoang dã; dã sinh",
-        "hanviet": "DÃ SANH",
+        "hanviet": "DÃ SINH",
         "level": "N1",
         "lesson": 99
       }
@@ -2153,7 +2153,7 @@
         "word": "海水浴",
         "reading": "かいすいよく",
         "meaning": "sự tắm biển",
-        "hanviet": "HẢI THUỶ DỤC",
+        "hanviet": "HẢI THỦY DỤC",
         "level": "N2",
         "lesson": 14
       },
@@ -2491,7 +2491,7 @@
         "word": "赤い",
         "reading": "あかい",
         "meaning": "Đỏ",
-        "hanviet": "THÍCH",
+        "hanviet": "XÍCH",
         "level": "N5",
         "lesson": 8
       },
@@ -2499,7 +2499,7 @@
         "word": "赤",
         "reading": "あか",
         "meaning": "màu đỏ",
-        "hanviet": "THÍCH",
+        "hanviet": "XÍCH",
         "level": "N4",
         "lesson": 34
       },
@@ -2507,7 +2507,7 @@
         "word": "赤ちゃん",
         "reading": "あかちゃん",
         "meaning": "cách gọi các cháu bé; trẻ con; em bé",
-        "hanviet": "THÍCH",
+        "hanviet": "XÍCH",
         "level": "N4",
         "lesson": 38
       },
@@ -2515,7 +2515,7 @@
         "word": "真っ赤",
         "reading": "まっか",
         "meaning": "đỏ thẫm; đỏ bừng (mặt)",
-        "hanviet": "CHÂN THÍCH",
+        "hanviet": "CHÂN XÍCH",
         "level": "N3",
         "lesson": 80
       },
@@ -2523,7 +2523,7 @@
         "word": "赤道",
         "reading": "せきどう",
         "meaning": "đươờng xích đạo",
-        "hanviet": "THÍCH ĐÁO",
+        "hanviet": "XÍCH ĐẠO",
         "level": "N2",
         "lesson": 41
       },
@@ -2531,7 +2531,7 @@
         "word": "赤字",
         "reading": "あかじ",
         "meaning": "lỗ; thâm hụt thương mại",
-        "hanviet": "THÍCH TỰ",
+        "hanviet": "XÍCH TỰ",
         "level": "N1",
         "lesson": 48
       },
@@ -2539,7 +2539,7 @@
         "word": "赤らむ",
         "reading": "あからむ",
         "meaning": "trở nên đỏ; đỏ lên; ửng hồng",
-        "hanviet": "THÍCH",
+        "hanviet": "XÍCH",
         "level": "N1",
         "lesson": 48
       }
@@ -2605,7 +2605,7 @@
         "word": "青少年",
         "reading": "せいしょうねん",
         "meaning": "thanh thiếu niên",
-        "hanviet": "THANH THIẾU NIÊN",
+        "hanviet": "THANH THIỂU NIÊN",
         "level": "N2",
         "lesson": 40
       },
@@ -2736,7 +2736,7 @@
         "word": "説明します",
         "reading": "せつめいします",
         "meaning": "giải thích",
-        "hanviet": "DUYỆT MINH",
+        "hanviet": "THUYẾT MINH",
         "level": "N5",
         "lesson": 24
       },
@@ -2752,7 +2752,7 @@
         "word": "説明書",
         "reading": "せつめいしょ",
         "meaning": "bản hướng dẫn",
-        "hanviet": "DUYỆT MINH THƯ",
+        "hanviet": "THUYẾT MINH THƯ",
         "level": "N4",
         "lesson": 34
       },
@@ -2800,7 +2800,7 @@
         "word": "明後日",
         "reading": "みょうごにち",
         "meaning": "bữa mốt",
-        "hanviet": "MINH HẤU NHẬT",
+        "hanviet": "MINH HẬU NHẬT",
         "level": "N3",
         "lesson": 41
       },
@@ -2854,7 +2854,7 @@
         "word": "広い",
         "reading": "ひろい",
         "meaning": "rộng; rộng rãi; rộng lớn",
-        "hanviet": "KHOÁT",
+        "hanviet": "QUẢNG",
         "level": "N5",
         "lesson": 13
       },
@@ -2862,7 +2862,7 @@
         "word": "広めます",
         "reading": "ひろめます",
         "meaning": "lan rộng",
-        "hanviet": "KHOÁT",
+        "hanviet": "QUẢNG",
         "level": "N4",
         "lesson": 42
       },
@@ -2870,7 +2870,7 @@
         "word": "広告",
         "reading": "こうこく",
         "meaning": "quảng cáo",
-        "hanviet": "KHOÁT CÁO",
+        "hanviet": "QUẢNG CÁO",
         "level": "N3",
         "lesson": 36
       },
@@ -2878,7 +2878,7 @@
         "word": "広がる",
         "reading": "ひろがる",
         "meaning": "lan rộng",
-        "hanviet": "KHOÁT",
+        "hanviet": "QUẢNG",
         "level": "N3",
         "lesson": 74
       },
@@ -2886,7 +2886,7 @@
         "word": "広げる",
         "reading": "ひろげる",
         "meaning": "bành",
-        "hanviet": "KHOÁT",
+        "hanviet": "QUẢNG",
         "level": "N3",
         "lesson": 74
       },
@@ -2894,7 +2894,7 @@
         "word": "広める",
         "reading": "ひろめる",
         "meaning": "loan tin; truyền tin; tuyên truyền",
-        "hanviet": "KHOÁT",
+        "hanviet": "QUẢNG",
         "level": "N3",
         "lesson": 74
       },
@@ -2902,7 +2902,7 @@
         "word": "広まる",
         "reading": "ひろまる",
         "meaning": "được lan truyền; truyền đi",
-        "hanviet": "KHOÁT",
+        "hanviet": "QUẢNG",
         "level": "N3",
         "lesson": 85
       },
@@ -2910,7 +2910,7 @@
         "word": "広さ",
         "reading": "ひろさ",
         "meaning": "biên độ",
-        "hanviet": "KHOÁT",
+        "hanviet": "QUẢNG",
         "level": "N2",
         "lesson": 62
       },
@@ -2918,7 +2918,7 @@
         "word": "広場",
         "reading": "ひろば",
         "meaning": "quảng trường",
-        "hanviet": "KHOÁT TRÀNG",
+        "hanviet": "QUẢNG TRƯỜNG",
         "level": "N2",
         "lesson": 62
       },
@@ -2926,7 +2926,7 @@
         "word": "広々",
         "reading": "ひろびろ",
         "meaning": "Rộng lớn; rộng rãi",
-        "hanviet": "KHOÁT",
+        "hanviet": "QUẢNG",
         "level": "N2",
         "lesson": 62
       }
@@ -2972,7 +2972,7 @@
         "word": "重い",
         "reading": "おもい",
         "meaning": "nặng; nặng nề",
-        "hanviet": "TRÙNG",
+        "hanviet": "TRỌNG",
         "level": "N5",
         "lesson": 12
       },
@@ -2980,7 +2980,7 @@
         "word": "重い 病気",
         "reading": "おもい びょうき",
         "meaning": "bệnh nặng",
-        "hanviet": "TRÙNG BỆNH KHÍ",
+        "hanviet": "TRỌNG BỆNH KHÍ",
         "level": "N4",
         "lesson": 33
       },
@@ -2988,7 +2988,7 @@
         "word": "重さ",
         "reading": "おもさ",
         "meaning": "khối lượng; trọng lượng; sức nặng",
-        "hanviet": "TRÙNG",
+        "hanviet": "TRỌNG",
         "level": "N4",
         "lesson": 40
       },
@@ -2996,7 +2996,7 @@
         "word": "重視",
         "reading": "じゅうし",
         "meaning": "chú trọng",
-        "hanviet": "TRÙNG THỊ",
+        "hanviet": "TRỌNG THỊ",
         "level": "N3",
         "lesson": 4
       },
@@ -3004,7 +3004,7 @@
         "word": "重体",
         "reading": "じゅうたい",
         "meaning": "sự ốm nặng; tình trạng nguy kịch; ốm nặng",
-        "hanviet": "TRÙNG BỔN",
+        "hanviet": "TRỌNG THỂ",
         "level": "N3",
         "lesson": 4
       },
@@ -3012,7 +3012,7 @@
         "word": "重大",
         "reading": "じゅうだい",
         "meaning": "sự trọng đại; sự quan trọng",
-        "hanviet": "TRÙNG THÁI",
+        "hanviet": "TRỌNG ĐẠI",
         "level": "N3",
         "lesson": 4
       },
@@ -3020,7 +3020,7 @@
         "word": "重要",
         "reading": "じゅうよう",
         "meaning": "sự trọng yếu; sự quan trọng",
-        "hanviet": "TRÙNG YÊU",
+        "hanviet": "TRỌNG YÊU",
         "level": "N3",
         "lesson": 5
       },
@@ -3028,7 +3028,7 @@
         "word": "慎重",
         "reading": "しんちょう",
         "meaning": "sự thận trọng; thận trọng",
-        "hanviet": "THẬN TRÙNG",
+        "hanviet": "THẬN TRỌNG",
         "level": "N3",
         "lesson": 8
       },
@@ -3036,7 +3036,7 @@
         "word": "重なる",
         "reading": "かさなる",
         "meaning": "chồng chất; xếp chồng lên",
-        "hanviet": "TRÙNG",
+        "hanviet": "TRỌNG",
         "level": "N3",
         "lesson": 25
       },
@@ -3044,7 +3044,7 @@
         "word": "重ねる",
         "reading": "かさねる",
         "meaning": "chồng chất; chồng lên; chất lên",
-        "hanviet": "TRÙNG",
+        "hanviet": "TRỌNG",
         "level": "N3",
         "lesson": 25
       },
@@ -3052,7 +3052,7 @@
         "word": "貴重",
         "reading": "きちょう",
         "meaning": "đắt đỏ",
-        "hanviet": "QUÝ TRÙNG",
+        "hanviet": "QUÝ TRỌNG",
         "level": "N3",
         "lesson": 29
       },
@@ -3060,7 +3060,7 @@
         "word": "尊重",
         "reading": "そんちょう",
         "meaning": "sự tôn trọng",
-        "hanviet": "TÔN TRÙNG",
+        "hanviet": "TÔN TRỌNG",
         "level": "N3",
         "lesson": 55
       }
@@ -3113,7 +3113,7 @@
         "word": "調子が 悪い",
         "reading": "ちょうしが わるい",
         "meaning": "ở trong tình trạng tồi tệ",
-        "hanviet": "ĐIỀU TÍ ÁC",
+        "hanviet": "ĐIỀU TỬ ÁC",
         "level": "N5",
         "lesson": 19
       },
@@ -3121,7 +3121,7 @@
         "word": "気分が 悪い",
         "reading": "きぶんが わるい",
         "meaning": "cảm thấy bị bệnh",
-        "hanviet": "KHÍ ÁC",
+        "hanviet": "KHÍ PHÂN ÁC",
         "level": "N4",
         "lesson": 26
       },
@@ -3129,7 +3129,7 @@
         "word": "都合が 悪い",
         "reading": "つごうが わるい",
         "meaning": "bất tiện (về thời gian)",
-        "hanviet": "ĐÔ CÁP ÁC",
+        "hanviet": "ĐÔ HỢP ÁC",
         "level": "N4",
         "lesson": 26
       },
@@ -3145,7 +3145,7 @@
         "word": "縁起が 悪い",
         "reading": "えんぎが わるい",
         "meaning": "xui xẻo, điềm xấu",
-        "hanviet": "DUYÊN KHỈ ÁC",
+        "hanviet": "DUYÊN KHỞI ÁC",
         "level": "N4",
         "lesson": 44
       },
@@ -3161,7 +3161,7 @@
         "word": "意地悪",
         "reading": "いじわる",
         "meaning": "tâm địa xấu; xấu bụng",
-        "hanviet": "Y ĐỊA ÁC",
+        "hanviet": "Ý ĐỊA ÁC",
         "level": "N3",
         "lesson": 16
       },
@@ -3227,7 +3227,7 @@
         "word": "近く",
         "reading": "ちかく",
         "meaning": "Gần",
-        "hanviet": "CẤN",
+        "hanviet": "CẬN",
         "level": "N5",
         "lesson": 10
       },
@@ -3235,7 +3235,7 @@
         "word": "近い",
         "reading": "ちかい",
         "meaning": "cận",
-        "hanviet": "CẤN",
+        "hanviet": "CẬN",
         "level": "N5",
         "lesson": 12
       },
@@ -3243,7 +3243,7 @@
         "word": "最近",
         "reading": "さいきん",
         "meaning": "gần đây; mới đây",
-        "hanviet": "TỐI CẤN",
+        "hanviet": "TỐI CẬN",
         "level": "N5",
         "lesson": 21
       },
@@ -3251,7 +3251,7 @@
         "word": "近所",
         "reading": "きんじょ",
         "meaning": "gần đây",
-        "hanviet": "CẤN SỞ",
+        "hanviet": "CẬN SỞ",
         "level": "N4",
         "lesson": 35
       },
@@ -3259,7 +3259,7 @@
         "word": "近代",
         "reading": "きんだい",
         "meaning": "cận",
-        "hanviet": "CẤN ĐẠI",
+        "hanviet": "CẬN ĐẠI",
         "level": "N3",
         "lesson": 31
       },
@@ -3267,7 +3267,7 @@
         "word": "近視",
         "reading": "きんし",
         "meaning": "sự cận thị; tật cận thị; chứng cận thị",
-        "hanviet": "CẤN THỊ",
+        "hanviet": "CẬN THỊ",
         "level": "N3",
         "lesson": 51
       },
@@ -3275,7 +3275,7 @@
         "word": "近頃",
         "reading": "ちかごろ",
         "meaning": "gần đây",
-        "hanviet": "CẤN",
+        "hanviet": "CẬN KHOẢNH",
         "level": "N3",
         "lesson": 59
       },
@@ -3283,7 +3283,7 @@
         "word": "接近",
         "reading": "せっきん",
         "meaning": "sự tiếp cận",
-        "hanviet": "TIẾP CẤN",
+        "hanviet": "TIẾP CẬN",
         "level": "N2",
         "lesson": 41
       },
@@ -3291,7 +3291,7 @@
         "word": "近々",
         "reading": "ちかぢか",
         "meaning": "ự gần kề; trước dài (lâu)",
-        "hanviet": "CẤN",
+        "hanviet": "CẬN",
         "level": "N2",
         "lesson": 46
       },
@@ -3299,7 +3299,7 @@
         "word": "近付ける",
         "reading": "ちかづける",
         "meaning": "tiếp cận; giao du",
-        "hanviet": "CẤN PHÓ",
+        "hanviet": "CẬN PHÓ",
         "level": "N2",
         "lesson": 47
       },
@@ -3307,7 +3307,7 @@
         "word": "近寄る",
         "reading": "ちかよる",
         "meaning": "tới gần; tiếp cận; giao du",
-        "hanviet": "CẤN KÍ",
+        "hanviet": "CẬN KÍ",
         "level": "N2",
         "lesson": 47
       },
@@ -3315,7 +3315,7 @@
         "word": "付近",
         "reading": "ふきん",
         "meaning": "gần; phụ cận",
-        "hanviet": "PHÓ CẤN",
+        "hanviet": "PHÓ CẬN",
         "level": "N2",
         "lesson": 62
       }
@@ -3354,7 +3354,7 @@
         "word": "正月",
         "reading": "しょうがつ",
         "meaning": "tết",
-        "hanviet": "CHINH NGUYỆT",
+        "hanviet": "CHÍNH NGUYỆT",
         "level": "N5",
         "lesson": 13
       },
@@ -3362,7 +3362,7 @@
         "word": "正しい",
         "reading": "ただしい",
         "meaning": "chính",
-        "hanviet": "CHINH",
+        "hanviet": "CHÍNH",
         "level": "N4",
         "lesson": 35
       },
@@ -3370,7 +3370,7 @@
         "word": "修正",
         "reading": "しゅうせい",
         "meaning": "sự tu sửa; sự đính chính; đính chính",
-        "hanviet": "TU CHINH",
+        "hanviet": "TU CHÍNH",
         "level": "N3",
         "lesson": 4
       },
@@ -3378,7 +3378,7 @@
         "word": "正午",
         "reading": "しょうご",
         "meaning": "buổi trưa; giữa ngày; ban trưa",
-        "hanviet": "CHINH NGỌ",
+        "hanviet": "CHÍNH NGỌ",
         "level": "N3",
         "lesson": 6
       },
@@ -3386,7 +3386,7 @@
         "word": "正直",
         "reading": "しょうじき",
         "meaning": "chính trực; thành thực",
-        "hanviet": "CHINH TRỊ",
+        "hanviet": "CHÍNH TRỰC",
         "level": "N3",
         "lesson": 6
       },
@@ -3394,7 +3394,7 @@
         "word": "正",
         "reading": "せい",
         "meaning": "quân chính qui; nhân viên chính thức",
-        "hanviet": "CHINH",
+        "hanviet": "CHÍNH",
         "level": "N3",
         "lesson": 11
       },
@@ -3402,7 +3402,7 @@
         "word": "正確",
         "reading": "せいかく",
         "meaning": "chính xác",
-        "hanviet": "CHINH XÁC",
+        "hanviet": "CHÍNH XÁC",
         "level": "N3",
         "lesson": 11
       },
@@ -3410,7 +3410,7 @@
         "word": "正式",
         "reading": "せいしき",
         "meaning": "chính",
-        "hanviet": "CHINH THỨC",
+        "hanviet": "CHÍNH THỨC",
         "level": "N3",
         "lesson": 11
       },
@@ -3418,7 +3418,7 @@
         "word": "公正",
         "reading": "こうせい",
         "meaning": "công bằng; công bình; không thiên vị",
-        "hanviet": "CÔNG CHINH",
+        "hanviet": "CÔNG CHÍNH",
         "level": "N3",
         "lesson": 36
       },
@@ -3426,7 +3426,7 @@
         "word": "不正",
         "reading": "ふせい",
         "meaning": "bất chánh",
-        "hanviet": "BƯU CHINH",
+        "hanviet": "BẤT CHÍNH",
         "level": "N3",
         "lesson": 76
       },
@@ -3434,7 +3434,7 @@
         "word": "正体",
         "reading": "しょうたい",
         "meaning": "hình dạng tự nhiên; tính cách thực của ai đó",
-        "hanviet": "CHINH BỔN",
+        "hanviet": "CHÍNH THỂ",
         "level": "N3",
         "lesson": 81
       },
@@ -3442,7 +3442,7 @@
         "word": "正規",
         "reading": "せいき",
         "meaning": "chính quy; chính thức",
-        "hanviet": "CHINH QUY",
+        "hanviet": "CHÍNH QUY",
         "level": "N3",
         "lesson": 82
       }
@@ -3482,7 +3482,7 @@
         "word": "共同",
         "reading": "きょうどう",
         "meaning": "cộng đồng; sự liên hiệp; sự liên đới",
-        "hanviet": "CUNG ĐỒNG",
+        "hanviet": "CỘNG ĐỒNG",
         "level": "N3",
         "lesson": 31
       },
@@ -3498,7 +3498,7 @@
         "word": "同時",
         "reading": "どうじ",
         "meaning": "cùng một lúc; cùng lúc; đồng thời",
-        "hanviet": "ĐỒNG THÌ",
+        "hanviet": "ĐỒNG THỜI",
         "level": "N3",
         "lesson": 64
       },
@@ -3538,7 +3538,7 @@
         "word": "合同",
         "reading": "ごうどう",
         "meaning": "hợp đồng",
-        "hanviet": "CÁP ĐỒNG",
+        "hanviet": "HỢP ĐỒNG",
         "level": "N2",
         "lesson": 26
       },
@@ -3623,7 +3623,7 @@
         "word": "特長",
         "reading": "とくちょう",
         "meaning": "đặc điểm nổi bật; ưu điểm",
-        "hanviet": "ĐẶC TRÀNG",
+        "hanviet": "ĐẶC TRƯỜNG",
         "level": "N3",
         "lesson": 65
       },
@@ -3655,7 +3655,7 @@
         "word": "特定",
         "reading": "とくてい",
         "meaning": "đã định trước; đặc định",
-        "hanviet": "ĐẶC ĐÍNH",
+        "hanviet": "ĐẶC ĐỊNH",
         "level": "N2",
         "lesson": 53
       },
@@ -3663,7 +3663,7 @@
         "word": "特売",
         "reading": "とくばい",
         "meaning": "bán hóa giá",
-        "hanviet": "ĐẶC MẠI",
+        "hanviet": "ĐẶC MÃI",
         "level": "N2",
         "lesson": 53
       },
@@ -3839,7 +3839,7 @@
         "word": "不便",
         "reading": "ふべん",
         "meaning": "bất tiện",
-        "hanviet": "BƯU TIỆN",
+        "hanviet": "BẤT TIỆN",
         "level": "N5",
         "lesson": 21
       },
@@ -3847,7 +3847,7 @@
         "word": "不思議",
         "reading": "ふしぎ",
         "meaning": "tuyệt vời, bí ẩn",
-        "hanviet": "BƯU TAI NGHỊ",
+        "hanviet": "BẤT TƯ NGHỊ",
         "level": "N4",
         "lesson": 27
       },
@@ -3855,7 +3855,7 @@
         "word": "不",
         "reading": "ふ",
         "meaning": "nói chung; đại thể",
-        "hanviet": "BƯU",
+        "hanviet": "BẤT",
         "level": "N3",
         "lesson": 75
       },
@@ -3863,7 +3863,7 @@
         "word": "不安",
         "reading": "ふあん",
         "meaning": "không yên tâm; bất an",
-        "hanviet": "BƯU AN",
+        "hanviet": "BẤT AN",
         "level": "N3",
         "lesson": 75
       },
@@ -3871,7 +3871,7 @@
         "word": "不可",
         "reading": "ふか",
         "meaning": "không kịp; không đỗ",
-        "hanviet": "BƯU",
+        "hanviet": "BẤT KHẢ",
         "level": "N3",
         "lesson": 75
       },
@@ -3879,7 +3879,7 @@
         "word": "不幸",
         "reading": "ふこう",
         "meaning": "bất hạnh; không may mắn",
-        "hanviet": "BƯU HẠNH",
+        "hanviet": "BẤT HẠNH",
         "level": "N3",
         "lesson": 75
       },
@@ -3887,7 +3887,7 @@
         "word": "不自由",
         "reading": "ふじゆう",
         "meaning": "không tự do",
-        "hanviet": "BƯU TỰ DO",
+        "hanviet": "BẤT TỰ DO",
         "level": "N3",
         "lesson": 75
       },
@@ -3895,7 +3895,7 @@
         "word": "不正",
         "reading": "ふせい",
         "meaning": "bất chánh",
-        "hanviet": "BƯU CHINH",
+        "hanviet": "BẤT CHÍNH",
         "level": "N3",
         "lesson": 76
       },
@@ -3903,7 +3903,7 @@
         "word": "不足",
         "reading": "ふそく",
         "meaning": "bất túc",
-        "hanviet": "BƯU TÚ",
+        "hanviet": "BẤT TÚC",
         "level": "N3",
         "lesson": 76
       },
@@ -3911,7 +3911,7 @@
         "word": "不通",
         "reading": "ふつう",
         "meaning": "bị tắc (giao thông); sự không thông",
-        "hanviet": "BƯU THÔNG",
+        "hanviet": "BẤT THÔNG",
         "level": "N3",
         "lesson": 76
       },
@@ -3919,7 +3919,7 @@
         "word": "不平",
         "reading": "ふへい",
         "meaning": "bất bình; không thỏa mãn",
-        "hanviet": "BƯU BIỀN",
+        "hanviet": "BẤT BIỀN",
         "level": "N3",
         "lesson": 76
       },
@@ -3927,7 +3927,7 @@
         "word": "不満",
         "reading": "ふまん",
         "meaning": "bất bình; bất mãn",
-        "hanviet": "BƯU MÃN",
+        "hanviet": "BẤT MÃN",
         "level": "N3",
         "lesson": 76
       }
@@ -3963,7 +3963,7 @@
         "word": "有名",
         "reading": "ゆうめい",
         "meaning": "Nổi tiếng",
-        "hanviet": "DỰU DANH",
+        "hanviet": "HỮU DANH",
         "level": "N5",
         "lesson": 8
       },
@@ -3971,7 +3971,7 @@
         "word": "在る; 有る",
         "reading": "ある",
         "meaning": "có; tồn tại",
-        "hanviet": "TẠI DỰU",
+        "hanviet": "TẠI HỮU",
         "level": "N3",
         "lesson": 14
       },
@@ -3979,7 +3979,7 @@
         "word": "有無",
         "reading": "うむ",
         "meaning": "sự có hay không có; việc có hay không có",
-        "hanviet": "DỰU",
+        "hanviet": "HỮU VÔ",
         "level": "N3",
         "lesson": 19
       },
@@ -3987,7 +3987,7 @@
         "word": "有効",
         "reading": "ゆうこう",
         "meaning": "hữu hiệu; có hiệu quả",
-        "hanviet": "DỰU HIỆU",
+        "hanviet": "HỮU HIỆU",
         "level": "N3",
         "lesson": 45
       },
@@ -3995,7 +3995,7 @@
         "word": "有能",
         "reading": "ゆうのう",
         "meaning": "có khả năng",
-        "hanviet": "DỰU NAI",
+        "hanviet": "HỮU NĂNG",
         "level": "N3",
         "lesson": 45
       },
@@ -4003,7 +4003,7 @@
         "word": "有利",
         "reading": "ゆうり",
         "meaning": "hữu lợi; có lợi",
-        "hanviet": "DỰU LỢI",
+        "hanviet": "HỮU LỢI",
         "level": "N3",
         "lesson": 45
       },
@@ -4011,7 +4011,7 @@
         "word": "有機",
         "reading": "ゆうき",
         "meaning": "hữu cơ",
-        "hanviet": "DỰU CƠ",
+        "hanviet": "HỮU CƠ",
         "level": "N3",
         "lesson": 86
       },
@@ -4019,7 +4019,7 @@
         "word": "有難い",
         "reading": "ありがたい",
         "meaning": "biết ơn; cảm kích; dễ chịu",
-        "hanviet": "DỰU NA",
+        "hanviet": "HỮU NAN",
         "level": "N2",
         "lesson": 7
       },
@@ -4027,7 +4027,7 @@
         "word": "有料",
         "reading": "ゆうりょう",
         "meaning": "sự phải trả chi phí",
-        "hanviet": "DỰU LIÊU",
+        "hanviet": "HỮU LIỆU",
         "level": "N2",
         "lesson": 73
       },
@@ -4035,7 +4035,7 @@
         "word": "国有",
         "reading": "こくゆう",
         "meaning": "quốc hữu; sở hữu quốc gia",
-        "hanviet": "QUỐC DỰU",
+        "hanviet": "QUỐC HỮU",
         "level": "N1",
         "lesson": 4
       },
@@ -4043,7 +4043,7 @@
         "word": "固有",
         "reading": "こゆう",
         "meaning": "cái vốn có; truyền thống",
-        "hanviet": "CỐ DỰU",
+        "hanviet": "CỐ HỮU",
         "level": "N1",
         "lesson": 6
       },
@@ -4051,7 +4051,7 @@
         "word": "特有",
         "reading": "とくゆう",
         "meaning": "sự vốn có; sự cố hữu",
-        "hanviet": "ĐẶC DỰU",
+        "hanviet": "ĐẶC HỮU",
         "level": "N1",
         "lesson": 14
       }
@@ -4109,7 +4109,7 @@
         "word": "通信販売",
         "reading": "つうしんはんばい",
         "meaning": "đặt hàng qua thư, bán hàng qua thư",
-        "hanviet": "THÔNG THÂN PHIẾN MẠI",
+        "hanviet": "THÔNG TÍN PHIẾN MÃI",
         "level": "N4",
         "lesson": 27
       },
@@ -4117,7 +4117,7 @@
         "word": "通います",
         "reading": "かよいます",
         "meaning": "đi đến và đi từ [đại học]",
-        "hanviet": "THÔNG THÁI HỌC",
+        "hanviet": "THÔNG",
         "level": "N4",
         "lesson": 28
       },
@@ -4133,7 +4133,7 @@
         "word": "通ります",
         "reading": "とおります",
         "meaning": "đi qua [dọc đường]",
-        "hanviet": "THÔNG ĐÁO",
+        "hanviet": "THÔNG",
         "level": "N4",
         "lesson": 39
       },
@@ -4141,7 +4141,7 @@
         "word": "共通",
         "reading": "きょうつう",
         "meaning": "cộng đồng; thông thường; phổ thông",
-        "hanviet": "CUNG THÔNG",
+        "hanviet": "CỘNG THÔNG",
         "level": "N3",
         "lesson": 31
       },
@@ -4181,7 +4181,7 @@
         "word": "通行",
         "reading": "つうこう",
         "meaning": "sự đi lại",
-        "hanviet": "THÔNG HÀNG",
+        "hanviet": "THÔNG HÀNH",
         "level": "N3",
         "lesson": 60
       }
@@ -4212,7 +4212,7 @@
         "word": "走ります",
         "reading": "はしります",
         "meaning": "chạy, lái xe [dọc đường]",
-        "hanviet": "TẨU ĐÁO",
+        "hanviet": "TẨU",
         "level": "N4",
         "lesson": 27
       },
@@ -4236,7 +4236,7 @@
         "word": "走行",
         "reading": "そうこう",
         "meaning": "lời chi chú; bản thảo",
-        "hanviet": "TẨU HÀNG",
+        "hanviet": "TẨU HÀNH",
         "level": "N1",
         "lesson": 62
       }
@@ -4279,7 +4279,7 @@
         "word": "散歩します",
         "reading": "さんぽします",
         "meaning": "đi dạo [trong công viên]",
-        "hanviet": "TÁN BỘ CÔNG VIÊN",
+        "hanviet": "TÁN BỘ",
         "level": "N5",
         "lesson": 13
       },
@@ -4303,7 +4303,7 @@
         "word": "歩道",
         "reading": "ほどう",
         "meaning": "hè",
-        "hanviet": "BỘ ĐÁO",
+        "hanviet": "BỘ ĐẠO",
         "level": "N3",
         "lesson": 78
       },
@@ -4396,7 +4396,7 @@
         "word": "止めます",
         "reading": "とめます",
         "meaning": "dừng lại, đỗ xe",
-        "hanviet": "CHI",
+        "hanviet": "CHỈ",
         "level": "N5",
         "lesson": 14
       },
@@ -4404,7 +4404,7 @@
         "word": "止まります",
         "reading": "とまります",
         "meaning": "[ô tô] dừng lại, đỗ xe",
-        "hanviet": "CHI XA",
+        "hanviet": "CHỈ",
         "level": "N4",
         "lesson": 29
       },
@@ -4412,7 +4412,7 @@
         "word": "使用禁止",
         "reading": "しようきんし",
         "meaning": "Không sử dụng",
-        "hanviet": "SỨ DỤNG CÂM CHI",
+        "hanviet": "SỬ DỤNG CÂM CHỈ",
         "level": "N4",
         "lesson": 33
       },
@@ -4420,7 +4420,7 @@
         "word": "立入禁止",
         "reading": "たちいりきんし",
         "meaning": "cấm dẫm chân lên (vạch, bãi cỏ...)",
-        "hanviet": "LẬP NHẬP CÂM CHI",
+        "hanviet": "LẬP NHẬP CÂM CHỈ",
         "level": "N4",
         "lesson": 33
       },
@@ -4428,7 +4428,7 @@
         "word": "中止",
         "reading": "ちゅうし",
         "meaning": "sự cấm; sự ngừng",
-        "hanviet": "TRUNG CHI",
+        "hanviet": "TRUNG CHỈ",
         "level": "N4",
         "lesson": 45
       },
@@ -4436,7 +4436,7 @@
         "word": "禁止",
         "reading": "きんし",
         "meaning": "cấm chỉ",
-        "hanviet": "CÂM CHI",
+        "hanviet": "CÂM CHỈ",
         "level": "N3",
         "lesson": 31
       },
@@ -4444,7 +4444,7 @@
         "word": "止す",
         "reading": "よす",
         "meaning": "bỏ (học)",
-        "hanviet": "CHI",
+        "hanviet": "CHỈ",
         "level": "N3",
         "lesson": 46
       },
@@ -4452,7 +4452,7 @@
         "word": "立ち止まる",
         "reading": "たちどまる",
         "meaning": "đứng lại; dừng lại",
-        "hanviet": "LẬP CHI",
+        "hanviet": "LẬP CHỈ",
         "level": "N2",
         "lesson": 45
       },
@@ -4460,7 +4460,7 @@
         "word": "停止",
         "reading": "ていし",
         "meaning": "sự đình chỉ; dừng lại",
-        "hanviet": "ĐÌNH CHI",
+        "hanviet": "ĐÌNH CHỈ",
         "level": "N2",
         "lesson": 50
       },
@@ -4468,7 +4468,7 @@
         "word": "引き止める",
         "reading": "ひきとめる",
         "meaning": "kéo lại; làm ngừng trệ; lưu giữ",
-        "hanviet": "DẤN CHI",
+        "hanviet": "DẪN CHỈ",
         "level": "N2",
         "lesson": 60
       },
@@ -4476,7 +4476,7 @@
         "word": "防止",
         "reading": "ぼうし",
         "meaning": "phòng cháy",
-        "hanviet": "PHÒNG CHI",
+        "hanviet": "PHÒNG CHỈ",
         "level": "N2",
         "lesson": 66
       },
@@ -4484,7 +4484,7 @@
         "word": "止める",
         "reading": "とどめる",
         "meaning": "cấm chỉ",
-        "hanviet": "CHI",
+        "hanviet": "CHỈ",
         "level": "N1",
         "lesson": 15
       }
@@ -4530,7 +4530,7 @@
         "word": "運動会",
         "reading": "うんどうかい",
         "meaning": "cuộc thi thể thao; hội thi thể thao",
-        "hanviet": "VẬN ĐỘNG CỐI",
+        "hanviet": "VẬN ĐỘNG HỘI",
         "level": "N4",
         "lesson": 26
       },
@@ -4594,7 +4594,7 @@
         "word": "不運",
         "reading": "ふうん",
         "meaning": "hạn vận",
-        "hanviet": "BƯU VẬN",
+        "hanviet": "BẤT VẬN",
         "level": "N2",
         "lesson": 62
       },
@@ -4705,7 +4705,7 @@
         "word": "転校",
         "reading": "てんこう",
         "meaning": "sự chuyển trường",
-        "hanviet": "CHUYỂN GIÁO",
+        "hanviet": "CHUYỂN HIỆU",
         "level": "N3",
         "lesson": 84
       },
@@ -4772,7 +4772,7 @@
         "word": "急行",
         "reading": "きゅうこう",
         "meaning": "tốc hành",
-        "hanviet": "CẤP HÀNG",
+        "hanviet": "CẤP HÀNH",
         "level": "N5",
         "lesson": 5
       },
@@ -4860,7 +4860,7 @@
         "word": "準急",
         "reading": "じゅんきゅう",
         "meaning": "tàu tốc hành thường (chậm hơn tàu tốc hành)",
-        "hanviet": "CHUYẾT CẤP",
+        "hanviet": "CHUẨN CẤP",
         "level": "N1",
         "lesson": 53
       }
@@ -4908,7 +4908,7 @@
         "word": "作文",
         "reading": "さくぶん",
         "meaning": "sự đặt câu",
-        "hanviet": "TÁ VĂN",
+        "hanviet": "TÁC VĂN",
         "level": "N4",
         "lesson": 31
       },
@@ -4924,7 +4924,7 @@
         "word": "文化",
         "reading": "ぶんか",
         "meaning": "văn hóa",
-        "hanviet": "VĂN HOA",
+        "hanviet": "VĂN HÓA",
         "level": "N4",
         "lesson": 42
       },
@@ -4932,7 +4932,7 @@
         "word": "論文",
         "reading": "ろんぶん",
         "meaning": "luận",
-        "hanviet": "LUÂN VĂN",
+        "hanviet": "LUẬN VĂN",
         "level": "N4",
         "lesson": 42
       },
@@ -5073,7 +5073,7 @@
         "word": "字体",
         "reading": "じたい",
         "meaning": "kiểu chữ",
-        "hanviet": "TỰ BỔN",
+        "hanviet": "TỰ THỂ",
         "level": "N3",
         "lesson": 81
       },
@@ -5113,7 +5113,7 @@
         "word": "赤字",
         "reading": "あかじ",
         "meaning": "lỗ; thâm hụt thương mại",
-        "hanviet": "THÍCH TỰ",
+        "hanviet": "XÍCH TỰ",
         "level": "N1",
         "lesson": 48
       }
@@ -5160,7 +5160,7 @@
         "word": "漢語",
         "reading": "かんご",
         "meaning": "Hán ngữ; tiếng Hán",
-        "hanviet": "HÁN NGỨ",
+        "hanviet": "HÁN NGỮ",
         "level": "N1",
         "lesson": 36
       }
@@ -5196,7 +5196,7 @@
         "word": "英語",
         "reading": "えいご",
         "meaning": "Tiếng Anh",
-        "hanviet": "ANH NGỨ",
+        "hanviet": "ANH NGỮ",
         "level": "N5",
         "lesson": 2
       },
@@ -5271,7 +5271,7 @@
         "word": "教師",
         "reading": "きょうし",
         "meaning": "Giáo viên, giảng viên (nghề nghiệp)",
-        "hanviet": "GIAO SƯ",
+        "hanviet": "GIÁO SƯ",
         "level": "N5",
         "lesson": 1
       },
@@ -5279,7 +5279,7 @@
         "word": "教室",
         "reading": "きょうしつ",
         "meaning": "Phòng học, lớp học",
-        "hanviet": "GIAO THẤT",
+        "hanviet": "GIÁO THẤT",
         "level": "N5",
         "lesson": 3
       },
@@ -5287,7 +5287,7 @@
         "word": "教えます",
         "reading": "おしえます",
         "meaning": "Dạy, chỉ bảo",
-        "hanviet": "GIAO",
+        "hanviet": "GIÁO",
         "level": "N5",
         "lesson": 7
       },
@@ -5295,7 +5295,7 @@
         "word": "～教室",
         "reading": "～きょうしつ",
         "meaning": "Phòng học, lớp học",
-        "hanviet": "GIAO THẤT",
+        "hanviet": "GIÁO THẤT",
         "level": "N4",
         "lesson": 27
       },
@@ -5303,7 +5303,7 @@
         "word": "教会",
         "reading": "きょうかい",
         "meaning": "giáo đường; nhà thờ",
-        "hanviet": "GIAO CỐI",
+        "hanviet": "GIÁO HỘI",
         "level": "N4",
         "lesson": 31
       },
@@ -5311,7 +5311,7 @@
         "word": "教育",
         "reading": "きょういく",
         "meaning": "giáo dục",
-        "hanviet": "GIAO DỤC",
+        "hanviet": "GIÁO DỤC",
         "level": "N4",
         "lesson": 42
       },
@@ -5319,7 +5319,7 @@
         "word": "宗教",
         "reading": "しゅうきょう",
         "meaning": "đạo",
-        "hanviet": "TÔN GIAO",
+        "hanviet": "TÔN GIÁO",
         "level": "N3",
         "lesson": 4
       },
@@ -5327,7 +5327,7 @@
         "word": "教わる",
         "reading": "おそわる",
         "meaning": "được dạy",
-        "hanviet": "GIAO",
+        "hanviet": "GIÁO",
         "level": "N3",
         "lesson": 21
       },
@@ -5335,7 +5335,7 @@
         "word": "教科書",
         "reading": "きょうかしょ",
         "meaning": "giáo trình; sách giáo khoa",
-        "hanviet": "GIAO KHOA THƯ",
+        "hanviet": "GIÁO KHOA THƯ",
         "level": "N3",
         "lesson": 30
       },
@@ -5343,7 +5343,7 @@
         "word": "教授",
         "reading": "きょうじゅ",
         "meaning": "giảng viên",
-        "hanviet": "GIAO THỌ",
+        "hanviet": "GIÁO THỌ",
         "level": "N3",
         "lesson": 30
       },
@@ -5351,7 +5351,7 @@
         "word": "教え",
         "reading": "おしえ",
         "meaning": "lời dạy dỗ; lời chỉ dẫn",
-        "hanviet": "GIAO",
+        "hanviet": "GIÁO",
         "level": "N3",
         "lesson": 50
       }
@@ -5472,7 +5472,7 @@
         "word": "教習",
         "reading": "きょうしゅう",
         "meaning": "nỗi nhớ nhà; nỗi sầu xa xứ; nỗi nhớ",
-        "hanviet": "GIAO TẬP",
+        "hanviet": "GIÁO TẬP",
         "level": "N1",
         "lesson": 41
       }
@@ -5632,7 +5632,7 @@
         "word": "強化",
         "reading": "きょうか",
         "meaning": "sự củng cố; sự mạnh lên; sự tăng cường",
-        "hanviet": "CƯỜNG HOA",
+        "hanviet": "CƯỜNG HÓA",
         "level": "N2",
         "lesson": 21
       },
@@ -5640,7 +5640,7 @@
         "word": "強引",
         "reading": "ごういん",
         "meaning": "cưỡng bức; bắt buộc; bằng vũ lực",
-        "hanviet": "CƯỜNG DẤN",
+        "hanviet": "CƯỜNG DẪN",
         "level": "N2",
         "lesson": 25
       },
@@ -5814,7 +5814,7 @@
         "word": "試合",
         "reading": "しあい",
         "meaning": "cuộc thi đấu; trận đấu",
-        "hanviet": "THÍ CÁP",
+        "hanviet": "THÍ HỢP",
         "level": "N5",
         "lesson": 21
       },
@@ -5931,7 +5931,7 @@
         "word": "体験",
         "reading": "たいけん",
         "meaning": "sự thể nghiệm; sự trải nghiệm",
-        "hanviet": "BỔN NGHIỆM",
+        "hanviet": "THỂ NGHIỆM",
         "level": "N1",
         "lesson": 64
       }
@@ -5961,7 +5961,7 @@
         "word": "宿題",
         "reading": "しゅくだい",
         "meaning": "Bài tập về nhà",
-        "hanviet": "TÚ ĐỀ",
+        "hanviet": "TÚC ĐỀ",
         "level": "N5",
         "lesson": 6
       },
@@ -5977,7 +5977,7 @@
         "word": "飲み放題",
         "reading": "のみほうだい",
         "meaning": "Tất cả những gì bạn có thể uống",
-        "hanviet": "ẤM PHÓNG ĐỀ",
+        "hanviet": "ẨM PHÓNG ĐỀ",
         "level": "N4",
         "lesson": 33
       },
@@ -6025,7 +6025,7 @@
         "word": "出題",
         "reading": "しゅつだい",
         "meaning": "việc đề ra câu hỏi; sự đặt ra vấn đề",
-        "hanviet": "XUÝ ĐỀ",
+        "hanviet": "XUẤT ĐỀ",
         "level": "N1",
         "lesson": 52
       },
@@ -6041,7 +6041,7 @@
         "word": "主題",
         "reading": "しゅだい",
         "meaning": "chủ đề",
-        "hanviet": "CHÚA ĐỀ",
+        "hanviet": "CHỦ ĐỀ",
         "level": "N1",
         "lesson": 81
       }
@@ -6077,7 +6077,7 @@
         "word": "お問い合わせの番号",
         "reading": "おといあわせのばんごう",
         "meaning": "số đang được hỏi",
-        "hanviet": "VẤN CÁP BA HIỆU",
+        "hanviet": "VẤN HỢP BA HIỆU",
         "level": "N5",
         "lesson": 4
       },
@@ -6093,7 +6093,7 @@
         "word": "質問します",
         "reading": "しつもんします",
         "meaning": "đặt câu hỏi",
-        "hanviet": "CHÍ VẤN",
+        "hanviet": "CHẤT VẤN",
         "level": "N4",
         "lesson": 34
       },
@@ -6149,7 +6149,7 @@
         "word": "問い合わせ",
         "reading": "といあわせ",
         "meaning": "nơi hướng dẫn; phòng hướng dẫn",
-        "hanviet": "VẤN CÁP",
+        "hanviet": "VẤN HỢP",
         "level": "N2",
         "lesson": 52
       },
@@ -6205,7 +6205,7 @@
         "word": "質問します",
         "reading": "しつもんします",
         "meaning": "đặt câu hỏi",
-        "hanviet": "CHÍ VẤN",
+        "hanviet": "CHẤT VẤN",
         "level": "N4",
         "lesson": 34
       },
@@ -6213,7 +6213,7 @@
         "word": "質",
         "reading": "しつ",
         "meaning": "cầm cố",
-        "hanviet": "CHÍ",
+        "hanviet": "CHẤT",
         "level": "N3",
         "lesson": 2
       },
@@ -6221,7 +6221,7 @@
         "word": "性質",
         "reading": "せいしつ",
         "meaning": "tính chất",
-        "hanviet": "TÍNH CHÍ",
+        "hanviet": "TÍNH CHẤT",
         "level": "N3",
         "lesson": 11
       },
@@ -6229,7 +6229,7 @@
         "word": "物質",
         "reading": "ぶっしつ",
         "meaning": "vật chất",
-        "hanviet": "VẬT CHÍ",
+        "hanviet": "VẬT CHẤT",
         "level": "N3",
         "lesson": 76
       },
@@ -6237,7 +6237,7 @@
         "word": "素質",
         "reading": "そしつ",
         "meaning": "tố chất",
-        "hanviet": "TỐ CHÍ",
+        "hanviet": "TỐ CHẤT",
         "level": "N2",
         "lesson": 43
       },
@@ -6245,7 +6245,7 @@
         "word": "地質",
         "reading": "ちしつ",
         "meaning": "địa chất",
-        "hanviet": "ĐỊA CHÍ",
+        "hanviet": "ĐỊA CHẤT",
         "level": "N2",
         "lesson": 47
       },
@@ -6253,7 +6253,7 @@
         "word": "気質",
         "reading": "きしつ",
         "meaning": "khí chất; tính tình; tính cách",
-        "hanviet": "KHÍ CHÍ",
+        "hanviet": "KHÍ CHẤT",
         "level": "N1",
         "lesson": 38
       },
@@ -6261,7 +6261,7 @@
         "word": "蛋白質",
         "reading": "たんぱくしつ",
         "meaning": "chất đạm",
-        "hanviet": "BẠCH CHÍ",
+        "hanviet": "ĐÃN BẠCH CHẤT",
         "level": "N1",
         "lesson": 68
       },
@@ -6269,7 +6269,7 @@
         "word": "質疑",
         "reading": "しつぎ",
         "meaning": "âu hỏi",
-        "hanviet": "CHÍ NGHI",
+        "hanviet": "CHẤT NGHI",
         "level": "N1",
         "lesson": 78
       },
@@ -6277,7 +6277,7 @@
         "word": "質素",
         "reading": "しっそ",
         "meaning": "giản dị",
-        "hanviet": "CHÍ TỐ",
+        "hanviet": "CHẤT TỐ",
         "level": "N1",
         "lesson": 78
       },
@@ -6285,7 +6285,7 @@
         "word": "品質",
         "reading": "ひんしつ",
         "meaning": "chất lượng",
-        "hanviet": "PHẨM CHÍ",
+        "hanviet": "PHẨM CHẤT",
         "level": "N1",
         "lesson": 82
       },
@@ -6293,7 +6293,7 @@
         "word": "本質",
         "reading": "ほんしつ",
         "meaning": "phẩm cách",
-        "hanviet": "BÔN CHÍ",
+        "hanviet": "BẢN CHẤT",
         "level": "N1",
         "lesson": 90
       }
@@ -6334,7 +6334,7 @@
         "word": "答えます",
         "reading": "こたえます",
         "meaning": "trả lời [một câu hỏi]",
-        "hanviet": "ĐÁP CHÍ VẤN",
+        "hanviet": "ĐÁP",
         "level": "N4",
         "lesson": 39
       },
@@ -6374,7 +6374,7 @@
         "word": "返答",
         "reading": "へんとう",
         "meaning": "sự trả lời; sự đáp lời",
-        "hanviet": "PHIÊN ĐÁP",
+        "hanviet": "PHẢN ĐÁP",
         "level": "N1",
         "lesson": 87
       }
@@ -6439,7 +6439,7 @@
         "word": "知り合います",
         "reading": "しりあいます",
         "meaning": "làm quen",
-        "hanviet": "TRI CÁP",
+        "hanviet": "TRI HỢP",
         "level": "N4",
         "lesson": 43
       },
@@ -6463,7 +6463,7 @@
         "word": "知合い",
         "reading": "しりあい",
         "meaning": "người quen",
-        "hanviet": "TRI CÁP",
+        "hanviet": "TRI HỢP",
         "level": "N3",
         "lesson": 8
       },
@@ -6487,7 +6487,7 @@
         "word": "知能",
         "reading": "ちのう",
         "meaning": "trí thông minh",
-        "hanviet": "TRI NAI",
+        "hanviet": "TRI NĂNG",
         "level": "N3",
         "lesson": 59
       },
@@ -6495,7 +6495,7 @@
         "word": "知り合い",
         "reading": "しりあい",
         "meaning": "người quen",
-        "hanviet": "TRI CÁP",
+        "hanviet": "TRI HỢP",
         "level": "N2",
         "lesson": 37
       }
@@ -6577,7 +6577,7 @@
         "word": "思考",
         "reading": "しこう",
         "meaning": "sự suy nghĩ; sự trăn trở",
-        "hanviet": "TAI KHẢO",
+        "hanviet": "TƯ KHẢO",
         "level": "N1",
         "lesson": 47
       }
@@ -6610,7 +6610,7 @@
         "word": "思い出します",
         "reading": "おもいだします",
         "meaning": "nhớ, nhớ lại",
-        "hanviet": "TAI XUÝ",
+        "hanviet": "TƯ XUẤT",
         "level": "N5",
         "lesson": 15
       },
@@ -6618,7 +6618,7 @@
         "word": "思います",
         "reading": "おもいます",
         "meaning": "nghĩ",
-        "hanviet": "TAI",
+        "hanviet": "TƯ",
         "level": "N5",
         "lesson": 21
       },
@@ -6626,7 +6626,7 @@
         "word": "不思議",
         "reading": "ふしぎ",
         "meaning": "tuyệt vời, bí ẩn",
-        "hanviet": "BƯU TAI NGHỊ",
+        "hanviet": "BẤT TƯ NGHỊ",
         "level": "N4",
         "lesson": 27
       },
@@ -6634,7 +6634,7 @@
         "word": "思想",
         "reading": "しそう",
         "meaning": "tâm ý",
-        "hanviet": "TAI TƯỞNG",
+        "hanviet": "TƯ TƯỞNG",
         "level": "N3",
         "lesson": 2
       },
@@ -6642,7 +6642,7 @@
         "word": "意思",
         "reading": "いし",
         "meaning": "đá",
-        "hanviet": "Y TAI",
+        "hanviet": "Ý TƯ",
         "level": "N3",
         "lesson": 15
       },
@@ -6650,7 +6650,7 @@
         "word": "思い付く",
         "reading": "おもいつく",
         "meaning": "nghĩ ra; nảy ra; thai nghén",
-        "hanviet": "TAI PHÓ",
+        "hanviet": "TƯ PHÓ",
         "level": "N3",
         "lesson": 22
       },
@@ -6658,7 +6658,7 @@
         "word": "思い出",
         "reading": "おもいで",
         "meaning": "sự hồi tưởng; hồi ức; sự nhớ lại",
-        "hanviet": "TAI XUÝ",
+        "hanviet": "TƯ XUẤT",
         "level": "N3",
         "lesson": 22
       },
@@ -6666,7 +6666,7 @@
         "word": "思わず",
         "reading": "おもわず",
         "meaning": "bất giác; bất chợt",
-        "hanviet": "TAI",
+        "hanviet": "TƯ",
         "level": "N3",
         "lesson": 22
       },
@@ -6674,7 +6674,7 @@
         "word": "思い掛けない",
         "reading": "おもいがけない",
         "meaning": "ngoài dự tính; chẳng ngờ",
-        "hanviet": "TAI QUẢI",
+        "hanviet": "TƯ QUẢI",
         "level": "N2",
         "lesson": 13
       },
@@ -6682,7 +6682,7 @@
         "word": "思い切り",
         "reading": "おもいきり",
         "meaning": "dứt khoát; quyết tâm; quyết chí",
-        "hanviet": "TAI THIẾT",
+        "hanviet": "TƯ THIẾT",
         "level": "N2",
         "lesson": 13
       },
@@ -6690,7 +6690,7 @@
         "word": "思い込む",
         "reading": "おもいこむ",
         "meaning": "nghĩ rằng; cho rằng",
-        "hanviet": "TAI VU",
+        "hanviet": "TƯ NHẬP",
         "level": "N2",
         "lesson": 13
       },
@@ -6698,7 +6698,7 @@
         "word": "思いっ切り",
         "reading": "おもいっきり",
         "meaning": "rất, nhiều, đầy đủ",
-        "hanviet": "TAI THIẾT",
+        "hanviet": "TƯ THIẾT",
         "level": "N2",
         "lesson": 13
       }
@@ -6735,7 +6735,7 @@
         "word": "意見",
         "reading": "いけん",
         "meaning": "kiến",
-        "hanviet": "Y HIỆN",
+        "hanviet": "Ý KIẾN",
         "level": "N5",
         "lesson": 21
       },
@@ -6743,7 +6743,7 @@
         "word": "意味",
         "reading": "いみ",
         "meaning": "ý nghĩa; nghĩa",
-        "hanviet": "Y VỊ",
+        "hanviet": "Ý VỊ",
         "level": "N5",
         "lesson": 24
       },
@@ -6751,7 +6751,7 @@
         "word": "注意します",
         "reading": "ちゅういします",
         "meaning": "hãy cẩn thận [với những chiếc xe hơi]",
-        "hanviet": "CHÚ Y XA",
+        "hanviet": "CHÚ Ý",
         "level": "N4",
         "lesson": 33
       },
@@ -6759,7 +6759,7 @@
         "word": "用意します",
         "reading": "よういします",
         "meaning": "chuẩn bị",
-        "hanviet": "DỤNG Y",
+        "hanviet": "DỤNG Ý",
         "level": "N4",
         "lesson": 45
       },
@@ -6767,7 +6767,7 @@
         "word": "意外",
         "reading": "いがい",
         "meaning": "ngạc nhiên; không như đã tính; ngoài dự tính",
-        "hanviet": "Y NGOẠI",
+        "hanviet": "Ý NGOẠI",
         "level": "N3",
         "lesson": 15
       },
@@ -6775,7 +6775,7 @@
         "word": "意思",
         "reading": "いし",
         "meaning": "đá",
-        "hanviet": "Y TAI",
+        "hanviet": "Ý TƯ",
         "level": "N3",
         "lesson": 15
       },
@@ -6783,7 +6783,7 @@
         "word": "意志",
         "reading": "いし",
         "meaning": "tâm chí",
-        "hanviet": "Y CHÍ",
+        "hanviet": "Ý CHÍ",
         "level": "N3",
         "lesson": 15
       },
@@ -6791,7 +6791,7 @@
         "word": "意識",
         "reading": "いしき",
         "meaning": "ý thức; tri giác",
-        "hanviet": "Y CHÍ",
+        "hanviet": "Ý CHÍ",
         "level": "N3",
         "lesson": 15
       },
@@ -6799,7 +6799,7 @@
         "word": "意地悪",
         "reading": "いじわる",
         "meaning": "tâm địa xấu; xấu bụng",
-        "hanviet": "Y ĐỊA ÁC",
+        "hanviet": "Ý ĐỊA ÁC",
         "level": "N3",
         "lesson": 16
       },
@@ -6807,7 +6807,7 @@
         "word": "敬意",
         "reading": "けいい",
         "meaning": "khả kính",
-        "hanviet": "KÍNH Y",
+        "hanviet": "KÍNH Ý",
         "level": "N3",
         "lesson": 33
       },
@@ -6815,7 +6815,7 @@
         "word": "意",
         "reading": "い",
         "meaning": "dạ dầy",
-        "hanviet": "Y",
+        "hanviet": "Ý",
         "level": "N3",
         "lesson": 49
       },
@@ -6823,7 +6823,7 @@
         "word": "意地",
         "reading": "いじ",
         "meaning": "tâm địa; tấm lòng; tâm hồn",
-        "hanviet": "Y ĐỊA",
+        "hanviet": "Ý ĐỊA",
         "level": "N3",
         "lesson": 49
       }
@@ -6903,7 +6903,7 @@
         "word": "料理",
         "reading": "りょうり",
         "meaning": "Món ăn, nấu ăn",
-        "hanviet": "LIÊU LÍ",
+        "hanviet": "LIỆU LÝ",
         "level": "N5",
         "lesson": 9
       },
@@ -6911,7 +6911,7 @@
         "word": "資料",
         "reading": "しりょう",
         "meaning": "số liệu",
-        "hanviet": "TƯ LIÊU",
+        "hanviet": "TƯ LIỆU",
         "level": "N5",
         "lesson": 15
       },
@@ -6919,7 +6919,7 @@
         "word": "給料",
         "reading": "きゅうりょう",
         "meaning": "bổng lộc",
-        "hanviet": "CẤP LIÊU",
+        "hanviet": "CẤP LIỆU",
         "level": "N4",
         "lesson": 28
       },
@@ -6927,7 +6927,7 @@
         "word": "無料",
         "reading": "むりょう",
         "meaning": "miễn phí",
-        "hanviet": "LIÊU",
+        "hanviet": "VÔ LIỆU",
         "level": "N4",
         "lesson": 28
       },
@@ -6935,7 +6935,7 @@
         "word": "材料",
         "reading": "ざいりょう",
         "meaning": "số liệu",
-        "hanviet": "TÀI LIÊU",
+        "hanviet": "TÀI LIỆU",
         "level": "N4",
         "lesson": 34
       },
@@ -6943,7 +6943,7 @@
         "word": "調味料",
         "reading": "ちょうみりょう",
         "meaning": "đồ gia vị",
-        "hanviet": "ĐIỀU VỊ LIÊU",
+        "hanviet": "ĐIỀU VỊ LIỆU",
         "level": "N4",
         "lesson": 34
       },
@@ -6951,7 +6951,7 @@
         "word": "原料",
         "reading": "げんりょう",
         "meaning": "chất liệu",
-        "hanviet": "NGUYÊN LIÊU",
+        "hanviet": "NGUYÊN LIỆU",
         "level": "N4",
         "lesson": 37
       },
@@ -6959,7 +6959,7 @@
         "word": "食料",
         "reading": "しょくりょう",
         "meaning": "thực phẩm; nguyên liệu nấu ăn",
-        "hanviet": "THỰC LIÊU",
+        "hanviet": "THỰC LIỆU",
         "level": "N3",
         "lesson": 7
       },
@@ -6967,7 +6967,7 @@
         "word": "料金",
         "reading": "りょうきん",
         "meaning": "giá cước",
-        "hanviet": "LIÊU KIM",
+        "hanviet": "LIỆU KIM",
         "level": "N3",
         "lesson": 47
       },
@@ -6975,7 +6975,7 @@
         "word": "衣料",
         "reading": "いりょう",
         "meaning": "quần áo; đồ để mặc",
-        "hanviet": "Y LIÊU",
+        "hanviet": "Y LIỆU",
         "level": "N3",
         "lesson": 49
       },
@@ -6983,7 +6983,7 @@
         "word": "～料",
         "reading": "～りょう",
         "meaning": "giá vé, phí",
-        "hanviet": "LIÊU",
+        "hanviet": "LIỆU",
         "level": "N2",
         "lesson": 5
       },
@@ -6991,7 +6991,7 @@
         "word": "送料",
         "reading": "そうりょう",
         "meaning": "cước",
-        "hanviet": "TỐNG LIÊU",
+        "hanviet": "TỐNG LIỆU",
         "level": "N2",
         "lesson": 43
       }
@@ -7027,7 +7027,7 @@
         "word": "料理",
         "reading": "りょうり",
         "meaning": "Món ăn, nấu ăn",
-        "hanviet": "LIÊU LÍ",
+        "hanviet": "LIỆU LÝ",
         "level": "N5",
         "lesson": 9
       },
@@ -7035,7 +7035,7 @@
         "word": "無理",
         "reading": "むり",
         "meaning": "quá mức, không thể",
-        "hanviet": "LÍ",
+        "hanviet": "VÔ LÝ",
         "level": "N5",
         "lesson": 19
       },
@@ -7043,7 +7043,7 @@
         "word": "修理します",
         "reading": "しゅうりします",
         "meaning": "sửa chữa",
-        "hanviet": "TU LÍ",
+        "hanviet": "TU LÝ",
         "level": "N5",
         "lesson": 20
       },
@@ -7051,7 +7051,7 @@
         "word": "管理人",
         "reading": "かんりにん",
         "meaning": "Người quản lý, người trông coi",
-        "hanviet": "QUẢN LÍ NHÂN",
+        "hanviet": "QUẢN LÝ NHÂN",
         "level": "N4",
         "lesson": 28
       },
@@ -7059,7 +7059,7 @@
         "word": "無理を します",
         "reading": "むりを します",
         "meaning": "làm việc quá sức",
-        "hanviet": "LÍ",
+        "hanviet": "VÔ LÝ",
         "level": "N4",
         "lesson": 32
       },
@@ -7067,7 +7067,7 @@
         "word": "整理します",
         "reading": "せいりします",
         "meaning": "sắp xếp (mọi thứ)",
-        "hanviet": "CHỈNH LÍ",
+        "hanviet": "CHỈNH LÝ",
         "level": "N4",
         "lesson": 38
       },
@@ -7075,7 +7075,7 @@
         "word": "理由",
         "reading": "りゆう",
         "meaning": "cớ",
-        "hanviet": "LÍ DO",
+        "hanviet": "LÝ DO",
         "level": "N4",
         "lesson": 43
       },
@@ -7083,7 +7083,7 @@
         "word": "無理に",
         "reading": "むりに",
         "meaning": "một cách vô lý",
-        "hanviet": "LÍ",
+        "hanviet": "VÔ LÝ",
         "level": "N4",
         "lesson": 45
       },
@@ -7091,7 +7091,7 @@
         "word": "修理",
         "reading": "しゅうり",
         "meaning": "sự chỉnh lí; sửa chữa",
-        "hanviet": "TU LÍ",
+        "hanviet": "TU LÝ",
         "level": "N3",
         "lesson": 5
       },
@@ -7099,7 +7099,7 @@
         "word": "処理",
         "reading": "しょり",
         "meaning": "sự xử lý; sự giải quyết",
-        "hanviet": "XỨ LÍ",
+        "hanviet": "XỨ LÝ",
         "level": "N3",
         "lesson": 8
       },
@@ -7107,7 +7107,7 @@
         "word": "心理",
         "reading": "しんり",
         "meaning": "tâm lý",
-        "hanviet": "TÂM LÍ",
+        "hanviet": "TÂM LÝ",
         "level": "N3",
         "lesson": 9
       },
@@ -7115,7 +7115,7 @@
         "word": "整理",
         "reading": "せいり",
         "meaning": "sự chỉnh lý; chỉnh sửa; chỉnh đốn",
-        "hanviet": "CHỈNH LÍ",
+        "hanviet": "CHỈNH LÝ",
         "level": "N3",
         "lesson": 12
       }
@@ -7155,7 +7155,7 @@
         "word": "意味",
         "reading": "いみ",
         "meaning": "ý nghĩa; nghĩa",
-        "hanviet": "Y VỊ",
+        "hanviet": "Ý VỊ",
         "level": "N5",
         "lesson": 24
       },
@@ -7171,7 +7171,7 @@
         "word": "調味料",
         "reading": "ちょうみりょう",
         "meaning": "đồ gia vị",
-        "hanviet": "ĐIỀU VỊ LIÊU",
+        "hanviet": "ĐIỀU VỊ LIỆU",
         "level": "N4",
         "lesson": 34
       },
@@ -7203,7 +7203,7 @@
         "word": "味方",
         "reading": "みかた",
         "meaning": "bạn; người đồng minh; người ủng hộ",
-        "hanviet": "VỊ BÀNG",
+        "hanviet": "VỊ PHƯƠNG",
         "level": "N3",
         "lesson": 41
       },
@@ -7288,7 +7288,7 @@
         "word": "化粧品",
         "reading": "けしょうひん",
         "meaning": "hóa trang phẩm",
-        "hanviet": "HOA PHẨM",
+        "hanviet": "HÓA TRANG PHẨM",
         "level": "N4",
         "lesson": 47
       },
@@ -7296,7 +7296,7 @@
         "word": "作品",
         "reading": "さくひん",
         "meaning": "bản đàn",
-        "hanviet": "TÁ PHẨM",
+        "hanviet": "TÁC PHẨM",
         "level": "N4",
         "lesson": 49
       },
@@ -7336,7 +7336,7 @@
         "word": "下品",
         "reading": "げひん",
         "meaning": "sản phẩm kém chất lượng",
-        "hanviet": "HÁ PHẨM",
+        "hanviet": "HẠ PHẨM",
         "level": "N2",
         "lesson": 24
       },
@@ -7344,7 +7344,7 @@
         "word": "下品(な)",
         "reading": "げひん(な)",
         "meaning": "thô tục",
-        "hanviet": "HÁ PHẨM",
+        "hanviet": "HẠ PHẨM",
         "level": "N2",
         "lesson": 24
       },
@@ -7352,7 +7352,7 @@
         "word": "上品",
         "reading": "じょうひん",
         "meaning": "sự lịch thiệp; tính nhu mì",
-        "hanviet": "THƯỚNG PHẨM",
+        "hanviet": "THƯỢNG PHẨM",
         "level": "N2",
         "lesson": 36
       }
@@ -7383,7 +7383,7 @@
         "word": "自動販売機",
         "reading": "じどうはんばいき",
         "meaning": "Máy bán hàng tự động",
-        "hanviet": "TỰ ĐỘNG PHIẾN MẠI CƠ",
+        "hanviet": "TỰ ĐỘNG PHIẾN MÃI CƠ",
         "level": "N5",
         "lesson": 3
       },
@@ -7391,7 +7391,7 @@
         "word": "売り場",
         "reading": "うりば",
         "meaning": "Quầy bán hàng",
-        "hanviet": "MẠI TRÀNG",
+        "hanviet": "MÃI TRƯỜNG",
         "level": "N5",
         "lesson": 3
       },
@@ -7399,7 +7399,7 @@
         "word": "売ります",
         "reading": "うります",
         "meaning": "bán",
-        "hanviet": "MẠI",
+        "hanviet": "MÃI",
         "level": "N5",
         "lesson": 15
       },
@@ -7407,7 +7407,7 @@
         "word": "通信販売",
         "reading": "つうしんはんばい",
         "meaning": "đặt hàng qua thư, bán hàng qua thư",
-        "hanviet": "THÔNG THÂN PHIẾN MẠI",
+        "hanviet": "THÔNG TÍN PHIẾN MÃI",
         "level": "N4",
         "lesson": 27
       },
@@ -7415,7 +7415,7 @@
         "word": "売れます",
         "reading": "うれます",
         "meaning": "[bánh mì] bán, được bán",
-        "hanviet": "MẠI",
+        "hanviet": "MÃI",
         "level": "N4",
         "lesson": 28
       },
@@ -7423,7 +7423,7 @@
         "word": "商売",
         "reading": "しょうばい",
         "meaning": "bán buôn",
-        "hanviet": "THƯƠNG MẠI",
+        "hanviet": "THƯƠNG MÃI",
         "level": "N3",
         "lesson": 7
       },
@@ -7431,7 +7431,7 @@
         "word": "売れる",
         "reading": "うれる",
         "meaning": "bán ra; bán chạy",
-        "hanviet": "MẠI",
+        "hanviet": "MÃI",
         "level": "N3",
         "lesson": 19
       },
@@ -7439,7 +7439,7 @@
         "word": "販売",
         "reading": "はんばい",
         "meaning": "việc bán",
-        "hanviet": "PHIẾN MẠI",
+        "hanviet": "PHIẾN MÃI",
         "level": "N3",
         "lesson": 73
       },
@@ -7447,7 +7447,7 @@
         "word": "売上",
         "reading": "うりあげ",
         "meaning": "bán đắt",
-        "hanviet": "MẠI THƯỚNG",
+        "hanviet": "MÃI THƯỢNG",
         "level": "N2",
         "lesson": 10
       },
@@ -7455,7 +7455,7 @@
         "word": "売り上げ",
         "reading": "うりあげ",
         "meaning": "bán đắt",
-        "hanviet": "MẠI THƯỚNG",
+        "hanviet": "MÃI THƯỢNG",
         "level": "N2",
         "lesson": 10
       },
@@ -7463,7 +7463,7 @@
         "word": "売り切れ",
         "reading": "うりきれ",
         "meaning": "sự bán sạch; sự bán hết; cháy chợ",
-        "hanviet": "MẠI THIẾT",
+        "hanviet": "MÃI THIẾT",
         "level": "N2",
         "lesson": 10
       },
@@ -7471,7 +7471,7 @@
         "word": "売り切れる",
         "reading": "うりきれる",
         "meaning": "bán sạch; bán hết; bán hết sạch",
-        "hanviet": "MẠI THIẾT",
+        "hanviet": "MÃI THIẾT",
         "level": "N2",
         "lesson": 10
       }
@@ -7510,7 +7510,7 @@
         "word": "家族",
         "reading": "かぞく",
         "meaning": "Gia đình",
-        "hanviet": "CÔ THẤU",
+        "hanviet": "CÔ TỘC",
         "level": "N5",
         "lesson": 5
       },
@@ -7518,7 +7518,7 @@
         "word": "家内",
         "reading": "かない",
         "meaning": "Vợ (của mình - cách gọi khiêm tốn)",
-        "hanviet": "GIA NỘI",
+        "hanviet": "CÔ NỘI",
         "level": "N5",
         "lesson": 9
       },
@@ -7526,7 +7526,7 @@
         "word": "ご家族",
         "reading": "ごかぞく",
         "meaning": "gia đình bạn",
-        "hanviet": "CÔ THẤU",
+        "hanviet": "CÔ TỘC",
         "level": "N5",
         "lesson": 15
       },
@@ -7558,7 +7558,7 @@
         "word": "小説家",
         "reading": "しょうせつか",
         "meaning": "tiểu thuyết gia",
-        "hanviet": "TIỂU DUYỆT CÔ",
+        "hanviet": "TIỂU THUYẾT CÔ",
         "level": "N4",
         "lesson": 28
       },
@@ -7590,7 +7590,7 @@
         "word": "作家",
         "reading": "さっか",
         "meaning": "cây bút",
-        "hanviet": "TÁ CÔ",
+        "hanviet": "TÁC CÔ",
         "level": "N4",
         "lesson": 49
       },
@@ -7653,7 +7653,7 @@
         "word": "住んで います",
         "reading": "すんで います",
         "meaning": "trực tiếp [ở Osaka]",
-        "hanviet": "TRÚ THÁI",
+        "hanviet": "TRÚ",
         "level": "N5",
         "lesson": 15
       },
@@ -7759,7 +7759,7 @@
         "word": "下町",
         "reading": "したまち",
         "meaning": "phần thành phố phía dưới",
-        "hanviet": "HÁ ĐINH",
+        "hanviet": "HẠ ĐINH",
         "level": "N2",
         "lesson": 32
       }
@@ -7808,7 +7808,7 @@
         "word": "東京大学",
         "reading": "とうきょうだいがく",
         "meaning": "Trường đại học Tokyo",
-        "hanviet": "ĐÔNG KINH THÁI HỌC",
+        "hanviet": "ĐÔNG KINH ĐẠI HỌC",
         "level": "N4",
         "lesson": 49
       },
@@ -7824,7 +7824,7 @@
         "word": "上京",
         "reading": "じょうきょう",
         "meaning": "việc đi tới Tokyo",
-        "hanviet": "THƯỚNG KINH",
+        "hanviet": "THƯỢNG KINH",
         "level": "N3",
         "lesson": 6
       },
@@ -7868,7 +7868,7 @@
         "word": "大阪城公園",
         "reading": "おおさかじょうこうえん",
         "meaning": "Công viên lâu đài Osaka",
-        "hanviet": "THÁI GIÀM CÔNG VIÊN",
+        "hanviet": "ĐẠI PHẢN THÀNH CÔNG VIÊN",
         "level": "N5",
         "lesson": 6
       },
@@ -7892,7 +7892,7 @@
         "word": "主人公",
         "reading": "しゅじんこう",
         "meaning": "ông chủ; nhân vật chính",
-        "hanviet": "CHÚA NHÂN CÔNG",
+        "hanviet": "CHỦ NHÂN CÔNG",
         "level": "N4",
         "lesson": 27
       },
@@ -7900,7 +7900,7 @@
         "word": "上野公園",
         "reading": "うえのこうえん",
         "meaning": "Công viên Ueno (ở Tokyo)",
-        "hanviet": "THƯỚNG DÃ CÔNG VIÊN",
+        "hanviet": "THƯỢNG DÃ CÔNG VIÊN",
         "level": "N4",
         "lesson": 31
       },
@@ -7908,7 +7908,7 @@
         "word": "公正",
         "reading": "こうせい",
         "meaning": "công bằng; công bình; không thiên vị",
-        "hanviet": "CÔNG CHINH",
+        "hanviet": "CÔNG CHÍNH",
         "level": "N3",
         "lesson": 36
       },
@@ -7940,7 +7940,7 @@
         "word": "公共",
         "reading": "こうきょう",
         "meaning": "công cộng; thuộc về xã hội",
-        "hanviet": "CÔNG CUNG",
+        "hanviet": "CÔNG CỘNG",
         "level": "N2",
         "lesson": 25
       },
@@ -8007,7 +8007,7 @@
         "word": "本屋",
         "reading": "ほんや",
         "meaning": "cửa hàng sách",
-        "hanviet": "BÔN ỐC",
+        "hanviet": "BẢN ỐC",
         "level": "N5",
         "lesson": 10
       },
@@ -8031,7 +8031,7 @@
         "word": "屋上",
         "reading": "おくじょう",
         "meaning": "mái nhà; nóc nhà",
-        "hanviet": "ỐC THƯỚNG",
+        "hanviet": "ỐC THƯỢNG",
         "level": "N4",
         "lesson": 35
       },
@@ -8093,7 +8093,7 @@
         "word": "食堂",
         "reading": "しょくどう",
         "meaning": "Nhà ăn, căng tin",
-        "hanviet": "THỰC ĐÀNG",
+        "hanviet": "THỰC ĐƯỜNG",
         "level": "N5",
         "lesson": 3
       },
@@ -8101,7 +8101,7 @@
         "word": "国会議事堂",
         "reading": "こっかいぎじどう",
         "meaning": "tòa nhà nghị sự quốc hội; tòa quốc hội; tòa nhà quốc hội",
-        "hanviet": "QUỐC CỐI NGHỊ SỰ ĐÀNG",
+        "hanviet": "QUỐC HỘI NGHỊ SỰ ĐƯỜNG",
         "level": "N4",
         "lesson": 26
       },
@@ -8109,7 +8109,7 @@
         "word": "堂々",
         "reading": "どうどう",
         "meaning": "ộng lẫy; chính (vĩ đại)",
-        "hanviet": "ĐÀNG",
+        "hanviet": "ĐƯỜNG",
         "level": "N1",
         "lesson": 13
       },
@@ -8117,7 +8117,7 @@
         "word": "議事堂",
         "reading": "ぎじどう",
         "meaning": "tòa nhà quốc hội",
-        "hanviet": "NGHỊ SỰ ĐÀNG",
+        "hanviet": "NGHỊ SỰ ĐƯỜNG",
         "level": "N1",
         "lesson": 38
       }
@@ -8167,7 +8167,7 @@
         "word": "大使館",
         "reading": "たいしかん",
         "meaning": "đại sứ quán",
-        "hanviet": "THÁI SỨ QUÁN",
+        "hanviet": "ĐẠI SỬ QUÁN",
         "level": "N5",
         "lesson": 25
       },
@@ -8175,7 +8175,7 @@
         "word": "体育館",
         "reading": "たいいくかん",
         "meaning": "phòng tập thể dục",
-        "hanviet": "BỔN DỤC QUÁN",
+        "hanviet": "THỂ DỤC QUÁN",
         "level": "N4",
         "lesson": 28
       },
@@ -8183,7 +8183,7 @@
         "word": "映画館",
         "reading": "えいがかん",
         "meaning": "nhà hát",
-        "hanviet": "ÁNH HOẠ QUÁN",
+        "hanviet": "ÁNH HỌA QUÁN",
         "level": "N4",
         "lesson": 31
       },
@@ -8253,7 +8253,7 @@
         "word": "起きます",
         "reading": "おきます",
         "meaning": "Thức dậy",
-        "hanviet": "KHỈ",
+        "hanviet": "KHỞI",
         "level": "N5",
         "lesson": 4
       },
@@ -8261,7 +8261,7 @@
         "word": "起こします",
         "reading": "おこします",
         "meaning": "đánh thức (ai đó) dậy",
-        "hanviet": "KHỈ",
+        "hanviet": "KHỞI",
         "level": "N4",
         "lesson": 37
       },
@@ -8269,7 +8269,7 @@
         "word": "縁起が 悪い",
         "reading": "えんぎが わるい",
         "meaning": "xui xẻo, điềm xấu",
-        "hanviet": "DUYÊN KHỈ ÁC",
+        "hanviet": "DUYÊN KHỞI ÁC",
         "level": "N4",
         "lesson": 44
       },
@@ -8277,7 +8277,7 @@
         "word": "起こる",
         "reading": "おこる",
         "meaning": "nhúc nhích",
-        "hanviet": "KHỈ",
+        "hanviet": "KHỞI",
         "level": "N3",
         "lesson": 21
       },
@@ -8285,7 +8285,7 @@
         "word": "起源",
         "reading": "きげん",
         "meaning": "bản",
-        "hanviet": "KHỈ NGUYÊN",
+        "hanviet": "KHỞI NGUYÊN",
         "level": "N3",
         "lesson": 51
       },
@@ -8293,7 +8293,7 @@
         "word": "起床",
         "reading": "きしょう",
         "meaning": "sự dậy (ngủ); sự thức dậy",
-        "hanviet": "KHỈ SÀNG",
+        "hanviet": "KHỞI SÀNG",
         "level": "N2",
         "lesson": 20
       },
@@ -8301,7 +8301,7 @@
         "word": "起点",
         "reading": "きてん",
         "meaning": "điểm xuất phát; khởi điểm",
-        "hanviet": "KHỈ ĐIỂM",
+        "hanviet": "KHỞI ĐIỂM",
         "level": "N1",
         "lesson": 39
       },
@@ -8309,7 +8309,7 @@
         "word": "起伏",
         "reading": "きふく",
         "meaning": "ự nhấp nhô, chuyển động sóng, cảm giác tim chập chờn",
-        "hanviet": "KHỈ BẶC",
+        "hanviet": "KHỞI BẶC",
         "level": "N1",
         "lesson": 39
       },
@@ -8317,7 +8317,7 @@
         "word": "引き起こす",
         "reading": "ひきおこす",
         "meaning": "dẫn đến",
-        "hanviet": "DẤN KHỈ",
+        "hanviet": "DẪN KHỞI",
         "level": "N1",
         "lesson": 106
       }
@@ -8358,7 +8358,7 @@
         "word": "使います",
         "reading": "つかいます",
         "meaning": "sử dụng",
-        "hanviet": "SỨ",
+        "hanviet": "SỬ",
         "level": "N5",
         "lesson": 14
       },
@@ -8366,7 +8366,7 @@
         "word": "大使館",
         "reading": "たいしかん",
         "meaning": "đại sứ quán",
-        "hanviet": "THÁI SỨ QUÁN",
+        "hanviet": "ĐẠI SỬ QUÁN",
         "level": "N5",
         "lesson": 25
       },
@@ -8374,7 +8374,7 @@
         "word": "使用禁止",
         "reading": "しようきんし",
         "meaning": "Không sử dụng",
-        "hanviet": "SỨ DỤNG CÂM CHI",
+        "hanviet": "SỬ DỤNG CÂM CHỈ",
         "level": "N4",
         "lesson": 33
       },
@@ -8382,7 +8382,7 @@
         "word": "使用中",
         "reading": "しようちゅう",
         "meaning": "Đang sử dụng",
-        "hanviet": "SỨ DỤNG TRUNG",
+        "hanviet": "SỬ DỤNG TRUNG",
         "level": "N4",
         "lesson": 33
       },
@@ -8390,7 +8390,7 @@
         "word": "使って いらっしゃるんですね。",
         "reading": "つかって いらっしゃるんですね。",
         "meaning": "Đang sử dụng phải không ạ (Tôn kính ngữ của 使っているんですね)",
-        "hanviet": "SỨ",
+        "hanviet": "SỬ",
         "level": "N4",
         "lesson": 36
       },
@@ -8398,7 +8398,7 @@
         "word": "使用",
         "reading": "しよう",
         "meaning": "sự sử dụng; sử dụng",
-        "hanviet": "SỨ DỤNG",
+        "hanviet": "SỬ DỤNG",
         "level": "N3",
         "lesson": 6
       },
@@ -8406,7 +8406,7 @@
         "word": "大使",
         "reading": "たいし",
         "meaning": "đại sứ",
-        "hanviet": "THÁI SỨ",
+        "hanviet": "ĐẠI SỬ",
         "level": "N3",
         "lesson": 55
       },
@@ -8414,7 +8414,7 @@
         "word": "お使い",
         "reading": "おつかい",
         "meaning": "việc lặt vặt; mục đích; lời nhắn",
-        "hanviet": "SỨ",
+        "hanviet": "SỬ",
         "level": "N1",
         "lesson": 29
       },
@@ -8422,7 +8422,7 @@
         "word": "使用人",
         "reading": "しようにん",
         "meaning": "người làm công; nô lệ; người ở",
-        "hanviet": "SỨ DỤNG NHÂN",
+        "hanviet": "SỬ DỤNG NHÂN",
         "level": "N1",
         "lesson": 54
       },
@@ -8430,7 +8430,7 @@
         "word": "使い道",
         "reading": "つかいみち",
         "meaning": "cách dùng; cách sử dụng",
-        "hanviet": "SỨ ĐÁO",
+        "hanviet": "SỬ ĐẠO",
         "level": "N1",
         "lesson": 71
       },
@@ -8438,7 +8438,7 @@
         "word": "使命",
         "reading": "しめい",
         "meaning": "sứ mạng",
-        "hanviet": "SỨ MỆNH",
+        "hanviet": "SỬ MỆNH",
         "level": "N1",
         "lesson": 79
       }
@@ -8474,7 +8474,7 @@
         "word": "作ります、造ります",
         "reading": "つくります",
         "meaning": "làm, sản xuất",
-        "hanviet": "TÁ THÁO",
+        "hanviet": "TÁC THÁO",
         "level": "N5",
         "lesson": 15
       },
@@ -8482,7 +8482,7 @@
         "word": "作文",
         "reading": "さくぶん",
         "meaning": "sự đặt câu",
-        "hanviet": "TÁ VĂN",
+        "hanviet": "TÁC VĂN",
         "level": "N4",
         "lesson": 31
       },
@@ -8490,7 +8490,7 @@
         "word": "操作",
         "reading": "そうさ",
         "meaning": "sự thao tác; sự vận dụng khéo léo",
-        "hanviet": "THAO TÁ",
+        "hanviet": "THAO TÁC",
         "level": "N4",
         "lesson": 35
       },
@@ -8498,7 +8498,7 @@
         "word": "作品",
         "reading": "さくひん",
         "meaning": "bản đàn",
-        "hanviet": "TÁ PHẨM",
+        "hanviet": "TÁC PHẨM",
         "level": "N4",
         "lesson": 49
       },
@@ -8506,7 +8506,7 @@
         "word": "作家",
         "reading": "さっか",
         "meaning": "cây bút",
-        "hanviet": "TÁ CÔ",
+        "hanviet": "TÁC CÔ",
         "level": "N4",
         "lesson": 49
       },
@@ -8514,7 +8514,7 @@
         "word": "作曲",
         "reading": "さっきょく",
         "meaning": "sự sáng tác (nhạc)",
-        "hanviet": "TÁ KHÚC",
+        "hanviet": "TÁC KHÚC",
         "level": "N4",
         "lesson": 49
       },
@@ -8522,7 +8522,7 @@
         "word": "作法",
         "reading": "さほう",
         "meaning": "ái độ; phép xã giao",
-        "hanviet": "TÁ PHÁP",
+        "hanviet": "TÁC PHÁP",
         "level": "N3",
         "lesson": 1
       },
@@ -8530,7 +8530,7 @@
         "word": "作業",
         "reading": "さぎょう",
         "meaning": "công việc",
-        "hanviet": "TÁ NGHIỆP",
+        "hanviet": "TÁC NGHIỆP",
         "level": "N3",
         "lesson": 39
       },
@@ -8538,7 +8538,7 @@
         "word": "作物",
         "reading": "さくもつ",
         "meaning": "hoa màu; cây trồng",
-        "hanviet": "TÁ VẬT",
+        "hanviet": "TÁC VẬT",
         "level": "N3",
         "lesson": 40
       },
@@ -8546,7 +8546,7 @@
         "word": "作",
         "reading": "さく",
         "meaning": "công việc; sự làm ruộng",
-        "hanviet": "TÁ",
+        "hanviet": "TÁC",
         "level": "N3",
         "lesson": 52
       },
@@ -8554,7 +8554,7 @@
         "word": "傑作",
         "reading": "けっさく",
         "meaning": "kiệt tác; kiệt xuất; tác phẩm lớn",
-        "hanviet": "KIỆT TÁ",
+        "hanviet": "KIỆT TÁC",
         "level": "N2",
         "lesson": 24
       },
@@ -8562,7 +8562,7 @@
         "word": "作者",
         "reading": "さくしゃ",
         "meaning": "tác giả",
-        "hanviet": "TÁ GIẢ",
+        "hanviet": "TÁC GIẢ",
         "level": "N2",
         "lesson": 29
       }
@@ -8617,7 +8617,7 @@
         "word": "開きます",
         "reading": "ひらきます",
         "meaning": "thiết lập [một lớp], mở, giữ",
-        "hanviet": "KHAI GIAO THẤT",
+        "hanviet": "KHAI",
         "level": "N4",
         "lesson": 27
       },
@@ -8633,7 +8633,7 @@
         "word": "開始",
         "reading": "かいし",
         "meaning": "sự khởi đầu; việc khởi đầu; việc bắt đầu",
-        "hanviet": "KHAI THUỶ",
+        "hanviet": "KHAI THỦY",
         "level": "N3",
         "lesson": 23
       },
@@ -8641,7 +8641,7 @@
         "word": "開会",
         "reading": "かいかい",
         "meaning": "sự khai mạc (cuộc họp)",
-        "hanviet": "KHAI CỐI",
+        "hanviet": "KHAI HỘI",
         "level": "N2",
         "lesson": 14
       },
@@ -8722,7 +8722,7 @@
         "word": "お待ち ください。",
         "reading": "おまち ください。",
         "meaning": "Vui lòng đợi [một lát].",
-        "hanviet": "THIẾU ĐÃI",
+        "hanviet": "ĐÃI",
         "level": "N5",
         "lesson": 13
       },
@@ -8778,7 +8778,7 @@
         "word": "待合室",
         "reading": "まちあいしつ",
         "meaning": "phòng chờ đợi",
-        "hanviet": "ĐÃI CÁP THẤT",
+        "hanviet": "ĐÃI HỢP THẤT",
         "level": "N2",
         "lesson": 68
       },
@@ -8786,7 +8786,7 @@
         "word": "待ち合わせる",
         "reading": "まちあわせる",
         "meaning": "gặp nhau tại điểm hẹn; gặp nhau theo kế hoạch; gặp nhau tại nơi và thời gian đã sắp xếp trước",
-        "hanviet": "ĐÃI CÁP",
+        "hanviet": "ĐÃI HỢP",
         "level": "N2",
         "lesson": 68
       },
@@ -8810,7 +8810,7 @@
         "word": "待ち合わせ",
         "reading": "まちあわせ",
         "meaning": "cuộc hẹn",
-        "hanviet": "ĐÃI CÁP",
+        "hanviet": "ĐÃI HỢP",
         "level": "N1",
         "lesson": 92
       }
@@ -8859,7 +8859,7 @@
         "word": "持って 行きます",
         "reading": "もって いきます",
         "meaning": "lấy (cái gì đó)",
-        "hanviet": "TRÌ HÀNG",
+        "hanviet": "TRÌ HÀNH",
         "level": "N5",
         "lesson": 17
       },
@@ -8923,7 +8923,7 @@
         "word": "持ち上げる",
         "reading": "もちあげる",
         "meaning": "bốc",
-        "hanviet": "TRÌ THƯỚNG",
+        "hanviet": "TRÌ THƯỢNG",
         "level": "N3",
         "lesson": 43
       },
@@ -8987,7 +8987,7 @@
         "word": "見送り",
         "reading": "みおくり",
         "meaning": "sự tiễn; đưa tiễn",
-        "hanviet": "HIỆN TỐNG",
+        "hanviet": "KIẾN TỐNG",
         "level": "N3",
         "lesson": 41
       },
@@ -9011,7 +9011,7 @@
         "word": "送料",
         "reading": "そうりょう",
         "meaning": "cước",
-        "hanviet": "TỐNG LIÊU",
+        "hanviet": "TỐNG LIỆU",
         "level": "N2",
         "lesson": 43
       },
@@ -9019,7 +9019,7 @@
         "word": "見送る",
         "reading": "みおくる",
         "meaning": "chờ đợi; mong đợi",
-        "hanviet": "HIỆN TỐNG",
+        "hanviet": "KIẾN TỐNG",
         "level": "N2",
         "lesson": 69
       },
@@ -9152,7 +9152,7 @@
         "word": "集会",
         "reading": "しゅうかい",
         "meaning": "sự tập hợp; sự tập trung lại một chỗ; mitting",
-        "hanviet": "TẬP CỐI",
+        "hanviet": "TẬP HỘI",
         "level": "N2",
         "lesson": 34
       },
@@ -9168,7 +9168,7 @@
         "word": "集合",
         "reading": "しゅうごう",
         "meaning": "hội",
-        "hanviet": "TẬP CÁP",
+        "hanviet": "TẬP HỢP",
         "level": "N2",
         "lesson": 34
       },
@@ -9209,7 +9209,7 @@
         "word": "始めます",
         "reading": "はじめます",
         "meaning": "bắt đầu, bắt đầu",
-        "hanviet": "THUỶ",
+        "hanviet": "THỦY",
         "level": "N5",
         "lesson": 14
       },
@@ -9217,7 +9217,7 @@
         "word": "始まります",
         "reading": "はじまります",
         "meaning": "[buổi lễ] bắt đầu, bắt đầu",
-        "hanviet": "THUỶ THỨC",
+        "hanviet": "THỦY",
         "level": "N4",
         "lesson": 31
       },
@@ -9225,7 +9225,7 @@
         "word": "開始",
         "reading": "かいし",
         "meaning": "sự khởi đầu; việc khởi đầu; việc bắt đầu",
-        "hanviet": "KHAI THUỶ",
+        "hanviet": "KHAI THỦY",
         "level": "N3",
         "lesson": 23
       },
@@ -9233,7 +9233,7 @@
         "word": "始まり",
         "reading": "はじまり",
         "meaning": "bắt đầu; cái bắt đầu; sự bắt đầu",
-        "hanviet": "THUỶ",
+        "hanviet": "THỦY",
         "level": "N3",
         "lesson": 71
       },
@@ -9241,7 +9241,7 @@
         "word": "原始",
         "reading": "げんし",
         "meaning": "khởi thủy; nguyên thủy; sơ khai",
-        "hanviet": "NGUYÊN THUỶ",
+        "hanviet": "NGUYÊN THỦY",
         "level": "N2",
         "lesson": 24
       },
@@ -9249,7 +9249,7 @@
         "word": "始終",
         "reading": "しじゅう",
         "meaning": "từ đầu đến cuối; từ đầu chí cuối",
-        "hanviet": "THUỶ CHUNG",
+        "hanviet": "THỦY CHUNG",
         "level": "N2",
         "lesson": 31
       },
@@ -9257,7 +9257,7 @@
         "word": "始めに",
         "reading": "はじめに",
         "meaning": "đầu tiên",
-        "hanviet": "THUỶ",
+        "hanviet": "THỦY",
         "level": "N2",
         "lesson": 58
       },
@@ -9265,7 +9265,7 @@
         "word": "始発",
         "reading": "しはつ",
         "meaning": "chuyến tàu đầu tiên",
-        "hanviet": "THUỶ PHÁT",
+        "hanviet": "THỦY PHÁT",
         "level": "N1",
         "lesson": 79
       },
@@ -9273,7 +9273,7 @@
         "word": "始末",
         "reading": "しまつ",
         "meaning": "đầu cuối; nguy hiểm",
-        "hanviet": "THUỶ MẠT",
+        "hanviet": "THỦY MẠT",
         "level": "N1",
         "lesson": 79
       },
@@ -9281,7 +9281,7 @@
         "word": "終始",
         "reading": "しゅうし",
         "meaning": "đầu cuối; từ đầu tới cuối",
-        "hanviet": "CHUNG THUỶ",
+        "hanviet": "CHUNG THỦY",
         "level": "N1",
         "lesson": 80
       }
@@ -9366,7 +9366,7 @@
         "word": "始終",
         "reading": "しじゅう",
         "meaning": "từ đầu đến cuối; từ đầu chí cuối",
-        "hanviet": "THUỶ CHUNG",
+        "hanviet": "THỦY CHUNG",
         "level": "N2",
         "lesson": 31
       },
@@ -9390,7 +9390,7 @@
         "word": "終始",
         "reading": "しゅうし",
         "meaning": "đầu cuối; từ đầu tới cuối",
-        "hanviet": "CHUNG THUỶ",
+        "hanviet": "CHUNG THỦY",
         "level": "N1",
         "lesson": 80
       },
@@ -9644,7 +9644,7 @@
         "word": "本音",
         "reading": "ほんね",
         "meaning": "ý định thực sự; động cơ",
-        "hanviet": "BÔN ÂM",
+        "hanviet": "BẢN ÂM",
         "level": "N1",
         "lesson": 91
       }
@@ -9779,7 +9779,7 @@
         "word": "写生",
         "reading": "しゃせい",
         "meaning": "vẽ phác",
-        "hanviet": "TẢ SANH",
+        "hanviet": "TẢ SINH",
         "level": "N2",
         "lesson": 33
       },
@@ -9878,7 +9878,7 @@
         "word": "真っ赤",
         "reading": "まっか",
         "meaning": "đỏ thẫm; đỏ bừng (mặt)",
-        "hanviet": "CHÂN THÍCH",
+        "hanviet": "CHÂN XÍCH",
         "level": "N3",
         "lesson": 80
       },
@@ -9894,7 +9894,7 @@
         "word": "真理",
         "reading": "しんり",
         "meaning": "chân lý",
-        "hanviet": "CHÂN LÍ",
+        "hanviet": "CHÂN LÝ",
         "level": "N3",
         "lesson": 82
       },
@@ -9973,7 +9973,7 @@
         "word": "映画",
         "reading": "えいが",
         "meaning": "Bộ phim",
-        "hanviet": "ÁNH HOẠ",
+        "hanviet": "ÁNH HỌA",
         "level": "N5",
         "lesson": 4
       },
@@ -9981,7 +9981,7 @@
         "word": "漫画",
         "reading": "まんが",
         "meaning": "hí họa",
-        "hanviet": "MAN HOẠ",
+        "hanviet": "MAN HỌA",
         "level": "N4",
         "lesson": 27
       },
@@ -9989,7 +9989,7 @@
         "word": "映画館",
         "reading": "えいがかん",
         "meaning": "nhà hát",
-        "hanviet": "ÁNH HOẠ QUÁN",
+        "hanviet": "ÁNH HỌA QUÁN",
         "level": "N4",
         "lesson": 31
       },
@@ -9997,7 +9997,7 @@
         "word": "絵画",
         "reading": "かいが",
         "meaning": "bức tranh",
-        "hanviet": "HỘI HOẠ",
+        "hanviet": "HỘI HỌA",
         "level": "N3",
         "lesson": 23
       },
@@ -10005,7 +10005,7 @@
         "word": "画家",
         "reading": "がか",
         "meaning": "họa sĩ",
-        "hanviet": "HOẠ CÔ",
+        "hanviet": "HỌA CÔ",
         "level": "N3",
         "lesson": 23
       },
@@ -10013,7 +10013,7 @@
         "word": "～画",
         "reading": "～が",
         "meaning": "bức tranh, bức tranh",
-        "hanviet": "HOẠ",
+        "hanviet": "HỌA",
         "level": "N2",
         "lesson": 1
       },
@@ -10021,7 +10021,7 @@
         "word": "企画",
         "reading": "きかく",
         "meaning": "qui hoạch",
-        "hanviet": "XÍ HOẠ",
+        "hanviet": "XÍ HỌA",
         "level": "N1",
         "lesson": 38
       },
@@ -10029,7 +10029,7 @@
         "word": "区画",
         "reading": "くかく",
         "meaning": "khu vực; phạm vi; vùng đất",
-        "hanviet": "KHU HOẠ",
+        "hanviet": "KHU HỌA",
         "level": "N1",
         "lesson": 43
       },
@@ -10037,7 +10037,7 @@
         "word": "版画",
         "reading": "はんが",
         "meaning": "tranh khắc gỗ",
-        "hanviet": "BẢN HOẠ",
+        "hanviet": "BẢN HỌA",
         "level": "N1",
         "lesson": 105
       }
@@ -10072,7 +10072,7 @@
         "word": "映画",
         "reading": "えいが",
         "meaning": "Bộ phim",
-        "hanviet": "ÁNH HOẠ",
+        "hanviet": "ÁNH HỌA",
         "level": "N5",
         "lesson": 4
       },
@@ -10080,7 +10080,7 @@
         "word": "映画館",
         "reading": "えいがかん",
         "meaning": "nhà hát",
-        "hanviet": "ÁNH HOẠ QUÁN",
+        "hanviet": "ÁNH HỌA QUÁN",
         "level": "N4",
         "lesson": 31
       },
@@ -10112,7 +10112,7 @@
         "word": "反映",
         "reading": "はんえい",
         "meaning": "bóng",
-        "hanviet": "PHIÊN ÁNH",
+        "hanviet": "PHẢN ÁNH",
         "level": "N2",
         "lesson": 59
       },
@@ -10161,7 +10161,7 @@
         "word": "旅行",
         "reading": "りょこう",
         "meaning": "Du lịch, chuyến đi",
-        "hanviet": "LỮ HÀNG",
+        "hanviet": "LỮ HÀNH",
         "level": "N5",
         "lesson": 7
       },
@@ -10169,7 +10169,7 @@
         "word": "旅行社",
         "reading": "りょこうしゃ",
         "meaning": "khách lữ hành",
-        "hanviet": "LỮ HÀNG XÃ",
+        "hanviet": "LỮ HÀNH XÃ",
         "level": "N4",
         "lesson": 35
       },
@@ -10306,7 +10306,7 @@
         "word": "不服",
         "reading": "ふふく",
         "meaning": "dị nghị",
-        "hanviet": "BƯU PHỤC",
+        "hanviet": "BẤT PHỤC",
         "level": "N1",
         "lesson": 85
       }
@@ -10347,7 +10347,7 @@
         "word": "上着",
         "reading": "うわぎ",
         "meaning": "áo vét; áo khoác",
-        "hanviet": "THƯỚNG HỒ",
+        "hanviet": "THƯỢNG TRƯỚC",
         "level": "N5",
         "lesson": 17
       },
@@ -10355,7 +10355,7 @@
         "word": "下着",
         "reading": "したぎ",
         "meaning": "quần áo lót",
-        "hanviet": "HÁ HỒ",
+        "hanviet": "HẠ TRƯỚC",
         "level": "N5",
         "lesson": 17
       },
@@ -10363,7 +10363,7 @@
         "word": "着物",
         "reading": "きもの",
         "meaning": "áo kimono; kimono",
-        "hanviet": "HỒ VẬT",
+        "hanviet": "TRƯỚC VẬT",
         "level": "N5",
         "lesson": 20
       },
@@ -10371,7 +10371,7 @@
         "word": "着ます",
         "reading": "きます",
         "meaning": "mặc (áo sơ mi, v.v.)",
-        "hanviet": "HỒ",
+        "hanviet": "TRƯỚC",
         "level": "N5",
         "lesson": 22
       },
@@ -10379,7 +10379,7 @@
         "word": "着きます",
         "reading": "つきます",
         "meaning": "đến",
-        "hanviet": "HỒ",
+        "hanviet": "TRƯỚC",
         "level": "N5",
         "lesson": 25
       },
@@ -10387,7 +10387,7 @@
         "word": "到着します",
         "reading": "とうちゃくします",
         "meaning": "đến",
-        "hanviet": "ĐÁO HỒ",
+        "hanviet": "ĐÁO TRƯỚC",
         "level": "N4",
         "lesson": 40
       },
@@ -10395,7 +10395,7 @@
         "word": "着ける",
         "reading": "つける",
         "meaning": "mặc; đeo",
-        "hanviet": "HỒ",
+        "hanviet": "TRƯỚC",
         "level": "N3",
         "lesson": 61
       },
@@ -10403,7 +10403,7 @@
         "word": "到着",
         "reading": "とうちゃく",
         "meaning": "đến",
-        "hanviet": "ĐÁO HỒ",
+        "hanviet": "ĐÁO TRƯỚC",
         "level": "N3",
         "lesson": 64
       },
@@ -10411,7 +10411,7 @@
         "word": "～着",
         "reading": "～ちゃく",
         "meaning": "quầy quần áo; nơi hoàn thiện",
-        "hanviet": "HỒ",
+        "hanviet": "TRƯỚC",
         "level": "N2",
         "lesson": 4
       },
@@ -10419,7 +10419,7 @@
         "word": "落着く",
         "reading": "おちつく",
         "meaning": "bình tĩnh; điềm tĩnh; kiềm chế",
-        "hanviet": "LẠC HỒ",
+        "hanviet": "LẠC TRƯỚC",
         "level": "N2",
         "lesson": 13
       },
@@ -10427,7 +10427,7 @@
         "word": "着替え",
         "reading": "きがえ",
         "meaning": "sự thay quần áo; thay quần áo; thay",
-        "hanviet": "HỒ THẾ",
+        "hanviet": "TRƯỚC THẾ",
         "level": "N2",
         "lesson": 20
       },
@@ -10435,7 +10435,7 @@
         "word": "着替える",
         "reading": "きがえる",
         "meaning": "thay quần áo",
-        "hanviet": "HỒ THẾ",
+        "hanviet": "TRƯỚC THẾ",
         "level": "N2",
         "lesson": 20
       }
@@ -10468,7 +10468,7 @@
         "word": "日曜大工",
         "reading": "にちようだいく",
         "meaning": "thợ mộc chủ nhật",
-        "hanviet": "NHẬT DIỆU THÁI CÔNG",
+        "hanviet": "NHẬT DIỆU ĐẠI CÔNG",
         "level": "N4",
         "lesson": 27
       },
@@ -10476,7 +10476,7 @@
         "word": "工場",
         "reading": "こうじょう",
         "meaning": "công trường",
-        "hanviet": "CÔNG TRÀNG",
+        "hanviet": "CÔNG TRƯỜNG",
         "level": "N4",
         "lesson": 36
       },
@@ -10524,7 +10524,7 @@
         "word": "大工",
         "reading": "だいく",
         "meaning": "thợ mộc",
-        "hanviet": "THÁI CÔNG",
+        "hanviet": "ĐẠI CÔNG",
         "level": "N2",
         "lesson": 44
       },
@@ -10540,7 +10540,7 @@
         "word": "工作",
         "reading": "こうさく",
         "meaning": "nghề thủ công; môn thủ công",
-        "hanviet": "CÔNG TÁ",
+        "hanviet": "CÔNG TÁC",
         "level": "N1",
         "lesson": 2
       },
@@ -10607,7 +10607,7 @@
         "word": "仕上がる",
         "reading": "しあがる",
         "meaning": "để (thì) đã kết thúc",
-        "hanviet": "SĨ THƯỚNG",
+        "hanviet": "SĨ THƯỢNG",
         "level": "N2",
         "lesson": 30
       },
@@ -10615,7 +10615,7 @@
         "word": "仕方がない",
         "reading": "しかたがない",
         "meaning": "không có cách nào khác; không còn cách khác",
-        "hanviet": "SĨ BÀNG",
+        "hanviet": "SĨ PHƯƠNG",
         "level": "N2",
         "lesson": 31
       },
@@ -10623,7 +10623,7 @@
         "word": "仕上がり",
         "reading": "しあがり",
         "meaning": "ết thúc; chấm dứt",
-        "hanviet": "SĨ THƯỚNG",
+        "hanviet": "SĨ THƯỢNG",
         "level": "N1",
         "lesson": 10
       },
@@ -10631,7 +10631,7 @@
         "word": "仕上",
         "reading": "しあげ",
         "meaning": "sự đánh bóng; sự hoàn thiện",
-        "hanviet": "SĨ THƯỚNG",
+        "hanviet": "SĨ THƯỢNG",
         "level": "N1",
         "lesson": 10
       },
@@ -10639,7 +10639,7 @@
         "word": "仕上げる",
         "reading": "しあげる",
         "meaning": "đánh bóng; hoàn thiện; hoàn thành",
-        "hanviet": "SĨ THƯỚNG",
+        "hanviet": "SĨ THƯỢNG",
         "level": "N1",
         "lesson": 10
       },
@@ -10719,7 +10719,7 @@
         "word": "事務所",
         "reading": "じむしょ",
         "meaning": "Văn phòng làm việc",
-        "hanviet": "SỰ VŨ SỞ",
+        "hanviet": "SỰ VỤ SỞ",
         "level": "N5",
         "lesson": 3
       },
@@ -10751,7 +10751,7 @@
         "word": "お大事に。",
         "reading": "おだいじに。",
         "meaning": "Hãy chăm sóc bản thân. (nói với những người bị bệnh)",
-        "hanviet": "THÁI SỰ",
+        "hanviet": "ĐẠI SỰ",
         "level": "N5",
         "lesson": 17
       },
@@ -10759,7 +10759,7 @@
         "word": "国会議事堂",
         "reading": "こっかいぎじどう",
         "meaning": "tòa nhà nghị sự quốc hội; tòa quốc hội; tòa nhà quốc hội",
-        "hanviet": "QUỐC CỐI NGHỊ SỰ ĐÀNG",
+        "hanviet": "QUỐC HỘI NGHỊ SỰ ĐƯỜNG",
         "level": "N4",
         "lesson": 26
       },
@@ -10767,7 +10767,7 @@
         "word": "返事",
         "reading": "へんじ",
         "meaning": "sự trả lời; sự đáp lời",
-        "hanviet": "PHIÊN SỰ",
+        "hanviet": "PHẢN SỰ",
         "level": "N4",
         "lesson": 29
       },
@@ -10775,7 +10775,7 @@
         "word": "火事",
         "reading": "かじ",
         "meaning": "cháy nhà",
-        "hanviet": "HOẢ SỰ",
+        "hanviet": "HỎA SỰ",
         "level": "N4",
         "lesson": 39
       },
@@ -10783,7 +10783,7 @@
         "word": "事後",
         "reading": "じご",
         "meaning": "tai nạn",
-        "hanviet": "SỰ HẤU",
+        "hanviet": "SỰ HẬU",
         "level": "N4",
         "lesson": 39
       },
@@ -10799,7 +10799,7 @@
         "word": "出来事",
         "reading": "できごと",
         "meaning": "sự kiện",
-        "hanviet": "XUÝ LAI SỰ",
+        "hanviet": "XUẤT LAI SỰ",
         "level": "N4",
         "lesson": 46
       },
@@ -10857,7 +10857,7 @@
         "word": "卒業します",
         "reading": "そつぎょうします",
         "meaning": "tốt nghiệp",
-        "hanviet": "THỐT NGHIỆP",
+        "hanviet": "TỐT NGHIỆP",
         "level": "N4",
         "lesson": 31
       },
@@ -10865,7 +10865,7 @@
         "word": "本日休業",
         "reading": "ほんじつきゅうぎょう",
         "meaning": "hôm nay đóng cửa",
-        "hanviet": "BÔN NHẬT HU NGHIỆP",
+        "hanviet": "BẢN NHẬT HƯU NGHIỆP",
         "level": "N4",
         "lesson": 33
       },
@@ -10913,7 +10913,7 @@
         "word": "作業",
         "reading": "さぎょう",
         "meaning": "công việc",
-        "hanviet": "TÁ NGHIỆP",
+        "hanviet": "TÁC NGHIỆP",
         "level": "N3",
         "lesson": 39
       },
@@ -10973,7 +10973,7 @@
         "word": "自動販売機",
         "reading": "じどうはんばいき",
         "meaning": "Máy bán hàng tự động",
-        "hanviet": "TỰ ĐỘNG PHIẾN MẠI CƠ",
+        "hanviet": "TỰ ĐỘNG PHIẾN MÃI CƠ",
         "level": "N5",
         "lesson": 3
       },
@@ -10997,7 +10997,7 @@
         "word": "運動会",
         "reading": "うんどうかい",
         "meaning": "cuộc thi thể thao; hội thi thể thao",
-        "hanviet": "VẬN ĐỘNG CỐI",
+        "hanviet": "VẬN ĐỘNG HỘI",
         "level": "N4",
         "lesson": 26
       },
@@ -11118,7 +11118,7 @@
         "word": "発見します",
         "reading": "はっけんします",
         "meaning": "khám phá",
-        "hanviet": "PHÁT HIỆN",
+        "hanviet": "PHÁT KIẾN",
         "level": "N4",
         "lesson": 37
       },
@@ -11126,7 +11126,7 @@
         "word": "出発します",
         "reading": "しゅっぱつします",
         "meaning": "khởi hành",
-        "hanviet": "XUÝ PHÁT",
+        "hanviet": "XUẤT PHÁT",
         "level": "N4",
         "lesson": 40
       },
@@ -11134,7 +11134,7 @@
         "word": "発表会",
         "reading": "はっぴょうかい",
         "meaning": "cuộc họp thuyết trình",
-        "hanviet": "PHÁT BIỂU CỐI",
+        "hanviet": "PHÁT BIỂU HỘI",
         "level": "N4",
         "lesson": 40
       },
@@ -11166,7 +11166,7 @@
         "word": "発見",
         "reading": "はっけん",
         "meaning": "sự phát hiện",
-        "hanviet": "PHÁT HIỆN",
+        "hanviet": "PHÁT KIẾN",
         "level": "N3",
         "lesson": 71
       },
@@ -11174,7 +11174,7 @@
         "word": "発行",
         "reading": "はっこう",
         "meaning": "sự phát hành",
-        "hanviet": "PHÁT HÀNG",
+        "hanviet": "PHÁT HÀNH",
         "level": "N3",
         "lesson": 71
       },
@@ -11313,7 +11313,7 @@
         "word": "売り場",
         "reading": "うりば",
         "meaning": "Quầy bán hàng",
-        "hanviet": "MẠI TRÀNG",
+        "hanviet": "MÃI TRƯỜNG",
         "level": "N5",
         "lesson": 3
       },
@@ -11321,7 +11321,7 @@
         "word": "乗り場",
         "reading": "のりば",
         "meaning": "Điểm đón xe, bến xe",
-        "hanviet": "THẶNG TRÀNG",
+        "hanviet": "THỪA TRƯỜNG",
         "level": "N5",
         "lesson": 10
       },
@@ -11329,7 +11329,7 @@
         "word": "牧場",
         "reading": "ぼくじょう",
         "meaning": "đồng cỏ; bãi cỏ; bãi chăn thả",
-        "hanviet": "MỤC TRÀNG",
+        "hanviet": "MỤC TRƯỜNG",
         "level": "N5",
         "lesson": 18
       },
@@ -11337,7 +11337,7 @@
         "word": "駐車場",
         "reading": "ちゅうしゃじょう",
         "meaning": "bãi đỗ xe",
-        "hanviet": "TRÚ XA TRÀNG",
+        "hanviet": "TRÚ XA TRƯỜNG",
         "level": "N5",
         "lesson": 23
       },
@@ -11345,7 +11345,7 @@
         "word": "場所",
         "reading": "ばしょ",
         "meaning": "chỗ",
-        "hanviet": "TRÀNG SỞ",
+        "hanviet": "TRƯỜNG SỞ",
         "level": "N4",
         "lesson": 26
       },
@@ -11353,7 +11353,7 @@
         "word": "置き場",
         "reading": "おきば",
         "meaning": "nơi đặt thứ gì đó",
-        "hanviet": "TRÍ TRÀNG",
+        "hanviet": "TRÍ TRƯỜNG",
         "level": "N4",
         "lesson": 26
       },
@@ -11361,7 +11361,7 @@
         "word": "スキー場",
         "reading": "スキーじょう",
         "meaning": "khu trượt tuyết, khu trượt tuyết",
-        "hanviet": "TRÀNG",
+        "hanviet": "TRƯỜNG",
         "level": "N4",
         "lesson": 35
       },
@@ -11369,7 +11369,7 @@
         "word": "工場",
         "reading": "こうじょう",
         "meaning": "công trường",
-        "hanviet": "CÔNG TRÀNG",
+        "hanviet": "CÔNG TRƯỜNG",
         "level": "N4",
         "lesson": 36
       },
@@ -11377,7 +11377,7 @@
         "word": "会場",
         "reading": "かいじょう",
         "meaning": "hội trường",
-        "hanviet": "CỐI TRÀNG",
+        "hanviet": "HỘI TRƯỜNG",
         "level": "N4",
         "lesson": 39
       },
@@ -11385,7 +11385,7 @@
         "word": "市場調査",
         "reading": "しじょうちょうさ",
         "meaning": "điều tra thị trường",
-        "hanviet": "THỊ TRÀNG ĐIỀU TRA",
+        "hanviet": "THỊ TRƯỜNG ĐIỀU TRA",
         "level": "N4",
         "lesson": 42
       },
@@ -11393,7 +11393,7 @@
         "word": "出場",
         "reading": "しゅつじょう",
         "meaning": "ra mắt; trình diễn; tham dự",
-        "hanviet": "XUÝ TRÀNG",
+        "hanviet": "XUẤT TRƯỜNG",
         "level": "N3",
         "lesson": 5
       },
@@ -11401,7 +11401,7 @@
         "word": "市場",
         "reading": "いちば",
         "meaning": "cái chợ; chợ",
-        "hanviet": "THỊ TRÀNG",
+        "hanviet": "THỊ TRƯỜNG",
         "level": "N3",
         "lesson": 16
       }
@@ -11465,7 +11465,7 @@
         "word": "合図",
         "reading": "あいず",
         "meaning": "dấu hiệu; hiệu lệnh",
-        "hanviet": "CÁP ĐỒ",
+        "hanviet": "HỢP ĐỒ",
         "level": "N3",
         "lesson": 12
       },
@@ -11544,7 +11544,7 @@
         "word": "会社員",
         "reading": "かいしゃいん",
         "meaning": "Nhân viên công ty",
-        "hanviet": "CỐI XÃ VIÊN",
+        "hanviet": "HỘI XÃ VIÊN",
         "level": "N5",
         "lesson": 1
       },
@@ -11560,7 +11560,7 @@
         "word": "銀行員",
         "reading": "ぎんこういん",
         "meaning": "Nhân viên ngân hàng",
-        "hanviet": "NGÂN HÀNG VIÊN",
+        "hanviet": "NGÂN HÀNH VIÊN",
         "level": "N5",
         "lesson": 1
       },
@@ -11576,7 +11576,7 @@
         "word": "会員",
         "reading": "かいいん",
         "meaning": "hội viên",
-        "hanviet": "CỐI VIÊN",
+        "hanviet": "HỘI VIÊN",
         "level": "N4",
         "lesson": 43
       },
@@ -11624,7 +11624,7 @@
         "word": "定員",
         "reading": "ていいん",
         "meaning": "sức chứa",
-        "hanviet": "ĐÍNH VIÊN",
+        "hanviet": "ĐỊNH VIÊN",
         "level": "N2",
         "lesson": 50
       },
@@ -11744,7 +11744,7 @@
         "word": "貸し出し",
         "reading": "かしだし",
         "meaning": "sự cho vay; sự cho mượn; cho vay",
-        "hanviet": "THẢI XUÝ",
+        "hanviet": "THẢI XUẤT",
         "level": "N2",
         "lesson": 16
       },
@@ -11790,7 +11790,7 @@
         "word": "銀行員",
         "reading": "ぎんこういん",
         "meaning": "Nhân viên ngân hàng",
-        "hanviet": "NGÂN HÀNG VIÊN",
+        "hanviet": "NGÂN HÀNH VIÊN",
         "level": "N5",
         "lesson": 1
       },
@@ -11798,7 +11798,7 @@
         "word": "銀行",
         "reading": "ぎんこう",
         "meaning": "Ngân hàng",
-        "hanviet": "NGÂN HÀNG",
+        "hanviet": "NGÂN HÀNH",
         "level": "N5",
         "lesson": 4
       },
@@ -11840,7 +11840,7 @@
         "word": "時計",
         "reading": "とけい",
         "meaning": "Đồng hồ",
-        "hanviet": "THÌ KÊ",
+        "hanviet": "THỜI KÊ",
         "level": "N5",
         "lesson": 2
       },
@@ -11864,7 +11864,7 @@
         "word": "体温計",
         "reading": "たいおんけい",
         "meaning": "cái cặp nhiệt; nhiệt kế",
-        "hanviet": "BỔN UẨN KÊ",
+        "hanviet": "THỂ ÔN KÊ",
         "level": "N4",
         "lesson": 42
       },
@@ -11880,7 +11880,7 @@
         "word": "会計",
         "reading": "かいけい",
         "meaning": "kế toán",
-        "hanviet": "CỐI KÊ",
+        "hanviet": "HỘI KÊ",
         "level": "N3",
         "lesson": 23
       },
@@ -11904,7 +11904,7 @@
         "word": "合計",
         "reading": "ごうけい",
         "meaning": "tổng cộng",
-        "hanviet": "CÁP KÊ",
+        "hanviet": "HỢP KÊ",
         "level": "N3",
         "lesson": 36
       },
@@ -11982,7 +11982,7 @@
         "word": "紙屑",
         "reading": "かみくず",
         "meaning": "giấy lộn; giấy bỏ đi; giấy loại",
-        "hanviet": "CHỈ",
+        "hanviet": "CHỈ TIẾT",
         "level": "N2",
         "lesson": 18
       },
@@ -11998,7 +11998,7 @@
         "word": "塵紙",
         "reading": "ちりがみ",
         "meaning": "Giấy vải mỏng",
-        "hanviet": "CHỈ",
+        "hanviet": "TRẦN CHỈ",
         "level": "N2",
         "lesson": 48
       },
@@ -12097,7 +12097,7 @@
         "word": "大切",
         "reading": "たいせつ",
         "meaning": "quan trọng, quý giá",
-        "hanviet": "THÁI THIẾT",
+        "hanviet": "ĐẠI THIẾT",
         "level": "N5",
         "lesson": 17
       },
@@ -12195,7 +12195,7 @@
         "word": "使用禁止",
         "reading": "しようきんし",
         "meaning": "Không sử dụng",
-        "hanviet": "SỨ DỤNG CÂM CHI",
+        "hanviet": "SỬ DỤNG CÂM CHỈ",
         "level": "N4",
         "lesson": 33
       },
@@ -12203,7 +12203,7 @@
         "word": "使用中",
         "reading": "しようちゅう",
         "meaning": "Đang sử dụng",
-        "hanviet": "SỨ DỤNG TRUNG",
+        "hanviet": "SỬ DỤNG TRUNG",
         "level": "N4",
         "lesson": 33
       },
@@ -12227,7 +12227,7 @@
         "word": "用意します",
         "reading": "よういします",
         "meaning": "chuẩn bị",
-        "hanviet": "DỤNG Y",
+        "hanviet": "DỤNG Ý",
         "level": "N4",
         "lesson": 45
       },
@@ -12235,7 +12235,7 @@
         "word": "使用",
         "reading": "しよう",
         "meaning": "sự sử dụng; sử dụng",
-        "hanviet": "SỨ DỤNG",
+        "hanviet": "SỬ DỤNG",
         "level": "N3",
         "lesson": 6
       },
@@ -12243,7 +12243,7 @@
         "word": "信用",
         "reading": "しんよう",
         "meaning": "đức tin",
-        "hanviet": "THÂN DỤNG",
+        "hanviet": "TÍN DỤNG",
         "level": "N3",
         "lesson": 9
       },
@@ -12251,7 +12251,7 @@
         "word": "引用",
         "reading": "いんよう",
         "meaning": "sự trích dẫn",
-        "hanviet": "DẤN DỤNG",
+        "hanviet": "DẪN DỤNG",
         "level": "N3",
         "lesson": 18
       },
@@ -12334,7 +12334,7 @@
         "word": "飲み物",
         "reading": "のみもの",
         "meaning": "Đồ uống",
-        "hanviet": "ẤM VẬT",
+        "hanviet": "ẨM VẬT",
         "level": "N5",
         "lesson": 9
       },
@@ -12366,7 +12366,7 @@
         "word": "着物",
         "reading": "きもの",
         "meaning": "áo kimono; kimono",
-        "hanviet": "HỒ VẬT",
+        "hanviet": "TRƯỚC VẬT",
         "level": "N5",
         "lesson": 20
       },
@@ -12398,7 +12398,7 @@
         "word": "源氏物語",
         "reading": "げんじものがたり",
         "meaning": "tập truyện của Genji",
-        "hanviet": "NGUYÊN CHI VẬT NGỨ",
+        "hanviet": "NGUYÊN CHI VẬT NGỮ",
         "level": "N4",
         "lesson": 29
       }
@@ -12438,7 +12438,7 @@
         "word": "また 今度 お願いします。",
         "reading": "また こんど おねがいします。",
         "meaning": "Xin vui lòng hỏi lại tôi vào lúc khác. (dùng khi từ chối lời mời một cách gián tiếp, xem xét cảm xúc của ai đó)",
-        "hanviet": "KIM ĐẠC NGUYỆN",
+        "hanviet": "KIM ĐỘ NGUYỆN",
         "level": "N5",
         "lesson": 9
       },
@@ -12446,7 +12446,7 @@
         "word": "一度",
         "reading": "いちど",
         "meaning": "khi nào đó; lần nào đó",
-        "hanviet": "NHẤT ĐẠC",
+        "hanviet": "NHẤT ĐỘ",
         "level": "N5",
         "lesson": 19
       },
@@ -12454,7 +12454,7 @@
         "word": "一度も",
         "reading": "いちども",
         "meaning": "không một lần, không bao giờ (dùng với phủ định)",
-        "hanviet": "NHẤT ĐẠC",
+        "hanviet": "NHẤT ĐỘ",
         "level": "N5",
         "lesson": 19
       },
@@ -12462,7 +12462,7 @@
         "word": "今度",
         "reading": "こんど",
         "meaning": "độ này",
-        "hanviet": "KIM ĐẠC",
+        "hanviet": "KIM ĐỘ",
         "level": "N4",
         "lesson": 26
       },
@@ -12470,7 +12470,7 @@
         "word": "温度",
         "reading": "おんど",
         "meaning": "độ ẩm",
-        "hanviet": "UẨN ĐẠC",
+        "hanviet": "ÔN ĐỘ",
         "level": "N4",
         "lesson": 41
       },
@@ -12478,7 +12478,7 @@
         "word": "湿度",
         "reading": "しつど",
         "meaning": "độ ẩm",
-        "hanviet": "CHẬP ĐẠC",
+        "hanviet": "CHẬP ĐỘ",
         "level": "N3",
         "lesson": 3
       },
@@ -12486,7 +12486,7 @@
         "word": "制度",
         "reading": "せいど",
         "meaning": "chế độ",
-        "hanviet": "CHẾ ĐẠC",
+        "hanviet": "CHẾ ĐỘ",
         "level": "N3",
         "lesson": 12
       },
@@ -12494,7 +12494,7 @@
         "word": "一度に",
         "reading": "いちどに",
         "meaning": "cùng một lúc",
-        "hanviet": "NHẤT ĐẠC",
+        "hanviet": "NHẤT ĐỘ",
         "level": "N3",
         "lesson": 16
       },
@@ -12502,7 +12502,7 @@
         "word": "速度",
         "reading": "そくど",
         "meaning": "nhịp độ",
-        "hanviet": "TỐC ĐẠC",
+        "hanviet": "TỐC ĐỘ",
         "level": "N3",
         "lesson": 53
       },
@@ -12510,7 +12510,7 @@
         "word": "態度",
         "reading": "たいど",
         "meaning": "bộ dáng",
-        "hanviet": "THÁI ĐẠC",
+        "hanviet": "THÁI ĐỘ",
         "level": "N3",
         "lesson": 55
       },
@@ -12518,7 +12518,7 @@
         "word": "度",
         "reading": "たび",
         "meaning": "lần; độ",
-        "hanviet": "ĐẠC",
+        "hanviet": "ĐỘ",
         "level": "N3",
         "lesson": 57
       },
@@ -12526,7 +12526,7 @@
         "word": "程度",
         "reading": "ていど",
         "meaning": "chừng",
-        "hanviet": "TRÌNH ĐẠC",
+        "hanviet": "TRÌNH ĐỘ",
         "level": "N3",
         "lesson": 62
       }
@@ -12585,7 +12585,7 @@
         "word": "江戸時代",
         "reading": "えどじだい",
         "meaning": "Thời kỳ edo (1603-1868)",
-        "hanviet": "GIANG HỘ THÌ ĐẠI",
+        "hanviet": "GIANG HỘ THỜI ĐẠI",
         "level": "N4",
         "lesson": 37
       },
@@ -12641,7 +12641,7 @@
         "word": "近代",
         "reading": "きんだい",
         "meaning": "cận",
-        "hanviet": "CẤN ĐẠI",
+        "hanviet": "CẬN ĐẠI",
         "level": "N3",
         "lesson": 31
       },
@@ -12774,7 +12774,7 @@
         "word": "世界的に",
         "reading": "せかいてきに",
         "meaning": "trên toàn thế giới",
-        "hanviet": "THẾ GIỚI",
+        "hanviet": "THẾ GIỚI ĐÍCH",
         "level": "N4",
         "lesson": 49
       },
@@ -12851,7 +12851,7 @@
         "word": "世界的に",
         "reading": "せかいてきに",
         "meaning": "trên toàn thế giới",
-        "hanviet": "THẾ GIỚI",
+        "hanviet": "THẾ GIỚI ĐÍCH",
         "level": "N4",
         "lesson": 49
       },
@@ -12991,7 +12991,7 @@
         "word": "読み方",
         "reading": "よみかた",
         "meaning": "cách đọc",
-        "hanviet": "ĐẬU BÀNG",
+        "hanviet": "ĐỘC PHƯƠNG",
         "level": "N5",
         "lesson": 14
       },
@@ -12999,7 +12999,7 @@
         "word": "～方",
         "reading": "～かた",
         "meaning": "Ｖị; ngài",
-        "hanviet": "BÀNG",
+        "hanviet": "PHƯƠNG",
         "level": "N5",
         "lesson": 14
       },
@@ -13007,7 +13007,7 @@
         "word": "方",
         "reading": "かた",
         "meaning": "Ｖị; ngài",
-        "hanviet": "BÀNG",
+        "hanviet": "PHƯƠNG",
         "level": "N4",
         "lesson": 27
       },
@@ -13015,7 +13015,7 @@
         "word": "～の 方",
         "reading": "～の ほう",
         "meaning": "hướng của ～",
-        "hanviet": "BÀNG",
+        "hanviet": "PHƯƠNG",
         "level": "N4",
         "lesson": 29
       },
@@ -13023,7 +13023,7 @@
         "word": "夕方",
         "reading": "ゆうがた",
         "meaning": "buổi hôm",
-        "hanviet": "TỊCH BÀNG",
+        "hanviet": "TỊCH PHƯƠNG",
         "level": "N4",
         "lesson": 32
       },
@@ -13031,7 +13031,7 @@
         "word": "方法",
         "reading": "ほうほう",
         "meaning": "cách",
-        "hanviet": "BÀNG PHÁP",
+        "hanviet": "PHƯƠNG PHÁP",
         "level": "N4",
         "lesson": 35
       },
@@ -13039,7 +13039,7 @@
         "word": "一方",
         "reading": "いっぽう",
         "meaning": "đơn phương; một chiều",
-        "hanviet": "NHẤT BÀNG",
+        "hanviet": "NHẤT PHƯƠNG",
         "level": "N3",
         "lesson": 17
       },
@@ -13047,7 +13047,7 @@
         "word": "方々",
         "reading": "かたがた",
         "meaning": "các vị; các ngài; tất cả mọi người",
-        "hanviet": "BÀNG",
+        "hanviet": "PHƯƠNG",
         "level": "N3",
         "lesson": 25
       },
@@ -13055,7 +13055,7 @@
         "word": "味方",
         "reading": "みかた",
         "meaning": "bạn; người đồng minh; người ủng hộ",
-        "hanviet": "VỊ BÀNG",
+        "hanviet": "VỊ PHƯƠNG",
         "level": "N3",
         "lesson": 41
       },
@@ -13063,7 +13063,7 @@
         "word": "地方",
         "reading": "ちほう",
         "meaning": "địa phương; vùng",
-        "hanviet": "ĐỊA BÀNG",
+        "hanviet": "ĐỊA PHƯƠNG",
         "level": "N3",
         "lesson": 59
       },
@@ -13071,7 +13071,7 @@
         "word": "方向",
         "reading": "ほうこう",
         "meaning": "hướng",
-        "hanviet": "BÀNG HƯỚNG",
+        "hanviet": "PHƯƠNG HƯỚNG",
         "level": "N3",
         "lesson": 78
       }
@@ -13106,7 +13106,7 @@
         "word": "～以内",
         "reading": "～いない",
         "meaning": "trong vòng",
-        "hanviet": "DĨ NẠP",
+        "hanviet": "DĨ NỘI",
         "level": "N4",
         "lesson": 33
       },
@@ -13114,7 +13114,7 @@
         "word": "～以上",
         "reading": "～いじょう",
         "meaning": "hơn; nhiều hơn; cao hơn",
-        "hanviet": "DĨ THƯỚNG",
+        "hanviet": "DĨ THƯỢNG",
         "level": "N4",
         "lesson": 40
       },
@@ -13122,7 +13122,7 @@
         "word": "～以下",
         "reading": "～いか",
         "meaning": "dưới đây; sau đây",
-        "hanviet": "DĨ HÁ",
+        "hanviet": "DĨ HẠ",
         "level": "N4",
         "lesson": 40
       },
@@ -13130,7 +13130,7 @@
         "word": "以上です。",
         "reading": "いじょうです。",
         "meaning": "Thế thôi",
-        "hanviet": "DĨ THƯỚNG",
+        "hanviet": "DĨ THƯỢNG",
         "level": "N4",
         "lesson": 45
       },
@@ -13154,7 +13154,7 @@
         "word": "以後",
         "reading": "いご",
         "meaning": "sau đó; từ sau đó; từ sau khi",
-        "hanviet": "DĨ HẤU",
+        "hanviet": "DĨ HẬU",
         "level": "N2",
         "lesson": 8
       },
@@ -13258,7 +13258,7 @@
         "word": "後者",
         "reading": "こうしゃ",
         "meaning": "cái sau; cái nhắc đến sau",
-        "hanviet": "HẤU GIẢ",
+        "hanviet": "HẬU GIẢ",
         "level": "N3",
         "lesson": 36
       },
@@ -13313,7 +13313,7 @@
         "word": "地下",
         "reading": "ちか",
         "meaning": "Tầng hầm, dưới lòng đất",
-        "hanviet": "ĐỊA HÁ",
+        "hanviet": "ĐỊA HẠ",
         "level": "N5",
         "lesson": 3
       },
@@ -13321,7 +13321,7 @@
         "word": "地下鉄",
         "reading": "ちかてつ",
         "meaning": "Tàu điện ngầm",
-        "hanviet": "ĐỊA HÁ THIẾT",
+        "hanviet": "ĐỊA HẠ THIẾT",
         "level": "N5",
         "lesson": 5
       },
@@ -13369,7 +13369,7 @@
         "word": "意地悪",
         "reading": "いじわる",
         "meaning": "tâm địa xấu; xấu bụng",
-        "hanviet": "Y ĐỊA ÁC",
+        "hanviet": "Ý ĐỊA ÁC",
         "level": "N3",
         "lesson": 16
       },
@@ -13377,7 +13377,7 @@
         "word": "生地",
         "reading": "きじ",
         "meaning": "vải may áo; vải",
-        "hanviet": "SANH ĐỊA",
+        "hanviet": "SINH ĐỊA",
         "level": "N3",
         "lesson": 29
       },
@@ -13385,7 +13385,7 @@
         "word": "意地",
         "reading": "いじ",
         "meaning": "tâm địa; tấm lòng; tâm hồn",
-        "hanviet": "Y ĐỊA",
+        "hanviet": "Ý ĐỊA",
         "level": "N3",
         "lesson": 49
       },
@@ -13450,7 +13450,7 @@
         "word": "注意します",
         "reading": "ちゅういします",
         "meaning": "hãy cẩn thận [với những chiếc xe hơi]",
-        "hanviet": "CHÚ Y XA",
+        "hanviet": "CHÚ Ý",
         "level": "N4",
         "lesson": 33
       },
@@ -13546,7 +13546,7 @@
         "word": "西洋化します",
         "reading": "せいようかします",
         "meaning": "bị phương Tây hóa",
-        "hanviet": "TÂY DƯƠNG HOA",
+        "hanviet": "TÂY DƯƠNG HÓA",
         "level": "N4",
         "lesson": 39
       },
@@ -13650,7 +13650,7 @@
         "word": "死体",
         "reading": "したい",
         "meaning": "hình hài",
-        "hanviet": "TỬ BỔN",
+        "hanviet": "TỬ THỂ",
         "level": "N2",
         "lesson": 31
       },
@@ -13666,7 +13666,7 @@
         "word": "生死",
         "reading": "せいし",
         "meaning": "sống chết",
-        "hanviet": "SANH TỬ",
+        "hanviet": "SINH TỬ",
         "level": "N1",
         "lesson": 59
       }
@@ -13701,7 +13701,7 @@
         "word": "教室",
         "reading": "きょうしつ",
         "meaning": "Phòng học, lớp học",
-        "hanviet": "GIAO THẤT",
+        "hanviet": "GIÁO THẤT",
         "level": "N5",
         "lesson": 3
       },
@@ -13709,7 +13709,7 @@
         "word": "会議室",
         "reading": "かいぎしつ",
         "meaning": "Phòng họp",
-        "hanviet": "CỐI NGHỊ THẤT",
+        "hanviet": "HỘI NGHỊ THẤT",
         "level": "N5",
         "lesson": 3
       },
@@ -13725,7 +13725,7 @@
         "word": "～教室",
         "reading": "～きょうしつ",
         "meaning": "Phòng học, lớp học",
-        "hanviet": "GIAO THẤT",
+        "hanviet": "GIÁO THẤT",
         "level": "N4",
         "lesson": 27
       },
@@ -13757,7 +13757,7 @@
         "word": "温室",
         "reading": "おんしつ",
         "meaning": "nhà kính",
-        "hanviet": "UẨN THẤT",
+        "hanviet": "ÔN THẤT",
         "level": "N2",
         "lesson": 14
       },
@@ -13773,7 +13773,7 @@
         "word": "待合室",
         "reading": "まちあいしつ",
         "meaning": "phòng chờ đợi",
-        "hanviet": "ĐÃI CÁP THẤT",
+        "hanviet": "ĐÃI HỢP THẤT",
         "level": "N2",
         "lesson": 68
       },
@@ -13890,7 +13890,7 @@
         "word": "台無し",
         "reading": "だいなし",
         "meaning": "bị phá huỷ; bị hủy hoại",
-        "hanviet": "DI",
+        "hanviet": "DI VÔ",
         "level": "N1",
         "lesson": 65
       },
@@ -13898,7 +13898,7 @@
         "word": "台本",
         "reading": "だいほん",
         "meaning": "kịch bản",
-        "hanviet": "DI BÔN",
+        "hanviet": "DI BẢN",
         "level": "N1",
         "lesson": 65
       }

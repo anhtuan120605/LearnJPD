@@ -132,7 +132,7 @@
         "word": "丸い; 円い",
         "reading": "まるい",
         "meaning": "tròn",
-        "hanviet": "HOÀN VIÊN",
+        "hanviet": "HOÀN YÊN",
         "level": "N5"
       },
       {
@@ -264,7 +264,7 @@
         "word": "雨戸",
         "reading": "あまど",
         "meaning": "cửa che mưa",
-        "hanviet": "VÚ HỘ",
+        "hanviet": "VŨ HỘ",
         "level": "N2"
       },
       {
@@ -320,7 +320,7 @@
         "word": "江戸時代",
         "reading": "えどじだい",
         "meaning": "Thời kỳ edo (1603-1868)",
-        "hanviet": "GIANG HỘ THÌ ĐẠI",
+        "hanviet": "GIANG HỘ THỜI ĐẠI",
         "level": "N4"
       }
     ]
@@ -495,7 +495,7 @@
         "word": "皮肉",
         "reading": "ひにく",
         "meaning": "giễu cợt; châm chọc",
-        "hanviet": "BÌ NHỤ",
+        "hanviet": "BÌ NHỤC",
         "level": "N2"
       },
       {
@@ -884,70 +884,70 @@
         "word": "角度",
         "reading": "かくど",
         "meaning": "góc độ",
-        "hanviet": "CỐC ĐẠC",
+        "hanviet": "GIÁC ĐỘ",
         "level": "N2"
       },
       {
         "word": "三角",
         "reading": "さんかく",
         "meaning": "tam giác; hình tam giác",
-        "hanviet": "TAM CỐC",
+        "hanviet": "TAM GIÁC",
         "level": "N2"
       },
       {
         "word": "折角",
         "reading": "せっかく",
         "meaning": "sự lao tâm lao sức; sự khó nhọc; sự cố công",
-        "hanviet": "CHIẾT CỐC",
+        "hanviet": "CHIẾT GIÁC",
         "level": "N2"
       },
       {
         "word": "直角",
         "reading": "ちょっかく",
         "meaning": "góc vuông",
-        "hanviet": "TRỊ CỐC",
+        "hanviet": "TRỰC GIÁC",
         "level": "N2"
       },
       {
         "word": "方角",
         "reading": "ほうがく",
         "meaning": "phương hướng; phương giác",
-        "hanviet": "BÀNG CỐC",
+        "hanviet": "PHƯƠNG GIÁC",
         "level": "N2"
       },
       {
         "word": "街角",
         "reading": "まちかど",
         "meaning": "góc đường",
-        "hanviet": "NHAI CỐC",
+        "hanviet": "NHAI GIÁC",
         "level": "N2"
       },
       {
         "word": "四角い",
         "reading": "しかくい",
         "meaning": "tứ giác",
-        "hanviet": "TỨ CỐC",
+        "hanviet": "TỨ GIÁC",
         "level": "N2"
       },
       {
         "word": "四つ角",
         "reading": "よつかど",
         "meaning": "bốn góc; ngã tư",
-        "hanviet": "TỨ CỐC",
+        "hanviet": "TỨ GIÁC",
         "level": "N2"
       },
       {
         "word": "角",
         "reading": "かど",
         "meaning": "góc",
-        "hanviet": "CỐC",
+        "hanviet": "GIÁC",
         "level": "N5"
       },
       {
         "word": "角",
         "reading": "すみ",
         "meaning": "góc",
-        "hanviet": "CỐC",
+        "hanviet": "GIÁC",
         "level": "N3"
       }
     ]
@@ -1029,7 +1029,7 @@
         "word": "蕎麦",
         "reading": "そば",
         "meaning": "mỳ soba; mỳ từ kiều mạch",
-        "hanviet": "MẠCH",
+        "hanviet": "KIỀU MẠCH",
         "level": "N3"
       }
     ]
@@ -1059,7 +1059,7 @@
         "word": "山林",
         "reading": "さんりん",
         "meaning": "sơn lâm; rừng; rừng rậm",
-        "hanviet": "SAN LÂM",
+        "hanviet": "SƠN LÂM",
         "level": "N2"
       },
       {
@@ -1182,7 +1182,7 @@
         "word": "出血",
         "reading": "しゅっけつ",
         "meaning": "sự chảy máu; sự xuất huyết; sự ra máu",
-        "hanviet": "XUÝ HUYẾT",
+        "hanviet": "XUẤT HUYẾT",
         "level": "N1"
       }
     ]
@@ -1231,7 +1231,7 @@
         "word": "火星",
         "reading": "かせい",
         "meaning": "hỏa thinh",
-        "hanviet": "HOẢ TINH",
+        "hanviet": "HỎA TINH",
         "level": "N1"
       },
       {
@@ -1259,7 +1259,7 @@
         "word": "星出彰彦",
         "reading": "ほしであきひこ",
         "meaning": "Phi hành gia Nhật Bản (1968-)",
-        "hanviet": "TINH XUÝ CHƯƠNG NGẠN",
+        "hanviet": "TINH XUẤT CHƯƠNG NGẠN",
         "level": "N4"
       }
     ]
@@ -1321,7 +1321,7 @@
         "word": "［－円］札",
         "reading": "［－えん］さつ",
         "meaning": "[－ yên] giấy bạc, hóa đơn",
-        "hanviet": "VIÊN TRÁT",
+        "hanviet": "YÊN TRÁT",
         "level": "N4"
       }
     ]
@@ -1589,7 +1589,7 @@
         "word": "出雲大社",
         "reading": "いずもたいしゃ",
         "meaning": "một ngôi đền ở thành phố Izumo thuộc tỉnh Shimane",
-        "hanviet": "XUÝ VÂN THÁI XÃ",
+        "hanviet": "XUẤT VÂN ĐẠI XÃ",
         "level": "N4"
       }
     ]
@@ -1662,49 +1662,49 @@
         "word": "軽い",
         "reading": "かるい",
         "meaning": "nhẹ",
-        "hanviet": "CHÍ",
+        "hanviet": "KHINH",
         "level": "N5"
       },
       {
         "word": "軽蔑",
         "reading": "けいべつ",
         "meaning": "sự khinh miệt; sự khinh thường; sự coi thường",
-        "hanviet": "CHÍ",
+        "hanviet": "KHINH MIỆT",
         "level": "N1"
       },
       {
         "word": "気軽",
         "reading": "きがる",
         "meaning": "khoan khoái; dễ chịu; nhẹ nhõm",
-        "hanviet": "KHÍ CHÍ",
+        "hanviet": "KHÍ KHINH",
         "level": "N1"
       },
       {
         "word": "軽快",
         "reading": "けいかい",
         "meaning": "nhịp nhàng; du dương; vui nhộn",
-        "hanviet": "CHÍ KHOÁI",
+        "hanviet": "KHINH KHOÁI",
         "level": "N1"
       },
       {
         "word": "軽減",
         "reading": "けいげん",
         "meaning": "ự giảm bớt; sự làm nhẹ",
-        "hanviet": "CHÍ GIẢM",
+        "hanviet": "KHINH GIẢM",
         "level": "N1"
       },
       {
         "word": "軽率",
         "reading": "けいそつ",
         "meaning": "khinh suất; không suy nghĩ; không cẩn thận",
-        "hanviet": "CHÍ LUẬT",
+        "hanviet": "KHINH LUẬT",
         "level": "N1"
       },
       {
         "word": "手軽",
         "reading": "てがる",
         "meaning": "nhẹ nhàng; đơn giản",
-        "hanviet": "THỦ CHÍ",
+        "hanviet": "THỦ KHINH",
         "level": "N1"
       }
     ]
@@ -1781,7 +1781,7 @@
         "word": "農場",
         "reading": "のうじょう",
         "meaning": "nông trường",
-        "hanviet": "NÔNG TRÀNG",
+        "hanviet": "NÔNG TRƯỜNG",
         "level": "N1"
       },
       {
@@ -1831,7 +1831,7 @@
         "word": "鉄橋",
         "reading": "てっきょう",
         "meaning": "cầu bằng sắt thép; cầu có đường cho xe lửa",
-        "hanviet": "THIẾT CAO",
+        "hanviet": "THIẾT KIỀU",
         "level": "N2"
       },
       {
@@ -1852,7 +1852,7 @@
         "word": "鉄道",
         "reading": "てつどう",
         "meaning": "đường ray",
-        "hanviet": "THIẾT ĐÁO",
+        "hanviet": "THIẾT ĐẠO",
         "level": "N3"
       },
       {
@@ -1880,7 +1880,7 @@
         "word": "地下鉄",
         "reading": "ちかてつ",
         "meaning": "tàu điện ngầm",
-        "hanviet": "ĐỊA HÁ THIẾT",
+        "hanviet": "ĐỊA HẠ THIẾT",
         "level": "N5"
       }
     ]
@@ -1927,7 +1927,7 @@
         "word": "引算",
         "reading": "ひきざん",
         "meaning": "phép trừ",
-        "hanviet": "DẤN TOÁN",
+        "hanviet": "DẪN TOÁN",
         "level": "N2"
       },
       {
@@ -2006,7 +2006,7 @@
         "word": "下線",
         "reading": "かせん",
         "meaning": "sông ngòi",
-        "hanviet": "HÁ TUYẾN",
+        "hanviet": "HẠ TUYẾN",
         "level": "N2"
       },
       {
@@ -2041,14 +2041,14 @@
         "word": "直線",
         "reading": "ちょくせん",
         "meaning": "đường thẳng",
-        "hanviet": "TRỊ TUYẾN",
+        "hanviet": "TRỰC TUYẾN",
         "level": "N2"
       },
       {
         "word": "内線",
         "reading": "ないせん",
         "meaning": "nội tuyến",
-        "hanviet": "NẠP TUYẾN",
+        "hanviet": "NỘI TUYẾN",
         "level": "N2"
       },
       {
@@ -2062,7 +2062,7 @@
         "word": "水平線",
         "reading": "すいへいせん",
         "meaning": "đường chân trời",
-        "hanviet": "THUỶ BIỀN TUYẾN",
+        "hanviet": "THỦY BIỀN TUYẾN",
         "level": "N2"
       },
       {
@@ -2099,7 +2099,7 @@
         "word": "仲直り",
         "reading": "なかなおり",
         "meaning": "sự hòa giải",
-        "hanviet": "TRỌNG TRỊ",
+        "hanviet": "TRỌNG TRỰC",
         "level": "N2"
       },
       {
@@ -2176,7 +2176,7 @@
         "word": "低下",
         "reading": "ていか",
         "meaning": "sự giảm; sự kém đi; sự suy giảm",
-        "hanviet": "ĐÊ HÁ",
+        "hanviet": "ĐÊ HẠ",
         "level": "N2"
       },
       {
@@ -2319,14 +2319,14 @@
         "word": "拾う",
         "reading": "ひろう",
         "meaning": "lượm",
-        "hanviet": "KIỆP",
+        "hanviet": "THẬP",
         "level": "N4"
       },
       {
         "word": "拾います",
         "reading": "ひろいます",
         "meaning": "nhặt lên",
-        "hanviet": "KIỆP",
+        "hanviet": "THẬP",
         "level": "N4"
       }
     ]
@@ -2446,14 +2446,14 @@
         "word": "命令",
         "reading": "めいれい",
         "meaning": "lệnh",
-        "hanviet": "MỆNH LINH",
+        "hanviet": "MỆNH LỆNH",
         "level": "N3"
       },
       {
         "word": "指令",
         "reading": "しれい",
         "meaning": "chỉ thị; mệnh lệnh",
-        "hanviet": "CHỈ LINH",
+        "hanviet": "CHỈ LỆNH",
         "level": "N1"
       }
     ]
@@ -2534,7 +2534,7 @@
         "word": "根本",
         "reading": "こんぽん",
         "meaning": "căn bản",
-        "hanviet": "CĂN BÔN",
+        "hanviet": "CĂN BẢN",
         "level": "N1"
       },
       {
@@ -2728,7 +2728,7 @@
         "word": "祇園祭",
         "reading": "ぎおんまつり",
         "meaning": "Lễ hội Gion (lễ hội nổi tiếng nhất ở Kyoto)",
-        "hanviet": "VIÊN SÁI",
+        "hanviet": "KỲ VIÊN SÁI",
         "level": "N5"
       },
       {
@@ -3020,70 +3020,70 @@
         "word": "温室",
         "reading": "おんしつ",
         "meaning": "nhà kính",
-        "hanviet": "UẨN THẤT",
+        "hanviet": "ÔN THẤT",
         "level": "N2"
       },
       {
         "word": "温泉",
         "reading": "おんせん",
         "meaning": "Suối nước nóng",
-        "hanviet": "UẨN TOÀN",
+        "hanviet": "ÔN TOÀN",
         "level": "N2"
       },
       {
         "word": "温帯",
         "reading": "おんたい",
         "meaning": "ôn đới",
-        "hanviet": "UẨN ĐÁI",
+        "hanviet": "ÔN ĐÁI",
         "level": "N2"
       },
       {
         "word": "温い",
         "reading": "ぬるい",
         "meaning": "nguội; âm ấm",
-        "hanviet": "UẨN",
+        "hanviet": "ÔN",
         "level": "N5"
       },
       {
         "word": "温暖",
         "reading": "おんだん",
         "meaning": "ấm; ấm áp",
-        "hanviet": "UẨN HUYÊN",
+        "hanviet": "ÔN NOÃN",
         "level": "N3"
       },
       {
         "word": "温度",
         "reading": "おんど",
         "meaning": "độ ẩm",
-        "hanviet": "UẨN ĐẠC",
+        "hanviet": "ÔN ĐỘ",
         "level": "N3"
       },
       {
         "word": "気温",
         "reading": "きおん",
         "meaning": "nhiệt độ",
-        "hanviet": "KHÍ UẨN",
+        "hanviet": "KHÍ ÔN",
         "level": "N3"
       },
       {
         "word": "体温",
         "reading": "たいおん",
         "meaning": "nhiệt độ cơ thể; thân nhiệt",
-        "hanviet": "BỔN UẨN",
+        "hanviet": "THỂ ÔN",
         "level": "N3"
       },
       {
         "word": "温和",
         "reading": "おんわ",
         "meaning": "ôn hòa",
-        "hanviet": "UẨN HOÀ",
+        "hanviet": "ÔN HOÀ",
         "level": "N1"
       },
       {
         "word": "保温",
         "reading": "ほおん",
         "meaning": "sự giữ độ ấm; sự duy trì độ ấm; sự giữ nhiệt",
-        "hanviet": "BẢO UẨN",
+        "hanviet": "BẢO ÔN",
         "level": "N1"
       }
     ]
@@ -3122,14 +3122,14 @@
         "word": "湯飲",
         "reading": "ゆのみ",
         "meaning": "chén trà",
-        "hanviet": "SƯƠNG ẤM",
+        "hanviet": "SƯƠNG ẨM",
         "level": "N2"
       },
       {
         "word": "湯飲み",
         "reading": "ゆのみ",
         "meaning": "chén trà",
-        "hanviet": "SƯƠNG ẤM",
+        "hanviet": "SƯƠNG ẨM",
         "level": "N2"
       },
       {
@@ -3218,7 +3218,7 @@
         "word": "長短",
         "reading": "ちょうたん",
         "meaning": "dài ngắn; độ dài; thuận lợi và khó khăn",
-        "hanviet": "TRÀNG ĐOẢN",
+        "hanviet": "TRƯỜNG ĐOẢN",
         "level": "N2"
       },
       {
@@ -3253,7 +3253,7 @@
         "word": "短大",
         "reading": "たんだい",
         "meaning": "trường cao đẳng",
-        "hanviet": "ĐOẢN THÁI",
+        "hanviet": "ĐOẢN ĐẠI",
         "level": "N1"
       }
     ]
@@ -3283,7 +3283,7 @@
         "word": "温泉",
         "reading": "おんせん",
         "meaning": "Suối nước nóng",
-        "hanviet": "UẨN TOÀN",
+        "hanviet": "ÔN TOÀN",
         "level": "N2"
       },
       {
@@ -3298,7 +3298,7 @@
   {
     "id": "kanji-橋",
     "kanji": "橋",
-    "hanviet": "CAO",
+    "hanviet": "KIỀU",
     "strokes": 16,
     "jlpt": "N2",
     "onyomi": [
@@ -3319,42 +3319,42 @@
         "word": "鉄橋",
         "reading": "てっきょう",
         "meaning": "cầu bằng sắt thép; cầu có đường cho xe lửa",
-        "hanviet": "THIẾT CAO",
+        "hanviet": "THIẾT KIỀU",
         "level": "N2"
       },
       {
         "word": "橋",
         "reading": "はし",
         "meaning": "cầu",
-        "hanviet": "CAO",
+        "hanviet": "KIỀU",
         "level": "N5"
       },
       {
         "word": "桟橋",
         "reading": "さんばし",
         "meaning": "bến tàu; bến",
-        "hanviet": "CHĂN CAO",
+        "hanviet": "CHĂN KIỀU",
         "level": "N1"
       },
       {
         "word": "橋渡し",
         "reading": "はしわたし",
         "meaning": "ự hoà giải, sự dàn xếp",
-        "hanviet": "CAO ĐỘ",
+        "hanviet": "KIỀU ĐỘ",
         "level": "N1"
       },
       {
         "word": "日本橋",
         "reading": "にっぽんばし",
         "meaning": "một khu mua sắm ở Osaka",
-        "hanviet": "NHẬT BÔN CAO",
+        "hanviet": "NHẬT BẢN KIỀU",
         "level": "N5"
       },
       {
         "word": "渡ります［橋を］",
         "reading": "わたります［はしを］",
         "meaning": "băng qua [cây cầu]",
-        "hanviet": "ĐỘ CAO",
+        "hanviet": "ĐỘ KIỀU",
         "level": "N5"
       }
     ]
@@ -3510,7 +3510,7 @@
         "word": "課税",
         "reading": "かぜい",
         "meaning": "thuế khoá; thuế; thuế má",
-        "hanviet": "KHOÁ THOÁT",
+        "hanviet": "KHOÁ THUẾ",
         "level": "N2"
       },
       {
@@ -3531,7 +3531,7 @@
         "word": "課長",
         "reading": "かちょう",
         "meaning": "khoa trưởng",
-        "hanviet": "KHOÁ TRÀNG",
+        "hanviet": "KHOÁ TRƯỜNG",
         "level": "N4"
       },
       {
@@ -3772,7 +3772,7 @@
   {
     "id": "kanji-卒",
     "kanji": "卒",
-    "hanviet": "THỐT",
+    "hanviet": "TỐT",
     "strokes": 8,
     "jlpt": "N2",
     "onyomi": [
@@ -3801,28 +3801,28 @@
         "word": "卒直",
         "reading": "そっちょく",
         "meaning": "thật thà; ngay thẳng; bộc trực",
-        "hanviet": "THỐT TRỊ",
+        "hanviet": "TỐT TRỰC",
         "level": "N2"
       },
       {
         "word": "卒業",
         "reading": "そつぎょう",
         "meaning": "sự tốt nghiệp",
-        "hanviet": "THỐT NGHIỆP",
+        "hanviet": "TỐT NGHIỆP",
         "level": "N4"
       },
       {
         "word": "卒業します",
         "reading": "そつぎょうします",
         "meaning": "tốt nghiệp",
-        "hanviet": "THỐT NGHIỆP",
+        "hanviet": "TỐT NGHIỆP",
         "level": "N4"
       },
       {
         "word": "卒業します［大学を］",
         "reading": "そつぎょうします［だいがくを］",
         "meaning": "tốt nghiệp [từ một trường đại học]",
-        "hanviet": "THỐT NGHIỆP THÁI HỌC",
+        "hanviet": "TỐT NGHIỆP ĐẠI HỌC",
         "level": "N4"
       }
     ]
@@ -3872,14 +3872,14 @@
         "word": "協会",
         "reading": "きょうかい",
         "meaning": "dặn",
-        "hanviet": "HIỆP CỐI",
+        "hanviet": "HIỆP HỘI",
         "level": "N1"
       },
       {
         "word": "協定",
         "reading": "きょうてい",
         "meaning": "hiệp định; hiệp ước",
-        "hanviet": "HIỆP ĐÍNH",
+        "hanviet": "HIỆP ĐỊNH",
         "level": "N1"
       },
       {
@@ -3926,7 +3926,7 @@
         "word": "円周",
         "reading": "えんしゅう",
         "meaning": "chu vi hình tròn",
-        "hanviet": "VIÊN CHU",
+        "hanviet": "YÊN CHU",
         "level": "N2"
       },
       {
@@ -4063,14 +4063,14 @@
         "word": "固定",
         "reading": "こてい",
         "meaning": "cố định; sự cố định; sự giữ nguyên",
-        "hanviet": "CỐ ĐÍNH",
+        "hanviet": "CỐ ĐỊNH",
         "level": "N1"
       },
       {
         "word": "固有",
         "reading": "こゆう",
         "meaning": "cái vốn có; truyền thống",
-        "hanviet": "CỐ DỰU",
+        "hanviet": "CỐ HỮU",
         "level": "N1"
       },
       {
@@ -4174,14 +4174,14 @@
         "word": "希望",
         "reading": "きぼう",
         "meaning": "sở nguyện",
-        "hanviet": "HI VỌNG",
+        "hanviet": "HY VỌNG",
         "level": "N3"
       },
       {
         "word": "何か ご希望が ありますか。",
         "reading": "なにか ごきぼうが ありますか。",
         "meaning": "Bạn có yêu cầu gì không?",
-        "hanviet": "HÀ HI VỌNG",
+        "hanviet": "HÀ HY VỌNG",
         "level": "N4"
       }
     ]
@@ -4228,14 +4228,14 @@
         "word": "材料",
         "reading": "ざいりょう",
         "meaning": "số liệu",
-        "hanviet": "TÀI LIÊU",
+        "hanviet": "TÀI LIỆU",
         "level": "N3"
       },
       {
         "word": "教材",
         "reading": "きょうざい",
         "meaning": "tài liệu giảng dạy; giáo trình; giáo trình giảng dạy",
-        "hanviet": "GIAO TÀI",
+        "hanviet": "GIÁO TÀI",
         "level": "N1"
       },
       {
@@ -4301,7 +4301,7 @@
         "word": "芸能",
         "reading": "げいのう",
         "meaning": "nghệ thuật",
-        "hanviet": "VÂN NAI",
+        "hanviet": "VÂN NĂNG",
         "level": "N2"
       },
       {
@@ -4422,7 +4422,7 @@
         "word": "技能",
         "reading": "ぎのう",
         "meaning": "kỹ thuật; kỹ năng",
-        "hanviet": "KĨ NAI",
+        "hanviet": "KĨ NĂNG",
         "level": "N1"
       }
     ]
@@ -4475,7 +4475,7 @@
         "word": "骨董品",
         "reading": "こっとうひん",
         "meaning": "của quý, đồ cổ",
-        "hanviet": "CỐT PHẨM",
+        "hanviet": "CỐT ĐỔNG PHẨM",
         "level": "N1"
       }
     ]
@@ -4539,7 +4539,7 @@
         "word": "東大寺",
         "reading": "とうだいじ",
         "meaning": "Đền Todaiji",
-        "hanviet": "ĐÔNG THÁI TỰ",
+        "hanviet": "ĐÔNG ĐẠI TỰ",
         "level": "N4"
       },
       {
@@ -4632,7 +4632,7 @@
         "word": "区分",
         "reading": "くぶん",
         "meaning": "sự phân chia; sự phân loại; sự sắp loại",
-        "hanviet": "KHU",
+        "hanviet": "KHU PHÂN",
         "level": "N2"
       },
       {
@@ -4667,7 +4667,7 @@
         "word": "区画",
         "reading": "くかく",
         "meaning": "khu vực; phạm vi; vùng đất",
-        "hanviet": "KHU HOẠ",
+        "hanviet": "KHU HỌA",
         "level": "N1"
       },
       {
@@ -4975,7 +4975,7 @@
         "word": "大仏",
         "reading": "だいぶつ",
         "meaning": "bức tượng phật lớn (ở Kamakura)",
-        "hanviet": "THÁI PHẬT",
+        "hanviet": "ĐẠI PHẬT",
         "level": "N4"
       }
     ]
@@ -5059,7 +5059,7 @@
         "word": "正門",
         "reading": "せいもん",
         "meaning": "cổng chính",
-        "hanviet": "CHINH MÔN",
+        "hanviet": "CHÍNH MÔN",
         "level": "N2"
       },
       {
@@ -5184,7 +5184,7 @@
         "word": "政府",
         "reading": "せいふ",
         "meaning": "chánh phủ",
-        "hanviet": "CHINH PHỦ",
+        "hanviet": "CHÍNH PHỦ",
         "level": "N3"
       }
     ]
@@ -5223,7 +5223,7 @@
         "word": "海水浴",
         "reading": "かいすいよく",
         "meaning": "sự tắm biển",
-        "hanviet": "HẢI THUỶ DỤC",
+        "hanviet": "HẢI THỦY DỤC",
         "level": "N2"
       },
       {
@@ -5798,7 +5798,7 @@
         "word": "税務署",
         "reading": "ぜいむしょ",
         "meaning": "phòng thuế",
-        "hanviet": "THOÁT VŨ THỬ",
+        "hanviet": "THUẾ VỤ THỬ",
         "level": "N1"
       }
     ]
@@ -5918,7 +5918,7 @@
         "word": "教訓",
         "reading": "きょうくん",
         "meaning": "châm ngôn",
-        "hanviet": "GIAO HUẤN",
+        "hanviet": "GIÁO HUẤN",
         "level": "N1"
       }
     ]
@@ -5949,21 +5949,21 @@
         "word": "祈る",
         "reading": "いのる",
         "meaning": "cầu nguyện",
-        "hanviet": "KÌ",
+        "hanviet": "KỲ",
         "level": "N4"
       },
       {
         "word": "祈り",
         "reading": "いのり",
         "meaning": "cầu nguyện",
-        "hanviet": "KÌ",
+        "hanviet": "KỲ",
         "level": "N1"
       },
       {
         "word": "お祈り",
         "reading": "おいのり",
         "meaning": "lời cầu xin; sự cầu nguyện; lời cầu nguyện",
-        "hanviet": "KÌ",
+        "hanviet": "KỲ",
         "level": "N5"
       }
     ]
@@ -6047,7 +6047,7 @@
         "word": "焼けます［肉が］",
         "reading": "やけます［にくが］",
         "meaning": "[thịt] quay, nướng",
-        "hanviet": "THIÊU NHỤ",
+        "hanviet": "THIÊU NHỤC",
         "level": "N4"
       },
       {
@@ -6223,7 +6223,7 @@
         "word": "禁止",
         "reading": "きんし",
         "meaning": "cấm chỉ",
-        "hanviet": "CÂM CHI",
+        "hanviet": "CÂM CHỈ",
         "level": "N3"
       },
       {
@@ -6244,14 +6244,14 @@
         "word": "使用禁止",
         "reading": "しようきんし",
         "meaning": "Không sử dụng",
-        "hanviet": "SỨ DỤNG CÂM CHI",
+        "hanviet": "SỬ DỤNG CÂM CHỈ",
         "level": "N4"
       },
       {
         "word": "立入禁止",
         "reading": "たちいりきんし",
         "meaning": "cấm dẫm chân lên (vạch, bãi cỏ...)",
-        "hanviet": "LẬP NHẬP CÂM CHI",
+        "hanviet": "LẬP NHẬP CÂM CHỈ",
         "level": "N4"
       }
     ]
@@ -6291,7 +6291,7 @@
         "word": "出ます［喫茶店を］",
         "reading": "でます［きっさてんを］",
         "meaning": "đi ra ngoài [quán cà phê]",
-        "hanviet": "XUÝ KHIẾT TRÀ ĐIẾM",
+        "hanviet": "XUẤT KHIẾT TRÀ ĐIẾM",
         "level": "N5"
       },
       {
@@ -6347,7 +6347,7 @@
         "word": "減少",
         "reading": "げんしょう",
         "meaning": "sự giảm; suy giảm; giảm bớt",
-        "hanviet": "GIẢM THIẾU",
+        "hanviet": "GIẢM THIỂU",
         "level": "N3"
       },
       {
@@ -6368,7 +6368,7 @@
         "word": "軽減",
         "reading": "けいげん",
         "meaning": "ự giảm bớt; sự làm nhẹ",
-        "hanviet": "CHÍ GIẢM",
+        "hanviet": "KHINH GIẢM",
         "level": "N1"
       },
       {
@@ -6389,7 +6389,7 @@
         "word": "減ります［輸出が］",
         "reading": "へります［ゆしゅつが］",
         "meaning": "[xuất khẩu] giảm",
-        "hanviet": "GIẢM DU XUÝ",
+        "hanviet": "GIẢM DU XUẤT",
         "level": "N4"
       }
     ]
@@ -6437,7 +6437,7 @@
         "word": "道順",
         "reading": "みちじゅん",
         "meaning": "đường dẫn đến",
-        "hanviet": "ĐÁO THUẬN",
+        "hanviet": "ĐẠO THUẬN",
         "level": "N2"
       },
       {
@@ -6472,7 +6472,7 @@
         "word": "不順",
         "reading": "ふじゅん",
         "meaning": "không thuận; không bình thường; không theo quy luật",
-        "hanviet": "BƯU THUẬN",
+        "hanviet": "BẤT THUẬN",
         "level": "N1"
       },
       {
@@ -6512,7 +6512,7 @@
         "word": "分布",
         "reading": "ぶんぷ",
         "meaning": "sự phân bố",
-        "hanviet": "BỐ",
+        "hanviet": "PHÂN BỐ",
         "level": "N2"
       },
       {
@@ -6561,7 +6561,7 @@
         "word": "布巾",
         "reading": "ふきん",
         "meaning": "khăn lau",
-        "hanviet": "BỐ",
+        "hanviet": "BỐ CÂN",
         "level": "N1"
       },
       {
@@ -6799,7 +6799,7 @@
         "word": "宇宙飛行士",
         "reading": "うちゅうひこうし",
         "meaning": "phi công vũ trụ; nhà du hành vũ trụ; phi hành gia vũ trụ",
-        "hanviet": "VŨ TRỤ PHI HÀNG SĨ",
+        "hanviet": "VŨ TRỤ PHI HÀNH SĨ",
         "level": "N4"
       },
       {
@@ -6874,7 +6874,7 @@
         "word": "団体",
         "reading": "だんたい",
         "meaning": "đoàn thể; tập thể",
-        "hanviet": "ĐOÀN BỔN",
+        "hanviet": "ĐOÀN THỂ",
         "level": "N3"
       },
       {
@@ -6902,7 +6902,7 @@
         "word": "団結",
         "reading": "だんけつ",
         "meaning": "đoàn kết",
-        "hanviet": "ĐOÀN KẾ",
+        "hanviet": "ĐOÀN KẾT",
         "level": "N1"
       }
     ]
@@ -7012,7 +7012,7 @@
         "word": "混合",
         "reading": "こんごう",
         "meaning": "hỗn hợp",
-        "hanviet": "CÔN CÁP",
+        "hanviet": "CÔN HỢP",
         "level": "N2"
       },
       {
@@ -7129,7 +7129,7 @@
         "word": "内乱",
         "reading": "ないらん",
         "meaning": "cuộc nội loạn",
-        "hanviet": "NẠP LOẠN",
+        "hanviet": "NỘI LOẠN",
         "level": "N1"
       },
       {
@@ -7143,7 +7143,7 @@
         "word": "反乱",
         "reading": "はんらん",
         "meaning": "cuộc phản loạn; cuộc phiến loạn; sự phiến loạn",
-        "hanviet": "PHIÊN LOẠN",
+        "hanviet": "PHẢN LOẠN",
         "level": "N1"
       },
       {
@@ -7194,7 +7194,7 @@
         "word": "改正",
         "reading": "かいせい",
         "meaning": "sự cải chính; sự sửa chữa; sự thay đổi",
-        "hanviet": "CẢI CHINH",
+        "hanviet": "CẢI CHÍNH",
         "level": "N2"
       },
       {
@@ -7250,7 +7250,7 @@
         "word": "改定",
         "reading": "かいてい",
         "meaning": "đáy biển",
-        "hanviet": "CẢI ĐÍNH",
+        "hanviet": "CẢI ĐỊNH",
         "level": "N1"
       }
     ]
@@ -7331,7 +7331,7 @@
         "word": "比較的",
         "reading": "ひかくてき",
         "meaning": "có tính so sánh; mang tính so sánh",
-        "hanviet": "BÌ GIÁC",
+        "hanviet": "BÌ GIÁC ĐÍCH",
         "level": "N2"
       },
       {
@@ -7359,7 +7359,7 @@
         "word": "比重",
         "reading": "ひじゅう",
         "meaning": "tỉ trọng",
-        "hanviet": "BÌ TRÙNG",
+        "hanviet": "BÌ TRỌNG",
         "level": "N1"
       },
       {
@@ -7552,7 +7552,7 @@
         "word": "個体",
         "reading": "こたい",
         "meaning": "cá thể",
-        "hanviet": "CÁ BỔN",
+        "hanviet": "CÁ THỂ",
         "level": "N2"
       },
       {
@@ -7770,7 +7770,7 @@
         "word": "防止",
         "reading": "ぼうし",
         "meaning": "phòng cháy",
-        "hanviet": "PHÒNG CHI",
+        "hanviet": "PHÒNG CHỈ",
         "level": "N2"
       },
       {
@@ -7868,7 +7868,7 @@
         "word": "女史",
         "reading": "じょし",
         "meaning": "bà",
-        "hanviet": "NHỮ SỬ",
+        "hanviet": "NỮ SỬ",
         "level": "N3"
       }
     ]
@@ -7972,7 +7972,7 @@
         "word": "市場調査",
         "reading": "しじょうちょうさ",
         "meaning": "điều tra thị trường",
-        "hanviet": "THỊ TRÀNG ĐIỀU TRA",
+        "hanviet": "THỊ TRƯỜNG ĐIỀU TRA",
         "level": "N4"
       }
     ]
@@ -8016,21 +8016,21 @@
         "word": "総理大臣",
         "reading": "そうりだいじん",
         "meaning": "thủ tướng",
-        "hanviet": "TỔNG LÍ THÁI THẦN",
+        "hanviet": "TỔNG LÝ ĐẠI THẦN",
         "level": "N2"
       },
       {
         "word": "総会",
         "reading": "そうかい",
         "meaning": "cuộc tổng hội họp",
-        "hanviet": "TỔNG CỐI",
+        "hanviet": "TỔNG HỘI",
         "level": "N1"
       },
       {
         "word": "総合",
         "reading": "そうごう",
         "meaning": "sự tổng hợp",
-        "hanviet": "TỔNG CÁP",
+        "hanviet": "TỔNG HỢP",
         "level": "N1"
       }
     ]
@@ -8096,7 +8096,7 @@
         "word": "設定",
         "reading": "せってい",
         "meaning": "sự thành lập; sự thiết lập; sự tạo ra",
-        "hanviet": "THIẾT ĐÍNH",
+        "hanviet": "THIẾT ĐỊNH",
         "level": "N1"
       },
       {
@@ -8173,7 +8173,7 @@
         "word": "反省",
         "reading": "はんせい",
         "meaning": "sự kiểm tra lại mình",
-        "hanviet": "PHIÊN SẢNH",
+        "hanviet": "PHẢN SẢNH",
         "level": "N3"
       },
       {
@@ -8208,49 +8208,49 @@
         "word": "課税",
         "reading": "かぜい",
         "meaning": "thuế khoá; thuế; thuế má",
-        "hanviet": "KHOÁ THOÁT",
+        "hanviet": "KHOÁ THUẾ",
         "level": "N2"
       },
       {
         "word": "税関",
         "reading": "ぜいかん",
         "meaning": "hải quan",
-        "hanviet": "THOÁT QUAN",
+        "hanviet": "THUẾ QUAN",
         "level": "N2"
       },
       {
         "word": "免税",
         "reading": "めんぜい",
         "meaning": "sự miễn thuế",
-        "hanviet": "MIỄN THOÁT",
+        "hanviet": "MIỄN THUẾ",
         "level": "N2"
       },
       {
         "word": "税",
         "reading": "ぜい",
         "meaning": "thuế",
-        "hanviet": "THOÁT",
+        "hanviet": "THUẾ",
         "level": "N3"
       },
       {
         "word": "税金",
         "reading": "ぜいきん",
         "meaning": "sắc thuế",
-        "hanviet": "THOÁT KIM",
+        "hanviet": "THUẾ KIM",
         "level": "N3"
       },
       {
         "word": "関税",
         "reading": "かんぜい",
         "meaning": "thuế đoan",
-        "hanviet": "QUAN THOÁT",
+        "hanviet": "QUAN THUẾ",
         "level": "N1"
       },
       {
         "word": "税務署",
         "reading": "ぜいむしょ",
         "meaning": "phòng thuế",
-        "hanviet": "THOÁT VŨ THỬ",
+        "hanviet": "THUẾ VỤ THỬ",
         "level": "N1"
       }
     ]
@@ -8352,7 +8352,7 @@
         "word": "大勢",
         "reading": "おおぜい",
         "meaning": "đại chúng; phần lớn mọi người; đám đông",
-        "hanviet": "THÁI THẾ",
+        "hanviet": "ĐẠI THẾ",
         "level": "N5"
       },
       {
@@ -8401,7 +8401,7 @@
         "word": "大勢の",
         "reading": "おおぜいの",
         "meaning": "nhiều (người)",
-        "hanviet": "THÁI THẾ",
+        "hanviet": "ĐẠI THẾ",
         "level": "N4"
       }
     ]
@@ -8570,7 +8570,7 @@
         "word": "大統領",
         "reading": "だいとうりょう",
         "meaning": "chủ tịch nước; tổng thống",
-        "hanviet": "THÁI THỐNG LÃNH",
+        "hanviet": "ĐẠI THỐNG LÃNH",
         "level": "N3"
       }
     ]
@@ -8698,7 +8698,7 @@
         "word": "停止",
         "reading": "ていし",
         "meaning": "sự đình chỉ; dừng lại",
-        "hanviet": "ĐÌNH CHI",
+        "hanviet": "ĐÌNH CHỈ",
         "level": "N2"
       },
       {
@@ -8809,7 +8809,7 @@
         "word": "吊り革",
         "reading": "つりかわ",
         "meaning": "ộc bằng đai da",
-        "hanviet": "CÁCH",
+        "hanviet": "ĐIẾU CÁCH",
         "level": "N1"
       }
     ]
@@ -8895,56 +8895,56 @@
         "word": "基準",
         "reading": "きじゅん",
         "meaning": "tiêu chuẩn; quy chuẩn",
-        "hanviet": "CƠ CHUYẾT",
+        "hanviet": "CƠ CHUẨN",
         "level": "N2"
       },
       {
         "word": "規準",
         "reading": "きじゅん",
         "meaning": "chuẩn mực; quy chuẩn",
-        "hanviet": "QUY CHUYẾT",
+        "hanviet": "QUY CHUẨN",
         "level": "N2"
       },
       {
         "word": "標準",
         "reading": "ひょうじゅん",
         "meaning": "hạn mức",
-        "hanviet": "PHIÊU CHUYẾT",
+        "hanviet": "PHIÊU CHUẨN",
         "level": "N2"
       },
       {
         "word": "準備",
         "reading": "じゅんびする",
         "meaning": "sự chuẩn bị; sự sắp xếp; chuẩn bị",
-        "hanviet": "CHUYẾT BỊ",
+        "hanviet": "CHUẨN BỊ",
         "level": "N4"
       },
       {
         "word": "水準",
         "reading": "すいじゅん",
         "meaning": "cấp độ; trình độ",
-        "hanviet": "THUỶ CHUYẾT",
+        "hanviet": "THỦY CHUẨN",
         "level": "N3"
       },
       {
         "word": "準急",
         "reading": "じゅんきゅう",
         "meaning": "tàu tốc hành thường (chậm hơn tàu tốc hành)",
-        "hanviet": "CHUYẾT CẤP",
+        "hanviet": "CHUẨN CẤP",
         "level": "N1"
       },
       {
         "word": "準備",
         "reading": "じゅんび",
         "meaning": "sự chuẩn bị; sự sắp xếp; chuẩn bị",
-        "hanviet": "CHUYẾT BỊ",
+        "hanviet": "CHUẨN BỊ",
         "level": "N5"
       },
       {
         "word": "準じる",
         "reading": "じゅんじる",
         "meaning": "để đi theo; tới sự tuân thủ",
-        "hanviet": "CHUYẾT",
+        "hanviet": "CHUẨN",
         "level": "N1"
       }
     ]
@@ -8984,7 +8984,7 @@
         "word": "不規則",
         "reading": "ふきそく",
         "meaning": "không có quy tắc; không điều độ",
-        "hanviet": "BƯU QUY TẮC",
+        "hanviet": "BẤT QUY TẮC",
         "level": "N2"
       },
       {
@@ -9045,7 +9045,7 @@
         "word": "主導",
         "reading": "しゅどう",
         "meaning": "chủ đạo",
-        "hanviet": "CHÚA ĐẠO",
+        "hanviet": "CHỦ ĐẠO",
         "level": "N1"
       },
       {
@@ -9107,7 +9107,7 @@
   {
     "id": "kanji-城",
     "kanji": "城",
-    "hanviet": "GIÀM",
+    "hanviet": "THÀNH",
     "strokes": 9,
     "jlpt": "N2",
     "onyomi": [
@@ -9118,8 +9118,8 @@
       "しろ"
     ],
     "meanings_vi": [
-      "thành:  thành trì",
-      "thành:  xây thành"
+      "thành (thành trì, lâu đài)",
+      "thành trì"
     ],
     "meanings_en": [
       "Castle"
@@ -9129,43 +9129,43 @@
       {
         "word": "城",
         "reading": "しろ",
-        "meaning": "thành; lâu đài",
-        "hanviet": "GIÀM",
+        "meaning": "thành, lâu đài",
+        "hanviet": "THÀNH",
         "level": "N3"
       },
       {
         "word": "城下",
         "reading": "じょうか",
-        "meaning": "việc làm sạch; sự làm sạch",
-        "hanviet": "GIÀM HÁ",
+        "meaning": "khu phố dưới chân thành",
+        "hanviet": "THÀNH HẠ",
         "level": "N1"
       },
       {
         "word": "大阪城",
         "reading": "おおさかじょう",
-        "meaning": "Lâu đài Osaka, một lâu đài nổi tiếng ở Osaka",
-        "hanviet": "THÁI GIÀM",
+        "meaning": "Lâu đài Osaka",
+        "hanviet": "ĐẠI PHẢN THÀNH",
         "level": "N5"
       },
       {
         "word": "［お］城",
         "reading": "［お］しろ",
         "meaning": "lâu đài",
-        "hanviet": "GIÀM",
+        "hanviet": "THÀNH",
         "level": "N4"
       },
       {
         "word": "大阪城公園",
         "reading": "おおさかじょうこうえん",
-        "meaning": "Công viên lâu đài Osaka",
-        "hanviet": "THÁI GIÀM CÔNG VIÊN",
+        "meaning": "Công viên Lâu đài Osaka",
+        "hanviet": "ĐẠI PHẢN THÀNH CÔNG VIÊN",
         "level": "N5"
       },
       {
         "word": "万里の 長城",
         "reading": "ばんりの ちょうじょう",
-        "meaning": "Vạn Lý Trường Thành của Trung Quốc",
-        "hanviet": "MẶC TRÀNG GIÀM",
+        "meaning": "Vạn Lý Trường Thành",
+        "hanviet": "VẠN LÝ TRƯỜNG THÀNH",
         "level": "N5"
       }
     ]
@@ -9235,7 +9235,7 @@
         "word": "分担",
         "reading": "ぶんたん",
         "meaning": "sự gánh vác (trách nhiệm)",
-        "hanviet": "ĐAM",
+        "hanviet": "PHÂN ĐAM",
         "level": "N1"
       }
     ]
@@ -9345,7 +9345,7 @@
         "word": "輸出",
         "reading": "ゆしゅつする",
         "meaning": "sự xuất khẩu",
-        "hanviet": "DU XUÝ",
+        "hanviet": "DU XUẤT",
         "level": "N4"
       },
       {
@@ -9359,7 +9359,7 @@
         "word": "輸出します",
         "reading": "ゆしゅつします",
         "meaning": "xuất khẩu",
-        "hanviet": "DU XUÝ",
+        "hanviet": "DU XUẤT",
         "level": "N4"
       },
       {
@@ -9373,14 +9373,14 @@
         "word": "増えます［輸出が］",
         "reading": "ふえます［ゆしゅつが］",
         "meaning": "[xuất khẩu] tăng",
-        "hanviet": "TĂNG DU XUÝ",
+        "hanviet": "TĂNG DU XUẤT",
         "level": "N4"
       },
       {
         "word": "減ります［輸出が］",
         "reading": "へります［ゆしゅつが］",
         "meaning": "[xuất khẩu] giảm",
-        "hanviet": "GIẢM DU XUÝ",
+        "hanviet": "GIẢM DU XUẤT",
         "level": "N4"
       }
     ]
@@ -9420,7 +9420,7 @@
         "word": "燃料",
         "reading": "ねんりょう",
         "meaning": "chất đốt",
-        "hanviet": "NHIÊN LIÊU",
+        "hanviet": "NHIÊN LIỆU",
         "level": "N1"
       },
       {
@@ -9487,42 +9487,42 @@
         "word": "祝日",
         "reading": "しゅくじつ",
         "meaning": "ngày lễ",
-        "hanviet": "CHÚ NHẬT",
+        "hanviet": "CHÚC NHẬT",
         "level": "N2"
       },
       {
         "word": "祝い",
         "reading": "いわい",
         "meaning": "chúc tụng",
-        "hanviet": "CHÚ",
+        "hanviet": "CHÚC",
         "level": "N3"
       },
       {
         "word": "祝う",
         "reading": "いわう",
         "meaning": "ăn mừng; chúc; chúc mừng",
-        "hanviet": "CHÚ",
+        "hanviet": "CHÚC",
         "level": "N3"
       },
       {
         "word": "祝賀",
         "reading": "しゅくが",
         "meaning": "chúc hạ",
-        "hanviet": "CHÚ HẠ",
+        "hanviet": "CHÚC HẠ",
         "level": "N1"
       },
       {
         "word": "お祝い",
         "reading": "おいわい",
         "meaning": "Chúc mừng, quà mừng",
-        "hanviet": "CHÚ",
+        "hanviet": "CHÚC",
         "level": "N4"
       },
       {
         "word": "［お］祝い",
         "reading": "［お］いわい",
         "meaning": "Chúc mừng, quà mừng",
-        "hanviet": "CHÚ",
+        "hanviet": "CHÚC",
         "level": "N4"
       }
     ]
@@ -9814,7 +9814,7 @@
         "word": "大層",
         "reading": "たいそう",
         "meaning": "cường điệu; quá mức",
-        "hanviet": "THÁI TẰNG",
+        "hanviet": "ĐẠI TẰNG",
         "level": "N2"
       },
       {
@@ -9978,7 +9978,7 @@
         "word": "管理",
         "reading": "かんり",
         "meaning": "sự quản lí; sự bảo quản; quản lý",
-        "hanviet": "QUẢN LÍ",
+        "hanviet": "QUẢN LÝ",
         "level": "N3"
       },
       {
@@ -10006,7 +10006,7 @@
         "word": "管理人",
         "reading": "かんりにん",
         "meaning": "Người quản lý, người trông coi",
-        "hanviet": "QUẢN LÍ NHÂN",
+        "hanviet": "QUẢN LÝ NHÂN",
         "level": "N4"
       }
     ]
@@ -10122,63 +10122,63 @@
         "word": "重量",
         "reading": "じゅうりょう",
         "meaning": "sức nặng",
-        "hanviet": "TRÙNG LƯƠNG",
+        "hanviet": "TRỌNG LƯỢNG",
         "level": "N2"
       },
       {
         "word": "測量",
         "reading": "そくりょう",
         "meaning": "dò",
-        "hanviet": "TRẮC LƯƠNG",
+        "hanviet": "TRẮC LƯỢNG",
         "level": "N2"
       },
       {
         "word": "分量",
         "reading": "ぶんりょう",
         "meaning": "phân lượng",
-        "hanviet": "LƯƠNG",
+        "hanviet": "PHÂN LƯỢNG",
         "level": "N2"
       },
       {
         "word": "量",
         "reading": "りょう",
         "meaning": "khối lượng",
-        "hanviet": "LƯƠNG",
+        "hanviet": "LƯỢNG",
         "level": "N3"
       },
       {
         "word": "量る",
         "reading": "はかる",
         "meaning": "cân",
-        "hanviet": "LƯƠNG",
+        "hanviet": "LƯỢNG",
         "level": "N3"
       },
       {
         "word": "熱量",
         "reading": "ねつりょう",
         "meaning": "Nhiệt lượng",
-        "hanviet": "NHIỆT LƯƠNG",
+        "hanviet": "NHIỆT LƯỢNG",
         "level": "N1"
       },
       {
         "word": "微量",
         "reading": "びりょう",
         "meaning": "sống mũi",
-        "hanviet": "VI LƯƠNG",
+        "hanviet": "VI LƯỢNG",
         "level": "N1"
       },
       {
         "word": "感無量",
         "reading": "かんむりょう",
         "meaning": "cảm giác sâu sắc; sự ngập tràn cảm xúc; cảm động",
-        "hanviet": "CẢM LƯƠNG",
+        "hanviet": "CẢM VÔ LƯỢNG",
         "level": "N1"
       },
       {
         "word": "測ります、量ります",
         "reading": "はかります",
         "meaning": "đo, cân",
-        "hanviet": "TRẮC LƯƠNG",
+        "hanviet": "TRẮC LƯỢNG",
         "level": "N4"
       }
     ]
@@ -10330,7 +10330,7 @@
         "word": "述語",
         "reading": "じゅつご",
         "meaning": "vị ngữ",
-        "hanviet": "THUẬT NGỨ",
+        "hanviet": "THUẬT NGỮ",
         "level": "N2"
       },
       {
@@ -10382,21 +10382,21 @@
         "word": "販売",
         "reading": "はんばい",
         "meaning": "việc bán",
-        "hanviet": "PHIẾN MẠI",
+        "hanviet": "PHIẾN MÃI",
         "level": "N3"
       },
       {
         "word": "通信販売",
         "reading": "つうしんはんばい",
         "meaning": "đặt hàng qua thư, bán hàng qua thư",
-        "hanviet": "THÔNG THÂN PHIẾN MẠI",
+        "hanviet": "THÔNG TÍN PHIẾN MÃI",
         "level": "N4"
       },
       {
         "word": "自動販売機",
         "reading": "じどうはんばいき",
         "meaning": "Máy bán hàng tự động",
-        "hanviet": "TỰ ĐỘNG PHIẾN MẠI CƠ",
+        "hanviet": "TỰ ĐỘNG PHIẾN MÃI CƠ",
         "level": "N5"
       }
     ]
@@ -10479,14 +10479,14 @@
         "word": "好況",
         "reading": "こうきょう",
         "meaning": "phồn vinh lộc phát",
-        "hanviet": "HIẾU HUỐNG",
+        "hanviet": "HẢO HUỐNG",
         "level": "N1"
       },
       {
         "word": "不況",
         "reading": "ふきょう",
         "meaning": "không vui; tiêu điều",
-        "hanviet": "BƯU HUỐNG",
+        "hanviet": "BẤT HUỐNG",
         "level": "N1"
       }
     ]
@@ -10572,7 +10572,7 @@
         "word": "補足",
         "reading": "ほそく",
         "meaning": "sự bổ túc; sự bổ sung",
-        "hanviet": "BỔ TÚ",
+        "hanviet": "BỔ TÚC",
         "level": "N1"
       }
     ]
@@ -10629,7 +10629,7 @@
         "word": "有効",
         "reading": "ゆうこう",
         "meaning": "hữu hiệu; có hiệu quả",
-        "hanviet": "DỰU HIỆU",
+        "hanviet": "HỮU HIỆU",
         "level": "N3"
       },
       {
@@ -10643,7 +10643,7 @@
         "word": "無効",
         "reading": "むこう",
         "meaning": "sự vô hiệu",
-        "hanviet": "HIỆU",
+        "hanviet": "VÔ HIỆU",
         "level": "N1"
       },
       {
@@ -10699,7 +10699,7 @@
         "word": "豊作",
         "reading": "ほうさく",
         "meaning": "mùa màng bội thu",
-        "hanviet": "LỄ TÁ",
+        "hanviet": "LỄ TÁC",
         "level": "N1"
       }
     ]
@@ -10872,14 +10872,14 @@
         "word": "着替え",
         "reading": "きがえ",
         "meaning": "sự thay quần áo; thay quần áo; thay",
-        "hanviet": "HỒ THẾ",
+        "hanviet": "TRƯỚC THẾ",
         "level": "N2"
       },
       {
         "word": "着替える",
         "reading": "きがえる",
         "meaning": "thay quần áo",
-        "hanviet": "HỒ THẾ",
+        "hanviet": "TRƯỚC THẾ",
         "level": "N2"
       },
       {
@@ -11019,7 +11019,7 @@
         "word": "作ります、造ります",
         "reading": "つくります",
         "meaning": "làm, sản xuất",
-        "hanviet": "TÁ THÁO",
+        "hanviet": "TÁC THÁO",
         "level": "N5"
       }
     ]
@@ -11067,7 +11067,7 @@
         "word": "矢印",
         "reading": "やじるし",
         "meaning": "mũi tên chỉ hướng",
-        "hanviet": "THI ẤN",
+        "hanviet": "THỈ ẤN",
         "level": "N2"
       },
       {
@@ -11254,7 +11254,7 @@
         "word": "万年筆",
         "reading": "まんねんひつ",
         "meaning": "bút máy",
-        "hanviet": "MẶC NIÊN BÚT",
+        "hanviet": "VẠN NIÊN BÚT",
         "level": "N5"
       }
     ]
@@ -11349,7 +11349,7 @@
         "word": "刺身",
         "reading": "さしみ",
         "meaning": "gỏi cá; Sasimi",
-        "hanviet": "THÍCH",
+        "hanviet": "THÍCH THÂN",
         "level": "N2"
       },
       {
@@ -11377,7 +11377,7 @@
         "word": "刺繍",
         "reading": "ししゅう",
         "meaning": "thêu dệt",
-        "hanviet": "THÍCH",
+        "hanviet": "THÍCH TÚ",
         "level": "N1"
       },
       {
@@ -11473,7 +11473,7 @@
         "word": "方針",
         "reading": "ほうしん",
         "meaning": "phương châm; chính sách",
-        "hanviet": "BÀNG CHÂM",
+        "hanviet": "PHƯƠNG CHÂM",
         "level": "N2"
       },
       {
@@ -11511,21 +11511,21 @@
         "word": "菓子",
         "reading": "かし",
         "meaning": "Bánh kẹo",
-        "hanviet": "QUẢ TÍ",
+        "hanviet": "QUẢ TỬ",
         "level": "N3"
       },
       {
         "word": "お菓子",
         "reading": "おかし",
         "meaning": "Bánh kẹo",
-        "hanviet": "QUẢ TÍ",
+        "hanviet": "QUẢ TỬ",
         "level": "N5"
       },
       {
         "word": "［お］菓子",
         "reading": "［お］かし",
         "meaning": "Bánh kẹo",
-        "hanviet": "QUẢ TÍ",
+        "hanviet": "QUẢ TỬ",
         "level": "N5"
       }
     ]
@@ -11660,7 +11660,7 @@
         "word": "再会",
         "reading": "さいかい",
         "meaning": "sự gặp lại; sự tái hội",
-        "hanviet": "TÁI CỐI",
+        "hanviet": "TÁI HỘI",
         "level": "N1"
       },
       {
@@ -11681,7 +11681,7 @@
         "word": "再生",
         "reading": "さいせい",
         "meaning": "sự tái sinh; sự sống lại; sự dùng lại",
-        "hanviet": "TÁI SANH",
+        "hanviet": "TÁI SINH",
         "level": "N1"
       },
       {
@@ -11749,7 +11749,7 @@
         "word": "接近",
         "reading": "せっきん",
         "meaning": "sự tiếp cận",
-        "hanviet": "TIẾP CẤN",
+        "hanviet": "TIẾP CẬN",
         "level": "N2"
       },
       {
@@ -11777,7 +11777,7 @@
         "word": "直接",
         "reading": "ちょくせつ",
         "meaning": "thực tiếp",
-        "hanviet": "TRỊ TIẾP",
+        "hanviet": "TRỰC TIẾP",
         "level": "N3"
       },
       {
@@ -11994,7 +11994,7 @@
         "word": "上昇",
         "reading": "じょうしょう",
         "meaning": "sự tăng lên cao; sự tiến lên",
-        "hanviet": "THƯỚNG THĂNG",
+        "hanviet": "THƯỢNG THĂNG",
         "level": "N1"
       },
       {
@@ -12033,7 +12033,7 @@
         "word": "濃度",
         "reading": "のうど",
         "meaning": "nồng độ",
-        "hanviet": "NÙNG ĐẠC",
+        "hanviet": "NÙNG ĐỘ",
         "level": "N2"
       },
       {
@@ -12086,7 +12086,7 @@
         "word": "南極",
         "reading": "なんきょく",
         "meaning": "cực nam",
-        "hanviet": "NA CỰC",
+        "hanviet": "NAM CỰC",
         "level": "N2"
       },
       {
@@ -12100,7 +12100,7 @@
         "word": "消極的",
         "reading": "しょうきょくてき",
         "meaning": "có tính tiêu cực",
-        "hanviet": "TIÊU CỰC",
+        "hanviet": "TIÊU CỰC ĐÍCH",
         "level": "N2"
       },
       {
@@ -12142,7 +12142,7 @@
         "word": "積極的",
         "reading": "せっきょくてき",
         "meaning": "một cách tích cực",
-        "hanviet": "TÍCH CỰC",
+        "hanviet": "TÍCH CỰC ĐÍCH",
         "level": "N3"
       },
       {
@@ -12249,7 +12249,7 @@
         "word": "巨大",
         "reading": "きょだい",
         "meaning": "khổng lồ; phi thường",
-        "hanviet": "CỰ THÁI",
+        "hanviet": "CỰ ĐẠI",
         "level": "N3"
       }
     ]
@@ -12681,7 +12681,7 @@
         "word": "定期券",
         "reading": "ていきけん",
         "meaning": "vé thường kỳ; vé tháng",
-        "hanviet": "ĐÍNH CƠ KHOÁN",
+        "hanviet": "ĐỊNH CƠ KHOÁN",
         "level": "N2"
       },
       {
@@ -12760,7 +12760,7 @@
         "word": "移行",
         "reading": "いこう",
         "meaning": "sau đó; từ sau đó; từ sau khi",
-        "hanviet": "DI HÀNG",
+        "hanviet": "DI HÀNH",
         "level": "N1"
       },
       {
@@ -12817,7 +12817,7 @@
         "word": "並行",
         "reading": "へいこう",
         "meaning": "đồng thời tiến hành",
-        "hanviet": "BÍNH HÀNG",
+        "hanviet": "BÍNH HÀNH",
         "level": "N2"
       },
       {
@@ -13008,14 +13008,14 @@
         "word": "総理大臣",
         "reading": "そうりだいじん",
         "meaning": "thủ tướng",
-        "hanviet": "TỔNG LÍ THÁI THẦN",
+        "hanviet": "TỔNG LÝ ĐẠI THẦN",
         "level": "N2"
       },
       {
         "word": "大臣",
         "reading": "だいじん",
         "meaning": "bộ trưởng",
-        "hanviet": "THÁI THẦN",
+        "hanviet": "ĐẠI THẦN",
         "level": "N3"
       }
     ]
@@ -13090,7 +13090,7 @@
         "word": "略語",
         "reading": "りゃくご",
         "meaning": "chữ viết tắt",
-        "hanviet": "LƯỢC NGỨ",
+        "hanviet": "LƯỢC NGỮ",
         "level": "N1"
       }
     ]
@@ -13244,7 +13244,7 @@
         "word": "見詰める",
         "reading": "みつめる",
         "meaning": "nhìn chằm chằm",
-        "hanviet": "HIỆN CẬT",
+        "hanviet": "KIẾN CẬT",
         "level": "N2"
       },
       {
@@ -13327,7 +13327,7 @@
         "word": "照合",
         "reading": "しょうごう",
         "meaning": "danh hiệu; tên gọi",
-        "hanviet": "CHIẾU CÁP",
+        "hanviet": "CHIẾU HỢP",
         "level": "N1"
       },
       {
@@ -13341,7 +13341,7 @@
         "word": "照り返す",
         "reading": "てりかえす",
         "meaning": "ội lai (ánh sáng, sức nóng ...)",
-        "hanviet": "CHIẾU PHIÊN",
+        "hanviet": "CHIẾU PHẢN",
         "level": "N1"
       }
     ]
@@ -13403,7 +13403,7 @@
         "word": "軽快",
         "reading": "けいかい",
         "meaning": "nhịp nhàng; du dương; vui nhộn",
-        "hanviet": "CHÍ KHOÁI",
+        "hanviet": "KHINH KHOÁI",
         "level": "N1"
       },
       {
@@ -13449,7 +13449,7 @@
         "word": "出版",
         "reading": "しゅっぱん",
         "meaning": "sự xuất bản; xuất bản",
-        "hanviet": "XUÝ BẢN",
+        "hanviet": "XUẤT BẢN",
         "level": "N3"
       },
       {
@@ -13470,7 +13470,7 @@
         "word": "版画",
         "reading": "はんが",
         "meaning": "tranh khắc gỗ",
-        "hanviet": "BẢN HOẠ",
+        "hanviet": "BẢN HỌA",
         "level": "N1"
       }
     ]
@@ -13560,7 +13560,7 @@
         "word": "延長",
         "reading": "えんちょう",
         "meaning": "dài",
-        "hanviet": "DIÊN TRÀNG",
+        "hanviet": "DIÊN TRƯỜNG",
         "level": "N2"
       },
       {
@@ -13723,7 +13723,7 @@
         "word": "長編",
         "reading": "ちょうへん",
         "meaning": "...) dài",
-        "hanviet": "TRÀNG BIÊN",
+        "hanviet": "TRƯỜNG BIÊN",
         "level": "N1"
       }
     ]
@@ -13960,7 +13960,7 @@
         "word": "子孫",
         "reading": "しそん",
         "meaning": "con cháu",
-        "hanviet": "TÍ TÔN",
+        "hanviet": "TỬ TÔN",
         "level": "N2"
       },
       {
@@ -14010,7 +14010,7 @@
         "word": "温帯",
         "reading": "おんたい",
         "meaning": "ôn đới",
-        "hanviet": "UẨN ĐÁI",
+        "hanviet": "ÔN ĐÁI",
         "level": "N2"
       },
       {
@@ -14273,28 +14273,28 @@
         "word": "大陸",
         "reading": "たいりく",
         "meaning": "châu",
-        "hanviet": "THÁI LỤC",
+        "hanviet": "ĐẠI LỤC",
         "level": "N3"
       },
       {
         "word": "内陸",
         "reading": "ないりく",
         "meaning": "nội địa; đất liền",
-        "hanviet": "NẠP LỤC",
+        "hanviet": "NỘI LỤC",
         "level": "N1"
       },
       {
         "word": "上陸",
         "reading": "じょうりく",
         "meaning": "sự bốc dỡ (hàng...); sự cập bến; sự đổ bộ",
-        "hanviet": "THƯỚNG LỤC",
+        "hanviet": "THƯỢNG LỤC",
         "level": "N1"
       },
       {
         "word": "着陸",
         "reading": "ちゃくりく",
         "meaning": "hạ cánh; chạm xuống đất",
-        "hanviet": "HỒ LỤC",
+        "hanviet": "TRƯỚC LỤC",
         "level": "N1"
       }
     ]
@@ -14338,7 +14338,7 @@
         "word": "平均寿命",
         "reading": "へいきんじゅみょう",
         "meaning": "tuổi thọ trung bình",
-        "hanviet": "BIỀN QUÂN MỆNH",
+        "hanviet": "BIỀN QUÂN THỌ MỆNH",
         "level": "N4"
       }
     ]
@@ -14451,7 +14451,7 @@
         "word": "永遠",
         "reading": "えいえん",
         "meaning": "sự vĩnh viễn; sự còn mãi",
-        "hanviet": "VĨNH VIẾN",
+        "hanviet": "VĨNH VIỄN",
         "level": "N3"
       },
       {
@@ -14489,7 +14489,7 @@
         "word": "液体",
         "reading": "えきたい",
         "meaning": "chất lỏng",
-        "hanviet": "DỊCH BỔN",
+        "hanviet": "DỊCH THỂ",
         "level": "N2"
       },
       {
@@ -14620,21 +14620,21 @@
         "word": "重複",
         "reading": "ちょうふく",
         "meaning": "sự trùng lặp; sự lặp lại",
-        "hanviet": "TRÙNG PHỨC",
+        "hanviet": "TRỌNG PHỨC",
         "level": "N1"
       },
       {
         "word": "重複",
         "reading": "じゅうふく",
         "meaning": "sự trùng lặp; sự lặp lại",
-        "hanviet": "TRÙNG PHỨC",
+        "hanviet": "TRỌNG PHỨC",
         "level": "N1"
       },
       {
         "word": "複合",
         "reading": "ふくごう",
         "meaning": "phức hợp",
-        "hanviet": "PHỨC CÁP",
+        "hanviet": "PHỨC HỢP",
         "level": "N1"
       },
       {
@@ -14673,7 +14673,7 @@
         "word": "政党",
         "reading": "せいとう",
         "meaning": "chính đảng",
-        "hanviet": "CHINH ĐẢNG",
+        "hanviet": "CHÍNH ĐẢNG",
         "level": "N2"
       },
       {
@@ -15026,7 +15026,7 @@
         "word": "重宝",
         "reading": "ちょうほう",
         "meaning": "quý báu; tiện lợi",
-        "hanviet": "TRÙNG BẢO",
+        "hanviet": "TRỌNG BẢO",
         "level": "N1"
       },
       {
@@ -15091,7 +15091,7 @@
         "word": "尊重",
         "reading": "そんちょう",
         "meaning": "sự tôn trọng",
-        "hanviet": "TÔN TRÙNG",
+        "hanviet": "TÔN TRỌNG",
         "level": "N3"
       },
       {
@@ -15152,14 +15152,14 @@
         "word": "敬語",
         "reading": "けいご",
         "meaning": "kính ngữ",
-        "hanviet": "KÍNH NGỨ",
+        "hanviet": "KÍNH NGỮ",
         "level": "N2"
       },
       {
         "word": "敬意",
         "reading": "けいい",
         "meaning": "khả kính",
-        "hanviet": "KÍNH Y",
+        "hanviet": "KÍNH Ý",
         "level": "N3"
       },
       {
@@ -15408,7 +15408,7 @@
         "word": "水蒸気",
         "reading": "すいじょうき",
         "meaning": "hơi nước",
-        "hanviet": "THUỶ CHƯNG KHÍ",
+        "hanviet": "THỦY CHƯNG KHÍ",
         "level": "N2"
       },
       {
@@ -15422,7 +15422,7 @@
         "word": "蒸溜",
         "reading": "じょうりゅう",
         "meaning": "khởi nguyên",
-        "hanviet": "CHƯNG",
+        "hanviet": "CHƯNG LỰU",
         "level": "N1"
       },
       {
@@ -15483,7 +15483,7 @@
         "word": "内蔵",
         "reading": "ないぞう",
         "meaning": "sự lắp đặt bên trong",
-        "hanviet": "NẠP TÀNG",
+        "hanviet": "NỘI TÀNG",
         "level": "N1"
       },
       {
@@ -15650,7 +15650,7 @@
         "word": "裏返す",
         "reading": "うらがえす",
         "meaning": "lộn từ trong ra ngoài; lộn từ đằng trái ra đằng phải (quần áo..); lộn từ trái ra phải",
-        "hanviet": "LÍ PHIÊN",
+        "hanviet": "LÍ PHẢN",
         "level": "N2"
       },
       {
@@ -15671,7 +15671,7 @@
         "word": "裏返し",
         "reading": "うらがえし",
         "meaning": "sự lộn ngược (từ trong ra ngoài)",
-        "hanviet": "LÍ PHIÊN",
+        "hanviet": "LÍ PHẢN",
         "level": "N1"
       }
     ]
@@ -15889,7 +15889,7 @@
         "word": "拝見",
         "reading": "はいけんする",
         "meaning": "xem; chiêm ngưỡng",
-        "hanviet": "BÁI HIỆN",
+        "hanviet": "BÁI KIẾN",
         "level": "N4"
       },
       {
@@ -15917,7 +15917,7 @@
         "word": "拝見します",
         "reading": "はいけんします",
         "meaning": "Xem, nhìn (Khiêm nhường ngữ của 見ます)",
-        "hanviet": "BÁI HIỆN",
+        "hanviet": "BÁI KIẾN",
         "level": "N4"
       }
     ]
@@ -15960,7 +15960,7 @@
         "word": "劇場",
         "reading": "げきじょう",
         "meaning": "hí trường",
-        "hanviet": "KỊCH TRÀNG",
+        "hanviet": "KỊCH TRƯỜNG",
         "level": "N3"
       },
       {
@@ -15981,7 +15981,7 @@
         "word": "喜劇",
         "reading": "きげき",
         "meaning": "hí kịch",
-        "hanviet": "HI KỊCH",
+        "hanviet": "HỶ KỊCH",
         "level": "N1"
       }
     ]
@@ -16189,14 +16189,14 @@
         "word": "測定",
         "reading": "そくてい",
         "meaning": "sự đo lường",
-        "hanviet": "TRẮC ĐÍNH",
+        "hanviet": "TRẮC ĐỊNH",
         "level": "N2"
       },
       {
         "word": "測量",
         "reading": "そくりょう",
         "meaning": "dò",
-        "hanviet": "TRẮC LƯƠNG",
+        "hanviet": "TRẮC LƯỢNG",
         "level": "N2"
       },
       {
@@ -16224,7 +16224,7 @@
         "word": "測ります、量ります",
         "reading": "はかります",
         "meaning": "đo, cân",
-        "hanviet": "TRẮC LƯƠNG",
+        "hanviet": "TRẮC LƯỢNG",
         "level": "N4"
       }
     ]
@@ -16253,7 +16253,7 @@
         "word": "休講",
         "reading": "きゅうこう",
         "meaning": "sự ngừng lên lớp; sự ngừng giảng dạy; ngừng lên lớp",
-        "hanviet": "HU GIẢNG",
+        "hanviet": "HƯU GIẢNG",
         "level": "N2"
       },
       {
@@ -16267,7 +16267,7 @@
         "word": "講堂",
         "reading": "こうどう",
         "meaning": "giảng đường",
-        "hanviet": "GIẢNG ĐÀNG",
+        "hanviet": "GIẢNG ĐƯỜNG",
         "level": "N4"
       },
       {
@@ -16295,7 +16295,7 @@
         "word": "講読",
         "reading": "こうどく",
         "meaning": "việc đặt mua báo; sự đặt mua báo",
-        "hanviet": "GIẢNG ĐẬU",
+        "hanviet": "GIẢNG ĐỘC",
         "level": "N1"
       },
       {
@@ -16309,7 +16309,7 @@
         "word": "講演会",
         "reading": "こうえんかい",
         "meaning": "nhóm hậu thuẫn; nhóm hỗ trợ; nhóm cổ động",
-        "hanviet": "GIẢNG DIỄN CỐI",
+        "hanviet": "GIẢNG DIỄN HỘI",
         "level": "N4"
       }
     ]
@@ -16448,7 +16448,7 @@
         "word": "琵琶湖",
         "reading": "びわこ",
         "meaning": "Hồ Biwa, hồ lớn nhất Nhật Bản",
-        "hanviet": "HỒ",
+        "hanviet": "TỲ BÀ HỒ",
         "level": "N5"
       }
     ]
@@ -16543,7 +16543,7 @@
         "word": "醤油",
         "reading": "しょうゆ",
         "meaning": "xì dầu",
-        "hanviet": "DU",
+        "hanviet": "TƯƠNG DU",
         "level": "N5"
       },
       {
@@ -16778,7 +16778,7 @@
         "word": "山中伸弥",
         "reading": "やまなかしんや",
         "meaning": "Nhà khoa học y học Nhật Bản (1962-)",
-        "hanviet": "SAN TRUNG THÂN DI",
+        "hanviet": "SƠN TRUNG THÂN DI",
         "level": "N4"
       }
     ]
@@ -16816,7 +16816,7 @@
         "word": "大幅",
         "reading": "おおはば",
         "meaning": "khá; tương đối",
-        "hanviet": "THÁI BỨC",
+        "hanviet": "ĐẠI BỨC",
         "level": "N1"
       }
     ]
@@ -16917,14 +16917,14 @@
         "word": "乗換",
         "reading": "のりかえ",
         "meaning": "việc đổi xe; sự đổi xe",
-        "hanviet": "THẶNG HOÁN",
+        "hanviet": "THỪA HOÁN",
         "level": "N2"
       },
       {
         "word": "乗り換え",
         "reading": "のりかえ",
         "meaning": "việc đổi xe; sự đổi xe",
-        "hanviet": "THẶNG HOÁN",
+        "hanviet": "THỪA HOÁN",
         "level": "N2"
       },
       {
@@ -16966,14 +16966,14 @@
         "word": "乗り換える",
         "reading": "のりかえる",
         "meaning": "đổi xe; chuyển xe",
-        "hanviet": "THẶNG HOÁN",
+        "hanviet": "THỪA HOÁN",
         "level": "N4"
       },
       {
         "word": "乗り換えます",
         "reading": "のりかえます",
         "meaning": "thay đổi (xe lửa, v.v.)",
-        "hanviet": "THẶNG HOÁN",
+        "hanviet": "THỪA HOÁN",
         "level": "N5"
       }
     ]
@@ -17008,7 +17008,7 @@
         "word": "治療",
         "reading": "ちりょう",
         "meaning": "sự điều trị",
-        "hanviet": "TRÌ LIỆU",
+        "hanviet": "TRỊ LIỆU",
         "level": "N3"
       },
       {
@@ -17382,7 +17382,7 @@
         "word": "足跡",
         "reading": "あしあと",
         "meaning": "vết chân; dấu chân",
-        "hanviet": "TÚ TÍCH",
+        "hanviet": "TÚC TÍCH",
         "level": "N2"
       },
       {
@@ -17444,7 +17444,7 @@
         "word": "香水",
         "reading": "こうすい",
         "meaning": "nước hoa; dầu thơm",
-        "hanviet": "HƯƠNG THUỶ",
+        "hanviet": "HƯƠNG THỦY",
         "level": "N2"
       },
       {
@@ -17465,7 +17465,7 @@
         "word": "香辛料",
         "reading": "こうしんりょう",
         "meaning": "gia vị; hương liệu; hương liệu làm gia vị",
-        "hanviet": "HƯƠNG TÂN LIÊU",
+        "hanviet": "HƯƠNG TÂN LIỆU",
         "level": "N1"
       }
     ]
@@ -17583,7 +17583,7 @@
         "word": "刊行",
         "reading": "かんこう",
         "meaning": "sự ấn loát; sự phát hành; ấn loát",
-        "hanviet": "KHAN HÀNG",
+        "hanviet": "KHAN HÀNH",
         "level": "N3"
       },
       {
@@ -17880,7 +17880,7 @@
         "word": "片道",
         "reading": "かたみち",
         "meaning": "một chiều; một lượt",
-        "hanviet": "PHIẾN ĐÁO",
+        "hanviet": "PHIẾN ĐẠO",
         "level": "N2"
       },
       {
@@ -17908,7 +17908,7 @@
         "word": "片言",
         "reading": "かたこと",
         "meaning": "ến thức nông cạn; sự biết lõm bõm",
-        "hanviet": "PHIẾN NGÂN",
+        "hanviet": "PHIẾN NGÔN",
         "level": "N1"
       },
       {
@@ -18074,7 +18074,7 @@
         "word": "埋め込む",
         "reading": "うめこむ",
         "meaning": "ôn cất",
-        "hanviet": "MAI VU",
+        "hanviet": "MAI NHẬP",
         "level": "N1"
       },
       {
@@ -18117,14 +18117,14 @@
         "word": "駐車場",
         "reading": "ちゅうしゃじょう",
         "meaning": "bãi đỗ xe",
-        "hanviet": "TRÚ XA TRÀNG",
+        "hanviet": "TRÚ XA TRƯỜNG",
         "level": "N4"
       },
       {
         "word": "駐車違反",
         "reading": "ちゅうしゃいはん",
         "meaning": "vi phạm đỗ xe",
-        "hanviet": "TRÚ XA VI PHIÊN",
+        "hanviet": "TRÚ XA VI PHẢN",
         "level": "N4"
       }
     ]
@@ -18544,7 +18544,7 @@
         "word": "衣料",
         "reading": "いりょう",
         "meaning": "quần áo; đồ để mặc",
-        "hanviet": "Y LIÊU",
+        "hanviet": "Y LIỆU",
         "level": "N3"
       },
       {
@@ -18610,7 +18610,7 @@
         "word": "鉱山",
         "reading": "こうざん",
         "meaning": "mỏ",
-        "hanviet": "KHOÁNG SAN",
+        "hanviet": "KHOÁNG SƠN",
         "level": "N1"
       }
     ]
@@ -18645,7 +18645,7 @@
         "word": "双子",
         "reading": "ふたご",
         "meaning": "anh em sinh đôi",
-        "hanviet": "SONG TÍ",
+        "hanviet": "SONG TỬ",
         "level": "N3"
       }
     ]
@@ -18679,7 +18679,7 @@
         "word": "起床",
         "reading": "きしょう",
         "meaning": "sự dậy (ngủ); sự thức dậy",
-        "hanviet": "KHỈ SÀNG",
+        "hanviet": "KHỞI SÀNG",
         "level": "N2"
       },
       {
@@ -18785,7 +18785,7 @@
         "word": "宿泊",
         "reading": "しゅくはく",
         "meaning": "sự ngủ trọ; sự ở trọ lại",
-        "hanviet": "TÚ BẠC",
+        "hanviet": "TÚC BẠC",
         "level": "N3"
       },
       {
@@ -18917,7 +18917,7 @@
         "word": "足袋",
         "reading": "たび",
         "meaning": "loại tất có ngón của Nhật",
-        "hanviet": "TÚ ĐẠI",
+        "hanviet": "TÚC ĐẠI",
         "level": "N3"
       },
       {
@@ -19148,7 +19148,7 @@
         "word": "水筒",
         "reading": "すいとう",
         "meaning": "bi đông",
-        "hanviet": "THUỶ ĐỒNG",
+        "hanviet": "THỦY ĐỒNG",
         "level": "N2"
       },
       {
@@ -19198,7 +19198,7 @@
         "word": "柔道",
         "reading": "じゅうどう",
         "meaning": "nhu đạo",
-        "hanviet": "NHU ĐÁO",
+        "hanviet": "NHU ĐẠO",
         "level": "N4"
       },
       {
@@ -19356,7 +19356,7 @@
         "word": "香辛料",
         "reading": "こうしんりょう",
         "meaning": "gia vị; hương liệu; hương liệu làm gia vị",
-        "hanviet": "HƯƠNG TÂN LIÊU",
+        "hanviet": "HƯƠNG TÂN LIỆU",
         "level": "N1"
       }
     ]
@@ -19612,7 +19612,7 @@
         "word": "肌着",
         "reading": "はだぎ",
         "meaning": "quần áo lót",
-        "hanviet": "CƠ HỒ",
+        "hanviet": "CƠ TRƯỚC",
         "level": "N2"
       },
       {
@@ -19794,7 +19794,7 @@
         "word": "湿度",
         "reading": "しつど",
         "meaning": "độ ẩm",
-        "hanviet": "CHẬP ĐẠC",
+        "hanviet": "CHẬP ĐỘ",
         "level": "N3"
       },
       {
@@ -20079,7 +20079,7 @@
         "word": "帽子",
         "reading": "ぼうし",
         "meaning": "mũ; nón",
-        "hanviet": "MẠO TÍ",
+        "hanviet": "MẠO TỬ",
         "level": "N5"
       }
     ]
@@ -20173,7 +20173,7 @@
         "word": "水滴",
         "reading": "すいてき",
         "meaning": "giọt nước",
-        "hanviet": "THUỶ CHÍCH",
+        "hanviet": "THỦY CHÍCH",
         "level": "N2"
       }
     ]
@@ -20277,7 +20277,7 @@
         "word": "畜生",
         "reading": "ちくしょう",
         "meaning": "Đồ súc sinh!; Đồ khỉ!",
-        "hanviet": "HÚC SANH",
+        "hanviet": "HÚC SINH",
         "level": "N1"
       }
     ]
@@ -20326,7 +20326,7 @@
         "word": "溶け込む",
         "reading": "とけこむ",
         "meaning": "hòa nhập",
-        "hanviet": "DONG VU",
+        "hanviet": "DONG NHẬP",
         "level": "N2"
       },
       {
@@ -20630,14 +20630,14 @@
         "word": "召し上がる",
         "reading": "めしあがる",
         "meaning": "ăn",
-        "hanviet": "CHIÊU THƯỚNG",
+        "hanviet": "CHIÊU THƯỢNG",
         "level": "N4"
       },
       {
         "word": "召し上がります",
         "reading": "めしあがります",
         "meaning": "Ăn, uống (Tôn kính ngữ của 食べます và 飲みます)",
-        "hanviet": "CHIÊU THƯỚNG",
+        "hanviet": "CHIÊU THƯỢNG",
         "level": "N4"
       }
     ]
@@ -20802,7 +20802,7 @@
         "word": "洗濯",
         "reading": "せんたく",
         "meaning": "sự giặt giũ; quần áo được giặt giũ",
-        "hanviet": "TIỂN TRẠC",
+        "hanviet": "TẨY TRẠC",
         "level": "N5"
       },
       {
@@ -20823,21 +20823,21 @@
         "word": "洗濯機",
         "reading": "せんたくき",
         "meaning": "máy giặt",
-        "hanviet": "TIỂN TRẠC CƠ",
+        "hanviet": "TẨY TRẠC CƠ",
         "level": "N4"
       },
       {
         "word": "洗濯物",
         "reading": "せんたくもの",
         "meaning": "quần áo để giặt giũ; quần áo đã giặt là xong",
-        "hanviet": "TIỂN TRẠC VẬT",
+        "hanviet": "TẨY TRẠC VẬT",
         "level": "N4"
       },
       {
         "word": "洗濯します",
         "reading": "せんたくします",
         "meaning": "giặt (quần áo)",
-        "hanviet": "TIỂN TRẠC",
+        "hanviet": "TẨY TRẠC",
         "level": "N5"
       }
     ]
@@ -20960,7 +20960,7 @@
         "word": "耕作",
         "reading": "こうさく",
         "meaning": "canh tác",
-        "hanviet": "CANH TÁ",
+        "hanviet": "CANH TÁC",
         "level": "N1"
       },
       {
@@ -20999,7 +20999,7 @@
         "word": "肯定",
         "reading": "こうてい",
         "meaning": "sự khẳng định",
-        "hanviet": "KHẢI ĐÍNH",
+        "hanviet": "KHẢI ĐỊNH",
         "level": "N2"
       }
     ]
@@ -21197,7 +21197,7 @@
         "word": "近郊",
         "reading": "きんこう",
         "meaning": "ngoại ô; ngoại thành",
-        "hanviet": "CẤN GIAO",
+        "hanviet": "CẬN GIAO",
         "level": "N1"
       }
     ]

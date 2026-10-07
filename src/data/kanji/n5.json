@@ -62,7 +62,7 @@
         "word": "一番",
         "reading": "いちばん",
         "meaning": "nhất, số 1",
-        "hanviet": "NHẤT PHIÊN",
+        "hanviet": "NHẤT BA",
         "level": "N5"
       },
       {
@@ -703,7 +703,7 @@
         "word": "百貨店",
         "reading": "ひゃっかてん",
         "meaning": "trung tâm bách hóa",
-        "hanviet": "BÁCH HÓA ĐIẾM",
+        "hanviet": "BÁCH HOÁ ĐIẾM",
         "level": "N4"
       }
     ]
@@ -754,7 +754,7 @@
         "word": "千葉",
         "reading": "ちば",
         "meaning": "tỉnh Chiba",
-        "hanviet": "THIÊN DIỆP",
+        "hanviet": "THIÊN DIẾP",
         "level": "N5"
       }
     ]
@@ -918,7 +918,7 @@
         "word": "去年",
         "reading": "きょねん",
         "meaning": "năm ngoái",
-        "hanviet": "KHỨ NIÊN",
+        "hanviet": "KHU NIÊN",
         "level": "N5"
       },
       {
@@ -1494,7 +1494,7 @@
         "word": "時計",
         "reading": "とけい",
         "meaning": "đồng hồ",
-        "hanviet": "THỜI KẾ",
+        "hanviet": "THỜI KÊ",
         "level": "N5"
       },
       {
@@ -2734,7 +2734,7 @@
         "word": "長男",
         "reading": "ちょうなん",
         "meaning": "con trai cả, trưởng nam",
-        "hanviet": "TRƯỞNG NAM",
+        "hanviet": "TRƯỜNG NAM",
         "level": "N4"
       }
     ]
@@ -3267,7 +3267,7 @@
         "word": "一番目",
         "reading": "いちばんめ",
         "meaning": "thứ nhất, đầu tiên",
-        "hanviet": "NHẤT PHIÊN MỤC",
+        "hanviet": "NHẤT BA MỤC",
         "level": "N5"
       },
       {
@@ -3638,7 +3638,7 @@
         "word": "本当",
         "reading": "ほんとう",
         "meaning": "thật sự, thật lòng",
-        "hanviet": "BẢN ĐƯƠNG",
+        "hanviet": "BẢN ĐANG",
         "level": "N5"
       },
       {
@@ -3992,7 +3992,7 @@
         "word": "校長",
         "reading": "こうちょう",
         "meaning": "hiệu trưởng",
-        "hanviet": "HIỆU TRƯỞNG",
+        "hanviet": "HIỆU TRƯỜNG",
         "level": "N4"
       }
     ]
@@ -4268,7 +4268,7 @@
         "word": "雨期",
         "reading": "うき",
         "meaning": "mùa mưa",
-        "hanviet": "VŨ KỲ",
+        "hanviet": "VŨ CƠ",
         "level": "N3"
       },
       {
@@ -4368,7 +4368,7 @@
         "word": "紅茶",
         "reading": "こうちゃ",
         "meaning": "trà đen, hồng trà",
-        "hanviet": "HỒNG TRÀ",
+        "hanviet": "CÔNG TRÀ",
         "level": "N5"
       },
       {
@@ -4536,7 +4536,7 @@
         "word": "番犬",
         "reading": "ばんけん",
         "meaning": "chó giữ nhà",
-        "hanviet": "PHIÊN KHUYỂN",
+        "hanviet": "BA KHUYỂN",
         "level": "N2"
       }
     ]
@@ -4827,35 +4827,35 @@
         "word": "社長",
         "reading": "しゃちょう",
         "meaning": "giám đốc công ty",
-        "hanviet": "XÃ TRƯỞNG",
+        "hanviet": "XÃ TRƯỜNG",
         "level": "N4"
       },
       {
         "word": "校長",
         "reading": "こうちょう",
         "meaning": "hiệu trưởng",
-        "hanviet": "HIỆU TRƯỞNG",
+        "hanviet": "HIỆU TRƯỜNG",
         "level": "N4"
       },
       {
         "word": "部長",
         "reading": "ぶちょう",
         "meaning": "trưởng phòng",
-        "hanviet": "BỘ TRƯỞNG",
+        "hanviet": "BẪU TRƯỜNG",
         "level": "N4"
       },
       {
         "word": "長男",
         "reading": "ちょうなん",
         "meaning": "con trai cả, trưởng nam",
-        "hanviet": "TRƯỞNG NAM",
+        "hanviet": "TRƯỜNG NAM",
         "level": "N4"
       },
       {
         "word": "成長",
         "reading": "せいちょう",
         "meaning": "trưởng thành, lớn lên",
-        "hanviet": "THÀNH TRƯỞNG",
+        "hanviet": "THÀNH TRƯỜNG",
         "level": "N3"
       }
     ]
@@ -4902,7 +4902,7 @@
         "word": "多数",
         "reading": "たすう",
         "meaning": "đa số, số lượng lớn",
-        "hanviet": "ĐA SỐ",
+        "hanviet": "ĐA SÁC",
         "level": "N3"
       }
     ]
@@ -4949,14 +4949,14 @@
         "word": "少年",
         "reading": "しょうねん",
         "meaning": "thiếu niên, bé trai",
-        "hanviet": "THIẾU NIÊN",
+        "hanviet": "THIỂU NIÊN",
         "level": "N3"
       },
       {
         "word": "少女",
         "reading": "しょうじょ",
         "meaning": "thiếu nữ, bé gái",
-        "hanviet": "THIẾU NỮ",
+        "hanviet": "THIỂU NỮ",
         "level": "N3"
       }
     ]
@@ -5323,14 +5323,14 @@
         "word": "将来",
         "reading": "しょうらい",
         "meaning": "tương lai",
-        "hanviet": "TƯƠNG LAI",
+        "hanviet": "THƯƠNG LAI",
         "level": "N4"
       },
       {
         "word": "未来",
         "reading": "みらい",
         "meaning": "tương lai",
-        "hanviet": "VỊ LAI",
+        "hanviet": "MÙI LAI",
         "level": "N3"
       }
     ]
@@ -5478,7 +5478,7 @@
         "word": "輸入",
         "reading": "ゆにゅう",
         "meaning": "nhập khẩu",
-        "hanviet": "THÂU NHẬP",
+        "hanviet": "DU NHẬP",
         "level": "N4"
       }
     ]
@@ -5776,7 +5776,7 @@
         "word": "葉書",
         "reading": "はがき",
         "meaning": "tấm bưu thiếp",
-        "hanviet": "DIỆP THƯ",
+        "hanviet": "DIẾP THƯ",
         "level": "N5"
       }
     ]
@@ -6332,7 +6332,7 @@
         "word": "単語",
         "reading": "たんご",
         "meaning": "từ vựng",
-        "hanviet": "ĐƠN NGỮ",
+        "hanviet": "ĐAN NGỮ",
         "level": "N4"
       },
       {
@@ -6379,7 +6379,7 @@
         "word": "言葉",
         "reading": "ことば",
         "meaning": "từ ngữ, lời nói",
-        "hanviet": "NGÔN DIỆP",
+        "hanviet": "NGÔN DIẾP",
         "level": "N5"
       },
       {
@@ -6455,7 +6455,7 @@
         "word": "社長",
         "reading": "しゃちょう",
         "meaning": "giám đốc",
-        "hanviet": "XÃ TRƯỞNG",
+        "hanviet": "XÃ TRƯỜNG",
         "level": "N4"
       }
     ]
@@ -6508,7 +6508,7 @@
         "word": "道路",
         "reading": "どうろ",
         "meaning": "đường sá",
-        "hanviet": "ĐẠO LỘ",
+        "hanviet": "ĐẠO LẠC",
         "level": "N4"
       },
       {
