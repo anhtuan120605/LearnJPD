@@ -34,3 +34,10 @@ dist-ssr
 scratch/
 vnedict.zip
 scripts/data_cache/
+
+# Python cache & artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+.pytest_cache/
