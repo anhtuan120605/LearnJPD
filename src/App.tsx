@@ -67,6 +67,8 @@ import {
   FileText,
   ChevronLeft,
   Star,
+  Check,
+  BookmarkPlus,
   Shuffle,
   RotateCcw,
   AlertCircle
@@ -901,15 +903,26 @@ export function App() {
                   <div className="flex items-center space-x-2">
                     <button
                       onClick={() => handleToggleLessonSelection(selectedLessonNum)}
-                      className={`px-4.5 py-2.5 rounded-xl text-sm font-bold transition flex items-center space-x-2 ${
+                      className={`inline-flex items-center gap-2 px-4.5 py-2.5 rounded-xl text-sm font-bold transition-all shadow-2xs border group ${
                         selectedLessons.includes(selectedLessonNum)
-                          ? 'bg-indigo-600 text-white shadow-xs'
-                          : 'bg-white dark:bg-stone-900 border border-stone-200/80 dark:border-stone-800 text-stone-700 dark:text-stone-200 hover:border-indigo-400'
+                          ? 'bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 border-emerald-200 dark:border-emerald-800/70 hover:bg-emerald-100/80 dark:hover:bg-emerald-900/40'
+                          : 'bg-white dark:bg-stone-900 border-stone-200/80 dark:border-stone-800 text-stone-700 dark:text-stone-200 hover:border-indigo-400 hover:text-indigo-600 dark:hover:text-indigo-400'
                       }`}
-                      title="Thêm cả bài này vào danh sách ôn tập tổng hợp"
+                      title={selectedLessons.includes(selectedLessonNum) ? "Bài này đang nằm trong danh sách ôn tập. Nhấn để bỏ chọn." : "Thêm cả bài này vào danh sách ôn tập"}
                     >
-                      <Star className={`w-4 h-4 ${selectedLessons.includes(selectedLessonNum) ? 'fill-white' : ''}`} />
-                      <span>{selectedLessons.includes(selectedLessonNum) ? '✓ Đã thêm bài này vào ôn tập' : '⭐ Thêm cả bài vào ôn tập'}</span>
+                      {selectedLessons.includes(selectedLessonNum) ? (
+                        <>
+                          <span className="flex items-center justify-center w-4.5 h-4.5 rounded-full bg-emerald-500 text-white shrink-0 shadow-2xs">
+                            <Check className="w-3 h-3 stroke-[3]" />
+                          </span>
+                          <span>Đã thêm vào ôn tập</span>
+                        </>
+                      ) : (
+                        <>
+                          <BookmarkPlus className="w-4 h-4 text-stone-400 dark:text-stone-500 group-hover:text-indigo-500 transition-colors shrink-0" />
+                          <span>Thêm bài vào ôn tập</span>
+                        </>
+                      )}
                     </button>
                   </div>
                 </div>
