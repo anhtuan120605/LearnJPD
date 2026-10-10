@@ -10,6 +10,11 @@ export interface AppNavState {
   studyMode: StudyMode;
   practiceStage: 'overview' | 'session' | 'conjugation' | 'typing' | 'shadowing' | 'numbers';
   kanjiLevel: string;
+  // Trạng thái phụ cho phân hệ Luyện số đếm tiếng Nhật
+  numView?: 'hub' | 'level' | 'quiz';
+  numLevel?: number | 'random';
+  numMode?: 'look_read' | 'listen_num' | 'look_type' | 'listen_type';
+  numTab?: 'theory' | 'practice';
 }
 
 const STORAGE_KEY = 'learn_jpd_nav_state';
@@ -23,6 +28,10 @@ export const defaultNavState: AppNavState = {
   studyMode: 'flashcard',
   practiceStage: 'overview',
   kanjiLevel: 'N5',
+  numView: 'hub',
+  numLevel: 1,
+  numMode: 'look_read',
+  numTab: 'theory',
 };
 
 /**
@@ -33,7 +42,7 @@ export function getInitialNavState(): AppNavState {
 
   try {
     const params = new URLSearchParams(window.location.search);
-    const hasParams = params.has('tab') || params.has('view') || params.has('lesson') || params.has('course');
+    const hasParams = params.has('tab') || params.has('view') || params.has('lesson') || params.has('course') || params.has('stage');
 
     if (hasParams) {
       return parseNavFromSearchParams(params);
@@ -69,6 +78,13 @@ export function parseNavFromSearchParams(params: URLSearchParams): AppNavState {
   const practiceStage = (params.get('stage') as AppNavState['practiceStage']) || defaultNavState.practiceStage;
   const kanjiLevel = params.get('kLevel') || defaultNavState.kanjiLevel;
 
+  // Lấy trạng thái phụ của số đếm
+  const numView = (params.get('numView') as AppNavState['numView']) || 'hub';
+  const rawNumLevel = params.get('numLevel');
+  const numLevel: number | 'random' = rawNumLevel === 'random' ? 'random' : (rawNumLevel ? parseInt(rawNumLevel, 10) || 1 : 1);
+  const numMode = (params.get('numMode') as AppNavState['numMode']) || 'look_read';
+  const numTab = (params.get('numTab') as AppNavState['numTab']) || 'theory';
+
   return {
     tab,
     tangoViewMode,
@@ -78,6 +94,10 @@ export function parseNavFromSearchParams(params: URLSearchParams): AppNavState {
     studyMode,
     practiceStage,
     kanjiLevel,
+    numView,
+    numLevel,
+    numMode,
+    numTab,
   };
 }
 
@@ -100,9 +120,24 @@ export function buildSearchParams(state: AppNavState): string {
     }
   } else if (state.tab === 'practice') {
     params.set('stage', state.practiceStage);
-    params.set('course', state.course);
-    params.set('lesson', state.lesson.toString());
-    params.set('mode', state.studyMode);
+    if (state.practiceStage === 'numbers') {
+      if (state.numView && state.numView !== 'hub') {
+        params.set('numView', state.numView);
+      }
+      if (state.numLevel) {
+        params.set('numLevel', state.numLevel.toString());
+      }
+      if (state.numMode && state.numView === 'quiz') {
+        params.set('numMode', state.numMode);
+      }
+      if (state.numTab && state.numTab !== 'theory') {
+        params.set('numTab', state.numTab);
+      }
+    } else {
+      params.set('course', state.course);
+      params.set('lesson', state.lesson.toString());
+      params.set('mode', state.studyMode);
+    }
   } else if (state.tab === 'kanji') {
     params.set('kLevel', state.kanjiLevel);
   }

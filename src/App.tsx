@@ -133,6 +133,19 @@ export function App() {
   const [practiceStage, setPracticeStage] = useState<'overview' | 'session' | 'conjugation' | 'typing' | 'shadowing' | 'numbers'>(initialNav.practiceStage);
   const [selectedShadowingVideo, setSelectedShadowingVideo] = useState<ShadowingVideoItem | null>(null);
 
+  // Trạng thái chi tiết cho phân hệ Luyện số đếm
+  const [numbersNav, setNumbersNav] = useState<{
+    view: 'hub' | 'level' | 'quiz';
+    level: number | 'random';
+    mode: 'look_read' | 'listen_num' | 'look_type' | 'listen_type';
+    tab: 'theory' | 'practice';
+  }>({
+    view: initialNav.numView || 'hub',
+    level: initialNav.numLevel || 1,
+    mode: initialNav.numMode || 'look_read',
+    tab: initialNav.numTab || 'theory',
+  });
+
   // Cấp độ Kanji đang chọn (N5 -> N1)
   const [selectedKanjiLevel, setSelectedKanjiLevel] = useState<string>(initialNav.kanjiLevel);
 
@@ -204,6 +217,18 @@ export function App() {
       setPracticeStage(nav.practiceStage);
       setSelectedKanjiLevel(nav.kanjiLevel);
 
+      // Cập nhật trạng thái số đếm khi lùi / tiến trình duyệt
+      setNumbersNav({
+        view: nav.numView || 'hub',
+        level: nav.numLevel || 1,
+        mode: nav.numMode || 'look_read',
+        tab: nav.numTab || 'theory',
+      });
+
+      if (nav.practiceStage !== 'shadowing') {
+        setSelectedShadowingVideo(null);
+      }
+
       prevNavRef.current = nav;
       setTimeout(() => {
         isPoppingStateRef.current = false;
@@ -225,6 +250,10 @@ export function App() {
       studyMode,
       practiceStage,
       kanjiLevel: selectedKanjiLevel,
+      numView: numbersNav.view,
+      numLevel: numbersNav.level,
+      numMode: numbersNav.mode,
+      numTab: numbersNav.tab,
     };
 
     if (isPoppingStateRef.current) {
@@ -238,6 +267,12 @@ export function App() {
       prev.tab !== currentNav.tab ||
       prev.tangoViewMode !== currentNav.tangoViewMode ||
       prev.practiceStage !== currentNav.practiceStage ||
+      (currentNav.practiceStage === 'numbers' && (
+        prev.numView !== currentNav.numView ||
+        prev.numLevel !== currentNav.numLevel ||
+        prev.numMode !== currentNav.numMode ||
+        prev.numTab !== currentNav.numTab
+      )) ||
       (currentNav.tangoViewMode === 'study' && prev.lesson !== currentNav.lesson) ||
       prev.course !== currentNav.course;
 
@@ -252,6 +287,7 @@ export function App() {
     studyMode,
     practiceStage,
     selectedKanjiLevel,
+    numbersNav,
   ]);
 
   // Chế độ Giao diện Dark / Light mode
@@ -910,6 +946,7 @@ export function App() {
         onOpenJapaneseNumbersTrainer={() => {
           setActiveTab('practice');
           setPracticeStage('numbers');
+          setNumbersNav({ view: 'hub', level: 1, mode: 'look_read', tab: 'theory' });
           window.scrollTo({ top: 0, behavior: 'smooth' });
         }}
       />
@@ -1397,10 +1434,28 @@ export function App() {
             ) : practiceStage === 'numbers' ? (
               /* GÓC NHÌN ĐẶC BIỆT: LUYỆN SỐ ĐẾM TIẾNG NHẬT (1 ĐẾN HÀNG TỶ, 9 CẤP ĐỘ, 4 CHẾ ĐỘ LUYỆN) */
               <JapaneseNumbersTrainer
+                currentView={numbersNav.view}
+                selectedLevelId={numbersNav.level}
+                activeMode={numbersNav.mode}
+                levelTab={numbersNav.tab}
+                onNavigate={(view, level, mode, tab) => {
+                  setNumbersNav(prev => ({
+                    view: view ?? prev.view,
+                    level: level ?? prev.level,
+                    mode: mode ?? prev.mode,
+                    tab: tab ?? prev.tab,
+                  }));
+                }}
                 onBack={() => {
-                  setActiveTab('practice');
-                  setPracticeStage('overview');
-                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                  if (numbersNav.view === 'quiz') {
+                    setNumbersNav(prev => ({ ...prev, view: prev.level === 'random' ? 'hub' : 'level' }));
+                  } else if (numbersNav.view === 'level') {
+                    setNumbersNav(prev => ({ ...prev, view: 'hub' }));
+                  } else {
+                    setActiveTab('practice');
+                    setPracticeStage('overview');
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                  }
                 }}
               />
             ) : practiceStage === 'overview' ? (
@@ -1431,6 +1486,7 @@ export function App() {
                 onOpenShadowingHub={() => setPracticeStage('shadowing')}
                 onOpenJapaneseNumbersTrainer={() => {
                   setPracticeStage('numbers');
+                  setNumbersNav({ view: 'hub', level: 1, mode: 'look_read', tab: 'theory' });
                   window.scrollTo({ top: 0, behavior: 'smooth' });
                 }}
                 onOpenMistakeBank={() => setIsMistakeBankOpen(true)}
