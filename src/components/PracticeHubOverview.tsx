@@ -52,6 +52,7 @@ interface PracticeHubOverviewProps {
   onOpenTypingMaster?: () => void;
   onOpenMistakeBank?: () => void;
   onOpenShadowingHub?: () => void;
+  onOpenJapaneseNumbersTrainer?: () => void;
   dueSrsCount?: number;
   onOpenSrsReview?: () => void;
 }
@@ -82,6 +83,7 @@ export const PracticeHubOverview: React.FC<PracticeHubOverviewProps> = ({
   onOpenTypingMaster,
   onOpenMistakeBank,
   onOpenShadowingHub,
+  onOpenJapaneseNumbersTrainer,
   dueSrsCount = 0,
   onOpenSrsReview,
 }) => {
@@ -317,6 +319,38 @@ export const PracticeHubOverview: React.FC<PracticeHubOverviewProps> = ({
             >
               <span>Vào luyện nghe video</span>
               <ArrowRight className="w-3.5 h-3.5 text-indigo-600" />
+            </button>
+          </div>
+        )}
+
+        {/* THẺ 5: LUYỆN SỐ ĐẾM TIẾNG NHẬT (1 ĐẾN HÀNG TỶ, 9 CẤP ĐỘ) */}
+        {onOpenJapaneseNumbersTrainer && (
+          <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-amber-500/10 via-rose-500/10 to-orange-500/10 border border-amber-300/60 dark:border-amber-800/60 p-5 shadow-2xs flex flex-col justify-between gap-4">
+            <div className="flex items-start space-x-3.5 z-10">
+              <div className="w-10 h-10 rounded-xl bg-rose-500/15 border border-rose-400/30 flex items-center justify-center text-rose-600 dark:text-rose-400 font-black text-lg shrink-0">
+                🔢
+              </div>
+              <div>
+                <div className="flex items-center space-x-2">
+                  <h2 className="text-sm sm:text-base font-bold text-stone-900 dark:text-stone-100">
+                    Luyện Số Đếm Tiếng Nhật
+                  </h2>
+                  <span className="text-[10px] font-bold px-1.5 py-0.5 rounded-full bg-rose-500/15 text-rose-600 dark:text-rose-400 border border-rose-500/20">
+                    9 Cấp độ • Audio
+                  </span>
+                </div>
+                <p className="text-xs text-stone-500 dark:text-stone-400 mt-1 line-clamp-2">
+                  Từ 1 đến hàng tỷ. 4 Chế độ: Nhìn số chọn cách đọc, Nghe chọn số, Nhập chữ số, Nhập Hiragana.
+                </p>
+              </div>
+            </div>
+
+            <button
+              onClick={onOpenJapaneseNumbersTrainer}
+              className="w-full sm:w-auto self-end px-4 py-2 rounded-xl bg-gradient-to-r from-rose-500 to-orange-500 hover:from-rose-600 hover:to-orange-600 text-white font-bold text-xs shadow-xs transition active:scale-95 flex items-center justify-center space-x-1.5 z-10"
+            >
+              <span>Vào luyện số đếm</span>
+              <ArrowRight className="w-3.5 h-3.5 text-white" />
             </button>
           </div>
         )}

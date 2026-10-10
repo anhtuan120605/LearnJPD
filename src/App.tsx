@@ -25,6 +25,7 @@ import { PracticeSessionHeader } from './components/PracticeSessionHeader';
 import { PersonalDashboardView } from './components/PersonalDashboardView';
 import { ConjugationTrainerView } from './components/ConjugationTrainerView';
 import { JapaneseTypingView } from './components/JapaneseTypingView';
+import { JapaneseNumbersTrainer } from './components/JapaneseNumbersTrainer';
 import { ShadowingHubView } from './components/shadowing/ShadowingHubView';
 import { ShadowingPlayerView } from './components/shadowing/ShadowingPlayerView';
 import { ShadowingVideoItem } from './types/shadowing';
@@ -128,8 +129,8 @@ export function App() {
   // Modal Ôn tập ngắt quãng (SRS Review SM-2)
   const [isSrsReviewOpen, setIsSrsReviewOpen] = useState<boolean>(false);
 
-  // Trạng thái hiển thị trong Phân hệ Luyện tập: 'overview' | 'session' | 'conjugation' | 'typing' | 'shadowing'
-  const [practiceStage, setPracticeStage] = useState<'overview' | 'session' | 'conjugation' | 'typing' | 'shadowing'>(initialNav.practiceStage);
+  // Trạng thái hiển thị trong Phân hệ Luyện tập: 'overview' | 'session' | 'conjugation' | 'typing' | 'shadowing' | 'numbers'
+  const [practiceStage, setPracticeStage] = useState<'overview' | 'session' | 'conjugation' | 'typing' | 'shadowing' | 'numbers'>(initialNav.practiceStage);
   const [selectedShadowingVideo, setSelectedShadowingVideo] = useState<ShadowingVideoItem | null>(null);
 
   // Cấp độ Kanji đang chọn (N5 -> N1)
@@ -906,6 +907,11 @@ export function App() {
           setPracticeStage('shadowing');
           window.scrollTo({ top: 0, behavior: 'smooth' });
         }}
+        onOpenJapaneseNumbersTrainer={() => {
+          setActiveTab('practice');
+          setPracticeStage('numbers');
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }}
       />
 
       {/* Main Content Area */}
@@ -1388,6 +1394,15 @@ export function App() {
                 favoriteWords={progress.favoriteWords}
                 mistakeWords={progress.mistakeWords}
               />
+            ) : practiceStage === 'numbers' ? (
+              /* GÓC NHÌN ĐẶC BIỆT: LUYỆN SỐ ĐẾM TIẾNG NHẬT (1 ĐẾN HÀNG TỶ, 9 CẤP ĐỘ, 4 CHẾ ĐỘ LUYỆN) */
+              <JapaneseNumbersTrainer
+                onBack={() => {
+                  setActiveTab('practice');
+                  setPracticeStage('overview');
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }}
+              />
             ) : practiceStage === 'overview' ? (
               /* GÓC NHÌN 1: TỔNG THỂ TẤT CẢ CÁC BÀI HỌC (HIỂN THỊ ĐẦY ĐỦ, DỄ LỰA CHỌN) */
               <PracticeHubOverview
@@ -1414,6 +1429,10 @@ export function App() {
                 onOpenConjugationTrainer={() => setPracticeStage('conjugation')}
                 onOpenTypingMaster={() => setPracticeStage('typing')}
                 onOpenShadowingHub={() => setPracticeStage('shadowing')}
+                onOpenJapaneseNumbersTrainer={() => {
+                  setPracticeStage('numbers');
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }}
                 onOpenMistakeBank={() => setIsMistakeBankOpen(true)}
                 dueSrsCount={dueSrsItems.length}
                 onOpenSrsReview={() => setIsSrsReviewOpen(true)}

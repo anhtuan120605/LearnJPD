@@ -802,7 +802,17 @@ export const CrammingModeView: React.FC<CrammingModeViewProps> = ({
             {/* Thông báo nếu sai */}
             {status === 'wrong' && (
               <div className="p-3 bg-rose-500/10 border border-rose-500/30 rounded-xl text-xs text-rose-300 flex items-center justify-between">
-                <span>Đáp án đúng: <strong className="font-bold text-white font-jp text-sm">{targetAnswer}</strong> {currentWord.kanji ? `(${currentWord.kanji})` : ''}</span>
+                <div className="flex items-center gap-2">
+                  <span>Đáp án đúng: <strong className="font-bold text-white font-jp text-sm">{targetAnswer}</strong> {currentWord.kanji ? `(${currentWord.kanji})` : ''}</span>
+                  <button
+                    type="button"
+                    onClick={() => speakJapanese(currentWord.kana || currentWord.kanji)}
+                    className="p-1 rounded-md bg-white/10 hover:bg-white/20 text-rose-200 transition"
+                    title="Nghe phát âm đáp án đúng"
+                  >
+                    <Volume2 className="w-3.5 h-3.5" />
+                  </button>
+                </div>
                 <button
                   type="button"
                   onClick={handleNext}

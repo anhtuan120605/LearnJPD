@@ -211,7 +211,29 @@ function speakViaSpeechSynthesis(
 }
 
 /**
+ * Lấy danh sách URL phát âm tiếng Nhật theo thứ tự ưu tiên
+ */
+function getAudioUrlsForChunk(chunk: string): string[] {
+  const encoded = encodeURIComponent(chunk);
+  const urls: string[] = [];
+
+  // 1. Endpoint proxy nội bộ của Vite / Server (/api/tts)
+  if (typeof window !== 'undefined') {
+    urls.push(`/api/tts?q=${encoded}`);
+  }
+
+  // 2. Google Translate TTS client tw-ob (phát âm không cần token)
+  urls.push(`https://translate.google.com/translate_tts?ie=UTF-8&tl=ja&client=tw-ob&q=${encoded}`);
+
+  // 3. Google Translate GTX
+  urls.push(`https://translate.googleapis.com/translate_tts?client=gtx&tl=ja&q=${encoded}`);
+
+  return urls;
+}
+
+/**
  * Phát tuần tự từng chunk câu nếu văn bản dài (>160 ký tự)
+ * Tự động chuyển URL dự phòng nếu một nguồn bị chặn hoặc chậm
  */
 function playNextChunk(): void {
   if (currentPlaylistIndex >= currentPlaylist.length) {
@@ -224,50 +246,63 @@ function playNextChunk(): void {
   const chunk = currentPlaylist[currentPlaylistIndex];
   currentPlaylistIndex++;
 
-  const audioUrl = `https://translate.googleapis.com/translate_tts?client=gtx&tl=ja&q=${encodeURIComponent(chunk)}`;
-  const audio = new Audio(audioUrl);
-  currentAudio = audio;
-  audio.playbackRate = Math.max(0.7, Math.min(1.4, currentPlaylistRate));
+  const urls = getAudioUrlsForChunk(chunk);
+  let urlIndex = 0;
 
-  let hasEnded = false;
-  let hasFailed = false;
-
-  const timer = setTimeout(() => {
-    if (!hasEnded && !hasFailed && currentAudio === audio && audio.readyState === 0) {
-      hasFailed = true;
-      stopSpeaking();
-      speakViaSpeechSynthesis(chunk, currentPlaylistRate, currentPlaylistOnEnd);
+  function tryPlaySource() {
+    if (urlIndex >= urls.length) {
+      // Nếu tất cả URL trực tuyến đều lỗi, chuyển sang SpeechSynthesis
+      speakViaSpeechSynthesis(chunk, currentPlaylistRate, () => {
+        playNextChunk();
+      });
+      return;
     }
-  }, 3500);
 
-  audio.onended = () => {
-    clearTimeout(timer);
-    if (!hasEnded && !hasFailed) {
-      hasEnded = true;
-      playNextChunk();
-    }
-  };
+    const currentUrl = urls[urlIndex++];
+    const audio = new Audio(currentUrl);
+    currentAudio = audio;
+    audio.playbackRate = Math.max(0.7, Math.min(1.4, currentPlaylistRate));
 
-  audio.onerror = () => {
-    clearTimeout(timer);
-    if (!hasEnded && !hasFailed) {
-      hasFailed = true;
-      stopSpeaking();
-      speakViaSpeechSynthesis(chunk, currentPlaylistRate, currentPlaylistOnEnd);
-    }
-  };
+    let hasEnded = false;
+    let hasFailed = false;
 
-  const playPromise = audio.play();
-  if (playPromise !== undefined) {
-    playPromise.catch(() => {
+    // Timeout ngắn (1.8s) để chuyển URL nếu kết nối bị treo
+    const timer = setTimeout(() => {
+      if (!hasEnded && !hasFailed && currentAudio === audio && audio.readyState === 0) {
+        hasFailed = true;
+        tryPlaySource();
+      }
+    }, 1800);
+
+    audio.onended = () => {
+      clearTimeout(timer);
+      if (!hasEnded && !hasFailed) {
+        hasEnded = true;
+        playNextChunk();
+      }
+    };
+
+    audio.onerror = () => {
       clearTimeout(timer);
       if (!hasEnded && !hasFailed) {
         hasFailed = true;
-        stopSpeaking();
-        speakViaSpeechSynthesis(chunk, currentPlaylistRate, currentPlaylistOnEnd);
+        tryPlaySource();
       }
-    });
+    };
+
+    const playPromise = audio.play();
+    if (playPromise !== undefined) {
+      playPromise.catch(() => {
+        clearTimeout(timer);
+        if (!hasEnded && !hasFailed) {
+          hasFailed = true;
+          tryPlaySource();
+        }
+      });
+    }
   }
+
+  tryPlaySource();
 }
 
 /**

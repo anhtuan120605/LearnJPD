@@ -53,6 +53,7 @@ interface NavbarProps {
   onOpenTypingMaster?: () => void;
   onOpenConjugationTrainer?: () => void;
   onOpenShadowingHub?: () => void;
+  onOpenJapaneseNumbersTrainer?: () => void;
 }
 
 export const Navbar: React.FC<NavbarProps> = ({
@@ -78,6 +79,7 @@ export const Navbar: React.FC<NavbarProps> = ({
   onOpenTypingMaster,
   onOpenConjugationTrainer,
   onOpenShadowingHub,
+  onOpenJapaneseNumbersTrainer,
 }) => {
   const [isProfileMenuOpen, setIsProfileMenuOpen] = useState(false);
   const profileMenuRef = useRef<HTMLDivElement>(null);
@@ -386,6 +388,19 @@ export const Navbar: React.FC<NavbarProps> = ({
                         ⌨️
                       </span>
                       <span>Luyện gõ phím tiếng Nhật</span>
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => {
+                        if (onOpenJapaneseNumbersTrainer) onOpenJapaneseNumbersTrainer();
+                        setIsPracticeDropdownOpen(false);
+                      }}
+                      className="w-full flex items-center gap-2.5 px-2 py-2 rounded-xl text-left text-stone-800 dark:text-stone-200 hover:bg-white dark:hover:bg-white/10 hover:shadow-xs transition-colors text-[13px] font-bold"
+                    >
+                      <span className="w-7 h-7 rounded-lg bg-rose-100 dark:bg-rose-500/20 flex items-center justify-center shrink-0 text-rose-600">
+                        🔢
+                      </span>
+                      <span>Luyện số đếm tiếng Nhật</span>
                     </button>
                   </div>
 
@@ -752,6 +767,17 @@ export const Navbar: React.FC<NavbarProps> = ({
               className="text-left px-3 py-2.5 border-t border-stone-100 dark:border-stone-800/80 rounded-xl text-stone-800 dark:text-stone-200 hover:bg-stone-100 dark:hover:bg-white/10"
             >
               Giao tiếp (Shadowing)
+            </button>
+
+            <button
+              onClick={() => {
+                setIsMobileNavOpen(false);
+                if (onOpenJapaneseNumbersTrainer) onOpenJapaneseNumbersTrainer();
+              }}
+              className="text-left px-3 py-2.5 rounded-xl text-stone-800 dark:text-stone-200 hover:bg-stone-100 dark:hover:bg-white/10 flex items-center justify-between"
+            >
+              <span>🔢 Luyện số đếm tiếng Nhật</span>
+              <span className="text-[10px] font-black px-1.5 py-0.5 rounded bg-rose-500/20 text-rose-600 dark:text-rose-400">Mới</span>
             </button>
 
             <button

@@ -32,9 +32,55 @@ function youtubeTranscriptPlugin(): Plugin {
   };
 }
 
+function japaneseTtsPlugin(): Plugin {
+  return {
+    name: 'japanese-tts-endpoint',
+    configureServer(server) {
+      server.middlewares.use('/api/tts', async (req, res) => {
+        try {
+          const parsedUrl = new URL(req.url || '', 'http://localhost:5173');
+          const text = parsedUrl.searchParams.get('q');
+          const lang = parsedUrl.searchParams.get('tl') || 'ja';
+          if (!text) {
+            res.statusCode = 400;
+            res.setHeader('Content-Type', 'text/plain; charset=utf-8');
+            res.end('Missing text query param q');
+            return;
+          }
+
+          const targetUrl = `https://translate.googleapis.com/translate_tts?client=gtx&tl=${lang}&q=${encodeURIComponent(text)}`;
+          const response = await fetch(targetUrl, {
+            headers: {
+              'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36'
+            }
+          });
+
+          if (!response.ok) {
+            res.statusCode = response.status;
+            res.setHeader('Content-Type', 'text/plain; charset=utf-8');
+            res.end('TTS fetch failed');
+            return;
+          }
+
+          res.setHeader('Content-Type', 'audio/mpeg');
+          res.setHeader('Cache-Control', 'public, max-age=86400');
+          res.setHeader('Access-Control-Allow-Origin', '*');
+          const arrayBuffer = await response.arrayBuffer();
+          res.end(Buffer.from(arrayBuffer));
+        } catch (err: any) {
+          console.error('[TTS Proxy] Error:', err?.message);
+          res.statusCode = 500;
+          res.setHeader('Content-Type', 'text/plain; charset=utf-8');
+          res.end('Internal Server Error');
+        }
+      });
+    }
+  };
+}
+
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), youtubeTranscriptPlugin()],
+  plugins: [react(), youtubeTranscriptPlugin(), japaneseTtsPlugin()],
   server: {
     port: 5173,
     host: true

@@ -8,7 +8,7 @@ export interface AppNavState {
   lesson: number;
   subTab: LessonSubTab;
   studyMode: StudyMode;
-  practiceStage: 'overview' | 'session' | 'conjugation' | 'typing' | 'shadowing';
+  practiceStage: 'overview' | 'session' | 'conjugation' | 'typing' | 'shadowing' | 'numbers';
   kanjiLevel: string;
 }
 
