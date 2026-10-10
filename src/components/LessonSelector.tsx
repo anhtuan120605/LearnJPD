@@ -255,52 +255,7 @@ export const LessonSelector: React.FC<LessonSelectorProps> = ({
   // ==========================================
   return (
     <div className="space-y-6">
-      {/* 1. Chọn Tập Giáo Trình / Cấp Độ */}
-      <div className="bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 rounded-3xl p-5 sm:p-6 shadow-sm space-y-4">
-        <div className="flex items-center justify-between">
-          <label className="text-xs font-black uppercase tracking-wider text-slate-400 dark:text-zinc-500 flex items-center space-x-1.5">
-            <BookOpen className="w-4 h-4 text-blue-600 dark:text-sky-400" />
-            <span>1. Chọn Giáo Trình / Cấp Độ:</span>
-          </label>
-        </div>
-
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
-          {courseList.map((c) => {
-            const isSelected = currentCourse === c.key;
-            return (
-              <button
-                key={c.key}
-                onClick={() => onSelectCourse(c.key)}
-                className={`flex flex-col justify-between text-left p-4 rounded-2xl border transition-all ${
-                  isSelected
-                    ? 'bg-gradient-to-r from-blue-600 to-indigo-600 text-white border-blue-500 shadow-lg shadow-blue-500/25 ring-2 ring-blue-500/20 scale-[1.02]'
-                    : 'bg-slate-50 dark:bg-zinc-800/70 border-slate-200 dark:border-zinc-700/60 text-slate-700 dark:text-zinc-200 hover:border-blue-400 hover:bg-slate-100 dark:hover:bg-zinc-800'
-                }`}
-              >
-                <div>
-                  <div className="flex items-center justify-between mb-1.5">
-                    <span className={`text-[10px] font-bold uppercase px-2 py-0.5 rounded-md ${
-                      isSelected 
-                        ? 'bg-white/20 text-stone-100 dark:bg-stone-800 dark:text-stone-100' 
-                        : 'bg-stone-100 dark:bg-stone-800 text-stone-600 dark:text-stone-400 border border-stone-200/60 dark:border-stone-700/60'
-                    }`}>
-                      {c.badge}
-                    </span>
-                    <span className={`text-[11px] font-mono ${isSelected ? 'text-stone-300 dark:text-stone-600' : 'text-stone-400'}`}>
-                      {c.count} bài
-                    </span>
-                  </div>
-                  <h4 className="text-xs font-bold leading-snug">
-                    {c.name}
-                  </h4>
-                </div>
-              </button>
-            );
-          })}
-        </div>
-      </div>
-
-      {/* 2. Banner Tiến Độ Tổng Quan Zen Modern */}
+      {/* Banner Tiến Độ Tổng Quan Zen Modern */}
       <div className="bg-stone-900 dark:bg-stone-900 text-stone-100 border border-stone-800 rounded-2xl p-6 shadow-2xs space-y-4">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
           <div>

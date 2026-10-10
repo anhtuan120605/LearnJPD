@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Navbar } from './components/Navbar';
+import { LevelAction } from './components/LevelMegaMenu';
+import { DemoNoticeModal } from './components/DemoNoticeModal';
 import { MobileBottomNav } from './components/MobileBottomNav';
 import { WordListView } from './components/WordListView';
 import { FlashcardView } from './components/FlashcardView';
@@ -137,6 +139,8 @@ export function App() {
   const [currentUser, setCurrentUser] = useState<{ id: string; email: string } | null>(null);
   const [isAuthOpen, setIsAuthOpen] = useState(false);
   const [isBackupOpen, setIsBackupOpen] = useState(false);
+  // Modal thông báo tính năng / cấp độ đang hoàn thiện (DEMO)
+  const [demoNoticeFeature, setDemoNoticeFeature] = useState<string | null>(null);
 
   // Quyền Quản trị viên (Cách 1: Nhận diện qua Email tài khoản đăng nhập)
   const hasAdminAccess = checkIsAdmin(currentUser?.email);
@@ -580,6 +584,55 @@ export function App() {
     setLessonSubTab('vocab');
   };
 
+  // Điều hướng thông minh từ Mega Menu theo Cấp độ và Dạng bài
+  const handleNavigateLevelAction = (level: 'N5' | 'N4' | 'N3' | 'N2' | 'N1', action: LevelAction) => {
+    const courseMap: Record<string, string> = {
+      N5: 'MINNA_1',
+      N4: 'MINNA_2',
+      N3: 'MINNA_CHUKYU_1',
+      N2: 'MINNA_CHUKYU_2',
+      N1: 'JLPT_N1',
+    };
+    const courseKey = courseMap[level] || 'MINNA_1';
+    handleSelectCourse(courseKey);
+
+    switch (action) {
+      case 'vocab':
+        setActiveTab('tango');
+        setLessonSubTab('vocab');
+        setTangoViewMode('dashboard');
+        break;
+      case 'kanji':
+        setSelectedKanjiLevel(level);
+        setActiveTab('kanji');
+        break;
+      case 'grammar':
+        setActiveTab('tango');
+        setLessonSubTab('grammar');
+        break;
+      case 'reading':
+        setActiveTab('tango');
+        setLessonSubTab('reading');
+        break;
+      case 'listening':
+        setActiveTab('practice');
+        setPracticeStage('shadowing');
+        break;
+      case 'kanji_reading':
+      case 'kanji_writing':
+      case 'practice_vocab':
+      case 'practice_synonym':
+      case 'practice_grammar':
+      case 'practice_sentence_star':
+      case 'practice_cloze':
+      default:
+        setActiveTab('practice');
+        setPracticeStage('overview');
+        break;
+    }
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   // Khi chọn bài học mới thì luôn hiển thị danh sách từ vựng trước
   const handleSelectLesson = (lessonNum: number) => {
     setSelectedLessonNum(lessonNum);
@@ -834,6 +887,25 @@ export function App() {
         hasAdminAccess={hasAdminAccess}
         isAdminEditMode={isAdminEditMode}
         onToggleAdminEditMode={() => setIsAdminEditMode((prev) => !prev)}
+        currentCourse={currentCourse}
+        onSelectCourse={handleSelectCourse}
+        onNavigateLevelAction={handleNavigateLevelAction}
+        onShowDemoNotice={(featureName) => setDemoNoticeFeature(featureName)}
+        onOpenTypingMaster={() => {
+          setActiveTab('practice');
+          setPracticeStage('typing');
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }}
+        onOpenConjugationTrainer={() => {
+          setActiveTab('practice');
+          setPracticeStage('conjugation');
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }}
+        onOpenShadowingHub={() => {
+          setActiveTab('practice');
+          setPracticeStage('shadowing');
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }}
       />
 
       {/* Main Content Area */}
@@ -1613,6 +1685,13 @@ export function App() {
         deletedWords={deletedWordsInCurrentLesson}
         lessonNum={selectedLessonNum}
         onRestoreWord={handleAdminRestoreWord}
+      />
+
+      {/* Modal Thông báo Tính năng / Cấp độ đang hoàn thiện (DEMO) */}
+      <DemoNoticeModal
+        isOpen={!!demoNoticeFeature}
+        featureName={demoNoticeFeature || undefined}
+        onClose={() => setDemoNoticeFeature(null)}
       />
 
       {/* Mobile Bottom Navigation Bar (Chỉ hiển thị trên thiết bị di động) */}

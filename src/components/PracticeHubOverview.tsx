@@ -322,48 +322,7 @@ export const PracticeHubOverview: React.FC<PracticeHubOverviewProps> = ({
         )}
       </div>
 
-      {/* 1. THANH CHỌN GIÁO TRÌNH */}
-      <div className="space-y-3">
-        <div className="flex items-center space-x-2 text-xs font-black text-blue-600 dark:text-sky-400 uppercase tracking-wider px-1">
-          <BookOpen className="w-4 h-4" />
-          <span>1. Chọn giáo trình / Cấp độ ôn luyện:</span>
-        </div>
-
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
-          {courseList.map((c) => {
-            const isSelected = currentCourse === c.key;
-            return (
-              <button
-                key={c.key}
-                onClick={() => onSelectCourse(c.key)}
-                className={`p-3.5 rounded-xl text-left transition-all border relative overflow-hidden group ${
-                  isSelected
-                    ? 'bg-stone-900 dark:bg-stone-100 text-stone-100 dark:text-stone-900 border-stone-900 dark:border-stone-100 shadow-2xs'
-                    : 'bg-white dark:bg-stone-900 border-stone-200/80 dark:border-stone-800 text-stone-700 dark:text-stone-300 hover:border-stone-400 dark:hover:border-stone-600'
-                }`}
-              >
-                <div className="flex items-center justify-between mb-1.5">
-                  <span className={`text-[10px] font-bold px-1.5 py-0.5 rounded uppercase tracking-wider ${
-                    isSelected 
-                      ? 'bg-white/20 text-stone-100 dark:bg-stone-800 dark:text-stone-100' 
-                      : 'bg-stone-100 dark:bg-stone-800 text-stone-600 dark:text-stone-400 border border-stone-200/60 dark:border-stone-700/60'
-                  }`}>
-                    {c.badge}
-                  </span>
-                  <span className={`text-[11px] font-mono ${isSelected ? 'text-stone-300 dark:text-stone-600' : 'text-stone-400'}`}>
-                    {c.count} bài
-                  </span>
-                </div>
-                <h4 className="text-xs font-bold line-clamp-2 leading-snug">
-                  {c.name}
-                </h4>
-              </button>
-            );
-          })}
-        </div>
-      </div>
-
-      {/* 2. CHỌN PHƯƠNG PHÁP & BỘ LỌC TỪ VỰNG */}
+      {/* CHỌN PHƯƠNG PHÁP & BỘ LỌC TỪ VỰNG */}
       <div className="space-y-3">
         <div className="flex items-center justify-between px-1">
           <div className="flex items-center space-x-2 text-xs font-black text-blue-600 dark:text-sky-400 uppercase tracking-wider">
